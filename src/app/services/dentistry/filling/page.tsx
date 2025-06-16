@@ -146,7 +146,7 @@ export default function FillingPage() {
               <div className="lg:w-1/3 flex justify-center lg:justify-end">
                 <div className="w-80 h-60 rounded-[20px] overflow-hidden bg-white">
                   <Image
-                    src="/images/dentisrty/Пломбирование зубов.jpg"
+                    src="/images/dentisrty/plobp.jpg"
                     alt="Пломбирование зубов"
                     width={320}
                     height={240}

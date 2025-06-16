@@ -148,7 +148,7 @@ export default function CariesPage() {
               <div className="lg:w-1/3 flex justify-center lg:justify-end">
                 <div className="w-80 h-60 rounded-[20px] overflow-hidden bg-white">
                   <Image
-                    src="/images/dentisrty/Лечение кариеса.jpg"
+                    src="/images/dentisrty/karies.jpg"
                     alt="Лечение кариеса"
                     width={320}
                     height={240}

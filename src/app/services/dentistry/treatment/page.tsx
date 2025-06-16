@@ -134,15 +134,15 @@ export default function TreatmentPage() {
       buttonText: "Записаться на консультацию",
       buttonLink: "/appointments",
       buttonColor: "#13AB7B",
-      image: "/images/baner/banner.webp"
+      image: "/images/baner/Group112.png"
     },
     {
-      title: "Лечение под микроскопом",
-      subtitle: "Высочайшая точность лечения",
-      buttonText: "Узнать больше",
-      buttonLink: "/services/dentistry/microscope",
-      buttonColor: "#10B981",
-      image: "/images/baner/PROMOKT2.png"
+      title: "",
+      subtitle: "",
+      buttonText: "",
+      buttonLink: "",
+      buttonColor: "#13AB7B",
+      image: "/images/baner/Group112.png"
     },
     {
       title: "Безболезненное лечение",
@@ -167,14 +167,14 @@ export default function TreatmentPage() {
       id: 2,
       name: "Пломбирование зубов",
       price: "от 5 000 руб.",
-      image: "/images/dentisrty/Пломбирование зубов.jpg",
+      image: "/images/dentisrty/plobp.jpg",
       description: "Качественные пломбы с использованием современных материалов"
     },
     {
       id: 3,
       name: "Лечение кариеса",
       price: "от 5 000 руб.",
-      image: "/images/dentisrty/Лечение кариеса.jpg",
+      image: "/images/dentisrty/karies.jpg",
       description: "Эффективное лечение кариеса на любой стадии"
     },
     {
@@ -382,19 +382,28 @@ export default function TreatmentPage() {
                   unoptimized
                   priority
                 />
-                <div className="absolute inset-0 bg-black bg-opacity-30"></div>
               </div>
               
               {/* Content overlay */}
               <div className="absolute inset-0 flex flex-col justify-center items-start p-8 md:p-12 text-white">
-                <h2 className="text-2xl md:text-4xl font-bold mb-4">{slides[currentSlide].title}</h2>
-                <p className="text-lg md:text-xl mb-6 max-w-md">{slides[currentSlide].subtitle}</p>
-                <Link 
-                  href={slides[currentSlide].buttonLink} 
-                  className="bg-emerald-500 text-white rounded-full px-8 py-3 font-medium hover:bg-emerald-600 transition-colors"
-                >
-                  {slides[currentSlide].buttonText}
-                </Link>
+                {currentSlide === 0 ? (
+                  <>
+                    <div className="mt-40"></div>
+                  </>
+                ) : (
+                  <>
+                    <h2 className="text-2xl md:text-4xl font-bold mb-4">{slides[currentSlide].title}</h2>
+                    <p className="text-lg md:text-xl mb-6 max-w-md">{slides[currentSlide].subtitle}</p>
+                    {currentSlide !== 1 && slides[currentSlide].buttonText && slides[currentSlide].buttonLink && (
+                      <Link 
+                        href={slides[currentSlide].buttonLink} 
+                        className="bg-emerald-500 text-white rounded-full px-8 py-3 font-medium hover:bg-emerald-600 transition-colors"
+                      >
+                        {slides[currentSlide].buttonText}
+                      </Link>
+                    )}
+                  </>
+                )}
               </div>
               
               {/* Navigation arrows */}
