@@ -221,14 +221,15 @@ export default function FillingPage() {
               {/* Левая часть с формой */}
               <div className="w-full lg:w-3/4 p-6 lg:p-8 z-10">
                 <h2 className="text-2xl lg:text-3xl font-bold text-white mb-2">
-                  Заказать обратный звонок
+                  Записаться на прием
                 </h2>
                 <p className="text-white/90 mb-6 text-sm lg:text-base">
                   поля, отмеченные * необходимы к заполнению
                 </p>
                 
                 <form className="mb-4 max-w-2xl">
-                  <div className="flex gap-4 mb-4 items-end">
+                  {/* Desktop layout - horizontal */}
+                  <div className="hidden lg:flex gap-4 mb-4 items-end">
                     <div className="flex-1">
                       <label className="block text-white text-sm font-medium mb-2">Имя</label>
                       <input 
@@ -248,6 +249,31 @@ export default function FillingPage() {
                     <button 
                       type="submit" 
                       className="bg-gradient-to-r from-pink-500 to-purple-600 text-white px-8 py-4 rounded-full font-medium hover:from-pink-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg h-14 flex-shrink-0"
+                    >
+                      Заказать звонок
+                    </button>
+                  </div>
+                  {/* Mobile layout - vertical */}
+                  <div className="lg:hidden space-y-4 mb-6">
+                    <div>
+                      <label className="block text-white text-sm font-medium mb-2">Имя</label>
+                      <input 
+                        type="text" 
+                        placeholder="Имя"
+                        className="w-full p-4 rounded-full border-0 bg-white/95 text-gray-800 placeholder-gray-500 focus:ring-2 focus:ring-white/50 focus:outline-none h-14"
+                      />
+                    </div>
+                    <div>
+                      <label className="block text-white text-sm font-medium mb-2">Телефон *</label>
+                      <input 
+                        type="tel" 
+                        placeholder="+7 (___) ____"
+                        className="w-full p-4 rounded-full border-0 bg-white/95 text-gray-800 placeholder-gray-500 focus:ring-2 focus:ring-white/50 focus:outline-none h-14"
+                      />
+                    </div>
+                    <button 
+                      type="submit" 
+                      className="w-full bg-gradient-to-r from-pink-500 to-purple-600 text-white px-8 py-4 rounded-full font-medium hover:from-pink-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg h-14"
                     >
                       Заказать звонок
                     </button>
@@ -272,7 +298,7 @@ export default function FillingPage() {
               </div>
               
               {/* Изображение врача внизу справа */}
-              <div className="absolute bottom-0 right-0 lg:right-8 z-10">
+              <div className="hidden lg:block absolute bottom-0 right-0 lg:right-8 z-10">
                 {/* Белый округлый фон для врача */}
                 <div className="absolute bottom-0 right-0">
                   <div 
@@ -298,6 +324,7 @@ export default function FillingPage() {
           </div>
         </div>
       </section>
+      
 
       {/* Filling process, recommendations and FAQ sections */}
       <section className="py-8">

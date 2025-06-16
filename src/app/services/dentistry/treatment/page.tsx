@@ -129,20 +129,18 @@ export default function TreatmentPage() {
   // Slides data for treatment
   const slides = [
     {
-      title: "Лечение зубов",
-      subtitle: "Современные методы безболезненного лечения",
-      buttonText: "Записаться на консультацию",
+      title: "Современная стоматология",
+      buttonText: "Записаться",
       buttonLink: "/appointments",
       buttonColor: "#13AB7B",
-      image: "/images/baner/Group112.png"
+      image: "/images/baner/banner.webp"
     },
     {
-      title: "",
-      subtitle: "",
-      buttonText: "",
-      buttonLink: "",
-      buttonColor: "#13AB7B",
-      image: "/images/baner/Group112.png"
+      title: "Безболезненное лечение",
+      buttonText: "Записаться",
+      buttonLink: "/appointments",
+      buttonColor: "#10B981",
+      image: "/images/baner/PROMOKT2.png"
     },
     {
       title: "Безболезненное лечение",
@@ -150,9 +148,47 @@ export default function TreatmentPage() {
       buttonText: "Консультация",
       buttonLink: "/services/dentistry/painless",
       buttonColor: "#3B82F6",
-      image: "/images/baner/banner2.webp"
+      image: "/images/baner/banner2.webp",
+      mobileImage: "/images/baner/banner2.webp"
     }
   ];
+
+  // Slides data для мобильного слайдера (как на /services/dentistry)
+  const mobileSlides = [
+    {
+      title: "Современная стоматология",
+      buttonText: "Записаться",
+      buttonLink: "/appointments",
+      buttonColor: "#13AB7B",
+      image: "/images/baner/banner.webp"
+    },
+    {
+      title: "Безболезненное лечение",
+      buttonText: "Узнать больше",
+      buttonLink: "/services/dentistry/painless",
+      buttonColor: "#10B981",
+      image: "/images/baner/PROMOKT2.png"
+    },
+    {
+      title: "Имплантация зубов",
+      buttonText: "Консультация",
+      buttonLink: "/services/dentistry/implants",
+      buttonColor: "#3B82F6",
+      image: "/images/baner/banner2.webp"
+    },
+    {
+      title: "Эстетическая стоматология",
+      buttonText: "Записаться",
+      buttonLink: "/services/dentistry/aesthetic",
+      buttonColor: "#EF4444",
+      image: "/images/baner/PROMOKT2.png"
+    }
+  ];
+
+  const [currentMobileSlide, setCurrentMobileSlide] = useState(0);
+  const nextMobileSlide = () => setCurrentMobileSlide((prev) => (prev === mobileSlides.length - 1 ? 0 : prev + 1));
+  const prevMobileSlide = () => setCurrentMobileSlide((prev) => (prev === 0 ? mobileSlides.length - 1 : prev - 1));
+  const goToMobileSlide = (index: number) => setCurrentMobileSlide(index);
 
   // Treatment services data
   const treatmentServices = [
@@ -372,16 +408,77 @@ export default function TreatmentPage() {
 
           {/* Slider */}
           <div className="w-full mx-auto px-4 md:px-0" style={{ maxWidth: '83rem' }}>
-            <div className="h-[300px] md:h-[445px] bg-emerald-500 relative overflow-hidden rounded-[20px] shadow-lg">
+            {/* Мобильный слайдер как на /services/dentistry */}
+            <div className="block md:hidden w-full md:w-[548px] h-[300px] flex flex-col rounded-[20px] overflow-hidden shadow-md flex-shrink-0 mx-auto md:mx-0">
+              <div className="h-[220px] bg-emerald-500 relative overflow-hidden">
+                <div className="w-full h-full relative">
+                  <Image
+                    src={slides[currentSlide].image}
+                    alt={slides[currentSlide].title}
+                    fill
+                    className=""
+                    unoptimized
+                    priority
+                  />
+                </div>
+                {/* Прогресс-бар */}
+                <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+                  {slides.map((_, index) => (
+                    <button
+                      key={index}
+                      onClick={() => goToSlide(index)}
+                      className={`w-3 h-3 rounded-full ${currentSlide === index ? "bg-white" : "bg-white/50"}`}
+                    ></button>
+                  ))}
+                </div>
+              </div>
+              {/* Нижняя часть */}
+              <div className="bg-white p-4 flex flex-col justify-between items-start gap-3">
+                <div className="text-black font-medium text-sm">{slides[currentSlide].title}</div>
+                <Link 
+                  href={slides[currentSlide].buttonLink} 
+                  className={`bg-[${slides[currentSlide].buttonColor}] text-white rounded-full flex items-center justify-center w-full h-[46px] text-sm`}
+                  style={{ backgroundColor: slides[currentSlide].buttonColor }}
+                >
+                  {slides[currentSlide].buttonText}
+                  <svg className="w-5 h-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              </div>
+            </div>
+            {/* Десктопный слайдер */}
+            <div className="hidden md:block h-[445px] bg-emerald-500 relative overflow-hidden rounded-[20px] shadow-lg">
               <div className="w-full h-full relative">
-                <Image
-                  src={slides[currentSlide].image}
-                  alt={slides[currentSlide].title}
-                  fill
-                  className="object-cover"
-                  unoptimized
-                  priority
-                />
+                {slides[currentSlide].mobileImage ? (
+                  <>
+                    <Image
+                      src={slides[currentSlide].mobileImage}
+                      alt={slides[currentSlide].title}
+                      fill
+                      className="object-cover block md:hidden"
+                      unoptimized
+                      priority
+                    />
+                    <Image
+                      src={slides[currentSlide].image}
+                      alt={slides[currentSlide].title}
+                      fill
+                      className="object-cover hidden md:block"
+                      unoptimized
+                      priority
+                    />
+                  </>
+                ) : (
+                  <Image
+                    src={slides[currentSlide].image}
+                    alt={slides[currentSlide].title}
+                    fill
+                    className="object-cover"
+                    unoptimized
+                    priority
+                  />
+                )}
               </div>
               
               {/* Content overlay */}
@@ -814,7 +911,8 @@ export default function TreatmentPage() {
                 </p>
                 
                 <form className="mb-4 max-w-2xl">
-                  <div className="flex gap-4 mb-4 items-end">
+                  {/* Desktop layout - horizontal */}
+                  <div className="hidden lg:flex gap-4 mb-4 items-end">
                     <div className="flex-1">
                       <label className="block text-white text-sm font-medium mb-2">Имя</label>
                       <input 
@@ -834,6 +932,31 @@ export default function TreatmentPage() {
                     <button 
                       type="submit" 
                       className="bg-gradient-to-r from-pink-500 to-purple-600 text-white px-8 py-4 rounded-full font-medium hover:from-pink-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg h-14 flex-shrink-0"
+                    >
+                      Заказать звонок
+                    </button>
+                  </div>
+                  {/* Mobile layout - vertical */}
+                  <div className="lg:hidden space-y-4 mb-6">
+                    <div>
+                      <label className="block text-white text-sm font-medium mb-2">Имя</label>
+                      <input 
+                        type="text" 
+                        placeholder="Имя"
+                        className="w-full p-4 rounded-full border-0 bg-white/95 text-gray-800 placeholder-gray-500 focus:ring-2 focus:ring-white/50 focus:outline-none h-14"
+                      />
+                    </div>
+                    <div>
+                      <label className="block text-white text-sm font-medium mb-2">Телефон *</label>
+                      <input 
+                        type="tel" 
+                        placeholder="+7 (___) ____"
+                        className="w-full p-4 rounded-full border-0 bg-white/95 text-gray-800 placeholder-gray-500 focus:ring-2 focus:ring-white/50 focus:outline-none h-14"
+                      />
+                    </div>
+                    <button 
+                      type="submit" 
+                      className="w-full bg-gradient-to-r from-pink-500 to-purple-600 text-white px-8 py-4 rounded-full font-medium hover:from-pink-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg h-14"
                     >
                       Заказать звонок
                     </button>
@@ -858,7 +981,7 @@ export default function TreatmentPage() {
               </div>
               
               {/* Изображение врача внизу справа */}
-              <div className="absolute bottom-0 right-0 lg:right-8 z-10">
+              <div className="hidden lg:block absolute bottom-0 right-0 lg:right-8 z-10">
                 {/* Белый округлый фон для врача */}
                 <div className="absolute bottom-0 right-0">
                   <div 
