@@ -137,7 +137,7 @@ export default function ThreeChannelPulpitisPage() {
             <div className="flex flex-col lg:flex-row items-center">
               <div className="lg:w-2/3 text-white mb-6 lg:mb-0">
                 <p className="text-lg leading-relaxed">
-                  Лечение пульпита трехканального зуба - процедура, направленная на предотвращение боли, исключение воспалений при заболевании пульпы. Пульпит бывает на электрозаках, железах в зубе мудрости. В них из-за канала, поэтому требуется комплексный терапевтический подход для предотвращения удаления зубов с глубокими полостями.
+                  Лечение пульпита трехканального зуба - процедура, направленная на предотвращение боли, исключение воспалений при заболевании пульпы. Пульпит бывает на резцах, клыках в зубе мудрости. В них три канала, поэтому требуется комплексный терапевтический подход для предотвращения удаления зубов с глубокими полостями.
                 </p>
               </div>
               
@@ -169,23 +169,23 @@ export default function ThreeChannelPulpitisPage() {
               <p className="text-gray-700 mb-4">Симптомы определяются острой или хронической формой заболевания.</p>
               
               <div className="mb-6">
-                <h3 className="text-lg font-bold text-gray-800 mb-4">1) Острый пульпит: боль носит характер:</h3>
+                <h3 className="text-lg font-bold text-gray-800 mb-4">1) Острый пульпит боль носит характер хронической формы заболевания, когда поражены три канала зуба:</h3>
                 <ul className="space-y-3">
                   <li className="flex items-start">
                     <div className="w-2 h-2 bg-red-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                    <span className="text-gray-700">Пульсирующая боль носит длительный характер, затем обычно исчезает, но по истичении времени.</span>
+                    <span className="text-gray-700">Пульсирующая боль носит длительный характер, затем обычно исчезает, но возращается спустя время.</span>
                   </li>
                   <li className="flex items-start">
                     <div className="w-2 h-2 bg-red-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                    <span className="text-gray-700">увеличивающаяся пульсирующая сильная, пульсирующая боль;</span>
+                    <span className="text-gray-700">развивающиеся антибактериальные сильные, пульсирующие боли;</span>
                   </li>
                   <li className="flex items-start">
                     <div className="w-2 h-2 bg-red-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                    <span className="text-gray-700">ноющее удивление боли;</span>
+                    <span className="text-gray-700">ноющие толчки боли;</span>
                   </li>
                   <li className="flex items-start">
                     <div className="w-2 h-2 bg-red-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                    <span className="text-gray-700">увеличивающий промежуток между приступами боли;</span>
+                    <span className="text-gray-700">увеличивающийся промежуток между приступами боли;</span>
                   </li>
                   <li className="flex items-start">
                     <div className="w-2 h-2 bg-red-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
@@ -199,12 +199,12 @@ export default function ThreeChannelPulpitisPage() {
               </div>
               
               <div className="mb-6">
-                <h3 className="text-lg font-bold text-gray-800 mb-4">2) Хронический пульпит. Если человек, не обращается в клинику с острым проявлением, то образуется хроническая форма. Признаком болезни делается менее</h3>
-                <p className="text-gray-700 mb-3">выраженное. Человек хочет, что воспаление прошло, но это обманчивое. На самом деле лечение инфекции продолжается. Признаки:</p>
+                <h3 className="text-lg font-bold text-gray-800 mb-4">2) Хронический пульпит. Если человек не обращается в клинику с острым проявлением, то образуется хроническая форма. Признаки болезни становятся менее</h3>
+                <p className="text-gray-700 mb-3">выраженными. Человек думает, что воспаление прошло, но это обманчиво. На самом деле процесс инфекции продолжается. Признаки:</p>
                 <ul className="space-y-3">
                   <li className="flex items-start">
                     <div className="w-2 h-2 bg-red-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                    <span className="text-gray-700">слабые боли, которые возникают из-за переедания температуры;</span>
+                    <span className="text-gray-700">слабые боли, которые возникают из-за перепада температуры;</span>
                   </li>
                   <li className="flex items-start">
                     <div className="w-2 h-2 bg-red-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
@@ -243,12 +243,12 @@ export default function ThreeChannelPulpitisPage() {
                 </li>
                 <li className="flex items-start">
                   <div className="w-2 h-2 bg-red-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                  <span className="text-gray-700">человек передает вирусы или инфекции меньше получения назад.</span>
+                  <span className="text-gray-700">человек переносит вирусы или инфекции менее недели назад.</span>
                 </li>
               </ul>
               
               <p className="text-gray-700">
-                Если пульпит у пожать жизни пациента и необходимо срочно провести лечение,
+                Если пульпит угрожает жизни пациента и необходимо срочно провести лечение,
                 то перечисленные пункты не будут считаться абсолютными противопоказаниями.
               </p>
             </div>
@@ -281,38 +281,38 @@ export default function ThreeChannelPulpitisPage() {
             <div className="space-y-6">
               <div>
                 <h3 className="text-lg font-bold text-gray-800 mb-3">1) Осмотр и консультация.</h3>
-                <p className="text-gray-700">Прием стоматолога начинается с выяснения истории заболевания. Стоматолог определяет характер боли, когда появились симптомы, сколько длятся. Осмотр человека принимается молочко на полосе. Осмотр принимается полость в ртом.</p>
+                <p className="text-gray-700">Прием стоматолога начинается с выяснения истории заболевания. Стоматолог определяет характер боли, когда появились симптомы, сколько длятся. Осмотр пациента проводится визуально на предмет состояния. Осмотр проводится ротовой полости.</p>
               </div>
               
               <div>
                 <h3 className="text-lg font-bold text-gray-800 mb-3">2) Диагностика.</h3>
-                <p className="text-gray-700">Дооо специалист осуществляет дополнительные обследования для установления верного диагноза. Применяется постукивание, зондирование, как реагирует зуб на воздействие раздражителем. Прежде всего обследуют глубину кариозной полости. Чтобы составить необходимый план терапии, назначают <Link href="/services/dentistry/diagnostics" className="text-emerald-600 hover:text-emerald-700 underline">рентген или компьютерную томографию</Link>.</p>
+                <p className="text-gray-700">Далее специалист осуществляет дополнительные обследования для установления верного диагноза. Применяется постукивание, зондирование, как реагирует зуб на воздействие раздражителями. Прежде всего обследуют глубину кариозной полости. Чтобы составить необходимый план терапии, назначают <Link href="/services/dentistry/diagnostics" className="text-emerald-600 hover:text-emerald-700 underline">рентген или компьютерную томографию</Link>.</p>
               </div>
               
               <div>
                 <h3 className="text-lg font-bold text-gray-800 mb-3">3) Проведение лечения.</h3>
-                <p className="text-gray-700">Сначала выполняется <Link href="/services/dentistry/anesthesia" className="text-emerald-600 hover:text-emerald-700 underline">профессиональная чистка зубов</Link>. Затем специалист выбирает один из трех приемов терапии, учитывая результаты обследования клиента. Пожалуйста возможно выполнить девитальной метод, где специалист полностью удаляет поражение из корневых полостей и верхности пломбируется лечением под седацией или наркозом. В первом случае имеет находяться на сознании, но всё обследованием локально. Но второму - засыпает.</p>
+                <p className="text-gray-700">Сначала выполняется <Link href="/services/dentistry/anesthesia" className="text-emerald-600 hover:text-emerald-700 underline">анестезия и изоляция рабочего поля</Link>. Затем специалист выбирает один из методов терапии, учитывая результаты обследования клиента. Возможно выполнить витальный метод, где специалист полностью удаляет пораженную пульпу из корневых каналов и полость пломбируется. Лечение проводится под местной анестезией или седацией. В первом случае пациент находится в сознании, но всё проводится под локальным обезболиванием. Во втором - пациент засыпает.</p>
               </div>
             </div>
             
             <div className="mt-8">
-              <p className="text-gray-700">Для полной экстракции (удаления) не применяют раздражителя:</p>
+              <p className="text-gray-700">Для полной экстирпации (удаления) пульпы применяют различные методы:</p>
               <ul className="mt-4 space-y-3">
                 <li className="flex items-start">
                   <div className="w-2 h-2 bg-emerald-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                  <span className="text-gray-700">Биологический - возможность биологического охранения пульпы. Если они восстановлены во время приоде в стоматологию, а воспаление только началось, то можно попробовать сберечь пульпу. При таком способе, укладывает лекарственные прокладки в полость зуба, затем ставят на время пломбу. Чего несколько дней стоматолог анализирует прогресс. Если практически уславвает постоянная боль, то потолок увеличение недовольтических составов с пломбируется. Спустя время устанавливается постоянная пломба.</span>
+                  <span className="text-gray-700">Биологический - возможность биологического сохранения пульпы. Если пациент обратился во время первого периода в стоматологию, а воспаление только началось, то можно попробовать сберечь пульпу. При таком способе укладывают лекарственные прокладки в полость зуба, затем ставят временную пломбу. Через несколько дней стоматолог анализирует прогресс. Если практически отсутствует постоянная боль, то полость обрабатывают антисептическими составами и пломбируют. Спустя время устанавливается постоянная пломба.</span>
                 </li>
                 <li className="flex items-start">
                   <div className="w-2 h-2 bg-emerald-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                  <span className="text-gray-700">Витальная ампутация - возможность частичного сохранения пульпы. Особенность трехканального моляра служит дробление на коронковую и корневую пульпу. Этим основывается на ликвидации коронковой части. Потом ведутся <Link href="/services/dentistry/medications" className="text-emerald-600 hover:text-emerald-700 underline">лекарственный состав и пломбируется</Link>. Спустя время <Link href="/services/dentistry/permanent-filling" className="text-emerald-600 hover:text-emerald-700 underline">устанавливается постоянная пломба</Link>.</span>
+                  <span className="text-gray-700">Витальная ампутация - возможность частичного сохранения пульпы. Особенность трехканального моляра заключается в разделении на коронковую и корневую пульпу. Метод основывается на удалении коронковой части. Потом накладывают <Link href="/services/dentistry/medications" className="text-emerald-600 hover:text-emerald-700 underline">лекарственный состав и пломбируют</Link>. Спустя время <Link href="/services/dentistry/permanent-filling" className="text-emerald-600 hover:text-emerald-700 underline">устанавливается постоянная пломба</Link>.</span>
                 </li>
                 <li className="flex items-start">
                   <div className="w-2 h-2 bg-emerald-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                  <span className="text-gray-700">Витальная. Пульпа исключается целикож, каналь обрабатываются и затем пломбируются. Для завершения всех процедур требуется еще одно посещение клиники.</span>
+                  <span className="text-gray-700">Витальная экстирпация. Пульпа удаляется целиком, каналы обрабатываются и затем пломбируются. Для завершения всех процедур требуется еще одно посещение клиники.</span>
                 </li>
                 <li className="flex items-start">
                   <div className="w-2 h-2 bg-emerald-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                  <span className="text-gray-700">Девитальная. В первую очередь пульпа некротизируется особым составом, затем формируется временная пломба. Через 3-7 суток пломбу убирают, пульпу исключают, обрабатывают каналы и пломбируют. Услуга осуществляется также не два сеанса в клинику.</span>
+                  <span className="text-gray-700">Девитальная экстирпация. В первую очередь пульпа некротизируется специальным составом, затем ставится временная пломба. Через 3-7 суток пломбу удаляют, пульпу извлекают, обрабатывают каналы и пломбируют. Услуга осуществляется также за два посещения клиники.</span>
                 </li>
               </ul>
             </div>
@@ -320,23 +320,126 @@ export default function ThreeChannelPulpitisPage() {
         </div>
       </section>
 
-      {/* Записаться на прием */}
-      <section className="py-8">
-        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
-          <div className="bg-emerald-50 rounded-[20px] p-6 md:p-8 mx-4 md:mx-0 text-center">
-            <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-4">
-              Записаться на прием
-            </h2>
-            <p className="text-gray-700 mb-6">
-              Не откладывайте лечение пульпита! Своевременное обращение к специалисту поможет сохранить зуб и избежать осложнений.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-emerald-600 text-white px-8 py-3 rounded-full font-medium hover:bg-emerald-700 transition-colors">
-                Записаться онлайн
-              </button>
-              <button className="border border-emerald-600 text-emerald-600 px-8 py-3 rounded-full font-medium hover:bg-emerald-600 hover:text-white transition-colors">
-                Позвонить: +7 (495) 255-44-50
-              </button>
+      {/* Блок записи на прием */}
+      <section className="py-6 relative overflow-hidden">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative">
+          <div className="relative overflow-hidden rounded-[30px]" style={{
+            background: 'linear-gradient(135deg, #4A9B8E 0%, #3A8D7F 25%, #2E7A6D 50%, #25685C 75%, #1A5247 100%)',
+            backgroundImage: `url('/images/dentisrty/фон.jpg')`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundBlendMode: 'overlay'
+          }}>
+            {/* Абстрактные декоративные элементы */}
+            <div className="absolute inset-0 overflow-hidden">
+              <div className="absolute -top-20 -right-20 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>
+              <div className="absolute -bottom-32 -left-32 w-80 h-80 bg-teal-300/20 rounded-full blur-3xl"></div>
+              <div className="absolute top-1/3 right-1/4 w-40 h-40 bg-emerald-400/15 rounded-full blur-2xl"></div>
+            </div>
+
+            <div className="relative flex flex-col lg:flex-row items-center lg:items-start">
+              {/* Левая часть с формой */}
+              <div className="w-full lg:w-3/4 p-6 lg:p-8 z-10">
+                <h2 className="text-2xl lg:text-3xl font-bold text-white mb-2">
+                  Записаться на прием
+                </h2>
+                <p className="text-white/90 mb-6 text-sm lg:text-base">
+                  поля, отмеченные * необходимы к заполнению
+                </p>
+                
+                <form className="mb-4 max-w-2xl">
+                  {/* Desktop layout - horizontal */}
+                  <div className="hidden lg:flex gap-4 mb-4 items-end">
+                    <div className="flex-1">
+                      <label className="block text-white text-sm font-medium mb-2">Имя</label>
+                      <input 
+                        type="text" 
+                        placeholder="Имя"
+                        className="w-full p-4 rounded-full border-0 bg-white/95 text-gray-800 placeholder-gray-500 focus:ring-2 focus:ring-white/50 focus:outline-none h-14"
+                      />
+                    </div>
+                    <div className="flex-1">
+                      <label className="block text-white text-sm font-medium mb-2">Телефон *</label>
+                      <input 
+                        type="tel" 
+                        placeholder="+7 (___) ____"
+                        className="w-full p-4 rounded-full border-0 bg-white/95 text-gray-800 placeholder-gray-500 focus:ring-2 focus:ring-white/50 focus:outline-none h-14"
+                      />
+                    </div>
+                    <button 
+                      type="submit" 
+                      className="bg-gradient-to-r from-pink-500 to-purple-600 text-white px-8 py-4 rounded-full font-medium hover:from-pink-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg h-14 flex-shrink-0"
+                    >
+                      Заказать звонок
+                    </button>
+                  </div>
+                  {/* Mobile layout - vertical */}
+                  <div className="lg:hidden space-y-4 mb-6">
+                    <div>
+                      <label className="block text-white text-sm font-medium mb-2">Имя</label>
+                      <input 
+                        type="text" 
+                        placeholder="Имя"
+                        className="w-full p-4 rounded-full border-0 bg-white/95 text-gray-800 placeholder-gray-500 focus:ring-2 focus:ring-white/50 focus:outline-none h-14"
+                      />
+                    </div>
+                    <div>
+                      <label className="block text-white text-sm font-medium mb-2">Телефон *</label>
+                      <input 
+                        type="tel" 
+                        placeholder="+7 (___) ____"
+                        className="w-full p-4 rounded-full border-0 bg-white/95 text-gray-800 placeholder-gray-500 focus:ring-2 focus:ring-white/50 focus:outline-none h-14"
+                      />
+                    </div>
+                    <button 
+                      type="submit" 
+                      className="w-full bg-gradient-to-r from-pink-500 to-purple-600 text-white px-8 py-4 rounded-full font-medium hover:from-pink-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg h-14"
+                    >
+                      Заказать звонок
+                    </button>
+                  </div>
+                  
+                  <p className="text-white/80 text-xs italic mb-2">
+                    Нажимая на кнопку, вы даете согласие на{' '}
+                    <span className="underline cursor-pointer hover:text-white">
+                      обработку своих персональных данных
+                    </span>
+                  </p>
+                </form>
+
+                <div className="text-white/85 text-sm space-y-1">
+                  <p>
+                    Запись через сайт является предварительной. Наш сотрудник свяжется с Вами для подтверждения записи к специалисту.
+                  </p>
+                  <p>
+                    Мы гарантируем неразглашение персональных данных и отсутствие рекламных рассылок по указанному вами телефону. Ваши данные необходимы для обеспечения обратной связи и организации записи к специалисту клиники.
+                  </p>
+                </div>
+              </div>
+              
+              {/* Изображение врача внизу справа */}
+              <div className="hidden lg:block absolute bottom-0 right-0 lg:right-8 z-10">
+                {/* Белый округлый фон для врача */}
+                <div className="absolute bottom-0 right-0">
+                  <div 
+                    className="w-80 h-96 bg-white/20 backdrop-blur-sm rounded-t-[140px] rounded-b-[40px]"
+                    style={{
+                      clipPath: 'ellipse(160px 200px at 50% 60%)'
+                    }}
+                  ></div>
+                </div>
+                
+                {/* Изображение врача */}
+                <div className="relative z-10">
+                  <Image
+                    src="/images/dentisrty/врач ф.png"
+                    alt="Врач стоматолог"
+                    width={350}
+                    height={420}
+                    className="object-contain max-h-[400px] lg:max-h-[420px]"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -388,7 +491,7 @@ export default function ThreeChannelPulpitisPage() {
             </p>
             
             <p className="text-gray-700 mb-4">
-              Если вы заинтересованы в лечении трехканального зуба, то приглашаем вас на прием к специалистам клиники «ГТ-Стоматология». Для записи на консультацию позвоните по номеру <Link href="tel:+74954808687" className="text-emerald-600 hover:text-emerald-700 underline">+7 495 432 65 37</Link> или воспользуйтесь формой обратной связи.
+              Если вы заинтересованы в лечении трехканального зуба, то приглашаем вас на прием к специалистам клиники «Альтамед-с». Для записи на консультацию позвоните по номеру <Link href="tel:+74952554450" className="text-emerald-600 hover:text-emerald-700 underline">+7 (495) 255-44-50</Link> или воспользуйтесь формой обратной связи.
             </p>
             
             <div className="bg-[#f7fafb] rounded-[20px] p-6 md:p-8 mb-6">

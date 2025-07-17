@@ -555,7 +555,12 @@ export default function TreatmentPage() {
                       service.id === 4 ? "/services/dentistry/acute-pain" :
                       service.id === 5 ? "/services/dentistry/pulpitis" :
                       service.id === 6 ? "/services/dentistry/periodontitis" :
-                      service.id === 7 ? "/services/dentistry/root-canals" : "#"}
+                      service.id === 7 ? "/services/dentistry/root-canals" :
+                      service.id === 8 ? "/services/dentistry/microscope" :
+                      service.id === 9 ? "/services/dentistry/icon" :
+                      service.id === 10 ? "/services/dentistry/front-teeth" :
+                      service.id === 11 ? "/services/dentistry/three-channel-pulpitis" :
+                      service.id === 12 ? "/services/dentistry/nerve-removal" : "#"}
                 className="bg-white rounded-[20px] shadow-lg overflow-hidden hover:shadow-xl transition-shadow cursor-pointer group"
               >
                 <div className="h-48 relative">
