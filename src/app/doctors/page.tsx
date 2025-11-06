@@ -1,136 +1,284 @@
+'use client';
+
 import Link from 'next/link';
 import Image from 'next/image';
+import { useState, useMemo } from 'react';
 import { doctors } from '../../data/static-data';
 
-export const metadata = {
-  title: 'Врачи | Альтамед-с',
-  description: 'Наши высококвалифицированные специалисты в медицинском центре Альтамед-с',
-};
-
 export default function DoctorsPage() {
-  const whyChooseUs = [
-    {
-      title: 'Высокая квалификация',
-      description: 'Все наши врачи имеют высшее медицинское образование, сертификаты специалистов и регулярно проходят курсы повышения квалификации.',
-      icon: (
-        <svg className="w-7 h-7 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-        </svg>
-      ),
-    },
-    {
-      title: 'Многолетний опыт',
-      description: 'Наши специалисты имеют богатый опыт работы, что позволяет им эффективно диагностировать и лечить различные заболевания.',
-      icon: (
-        <svg className="w-7 h-7 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-        </svg>
-      ),
-    },
-    {
-      title: 'Индивидуальный подход',
-      description: 'Мы уделяем внимание каждому пациенту и разрабатываем индивидуальные программы диагностики и лечения.',
-      icon: (
-        <svg className="w-7 h-7 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-        </svg>
-      ),
-    },
-  ];
+  const [searchName, setSearchName] = useState('');
+  const [audienceFilter, setAudienceFilter] = useState<'all' | 'adults' | 'children'>('all');
+  const [selectedSpecialization, setSelectedSpecialization] = useState<string>('');
+  const [isSpecializationOpen, setIsSpecializationOpen] = useState(false);
+
+  // Get unique specializations
+  const allSpecializations = useMemo(() => {
+    const specs = new Set<string>();
+    doctors.forEach(doctor => {
+      if (doctor.specialization.includes(',')) {
+        doctor.specialization.split(',').forEach(spec => specs.add(spec.trim()));
+      } else {
+        specs.add(doctor.specialization.trim());
+      }
+    });
+    return Array.from(specs).sort();
+  }, []);
+
+  // Filter doctors
+  const filteredDoctors = useMemo(() => {
+    return doctors.filter(doctor => {
+      // Name filter
+      if (searchName && !doctor.name.toLowerCase().includes(searchName.toLowerCase())) {
+        return false;
+      }
+
+      // Audience filter
+      if (audienceFilter !== 'all') {
+        const specializationLower = doctor.specialization.toLowerCase();
+        const isChildDoctor = specializationLower.includes('детск') || 
+                             specializationLower.includes('педиатр') ||
+                             specializationLower.includes('детский');
+        
+        if (audienceFilter === 'children' && !isChildDoctor) {
+          return false;
+        }
+        if (audienceFilter === 'adults' && isChildDoctor) {
+          return false;
+        }
+      }
+
+      // Specialization filter
+      if (selectedSpecialization) {
+        const doctorSpecs = doctor.specialization.includes(',') 
+          ? doctor.specialization.split(',').map(s => s.trim())
+          : [doctor.specialization.trim()];
+        
+        if (!doctorSpecs.includes(selectedSpecialization)) {
+          return false;
+        }
+      }
+
+      return true;
+    });
+  }, [searchName, audienceFilter, selectedSpecialization]);
+
+  const clearFilters = () => {
+    setSearchName('');
+    setAudienceFilter('all');
+    setSelectedSpecialization('');
+    setIsSpecializationOpen(false);
+  };
+
+  const hasActiveFilters = searchName || audienceFilter !== 'all' || selectedSpecialization;
 
   return (
-    <div className="flex flex-col min-h-full">
-      {/* Hero Section */}
-      <section className="bg-blue-50 py-16">
+    <div className="flex flex-col min-h-full bg-gray-50">
+      {/* Filter Section */}
+      <section className="py-8 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h1 className="text-4xl font-bold text-blue-900 mb-6">Наши специалисты</h1>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              В медицинском центре «Альтамед-с» работают высококвалифицированные врачи с многолетним опытом работы.
-              Наши специалисты постоянно совершенствуют свои навыки и применяют современные методики лечения.
-            </p>
+          <h1 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
+            Найти специалиста
+          </h1>
+
+          {/* Filter Container */}
+          <div className="bg-gray-100 rounded-2xl p-4 md:p-6 mb-6">
+            <div className="flex flex-col md:flex-row gap-4 items-center">
+              {/* Name Input */}
+              <div className="flex-1 w-full md:w-auto">
+                <input
+                  type="text"
+                  placeholder="Введите ФИО"
+                  value={searchName}
+                  onChange={(e) => setSearchName(e.target.value)}
+                  className="w-full px-4 py-3 rounded-xl border border-gray-200 bg-white text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
+                />
+              </div>
+
+              {/* Audience Filter Buttons */}
+              <div className="flex gap-2 flex-shrink-0">
+                <button
+                  onClick={() => setAudienceFilter('all')}
+                  className={`px-4 py-3 rounded-xl font-medium transition-colors ${
+                    audienceFilter === 'all'
+                      ? 'bg-emerald-500 text-white'
+                      : 'bg-white text-gray-700 hover:bg-gray-50'
+                  }`}
+                >
+                  Все
+                </button>
+                <button
+                  onClick={() => setAudienceFilter('adults')}
+                  className={`px-4 py-3 rounded-xl font-medium transition-colors ${
+                    audienceFilter === 'adults'
+                      ? 'bg-emerald-500 text-white'
+                      : 'bg-white text-gray-700 hover:bg-gray-50'
+                  }`}
+                >
+                  Взрослые
+                </button>
+                <button
+                  onClick={() => setAudienceFilter('children')}
+                  className={`px-4 py-3 rounded-xl font-medium transition-colors ${
+                    audienceFilter === 'children'
+                      ? 'bg-emerald-500 text-white'
+                      : 'bg-white text-gray-700 hover:bg-gray-50'
+                  }`}
+                >
+                  Детские
+                </button>
+              </div>
+
+              {/* Specialization Dropdown */}
+              <div className="relative flex-1 w-full md:w-auto">
+                <button
+                  onClick={() => setIsSpecializationOpen(!isSpecializationOpen)}
+                  className="w-full px-4 py-3 rounded-xl border border-gray-200 bg-white text-gray-700 text-left flex items-center justify-between hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
+                >
+                  <span className={selectedSpecialization ? 'text-gray-900' : 'text-gray-400'}>
+                    {selectedSpecialization || 'Выбрать специализацию'}
+                  </span>
+                  <svg
+                    className={`w-5 h-5 text-gray-400 transition-transform ${isSpecializationOpen ? 'transform rotate-180' : ''}`}
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+
+                {/* Dropdown Menu */}
+                {isSpecializationOpen && (
+                  <>
+                    <div
+                      className="fixed inset-0 z-10"
+                      onClick={() => setIsSpecializationOpen(false)}
+                    />
+                    <div className="absolute z-20 w-full mt-2 bg-white rounded-xl border border-gray-200 shadow-lg max-h-60 overflow-y-auto">
+                      {allSpecializations.map((spec) => (
+                        <button
+                          key={spec}
+                          onClick={() => {
+                            setSelectedSpecialization(spec);
+                            setIsSpecializationOpen(false);
+                          }}
+                          className={`w-full px-4 py-3 text-left hover:bg-gray-50 transition-colors ${
+                            selectedSpecialization === spec ? 'bg-emerald-50 text-emerald-700' : 'text-gray-700'
+                          }`}
+                        >
+                          {spec}
+                        </button>
+                      ))}
+                    </div>
+                  </>
+                )}
+              </div>
+
+              {/* Clear Button */}
+              <button
+                onClick={clearFilters}
+                className="w-10 h-10 rounded-full bg-white border border-gray-200 flex items-center justify-center hover:bg-gray-50 transition-colors flex-shrink-0"
+                title="Очистить фильтры"
+              >
+                <svg className="w-5 h-5 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+
+            {/* Active Filter Tag */}
+            {hasActiveFilters && (
+              <div className="mt-4 flex items-center gap-2">
+                <button
+                  onClick={clearFilters}
+                  className="px-3 py-1.5 bg-gray-200 rounded-lg text-gray-700 text-sm flex items-center gap-2 hover:bg-gray-300 transition-colors"
+                >
+                  <span>сбросить фильтр</span>
+                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+            )}
           </div>
         </div>
       </section>
 
       {/* Doctors Grid */}
-      <section className="py-16 bg-white">
+      <section className="py-8 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {doctors.length > 0 ? (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {doctors.map((doctor) => (
-                <div key={doctor.id} className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition border border-gray-100">
-                  <div className="relative h-80 w-full">
-                    <Image 
-                      src={doctor.photo || 'https://placehold.co/400x600/EAECFF/333?text=Доктор'} 
-                      alt={`Доктор ${doctor.name}`} 
-                      fill
-                      className="object-cover"
-                    />
+          {filteredDoctors.length > 0 ? (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+              {filteredDoctors.map((doctor) => (
+                <div 
+                  key={doctor.id} 
+                  className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all overflow-hidden flex flex-col"
+                >
+                  {/* Doctor Photo - Large rectangular with rounded corners on left */}
+                  <div className="flex items-start p-4 gap-4">
+                    <div className="relative w-[134px] h-[150px] rounded-2xl overflow-hidden flex-shrink-0 shadow-lg">
+                      <Image 
+                        src={doctor.photo || 'https://placehold.co/100x100/EAECFF/333?text=Dr'} 
+                        alt={doctor.name}
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      {/* Name */}
+                      <h2 className="text-base font-bold text-gray-900 mb-2 leading-tight">{doctor.name}</h2>
+                      
+                      {/* Experience and Reviews */}
+                      <div className="text-sm text-blue-600 mb-1">
+                        Стаж: <span className="font-semibold">{doctor.experience || 0}</span> {doctor.experience === 1 ? 'год' : doctor.experience < 5 ? 'года' : 'лет'}
+                      </div>
+                      <div className="text-sm text-emerald-600">
+                        Отзывов: <span className="font-semibold">0</span>
+                      </div>
+                    </div>
                   </div>
-                  <div className="p-6">
-                    <h2 className="text-xl font-semibold text-gray-900 mb-1">{doctor.name}</h2>
-                    <p className="text-blue-600 mb-4">{doctor.specialization}</p>
-                    <p className="text-gray-600 mb-4">Опыт работы: {doctor.experience || 0} лет</p>
-                    <Link href={`/doctors/${doctor.id}`} className="text-blue-600 font-medium hover:text-blue-700 transition">
-                      Подробнее →
+
+                  {/* Specialization */}
+                  <div className="px-4 mb-3">
+                    {doctor.specialization.includes(',') ? (
+                      <div className="flex flex-wrap gap-1">
+                        {doctor.specialization.split(',').map((spec, index) => (
+                          <span key={index} className="px-3 py-1 bg-gray-100 rounded-full text-xs text-gray-700">
+                            {spec.trim()}
+                          </span>
+                        ))}
+                      </div>
+                    ) : (
+                      <span className="px-3 py-1 bg-gray-100 rounded-full text-xs text-gray-700">
+                        {doctor.specialization}
+                      </span>
+                    )}
+                  </div>
+
+                  {/* Location */}
+                  <div className="px-4 mb-4 flex items-center text-sm text-gray-600">
+                    <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
+                    Одинцово
+                  </div>
+
+                  {/* Action Button - always at bottom */}
+                  <div className="px-4 pb-4 mt-auto">
+                    <Link 
+                      href={`/doctors/${(doctor as any).slug}`}
+                      className="block w-full bg-emerald-500 hover:bg-emerald-600 text-white text-center py-2.5 px-4 rounded-lg font-medium transition-colors text-sm"
+                    >
+                      Записаться онлайн
                     </Link>
                   </div>
                 </div>
               ))}
             </div>
           ) : (
-            <div className="bg-gray-50 p-8 rounded-xl text-center">
-              <h3 className="text-xl font-medium text-gray-900 mb-2">Специалисты в данный момент не найдены</h3>
-              <p className="text-gray-600">Информация о врачах будет добавлена в ближайшее время.</p>
+            <div className="bg-white p-8 rounded-lg text-center shadow-sm">
+              <h3 className="text-xl font-medium text-gray-900 mb-2">Специалисты не найдены</h3>
+              <p className="text-gray-600">Попробуйте изменить параметры поиска</p>
             </div>
           )}
-        </div>
-      </section>
-
-      {/* Why Choose Us */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Почему выбирают наших врачей</h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Наши специалисты сочетают профессионализм, опыт и заботу о каждом пациенте
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {whyChooseUs.map((item, index) => (
-              <div key={index} className="bg-white p-6 rounded-xl shadow-sm">
-                <div className="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mb-4">
-                  {item.icon}
-                </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">{item.title}</h3>
-                <p className="text-gray-600">
-                  {item.description}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-16 bg-blue-600 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h2 className="text-3xl font-bold mb-4">Запишитесь на прием к специалисту</h2>
-            <p className="text-lg mb-8 max-w-3xl mx-auto">
-              Получите профессиональную консультацию и качественное лечение у наших врачей
-            </p>
-            <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <Link href="/appointments" className="bg-white text-blue-600 py-3 px-6 rounded-md font-medium hover:bg-gray-100 transition text-center">
-                Записаться на прием
-              </Link>
-              <Link href="/contacts" className="border border-white text-white py-3 px-6 rounded-md font-medium hover:bg-blue-700 transition text-center">
-                Контакты
-              </Link>
-            </div>
-          </div>
         </div>
       </section>
     </div>

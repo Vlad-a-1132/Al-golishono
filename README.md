@@ -63,8 +63,8 @@
 
 1. **Клонируйте репозиторий**
    ```bash
-   git clone https://github.com/Vlad-a-1132/altamed-c.git
-   cd altamed-c
+   git clone https://github.com/Vlad-a-1132/Al-sait.git
+   cd Al-sait
    ```
 
 2. **Установите зависимости**
@@ -202,3 +202,6 @@ npm run build
 ---
 
 **Последнее обновление**: Исправлена совместимость с Cloudflare Pages
+
+
+

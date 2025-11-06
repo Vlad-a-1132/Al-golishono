@@ -9,10 +9,51 @@ export function generateStaticParams() {
   }));
 }
 
-export function generateMetadata() {
+export async function generateMetadata({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
+  const article = articles.find(a => a.id === parseInt(id));
+  
+  if (!article) {
+    return {
+      title: 'Статья не найдена - Альтамед-С',
+      description: 'Статья не найдена',
+    };
+  }
+
+  // Создаем описание из содержимого статьи (первые 160 символов)
+  const contentText = article.content?.replace(/<[^>]*>/g, '').substring(0, 160) || '';
+  const description = contentText ? `${contentText}...` : `Читайте статью "${article.title}" в блоге медицинского центра Альтамед-с в Одинцово. Полезная информация о здоровье и медицине.`;
+
   return {
-    title: 'Статья - Альтамед-С',
-    description: 'Читайте наши статьи о здоровье и медицине',
+    title: `${article.title} - Блог | Медицинский центр Альтамед-с в Одинцово`,
+    description: description,
+    keywords: [
+      'медицинские статьи Одинцово',
+      'статьи о здоровье Одинцово',
+      'блог Альтамед-с',
+      article.title.toLowerCase(),
+      'Московская область медицинские статьи',
+      'Одинцовский район статьи о здоровье'
+    ],
+    openGraph: {
+      title: `${article.title} - Блог | Альтамед-с`,
+      description: description,
+      url: `https://altamed-s.ru/blog/${id}`,
+      siteName: 'Альтамед-с',
+      images: article.image ? [
+        {
+          url: `https://altamed-s.ru${article.image}`,
+          width: 1200,
+          height: 630,
+          alt: article.title,
+        },
+      ] : undefined,
+      locale: 'ru_RU',
+      type: 'article',
+    },
+    alternates: {
+      canonical: `https://altamed-s.ru/blog/${id}`,
+    },
   };
 }
 

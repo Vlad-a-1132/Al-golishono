@@ -2,11 +2,15 @@
 
 import Link from 'next/link'
 import { useState } from 'react'
+import { useRouter } from 'next/navigation'
 import Image from 'next/image'
+import { useAccessibility } from '../contexts/AccessibilityContext'
 
 export default function Header() {
+  const router = useRouter()
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [searchQuery, setSearchQuery] = useState('')
+  const { isAccessibilityMode, toggleAccessibilityMode } = useAccessibility()
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
@@ -14,12 +18,15 @@ export default function Header() {
 
   const handleSearchSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    // Обработка поиска
-    console.log('Search query:', searchQuery)
+    if (searchQuery.trim()) {
+      router.push(`/search?q=${encodeURIComponent(searchQuery.trim())}`)
+      setSearchQuery('')
+    }
   }
 
   return (
-    <header className="bg-white">
+    <>
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm w-full">
       {/* Верхний уровень: логотип, телефон и кнопки */}
       <div className="border-b border-gray-100 py-3">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -34,7 +41,7 @@ export default function Header() {
                   height={40}
                   className="object-contain"
                 />
-                <div className="text-[#13AB7B] font-semibold ml-2 text-xl">Альтамед-с</div>
+                <div className="text-[#13AB7B] font-semibold ml-2 text-xl">Альтамед-С</div>
               </Link>
               
               {/* Телефон - скрываем на мобильных */}
@@ -42,21 +49,46 @@ export default function Header() {
                 <svg className="w-5 h-5 text-gray-600 mr-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.362 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.574 2.81.7A2 2 0 0122 16.92z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
-                <span className="text-gray-900 font-medium">+7 (495) 127-51-03</span>
+                <span className="text-gray-900 font-medium">+7 (495) 255-44-50</span>
               </div>
             </div>
             
             {/* Кнопки справа - адаптируем для мобильных */}
             <div className="flex items-center space-x-2 md:space-x-4">
-              <Link href="/account" className="hidden md:flex items-center text-gray-600 hover:text-[#13AB7B] transition text-sm border border-gray-300 rounded px-3 py-1.5">
+              <button
+                onClick={toggleAccessibilityMode}
+                className={`hidden md:flex items-center transition text-sm border rounded px-3 py-1.5 ${
+                  isAccessibilityMode
+                    ? 'bg-yellow-400 text-black border-yellow-600 font-bold'
+                    : 'text-gray-600 hover:text-[#13AB7B] border-gray-300'
+                }`}
+                aria-label="Версия для слабовидящих"
+                title={isAccessibilityMode ? 'Выключить версию для слабовидящих' : 'Включить версию для слабовидящих'}
+              >
+                <svg className="w-4 h-4 mr-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z" fill="currentColor"/>
+                </svg>
+                Версия для слабовидящих
+              </button>
+              <Link href="https://lk.altamed-c.ru/login" target="_blank" rel="noopener noreferrer" className="hidden md:flex items-center bg-[#13AB7B] text-white hover:bg-[#10a070] transition-colors text-sm border border-[#13AB7B] rounded px-3 py-1.5 shadow-sm">
                 <svg className="w-4 h-4 mr-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M12 12C14.21 12 16 10.21 16 8C16 5.79 14.21 4 12 4C9.79 4 8 5.79 8 8C8 10.21 9.79 12 12 12ZM12 14C9.33 14 4 15.34 4 18V20H20V18C20 15.34 14.67 14 12 14Z" fill="currentColor"/>
                 </svg>
                 Личный кабинет
               </Link>
-              <Link href="/appointments" className="bg-orange-500 text-white px-2 py-1.5 md:px-4 md:py-2 rounded hover:bg-orange-600 transition text-xs md:text-sm">
-                <span className="hidden md:inline">Записаться онлайн</span>
-                <span className="md:hidden">Запись</span>
+              {/* Мобильные кнопки */}
+              <div className="md:hidden flex items-center space-x-2">
+                <Link 
+                  href="/appointments" 
+                  className="bg-orange-500 text-white px-3 py-1.5 rounded-md hover:bg-orange-600 transition-colors text-xs font-medium shadow-sm"
+                >
+                  Запись
+                </Link>
+              </div>
+              
+              {/* Десктопная кнопка записи */}
+              <Link href="/appointments" className="hidden md:block bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600 transition text-sm">
+                Записаться онлайн
               </Link>
               
               {/* Mobile menu button */}
@@ -141,19 +173,22 @@ export default function Header() {
                 <Link href="/diagnostics" className="text-gray-800 hover:text-[#13AB7B] transition py-2 text-sm font-medium">
                   Диагностика
                 </Link>
-                <Link href="/analyses" className="text-gray-800 hover:text-[#13AB7B] transition py-2 text-sm font-medium">
+                <Link href="/services/lab-tests" className="text-gray-800 hover:text-[#13AB7B] transition py-2 text-sm font-medium">
                   Анализы
+                </Link>
+                <Link href="/rehabilitation" className="text-gray-800 hover:text-[#13AB7B] transition py-2 text-sm font-medium">
+                  Реабилитация
                 </Link>
                 <Link href="/promo" className="text-gray-800 hover:text-[#13AB7B] transition py-2 text-sm font-medium">
                   Акции
                 </Link>
-                <Link href="/patients" className="text-gray-800 hover:text-[#13AB7B] transition py-2 text-sm font-medium">
-                  Пациентам
+                <Link href="/schedule" className="text-gray-800 hover:text-[#13AB7B] transition py-2 text-sm font-medium">
+                  Расписание
                 </Link>
                 <Link href="/about" className="text-gray-800 hover:text-[#13AB7B] transition py-2 text-sm font-medium">
                   О нас
                 </Link>
-                <Link href="/reviews" className="text-gray-800 hover:text-[#13AB7B] transition py-2 text-sm font-medium">
+                <Link href="/about?section=reviews" className="text-gray-800 hover:text-[#13AB7B] transition py-2 text-sm font-medium">
                   Отзывы
                 </Link>
                 <Link href="/contacts" className="text-gray-800 hover:text-[#13AB7B] transition py-2 text-sm font-medium">
@@ -194,13 +229,27 @@ export default function Header() {
             <svg className="w-5 h-5 text-gray-600 mr-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.362 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.574 2.81.7A2 2 0 0122 16.92z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
-            <a href="tel:+74951275103" className="text-gray-900 font-medium">+7 (495) 127-51-03</a>
+            <a href="tel:+74952554450" className="text-gray-900 font-medium">+7 (495) 255-44-50</a>
           </div>
         </div>
         
         {/* Меню навигации */}
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-          <Link href="/account" className="flex items-center px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
+          <button
+            onClick={toggleAccessibilityMode}
+            className={`flex items-center w-full px-3 py-2 rounded-md text-base font-medium ${
+              isAccessibilityMode
+                ? 'bg-yellow-400 text-black font-bold'
+                : 'text-gray-700 hover:text-gray-900 hover:bg-gray-50'
+            }`}
+            aria-label="Версия для слабовидящих"
+          >
+            <svg className="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z" fill="currentColor"/>
+            </svg>
+            Версия для слабовидящих
+          </button>
+          <Link href="https://lk.altamed-c.ru/login" target="_blank" rel="noopener noreferrer" className="flex items-center px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
             <svg className="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M12 12C14.21 12 16 10.21 16 8C16 5.79 14.21 4 12 4C9.79 4 8 5.79 8 8C8 10.21 9.79 12 12 12ZM12 14C9.33 14 4 15.34 4 18V20H20V18C20 15.34 14.67 14 12 14Z" fill="currentColor"/>
             </svg>
@@ -215,19 +264,22 @@ export default function Header() {
           <Link href="/diagnostics" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
             Диагностика
           </Link>
-          <Link href="/analyses" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
+          <Link href="/services/lab-tests" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
             Анализы
+          </Link>
+          <Link href="/rehabilitation" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
+            Реабилитация
           </Link>
           <Link href="/promo" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
             Акции
           </Link>
-          <Link href="/patients" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
-            Пациентам
+          <Link href="/schedule" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
+            Расписание
           </Link>
           <Link href="/about" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
             О нас
           </Link>
-          <Link href="/reviews" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
+          <Link href="/about?section=reviews" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
             Отзывы
           </Link>
           <Link href="/contacts" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
@@ -236,5 +288,8 @@ export default function Header() {
         </div>
       </div>
     </header>
+    {/* Spacer to offset fixed header height */}
+    <div className="h-[72px] md:h-[128px]"></div>
+    </>
   )
 } 
