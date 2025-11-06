@@ -400,14 +400,14 @@ export default function ServicesPage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 justify-items-center">
             {firstContainerData.map((service) => (
               service.id === 'allergology' ? (
-                <Link key={service.id} href="/services/allergology" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0">
+                <Link key={service.id} href="/services/allergology" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
                     <img 
                       src="/images/yslugi/allergoly.webp" 
                       alt="Аллергология" 
               className="w-16 md:w-20 h-full object-cover rounded-l-[20px]"
             />
-            <div className="flex-1 px-2 md:px-4">
-              <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
+            <div className="flex-1 px-2 md:px-4 min-w-0 overflow-hidden">
+              <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300 break-words line-clamp-2 leading-tight">
                 {service.title}
               </h3>
             </div>
@@ -416,14 +416,14 @@ export default function ServicesPage() {
             </svg>
           </Link>
         ) : service.id === 'gastroenterology' ? (
-                <Link key={service.id} href="/services/gastroenterology" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0">
+                <Link key={service.id} href="/services/gastroenterology" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
                     <img 
                       src="/images/yslugi/Gastroenterology.webp" 
                       alt="Гастроэнтерология" 
                       className="w-16 md:w-20 h-full object-cover rounded-l-[20px]"
                     />
-                    <div className="flex-1 px-2 md:px-4">
-                      <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
+                    <div className="flex-1 px-2 md:px-4 min-w-0 overflow-hidden">
+                      <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300 break-words line-clamp-2 leading-tight">
                         {service.title}
                       </h3>
                     </div>
@@ -438,8 +438,8 @@ export default function ServicesPage() {
                       alt="Гинекология" 
                       className="w-16 md:w-20 h-full object-cover rounded-l-[20px]"
                     />
-                    <div className="flex-1 px-2 md:px-4">
-                      <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
+                    <div className="flex-1 px-2 md:px-4 min-w-0 overflow-hidden">
+                      <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300 break-words line-clamp-2 leading-tight">
                         {service.title}
                       </h3>
                     </div>
@@ -454,8 +454,8 @@ export default function ServicesPage() {
                       alt="Дерматология" 
                       className="w-16 md:w-20 h-full object-cover rounded-l-[20px]"
                     />
-                    <div className="flex-1 px-2 md:px-4">
-                      <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
+                    <div className="flex-1 px-2 md:px-4 min-w-0 overflow-hidden">
+                      <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300 break-words line-clamp-2 leading-tight">
                         {service.title}
                       </h3>
                     </div>
@@ -470,8 +470,8 @@ export default function ServicesPage() {
                       alt="Кардиология" 
                       className="w-16 md:w-20 h-full object-cover rounded-l-[20px]"
                     />
-                    <div className="flex-1 px-2 md:px-4">
-                      <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
+                    <div className="flex-1 px-2 md:px-4 min-w-0 overflow-hidden">
+                      <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300 break-words line-clamp-2 leading-tight">
                         {service.title}
                       </h3>
                     </div>
@@ -486,8 +486,8 @@ export default function ServicesPage() {
                       alt="Лазерная косметология" 
                       className="w-16 md:w-20 h-full object-cover rounded-l-[20px]"
                     />
-                    <div className="flex-1 px-2 md:px-4">
-                      <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
+                    <div className="flex-1 px-2 md:px-4 min-w-0 overflow-hidden">
+                      <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300 break-words line-clamp-2 leading-tight">
                         {service.title}
                       </h3>
                     </div>
@@ -502,8 +502,8 @@ export default function ServicesPage() {
                       alt="Маммология" 
                       className="w-16 md:w-20 h-full object-cover rounded-l-[20px]"
                     />
-                    <div className="flex-1 px-2 md:px-4">
-                      <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
+                    <div className="flex-1 px-2 md:px-4 min-w-0 overflow-hidden">
+                      <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300 break-words line-clamp-2 leading-tight">
                         {service.title}
                       </h3>
                     </div>
@@ -518,8 +518,8 @@ export default function ServicesPage() {
                       alt="Неврология" 
                       className="w-16 md:w-20 h-full object-cover rounded-l-[20px]"
                     />
-                    <div className="flex-1 px-2 md:px-4">
-                      <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
+                    <div className="flex-1 px-2 md:px-4 min-w-0 overflow-hidden">
+                      <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300 break-words line-clamp-2 leading-tight">
                         {service.title}
                       </h3>
                     </div>
@@ -534,8 +534,8 @@ export default function ServicesPage() {
                       alt="Отоларингология" 
                       className="w-16 md:w-20 h-full object-cover rounded-l-[20px]"
                     />
-                    <div className="flex-1 px-2 md:px-4">
-                      <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
+                    <div className="flex-1 px-2 md:px-4 min-w-0 overflow-hidden">
+                      <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300 break-words line-clamp-2 leading-tight">
                         {service.title}
                       </h3>
                     </div>
@@ -550,8 +550,8 @@ export default function ServicesPage() {
                       alt="Офтальмология" 
                       className="w-16 md:w-20 h-full object-cover rounded-l-[20px]"
                     />
-                    <div className="flex-1 px-2 md:px-4">
-                      <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
+                    <div className="flex-1 px-2 md:px-4 min-w-0 overflow-hidden">
+                      <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300 break-words line-clamp-2 leading-tight">
                         {service.title}
                       </h3>
                     </div>
@@ -566,8 +566,8 @@ export default function ServicesPage() {
                       alt="Педиатрия" 
                       className="w-16 md:w-20 h-full object-cover rounded-l-[20px]"
                     />
-                    <div className="flex-1 px-2 md:px-4">
-                      <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
+                    <div className="flex-1 px-2 md:px-4 min-w-0 overflow-hidden">
+                      <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300 break-words line-clamp-2 leading-tight">
                         {service.title}
                       </h3>
                     </div>
@@ -582,8 +582,8 @@ export default function ServicesPage() {
                       alt="Проктология" 
                       className="w-16 md:w-20 h-full object-cover rounded-l-[20px]"
                     />
-                    <div className="flex-1 px-2 md:px-4">
-                      <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
+                    <div className="flex-1 px-2 md:px-4 min-w-0 overflow-hidden">
+                      <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300 break-words line-clamp-2 leading-tight">
                         {service.title}
                       </h3>
                     </div>
@@ -598,8 +598,8 @@ export default function ServicesPage() {
                       alt="Сурдология" 
                       className="w-16 md:w-20 h-full object-cover rounded-l-[20px]"
                     />
-                    <div className="flex-1 px-2 md:px-4">
-                      <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
+                    <div className="flex-1 px-2 md:px-4 min-w-0 overflow-hidden">
+                      <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300 break-words line-clamp-2 leading-tight">
                         {service.title}
                       </h3>
                     </div>
@@ -614,8 +614,8 @@ export default function ServicesPage() {
                       alt="Терапия" 
                       className="w-16 md:w-20 h-full object-cover rounded-l-[20px]"
                     />
-                    <div className="flex-1 px-2 md:px-4">
-                      <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
+                    <div className="flex-1 px-2 md:px-4 min-w-0 overflow-hidden">
+                      <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300 break-words line-clamp-2 leading-tight">
                         {service.title}
                       </h3>
                     </div>
@@ -630,8 +630,8 @@ export default function ServicesPage() {
                       alt="Травматология" 
                       className="w-16 md:w-20 h-full object-cover rounded-l-[20px]"
                     />
-                    <div className="flex-1 px-2 md:px-4">
-                      <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
+                    <div className="flex-1 px-2 md:px-4 min-w-0 overflow-hidden">
+                      <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300 break-words line-clamp-2 leading-tight">
                         {service.title}
                       </h3>
                     </div>
@@ -646,8 +646,8 @@ export default function ServicesPage() {
                       alt="Урология" 
                       className="w-16 md:w-20 h-full object-cover rounded-l-[20px]"
                     />
-                    <div className="flex-1 px-2 md:px-4">
-                      <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
+                    <div className="flex-1 px-2 md:px-4 min-w-0 overflow-hidden">
+                      <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300 break-words line-clamp-2 leading-tight">
                         {service.title}
                       </h3>
                     </div>
@@ -662,8 +662,8 @@ export default function ServicesPage() {
                       alt="Хирургия" 
                       className="w-16 md:w-20 h-full object-cover rounded-l-[20px]"
                     />
-                    <div className="flex-1 px-2 md:px-4">
-                      <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
+                    <div className="flex-1 px-2 md:px-4 min-w-0 overflow-hidden">
+                      <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300 break-words line-clamp-2 leading-tight">
                         {service.title}
                       </h3>
                     </div>
@@ -678,8 +678,8 @@ export default function ServicesPage() {
                       alt="Эндокринология" 
                       className="w-16 md:w-20 h-full object-cover rounded-l-[20px]"
                     />
-                    <div className="flex-1 px-2 md:px-4">
-                      <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
+                    <div className="flex-1 px-2 md:px-4 min-w-0 overflow-hidden">
+                      <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300 break-words line-clamp-2 leading-tight">
                         {service.title}
                       </h3>
                     </div>
@@ -694,8 +694,8 @@ export default function ServicesPage() {
                       alt="Стоматология" 
                       className="w-16 md:w-20 h-full object-cover rounded-l-[20px]"
                     />
-                    <div className="flex-1 px-2 md:px-4">
-                      <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
+                    <div className="flex-1 px-2 md:px-4 min-w-0 overflow-hidden">
+                      <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300 break-words line-clamp-2 leading-tight">
                         {service.title}
                       </h3>
                     </div>
@@ -710,11 +710,11 @@ export default function ServicesPage() {
                           {service.icon}
                         </div>
                       </div>
-                  <div className="flex-1 px-2 md:px-4">
-                        <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
-                          {service.title}
-                        </h3>
-                      </div>
+                  <div className="flex-1 px-2 md:px-4 min-w-0 overflow-hidden">
+                      <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300 break-words line-clamp-2 leading-tight">
+                        {service.title}
+                      </h3>
+                    </div>
                   <svg className="w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-white group-hover:bg-emerald-500 rounded-full p-1 transition-all duration-300 flex-shrink-0 mr-2 md:mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
@@ -1011,11 +1011,11 @@ export default function ServicesPage() {
                     alt="Карбокситерапия" 
                     className="w-16 md:w-20 h-full object-cover rounded-l-[20px]"
                   />
-                  <div className="flex-1 px-2 md:px-4">
-                    <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
-                      {service.title}
-                    </h3>
-                  </div>
+                  <div className="flex-1 px-2 md:px-4 min-w-0 overflow-hidden">
+                      <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300 break-words line-clamp-2 leading-tight">
+                        {service.title}
+                      </h3>
+                    </div>
                   <svg className="w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-white group-hover:bg-emerald-500 rounded-full p-1 transition-all duration-300 flex-shrink-0 mr-2 md:mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
@@ -1027,11 +1027,11 @@ export default function ServicesPage() {
                     alt="Остеопатия" 
                     className="w-16 md:w-20 h-full object-cover rounded-l-[20px]"
                   />
-                  <div className="flex-1 px-2 md:px-4">
-                    <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
-                      {service.title}
-                    </h3>
-                  </div>
+                  <div className="flex-1 px-2 md:px-4 min-w-0 overflow-hidden">
+                      <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300 break-words line-clamp-2 leading-tight">
+                        {service.title}
+                      </h3>
+                    </div>
                   <svg className="w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-white group-hover:bg-emerald-500 rounded-full p-1 transition-all duration-300 flex-shrink-0 mr-2 md:mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
@@ -1043,11 +1043,11 @@ export default function ServicesPage() {
                     alt="Физиотерапия" 
                     className="w-16 md:w-20 h-full object-cover rounded-l-[20px]"
                   />
-                  <div className="flex-1 px-2 md:px-4">
-                    <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
-                      {service.title}
-                    </h3>
-                  </div>
+                  <div className="flex-1 px-2 md:px-4 min-w-0 overflow-hidden">
+                      <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300 break-words line-clamp-2 leading-tight">
+                        {service.title}
+                      </h3>
+                    </div>
                   <svg className="w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-white group-hover:bg-emerald-500 rounded-full p-1 transition-all duration-300 flex-shrink-0 mr-2 md:mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
@@ -1059,11 +1059,11 @@ export default function ServicesPage() {
                     alt="Психотерапия" 
                     className="w-16 md:w-20 h-full object-cover rounded-l-[20px]"
                   />
-                  <div className="flex-1 px-2 md:px-4">
-                    <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
-                      {service.title}
-                    </h3>
-                  </div>
+                  <div className="flex-1 px-2 md:px-4 min-w-0 overflow-hidden">
+                      <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300 break-words line-clamp-2 leading-tight">
+                        {service.title}
+                      </h3>
+                    </div>
                   <svg className="w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-white group-hover:bg-emerald-500 rounded-full p-1 transition-all duration-300 flex-shrink-0 mr-2 md:mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
@@ -1075,11 +1075,11 @@ export default function ServicesPage() {
                     alt="Психология" 
                     className="w-16 md:w-20 h-full object-cover rounded-l-[20px]"
                   />
-                  <div className="flex-1 px-2 md:px-4">
-                    <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
-                      {service.title}
-                    </h3>
-                  </div>
+                  <div className="flex-1 px-2 md:px-4 min-w-0 overflow-hidden">
+                      <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300 break-words line-clamp-2 leading-tight">
+                        {service.title}
+                      </h3>
+                    </div>
                   <svg className="w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-white group-hover:bg-emerald-500 rounded-full p-1 transition-all duration-300 flex-shrink-0 mr-2 md:mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
@@ -1091,11 +1091,11 @@ export default function ServicesPage() {
                     alt="Семейная психология" 
                     className="w-16 md:w-20 h-full object-cover rounded-l-[20px]"
                   />
-                  <div className="flex-1 px-2 md:px-4">
-                    <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
-                      {service.title}
-                    </h3>
-                  </div>
+                  <div className="flex-1 px-2 md:px-4 min-w-0 overflow-hidden">
+                      <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300 break-words line-clamp-2 leading-tight">
+                        {service.title}
+                      </h3>
+                    </div>
                   <svg className="w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-white group-hover:bg-emerald-500 rounded-full p-1 transition-all duration-300 flex-shrink-0 mr-2 md:mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
@@ -1107,11 +1107,11 @@ export default function ServicesPage() {
                     alt="Массаж" 
                     className="w-16 md:w-20 h-full object-cover rounded-l-[20px]"
                   />
-                  <div className="flex-1 px-2 md:px-4">
-                    <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
-                      {service.title}
-                    </h3>
-                  </div>
+                  <div className="flex-1 px-2 md:px-4 min-w-0 overflow-hidden">
+                      <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300 break-words line-clamp-2 leading-tight">
+                        {service.title}
+                      </h3>
+                    </div>
                   <svg className="w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-white group-hover:bg-emerald-500 rounded-full p-1 transition-all duration-300 flex-shrink-0 mr-2 md:mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
@@ -1123,11 +1123,11 @@ export default function ServicesPage() {
                     alt="Вакуумный массаж" 
                     className="w-16 md:w-20 h-full object-cover rounded-l-[20px]"
                   />
-                  <div className="flex-1 px-2 md:px-4">
-                    <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
-                      {service.title}
-                    </h3>
-                  </div>
+                  <div className="flex-1 px-2 md:px-4 min-w-0 overflow-hidden">
+                      <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300 break-words line-clamp-2 leading-tight">
+                        {service.title}
+                      </h3>
+                    </div>
                   <svg className="w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-white group-hover:bg-emerald-500 rounded-full p-1 transition-all duration-300 flex-shrink-0 mr-2 md:mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
@@ -1139,11 +1139,11 @@ export default function ServicesPage() {
                     alt="Биорезонансная терапия" 
                     className="w-16 md:w-20 h-full object-cover rounded-l-[20px]"
                   />
-                  <div className="flex-1 px-2 md:px-4">
-                    <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
-                      {service.title}
-                    </h3>
-                  </div>
+                  <div className="flex-1 px-2 md:px-4 min-w-0 overflow-hidden">
+                      <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300 break-words line-clamp-2 leading-tight">
+                        {service.title}
+                      </h3>
+                    </div>
                   <svg className="w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-white group-hover:bg-emerald-500 rounded-full p-1 transition-all duration-300 flex-shrink-0 mr-2 md:mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
@@ -1155,11 +1155,11 @@ export default function ServicesPage() {
                     alt="Ударно-волновая терапия" 
                     className="w-16 md:w-20 h-full object-cover rounded-l-[20px]"
                   />
-                  <div className="flex-1 px-2 md:px-4">
-                    <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
-                      {service.title}
-                    </h3>
-                  </div>
+                  <div className="flex-1 px-2 md:px-4 min-w-0 overflow-hidden">
+                      <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300 break-words line-clamp-2 leading-tight">
+                        {service.title}
+                      </h3>
+                    </div>
                   <svg className="w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-white group-hover:bg-emerald-500 rounded-full p-1 transition-all duration-300 flex-shrink-0 mr-2 md:mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
@@ -1372,11 +1372,11 @@ export default function ServicesPage() {
                     alt="Урология" 
                     className="w-16 md:w-20 h-full object-cover rounded-l-[20px]"
                   />
-                  <div className="flex-1 px-2 md:px-4">
-                    <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
-                      {service.title}
-                    </h3>
-                  </div>
+                  <div className="flex-1 px-2 md:px-4 min-w-0 overflow-hidden">
+                      <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300 break-words line-clamp-2 leading-tight">
+                        {service.title}
+                      </h3>
+                    </div>
                   <svg className="w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-white group-hover:bg-emerald-500 rounded-full p-1 transition-all duration-300 flex-shrink-0 mr-2 md:mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
@@ -1388,11 +1388,11 @@ export default function ServicesPage() {
                     alt="Хирургия" 
                     className="w-16 md:w-20 h-full object-cover rounded-l-[20px]"
                   />
-                  <div className="flex-1 px-2 md:px-4">
-                    <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
-                      {service.title}
-                    </h3>
-                  </div>
+                  <div className="flex-1 px-2 md:px-4 min-w-0 overflow-hidden">
+                      <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300 break-words line-clamp-2 leading-tight">
+                        {service.title}
+                      </h3>
+                    </div>
                   <svg className="w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-white group-hover:bg-emerald-500 rounded-full p-1 transition-all duration-300 flex-shrink-0 mr-2 md:mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
@@ -1404,11 +1404,11 @@ export default function ServicesPage() {
                     alt="Эндокринология" 
                     className="w-16 md:w-20 h-full object-cover rounded-l-[20px]"
                   />
-                  <div className="flex-1 px-2 md:px-4">
-                    <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
-                      {service.title}
-                    </h3>
-                  </div>
+                  <div className="flex-1 px-2 md:px-4 min-w-0 overflow-hidden">
+                      <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300 break-words line-clamp-2 leading-tight">
+                        {service.title}
+                      </h3>
+                    </div>
                   <svg className="w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-white group-hover:bg-emerald-500 rounded-full p-1 transition-all duration-300 flex-shrink-0 mr-2 md:mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
