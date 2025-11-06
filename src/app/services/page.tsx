@@ -432,7 +432,7 @@ export default function ServicesPage() {
                     </svg>
                   </Link>
                 ) : service.id === 'gynecology' ? (
-                <Link key={service.id} href="/services/gynecology" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0">
+                <Link key={service.id} href="/services/gynecology" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
                     <img 
                       src="/images/yslugi/Gynecology.webp" 
                       alt="Гинекология" 
@@ -448,7 +448,7 @@ export default function ServicesPage() {
                     </svg>
                 </Link>
                 ) : service.id === 'dermatology' ? (
-                <Link key={service.id} href="/services/dermatology" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0">
+                <Link key={service.id} href="/services/dermatology" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
                     <img 
                       src="/images/yslugi/Dermatology.webp" 
                       alt="Дерматология" 
@@ -464,7 +464,7 @@ export default function ServicesPage() {
                     </svg>
                   </Link>
                 ) : service.id === 'cardiology' ? (
-                <Link key={service.id} href="/services/cardiology" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0">
+                <Link key={service.id} href="/services/cardiology" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
                     <img 
                       src="/images/yslugi/Cardiology.webp" 
                       alt="Кардиология" 
@@ -480,7 +480,7 @@ export default function ServicesPage() {
                     </svg>
                   </Link>
                 ) : service.id === 'laser-cosmetology' ? (
-                <Link key={service.id} href="/services/laser-cosmetology" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0">
+                <Link key={service.id} href="/services/laser-cosmetology" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
                     <img 
                       src="/images/yslugi/laser cosmetology 1.webp" 
                       alt="Лазерная косметология" 
@@ -496,7 +496,7 @@ export default function ServicesPage() {
                     </svg>
                   </Link>
                 ) : service.id === 'mammology' ? (
-                <Link key={service.id} href="/services/mammology" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0">
+                <Link key={service.id} href="/services/mammology" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
                     <img 
                       src="/images/yslugi/mammalogy.webp" 
                       alt="Маммология" 
@@ -512,7 +512,7 @@ export default function ServicesPage() {
                     </svg>
                   </Link>
                 ) : service.id === 'neurology' ? (
-                <Link key={service.id} href="/services/neurology" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0">
+                <Link key={service.id} href="/services/neurology" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
                     <img 
                       src="/images/images allergoly/nevrolog.webp" 
                       alt="Неврология" 
@@ -528,7 +528,7 @@ export default function ServicesPage() {
                     </svg>
                 </Link>
               ) : service.id === 'otolaryngology' ? (
-                <Link key={service.id} href="/services/otolaryngology" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0">
+                <Link key={service.id} href="/services/otolaryngology" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
                     <img 
                       src="/images/yslugi/Otolaryngology.webp" 
                       alt="Отоларингология" 
@@ -544,7 +544,7 @@ export default function ServicesPage() {
                     </svg>
                 </Link>
                 ) : service.id === 'ophthalmology' ? (
-                <Link key={service.id} href="/services/ophthalmology" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0">
+                <Link key={service.id} href="/services/ophthalmology" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
                     <img 
                       src="/images/yslugi/Ophthalmology.webp" 
                       alt="Офтальмология" 
@@ -560,7 +560,7 @@ export default function ServicesPage() {
                     </svg>
                 </Link>
                 ) : service.id === 'pediatrics' ? (
-                <Link key={service.id} href="/services/pediatrics" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0">
+                <Link key={service.id} href="/services/pediatrics" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
                     <img 
                       src="/images/yslugi/Pediatrician.webp" 
                       alt="Педиатрия" 
@@ -576,7 +576,7 @@ export default function ServicesPage() {
                     </svg>
                 </Link>
                 ) : service.id === 'proctology' ? (
-                <Link key={service.id} href="/services/proctology" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0">
+                <Link key={service.id} href="/services/proctology" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
                     <img 
                       src="/images/yslugi/Proctology.webp" 
                       alt="Проктология" 
@@ -592,7 +592,7 @@ export default function ServicesPage() {
                     </svg>
                   </Link>
                 ) : service.id === 'surdology' ? (
-                <Link key={service.id} href="/services/surdology" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0">
+                <Link key={service.id} href="/services/surdology" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
                     <img 
                       src="/images/yslugi/Audiology.webp" 
                       alt="Сурдология" 
@@ -608,7 +608,7 @@ export default function ServicesPage() {
                     </svg>
                   </Link>
                 ) : service.id === 'therapy' ? (
-                <Link key={service.id} href="/services/therapy" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0">
+                <Link key={service.id} href="/services/therapy" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
                     <img 
                       src="/images/yslugi/terapiay 1.webp" 
                       alt="Терапия" 
@@ -624,7 +624,7 @@ export default function ServicesPage() {
                     </svg>
                   </Link>
                 ) : service.id === 'traumatology' ? (
-                <Link key={service.id} href="/services/traumatology" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0">
+                <Link key={service.id} href="/services/traumatology" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
                     <img 
                       src="/images/yslugi/travmatolog.webp" 
                       alt="Травматология" 
@@ -640,7 +640,7 @@ export default function ServicesPage() {
                     </svg>
                   </Link>
                 ) : service.id === 'urology' ? (
-                <Link key={service.id} href="/services/urology" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0">
+                <Link key={service.id} href="/services/urology" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
                     <img 
                       src="/images/yslugi/yrolog.webp" 
                       alt="Урология" 
@@ -656,7 +656,7 @@ export default function ServicesPage() {
                     </svg>
                   </Link>
                 ) : service.id === 'surgery' ? (
-                <Link key={service.id} href="/services/surgery" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0">
+                <Link key={service.id} href="/services/surgery" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
                     <img 
                       src="/images/yslugi/hirurg.webp" 
                       alt="Хирургия" 
@@ -672,7 +672,7 @@ export default function ServicesPage() {
                     </svg>
                   </Link>
                 ) : service.id === 'endocrinology' ? (
-                <Link key={service.id} href="/services/endocrinology" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0">
+                <Link key={service.id} href="/services/endocrinology" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
                     <img 
                       src="/images/yslugi/endokrinjlog.webp" 
                       alt="Эндокринология" 
@@ -688,7 +688,7 @@ export default function ServicesPage() {
                     </svg>
                   </Link>
                 ) : service.id === 'dentistry' ? (
-                <Link key={service.id} href="/services/dentistry" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0">
+                <Link key={service.id} href="/services/dentistry" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
                     <img 
                       src="/images/yslugi/yrolog.webp" 
                       alt="Стоматология" 
@@ -704,7 +704,7 @@ export default function ServicesPage() {
                     </svg>
                   </Link>
                 ) : (
-                <Link key={service.id} href={`/services/${service.id}`} className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0">
+                <Link key={service.id} href={`/services/${service.id}`} className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
                   <div className="w-16 md:w-20 h-full bg-white rounded-l-[20px] flex items-center justify-center">
                     <div className="group-hover:text-emerald-600 transition-colors duration-300">
                           {service.icon}
@@ -1005,7 +1005,7 @@ export default function ServicesPage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 justify-items-center">
             {rehabilitationData.map((service) => (
               service.id === 'carboxytherapy' ? (
-                <Link key={service.id} href="/services/carboxytherapy" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0">
+                <Link key={service.id} href="/services/carboxytherapy" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
                   <img 
                     src="/images/yslugi/Carboxytherapy.webp" 
                     alt="Карбокситерапия" 
@@ -1021,7 +1021,7 @@ export default function ServicesPage() {
                   </svg>
                 </Link>
               ) : service.id === 'osteopathy' ? (
-                <Link key={service.id} href="/services/osteopathy" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0">
+                <Link key={service.id} href="/services/osteopathy" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
                   <img 
                     src="/images/yslugi/Osteopathy.webp" 
                     alt="Остеопатия" 
@@ -1037,7 +1037,7 @@ export default function ServicesPage() {
                   </svg>
                 </Link>
               ) : service.id === 'physiotherapy' ? (
-                <Link key={service.id} href="/services/physiotherapy" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0">
+                <Link key={service.id} href="/services/physiotherapy" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
                   <img 
                     src="/images/yslugi/fizio.webp" 
                     alt="Физиотерапия" 
@@ -1053,7 +1053,7 @@ export default function ServicesPage() {
                   </svg>
                 </Link>
               ) : service.id === 'psychotherapy' ? (
-                <Link key={service.id} href="/services/psychotherapy" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0">
+                <Link key={service.id} href="/services/psychotherapy" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
                   <img 
                     src="/images/yslugi/yrolog.webp" 
                     alt="Психотерапия" 
@@ -1069,7 +1069,7 @@ export default function ServicesPage() {
                   </svg>
                 </Link>
               ) : service.id === 'psychology' ? (
-                <Link key={service.id} href="/services/psychology" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0">
+                <Link key={service.id} href="/services/psychology" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
                   <img 
                     src="/images/yslugi/famili.webp" 
                     alt="Психология" 
@@ -1085,7 +1085,7 @@ export default function ServicesPage() {
                   </svg>
                 </Link>
               ) : service.id === 'family-psychology' ? (
-                <Link key={service.id} href="/services/family-psychology" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0">
+                <Link key={service.id} href="/services/family-psychology" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
                   <img 
                     src="/images/yslugi/famili.webp" 
                     alt="Семейная психология" 
@@ -1101,7 +1101,7 @@ export default function ServicesPage() {
                   </svg>
                 </Link>
               ) : service.id === 'massage' ? (
-                <Link key={service.id} href="/services/massage" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0">
+                <Link key={service.id} href="/services/massage" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
                   <img 
                     src="/images/yslugi/massaj.webp" 
                     alt="Массаж" 
@@ -1117,7 +1117,7 @@ export default function ServicesPage() {
                   </svg>
                 </Link>
               ) : service.id === 'vacuum-massage' ? (
-                <Link key={service.id} href="/services/vacuum-massage" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0">
+                <Link key={service.id} href="/services/vacuum-massage" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
                   <img 
                     src="/images/yslugi/vakum.webp" 
                     alt="Вакуумный массаж" 
@@ -1133,7 +1133,7 @@ export default function ServicesPage() {
                   </svg>
                 </Link>
               ) : service.id === 'bioresonance' ? (
-                <Link key={service.id} href="/services/bioresonance" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0">
+                <Link key={service.id} href="/services/bioresonance" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
                   <img 
                     src="/images/yslugi/yrolog.webp" 
                     alt="Биорезонансная терапия" 
@@ -1149,7 +1149,7 @@ export default function ServicesPage() {
                   </svg>
                 </Link>
               ) : service.id === 'shockwave-therapy' ? (
-                <Link key={service.id} href="/services/shockwave-therapy" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0">
+                <Link key={service.id} href="/services/shockwave-therapy" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
                   <img 
                     src="/images/yslugi/yrolog.webp" 
                     alt="Ударно-волновая терапия" 
@@ -1366,7 +1366,7 @@ export default function ServicesPage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 justify-items-center">
             {secondContainerData.map((service) => (
               service.id === 'urology' ? (
-                <Link key={service.id} href="/services/urology" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0">
+                <Link key={service.id} href="/services/urology" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
                   <img 
                     src="/images/yslugi/yrolog.webp" 
                     alt="Урология" 
@@ -1382,7 +1382,7 @@ export default function ServicesPage() {
                   </svg>
                 </Link>
               ) : service.id === 'surgery' ? (
-                <Link key={service.id} href="/services/surgery" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0">
+                <Link key={service.id} href="/services/surgery" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
                   <img 
                     src="/images/yslugi/hirurg.webp" 
                     alt="Хирургия" 
@@ -1398,7 +1398,7 @@ export default function ServicesPage() {
                   </svg>
                 </Link>
               ) : service.id === 'endocrinology' ? (
-                <Link key={service.id} href="/services/endocrinology" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0">
+                <Link key={service.id} href="/services/endocrinology" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
                   <img 
                     src="/images/yslugi/endokrinjlog.webp" 
                     alt="Эндокринология" 
