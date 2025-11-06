@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { promises as fs } from 'fs';
 import path from 'path';
+import nodemailer from 'nodemailer';
 
 interface Appointment {
   id: string;
@@ -12,6 +13,61 @@ interface Appointment {
 }
 
 const DATA_FILE = path.join(process.cwd(), 'data', 'appointments.json');
+
+// Функция для отправки email
+async function sendEmail(appointment: Appointment) {
+  try {
+    // Настройка транспорта для отправки email
+    // Используем SMTP настройки для почты altamed-c.ru
+    const transporter = nodemailer.createTransport({
+      host: process.env.SMTP_HOST || 'smtp.yandex.ru',
+      port: parseInt(process.env.SMTP_PORT || '465'),
+      secure: true, // true для порта 465, false для других портов
+      auth: {
+        user: process.env.SMTP_USER || 'zakaz@altamed-c.ru',
+        pass: process.env.SMTP_PASSWORD || '',
+      },
+    });
+
+    // Формируем текст письма
+    const mailOptions = {
+      from: `"Сайт Альтамед-С" <${process.env.SMTP_USER || 'zakaz@altamed-c.ru'}>`,
+      to: 'zakaz@altamed-c.ru',
+      subject: 'Новая заявка на запись с сайта',
+      html: `
+        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+          <h2 style="color: #4A9B8E;">Новая заявка на запись</h2>
+          <div style="background-color: #f5f5f5; padding: 20px; border-radius: 8px; margin: 20px 0;">
+            <p><strong>Имя:</strong> ${appointment.name}</p>
+            <p><strong>Телефон:</strong> ${appointment.phone}</p>
+            ${appointment.message ? `<p><strong>Сообщение:</strong> ${appointment.message}</p>` : ''}
+            <p><strong>Дата заявки:</strong> ${appointment.date}</p>
+            <p><strong>ID заявки:</strong> ${appointment.id}</p>
+          </div>
+          <p style="color: #666; font-size: 12px;">Это автоматическое уведомление с сайта altamed-c.ru</p>
+        </div>
+      `,
+      text: `
+Новая заявка на запись
+
+Имя: ${appointment.name}
+Телефон: ${appointment.phone}
+${appointment.message ? `Сообщение: ${appointment.message}` : ''}
+Дата заявки: ${appointment.date}
+ID заявки: ${appointment.id}
+      `,
+    };
+
+    // Отправляем email
+    const info = await transporter.sendMail(mailOptions);
+    console.log('Email отправлен:', info.messageId);
+    return { success: true, messageId: info.messageId };
+  } catch (error) {
+    console.error('Ошибка отправки email:', error);
+    // Не прерываем выполнение, если email не отправился
+    return { success: false, error: error instanceof Error ? error.message : 'Unknown error' };
+  }
+}
 
 // Функция для чтения заявок из файла
 async function readAppointments(): Promise<Appointment[]> {
@@ -93,6 +149,11 @@ export async function POST(request: NextRequest) {
     console.log('Телефон:', appointment.phone);
     console.log('Всего заявок:', appointments.length);
     console.log('==============================');
+
+    // Отправляем email (не блокируем ответ, если email не отправится)
+    sendEmail(appointment).catch(err => {
+      console.error('Ошибка отправки email (не критично):', err);
+    });
 
     return NextResponse.json(
       { message: 'Заявка сохранена', id: appointment.id },
