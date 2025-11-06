@@ -15,31 +15,44 @@ interface Appointment {
 const DATA_FILE = path.join(process.cwd(), 'data', 'appointments.json');
 
 // Функция для отправки email
-async function sendEmail(appointment: Appointment) {
+async function sendEmail(appointment: Appointment, formType: string = 'Запись на прием', email?: string) {
   try {
-    // Настройка транспорта для отправки email
-    // Используем SMTP настройки для почты altamed-c.ru
+    // Настройка транспорта для отправки email через MasterMail Exchange 2010
+    // SMTP: smtp.mastermail.ru порт 25
+    const smtpHost = process.env.SMTP_HOST || 'smtp.mastermail.ru';
+    const smtpPort = parseInt(process.env.SMTP_PORT || '25');
+    
     const transporter = nodemailer.createTransport({
-      host: process.env.SMTP_HOST || 'smtp.yandex.ru',
-      port: parseInt(process.env.SMTP_PORT || '465'),
-      secure: true, // true для порта 465, false для других портов
+      host: smtpHost,
+      port: smtpPort,
+      secure: false, // Порт 25 обычно использует STARTTLS, не SSL
       auth: {
         user: process.env.SMTP_USER || 'zakaz@altamed-c.ru',
         pass: process.env.SMTP_PASSWORD || '',
       },
+      tls: {
+        rejectUnauthorized: false,
+      },
+      // Для порта 25 может потребоваться STARTTLS
+      requireTLS: true,
+      connectionTimeout: 10000,
     });
+
+    // Email получателя из переменной окружения или используем по умолчанию
+    const emailTo = process.env.EMAIL_TO || 'zakaz@altamed-c.ru';
 
     // Формируем текст письма
     const mailOptions = {
       from: `"Сайт Альтамед-С" <${process.env.SMTP_USER || 'zakaz@altamed-c.ru'}>`,
-      to: 'zakaz@altamed-c.ru',
-      subject: 'Новая заявка на запись с сайта',
+      to: emailTo,
+      subject: `${formType} - новая заявка с сайта`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-          <h2 style="color: #4A9B8E;">Новая заявка на запись</h2>
+          <h2 style="color: #4A9B8E;">${formType}</h2>
           <div style="background-color: #f5f5f5; padding: 20px; border-radius: 8px; margin: 20px 0;">
             <p><strong>Имя:</strong> ${appointment.name}</p>
             <p><strong>Телефон:</strong> ${appointment.phone}</p>
+            ${email ? `<p><strong>Email:</strong> ${email}</p>` : ''}
             ${appointment.message ? `<p><strong>Сообщение:</strong> ${appointment.message}</p>` : ''}
             <p><strong>Дата заявки:</strong> ${appointment.date}</p>
             <p><strong>ID заявки:</strong> ${appointment.id}</p>
@@ -48,10 +61,11 @@ async function sendEmail(appointment: Appointment) {
         </div>
       `,
       text: `
-Новая заявка на запись
+${formType}
 
 Имя: ${appointment.name}
 Телефон: ${appointment.phone}
+${email ? `Email: ${email}` : ''}
 ${appointment.message ? `Сообщение: ${appointment.message}` : ''}
 Дата заявки: ${appointment.date}
 ID заявки: ${appointment.id}
@@ -107,7 +121,7 @@ async function writeAppointments(appointments: Appointment[]): Promise<void> {
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { name, phone, message, notes } = body;
+    const { name, phone, message, notes, email } = body;
 
     if (!phone) {
       return NextResponse.json(
@@ -121,6 +135,16 @@ export async function POST(request: NextRequest) {
 
     // Объединяем message и notes (если есть оба, берем message, иначе notes)
     const messageText = (message || notes || '').trim();
+    
+    // Определяем тип заявки по наличию полей
+    let formType = 'Запись на прием';
+    if (email) {
+      // Если есть email, это форма обратной связи с контактов
+      formType = 'Обратная связь (контакты)';
+    } else if (!messageText) {
+      // Если нет сообщения и нет email, это обратный звонок
+      formType = 'Обратный звонок';
+    }
 
     // Создаем новую заявку
     const appointment: Appointment = {
@@ -145,13 +169,16 @@ export async function POST(request: NextRequest) {
 
     console.log('=== НОВАЯ ЗАЯВКА СОХРАНЕНА ===');
     console.log('ID:', appointment.id);
+    console.log('Тип:', formType);
     console.log('Имя:', appointment.name);
     console.log('Телефон:', appointment.phone);
+    if (email) console.log('Email:', email);
+    if (appointment.message) console.log('Сообщение:', appointment.message);
     console.log('Всего заявок:', appointments.length);
     console.log('==============================');
 
-    // Отправляем email (не блокируем ответ, если email не отправится)
-    sendEmail(appointment).catch(err => {
+    // Отправляем email с информацией о типе формы
+    sendEmail(appointment, formType, email).catch(err => {
       console.error('Ошибка отправки email (не критично):', err);
     });
 

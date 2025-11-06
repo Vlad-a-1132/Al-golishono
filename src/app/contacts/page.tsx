@@ -23,7 +23,7 @@ export default function ContactsPage() {
     setSubmitStatus({ type: null, message: '' });
 
     try {
-      // Отправляем данные на API (для формы контактов используем email как телефон)
+      // Отправляем данные на API
       const response = await fetch('/api/appointment', {
         method: 'POST',
         headers: {
@@ -31,7 +31,8 @@ export default function ContactsPage() {
         },
         body: JSON.stringify({
           name: name.trim(),
-          phone: email.trim(), // Используем email как телефон, так как в форме нет телефона
+          phone: email.trim(), // Для формы контактов используем email как телефон (обязательное поле)
+          email: email.trim(), // Передаем email отдельно
           message: message.trim(),
         }),
       });
