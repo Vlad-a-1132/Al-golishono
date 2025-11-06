@@ -2848,62 +2848,6 @@ export default async function DoctorPage({ params }: DoctorPageProps) {
             </div>
           )}
         </section>
-
-        {/* Review Form Section */}
-        <section className="mt-8 bg-gray-50 rounded-2xl p-6">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">
-            Оставить отзыв
-          </h2>
-          <form className="space-y-4">
-            <div>
-              <input
-                type="text"
-                placeholder="Имя"
-                className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-emerald-500"
-              />
-            </div>
-            <div>
-              <input
-                type="email"
-                placeholder="E-mail*"
-                className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-emerald-500"
-              />
-            </div>
-            <div>
-              <input
-                type="text"
-                placeholder="Номер медицинской карты"
-                className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-emerald-500"
-              />
-            </div>
-            <div>
-              <textarea
-                placeholder="Ваш отзыв"
-                rows={4}
-                className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-emerald-500"
-              />
-            </div>
-            <div className="flex items-start gap-2">
-              <input
-                type="checkbox"
-                id="consent"
-                className="mt-1"
-              />
-              <label htmlFor="consent" className="text-sm text-gray-600">
-                Я согласен(а), на обработку{" "}
-                <a href="#" className="underline">
-                  персональных данных
-                </a>
-              </label>
-            </div>
-            <button
-              type="submit"
-              className="bg-gradient-to-r from-orange-400 to-orange-600 text-white px-8 py-3 rounded-xl hover:from-orange-500 hover:to-orange-700 transition-all font-medium"
-            >
-              Отправить
-            </button>
-          </form>
-        </section>
       </div>
     </div>
   );
