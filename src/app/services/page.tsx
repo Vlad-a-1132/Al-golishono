@@ -404,7 +404,7 @@ export default function ServicesPage() {
                     <img 
                       src="/images/yslugi/allergoly.webp" 
                       alt="Аллергология" 
-              className="w-12 md:w-20 h-full object-cover rounded-l-[20px]"
+              className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
             />
             <div className="flex-1 px-2 md:px-4">
               <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
@@ -420,7 +420,7 @@ export default function ServicesPage() {
                     <img 
                       src="/images/yslugi/Gastroenterology.webp" 
                       alt="Гастроэнтерология" 
-                      className="w-12 md:w-20 h-full object-cover rounded-l-[20px]"
+                      className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
                     />
                     <div className="flex-1 px-2 md:px-4">
                       <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
@@ -436,7 +436,7 @@ export default function ServicesPage() {
                     <img 
                       src="/images/yslugi/Gynecology.webp" 
                       alt="Гинекология" 
-                      className="w-12 md:w-20 h-full object-cover rounded-l-[20px]"
+                      className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
                     />
                     <div className="flex-1 px-2 md:px-4">
                       <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
@@ -452,7 +452,7 @@ export default function ServicesPage() {
                     <img 
                       src="/images/yslugi/Dermatology.webp" 
                       alt="Дерматология" 
-                      className="w-12 md:w-20 h-full object-cover rounded-l-[20px]"
+                      className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
                     />
                     <div className="flex-1 px-2 md:px-4">
                       <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
@@ -468,7 +468,7 @@ export default function ServicesPage() {
                     <img 
                       src="/images/yslugi/Cardiology.webp" 
                       alt="Кардиология" 
-                      className="w-12 md:w-20 h-full object-cover rounded-l-[20px]"
+                      className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
                     />
                     <div className="flex-1 px-2 md:px-4">
                       <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
@@ -484,7 +484,7 @@ export default function ServicesPage() {
                     <img 
                       src="/images/yslugi/laser cosmetology 1.webp" 
                       alt="Лазерная косметология" 
-                      className="w-12 md:w-20 h-full object-cover rounded-l-[20px]"
+                      className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
                     />
                     <div className="flex-1 px-2 md:px-4">
                       <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
@@ -500,7 +500,7 @@ export default function ServicesPage() {
                     <img 
                       src="/images/yslugi/mammalogy.webp" 
                       alt="Маммология" 
-                      className="w-12 md:w-20 h-full object-cover rounded-l-[20px]"
+                      className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
                     />
                     <div className="flex-1 px-2 md:px-4">
                       <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
@@ -516,7 +516,7 @@ export default function ServicesPage() {
                     <img 
                       src="/images/images allergoly/nevrolog.webp" 
                       alt="Неврология" 
-                      className="w-12 md:w-20 h-full object-cover rounded-l-[20px]"
+                      className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
                     />
                     <div className="flex-1 px-2 md:px-4">
                       <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
@@ -532,7 +532,7 @@ export default function ServicesPage() {
                     <img 
                       src="/images/yslugi/Otolaryngology.webp" 
                       alt="Отоларингология" 
-                      className="w-12 md:w-20 h-full object-cover rounded-l-[20px]"
+                      className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
                     />
                     <div className="flex-1 px-2 md:px-4">
                       <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
@@ -548,7 +548,7 @@ export default function ServicesPage() {
                     <img 
                       src="/images/yslugi/Ophthalmology.webp" 
                       alt="Офтальмология" 
-                      className="w-12 md:w-20 h-full object-cover rounded-l-[20px]"
+                      className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
                     />
                     <div className="flex-1 px-2 md:px-4">
                       <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
@@ -564,7 +564,7 @@ export default function ServicesPage() {
                     <img 
                       src="/images/yslugi/Pediatrician.webp" 
                       alt="Педиатрия" 
-                      className="w-12 md:w-20 h-full object-cover rounded-l-[20px]"
+                      className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
                     />
                     <div className="flex-1 px-2 md:px-4">
                       <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
@@ -580,7 +580,7 @@ export default function ServicesPage() {
                     <img 
                       src="/images/yslugi/Proctology.webp" 
                       alt="Проктология" 
-                      className="w-12 md:w-20 h-full object-cover rounded-l-[20px]"
+                      className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
                     />
                     <div className="flex-1 px-2 md:px-4">
                       <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
@@ -596,7 +596,7 @@ export default function ServicesPage() {
                     <img 
                       src="/images/yslugi/Audiology.webp" 
                       alt="Сурдология" 
-                      className="w-12 md:w-20 h-full object-cover rounded-l-[20px]"
+                      className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
                     />
                     <div className="flex-1 px-2 md:px-4">
                       <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
@@ -612,7 +612,7 @@ export default function ServicesPage() {
                     <img 
                       src="/images/yslugi/terapiay 1.webp" 
                       alt="Терапия" 
-                      className="w-12 md:w-20 h-full object-cover rounded-l-[20px]"
+                      className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
                     />
                     <div className="flex-1 px-2 md:px-4">
                       <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
@@ -628,7 +628,7 @@ export default function ServicesPage() {
                     <img 
                       src="/images/yslugi/travmatolog.webp" 
                       alt="Травматология" 
-                      className="w-12 md:w-20 h-full object-cover rounded-l-[20px]"
+                      className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
                     />
                     <div className="flex-1 px-2 md:px-4">
                       <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
@@ -644,7 +644,7 @@ export default function ServicesPage() {
                     <img 
                       src="/images/yslugi/yrolog.webp" 
                       alt="Урология" 
-                      className="w-12 md:w-20 h-full object-cover rounded-l-[20px]"
+                      className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
                     />
                     <div className="flex-1 px-2 md:px-4">
                       <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
@@ -660,7 +660,7 @@ export default function ServicesPage() {
                     <img 
                       src="/images/yslugi/hirurg.webp" 
                       alt="Хирургия" 
-                      className="w-12 md:w-20 h-full object-cover rounded-l-[20px]"
+                      className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
                     />
                     <div className="flex-1 px-2 md:px-4">
                       <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
@@ -676,7 +676,7 @@ export default function ServicesPage() {
                     <img 
                       src="/images/yslugi/endokrinjlog.webp" 
                       alt="Эндокринология" 
-                      className="w-12 md:w-20 h-full object-cover rounded-l-[20px]"
+                      className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
                     />
                     <div className="flex-1 px-2 md:px-4">
                       <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
@@ -692,7 +692,7 @@ export default function ServicesPage() {
                     <img 
                       src="/images/yslugi/yrolog.webp" 
                       alt="Стоматология" 
-                      className="w-12 md:w-20 h-full object-cover rounded-l-[20px]"
+                      className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
                     />
                     <div className="flex-1 px-2 md:px-4">
                       <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
@@ -1009,7 +1009,7 @@ export default function ServicesPage() {
                   <img 
                     src="/images/yslugi/Carboxytherapy.webp" 
                     alt="Карбокситерапия" 
-                    className="w-12 md:w-20 h-full object-cover rounded-l-[20px]"
+                    className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
                   />
                   <div className="flex-1 px-2 md:px-4">
                       <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
@@ -1025,7 +1025,7 @@ export default function ServicesPage() {
                   <img 
                     src="/images/yslugi/Osteopathy.webp" 
                     alt="Остеопатия" 
-                    className="w-12 md:w-20 h-full object-cover rounded-l-[20px]"
+                    className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
                   />
                   <div className="flex-1 px-2 md:px-4">
                       <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
@@ -1041,7 +1041,7 @@ export default function ServicesPage() {
                   <img 
                     src="/images/yslugi/fizio.webp" 
                     alt="Физиотерапия" 
-                    className="w-12 md:w-20 h-full object-cover rounded-l-[20px]"
+                    className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
                   />
                   <div className="flex-1 px-2 md:px-4">
                       <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
@@ -1057,7 +1057,7 @@ export default function ServicesPage() {
                   <img 
                     src="/images/yslugi/yrolog.webp" 
                     alt="Психотерапия" 
-                    className="w-12 md:w-20 h-full object-cover rounded-l-[20px]"
+                    className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
                   />
                   <div className="flex-1 px-2 md:px-4">
                       <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
@@ -1073,7 +1073,7 @@ export default function ServicesPage() {
                   <img 
                     src="/images/yslugi/famili.webp" 
                     alt="Психология" 
-                    className="w-12 md:w-20 h-full object-cover rounded-l-[20px]"
+                    className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
                   />
                   <div className="flex-1 px-2 md:px-4">
                       <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
@@ -1089,7 +1089,7 @@ export default function ServicesPage() {
                   <img 
                     src="/images/yslugi/famili.webp" 
                     alt="Семейная психология" 
-                    className="w-12 md:w-20 h-full object-cover rounded-l-[20px]"
+                    className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
                   />
                   <div className="flex-1 px-2 md:px-4">
                       <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
@@ -1105,7 +1105,7 @@ export default function ServicesPage() {
                   <img 
                     src="/images/yslugi/massaj.webp" 
                     alt="Массаж" 
-                    className="w-12 md:w-20 h-full object-cover rounded-l-[20px]"
+                    className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
                   />
                   <div className="flex-1 px-2 md:px-4">
                       <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
@@ -1121,7 +1121,7 @@ export default function ServicesPage() {
                   <img 
                     src="/images/yslugi/vakum.webp" 
                     alt="Вакуумный массаж" 
-                    className="w-12 md:w-20 h-full object-cover rounded-l-[20px]"
+                    className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
                   />
                   <div className="flex-1 px-2 md:px-4">
                       <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
@@ -1137,7 +1137,7 @@ export default function ServicesPage() {
                   <img 
                     src="/images/yslugi/yrolog.webp" 
                     alt="Биорезонансная терапия" 
-                    className="w-12 md:w-20 h-full object-cover rounded-l-[20px]"
+                    className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
                   />
                   <div className="flex-1 px-2 md:px-4">
                       <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
@@ -1153,7 +1153,7 @@ export default function ServicesPage() {
                   <img 
                     src="/images/yslugi/yrolog.webp" 
                     alt="Ударно-волновая терапия" 
-                    className="w-12 md:w-20 h-full object-cover rounded-l-[20px]"
+                    className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
                   />
                   <div className="flex-1 px-2 md:px-4">
                       <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
@@ -1370,7 +1370,7 @@ export default function ServicesPage() {
                   <img 
                     src="/images/yslugi/yrolog.webp" 
                     alt="Урология" 
-                    className="w-12 md:w-20 h-full object-cover rounded-l-[20px]"
+                    className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
                   />
                   <div className="flex-1 px-2 md:px-4">
                       <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
@@ -1386,7 +1386,7 @@ export default function ServicesPage() {
                   <img 
                     src="/images/yslugi/hirurg.webp" 
                     alt="Хирургия" 
-                    className="w-12 md:w-20 h-full object-cover rounded-l-[20px]"
+                    className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
                   />
                   <div className="flex-1 px-2 md:px-4">
                       <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
@@ -1402,7 +1402,7 @@ export default function ServicesPage() {
                   <img 
                     src="/images/yslugi/endokrinjlog.webp" 
                     alt="Эндокринология" 
-                    className="w-12 md:w-20 h-full object-cover rounded-l-[20px]"
+                    className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
                   />
                   <div className="flex-1 px-2 md:px-4">
                       <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
