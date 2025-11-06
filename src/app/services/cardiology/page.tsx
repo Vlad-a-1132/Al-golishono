@@ -130,43 +130,48 @@ export default function CardiologyPage() {
         {/* Services Section */}
         <section className="py-16" aria-labelledby="services-heading">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 id="services-heading" className="text-2xl md:text-3xl font-bold text-black mb-8 text-center ml-0 md:ml-4 lg:ml-8">
-              Кардиолог в Одинцово - услуги диагностики и лечения сердечно-сосудистых заболеваний
-            </h2>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8" itemScope itemType="https://schema.org/ItemList">
-              {cardiologyServices.map((service, index) => (
-                <article
-                  key={service.id}
-                  itemScope
-                  itemType="https://schema.org/MedicalProcedure"
-                  className="bg-white rounded-[20px] shadow-lg overflow-hidden hover:shadow-xl transition-shadow cursor-pointer group"
-                >
-                  <Link href="/appointments" className="block">
-                    <div className="h-48 relative">
-                      <Image
-                        src={service.image}
-                        alt={service.name}
-                        fill
-                        className="object-cover"
-                      />
-                    </div>
-                    <div className="p-6">
-                      <h3 className="text-xl font-bold text-black mb-2" itemProp="name">{service.name}</h3>
-                      <p className="text-gray-600 mb-4" itemProp="description">{service.description}</p>
-                      <div className="flex items-center justify-between">
-                        <span className="text-emerald-600 font-bold text-lg" itemProp="offers" itemScope itemType="https://schema.org/Offer">
-                          <span itemProp="price">{service.price}</span>
-                          <span itemProp="priceCurrency" content="RUB" className="sr-only">RUB</span>
-                        </span>
-                        <span className="bg-emerald-600 text-white px-4 py-2 rounded-full text-sm font-medium group-hover:bg-emerald-700 transition-colors">
-                          Записаться
-                        </span>
+            <div className="text-center mb-12">
+              <h2 id="services-heading" className="text-3xl font-bold text-gray-900 mb-4">
+                Кардиолог в Одинцово - услуги диагностики и лечения сердечно-сосудистых заболеваний
+              </h2>
+              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+                Полный спектр услуг кардиологии
+              </p>
+            </div>
+
+            <div className="space-y-8">
+              <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+                <div className="bg-gradient-to-r from-emerald-600 to-emerald-700 px-6 py-4">
+                  <h3 className="text-xl font-semibold text-white">Услуги кардиологии</h3>
+                </div>
+                <div className="p-6">
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    {cardiologyServices.map((service, index) => (
+                      <div 
+                        key={service.id}
+                        className="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow duration-300"
+                      >
+                        <div className="flex justify-between items-start">
+                          <div className="flex-1">
+                            <h4 className="font-medium text-gray-900 text-sm leading-tight mb-2">
+                              {service.name}
+                            </h4>
+                            <div className="text-emerald-600 font-semibold text-lg">
+                              {service.price}
+                            </div>
+                          </div>
+                          <Link 
+                            href="/appointments"
+                            className="ml-3 bg-emerald-600 text-white px-3 py-1 rounded-md text-sm hover:bg-emerald-700 transition-colors duration-300 flex-shrink-0"
+                          >
+                            Записаться
+                          </Link>
+                        </div>
                       </div>
-                    </div>
-                  </Link>
-                </article>
-              ))}
+                    ))}
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
