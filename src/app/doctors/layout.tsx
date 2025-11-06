@@ -1,4 +1,11 @@
 import { Metadata } from 'next';
+import { doctors } from '../../data/static-data';
+
+export function generateStaticParams() {
+  return doctors.map((doctor) => ({
+    slug: doctor.slug,
+  }));
+}
 
 export const metadata: Metadata = {
   title: 'Врачи - Медицинский центр Альтамед-с в Одинцово | Список врачей, специалисты',

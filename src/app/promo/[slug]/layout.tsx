@@ -1,5 +1,16 @@
 import { Metadata } from 'next';
 
+// Данные акций для генерации статических параметров
+export function generateStaticParams() {
+  return [
+    { slug: 'promo-1' },
+    { slug: 'promo-2' },
+    { slug: 'promo-3' },
+    { slug: 'promo-4' },
+    { slug: 'promo-5' },
+  ];
+}
+
 // Данные акций для генерации метаданных
 const promotionsData: Record<string, {
   title: string;

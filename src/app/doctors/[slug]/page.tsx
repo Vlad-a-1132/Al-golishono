@@ -2729,7 +2729,7 @@ export default async function DoctorPage({ params }: DoctorPageProps) {
                 </div>
               </>
             )}
-            {doctorDetails && doctorDetails.achievements && doctorDetails.achievements.length > 0 && (
+            {doctorDetails && doctorDetails.achievements && Array.isArray(doctorDetails.achievements) && doctorDetails.achievements.length > 0 && (
               <>
                 <h2 className={`text-2xl font-bold text-gray-900 mb-4 ${(doctorDetails.accreditation && doctorDetails.accreditation.length > 0) || (doctorDetails.certificates && doctorDetails.certificates.length > 0) ? 'mt-8' : ''}`}>
                   Грамоты и награды
