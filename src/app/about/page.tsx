@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 
 function PatientInfoSection() {
@@ -1559,7 +1559,7 @@ function PatientInfoSection() {
   );
 }
 
-export default function AboutPage() {
+function AboutPageContent() {
   const searchParams = useSearchParams();
   const [activeSection, setActiveSection] = useState('photogallery');
   
@@ -2320,4 +2320,12 @@ export default function AboutPage() {
       </section>
     </div>
   );
-} 
+}
+
+export default function AboutPage() {
+  return (
+    <Suspense fallback={<div className="min-h-screen flex items-center justify-center">Загрузка...</div>}>
+      <AboutPageContent />
+    </Suspense>
+  );
+}
