@@ -2152,7 +2152,7 @@ function getDoctorSchedule(doctorName: string) {
       Sunday: { start: "15:30", end: "20:00" }
     },
     'Абрамов Юно Эриильевич': {
-      Thursday: { start: "10:00", end: "14:00" },
+      Wednesday: { start: "10:00", end: "14:00" },
       Sunday: { start: "10:00", end: "14:00" }
     },
     'Иванникова Любовь Андреевна': {

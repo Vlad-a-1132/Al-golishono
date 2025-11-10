@@ -107,7 +107,7 @@ export default function CTScanPage() {
               <div className="h-[220px] bg-[#6B8190] relative overflow-hidden">
                 <div className="w-full h-full relative">
                   <img
-                    src="/images/services/KT%20NEW.png"
+                    src="/images/yslugi/kt-Altamed-C.webp"
                     alt="КТ"
                     className="w-full h-full object-cover"
                   />
@@ -129,7 +129,7 @@ export default function CTScanPage() {
             <div className="hidden md:block h-[445px] bg-[#6B8190] relative overflow-hidden rounded-[20px] shadow-lg">
               <div className="w-full h-full relative">
                 <img
-                  src="/images/services/KT%20NEW.png"
+                  src="/images/yslugi/kt-Altamed-C.webp"
                   alt="КТ в Одинцово"
                   className="w-full h-full object-cover"
                 />
