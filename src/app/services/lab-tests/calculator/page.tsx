@@ -114,35 +114,46 @@ export default function LabCalculatorPage() {
   }, [categories, selectedCategories]);
 
   async function generatePDF() {
-    // Create a hidden div with the PDF content
+    // Create a visible div with the PDF content (for better rendering)
     const pdfContent = document.createElement('div');
-    pdfContent.style.position = 'absolute';
-    pdfContent.style.left = '-9999px';
+    pdfContent.style.position = 'fixed';
+    pdfContent.style.left = '0';
     pdfContent.style.top = '0';
-    pdfContent.style.width = '210mm';
-    pdfContent.style.padding = '20px';
+    pdfContent.style.width = '800px';
+    pdfContent.style.padding = '40px';
     pdfContent.style.fontFamily = 'Arial, sans-serif';
-    pdfContent.style.fontSize = '12px';
-    pdfContent.style.lineHeight = '1.4';
+    pdfContent.style.fontSize = '14px';
+    pdfContent.style.lineHeight = '1.6';
     pdfContent.style.backgroundColor = 'white';
+    pdfContent.style.zIndex = '9999';
+    pdfContent.style.color = '#000';
     
-    // Add logo
+    // Add logo and wait for it to load
     const logoImg = document.createElement('img');
     logoImg.src = '/images/general/S.webp';
-    logoImg.style.width = '30px';
-    logoImg.style.height = '30px';
-    logoImg.style.marginRight = '10px';
+    logoImg.style.width = '40px';
+    logoImg.style.height = '40px';
+    logoImg.style.marginRight = '15px';
     logoImg.style.verticalAlign = 'middle';
+    logoImg.style.display = 'inline-block';
+    
+    // Wait for image to load
+    await new Promise((resolve) => {
+      logoImg.onload = resolve;
+      logoImg.onerror = resolve; // Continue even if image fails
+    });
     
     // Header
     const header = document.createElement('div');
-    header.style.marginBottom = '20px';
-    header.style.borderBottom = '1px solid #000';
-    header.style.paddingBottom = '10px';
+    header.style.marginBottom = '30px';
+    header.style.borderBottom = '2px solid #10b981';
+    header.style.paddingBottom = '15px';
+    header.style.display = 'flex';
+    header.style.alignItems = 'center';
     
     const clinicName = document.createElement('span');
     clinicName.textContent = 'Альтамед-с';
-    clinicName.style.fontSize = '18px';
+    clinicName.style.fontSize = '24px';
     clinicName.style.fontWeight = 'bold';
     clinicName.style.color = '#10b981';
     
@@ -151,10 +162,12 @@ export default function LabCalculatorPage() {
     
     // Title
     const title = document.createElement('h1');
-    title.textContent = 'Список анализов:';
+    title.textContent = 'Список выбранных анализов';
     title.style.textAlign = 'center';
-    title.style.fontSize = '16px';
-    title.style.marginBottom = '20px';
+    title.style.fontSize = '20px';
+    title.style.marginBottom = '30px';
+    title.style.fontWeight = 'bold';
+    title.style.color = '#000';
     
     // Table
     const table = document.createElement('table');
@@ -309,11 +322,16 @@ export default function LabCalculatorPage() {
     document.body.appendChild(pdfContent);
     
     try {
+      // Wait a bit for DOM to render
+      await new Promise(resolve => setTimeout(resolve, 100));
+      
       // Convert to canvas
       const canvas = await html2canvas(pdfContent, {
         scale: 2,
         useCORS: true,
-        allowTaint: true
+        allowTaint: true,
+        logging: false,
+        backgroundColor: '#ffffff'
       });
       
       // Create PDF
