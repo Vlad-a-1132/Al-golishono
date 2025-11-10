@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     'инсульт Одинцово',
     'эпилепсия Одинцово',
     'рефлексотерапия Одинцово',
-    'Альтамед-с невролог',
+    'Альтамед-Сневролог',
     'Московская область неврология',
     'здоровье нервной системы Одинцово'
   ],
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     'application/ld+json': JSON.stringify({
       "@context": "https://schema.org",
       "@type": "MedicalBusiness",
-      "name": "Альтамед-с - Неврология в Одинцово",
+      "name": "Альтамед-С- Неврология в Одинцово",
       "description": "Клиника неврологии в Одинцово. Профессиональная диагностика и лечение заболеваний нервной системы.",
       "url": "https://altamed-s.ru/services/neurology",
       "telephone": "+7 (495) 255-44-50",

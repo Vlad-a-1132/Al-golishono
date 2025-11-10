@@ -1736,7 +1736,7 @@ function AboutPageContent() {
                       <div key={index} className="relative h-48 rounded-lg overflow-hidden group cursor-pointer">
                         <Image
                           src={image}
-                          alt={`Фотография клиники Альтамед-с ${index + 1}`}
+                          alt={`Фотография клиники Альтамед-С${index + 1}`}
                           fill
                           className="object-cover group-hover:scale-110 transition-transform duration-300"
                         />

@@ -29,7 +29,7 @@ const promotionsData: Record<string, {
   },
   'promo-3': {
     title: 'Скидки для пенсионеров и многодетных',
-    description: 'Скидки 10% для пенсионеров и многодетных семей на все услуги клиники Альтамед-с в Одинцово. Исключение: стоматология.',
+    description: 'Скидки 10% для пенсионеров и многодетных семей на все услуги клиники Альтамед-Св Одинцово. Исключение: стоматология.',
     image: '/images/slides/2-pensia.webp',
   },
   'promo-4': {
@@ -48,11 +48,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const promo = promotionsData[slug] || {
     title: 'Акции и спецпредложения',
-    description: 'Акции и спецпредложения медицинского центра Альтамед-с в Одинцово',
+    description: 'Акции и спецпредложения медицинского центра Альтамед-Св Одинцово',
   };
 
   return {
-    title: `${promo.title} - Акции | Медицинский центр Альтамед-с в Одинцово`,
+    title: `${promo.title} - Акции | Медицинский центр Альтамед-Св Одинцово`,
     description: promo.description,
     keywords: [
       'акции Альтамед-с',

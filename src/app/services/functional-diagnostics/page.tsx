@@ -21,10 +21,6 @@ export default function FunctionalDiagnosticsPage() {
       description: "Запись электрической активности сердца для выявления нарушений ритма и проводимости"
     },
     {
-      title: "ЭЭГ (Электроэнцефалография)",
-      description: "Регистрация электрической активности головного мозга"
-    },
-    {
       title: "ЭХОКГ (Эхокардиография)",
       description: "Ультразвуковое исследование сердца и сосудов"
     },
@@ -35,14 +31,6 @@ export default function FunctionalDiagnosticsPage() {
     {
       title: "Спирометрия",
       description: "Оценка функции внешнего дыхания"
-    },
-    {
-      title: "Тредмил-тест",
-      description: "Исследование работы сердца при физической нагрузке"
-    },
-    {
-      title: "Велоэргометрия",
-      description: "Функциональная проба с дозированной нагрузкой"
     },
     {
       title: "КТГ (Кардиотокография)",
@@ -204,7 +192,7 @@ export default function FunctionalDiagnosticsPage() {
         </div>
       </section>
 
-      {/* Почему Альтамед-с */}
+      {/* Почему Альтамед-С*/}
       <section className="py-12">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">

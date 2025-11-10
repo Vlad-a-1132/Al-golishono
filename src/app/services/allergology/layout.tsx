@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     'application/ld+json': JSON.stringify({
       "@context": "https://schema.org",
       "@type": "MedicalBusiness",
-      "name": "Альтамед-с - Аллергология",
+      "name": "Альтамед-С- Аллергология",
       "description": "Клиника аллергологии и иммунологии в Одинцово",
       "url": "https://altamed-s.ru/services/allergology",
       "telephone": "+7 (495) 255-44-50",

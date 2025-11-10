@@ -34,11 +34,8 @@ export default function HardwareDiagnosticsPage() {
                 <p className="text-sm md:text-base opacity-90 mb-6">
                   Благодаря современному видеооборудованию эндоскопия даёт возможность врачу провести тщательный визуальный осмотр слизистых оболочек внутренних органов пациента.
                 </p>
-                <div className="grid grid-cols-2 gap-3">
+                <div className="grid grid-cols-1 gap-3">
                   <button className="bg-[#5A7384] hover:bg-[#4c6372] transition-colors text-white rounded-full py-2 px-4 text-sm">Гастроскопия</button>
-                  <button className="bg-[#5A7384] hover:bg-[#4c6372] transition-colors text-white rounded-full py-2 px-4 text-sm">Колоноскопия</button>
-                  <button className="bg-[#5A7384] hover:bg-[#4c6372] transition-colors text-white rounded-full py-2 px-4 text-sm col-span-2 md:col-span-1">Капсульная эндоскопия</button>
-                  <button className="bg-[#5A7384] hover:bg-[#4c6372] transition-colors text-white rounded-full py-2 px-4 text-sm">Бронхоскопия</button>
                 </div>
               </div>
             </div>
@@ -110,7 +107,7 @@ export default function HardwareDiagnosticsPage() {
                   Методы функциональной диагностики направлены на определение функционального состояния жизненно важных органов и систем человека.
                 </p>
                 <div className="grid grid-cols-2 gap-3">
-                  {['ЭКГ','ЭЭГ','ЭХО КГ','Холтер'].map((label) => (
+                  {['ЭКГ','ЭХО КГ','Холтер'].map((label) => (
                     <button key={label} className="bg-[#B24B4B] hover:bg-[#9e3f3f] transition-colors text-white rounded-full py-2 px-4 text-sm">
                       {label}
                     </button>

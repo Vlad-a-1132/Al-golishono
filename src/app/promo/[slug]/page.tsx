@@ -221,6 +221,26 @@ export default function PromoDetailPage() {
         </div>
       </main>
 
+      {/* Время работы КТ (только для акции КТ) */}
+      {promo.id === 1 && (
+        <section className="py-8">
+          <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
+            <div className="bg-gradient-to-r from-emerald-500 to-emerald-700 rounded-[20px] p-8 text-white shadow-lg">
+              <div className="flex items-start">
+                <svg className="w-8 h-8 mr-4 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <div>
+                  <h3 className="text-2xl font-bold mb-3">Время работы КТ</h3>
+                  <p className="text-lg mb-2">КТ работает с 9:30 до 15:00</p>
+                  <p className="text-white/90">Кроме воскресенья и понедельника</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Описание акции */}
       <section className="py-12">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>

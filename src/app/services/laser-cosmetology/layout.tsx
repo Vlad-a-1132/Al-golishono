@@ -67,7 +67,7 @@ export const metadata: Metadata = {
     'application/ld+json': JSON.stringify({
       "@context": "https://schema.org",
       "@type": "MedicalBusiness",
-      "name": "Альтамед-с - Лазерная косметология в Одинцово",
+      "name": "Альтамед-С- Лазерная косметология в Одинцово",
       "description": "Клиника лазерной косметологии в Одинцово. Профессиональные процедуры лазерной эпиляции, фотоомоложения, удаления татуировок, фотоокоагуляции сосудов.",
       "url": "https://altamed-s.ru/services/laser-cosmetology",
       "telephone": "+7 (495) 255-44-50",

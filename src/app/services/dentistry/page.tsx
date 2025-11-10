@@ -743,7 +743,7 @@ export default function DentistryPage() {
     const jsonLd = {
       "@context": "https://schema.org",
       "@type": "MedicalBusiness",
-      "name": "Стоматология Альтамед-с Одинцово",
+      "name": "Стоматология Альтамед-СОдинцово",
       "description": "Профессиональная стоматология в Одинцово. Лечение кариеса, имплантация зубов, протезирование, отбеливание, детская стоматология. Современное оборудование, опытные врачи.",
       "address": {
         "@type": "PostalAddress",

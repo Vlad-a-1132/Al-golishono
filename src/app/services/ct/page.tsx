@@ -150,7 +150,7 @@ export default function CTScanPage() {
         </div>
       </main>
 
-      {/* Почему Альтамед-с */}
+      {/* Почему Альтамед-С*/}
       <section className="py-12 bg-gray-50">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">
@@ -184,6 +184,24 @@ export default function CTScanPage() {
                 <span className="absolute inset-0 flex items-center justify-center text-white font-bold text-xl">4</span>
               </div>
               <p className="text-gray-700 font-medium">Быстрая выдача результатов</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Время работы КТ */}
+      <section className="py-8">
+        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
+          <div className="bg-gradient-to-r from-[#6B8190] to-[#5a6f7a] rounded-[20px] p-8 text-white shadow-lg">
+            <div className="flex items-start">
+              <svg className="w-8 h-8 mr-4 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <div>
+                <h3 className="text-2xl font-bold mb-3">Время работы КТ</h3>
+                <p className="text-lg mb-2">КТ работает с 9:30 до 15:00</p>
+                <p className="text-white/90">Кроме воскресенья и понедельника</p>
+              </div>
             </div>
           </div>
         </div>

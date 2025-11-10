@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Услуги | Альтамед-с',
-  description: 'Медицинские услуги клиники Альтамед-с для взрослых и детей',
+  description: 'Медицинские услуги клиники Альтамед-Сдля взрослых и детей',
 };
 
 export default function ServicesLayout({

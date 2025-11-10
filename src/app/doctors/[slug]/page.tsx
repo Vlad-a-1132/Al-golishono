@@ -202,7 +202,7 @@ function getDoctorDetails(doctorName: string) {
     },
     'Дмитриев Алексей Олегович': {
       specialization: 'Врач невролог',
-      category: 'Невролог, мануальный терапевт, рефлексотерапевт',
+      category: 'Невролог, мануальный терапевт, рефлексотерапевт. Кандидат медицинских наук',
       education: [
         'Мордовский национальный исследовательский государственный университет им. Н.П. Огарева, Медицинский институт. Диплом ВСА 0363372 от 01.07.2005г — специализация «Лечебное дело»',
         'Ординатура Мордовский национальный исследовательский государственный университет им. Н.П. Огарева 2007 г. — «Неврология»',
@@ -339,7 +339,8 @@ function getDoctorDetails(doctorName: string) {
       ],
       methods: [],
       certificates: [
-        '/images/sertifikat/Screenshot_1761.png'
+        '/images/sertifikat/Screenshot_1761.png',
+        '/images/sertifikat/12_2.jpg'
       ],
       achievements: 'Является оперирующим сердечно-сосудистым хирургом, автором и соавтором более 50-ти печатных работ, в том числе глав в научных монографиях и национальных рекомендациях РФ по лечению сердечной недостаточности. За последние 8 лет в рамках экспериментальной работы, выполнил 30 операций геометрической реконструкции левого желудочка и около 100 операций анатомической трансплантации сердца у животных. За последние 15 лет — стажировки в ведущих клиниках Германии, Швейцарии, Голландии, Бельгии.'
     },
@@ -537,6 +538,7 @@ function getDoctorDetails(doctorName: string) {
         '/images/sertifikat/gromov/gromov-5.jpg',
         '/images/sertifikat/gromov/gromov-6.jpg',
         '/images/sertifikat/gromov/gromov-7.jpg',
+        '/images/sertifikat/gromov/1-2.jpg',
         '/images/sertifikat/gromov/gromov-8.jpg',
         '/images/sertifikat/gromov/gromov-9.jpg'
       ]
@@ -783,8 +785,8 @@ function getDoctorDetails(doctorName: string) {
       methods: []
     },
     'Рубцова Ольга Юрьевна': {
-      specialization: 'Стоматолог-хирург, стоматолог-терапевт',
-      category: 'Стоматолог-хирург, стоматолог-терапевт',
+      specialization: 'Стоматолог-хирург, имплантолог, стоматолог-терапевт',
+      category: 'Стоматолог-хирург, имплантолог, стоматолог-терапевт',
       education: [
         'В 2001 году окончила Тверскую государственную медицинскую академию',
         'Диплом Тверская государственная медицинская академия рег.№ 366 от 28.06.2001 г. – врач-стоматолог',
@@ -1111,8 +1113,8 @@ function getDoctorDetails(doctorName: string) {
       ]
     },
     'Гончаренко Елена Борисовна': {
-      specialization: 'Врач-ортодонт',
-      category: 'Врач-ортодонт высшей квалификационной категории',
+      specialization: 'Врач-ортодонт, гнатолог',
+      category: 'Врач-ортодонт, гнатолог высшей квалификационной категории',
       education: [
         'В 1997 году окончила Московский Государственный медико-стоматологический институт',
         'Диплом Московский Государственный медико-стоматологический институт в 1997г. Рег.№ 263- «стоматология»',
@@ -1130,7 +1132,7 @@ function getDoctorDetails(doctorName: string) {
       accreditation: [
         { number: '2022.3185762', date: 'с 28.01.25 до 28.01.30', specialty: 'Ортодонтия', institution: 'ФГБОУ ДПО РМАНПО Минздрава России' }
       ],
-      experience: 'Стаж работы: с 1997 года. Стаж работы более 10 лет',
+      experience: 'Стаж работы: более 25 лет',
       mainDirections: [],
       methods: []
     },
@@ -1689,11 +1691,11 @@ function getDoctorDetails(doctorName: string) {
       methods: []
     },
     'Абрамов Юно Эриильевич': {
-      specialization: 'Врач стоматолог-хирург',
-      category: 'Врач стоматолог-хирург',
+      specialization: 'Стоматолог-хирург, имплантолог',
+      category: 'Стоматолог-хирург, имплантолог',
       education: [
         'Диплом № 107731 0627002 от 29.06.2018',
-        'ФГАО УВО Первый московский государственный медицинский университет им. И.М.Сеченова',
+        'ФГАО УВО Первый московский государственный медицинский университет им. И.М.Сеченова (окончил с отличием)',
         'Врач стоматолог',
         'Ординатура Диплом №115019 044775 от 31.08.2020 г – стоматология хирургическая',
         'ГБУЗ МО МОНИКИ им.М.Ф.Владимирского',
@@ -1781,8 +1783,8 @@ export async function generateMetadata({ params }: DoctorPageProps): Promise<Met
 
   if (!doctor) {
     return {
-      title: 'Врач не найден | Клиника Альтамед-С Одинцово',
-      description: 'Врач не найден в клинике Альтамед-С Одинцово',
+      title: 'Врач не найден | Клиника Альтамед-СОдинцово',
+      description: 'Врач не найден в клинике Альтамед-СОдинцово',
     };
   }
 
@@ -1808,8 +1810,8 @@ export async function generateMetadata({ params }: DoctorPageProps): Promise<Met
     `консультация ${mainSpecialty} Одинцово`,
     `${doctor.name} Одинцово`,
     `${doctor.name} клиника Альтамед-С`,
-    `Клиника Альтамед-С Одинцово`,
-    `Альтамед-С Одинцово`,
+    `Клиника Альтамед-СОдинцово`,
+    `Альтамед-СОдинцово`,
     `медицинский центр Одинцово`,
     `записаться к врачу Одинцово`,
     `записаться к ${mainSpecialty} Одинцово`,
@@ -1848,7 +1850,7 @@ export async function generateMetadata({ params }: DoctorPageProps): Promise<Met
           url: imageUrl,
           width: 800,
           height: 600,
-          alt: `${specialization} ${doctor.name} в клинике Альтамед-С Одинцово`,
+          alt: `${specialization} ${doctor.name} в клинике Альтамед-СОдинцово`,
         },
       ],
     },
@@ -2293,7 +2295,7 @@ export default async function DoctorPage({ params }: DoctorPageProps) {
                 <div className="w-full max-w-[280px] md:w-48 h-[360px] md:h-64 relative rounded-2xl overflow-hidden">
                   <Image
                     src={doctor.photo}
-                    alt={`${specialization} ${doctor.name} в клинике Альтамед-С Одинцово`}
+                    alt={`${specialization} ${doctor.name} в клинике Альтамед-СОдинцово`}
                     fill
                     className="object-cover"
                   />

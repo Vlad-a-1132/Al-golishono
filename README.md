@@ -1,4 +1,4 @@
-# Альтамед-С - Сеть медицинских центров
+# Альтамед-С- Сеть медицинских центров
 
 ![Next.js](https://img.shields.io/badge/Next.js-14-black?logo=next.js)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript)

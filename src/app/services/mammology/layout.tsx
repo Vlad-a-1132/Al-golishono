@@ -66,7 +66,7 @@ export const metadata: Metadata = {
     'application/ld+json': JSON.stringify({
       "@context": "https://schema.org",
       "@type": "MedicalBusiness",
-      "name": "Альтамед-с - Маммология в Одинцово",
+      "name": "Альтамед-С- Маммология в Одинцово",
       "description": "Клиника маммологии в Одинцово. Профессиональная диагностика и лечение заболеваний молочных желез. УЗИ молочных желез, маммография, лечение мастопатии.",
       "url": "https://altamed-s.ru/services/mammology",
       "telephone": "+7 (495) 255-44-50",

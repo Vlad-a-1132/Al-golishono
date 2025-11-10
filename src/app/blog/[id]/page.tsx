@@ -22,10 +22,10 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
 
   // Создаем описание из содержимого статьи (первые 160 символов)
   const contentText = article.content?.replace(/<[^>]*>/g, '').substring(0, 160) || '';
-  const description = contentText ? `${contentText}...` : `Читайте статью "${article.title}" в блоге медицинского центра Альтамед-с в Одинцово. Полезная информация о здоровье и медицине.`;
+  const description = contentText ? `${contentText}...` : `Читайте статью "${article.title}" в блоге медицинского центра Альтамед-Св Одинцово. Полезная информация о здоровье и медицине.`;
 
   return {
-    title: `${article.title} - Блог | Медицинский центр Альтамед-с в Одинцово`,
+    title: `${article.title} - Блог | Медицинский центр Альтамед-Св Одинцово`,
     description: description,
     keywords: [
       'медицинские статьи Одинцово',
