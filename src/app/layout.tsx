@@ -58,13 +58,6 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://altamed-s.ru',
   },
-  icons: {
-    icon: [
-      { url: '/favicon.ico', sizes: 'any' },
-    ],
-    shortcut: '/favicon.ico',
-    apple: '/images/icons/S.webp',
-  },
 };
 
 export default function RootLayout({

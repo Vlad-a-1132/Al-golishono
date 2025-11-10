@@ -86,6 +86,11 @@ export default function Footer() {
                   Записаться на прием
                 </Link>
               </li>
+              <li>
+                <Link href="/privacy-policy" className="text-gray-300 hover:text-[#13AB7B] transition">
+                  Пользовательское соглашение
+                </Link>
+              </li>
             </ul>
           </div>
           

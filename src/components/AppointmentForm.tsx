@@ -1,6 +1,7 @@
 "use client"
 
 import Image from "next/image";
+import Link from "next/link";
 import { useState, FormEvent } from "react";
 
 interface AppointmentFormProps {
@@ -151,7 +152,12 @@ export default function AppointmentForm({
                   </button>
                 </div>
 
-                <p className="text-white/80 text-xs italic mb-2">Нажимая на кнопку, вы даете согласие на <span className="underline cursor-pointer hover:text-white">обработку своих персональных данных</span></p>
+                <p className="text-white/80 text-xs italic mb-2">
+                  Нажимая на кнопку, вы даете согласие на{' '}
+                  <a href="/privacy-policy" className="underline cursor-pointer hover:text-white" onClick={(e) => { e.preventDefault(); window.location.href = '/privacy-policy'; }}>
+                    обработку своих персональных данных
+                  </a>
+                </p>
               </form>
 
               <div className="text-white/85 text-sm space-y-1">
