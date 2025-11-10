@@ -227,14 +227,6 @@ export default function DoctorsPage() {
                     <div className="flex-1 min-w-0">
                       {/* Name */}
                       <h2 className="text-base font-bold text-gray-900 mb-2 leading-tight">{doctor.name}</h2>
-                      
-                      {/* Experience and Reviews */}
-                      <div className="text-sm text-blue-600 mb-1">
-                        Стаж: <span className="font-semibold">{doctor.experience || 0}</span> {doctor.experience === 1 ? 'год' : doctor.experience < 5 ? 'года' : 'лет'}
-                      </div>
-                      <div className="text-sm text-emerald-600">
-                        Отзывов: <span className="font-semibold">0</span>
-                      </div>
                     </div>
                   </div>
 

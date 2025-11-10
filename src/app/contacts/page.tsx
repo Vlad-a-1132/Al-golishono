@@ -58,17 +58,17 @@ export default function ContactsPage() {
     {
       title: 'Клиника на бульваре Маршала Крылова',
       address: '143005, Московская область, Одинцовский городской округ, г.Одинцово, бульвар Маршала Крылова, д.23, пом.I',
-      mapLink: 'https://yandex.ru/maps/?pt=37.291&z=14&l=map',
+      mapLink: 'https://yandex.ru/maps/?rtext=~55.680564,37.291079&rtt=auto',
     },
     {
       title: 'Клиника на Можайском шоссе',
       address: '143005, Московская область, Одинцовский городской округ, г.Одинцово, ул. Можайское шоссе, д.141, пом.4',
-      mapLink: 'https://yandex.ru/maps/?pt=37.306&z=14&l=map',
+      mapLink: 'https://yandex.ru/maps/?rtext=~55.676321,37.306184&rtt=auto',
     },
   ];
 
   const contactInfo = {
-    phone: '+7 (495) 127-51-06',
+    phone: '+7 (495) 255-44-50',
     email: 'info@altamed-c.ru',
     workingHours: 'Пн-Вс: 8.00 - 21.00',
   };

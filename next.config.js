@@ -2,12 +2,13 @@ const path = require('path');
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Static export only for production
-  ...(process.env.NODE_ENV === 'production' && {
-    output: 'export',
-    trailingSlash: true,
-    distDir: 'out',
-  }),
+  // ВАЖНО: Статический экспорт отключен, так как используются API routes для отправки email
+  // Если нужен статический экспорт, раскомментируйте строки ниже и удалите API routes
+  // ...(process.env.NODE_ENV === 'production' && {
+  //   output: 'export',
+  //   trailingSlash: true,
+  //   distDir: 'out',
+  // }),
   
   // Image settings
   images: {

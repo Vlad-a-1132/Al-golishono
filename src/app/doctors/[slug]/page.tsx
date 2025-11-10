@@ -3,6 +3,7 @@ import Link from "next/link";
 import { doctors } from "@/data/static-data";
 import React from "react";
 import { Metadata } from "next";
+import AppointmentForm from "@/components/AppointmentForm";
 
 interface DoctorPageProps {
   params: Promise<{
@@ -2847,6 +2848,113 @@ export default async function DoctorPage({ params }: DoctorPageProps) {
               </div>
             </div>
           )}
+        </section>
+
+        {/* Appointment Form */}
+        <div className="mt-8">
+          <AppointmentForm />
+        </div>
+
+        {/* Reviews Section */}
+        <section className="mt-8 bg-white rounded-2xl shadow-lg p-6">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Отзывы наших пациентов</h2>
+          
+          <div className="prose max-w-none space-y-6">
+            <p className="text-gray-700 text-lg">
+              Нам очень важно Ваше мнение о качестве нашей работы! Ваши отзывы помогают нам становиться лучше и улучшать сервис для всех пациентов.
+            </p>
+            
+            <div className="bg-emerald-50 border-l-4 border-emerald-500 p-6 rounded-lg">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">Оставьте отзыв в Яндекс.Картах</h3>
+              <p className="text-gray-700 mb-4">
+                Нам важно знать, что Вы думаете о нашей клинике. Ваш отзыв поможет другим пациентам узнать о качестве наших услуг.
+              </p>
+              <p className="text-gray-700 mb-4 font-medium">
+                Как оставить отзыв:
+              </p>
+              <ol className="list-decimal list-inside space-y-2 text-gray-700">
+                <li>Откройте страницу нашей клиники в Яндекс.Картах</li>
+                <li>Нажмите на кнопку "Оставить отзыв" (см. скриншот ниже)</li>
+                <li>Оцените нашу работу и напишите Ваш отзыв</li>
+                <li className="font-medium text-emerald-700">
+                  <strong>Это очень важно:</strong> укажите ФИО врача, дату приема и услугу, которую Вы получили. Мы будем очень благодарны за такую подробность!
+                </li>
+                <li>Нажмите "Опубликовать"</li>
+              </ol>
+            </div>
+
+            <div className="mt-6">
+              <div className="relative w-full h-auto rounded-lg overflow-hidden shadow-md">
+                <Image
+                  src="/images/documents/Screenshot_1749.png"
+                  alt="Инструкция: как оставить отзыв в Яндекс.Картах"
+                  width={800}
+                  height={600}
+                  className="w-full h-auto"
+                />
+              </div>
+              <p className="text-sm text-gray-500 text-center mt-2">
+                Нажмите на кнопку "Оставить отзыв" (выделена на скриншоте)
+              </p>
+            </div>
+            
+            <div className="mt-6 text-center">
+              <a 
+                href="https://yandex.ru/search/?text=%D0%B0%D0%BB%D1%8C%D1%82%D0%B0%D0%BC%D0%B5%D0%B4+%D1%81+%D0%BE%D0%B4%D0%B8%D0%BD%D1%86%D0%BE%D0%B2%D0%BE&lr=121257&src=suggest_Pers"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center bg-emerald-500 text-white px-8 py-4 rounded-full font-medium hover:bg-emerald-600 transition-colors"
+              >
+                <svg className="w-5 h-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                </svg>
+                Оставить отзыв в Яндекс.Картах
+              </a>
+            </div>
+
+            <div className="mt-8 pt-6 border-t border-gray-200">
+              <h3 className="text-lg font-semibold text-gray-800 mb-4">Почему мы просим отзывы?</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="flex items-start">
+                  <span className="text-emerald-500 mr-3 text-2xl">✓</span>
+                  <div>
+                    <h4 className="font-semibold text-gray-800">Это помогает нам расти</h4>
+                    <p className="text-gray-600 text-sm">Ваша обратная связь показывает, что работает хорошо, а что можно улучшить</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <span className="text-emerald-500 mr-3 text-2xl">✓</span>
+                  <div>
+                    <h4 className="font-semibold text-gray-800">Мы ценим Ваше время</h4>
+                    <p className="text-gray-600 text-sm">Ваш отзыв помогает другим пациентам выбрать качественную медицинскую помощь</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <span className="text-emerald-500 mr-3 text-2xl">✓</span>
+                  <div>
+                    <h4 className="font-semibold text-gray-800">Мы стремимся к совершенству</h4>
+                    <p className="text-gray-600 text-sm">Каждый отзыв мотивирует нас становиться еще лучше</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <span className="text-emerald-500 mr-3 text-2xl">✓</span>
+                  <div>
+                    <h4 className="font-semibold text-gray-800">Мы читаем все отзывы</h4>
+                    <p className="text-gray-600 text-sm">Каждый отзыв внимательно изучается, чтобы улучшить наш сервис</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-8 bg-blue-50 rounded-lg p-6">
+              <p className="text-gray-700 mb-2">
+                <strong>Спасибо за Ваше доверие!</strong>
+              </p>
+              <p className="text-gray-600">
+                Мы очень ценим наших пациентов и всегда готовы помочь Вам и Вашим близким сохранить здоровье. Ваши отзывы помогают нам становиться лучше день ото дня.
+              </p>
+            </div>
+          </div>
         </section>
       </div>
     </div>

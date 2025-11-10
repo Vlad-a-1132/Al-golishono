@@ -752,7 +752,7 @@ export default function DentistryPage() {
         "streetAddress": "бульвар Маршала Крылова, д.23, пом.I",
         "postalCode": "143005"
       },
-      "telephone": "+7 (495) 127-51-06",
+      "telephone": "+7 (495) 255-44-50",
       "url": "https://altamed-s.ru/services/dentistry",
       "priceRange": "$$",
       "medicalSpecialty": [
