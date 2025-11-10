@@ -18,11 +18,11 @@
 SMTP_HOST=smtp.mastermail.ru
 SMTP_PORT=25
 SMTP_USER=zakaz@altamed-c.ru
-SMTP_PASSWORD=ваш_реальный_пароль
+SMTP_PASSWORD=201Rect8*=
 EMAIL_TO=zakaz@altamed-c.ru
 ```
 
-**ВАЖНО:** Замените `ваш_реальный_пароль` на реальный пароль от почты zakaz@altamed-c.ru
+
 
 #### 2. Создать папку для хранения заявок
 

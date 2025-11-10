@@ -1714,7 +1714,9 @@ function getDoctorDetails(doctorName: string) {
         '2019 VII Международный междисциплинарный конгресс по заболеваниям органов головы и шеи. Федерация специалистов по заболеваниям головы и шеи',
         '2018 Astra Tech Implant System Day. Dentsply Sirona'
       ],
-      accreditation: [],
+      accreditation: [
+        { number: '2022.3198837', date: 'с 29.05.23 до 29.05.28', specialty: 'Стоматология хирургическая', institution: 'ФГБОУ ДПО РМАНПО Минздрава России' }
+      ],
       experience: '',
       mainDirections: [
         'Имплантация зубов',
@@ -1741,7 +1743,7 @@ function getDoctorDetails(doctorName: string) {
         'Сертификат 0377242073884 от 30.10.19г. – оториноларингология'
       ],
       accreditation: [
-        { number: '2022.3072133', date: 'с 23.07.24 до 23.07.29', specialty: 'Оториноларингология', institution: 'ФГБОУ ДПО РМАНПО Минздрава России' }
+        { number: '2022.3198826', date: 'с 23.07.24 до 23.07.29', specialty: 'Оториноларингология', institution: 'ФГБОУ ДПО РМАНПО Минздрава России' }
       ],
       experience: 'Стаж с 2001 года',
       mainDirections: [],
