@@ -57,39 +57,29 @@ export default function Footer() {
             </ul>
           </div>
           
-          {/* Информация */}
+          {/* Информация для пациентов */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold">Информация</h3>
+            <h3 className="text-lg font-semibold">Информация для пациентов</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/about" className="text-gray-300 hover:text-[#13AB7B] transition">
-                  О нас
-                </Link>
+                <a href="/images/documents/privacy.pdf" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-[#13AB7B] transition">
+                  Политика конфиденциальности
+                </a>
               </li>
               <li>
-                <Link href="/doctors" className="text-gray-300 hover:text-[#13AB7B] transition">
-                  Врачи
-                </Link>
-              </li>
-              <li>
-                <Link href="/blog" className="text-gray-300 hover:text-[#13AB7B] transition">
-                  Блог
-                </Link>
-              </li>
-              <li>
-                <Link href="/contacts" className="text-gray-300 hover:text-[#13AB7B] transition">
-                  Контакты
-                </Link>
-              </li>
-              <li>
-                <Link href="/appointments" className="text-gray-300 hover:text-[#13AB7B] transition">
-                  Записаться на прием
-                </Link>
-              </li>
-              <li>
-                <Link href="/privacy-policy" className="text-gray-300 hover:text-[#13AB7B] transition">
+                <a href="/images/documents/terms.pdf" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-[#13AB7B] transition">
                   Пользовательское соглашение
-                </Link>
+                </a>
+              </li>
+              <li>
+                <a href="/images/documents/personal_data.docx" download className="text-gray-300 hover:text-[#13AB7B] transition">
+                  Согласие на обработку персональных данных
+                </a>
+              </li>
+              <li>
+                <a href="/images/documents/sogl.docx" download className="text-gray-300 hover:text-[#13AB7B] transition">
+                  Политика обработки персональных данных
+                </a>
               </li>
             </ul>
           </div>
