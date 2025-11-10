@@ -1073,9 +1073,6 @@ export default function Home() {
                   <div className="p-4 md:p-6 flex flex-col justify-between h-[220px] md:h-[232px]">
                     <div>
                         <h3 className="font-bold text-lg text-black mb-2">{doctor.name}</h3>
-                        <p className="text-sm text-gray-600 mb-3">
-                          Стаж: {doctor.experience} {doctor.experience === 1 ? 'год' : doctor.experience < 5 ? 'года' : 'лет'}
-                        </p>
                         <p className="text-sm text-gray-700 leading-relaxed">{doctor.specialization}</p>
                     </div>
                       <Link 

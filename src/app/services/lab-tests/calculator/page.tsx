@@ -6,6 +6,7 @@ import jsPDF from "jspdf";
 import html2canvas from "html2canvas";
 
 interface ServiceItem {
+  code: string;
   name: string;
   price: number;
 }
@@ -96,13 +97,12 @@ export default function LabCalculatorPage() {
 
   function toggleCategory(category: string) {
     setSelectedCategories((prev) => {
-      const next = new Set(prev);
-      if (next.has(category)) {
-        next.delete(category);
-      } else {
-        next.add(category);
+      // If clicking the same category, deselect it
+      if (prev.has(category)) {
+        return new Set();
       }
-      return next;
+      // Otherwise, select only this category
+      return new Set([category]);
     });
   }
 
@@ -184,11 +184,11 @@ export default function LabCalculatorPage() {
     const tbody = document.createElement('tbody');
     const selectedItems = Object.values(selected);
     
-    selectedItems.forEach((item, index) => {
+    selectedItems.forEach((item) => {
       const row = document.createElement('tr');
       
       const code = document.createElement('td');
-      code.textContent = `A${String(index + 1).padStart(6, '0')}`;
+      code.textContent = item.code || '-';
       code.style.border = '1px solid #000';
       code.style.padding = '8px';
       
@@ -688,10 +688,10 @@ export default function LabCalculatorPage() {
                     </tr>
                   </thead>
                   <tbody>
-                    {Object.values(selected).map((item, index) => (
+                    {Object.values(selected).map((item) => (
                       <tr key={item.name} className="border-b">
                         <td className="py-3 px-2 text-gray-800 break-words">{item.name}</td>
-                        <td className="py-3 px-2 text-gray-600 whitespace-nowrap">A{String(index + 1).padStart(6, '0')}</td>
+                        <td className="py-3 px-2 text-gray-600 whitespace-nowrap">{item.code || '-'}</td>
                         <td className="py-3 px-2 text-gray-600 whitespace-nowrap">2-3 дня</td>
                         <td className="py-3 px-2 text-gray-800 font-semibold whitespace-nowrap">{item.price} руб.</td>
                         <td className="py-3 px-2">
@@ -710,7 +710,7 @@ export default function LabCalculatorPage() {
 
               {/* Mobile Cards */}
               <div className="md:hidden space-y-4">
-                {Object.values(selected).map((item, index) => (
+                {Object.values(selected).map((item) => (
                   <div key={item.name} className="bg-gray-50 rounded-xl p-4 border border-gray-200 relative">
                     <button
                       onClick={() => removeSelected(item.name)}
@@ -723,7 +723,7 @@ export default function LabCalculatorPage() {
                       <div className="grid grid-cols-2 gap-2 text-sm">
                         <div>
                           <span className="text-gray-600">Код анализа:</span>
-                          <span className="ml-2 text-gray-800 font-medium">A{String(index + 1).padStart(6, '0')}</span>
+                          <span className="ml-2 text-gray-800 font-medium">{item.code || '-'}</span>
                         </div>
                         <div>
                           <span className="text-gray-600">Сроки:</span>
