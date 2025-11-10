@@ -20,6 +20,7 @@ export default function LabCalculatorPage() {
   const [selected, setSelected] = useState<Record<string, ServiceItem>>({});
   const [loading, setLoading] = useState(false);
   const [showModal, setShowModal] = useState(false);
+  const [selectedCategories, setSelectedCategories] = useState<Set<string>>(new Set(["Аллергология и иммунология"]));
 
   useEffect(() => {
     async function load() {
@@ -92,6 +93,25 @@ export default function LabCalculatorPage() {
       return next;
     });
   }
+
+  function toggleCategory(category: string) {
+    setSelectedCategories((prev) => {
+      const next = new Set(prev);
+      if (next.has(category)) {
+        next.delete(category);
+      } else {
+        next.add(category);
+      }
+      return next;
+    });
+  }
+
+  const categoriesToDisplay = useMemo(() => {
+    if (selectedCategories.size === 0) {
+      return [];
+    }
+    return categories.filter(cat => selectedCategories.has(cat));
+  }, [categories, selectedCategories]);
 
   async function generatePDF() {
     // Create a hidden div with the PDF content
@@ -225,31 +245,6 @@ export default function LabCalculatorPage() {
     
     table.appendChild(tbody);
     
-    // Additional costs
-    const additionalCosts = document.createElement('div');
-    additionalCosts.style.marginBottom = '20px';
-    
-    const additionalTitle = document.createElement('h3');
-    additionalTitle.textContent = '* Дополнительно оплачивается (в зависимости от вида анализа):';
-    additionalTitle.style.fontSize = '12px';
-    additionalTitle.style.fontWeight = 'bold';
-    additionalTitle.style.marginBottom = '10px';
-    
-    const costList = document.createElement('ul');
-    costList.style.marginLeft = '20px';
-    
-    const cost1 = document.createElement('li');
-    cost1.textContent = 'Стоимость забора крови - 420 руб.';
-    
-    const cost2 = document.createElement('li');
-    cost2.textContent = 'Стоимость забора биоматериала (кроме крови) - от 290 руб.';
-    
-    costList.appendChild(cost1);
-    costList.appendChild(cost2);
-    
-    additionalCosts.appendChild(additionalTitle);
-    additionalCosts.appendChild(costList);
-    
     // General info
     const generalInfo = document.createElement('div');
     generalInfo.style.marginBottom = '20px';
@@ -305,7 +300,6 @@ export default function LabCalculatorPage() {
     pdfContent.appendChild(header);
     pdfContent.appendChild(title);
     pdfContent.appendChild(table);
-    pdfContent.appendChild(additionalCosts);
     pdfContent.appendChild(generalInfo);
     pdfContent.appendChild(contactInfo);
     pdfContent.appendChild(disclaimer);
@@ -395,33 +389,31 @@ export default function LabCalculatorPage() {
               <svg className="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
               </svg>
-              <span className="text-gray-700 font-medium">Все разделы</span>
+              <span className="text-gray-700 font-medium">Выберите разделы</span>
             </div>
             <div className="overflow-x-auto pb-2 scrollbar-hide" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none', WebkitOverflowScrolling: 'touch' }}>
               <div className="flex gap-3" style={{ width: 'max-content' }}>
-                {categories.map((category, index) => (
-                  <a
-                    key={category}
-                    href={`#${category.replace(/\s+/g, '-').toLowerCase()}`}
-                    onClick={(e) => {
-                      e.preventDefault();
-                      const element = document.getElementById(category.replace(/\s+/g, '-').toLowerCase());
-                      if (element) {
-                        element.scrollIntoView({ behavior: 'smooth' });
-                      }
-                    }}
-                    className={`flex-shrink-0 px-4 py-3 rounded-lg text-sm font-medium whitespace-nowrap transition-colors relative ${
-                      index === 0 
-                        ? 'bg-emerald-500 text-white' 
-                        : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-                    }`}
-                  >
-                    {category}
-                    {index === 0 && (
-                      <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-full w-0 h-0 border-l-[6px] border-r-[6px] border-t-[6px] border-transparent border-t-emerald-500"></div>
-                    )}
-                  </a>
-                ))}
+                {categories.map((category) => {
+                  const isSelected = selectedCategories.has(category);
+                  return (
+                    <button
+                      key={category}
+                      onClick={() => toggleCategory(category)}
+                      className={`flex-shrink-0 px-4 py-3 rounded-lg text-sm font-medium whitespace-nowrap transition-colors ${
+                        isSelected
+                          ? 'bg-emerald-500 text-white' 
+                          : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                      }`}
+                    >
+                      {category}
+                      {isSelected && (
+                        <svg className="w-4 h-4 inline ml-2" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
+                      )}
+                    </button>
+                  );
+                })}
               </div>
             </div>
           </div>
@@ -508,27 +500,36 @@ export default function LabCalculatorPage() {
                 <svg className="w-5 h-5 text-emerald-600" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                 </svg>
-                Популярные анализы
+                Категории анализов
               </h2>
               <nav>
                 <ul className="space-y-2">
-                  {categories.map((category) => (
-                    <li key={category}>
-                      <a
-                        href={`#${category.replace(/\s+/g, '-').toLowerCase()}`}
-                        onClick={(e) => {
-                          e.preventDefault();
-                          const element = document.getElementById(category.replace(/\s+/g, '-').toLowerCase());
-                          if (element) {
-                            element.scrollIntoView({ behavior: 'smooth' });
-                          }
-                        }}
-                        className="block text-gray-700 hover:text-emerald-600 transition-colors"
-                      >
-                        {category}
-                      </a>
-                    </li>
-                  ))}
+                  {categories.map((category) => {
+                    const isSelected = selectedCategories.has(category);
+                    const count = labServices[category]?.length || 0;
+                    return (
+                      <li key={category}>
+                        <button
+                          onClick={() => toggleCategory(category)}
+                          className={`w-full text-left px-3 py-2 rounded-lg transition-colors flex items-center justify-between ${
+                            isSelected
+                              ? 'bg-emerald-500 text-white'
+                              : 'text-gray-700 hover:bg-gray-100'
+                          }`}
+                        >
+                          <span className="flex-1">{category}</span>
+                          <span className={`text-xs ml-2 ${isSelected ? 'text-white' : 'text-gray-500'}`}>
+                            {count}
+                          </span>
+                          {isSelected && (
+                            <svg className="w-4 h-4 ml-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                              <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                            </svg>
+                          )}
+                        </button>
+                      </li>
+                    );
+                  })}
                 </ul>
               </nav>
             </aside>
@@ -564,7 +565,16 @@ export default function LabCalculatorPage() {
               )}
 
               {/* Category sections */}
-              {!query && categories.map((category) => (
+              {!query && selectedCategories.size === 0 && (
+                <div className="text-center py-12">
+                  <svg className="w-16 h-16 text-gray-300 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                  </svg>
+                  <h3 className="text-xl font-medium text-gray-700 mb-2">Выберите категорию анализов</h3>
+                  <p className="text-gray-500">Выберите одну или несколько категорий из списка слева, чтобы просмотреть доступные анализы</p>
+                </div>
+              )}
+              {!query && categoriesToDisplay.map((category) => (
                 <section key={category} id={category.replace(/\s+/g, '-').toLowerCase()} className="mb-10">
                   <h2 className="text-2xl font-bold text-gray-900 mb-6">{category}</h2>
                   <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
