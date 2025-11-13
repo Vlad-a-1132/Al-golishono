@@ -11,6 +11,7 @@ function PatientInfoSection() {
   const [isInformedConsentOpen, setIsInformedConsentOpen] = useState(false);
   const [isTaxDeductionOpen, setIsTaxDeductionOpen] = useState(false);
   const [isPreparationOpen, setIsPreparationOpen] = useState(false);
+  const [isSoutOpen, setIsSoutOpen] = useState(false);
   const [isAppointmentMethodsOpen, setIsAppointmentMethodsOpen] = useState(false);
   const [isLateArrivalRulesOpen, setIsLateArrivalRulesOpen] = useState(false);
 
@@ -1424,6 +1425,60 @@ function PatientInfoSection() {
                   </a>
                 </div>
               </div>
+            </div>
+          )}
+        </div>
+
+        {/* Специальная оценка условий труда */}
+        <div className="border border-gray-200 rounded-lg">
+          <button
+            onClick={() => setIsSoutOpen(!isSoutOpen)}
+            className="w-full flex items-center justify-between p-4 hover:bg-gray-50 transition-colors group"
+          >
+            <span className="text-gray-700 group-hover:text-emerald-600 font-medium">
+              Специальная оценка условий труда
+            </span>
+            <svg
+              className={`w-5 h-5 text-gray-400 transition-transform ${isSoutOpen ? 'rotate-180' : ''}`}
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          {isSoutOpen && (
+            <div className="px-4 pb-4 border-t border-gray-200 space-y-3">
+              <p className="text-gray-700 mt-4">
+                Сводные ведомости и планы мероприятий по специальной оценке условий труда в клинике «Альтамед-С».
+                Документы доступны в формате PDF.
+              </p>
+              {[
+                { label: "Сводная ведомость 2022 года", file: "/images/documents/22g.PDF" },
+                { label: "Сводная ведомость 2024 года", file: "/images/documents/24g.PDF" },
+                { label: "Сводная ведомость 2019 года", file: "/images/documents/19g.PDF" },
+                { label: "План мероприятий по улучшению условий труда 2019 года", file: "/images/documents/plan 19g.PDF" },
+                { label: "План мероприятий по улучшению условий труда 2022 года", file: "/images/documents/sout.PDF" },
+                { label: "План мероприятий по улучшению условий труда 2024 года", file: "/images/documents/sout24.PDF" }
+              ].map((item) => (
+                <div key={item.label} className="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition-colors">
+                  <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+                    <div className="flex-1">
+                      <p className="text-gray-700 text-sm">{item.label}</p>
+                    </div>
+                    <a
+                      href={item.file}
+                      target="_blank"
+                      className="inline-flex items-center text-emerald-600 hover:text-emerald-700 font-medium whitespace-nowrap text-sm"
+                    >
+                      Скачать файл
+                      <svg className="w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              ))}
             </div>
           )}
         </div>
