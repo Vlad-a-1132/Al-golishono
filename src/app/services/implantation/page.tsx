@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import AppointmentForm from "@/components/AppointmentForm";
 
-const WORDSTAT_KEYWORDS = [
+const WORDSTAT_KEYWORDS: string[] = [
   "имплантация одинцово",
   "имплантация в одинцове",
   "имплантация зубов в одинцово",
@@ -13,7 +13,7 @@ const WORDSTAT_KEYWORDS = [
   "стоматология имплантация одинцово",
   "одинцово имплантация область",
   "одномоментная имплантация одинцово"
-] as const;
+] ;
 
 export const metadata: Metadata = {
   title: "Имплантация зубов в Одинцово | Клиника «Альтамед-С»",
