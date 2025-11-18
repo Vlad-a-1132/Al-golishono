@@ -26,13 +26,6 @@ export default function AllergologyPage() {
       description: "Повторная консультация у врача-аллерголога-иммунолога"
     },
     {
-      id: 3,
-      name: "Профилактический прием (осмотр, консультация) врача-аллерголога иммунолога",
-      price: "3 000 руб.",
-      image: "/images/yslugi/allergoly.webp",
-      description: "Профилактический осмотр и консультация у врача-аллерголога-иммунолога"
-    },
-    {
       id: 4,
       name: "Комплекс исследований для выявления аллергена",
       price: "Цена по запросу",
@@ -54,13 +47,6 @@ export default function AllergologyPage() {
       description: "Диспансерное наблюдение у врача-аллерголога-иммунолога"
     },
     {
-      id: 7,
-      name: "Накожные исследования реакции на аллергены",
-      price: "900 руб.",
-      image: "/images/yslugi/allergoly.webp",
-      description: "Кожные пробы для выявления аллергических реакций"
-    },
-    {
       id: 8,
       name: "Исследование неспровоцированных дыхательных объемов и потоков",
       price: "1 500 руб.",
@@ -74,13 +60,6 @@ export default function AllergologyPage() {
       image: "/images/yslugi/allergoly.webp",
       description: "Спирометрия с бронхолитическими препаратами"
     },
-    {
-      id: 10,
-      name: "Исследование дыхательных объемов при провокации физической нагрузкой",
-      price: "2 100 руб.",
-      image: "/images/yslugi/allergoly.webp",
-      description: "Спирометрия с физической нагрузкой"
-    }
   ];
 
   return (
