@@ -94,7 +94,7 @@ export default function PeriodonticsPage() {
               </div>
               <div className="bg-white p-4 flex flex-col justify-between items-start gap-3">
                 <div className="text-black font-medium text-sm">Лечение десен в Одинцово</div>
-                <Link href="/appointments" className="bg-blue-500 text-white rounded-full flex items-center justify-center w-full h-[46px] text-sm hover:bg-blue-600 transition-colors">
+                <Link href="https://online.altamed-c.ru/" target="_blank" rel="noopener noreferrer" className="bg-blue-500 text-white rounded-full flex items-center justify-center w-full h-[46px] text-sm hover:bg-blue-600 transition-colors">
                   Записаться на прием
                   <svg className="w-5 h-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -113,7 +113,7 @@ export default function PeriodonticsPage() {
               <div className="absolute inset-0 flex flex-col justify-center items-start p-8 md:p-12 text-black z-10">
                 <h2 className="text-2xl md:text-4xl font-bold mb-4">Пародонтология в Одинцово</h2>
                 <p className="text-lg md:text-xl mb-6 max-w-md">Лечение и профилактика заболеваний десен</p>
-                <Link href="/appointments" className="bg-blue-500 text-white rounded-full px-8 py-3 font-medium hover:bg-blue-600 transition-colors">
+                <Link href="https://online.altamed-c.ru/" target="_blank" rel="noopener noreferrer" className="bg-blue-500 text-white rounded-full px-8 py-3 font-medium hover:bg-blue-600 transition-colors">
                   Записаться на прием
                 </Link>
               </div>
@@ -236,7 +236,7 @@ export default function PeriodonticsPage() {
               ))}
             </div>
             <div className="mt-8 text-center">
-              <Link href="/appointments" className="bg-emerald-500 text-white px-8 py-3 rounded-full font-medium hover:bg-emerald-600 transition-colors inline-block">
+              <Link href="https://online.altamed-c.ru/" target="_blank" rel="noopener noreferrer" className="bg-emerald-500 text-white px-8 py-3 rounded-full font-medium hover:bg-emerald-600 transition-colors inline-block">
                 Записаться на консультацию
               </Link>
             </div>

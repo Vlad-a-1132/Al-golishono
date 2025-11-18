@@ -110,7 +110,9 @@ function getDoctorDetails(doctorName: string) {
       qualifications: [
         'Сертификат специалиста №1178242625666 АНО ДПО "Единый Центр Подготовки Кадров" 30.12.20г. - ортопедическая стоматология'
       ],
-      accreditation: [],
+      accreditation: [
+        { number: '7725 033494537', date: 'с 28.10.2025 до 28.10.2030', specialty: 'Стоматология ортопедическая', institution: 'ФГБОУ ДПО "Российская медицинская академия непрерывного профессионального образования" Минздрава РФ' }
+      ],
       experience: 'Стаж с 2006 года',
       mainDirections: [
         'Восстановление и протезирование (имплантация) зубов',
@@ -759,7 +761,9 @@ function getDoctorDetails(doctorName: string) {
         'Удостоверение №772413937281 от 23.12.20г. – "Терапия"',
         'ООО Многопрофильный учебный центр ДПО "Образовательный стандарт". Удостоверение Рег.№ 02/27-ПК25053 от 27.02.25г. Терапия – 144ч'
       ],
-      accreditation: [],
+      accreditation: [
+        { number: '7725 033510542', date: 'с 28.10.2025 до 28.10.2030', specialty: 'Терапия', institution: 'ФГБОУ ДПО "Российская медицинская академия непрерывного профессионального образования" Минздрава РФ' }
+      ],
       experience: 'Стаж работы: с 1981 года',
       mainDirections: [],
       methods: []
@@ -878,7 +882,9 @@ function getDoctorDetails(doctorName: string) {
         'Повышение квалификации в ООО "Непрерывное профессиональное образование". Удостоверение №772421683936 от 05.04.2024 – ортодонтия'
       ],
       accreditation: [
-        { number: '2022.3180079', date: 'с 23.04.24 до 23.04.29', specialty: 'Ортодонтия', institution: 'ФГБОУ ДПО РМАНПО Минздрава России' }
+        { number: '7725 033382812', date: 'с 23.09.2025 до 23.09.2030', specialty: 'Ортодонтия', institution: 'ФГБОУ ДПО «Российская медицинская академия непрерывного профессионального образования» Министерства здравоохранения Российской Федерации' },
+        { number: '7724 031851500', date: 'с 23.04.2024 до 23.04.2029', specialty: 'Стоматология детская', institution: 'ФГБОУ ДПО «Российская медицинская академия непрерывного профессионального образования» Министерства здравоохранения Российской Федерации' },
+        { number: '7724 032509025', date: 'с 24.12.2024 до 24.12.2029', specialty: 'Стоматология хирургическая', institution: 'ФГБОУ ДПО «Российская медицинская академия непрерывного профессионального образования» Министерства здравоохранения Российской Федерации' }
       ],
       experience: '',
       mainDirections: [
@@ -2317,9 +2323,9 @@ export default async function DoctorPage({ params }: DoctorPageProps) {
                     ? doctorDetails.experience 
                     : `Стаж: ${doctor.experience} ${doctor.experience === 1 ? 'год' : doctor.experience < 5 ? 'года' : 'лет'}`}
                 </p>
-                <Link href="/appointments" className="inline-block bg-gradient-to-r from-orange-400 to-orange-600 text-white px-6 py-3 rounded-xl hover:from-orange-500 hover:to-orange-700 transition-all font-medium w-full md:w-auto text-center">
+                <a href="https://online.altamed-c.ru/" target="_blank" rel="noopener noreferrer" className="inline-block bg-gradient-to-r from-orange-400 to-orange-600 text-white px-6 py-3 rounded-xl hover:from-orange-500 hover:to-orange-700 transition-all font-medium w-full md:w-auto text-center">
                   Записаться
-                </Link>
+                </a>
               </div>
             </div>
           </div>

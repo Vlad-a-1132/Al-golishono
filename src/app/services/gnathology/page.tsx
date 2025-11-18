@@ -201,8 +201,10 @@ export default function GnathologyPage() {
               </div>
               <div className="bg-white p-4 flex flex-col justify-between items-start gap-3">
                 <div className="text-black font-medium text-sm">Гнатологическая помощь</div>
-                <Link
-                  href="/appointments"
+                <Link 
+                  href="https://online.altamed-c.ru/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="bg-[#4A5568] text-white rounded-full flex items-center justify-center w-full h-[46px] text-sm hover:bg-[#3d4454] transition-colors"
                 >
                   Записаться
@@ -225,8 +227,10 @@ export default function GnathologyPage() {
                   Современный подход к диагностике и лечению дисфункций ВНЧС в медицинском центре
                   «Альтамед-С»
                 </p>
-                <Link
-                  href="/appointments"
+                <Link 
+                  href="https://online.altamed-c.ru/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="bg-[#4A5568] text-white rounded-full px-8 py-3 font-medium hover:bg-[#3d4454] transition-colors"
                 >
                   Записаться к гнатологу
@@ -376,7 +380,9 @@ export default function GnathologyPage() {
               </p>
             </div>
             <Link
-              href="/appointments"
+              href="https://online.altamed-c.ru/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-white text-[#4A5568] rounded-full px-8 py-3 font-medium hover:bg-gray-100 transition-colors text-center"
             >
               Записаться на консультацию

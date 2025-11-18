@@ -276,8 +276,10 @@ export default function ImplantationPage() {
               </div>
               <div className="bg-white p-4 flex flex-col justify-between items-start gap-3">
                 <div className="text-black font-medium text-sm">Имплантологическая стоматология</div>
-                <Link
-                  href="/appointments"
+                <Link 
+                  href="https://online.altamed-c.ru/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="bg-[#4A5568] text-white rounded-full flex items-center justify-center w-full h-[46px] text-sm hover:bg-[#3d4454] transition-colors"
                 >
                   Записаться
@@ -300,8 +302,10 @@ export default function ImplantationPage() {
                   Восстанавливаем зубы имплантами с естественной эстетикой, подробным планом лечения и
                   вниманием к каждому этапу.
                 </p>
-                <Link
-                  href="/appointments"
+                <Link 
+                  href="https://online.altamed-c.ru/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="bg-[#4A5568] text-white rounded-full px-8 py-3 font-medium hover:bg-[#3d4454] transition-colors"
                 >
                   Получить план имплантации
@@ -556,7 +560,9 @@ export default function ImplantationPage() {
               </p>
             </div>
             <Link
-              href="/appointments"
+              href="https://online.altamed-c.ru/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-white text-[#4A5568] rounded-full px-8 py-3 font-medium hover:bg-gray-100 transition-colors text-center"
             >
               Записаться на приём

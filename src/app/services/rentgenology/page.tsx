@@ -3,23 +3,24 @@ import type { Metadata } from "next";
 import AppointmentForm from "@/components/AppointmentForm";
 
 export const metadata: Metadata = {
-  title: "Рентгеология в Одинцово | Клиника «Альтамед-С»",
+  title: "Рентгенология в Одинцово | Клиника «Альтамед-С»",
   description:
-    "Рентгеология в клинике «Альтамед-С» в Одинцово: цифровая рентгенодиагностика с протоколами для головы, шеи, позвоночника и конечностей. Современные аппараты, экспертные врачи и быстрый результат.",
+    "Рентгенология в клинике «Альтамед-С» в Одинцово: цифровые рентген-аппараты, экспертные протоколы для головы, позвоночника и конечностей, быстрое описание врача-рентгенолога и выдача снимков в день обращения.",
   keywords: [
-    "рентгеология одинцово",
+    "рентгенология одинцово",
+    "рентгенография одинцово",
     "цифровой рентген одинцово",
-    "рентгенодиагностика в одинцово",
+    "рентген диагностика одинцово",
     "рентген позвоночника одинцово",
-    "рентгенография головы и шеи одинцово",
     "рентген конечностей одинцово",
+    "сделать рентген в одинцово",
     "клиника альтамед-с рентген"
   ],
   alternates: {
     canonical: "https://altamed-c.ru/services/rentgenology"
   },
   openGraph: {
-    title: "Рентгеология в Одинцово — клиника «Альтамед-С»",
+    title: "Рентгенология в Одинцово — клиника «Альтамед-С»",
     description:
       "Расширенная рентгенодиагностика: стоматологические, ортопедические и травматологические исследования, цифровая обработка и консультация врача-рентгенолога.",
     url: "https://altamed-c.ru/services/rentgenology",
@@ -29,7 +30,7 @@ export const metadata: Metadata = {
         url: "https://altamed-c.ru/images/yslugi/rentgen.webp",
         width: 1200,
         height: 630,
-        alt: "Рентгеология в клинике Альтамед-С в Одинцово"
+        alt: "Рентгенология в клинике Альтамед-С в Одинцово"
       }
     ]
   }
@@ -83,7 +84,7 @@ const radiologyCategories: RadiologyCategory[] = [
   },
   {
     title: "Верхние конечности",
-    subtitle: "Ортопедическая рентгеология для суставов и костей",
+    subtitle: "Ортопедическая рентгенология для суставов и костей",
     services: [
       { name: "Рентгенография верхней конечности", price: "2600 ₽" },
       { name: "Рентгенография ключицы", price: "2000 ₽" },
@@ -105,7 +106,7 @@ const radiologyCategories: RadiologyCategory[] = [
   },
   {
     title: "Нижние конечности и таз",
-    subtitle: "Спортивная и травматологическая рентгеология",
+    subtitle: "Спортивная и травматологическая рентгенология",
     services: [
       { name: "Рентгенография нижней конечности", price: "2600 ₽" },
       { name: "Рентгенография таза", price: "2500 ₽" },
@@ -194,7 +195,7 @@ export default function RentgenologyPage() {
                     />
                   </svg>
                   <span className="ml-1 text-sm font-medium text-gray-500 md:ml-2">
-                    Рентгеология
+                    Рентгенология
                   </span>
                 </div>
               </li>
@@ -207,7 +208,7 @@ export default function RentgenologyPage() {
         <div className="mx-auto px-4" style={{ maxWidth: "83rem" }}>
           <header className="mb-6 ml-0 md:ml-4 lg:ml-8">
             <h1 className="text-2xl md:text-3xl font-bold text-black leading-tight px-4 md:px-0">
-              Рентгеология в клинике «<span className="italic">Альтамед-С</span>» в Одинцово
+              Рентгенология в клинике «<span className="italic">Альтамед-С</span>» в Одинцово
             </h1>
             <p className="text-gray-600 mt-2 px-4 md:px-0 text-sm md:text-base">
               Расширенная цифровая рентгенодиагностика: экспертные обследования для стоматологии, травматологии,
@@ -220,14 +221,16 @@ export default function RentgenologyPage() {
               <div className="h-[220px] bg-[#4A5568] relative overflow-hidden">
                 <img
                   src="/images/yslugi/rentgen.webp"
-                  alt="Рентгеология в Одинцово"
+                  alt="Рентгенология в Одинцово"
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="bg-white p-4 flex flex-col justify-between items-start gap-3">
-                <div className="text-black font-medium text-sm">Цифровая рентгеология</div>
+                <div className="text-black font-medium text-sm">Цифровая рентгенология</div>
                 <Link
-                  href="/appointments"
+                  href="https://online.altamed-c.ru/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="bg-[#4A5568] text-white rounded-full flex items-center justify-center w-full h-[46px] text-sm hover:bg-[#3d4454] transition-colors"
                 >
                   Записаться
@@ -245,13 +248,15 @@ export default function RentgenologyPage() {
               />
               <div className="absolute inset-0 bg-gradient-to-r from-white via-white/85 to-transparent"></div>
               <div className="absolute inset-0 flex flex-col justify-center items-start p-8 md:p-12 text-black">
-                <h2 className="text-2xl md:text-4xl font-bold mb-4">Рентгеология: Услуги рентгенографии</h2>
+                <h2 className="text-2xl md:text-4xl font-bold mb-4">Рентгенология: Услуги рентгенографии</h2>
                 <p className="text-lg md:text-xl mb-6 max-w-xl">
                   Полный спектр рентгенологических исследований в клинике «Альтамед-С» в Одинцово: специализированные
                   протоколы, экспертное описание и моментальная выдача снимков.
                 </p>
                 <Link
-                  href="/appointments"
+                  href="https://online.altamed-c.ru/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="bg-[#4A5568] text-white rounded-full px-8 py-3 font-medium hover:bg-[#3d4454] transition-colors"
                 >
                   Записаться на рентген
@@ -266,7 +271,7 @@ export default function RentgenologyPage() {
         <div className="mx-auto px-4" style={{ maxWidth: "83rem" }}>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div className="lg:col-span-2 space-y-4 text-gray-700 leading-relaxed">
-              <h2 className="text-3xl font-bold text-gray-900">Что такое рентгеология в «Альтамед-С»</h2>
+              <h2 className="text-3xl font-bold text-gray-900">Что такое рентгенология в «Альтамед-С»</h2>
               <p>
                 Мы объединили классический рентген и современные методики обработки данных, чтобы врачи разных
                 специальностей — от ортопедов и травматологов до стоматологов и неврологов — получали исчерпывающую
@@ -274,7 +279,7 @@ export default function RentgenologyPage() {
                 по подготовке и возможностью получить снимки в цифровом и печатном виде.
               </p>
               <p>
-                В отличие от стандартного отделения рентгена, рентгеология в «Альтамед-С» включает расширенный
+                В отличие от стандартного отделения рентгена, рентгенология в «Альтамед-С» включает расширенный
                 спектр исследований, дополнительные серии проекций, функциональные пробы и комплексные отчёты.
                 Мы работаем на низкодозных цифровых аппаратах, соблюдая принципы ALARA — минимально достаточная
                 лучевая нагрузка для пациента.
@@ -301,7 +306,7 @@ export default function RentgenologyPage() {
                 </li>
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-[#4A5568] rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  Врачи-рентгенологи с опытом более 10 лет и постоянные курсы повышения квалификации в области рентгеологии.
+                  Врачи-рентгенологи с опытом более 10 лет и постоянные курсы повышения квалификации в области рентгенологии.
                 </li>
               </ul>
             </div>
@@ -313,7 +318,7 @@ export default function RentgenologyPage() {
         <div className="mx-auto px-4" style={{ maxWidth: "83rem" }}>
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Каталоги рентгенологических исследований</h2>
           <p className="text-gray-700 text-center max-w-3xl mx-auto mb-10 leading-relaxed">
-            Ниже — подробное описание услуг рентгеологического отделения. Списки структурированы по областям тела,
+            Ниже — подробное описание услуг рентгенологического отделения. Списки структурированы по областям тела,
             чтобы вы могли быстро найти нужное обследование. Для записи выберите услугу и нажмите кнопку «Записаться».
           </p>
 
@@ -342,7 +347,9 @@ export default function RentgenologyPage() {
                           </div>
                         </div>
                         <Link
-                          href="/appointments"
+                          href="https://online.altamed-c.ru/"
+                          target="_blank"
+                          rel="noopener noreferrer"
                           className="inline-flex items-center justify-center bg-[#4A5568] text-white px-4 py-2 rounded-md text-sm hover:bg-[#3d4454] transition-colors duration-300"
                         >
                           Записаться
@@ -362,7 +369,7 @@ export default function RentgenologyPage() {
 
       <section className="py-12 bg-white">
         <div className="mx-auto px-4" style={{ maxWidth: "83rem" }}>
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">Дополнительные возможности рентгеологии</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">Дополнительные возможности рентгенологии</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-gray-50 rounded-[20px] p-6 shadow-md border border-gray-100">
               <h3 className="text-xl font-semibold text-gray-900 mb-3">Стоматологические протоколы</h3>
@@ -403,10 +410,12 @@ export default function RentgenologyPage() {
               </p>
             </div>
             <Link
-              href="/appointments"
+              href="https://online.altamed-c.ru/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-white text-[#4A5568] rounded-full px-8 py-3 font-medium hover:bg-gray-100 transition-colors text-center"
             >
-              Записаться на рентгеологию
+              Записаться на рентгенологию
             </Link>
           </div>
         </div>
@@ -420,7 +429,7 @@ export default function RentgenologyPage() {
               __html: JSON.stringify({
                 "@context": "https://schema.org",
                 "@type": "MedicalBusiness",
-                name: "Клиника «Альтамед-С» — рентгеология в Одинцово",
+                name: "Клиника «Альтамед-С» — рентгенология в Одинцово",
                 url: "https://altamed-c.ru/services/rentgenology",
                 image: "https://altamed-c.ru/images/yslugi/rentgen.webp",
                 medicalSpecialty: "RadiationTherapy",
@@ -434,7 +443,7 @@ export default function RentgenologyPage() {
                 priceRange: "₽₽",
                 serviceType: "Рентгенологические исследования",
                 description:
-                  "Цифровая рентгеология в клинике «Альтамед-С»: исследования головы, позвоночника, конечностей, органов грудной клетки и дополнительные услуги с экспертным описанием.",
+                  "Цифровая рентгенология в клинике «Альтамед-С»: исследования головы, позвоночника, конечностей, органов грудной клетки и дополнительные услуги с экспертным описанием.",
                 sameAs: [
                   "https://altamed-c.ru",
                   "https://yandex.ru/maps/org/altamed_s/1919839667"
@@ -449,4 +458,5 @@ export default function RentgenologyPage() {
     </div>
   );
 }
+
 

@@ -128,7 +128,7 @@ export default function ShockwaveTherapyPage() {
               <div className="bg-white p-4 flex flex-col justify-between items-start gap-3">
                 <div className="text-black font-medium text-sm">Ударно-волновая терапия</div>
                 <Link 
-                  href="/appointments" 
+                  href="https://online.altamed-c.ru/" target="_blank" rel="noopener noreferrer" 
                   className="bg-purple-500 text-white rounded-full flex items-center justify-center w-full h-[46px] text-sm hover:bg-purple-600 transition-colors"
                 >
                   Консультация
@@ -155,7 +155,7 @@ export default function ShockwaveTherapyPage() {
                 <h2 className="text-2xl md:text-4xl font-bold mb-4">Ударно-волновая терапия в Одинцово</h2>
                 <p className="text-lg md:text-xl mb-6 max-w-md">Современный метод лечения хронических болей и патологий опорно-двигательного аппарата</p>
                 <Link 
-                  href="/appointments" 
+                  href="https://online.altamed-c.ru/" target="_blank" rel="noopener noreferrer" 
                   className="bg-purple-500 text-white rounded-full px-8 py-3 font-medium hover:bg-purple-600 transition-colors"
                 >
                   Консультация

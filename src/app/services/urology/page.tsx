@@ -184,7 +184,9 @@ export default function UrologyPage() {
               <div className="bg-white p-4 flex flex-col justify-between items-start gap-3">
                 <div className="text-black font-medium text-sm">Урология</div>
                 <Link 
-                  href="/appointments" 
+                  href="https://online.altamed-c.ru/" 
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="bg-blue-500 text-white rounded-full flex items-center justify-center w-full h-[46px] text-sm hover:bg-blue-600 transition-colors"
                 >
                   Консультация
@@ -214,7 +216,9 @@ export default function UrologyPage() {
                 <h2 className="text-2xl md:text-4xl font-bold mb-4">Урология</h2>
                 <p className="text-lg md:text-xl mb-6 max-w-md">Современные методы диагностики и лечения</p>
                 <Link 
-                  href="/appointments" 
+                  href="https://online.altamed-c.ru/" 
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="bg-blue-500 text-white rounded-full px-8 py-3 font-medium hover:bg-blue-600 transition-colors"
                 >
                   Консультация
@@ -376,7 +380,9 @@ export default function UrologyPage() {
                             <span itemProp="priceCurrency" content="RUB" className="sr-only">RUB</span>
                           </span>
                           <Link 
-                            href="/appointments"
+                            href="https://online.altamed-c.ru/" 
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="bg-emerald-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-emerald-700 transition-colors"
                           >
                             Записаться

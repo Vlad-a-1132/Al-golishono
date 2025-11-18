@@ -124,7 +124,7 @@ export default function TekarTherapyPage() {
               <div className="bg-white p-4 flex flex-col justify-between items-start gap-3">
                 <div className="text-black font-medium text-sm">Текар-терапия</div>
                 <Link 
-                  href="/appointments" 
+                  href="https://online.altamed-c.ru/" target="_blank" rel="noopener noreferrer" 
                   className="bg-[#9333EA] text-white rounded-full flex items-center justify-center w-full h-[46px] text-sm hover:bg-[#7e22ce] transition-colors"
                 >
                   Консультация
@@ -147,7 +147,7 @@ export default function TekarTherapyPage() {
                 <h2 className="text-2xl md:text-4xl font-bold mb-4">Текар-терапия</h2>
                 <p className="text-lg md:text-xl mb-6 max-w-md">Высокочастотная терапия</p>
                 <Link 
-                  href="/appointments" 
+                  href="https://online.altamed-c.ru/" target="_blank" rel="noopener noreferrer" 
                   className="bg-[#9333EA] text-white rounded-full px-8 py-3 font-medium hover:bg-[#7e22ce] transition-colors"
                 >
                   Консультация

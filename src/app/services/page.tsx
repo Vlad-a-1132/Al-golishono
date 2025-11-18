@@ -82,8 +82,8 @@ export default function ServicesPage() {
     },
     {
       id: 'rentgenology',
-      title: 'Рентгеология',
-      description: '',
+      title: 'Рентгенология',
+      description: 'Цифровая рентгенодиагностика',
       icon: (
         <svg className="w-6 h-6 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-3.866 0-7 1.343-7 3v8c0 1.657 3.134 3 7 3s7-1.343 7-3v-8c0-1.657-3.134-3-7-3z" />
@@ -552,7 +552,7 @@ export default function ServicesPage() {
                 <Link key={service.id} href="/services/rentgenology" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
                     <img 
                       src="/images/yslugi/rentgen.webp" 
-                      alt="Рентгеология" 
+                      alt="Рентгенология" 
                       className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
                     />
                     <div className="flex-1 px-2 md:px-4">

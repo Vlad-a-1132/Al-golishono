@@ -253,7 +253,7 @@ export default function UltrasoundPage() {
               <div className="bg-white p-4 flex flex-col justify-between items-start gap-3">
                 <div className="text-black font-medium text-sm">Ультразвуковая диагностика</div>
                 <Link 
-                  href="/appointments" 
+                  href="https://online.altamed-c.ru/" target="_blank" rel="noopener noreferrer" 
                   className="bg-[#2C83A7] text-white rounded-full flex items-center justify-center w-full h-[46px] text-sm hover:bg-[#267399] transition-colors"
                 >
                   Записаться
@@ -276,7 +276,7 @@ export default function UltrasoundPage() {
                 <h2 className="text-2xl md:text-4xl font-bold mb-4">УЗИ в Одинцово</h2>
                 <p className="text-lg md:text-xl mb-6 max-w-md">Современная безопасная диагностика</p>
                 <Link 
-                  href="/appointments" 
+                  href="https://online.altamed-c.ru/" target="_blank" rel="noopener noreferrer" 
                   className="bg-[#2C83A7] text-white rounded-full px-8 py-3 font-medium hover:bg-[#267399] transition-colors"
                 >
                   Записаться на УЗИ
@@ -322,7 +322,7 @@ export default function UltrasoundPage() {
                             </div>
                           </div>
                           <Link 
-                            href="/appointments"
+                            href="https://online.altamed-c.ru/" target="_blank" rel="noopener noreferrer"
                             className="ml-3 bg-[#2C83A7] text-white px-3 py-1 rounded-md text-sm hover:bg-[#267399] transition-colors duration-300 flex-shrink-0 whitespace-nowrap"
                           >
                             Записаться
@@ -338,7 +338,7 @@ export default function UltrasoundPage() {
 
           <div className="mt-8 text-center">
             <Link 
-              href="/appointments" 
+              href="https://online.altamed-c.ru/" target="_blank" rel="noopener noreferrer" 
               className="inline-flex items-center bg-[#2C83A7] text-white rounded-full px-8 py-3 font-medium hover:bg-[#267399] transition-colors"
             >
               Записаться на УЗИ
