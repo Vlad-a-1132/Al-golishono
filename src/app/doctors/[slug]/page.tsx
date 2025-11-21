@@ -1836,7 +1836,9 @@ export async function generateMetadata({ params }: DoctorPageProps): Promise<Met
   // Формируем описание без лишних пробелов
   const experienceText = doctorDetails?.experience 
     ? `${doctorDetails.experience}. ` 
-    : `Стаж ${doctor.experience} лет. `;
+    : (doctor.experience !== undefined && doctor.experience !== null)
+    ? `Стаж ${doctor.experience} лет. `
+    : '';
   
   const description = `${specialization} ${doctor.name} в Одинцово. ${experienceText}Прием в клинике Альтамед-С. Запись на консультацию к врачу в Одинцово.`;
 
@@ -2219,7 +2221,7 @@ export default async function DoctorPage({ params }: DoctorPageProps) {
     "@type": "Physician",
     "name": doctor.name,
     "medicalSpecialty": specialization,
-    "description": `${specialization} ${doctor.name} в Одинцово. Стаж ${doctor.experience} лет. Прием в клинике Альтамед-С.`,
+    "description": `${specialization} ${doctor.name} в Одинцово.${doctor.experience !== undefined && doctor.experience !== null ? ` Стаж ${doctor.experience} лет.` : ''} Прием в клинике Альтамед-С.`,
     "worksFor": {
       "@type": "MedicalBusiness",
       "name": "Клиника Альтамед-С",
@@ -2320,11 +2322,13 @@ export default async function DoctorPage({ params }: DoctorPageProps) {
                 <div className="inline-block bg-emerald-50 text-emerald-700 px-3 py-1 rounded-full text-sm font-medium mb-3">
                   {doctor.specialization}
                 </div>
-                <p className="text-gray-600 mb-4">
-                  {doctorDetails && doctorDetails.experience 
-                    ? doctorDetails.experience 
-                    : `Стаж: ${doctor.experience} ${doctor.experience === 1 ? 'год' : doctor.experience < 5 ? 'года' : 'лет'}`}
-                </p>
+                {(doctorDetails && doctorDetails.experience) || (doctor.experience !== undefined && doctor.experience !== null) ? (
+                  <p className="text-gray-600 mb-4">
+                    {doctorDetails && doctorDetails.experience 
+                      ? doctorDetails.experience 
+                      : `Стаж: ${doctor.experience} ${doctor.experience === 1 ? 'год' : doctor.experience < 5 ? 'года' : 'лет'}`}
+                  </p>
+                ) : null}
                 <a href="https://online.altamed-c.ru/" target="_blank" rel="noopener noreferrer" className="inline-block bg-gradient-to-r from-orange-400 to-orange-600 text-white px-6 py-3 rounded-xl hover:from-orange-500 hover:to-orange-700 transition-all font-medium w-full md:w-auto text-center">
                   Записаться
                 </a>
