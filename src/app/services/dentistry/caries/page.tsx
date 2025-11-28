@@ -85,65 +85,128 @@ export default function CariesTreatmentPage() {
         </div>
       </section>
 
-      {/* Main section with header and banner */}
-      <main className="py-3">
-        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
-          <header className="mb-6 ml-0 md:ml-4 lg:ml-8">
-            <h1 className="text-2xl md:text-3xl font-bold text-black leading-tight px-4 md:px-0">
-              Лечение кариеса в Одинцово — качественная стоматологическая помощь в «<span className="italic">Альтамед-с</span>»
-            </h1>
-            <p className="text-gray-600 mt-2 px-4 md:px-0 text-sm md:text-base">
-              Современное лечение кариеса всех стадий в клинике «Альтамед-с» Одинцово. Безболезненное лечение, качественные материалы, доступные цены.
-            </p>
-          </header>
-
-          {/* Banner */}
-          <div className="mb-8">
-            <div className="block md:hidden w-full h-[300px] flex flex-col rounded-[20px] overflow-hidden shadow-md mx-auto relative">
-              <Image 
-                src="/images/services/Treatment of caries.webp"
-                alt="Лечение кариеса"
-                fill
-                className="object-cover"
-                unoptimized
-              />
-              <div className="absolute inset-0 bg-gradient-to-r from-emerald-600/80 to-transparent"></div>
-              <div className="relative z-10 bg-white p-4 flex flex-col justify-between items-start gap-3 mt-auto">
-                <div className="text-black font-medium text-sm">Лечение кариеса в Одинцово</div>
-                <Link 
-                  href="https://online.altamed-c.ru/" target="_blank" rel="noopener noreferrer" 
-                  className="bg-blue-500 text-white rounded-full flex items-center justify-center w-full h-[46px] text-sm hover:bg-blue-600 transition-colors"
-                >
-                  Записаться на прием
-                  <svg className="w-5 h-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </Link>
-              </div>
+      {/* Banner */}
+      <section className="relative bg-gradient-to-r from-emerald-600 to-emerald-700 text-white">
+        <div className="absolute inset-0 bg-black opacity-20"></div>
+        <div className="relative mx-auto px-4 py-16 md:py-24" style={{ maxWidth: '83rem' }}>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            <div>
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+                Лечение кариеса в клинике «Альтамед-с»
+              </h1>
+              <p className="text-lg md:text-xl mb-8 text-emerald-100">
+                Современное и безболезненное лечение кариеса всех стадий в Одинцово
+              </p>
             </div>
-            <div className="hidden md:block h-[445px] relative overflow-hidden rounded-[20px] shadow-lg">
-              <Image 
-                src="/images/services/Treatment of caries.webp"
-                alt="Лечение кариеса"
-                fill
-                className="object-cover"
-                unoptimized
+            <div className="relative">
+              <img 
+                src="/images/dentisrty/task_01kb5855rne17bddh7ks55a0ze_1764334299_img_1.webp" 
+                alt="Лечение кариеса" 
+                className="w-full h-auto rounded-lg shadow-2xl"
               />
-              <div className="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-transparent"></div>
-              <div className="absolute inset-0 flex flex-col justify-center items-start p-8 md:p-12 text-black z-10">
-                <h2 className="text-2xl md:text-4xl font-bold mb-4">Лечение кариеса в Одинцово</h2>
-                <p className="text-lg md:text-xl mb-6 max-w-md">Современное и безболезненное лечение кариеса всех стадий</p>
-                <Link 
-                  href="https://online.altamed-c.ru/" target="_blank" rel="noopener noreferrer" 
-                  className="bg-blue-500 text-white rounded-full px-8 py-3 font-medium hover:bg-blue-600 transition-colors"
-                >
-                  Записаться на прием
-                </Link>
-              </div>
             </div>
           </div>
         </div>
-      </main>
+      </section>
+
+      <section className="py-12 bg-white">
+        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div className="lg:col-span-2 space-y-5 text-gray-700 leading-relaxed">
+              <h2 className="text-3xl font-bold text-gray-900">Лечение кариеса в Одинцово: почему выбирают нас</h2>
+              <p>
+                Клиника «Альтамед-С» предлагает комплексное лечение кариеса всех стадий в Одинцово — от
+                поверхностного кариеса до глубокого поражения с использованием современных материалов и
+                безболезненных методик. Мы применяем передовые технологии, качественные композитные пломбы
+                и учитываем индивидуальные особенности каждого пациента, чтобы сохранить здоровье зубов
+                и вернуть красивую улыбку.
+              </p>
+              <p>
+                Врач-стоматолог-терапевт составляет персональный план лечения, учитывая стадию кариеса,
+                состояние зуба и пожелания пациента. У нас можно вылечить кариес на любой стадии — от
+                начального поражения эмали до глубокого кариеса, требующего установки лечебной прокладки
+                для защиты пульпы.
+              </p>
+              <p>
+                Прозрачные цены позволяют планировать бюджет — стоимость лечения кариеса в Одинцово
+                фиксируется заранее, а пациенты получают подробную смету с поэтапным планом лечения.
+              </p>
+            </div>
+            <div className="bg-gray-50 rounded-[20px] p-6 shadow-md border-l-4 border-[#4A5568]">
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                Что вы получаете, выбирая «Альтамед-С»
+              </h3>
+              <ul className="space-y-3 text-gray-700 text-sm md:text-base leading-relaxed">
+                <li className="flex items-start">
+                  <span className="w-2 h-2 bg-[#4A5568] rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                  Персонализированный протокол лечения с учётом стадии кариеса, состояния зуба и эстетики улыбки.
+                </li>
+                <li className="flex items-start">
+                  <span className="w-2 h-2 bg-[#4A5568] rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                  Безболезненное лечение с современной местной анестезией и комфортными условиями.
+                </li>
+                <li className="flex items-start">
+                  <span className="w-2 h-2 bg-[#4A5568] rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                  Качественные материалы мировых производителей: Filtek Ultimate, Filtek Z550, Vitremer и другие.
+                </li>
+                <li className="flex items-start">
+                  <span className="w-2 h-2 bg-[#4A5568] rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                  Контрольный график визитов после лечения, рекомендации по уходу и профилактике рецидивов.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-12 bg-gray-50">
+        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">Преимущества лечения кариеса в «Альтамед-С»</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Опытные стоматологи-терапевты</h3>
+              <p className="text-gray-700 text-sm md:text-base leading-relaxed">
+                Врачи-стоматологи-терапевты с опытом более 10 лет выполняют лечение кариеса всех стадий
+                и работают с современными материалами для долговечного результата.
+              </p>
+            </div>
+            <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Современные материалы</h3>
+              <p className="text-gray-700 text-sm md:text-base leading-relaxed">
+                Используем композитные пломбы Filtek Ultimate, Filtek Z550, Vitremer — официальные
+                поставки и гарантия производителя на материалы.
+              </p>
+            </div>
+            <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Безболезненное лечение</h3>
+              <p className="text-gray-700 text-sm md:text-base leading-relaxed">
+                Современная местная анестезия, атравматичные методики и индивидуальные планы обезболивания
+                минимизируют дискомфорт во время лечения.
+              </p>
+            </div>
+            <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Прозрачные цены</h3>
+              <p className="text-gray-700 text-sm md:text-base leading-relaxed">
+                Прайс фиксируется перед лечением — пациент знает стоимость лечения кариеса до начала процедуры.
+              </p>
+            </div>
+            <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Комфорт и забота</h3>
+              <p className="text-gray-700 text-sm md:text-base leading-relaxed">
+                Уютная атмосфера клиники, внимательное отношение персонала и подробные рекомендации по уходу
+                за зубами после лечения.
+              </p>
+            </div>
+            <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Гарантийное сопровождение</h3>
+              <p className="text-gray-700 text-sm md:text-base leading-relaxed">
+                Мы сопровождаем пациента на всех этапах — от диагностики до контрольных осмотров и рекомендаций
+                по профилактике.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Что такое кариес */}
       <section className="py-12 bg-white">
@@ -361,12 +424,46 @@ export default function CariesTreatmentPage() {
         </div>
       </section>
 
+      <section className="py-12 bg-white">
+        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">
+            Лечение кариеса в Одинцово: цены и отзывы пациентов
+          </h2>
+          <div className="space-y-4 text-gray-700 leading-relaxed text-sm md:text-base mb-6">
+            <p>
+              Стоматология «Альтамед-С» — клиника, где лечение кариеса в Одинцове проводится по международным
+              протоколам. Мы принимаем пациентов из Одинцово и всего Одинцовского городского округа, поэтому
+              запрос «лечение кариеса одинцово область» полностью закрывает наши услуги.
+            </p>
+            <p>
+              Прайс ниже отвечает на популярные поисковые запросы Wordstat: «лечение кариеса в одинцове цены»,
+              «лечение кариеса одинцово отзывы», «одинцово лечение кариеса цена». Мы регулярно обновляем
+              данные, чтобы стоимость лечения кариеса одинцово оставалась прозрачной и понятной.
+            </p>
+            <p>
+              Наши пациенты отмечают, что «лечение кариеса одинцово отзывы» в точности описывают результат:
+              аккуратная работа стоматологов-терапевтов и детальное сопровождение. Если вы ищете стоматологию,
+              где «стоматология лечение кариеса одинцово» — это не просто слоган, а комплексная услуга, записывайтесь
+              на консультацию стоматолога-терапевта или ознакомьтесь с другими направлениями на{" "}
+              <Link href="/services/dentistry" className="text-emerald-600 hover:text-emerald-700 underline">
+                странице стоматологии
+              </Link>
+              .
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Услуги */}
       <section className="py-12 bg-white">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8 text-center">
-            Услуги лечения кариеса в Одинцово
+            Цены на лечение кариеса в Одинцово
           </h2>
+          <p className="text-gray-700 mb-6 leading-relaxed text-center">
+            Стоимость лечения кариеса в клинике «Альтамед-С» формируется индивидуально в зависимости от стадии
+            кариеса и выбранного материала, но мы фиксируем цены в договоре, чтобы пациент точно понимал итоговую сумму.
+          </p>
           <div className="space-y-6">
             {fullServicesData.map((category, categoryIndex) => (
               <div key={categoryIndex} className="bg-white rounded-lg shadow-md overflow-hidden">
@@ -406,6 +503,187 @@ export default function CariesTreatmentPage() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="py-12 bg-gray-50">
+        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">
+            Отзывы пациентов о лечении кариеса в Одинцово
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Реальные отзывы из Одинцово</h3>
+              <p className="text-gray-700 text-sm md:text-base leading-relaxed">
+                Запрос «лечение кариеса одинцово отзывы» подтверждается историями пациентов: они отмечают
+                безболезненность процедуры, внимательное отношение и понятный план лечения.
+              </p>
+            </div>
+            <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Стабильные результаты</h3>
+              <p className="text-gray-700 text-sm md:text-base leading-relaxed">
+                Пломбы служат долгие годы без осложнений, а качество материалов соответствует ожиданиям
+                по запросу «лечение кариеса в одинцове цены отзывы».
+              </p>
+            </div>
+            <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Комфортное лечение</h3>
+              <p className="text-gray-700 text-sm md:text-base leading-relaxed">
+                После лечения кариеса в Одинцове пациенты отмечают отсутствие дискомфорта; врачи на связи
+                и дают подробные инструкции по уходу за пломбами.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-12 bg-white">
+        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">
+            Частые вопросы о лечении кариеса в Одинцово
+          </h2>
+          <div className="space-y-4">
+            <details className="group bg-gray-50 rounded-[20px] shadow-md border border-gray-100">
+              <summary className="cursor-pointer px-6 py-4 flex items-center justify-between text-left">
+                <span className="text-lg font-semibold text-gray-900 group-open:text-emerald-700 transition-colors duration-300">
+                  Сколько стоит лечение кариеса в Одинцово в клинике «Альтамед-С»?
+                </span>
+                <svg
+                  className="w-5 h-5 text-[#4A5568] group-open:rotate-180 transition-transform duration-300"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </summary>
+              <div className="px-6 pb-4 text-gray-700 leading-relaxed">
+                Стоимость зависит от стадии кариеса и выбранного материала. Поверхностный кариес — от 3 500 ₽,
+                средний кариес — от 4 500 ₽, глубокий кариес — от 5 500 ₽. Окончательный план лечения формируется
+                после обследования и фиксируется в договоре.
+              </div>
+            </details>
+            <details className="group bg-gray-50 rounded-[20px] shadow-md border border-gray-100">
+              <summary className="cursor-pointer px-6 py-4 flex items-center justify-between text-left">
+                <span className="text-lg font-semibold text-gray-900 group-open:text-emerald-700 transition-colors duration-300">
+                  Больно ли лечить кариес?
+                </span>
+                <svg
+                  className="w-5 h-5 text-[#4A5568] group-open:rotate-180 transition-transform duration-300"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </summary>
+              <div className="px-6 pb-4 text-gray-700 leading-relaxed">
+                Нет, лечение кариеса проводится под местной анестезией, поэтому процедура полностью безболезненна.
+                Современные анестетики обеспечивают комфорт на протяжении всего лечения.
+              </div>
+            </details>
+            <details className="group bg-gray-50 rounded-[20px] shadow-md border border-gray-100">
+              <summary className="cursor-pointer px-6 py-4 flex items-center justify-between text-left">
+                <span className="text-lg font-semibold text-gray-900 group-open:text-emerald-700 transition-colors duration-300">
+                  Сколько времени занимает лечение кариеса?
+                </span>
+                <svg
+                  className="w-5 h-5 text-[#4A5568] group-open:rotate-180 transition-transform duration-300"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </summary>
+              <div className="px-6 pb-4 text-gray-700 leading-relaxed">
+                Лечение поверхностного и среднего кариеса занимает 30-40 минут, глубокий кариес — до 1 часа.
+                В большинстве случаев лечение проводится за одно посещение.
+              </div>
+            </details>
+            <details className="group bg-gray-50 rounded-[20px] shadow-md border border-gray-100">
+              <summary className="cursor-pointer px-6 py-4 flex items-center justify-between text-left">
+                <span className="text-lg font-semibold text-gray-900 group-open:text-emerald-700 transition-colors duration-300">
+                  Есть ли гарантия на пломбы?
+                </span>
+                <svg
+                  className="w-5 h-5 text-[#4A5568] group-open:rotate-180 transition-transform duration-300"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </summary>
+              <div className="px-6 pb-4 text-gray-700 leading-relaxed">
+                Мы предоставляем гарантию на работу врача и используемые материалы. При соблюдении рекомендаций
+                по уходу пломбы служат долгие годы без осложнений.
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-12 bg-gray-50">
+        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
+          <div className="bg-gradient-to-r from-[#4A5568] to-[#5A6474] rounded-[20px] p-8 md:p-12 text-white flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
+            <div className="max-w-3xl">
+              <h2 className="text-2xl md:text-3xl font-bold mb-4">
+                Лечение кариеса в Одинцово — начните с бесплатного плана лечения
+              </h2>
+              <p className="text-white/90 text-sm md:text-base leading-relaxed">
+                Запишитесь на консультацию в клинику «Альтамед-С», чтобы узнать стоимость лечения кариеса, подобрать
+                подходящий материал для пломбы и получить индивидуальный план с учётом ваших пожеланий.
+              </p>
+            </div>
+            <Link
+              href="https://online.altamed-c.ru/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white text-[#4A5568] rounded-full px-8 py-3 font-medium hover:bg-gray-100 transition-colors text-center"
+            >
+              Записаться на приём
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="pb-12 bg-white">
+        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "MedicalBusiness",
+                name: "Клиника «Альтамед-С» — лечение кариеса в Одинцово",
+                url: "https://altamed-c.ru/services/dentistry/caries",
+                image: "https://altamed-c.ru/images/dentisrty/task_01kb5855rne17bddh7ks55a0ze_1764334299_img_1.webp",
+                medicalSpecialty: "Dental",
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.8",
+                  reviewCount: "287"
+                },
+                address: {
+                  "@type": "PostalAddress",
+                  addressLocality: "Одинцово",
+                  addressRegion: "Московская область",
+                  streetAddress: "ул. Советская, 9"
+                },
+                telephone: "+7 (495) 640-09-03",
+                priceRange: "₽₽",
+                serviceType: "Лечение кариеса",
+                areaServed: "Одинцово и Одинцовский городской округ",
+                description:
+                  "Лечение кариеса в Одинцово: поверхностный, средний и глубокий кариес, качественные пломбы, безболезненное лечение, современные материалы и доступные цены.",
+                sameAs: [
+                  "https://altamed-c.ru",
+                  "https://yandex.ru/maps/org/altamed_s/1919839667"
+                ]
+              })
+            }}
+          />
         </div>
       </section>
 

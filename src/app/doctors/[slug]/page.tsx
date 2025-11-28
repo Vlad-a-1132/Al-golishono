@@ -374,7 +374,9 @@ function getDoctorDetails(doctorName: string) {
         'Повышение квалификации ООО ДПО «Университет профессиональных стандартов». Удостоверение Рег.№ПК2892 от 07.10.2019г. – «Ортодонтия»',
         'Сертификат специалиста Рег.№МС2256 от 07.10.2019г. – «Ортодонтия»'
       ],
-      accreditation: [],
+      accreditation: [
+        { number: '7725 033206575', date: 'с 29.07.2025 до 29.07.2030', specialty: 'Ортодонтия', institution: 'ФГБОУ ДПО «Российская медицинская академия непрерывного профессионального образования» Министерства здравоохранения Российской Федерации' }
+      ],
       experience: 'Стаж работы: с 2002 года',
       mainDirections: [
         'Проводит ортодонтическое лечение в любом возрасте в соответствии с мировыми требованиями и стандартами',
@@ -1014,7 +1016,12 @@ function getDoctorDetails(doctorName: string) {
         'Дополнительное профессиональное образование ООО «МЕЖОТРАСЛЕВОЙ ИНСТИТУТ ГОСАТТЕСТАЦИИ». Повышение квалификации – 144 ч — Офтальмология. Серия/номер 183102/027781 от 30.12.2020'
       ],
       accreditation: [
-        { number: '111824/1758838', date: 'с 30.12.2020 до 30.12.2025', specialty: 'Офтальмология', institution: 'ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ «МЕЖОТРАСЛЕВОЙ ИНСТИТУТ ГОСАТТЕСТАЦИИ»' }
+        {
+          number: '7725 033618604',
+          date: 'с 14.11.2025 до 14.11.2030',
+          specialty: 'Офтальмология (периодическая аккредитация)',
+          institution: 'ФГБОУ ДПО «Российская медицинская академия непрерывного профессионального образования» Минздрава России. Итоговый протокол заседания аккредитационной комиссии от 14.11.2025 №95'
+        }
       ],
       experience: 'Стаж работы с 1993 года',
       mainDirections: [
@@ -2326,7 +2333,9 @@ export default async function DoctorPage({ params }: DoctorPageProps) {
                   <p className="text-gray-600 mb-4">
                     {doctorDetails && doctorDetails.experience 
                       ? doctorDetails.experience 
-                      : `Стаж: ${doctor.experience} ${doctor.experience === 1 ? 'год' : doctor.experience < 5 ? 'года' : 'лет'}`}
+                      : doctor.experience !== undefined && doctor.experience !== null
+                        ? `Стаж: ${doctor.experience} ${doctor.experience === 1 ? 'год' : doctor.experience < 5 ? 'года' : 'лет'}`
+                        : ''}
                   </p>
                 ) : null}
                 <a href="https://online.altamed-c.ru/" target="_blank" rel="noopener noreferrer" className="inline-block bg-gradient-to-r from-orange-400 to-orange-600 text-white px-6 py-3 rounded-xl hover:from-orange-500 hover:to-orange-700 transition-all font-medium w-full md:w-auto text-center">

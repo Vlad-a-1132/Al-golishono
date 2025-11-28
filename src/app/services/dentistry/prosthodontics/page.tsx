@@ -13,119 +13,11 @@ export default function ProsthodonticsPage() {
     {
       subtitle: "Приемы врача-стоматолога-ортопеда",
       services: [
-        { code: "В01.066.001", name: "Прием (осмотр, консультация) врача-стоматолога-ортопеда первичный, 1 ед.", price: 430 },
-        { code: "В01.066.002", name: "Прием (осмотр, консультация) врача-стоматолога-ортопеда повторный, 1 ед.", price: 300 },
-        { code: "В01.066.001.500", name: "Прием (осмотр, консультация) врача-стоматолога-ортопеда первичный с использованием артикулятора, 1 ед.", price: 2000 },
-        { code: "В01.066.002.500", name: " Прием (осмотр, консультация) врача-стоматолога-ортопеда повторный с использованием артикулятора, 1 ед.", price: 1330 }
-      ]
-    },
-    {
-      subtitle: "Специальные лечебно-диагностические услуги",
-      services: [
-        { code: "А02.07.010", name: "Исследование на диагностических моделях челюстей, 1челюсть", price: 2660 },
-        { code: "А02.07.010.001", name: "Снятие оттиска с одной челюсти, 1челюсть", price: 1510 },
-        { code: "А02.07.010.500", name: "Исследование на диагностических моделях челюстей. Слепок альгинатный простой, 1челюсть", price: 1210 },
-        { code: "А02.07.010.501", name: "Исследование на диагностических моделях челюстей.  Слепок силиконовый двухслойный, 1челюсть", price: 2060 },
-        { code: "А02.07.010", name: "Исследование на диагностических моделях челюстей, 1 шт.", price: 2900 },
-        { code: "А02.07.010.502", name: "Исследование на диагностических моделях челюстей. Восковое моделирование, 1 шт.", price: 1210 }
-      ]
-    },
-    {
-      subtitle: "Протезирование зубов - Коронки",
-      services: [
-        { code: "", name: "Металлокерамическая коронка", price: 10000 },
-        { code: "А16.07.004.505", name: "Восстановление зуба коронкой металлокерамической NI-CR, 1 единица", price: 9420 },
-        { code: "А16.07.004.506", name: "Восстановление зуба коронкой металлокомпозитной, 1 единица", price: 7610 },
-        { code: "А16.07.004.507", name: "Восстановление зуба коронкой металлокерамической с фрезерованием поверхности, 1 единица", price: 9900 },
-        { code: "А16.07.004.508", name: "Восстановление зуба коронкой металлокерамической на CO-CR сплаве, 1 единица", price: 13170 },
-        { code: "", name: "Цельнокерамическая коронка", price: 18000 },
-        { code: "А16.07.003.505", name: "Восстановление зуба вкладками, виниром, полукоронкой. Вкладка керамическая, коронка, винир e-max, 1 ед.", price: 25000 },
-        { code: "", name: "Коронка на основе диоксида циркония", price: 25000 },
-        { code: "А16.07.033.500", name: " Восстановление зуба коронкой с использованием  культевой вкладки из Диоксида Циркония, 1 единица", price: 23670 },
-        { code: "А16.07.003.504", name: "Восстановление зуба вкладками, виниром, полукоронкой. Культевая вкладка из Диоксида Циркония, 1 единица", price: 23670 },
-        { code: "А16.07.004.513", name: "Восстановление зуба коронкой.Коронка из диоксида циркония, CAD-CAM технология, 1 ед.", price: 28500 },
-        { code: "А16.07.004.514", name: "Восстановление зуба коронкой.Коронка из прозрачного циркония \"Prettau\", CAD-CAM технология, 1 ед.", price: 29590 },
-        { code: "А16.07.004.502", name: "Восстановление зуба коронкой пластмассовой, 1 единица", price: 1930 },
-        { code: "А16.07.004.503", name: "Восстановление зуба коронкой литой, 1 единица", price: 5920 },
-        { code: "А16.07.004.504", name: "Восстановление зуба коронкой литой фрезерованной, 1 единица", price: 6520 },
-        { code: "А16.07.053.500", name: "Снятие несъемной ортопедической конструкции. Снятие коронки пластмассовой или штампованной металлической, 1 единица", price: 1030 },
-        { code: "А16.07.053.501", name: "Снятие несъемной ортопедической конструкции. Снятие цельнолитой, металлокомпозитной, металлокерамической коронки, 1 ед.", price: 1640 },
-        { code: "А16.07.049.500", name: "Повторная фиксация на постоянный цемент несъемных ортопедических конструкций. Фиксация изделия,  на фосфат-цемент, 1 единица", price: 970 },
-        { code: "А16.07.049.501", name: "Повторная фиксация на постоянный цемент несъемных ортопедических конструкций. Фиксация изделия,  на стекло-цемент, 1 единица", price: 1640 },
-        { code: "А16.07.049.502", name: "Повторная фиксация на постоянный цемент несъемных ортопедических конструкций. Фиксация изделия,  на композитный материал, 1 единица", price: 1510 },
-        { code: "А16.07.049.503", name: "Повторная фиксация на постоянный цемент несъемных ортопедических конструкций. Фиксация изделия, изготовленного в других клиниках на композитный цемент Resinomer, 1 единица", price: 1510 }
-      ]
-    },
-    {
-      subtitle: "Виниры",
-      services: [
-        { code: "", name: "Керамический винир", price: 20000 },
-        { code: "А16.07.003.505", name: "Восстановление зуба вкладками, виниром, полукоронкой. Вкладка керамическая, коронка, винир e-max, 1 ед.", price: 25000 },
-        { code: "А16.07.003.506", name: "Восстановление зуба вкладками, виниром, полукоронкой. Вкладка керамическая, коронка, винир e-max (выполненное мастер техником), 1 ед.", price: 41780 },
-        { code: "А16.07.003.507", name: "Восстановление зуба вкладками, виниром, полукоронкой. Винир на рефракторе, 1 ед.", price: 48780 },
-        { code: "", name: "Композитный винир", price: 8000 }
-      ]
-    },
-    {
-      subtitle: "Мостовидные протезы",
-      services: [
-        { code: "", name: "Металлокерамический мост от", price: 30000 },
-        { code: "А16.07.006.505", name: "Протезирование зуба с использованием имплантата.Металлокерамическая  коронка из кобальт-хром, 1 ед.", price: 42150 },
-        { code: "", name: "Цельнокерамический мост от", price: 50000 }
-      ]
-    },
-    {
-      subtitle: "Съемные протезы",
-      services: [
-        { code: "", name: "Частичный съемный протез", price: 25000 },
-        { code: "", name: "Полный съемный протез", price: 35000 },
-        { code: "", name: "Бюгельный протез", price: 45000 },
-        { code: "А16.07.036.501", name: "Протезирование съемными бюгельными протезами. Бюгель с кламерной системой крепления+литье, 1челюсть", price: 53010 },
-        { code: "А16.07.036.502", name: "Протезирование съемными бюгельными протезами. Бюгель с микрозамками Bredent + литье,замки, 1челюсть", price: 65090 },
-        { code: "А16.07.036.503", name: "Протезирование съемными бюгельными протезами. Бюгель с  элементами микрозамковой и кламмерной систем крепления + литье, 1челюсть", price: 68710 },
-        { code: "А16.07.023.500", name: "Протезирование зубов полными съемными пластиночными протезами. Пластиночный протез с замковой системой крепления, 1челюсть", price: 31280 },
-        { code: "А16.07.036.504", name: "Протезирование съемными бюгельными протезами. Швенкригель односторонний, 1челюсть", price: 46980 },
-        { code: "А16.07.036.505", name: "Протезирование съемными бюгельными протезами. Швенкригель двухсторонний, 1челюсть", price: 68710 },
-        { code: "А16.07.034.500", name: "Восстановление целостности зубного ряда съемными мостовидными протезами. Иммедиант протез, 1 ед.", price: 10140 },
-        { code: "А23.07.002.033", name: "Изготовление частичного съемного протеза, 1 ед.", price: 21000 },
-        { code: "", name: "Перебазировка съемного протеза", price: 5000 },
-        { code: "А23.07.002.034", name: "Перебазировка съемного протеза лабораторным методом, 1челюсть", price: 5550 },
-        { code: "А23.07.002.506.01", name: "Услуги по изготовлению ортопедической конструкции стоматологической. Перебазировка в полости рта, 1челюсть", price: 3750 },
-        { code: "", name: "Починка съемного протеза", price: 3000 },
-        { code: "А23.07.002.505.02", name: "Услуги по изготовлению ортопедической конструкции стоматологической. Ремонт протеза срочный (2-3 часа), 1челюсть", price: 5550 },
-        { code: "А23.07.002.506", name: "Услуги по изготовлению ортопедической конструкции стоматологической. Ремонт протеза плановый (2-е суток), 1челюсть", price: 4710 },
-        { code: "А23.07.002.035", name: "Приварка кламмера, 1 ед.", price: 2660 },
-        { code: "А23.07.002.036", name: "Приварка зуба, 1 ед.", price: 2660 },
-        { code: "А23.07.002.502", name: "Услуги по изготовлению ортопедической конструкции стоматологической. Замена элементов микрозамковых креплений фирмы Bredent, 1 ед.", price: 3750 },
-        { code: "А23.07.002.503", name: "Услуги по изготовлению ортопедической конструкции стоматологической. Коррекция протеза, 1 ед.", price: 1160 },
-        { code: "А23.07.002.505.01", name: "Услуги по изготовлению ортопедической конструкции стоматологической. Бесцветная пластмасса                   или материал, 1челюсть", price: 3750 },
-        { code: "А23.07.002.507", name: "Услуги по изготовлению ортопедической конструкции стоматологической. Армирование базиса стальным литым каркасом, 1 ед.", price: 5200 },
-        { code: "А23.07.002.506.02", name: "Услуги по изготовлению ортопедической конструкции стоматологической. Небный бюгель с изготовлением, 1 ед.", price: 5680 },
-        { code: "А23.07.002.030", name: "Изготовление коронки пластмассовой, 1 посещение", price: 3810 },
-        { code: "А23.07.002.504", name: "Услуги по изготовлению ортопедической конструкции стоматологической. Изготовление индивидуальной ложки, 1челюсть", price: 3750 }
-      ]
-    },
-    {
-      subtitle: "Вкладки",
-      services: [
-        { code: "", name: "Керамическая вкладка", price: 12000 },
-        { code: "А16.07.003.505", name: "Восстановление зуба вкладками, виниром, полукоронкой. Вкладка керамическая, коронка, винир e-max, 1 ед.", price: 25000 },
-        { code: "А16.07.003.500", name: "Восстановление зуба вкладками, виниром, полукоронкой. Культевая вкладка,литая 1 единица", price: 5920 },
-        { code: "А16.07.003.501", name: "Восстановление зуба вкладками, виниром, полукоронкой. Культевая вкладка разборная,литая 1 единица", price: 8340 },
-        { code: "А16.07.003.502", name: "Восстановление зуба вкладками, виниром, полукоронкой. Вкладка с аттачменом, литая,1 единица", price: 10750 },
-        { code: "А16.07.004.515", name: "Восстановление зуба коронкой. Восстановление коронковой части молочного зуба металло-композитной коронкой, 1ед.", price: 6890 },
-        { code: "", name: "Композитная вкладка", price: 7000 }
-      ]
-    },
-    {
-      subtitle: "Протезирование на имплантатах",
-      services: [
-        { code: "", name: "Коронка на имплантате от", price: 25000 },
-        { code: "А16.07.006.502", name: "Протезирование зуба с использованием имплантата. Временная коронка на имплантате, 1 ед.", price: 8000 },
-        { code: "А16.07.006.503", name: "Протезирование зуба с использованием имплантата. Коронка из диоксида циркония на имплантате (винтовая фиксация), 1 ед.", price: 38500 },
-        { code: "А16.07.006.504", name: "Протезирование зуба с использованием имплантата. Коронка из диоксида циркония на имплантате (цементная фиксация),позиционирующий абатмент 1 ед.", price: 45000 },
-        { code: "А16.07.006.505", name: "Протезирование зуба с использованием имплантата.Металлокерамическая  коронка из кобальт-хром, 1 ед.", price: 42150 },
-        { code: "", name: "Мостовидный протез на имплантатах от", price: 70000 }
+        { code: "", name: "Прием (осмотр, консультация) врача-стоматолога-ортопеда первичный, 1 ед.", price: 370 },
+        { code: "", name: "Прием (осмотр, консультация) врача-стоматолога-ортопеда первичный (составление плана лечения по ОПТГ исследованию)", price: 2000 },
+        { code: "", name: "Прием (осмотр, консультация) врача-стоматолога-ортопеда повторный, 1 ед.", price: 290 },
+        { code: "", name: "Прием (осмотр, консультация) врача-стоматолога-ортопеда первичный с использованием артикулятора, 1 ед.", price: 2100 },
+        { code: "", name: "Прием (осмотр, консультация) врача-стоматолога-ортопеда повторный с использованием артикулятора, 1 ед.", price: 1400 }
       ]
     }
   ];
@@ -146,55 +38,29 @@ export default function ProsthodonticsPage() {
         </div>
       </section>
 
-      <main className="py-3">
-        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
-          <header className="mb-6 ml-0 md:ml-4 lg:ml-8">
-            <h1 className="text-2xl md:text-3xl font-bold text-black leading-tight px-4 md:px-0">
-              Ортопедическая стоматология в Одинцово — протезирование зубов в «<span className="italic">Альтамед-с</span>»
-            </h1>
-            <p className="text-gray-600 mt-2 px-4 md:px-0 text-sm md:text-base">
-              Профессиональное протезирование зубов в Одинцово. Коронки, виниры, мосты, съемные протезы. Восстановление красивой улыбки и жевательной функции в клинике «Альтамед-с».
-            </p>
-          </header>
-
-          <div className="mb-8">
-            <div className="block md:hidden w-full h-[300px] flex flex-col rounded-[20px] overflow-hidden shadow-md mx-auto relative">
-              <Image 
-                src="/images/yslugi/Orthopedic dentistry.webp"
-                alt="Ортопедическая стоматология"
-                fill
-                className="object-cover"
-                unoptimized
-              />
-              <div className="relative z-10 bg-white p-4 flex flex-col justify-between items-start gap-3 mt-auto">
-                <div className="text-black font-medium text-sm">Протезирование зубов в Одинцово</div>
-                <Link href="https://online.altamed-c.ru/" target="_blank" rel="noopener noreferrer" className="bg-blue-500 text-white rounded-full flex items-center justify-center w-full h-[46px] text-sm hover:bg-blue-600 transition-colors">
-                  Записаться на прием
-                  <svg className="w-5 h-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </Link>
-              </div>
+      {/* Banner */}
+      <section className="relative bg-gradient-to-r from-emerald-600 to-emerald-700 text-white">
+        <div className="absolute inset-0 bg-black opacity-20"></div>
+        <div className="relative mx-auto px-4 py-16 md:py-24" style={{ maxWidth: '83rem' }}>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            <div>
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+                Ортопедическая стоматология в клинике «Альтамед-с»
+              </h1>
+              <p className="text-lg md:text-xl mb-8 text-emerald-100">
+                Протезирование зубов коронками, винирами и мостами в Одинцово
+              </p>
             </div>
-            <div className="hidden md:block h-[445px] relative overflow-hidden rounded-[20px] shadow-lg">
-              <Image 
-                src="/images/yslugi/Orthopedic dentistry.webp"
-                alt="Ортопедическая стоматология"
-                fill
-                className="object-cover"
-                unoptimized
+            <div className="relative">
+              <img 
+                src="/images/dentisrty/task_01kb59j9wbe6ma7c4wg6n4yecp_1764335787_img_0.webp" 
+                alt="Ортопедическая стоматология" 
+                className="w-full h-auto rounded-lg shadow-2xl"
               />
-              <div className="absolute inset-0 flex flex-col justify-center items-start p-8 md:p-12 text-black z-10">
-                <h2 className="text-2xl md:text-4xl font-bold mb-4">Ортопедическая стоматология в Одинцово</h2>
-                <p className="text-lg md:text-xl mb-6 max-w-md">Восстановление зубов коронками, винирами, протезами</p>
-                <Link href="https://online.altamed-c.ru/" target="_blank" rel="noopener noreferrer" className="bg-blue-500 text-white rounded-full px-8 py-3 font-medium hover:bg-blue-600 transition-colors">
-                  Записаться на прием
-                </Link>
-              </div>
             </div>
           </div>
         </div>
-      </main>
+      </section>
 
       <section className="py-12 bg-white">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
@@ -573,6 +439,195 @@ export default function ProsthodonticsPage() {
               </p>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="py-12 bg-white">
+        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div className="lg:col-span-2 space-y-5 text-gray-700 leading-relaxed">
+              <h2 className="text-3xl font-bold text-gray-900">Стоматолог-ортопед в Одинцово: почему выбирают нас</h2>
+              <p>
+                Клиника «Альтамед-С» предлагает услуги ортопедической стоматологии в Одинцово — протезирование зубов
+                коронками, винирами, мостами, съемными протезами. Мы применяем современные технологии, качественные
+                материалы и обеспечиваем долговечность протезов.
+              </p>
+              <p>
+                Врач-стоматолог-ортопед проводит консультации, планирование протезирования, установку коронок,
+                виниров и других протезов. У нас можно пройти протезирование на имплантах, восстановление зубов
+                коронками и другие процедуры ортопедической стоматологии.
+              </p>
+              <p>
+                Прозрачные цены позволяют планировать бюджет — стоимость ортопедической стоматологии в Одинцово
+                фиксируется заранее, а пациенты получают подробную информацию о процедурах.
+              </p>
+            </div>
+            <div className="bg-gray-50 rounded-[20px] p-6 shadow-md border-l-4 border-[#4A5568]">
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                Что вы получаете, выбирая «Альтамед-С»
+              </h3>
+              <ul className="space-y-3 text-gray-700 text-sm md:text-base leading-relaxed">
+                <li className="flex items-start">
+                  <span className="w-2 h-2 bg-[#4A5568] rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                  Протезирование с использованием современных материалов и технологий.
+                </li>
+                <li className="flex items-start">
+                  <span className="w-2 h-2 bg-[#4A5568] rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                  Восстановление зубов коронками, винирами, мостами и съемными протезами.
+                </li>
+                <li className="flex items-start">
+                  <span className="w-2 h-2 bg-[#4A5568] rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                  Опытных ортопедов, специализирующихся на протезировании зубов.
+                </li>
+                <li className="flex items-start">
+                  <span className="w-2 h-2 bg-[#4A5568] rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                  Протезирование на имплантах для надежной фиксации протезов.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-12 bg-gray-50">
+        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">
+            Отзывы пациентов о стоматологе-ортопеде в Одинцово
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Реальные отзывы из Одинцово</h3>
+              <p className="text-gray-700 text-sm md:text-base leading-relaxed">
+                Пациенты отмечают качество протезов, эстетику и долговечность
+                коронок и виниров, установленных ортопедами.
+              </p>
+            </div>
+            <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Эффективное протезирование</h3>
+              <p className="text-gray-700 text-sm md:text-base leading-relaxed">
+                После протезирования пациенты чувствуют себя комфортно, что соответствует
+                ожиданиям и обеспечивает функциональность и эстетику зубов.
+              </p>
+            </div>
+            <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Долговечный результат</h3>
+              <p className="text-gray-700 text-sm md:text-base leading-relaxed">
+                После протезирования в Одинцове пациенты отмечают долговечность протезов; ортопеды дают
+                подробные рекомендации по уходу за протезами.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-12 bg-white">
+        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">
+            Частые вопросы о стоматологе-ортопеде в Одинцово
+          </h2>
+          <div className="space-y-4">
+            <details className="group bg-gray-50 rounded-[20px] shadow-md border border-gray-100">
+              <summary className="cursor-pointer px-6 py-4 flex items-center justify-between text-left">
+                <span className="text-lg font-semibold text-gray-900 group-open:text-emerald-700 transition-colors duration-300">
+                  Какие виды протезирования доступны?
+                </span>
+                <svg
+                  className="w-5 h-5 text-[#4A5568] group-open:rotate-180 transition-transform duration-300"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </summary>
+              <div className="px-6 pb-4 text-gray-700 leading-relaxed">
+                Доступны различные виды протезирования: коронки, виниры, мостовидные протезы, съемные протезы,
+                протезирование на имплантах. Врач-ортопед подберет оптимальный вариант в зависимости от клинической ситуации.
+              </div>
+            </details>
+            <details className="group bg-gray-50 rounded-[20px] shadow-md border border-gray-100">
+              <summary className="cursor-pointer px-6 py-4 flex items-center justify-between text-left">
+                <span className="text-lg font-semibold text-gray-900 group-open:text-emerald-700 transition-colors duration-300">
+                  Сколько служат коронки и виниры?
+                </span>
+                <svg
+                  className="w-5 h-5 text-[#4A5568] group-open:rotate-180 transition-transform duration-300"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </summary>
+              <div className="px-6 pb-4 text-gray-700 leading-relaxed">
+                Срок службы коронок и виниров зависит от материала и ухода. Металлокерамические коронки служат
+                10-15 лет, керамические виниры — 10-20 лет. Правильный уход и регулярные осмотры продлевают срок службы.
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-12 bg-gray-50">
+        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
+          <div className="bg-gradient-to-r from-[#4A5568] to-[#5A6474] rounded-[20px] p-8 md:p-12 text-white flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
+            <div className="max-w-3xl">
+              <h2 className="text-2xl md:text-3xl font-bold mb-4">
+                Стоматолог-ортопед в Одинцово — начните с консультации
+              </h2>
+              <p className="text-white/90 text-sm md:text-base leading-relaxed">
+                Запишитесь на консультацию в клинику «Альтамед-С», чтобы узнать стоимость протезирования,
+                подобрать подходящие протезы и получить индивидуальный план лечения.
+              </p>
+            </div>
+            <Link
+              href="https://online.altamed-c.ru/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white text-[#4A5568] rounded-full px-8 py-3 font-medium hover:bg-gray-100 transition-colors text-center"
+            >
+              Записаться на приём
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="pb-12 bg-white">
+        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "MedicalBusiness",
+                name: "Клиника «Альтамед-С» — ортопедическая стоматология в Одинцово",
+                url: "https://altamed-c.ru/services/dentistry/prosthodontics",
+                image: "https://altamed-c.ru/images/dentisrty/task_01kb59j9wbe6ma7c4wg6n4yecp_1764335787_img_0.webp",
+                medicalSpecialty: "Dental",
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "280"
+                },
+                address: {
+                  "@type": "PostalAddress",
+                  addressLocality: "Одинцово",
+                  addressRegion: "Московская область",
+                  streetAddress: "ул. Советская, 9"
+                },
+                telephone: "+7 (495) 640-09-03",
+                priceRange: "₽₽₽",
+                serviceType: "Ортопедическая стоматология",
+                areaServed: "Одинцово и Одинцовский городской округ",
+                description:
+                  "Ортопедическая стоматология в Одинцово: протезирование зубов коронками, винирами, мостами, съемными протезами. Опытные ортопеды в клинике «Альтамед-С».",
+                sameAs: [
+                  "https://altamed-c.ru",
+                  "https://yandex.ru/maps/org/altamed_s/1919839667"
+                ]
+              })
+            }}
+          />
         </div>
       </section>
 

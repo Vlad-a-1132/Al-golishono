@@ -253,68 +253,29 @@ export default function ImplantationPage() {
         </div>
       </section>
 
-      <main className="py-3">
-        <div className="mx-auto px-4" style={{ maxWidth: "83rem" }}>
-          <header className="mb-6 ml-0 md:ml-4 lg:ml-8">
-            <h1 className="text-2xl md:text-3xl font-bold text-black leading-tight px-4 md:px-0">
-              Имплантация зубов в клинике «<span className="italic">Альтамед-С</span>» в Одинцово
-            </h1>
-            <p className="text-gray-600 mt-2 px-4 md:px-0 text-sm md:text-base">
-              Современные имплантационные системы, одномоментная имплантация и гарантированный результат
-              под контролем опытных стоматологов.
-            </p>
-          </header>
-
-          <div className="mb-8">
-            <div className="block md:hidden w-full h-[300px] flex flex-col rounded-[20px] overflow-hidden shadow-md mx-auto">
-              <div className="h-[220px] bg-[#4A5568] relative overflow-hidden">
-                <img
-                  src="/images/yslugi/implant.webp"
-                  alt="Имплантация зубов в Одинцово"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="bg-white p-4 flex flex-col justify-between items-start gap-3">
-                <div className="text-black font-medium text-sm">Имплантологическая стоматология</div>
-                <Link 
-                  href="https://online.altamed-c.ru/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-[#4A5568] text-white rounded-full flex items-center justify-center w-full h-[46px] text-sm hover:bg-[#3d4454] transition-colors"
-                >
-                  Записаться
-                  <svg className="w-5 h-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </Link>
-              </div>
+      {/* Banner */}
+      <section className="relative bg-gradient-to-r from-emerald-600 to-emerald-700 text-white">
+        <div className="absolute inset-0 bg-black opacity-20"></div>
+        <div className="relative mx-auto px-4 py-16 md:py-24" style={{ maxWidth: '83rem' }}>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            <div>
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+                Имплантация зубов в клинике «Альтамед-с»
+              </h1>
+              <p className="text-lg md:text-xl mb-8 text-emerald-100">
+                Современные имплантационные системы, одномоментная имплантация и гарантированный результат под контролем опытных стоматологов в Одинцово
+              </p>
             </div>
-            <div className="hidden md:block h-[445px] bg-[#4A5568] relative overflow-hidden rounded-[20px] shadow-lg">
-              <img
-                src="/images/yslugi/implant.webp"
-                alt="Имплантация Одинцово"
-                className="w-full h-full object-cover"
+            <div className="relative">
+              <img 
+                src="/images/yslugi/implant.webp" 
+                alt="Имплантация зубов" 
+                className="w-full h-auto rounded-lg shadow-2xl"
               />
-              <div className="absolute inset-0 bg-gradient-to-r from-white via-white/85 to-transparent"></div>
-              <div className="absolute inset-0 flex flex-col justify-center items-start p-8 md:p-12 text-black">
-                <h2 className="text-2xl md:text-4xl font-bold mb-4">Имплантация в Одинцово</h2>
-                <p className="text-lg md:text-xl mb-6 max-w-xl">
-                  Восстанавливаем зубы имплантами с естественной эстетикой, подробным планом лечения и
-                  вниманием к каждому этапу.
-                </p>
-                <Link 
-                  href="https://online.altamed-c.ru/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-[#4A5568] text-white rounded-full px-8 py-3 font-medium hover:bg-[#3d4454] transition-colors"
-                >
-                  Получить план имплантации
-                </Link>
-              </div>
             </div>
           </div>
         </div>
-      </main>
+      </section>
 
       <section className="py-12 bg-white">
         <div className="mx-auto px-4" style={{ maxWidth: "83rem" }}>

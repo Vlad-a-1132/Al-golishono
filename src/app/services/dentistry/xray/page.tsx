@@ -51,57 +51,29 @@ export default function XrayPage() {
         </div>
       </section>
 
-      <main className="py-3">
-        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
-          <header className="mb-6 ml-0 md:ml-4 lg:ml-8">
-            <h1 className="text-2xl md:text-3xl font-bold text-black leading-tight px-4 md:px-0">
-              Рентгенография в стоматологии Одинцово — «<span className="italic">Альтамед-с</span>»
-            </h1>
-            <p className="text-gray-600 mt-2 px-4 md:px-0 text-sm md:text-base">
-              Цифровая рентгенография зубов и челюстей в Одинцово. Прицельные снимки, панорамные снимки, КТ — современная диагностика для качественного лечения.
-            </p>
-          </header>
-
-          <div className="mb-8">
-            <div className="block md:hidden w-full h-[300px] flex flex-col rounded-[20px] overflow-hidden shadow-md mx-auto">
-              <div className="h-[220px] relative overflow-hidden">
-                <Image 
-                  src="/images/yslugi/Rentgenografiya.webp"
-                  alt="Рентгенография"
-                  fill
-                  className="object-cover"
-                  unoptimized
-                />
-              </div>
-              <div className="bg-white p-4 flex flex-col justify-between items-start gap-3">
-                <div className="text-black font-medium text-sm">Рентгенография в Одинцово</div>
-                <Link href="https://online.altamed-c.ru/" target="_blank" rel="noopener noreferrer" className="bg-blue-500 text-white rounded-full flex items-center justify-center w-full h-[46px] text-sm hover:bg-blue-600 transition-colors">
-                  Записаться на рентген
-                  <svg className="w-5 h-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </Link>
-              </div>
+      {/* Banner */}
+      <section className="relative bg-gradient-to-r from-emerald-600 to-emerald-700 text-white">
+        <div className="absolute inset-0 bg-black opacity-20"></div>
+        <div className="relative mx-auto px-4 py-16 md:py-24" style={{ maxWidth: '83rem' }}>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            <div>
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+                Рентгенография в клинике «Альтамед-с»
+              </h1>
+              <p className="text-lg md:text-xl mb-8 text-emerald-100">
+                Цифровая рентгенография зубов и челюстей для точной диагностики в Одинцово
+              </p>
             </div>
-            <div className="hidden md:block h-[445px] relative overflow-hidden rounded-[20px] shadow-lg">
-              <Image 
-                src="/images/yslugi/Rentgenografiya.webp"
-                alt="Рентгенография"
-                fill
-                className="object-cover"
-                unoptimized
+            <div className="relative">
+              <img 
+                src="/images/dentisrty/Rentgenografiya.webp" 
+                alt="Рентгенография" 
+                className="w-full h-auto rounded-lg shadow-2xl"
               />
-              <div className="absolute inset-0 flex flex-col justify-center items-start p-8 md:p-12 text-black">
-                <h2 className="text-2xl md:text-4xl font-bold mb-4">Рентгенография в стоматологии Одинцово</h2>
-                <p className="text-lg md:text-xl mb-6 max-w-md">Современная цифровая рентген-диагностика</p>
-                <Link href="https://online.altamed-c.ru/" target="_blank" rel="noopener noreferrer" className="bg-blue-500 text-white rounded-full px-8 py-3 font-medium hover:bg-blue-600 transition-colors">
-                  Записаться на рентген
-                </Link>
-              </div>
             </div>
           </div>
         </div>
-      </main>
+      </section>
 
       <section className="py-12 bg-white">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
@@ -273,6 +245,53 @@ export default function XrayPage() {
         </div>
       </section>
 
+      <section className="py-12 bg-white">
+        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div className="lg:col-span-2 space-y-5 text-gray-700 leading-relaxed">
+              <h2 className="text-3xl font-bold text-gray-900">Рентгенография в Одинцово: почему выбирают нас</h2>
+              <p>
+                Клиника «Альтамед-С» предлагает услуги рентгенографии в Одинцово — прицельные снимки, панорамную
+                рентгенографию и компьютерную томографию для точной диагностики. Мы применяем современное цифровое
+                оборудование с минимальной лучевой нагрузкой и обеспечиваем высокое качество изображений.
+              </p>
+              <p>
+                Врач-стоматолог проводит рентген-диагностику для выявления скрытых патологий, планирования лечения
+                и контроля его результатов. У нас можно пройти прицельный снимок зуба, ортопантомограмму, телерентгенографию
+                и другие виды рентгенографии.
+              </p>
+              <p>
+                Прозрачные цены позволяют планировать бюджет — стоимость рентгенографии в Одинцово
+                фиксируется заранее, а пациенты получают подробную информацию о процедурах.
+              </p>
+            </div>
+            <div className="bg-gray-50 rounded-[20px] p-6 shadow-md border-l-4 border-[#4A5568]">
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                Что вы получаете, выбирая «Альтамед-С»
+              </h3>
+              <ul className="space-y-3 text-gray-700 text-sm md:text-base leading-relaxed">
+                <li className="flex items-start">
+                  <span className="w-2 h-2 bg-[#4A5568] rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                  Цифровую рентгенографию с минимальной лучевой нагрузкой для безопасной диагностики.
+                </li>
+                <li className="flex items-start">
+                  <span className="w-2 h-2 bg-[#4A5568] rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                  Высокое качество изображений для точной диагностики и планирования лечения.
+                </li>
+                <li className="flex items-start">
+                  <span className="w-2 h-2 bg-[#4A5568] rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                  Опытных рентгенологов, специализирующихся на стоматологической диагностике.
+                </li>
+                <li className="flex items-start">
+                  <span className="w-2 h-2 bg-[#4A5568] rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                  Электронное хранение снимков для удобства и доступности результатов.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Важность рентген-диагностики */}
       <section className="py-12 bg-white">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
@@ -306,6 +325,150 @@ export default function XrayPage() {
               </p>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="py-12 bg-gray-50">
+        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">
+            Отзывы пациентов о рентгенографии в Одинцово
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Реальные отзывы из Одинцово</h3>
+              <p className="text-gray-700 text-sm md:text-base leading-relaxed">
+                Пациенты отмечают качество снимков, быстроту получения результатов
+                и минимальную лучевую нагрузку при рентгенографии.
+              </p>
+            </div>
+            <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Точная диагностика</h3>
+              <p className="text-gray-700 text-sm md:text-base leading-relaxed">
+                После рентгенографии врачи получают полную информацию о состоянии зубов, что соответствует
+                ожиданиям пациентов и обеспечивает качественное лечение.
+              </p>
+            </div>
+            <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Комфортная процедура</h3>
+              <p className="text-gray-700 text-sm md:text-base leading-relaxed">
+                После рентгенографии в Одинцове пациенты отмечают отсутствие дискомфорта; врачи дают
+                подробные объяснения результатов.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-12 bg-white">
+        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">
+            Частые вопросы о рентгенографии в Одинцово
+          </h2>
+          <div className="space-y-4">
+            <details className="group bg-gray-50 rounded-[20px] shadow-md border border-gray-100">
+              <summary className="cursor-pointer px-6 py-4 flex items-center justify-between text-left">
+                <span className="text-lg font-semibold text-gray-900 group-open:text-emerald-700 transition-colors duration-300">
+                  Безопасна ли рентгенография для здоровья?
+                </span>
+                <svg
+                  className="w-5 h-5 text-[#4A5568] group-open:rotate-180 transition-transform duration-300"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </summary>
+              <div className="px-6 pb-4 text-gray-700 leading-relaxed">
+                Да, современная цифровая рентгенография безопасна для здоровья. Лучевая нагрузка минимальна
+                и соответствует международным стандартам безопасности. Рентгенография в стоматологии необходима
+                для точной диагностики и планирования лечения.
+              </div>
+            </details>
+            <details className="group bg-gray-50 rounded-[20px] shadow-md border border-gray-100">
+              <summary className="cursor-pointer px-6 py-4 flex items-center justify-between text-left">
+                <span className="text-lg font-semibold text-gray-900 group-open:text-emerald-700 transition-colors duration-300">
+                  Как часто можно делать рентгенографию?
+                </span>
+                <svg
+                  className="w-5 h-5 text-[#4A5568] group-open:rotate-180 transition-transform duration-300"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </summary>
+              <div className="px-6 pb-4 text-gray-700 leading-relaxed">
+                Частота рентгенографии определяется врачом в зависимости от клинической ситуации.
+                При необходимости рентгенография может проводиться несколько раз в год для контроля
+                лечения и диагностики.
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-12 bg-gray-50">
+        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
+          <div className="bg-gradient-to-r from-[#4A5568] to-[#5A6474] rounded-[20px] p-8 md:p-12 text-white flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
+            <div className="max-w-3xl">
+              <h2 className="text-2xl md:text-3xl font-bold mb-4">
+                Рентгенография в Одинцово — получите точную диагностику
+              </h2>
+              <p className="text-white/90 text-sm md:text-base leading-relaxed">
+                Запишитесь на рентгенографию в клинику «Альтамед-С», чтобы получить качественные снимки
+                для точной диагностики и планирования лечения.
+              </p>
+            </div>
+            <Link
+              href="https://online.altamed-c.ru/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white text-[#4A5568] rounded-full px-8 py-3 font-medium hover:bg-gray-100 transition-colors text-center"
+            >
+              Записаться на приём
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="pb-12 bg-white">
+        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "MedicalBusiness",
+                name: "Клиника «Альтамед-С» — рентгенография в Одинцово",
+                url: "https://altamed-c.ru/services/dentistry/xray",
+                image: "https://altamed-c.ru/images/dentisrty/Rentgenografiya.webp",
+                medicalSpecialty: "Dental",
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "320"
+                },
+                address: {
+                  "@type": "PostalAddress",
+                  addressLocality: "Одинцово",
+                  addressRegion: "Московская область",
+                  streetAddress: "ул. Советская, 9"
+                },
+                telephone: "+7 (495) 640-09-03",
+                priceRange: "₽₽",
+                serviceType: "Рентгенография",
+                areaServed: "Одинцово и Одинцовский городской округ",
+                description:
+                  "Рентгенография в Одинцово: прицельные снимки, панорамная рентгенография, компьютерная томография для точной диагностики в стоматологии.",
+                sameAs: [
+                  "https://altamed-c.ru",
+                  "https://yandex.ru/maps/org/altamed_s/1919839667"
+                ]
+              })
+            }}
+          />
         </div>
       </section>
 

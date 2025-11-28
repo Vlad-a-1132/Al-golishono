@@ -29,7 +29,7 @@ export default function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm w-full">
       {/* Верхний уровень: логотип, телефон и кнопки */}
       <div className="border-b border-gray-100 py-3">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto px-4 sm:px-6 lg:px-8" style={{ maxWidth: '83rem' }}>
           <div className="flex justify-between items-center">
             <div className="flex items-center">
               {/* Логотип */}
@@ -140,7 +140,7 @@ export default function Header() {
 
       {/* Второй уровень: поиск и навигация - скрываем на мобильных */}
       <div className="border-b border-gray-200 hidden md:block">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto px-4 sm:px-6 lg:px-8" style={{ maxWidth: '83rem' }}>
           <div className="flex items-center py-3">
             {/* Блок поиска */}
             <div className="w-[270px] h-[42px] relative mr-8">
@@ -171,6 +171,9 @@ export default function Header() {
                 </Link>
                 <Link href="/services" className="text-gray-800 hover:text-[#13AB7B] transition py-2 text-sm font-medium">
                   Услуги
+                </Link>
+                <Link href="/services/dentistry" className="text-gray-800 hover:text-[#13AB7B] transition py-2 text-sm font-medium">
+                  Стоматология
                 </Link>
                 <Link href="/diagnostics" className="text-gray-800 hover:text-[#13AB7B] transition py-2 text-sm font-medium">
                   Диагностика
@@ -262,6 +265,9 @@ export default function Header() {
           </Link>
           <Link href="/services" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
             Услуги
+          </Link>
+          <Link href="/services/dentistry" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
+            Стоматология
           </Link>
           <Link href="/diagnostics" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
             Диагностика

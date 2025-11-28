@@ -10,17 +10,17 @@ export default function CTScanPage() {
 
   // Полный список услуг компьютерной томографии из fullServicesData
   const services = [
-    { code: "A06.07.013.001", name: "КТ одной челюсти", price: 3500 },
-    { code: "A06.07.013.002", name: "КТ двух челюстей", price: 4400 },
-    { code: "A06.07.013.003", name: "КТ двух челюстей для детей до 12 лет", price: 3400 },
-    { code: "A06.07.013.004", name: "КТ двух челюстей и ВНЧС", price: 4600 },
-    { code: "A06.07.013.005", name: "КТ двух-трех рядом стоящих зубов", price: 1900 },
-    { code: "A06.07.013.006", name: "ОПТГ", price: 1600 },
-    { code: "A06.07.013.007", name: "ТРГ черепа в одной проекции", price: 1600 },
-    { code: "A06.07.013.008", name: "КТ двух сегментов (I и IV или II и III)", price: 3400 },
-    { code: "A06.07.013.009", name: "КТ одного сегмента", price: 3000 },
-    { code: "A06.07.013.010", name: "КТ ВНЧС в одном положении (один сустав)", price: 1000 },
-    { code: "A06.07.013.011", name: "КТ ВНЧС двух суставов в двух положениях", price: 6000 }
+    { code: "A06.07.013.001", name: "КТ одной челюсти", price: 3680 },
+    { code: "A06.07.013.002", name: "КТ двух челюстей", price: 4620 },
+    { code: "A06.07.013.003", name: "КТ двух челюстей для детей до 12 лет", price: 3570 },
+    { code: "A06.07.013.004", name: "КТ двух челюстей и ВНЧС", price: 4830 },
+    { code: "A06.07.013.005", name: "КТ двух-трех рядом стоящих зубов", price: 2000 },
+    { code: "A06.07.013.006", name: "ОПТГ", price: 1680 },
+    { code: "A06.07.013.007", name: "ТРГ черепа в одной проекции", price: 1680 },
+    { code: "A06.07.013.008", name: "КТ двух сегментов (I и IV или II и III)", price: 3570 },
+    { code: "A06.07.013.009", name: "КТ одного сегмента", price: 3150 },
+    { code: "A06.07.013.010", name: "КТ ВНЧС в одном положении (один сустав)", price: 1050 },
+    { code: "A06.07.013.011", name: "КТ ВНЧС двух суставов в двух положениях", price: 6300 }
   ];
 
   return (
@@ -39,55 +39,29 @@ export default function CTScanPage() {
         </div>
       </section>
 
-      <main className="py-3">
-        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
-          <header className="mb-6 ml-0 md:ml-4 lg:ml-8">
-            <h1 className="text-2xl md:text-3xl font-bold text-black leading-tight px-4 md:px-0">
-              Компьютерная томография (КТ) в стоматологии Одинцово — «<span className="italic">Альтамед-с</span>»
-            </h1>
-            <p className="text-gray-600 mt-2 px-4 md:px-0 text-sm md:text-base">
-              Трехмерная диагностика зубов и челюстей в Одинцово. Современная КТ-диагностика для точного планирования имплантации, ортодонтии и хирургических операций.
-            </p>
-          </header>
-
-          <div className="mb-8">
-            <div className="block md:hidden w-full h-[300px] flex flex-col rounded-[20px] overflow-hidden shadow-md mx-auto relative">
-              <Image 
-                src="/images/services/Computed tomography.webp"
-                alt="Компьютерная томография челюстно-лицевой области"
-                fill
-                className="object-cover"
-                unoptimized
-              />
-              <div className="relative z-10 bg-white p-4 flex flex-col justify-between items-start gap-3 mt-auto">
-                <div className="text-black font-medium text-sm">КТ-диагностика в Одинцово</div>
-                <Link href="https://online.altamed-c.ru/" target="_blank" rel="noopener noreferrer" className="bg-blue-500 text-white rounded-full flex items-center justify-center w-full h-[46px] text-sm hover:bg-blue-600 transition-colors">
-                  Записаться на КТ
-                  <svg className="w-5 h-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </Link>
-              </div>
+      {/* Banner */}
+      <section className="relative bg-gradient-to-r from-emerald-600 to-emerald-700 text-white">
+        <div className="absolute inset-0 bg-black opacity-20"></div>
+        <div className="relative mx-auto px-4 py-16 md:py-24" style={{ maxWidth: '83rem' }}>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            <div>
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+                Компьютерная томография в клинике «Альтамед-с»
+              </h1>
+              <p className="text-lg md:text-xl mb-8 text-emerald-100">
+                Трехмерная диагностика для точного планирования имплантации и лечения в Одинцово
+              </p>
             </div>
-            <div className="hidden md:block h-[445px] relative overflow-hidden rounded-[20px] shadow-lg">
-              <Image 
-                src="/images/services/Computed tomography.webp"
-                alt="Компьютерная томография челюстно-лицевой области"
-                fill
-                className="object-cover"
-                unoptimized
+            <div className="relative">
+              <img 
+                src="/images/dentisrty/kt stomatologu.webp" 
+                alt="Компьютерная томография" 
+                className="w-full h-auto rounded-lg shadow-2xl"
               />
-              <div className="absolute inset-0 flex flex-col justify-center items-start p-8 md:p-12 text-black z-10">
-                <h2 className="text-2xl md:text-4xl font-bold mb-4">Компьютерная томография в Одинцово</h2>
-                <p className="text-lg md:text-xl mb-6 max-w-md">3D-диагностика для точного планирования лечения</p>
-                <Link href="https://online.altamed-c.ru/" target="_blank" rel="noopener noreferrer" className="bg-blue-500 text-white rounded-full px-8 py-3 font-medium hover:bg-blue-600 transition-colors">
-                  Записаться на КТ
-                </Link>
-              </div>
             </div>
           </div>
         </div>
-      </main>
+      </section>
 
       <section className="py-12 bg-white">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
@@ -405,6 +379,53 @@ export default function CTScanPage() {
         </div>
       </section>
 
+      <section className="py-12 bg-white">
+        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div className="lg:col-span-2 space-y-5 text-gray-700 leading-relaxed">
+              <h2 className="text-3xl font-bold text-gray-900">Компьютерная томография в Одинцово: почему выбирают нас</h2>
+              <p>
+                Клиника «Альтамед-С» предлагает услуги компьютерной томографии в Одинцово — трехмерную диагностику
+                для точного планирования имплантации, ортодонтического лечения и хирургических операций. Мы применяем
+                современное оборудование с низкой лучевой нагрузкой и обеспечиваем высокое качество 3D-изображений.
+              </p>
+              <p>
+                Врач-стоматолог проводит КТ-диагностику для оценки костной ткани, планирования имплантации и
+                диагностики сложных случаев. У нас можно пройти КТ одной или двух челюстей, КТ ВНЧС, ОПТГ
+                и другие виды томографии.
+              </p>
+              <p>
+                Прозрачные цены позволяют планировать бюджет — стоимость КТ в Одинцово
+                фиксируется заранее, а пациенты получают подробную информацию о процедурах.
+              </p>
+            </div>
+            <div className="bg-gray-50 rounded-[20px] p-6 shadow-md border-l-4 border-[#4A5568]">
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                Что вы получаете, выбирая «Альтамед-С»
+              </h3>
+              <ul className="space-y-3 text-gray-700 text-sm md:text-base leading-relaxed">
+                <li className="flex items-start">
+                  <span className="w-2 h-2 bg-[#4A5568] rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                  Трехмерную диагностику с высокой точностью для планирования лечения.
+                </li>
+                <li className="flex items-start">
+                  <span className="w-2 h-2 bg-[#4A5568] rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                  Оценку костной ткани и точное планирование имплантации.
+                </li>
+                <li className="flex items-start">
+                  <span className="w-2 h-2 bg-[#4A5568] rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                  Опытных специалистов, работающих с современным КТ-оборудованием.
+                </li>
+                <li className="flex items-start">
+                  <span className="w-2 h-2 bg-[#4A5568] rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                  Виртуальное планирование лечения на основе 3D-моделей.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Показания для КТ */}
       <section className="py-12 bg-gray-50">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
@@ -477,6 +498,150 @@ export default function CTScanPage() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="py-12 bg-gray-50">
+        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">
+            Отзывы пациентов о компьютерной томографии в Одинцово
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Реальные отзывы из Одинцово</h3>
+              <p className="text-gray-700 text-sm md:text-base leading-relaxed">
+                Пациенты отмечают качество 3D-изображений, точность диагностики
+                и эффективность планирования лечения на основе КТ.
+              </p>
+            </div>
+            <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Точное планирование</h3>
+              <p className="text-gray-700 text-sm md:text-base leading-relaxed">
+                После КТ врачи получают полную информацию о состоянии костной ткани и могут точно спланировать
+                имплантацию и лечение, что соответствует ожиданиям пациентов.
+              </p>
+            </div>
+            <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Комфортная процедура</h3>
+              <p className="text-gray-700 text-sm md:text-base leading-relaxed">
+                После КТ в Одинцове пациенты отмечают отсутствие дискомфорта; врачи дают
+                подробные объяснения результатов и плана лечения.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-12 bg-white">
+        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">
+            Частые вопросы о компьютерной томографии в Одинцово
+          </h2>
+          <div className="space-y-4">
+            <details className="group bg-gray-50 rounded-[20px] shadow-md border border-gray-100">
+              <summary className="cursor-pointer px-6 py-4 flex items-center justify-between text-left">
+                <span className="text-lg font-semibold text-gray-900 group-open:text-emerald-700 transition-colors duration-300">
+                  Чем КТ отличается от обычного рентгена?
+                </span>
+                <svg
+                  className="w-5 h-5 text-[#4A5568] group-open:rotate-180 transition-transform duration-300"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </summary>
+              <div className="px-6 pb-4 text-gray-700 leading-relaxed">
+                КТ дает трехмерное изображение зубов и челюстей, в то время как обычный рентген показывает
+                только плоское двухмерное изображение. КТ позволяет точно оценить объем костной ткани,
+                положение структур и спланировать лечение с высокой точностью.
+              </div>
+            </details>
+            <details className="group bg-gray-50 rounded-[20px] shadow-md border border-gray-100">
+              <summary className="cursor-pointer px-6 py-4 flex items-center justify-between text-left">
+                <span className="text-lg font-semibold text-gray-900 group-open:text-emerald-700 transition-colors duration-300">
+                  Когда необходима КТ для имплантации?
+                </span>
+                <svg
+                  className="w-5 h-5 text-[#4A5568] group-open:rotate-180 transition-transform duration-300"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </summary>
+              <div className="px-6 pb-4 text-gray-700 leading-relaxed">
+                КТ необходима для планирования имплантации, так как позволяет точно оценить качество и объем
+                костной ткани, выбрать оптимальное место для установки импланта и спланировать костную пластику
+                при необходимости.
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-12 bg-gray-50">
+        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
+          <div className="bg-gradient-to-r from-[#4A5568] to-[#5A6474] rounded-[20px] p-8 md:p-12 text-white flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
+            <div className="max-w-3xl">
+              <h2 className="text-2xl md:text-3xl font-bold mb-4">
+                Компьютерная томография в Одинцово — получите точную диагностику
+              </h2>
+              <p className="text-white/90 text-sm md:text-base leading-relaxed">
+                Запишитесь на КТ в клинику «Альтамед-С», чтобы получить трехмерные изображения
+                для точного планирования имплантации и лечения.
+              </p>
+            </div>
+            <Link
+              href="https://online.altamed-c.ru/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white text-[#4A5568] rounded-full px-8 py-3 font-medium hover:bg-gray-100 transition-colors text-center"
+            >
+              Записаться на приём
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="pb-12 bg-white">
+        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "MedicalBusiness",
+                name: "Клиника «Альтамед-С» — компьютерная томография в Одинцово",
+                url: "https://altamed-c.ru/services/dentistry/ct",
+                image: "https://altamed-c.ru/images/dentisrty/kt stomatologu.webp",
+                medicalSpecialty: "Dental",
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "280"
+                },
+                address: {
+                  "@type": "PostalAddress",
+                  addressLocality: "Одинцово",
+                  addressRegion: "Московская область",
+                  streetAddress: "ул. Советская, 9"
+                },
+                telephone: "+7 (495) 640-09-03",
+                priceRange: "₽₽₽",
+                serviceType: "Компьютерная томография",
+                areaServed: "Одинцово и Одинцовский городской округ",
+                description:
+                  "Компьютерная томография в Одинцово: трехмерная диагностика для точного планирования имплантации, ортодонтического лечения и хирургических операций.",
+                sameAs: [
+                  "https://altamed-c.ru",
+                  "https://yandex.ru/maps/org/altamed_s/1919839667"
+                ]
+              })
+            }}
+          />
         </div>
       </section>
 

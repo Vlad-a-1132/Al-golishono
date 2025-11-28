@@ -13,95 +13,86 @@ export default function SurgeryDentistryPage() {
     {
       subtitle: "Приемы врача-стоматолога-хирурга",
       services: [
-        { code: "В01.067.001", name: "Прием (осмотр, консультация) врача-стоматолога-хирурга первичный, 1 ед.", price: 1500 },
-        { code: "В01.067.002", name: "Прием (осмотр, консультация) врача-стоматолога-хирурга повторный, 1 ед.", price: 350 }
+        { code: "", name: "Прием (осмотр, консультация) врача-стоматолога-хирурга первичный, 1 ед.", price: 370 },
+        { code: "", name: "Прием (осмотр, консультация) врача-стоматолога-хирурга повторный, 1 ед.", price: 290 },
+        { code: "", name: "Прием (осмотр, консультация) врача-стоматолога-хирурга первичный (составление плана лечения по КТ исследованию)", price: 3500 }
       ]
     },
     {
-      subtitle: "Удаление зубов",
+      subtitle: "Удаление зубов, прочие операции и услуги",
       services: [
-        { code: "", name: "Простое удаление", price: 3000 },
-        { code: "А16.07.001", name: "Удаление зуба, 1ед.", price: 2060 },
-        { code: "", name: "Сложное удаление", price: 5000 },
-        { code: "А16.07.001.003", name: "Удаление зуба сложное с разъединением корней, 1 ед.", price: 4830 },
-        { code: "", name: "Удаление ретинированного зуба", price: 8000 },
-        { code: "А16.07.024", name: "Операция удаления ретинированного, дистопированного или сверхкомплектного зуба, 1 ед.", price: 9900 },
-        { code: "А16.07.001.500", name: "Удаление зуба  с разъединением корней, 1 ед.", price: 7970 },
-        { code: "", name: "Удаление зуба мудрости простое", price: 4000 },
-        { code: "", name: "Удаление зуба мудрости сложное", price: 6000 },
-        { code: "", name: "Удаление зуба мудрости ретинированного", price: 10000 },
-        { code: "А16.07.001.501", name: "Удаление временного зуба с физиологической подвижностью, 1 ед.", price: 1200 },
-        { code: "", name: "Иссечение капюшона", price: 2500 }
+        { code: "", name: "Удаление зуба, 1ед.", price: 2170 },
+        { code: "", name: "Удаление зуба сложное, 1ед.", price: 4830 },
+        { code: "", name: "Удаление зуба с разъединением корней, 1 ед.", price: 8370 },
+        { code: "", name: "Операция удаления ретинированного, дистопированного или сверхкомплектного зуба, 1 ед.", price: 10400 },
+        { code: "", name: "Удаление временного зуба с физиологической подвижностью, 1 ед.", price: 1260 },
+        { code: "", name: "Хирургическая обработка раны или инфицированной ткани, 1 ед.", price: 1760 },
+        { code: "", name: "Вскрытие и дренирование абсцесса полости рта, 1 ед.", price: 2670 },
+        { code: "", name: "Гингивэктомия, 1 зуб", price: 1280 },
+        { code: "", name: "Цистотомия или цистэктомия. Удаление ретенционной кисты слизистой полости рта, 1 ед.", price: 7870 },
+        { code: "", name: "Наложение шва на слизистую оболочку рта, 1 ед.", price: 760 },
+        { code: "", name: "Наложение швов до 2см., 1ед.", price: 830 },
+        { code: "", name: "Наложение швов до 5см, 1ед.", price: 1400 },
+        { code: "", name: "Снятие послеоперационных швов, 1ед.", price: 650 },
+        { code: "", name: "Резекция верхушки корня с ретроградным пломбированием с использованием МТА, 1 зуб", price: 16740 },
+        { code: "", name: "Кюретаж лунки удаленного зуба, 1 ед.", price: 1020 },
+        { code: "", name: "Перевязка после хирургического вмешательства, 1ед.", price: 320 },
+        { code: "", name: "Первичная хирургическая обработка раны, 1ед.", price: 650 },
+        { code: "", name: "Остановка луночного кровотечения, 1 зуб", price: 510 },
+        { code: "", name: "Остановка луночного кровотечения с использованием гемостатических материалов, 1 зуб", price: 1220 },
+        { code: "", name: "Дренирование гнойной раны, 1 ед.", price: 510 },
+        { code: "", name: "Лечение альвеолита/ одно посещение/", price: 1020 },
+        { code: "", name: "Введение препарата \"Альвостаз\"Alvogyl\"NEOKONES\", 1ед.", price: 320 }
       ]
     },
     {
-      subtitle: "Прочие операции и услуги",
+      subtitle: "Имплантология",
       services: [
-        { code: "А16.01.004", name: "Хирургическая обработка раны или инфицированной ткани, 1 ед.", price: 1670 },
-        { code: "А16.07.014", name: "Вскрытие и дренирование абсцесса полости рта, 1 ед.", price: 2540 },
-        { code: "А16.07.026", name: "Гингивэктомия, 1 зуб", price: 1210 },
-        { code: "", name: "Цистэктомия", price: 6000 },
-        { code: "А16.07.016.500", name: "Цистотомия или цистэктомия. Удаление ретенционной кисты слизистой полости рта, 1 ед.", price: 7490 },
-        { code: "А16.07.097", name: "Наложение шва на слизистую оболочку рта, 1 ед.", price: 720 },
-        { code: "А16.07.097.000.03", name: "Наложение швов  до 2см., 1ед.", price: 790 },
-        { code: "А16.07.097.000.04", name: "Наложение швов  до 5см, 1ед.", price: 1330 },
-        { code: "А16.07.30.069.000.01", name: "Снятие послеоперационных швов, 1ед.", price: 610 },
-        { code: "", name: "Резекция верхушки корня", price: 7000 },
-        { code: "А16.07.007.500", name: "Резекция верхушки корня с ретроградным пломбированием с использованием МТА, 1 зуб", price: 15940 },
-        { code: "А16.07.013", name: "Кюретаж лунки удаленного зуба, 1 ед.", price: 970 },
-        { code: "А15.07.002.000.02", name: "Перевязка после хирургического вмешательства, 1ед.", price: 300 },
-        { code: "А16,07.014.000.02", name: "Первичная хирургическая обработка раны, 1ед.", price: 610 },
-        { code: "А16.07.095.000.01", name: "Остановка луночного кровотечения, 1 зуб", price: 480 },
-        { code: "А16.07.095.000.02", name: "Остановка луночного кровотечения с использованием гемостатических материалов, 1 зуб", price: 1160 },
-        { code: "А16.07.014.000.03", name: "Дренирование гнойной раны, 1 ед.", price: 480 },
-        { code: "", name: "Лечение альвеолита", price: 2000 },
-        { code: "А16.07.013.000.01", name: "Лечение альвеолита/ одно посещение/", price: 970 },
-        { code: "А11.007.010.000.03", name: "Введение препарата \"Альвостаз\"Alvogyl\"NEOKONES\", 1ед.", price: 300 }
-      ]
-    },
-    {
-      subtitle: "Имплантация зубов",
-      services: [
-        { code: "", name: "Установка имплантата", price: 35000 },
-        { code: "A16.07.054.000.02", name: "Внутрикостная дентальная имплантация (винтового) импланта системы Implantium Dentium/ без ст-ти матеиала/", price: 35020 },
-        { code: "A16.07.054.000.04", name: "Внутрикостная дентальная имплантация временного импланта", price: 18110 },
-        { code: "A16.07.054.000.12", name: "Установка формирователя десны Dentium", price: 6040 },
-        { code: "", name: "Костная пластика от", price: 20000 },
-        { code: "A16.07.041.000.20", name: "Операция направленной регенерации кости (НРК) (без стоимости остеоиндуктивного материала)1ед.", price: 36230 },
-        { code: "", name: "Синус-лифтинг от", price: 30000 },
-        { code: "A16.07.055.000.01", name: "Синус-лифтинг (костная пластика, остеопластика) открытый (без стоимости остеоиндуктивного материала)", price: 50720 },
-        { code: "A16.07.055.000.02", name: "Синус-лифтинг (костная пластика, остеопластика) закрытый (без стоимости остеоиндуктивного материала)", price: 28980 },
-        { code: "A16.07.055.000.03", name: "Операция имплантации барьерной мембраны (без стоимости мембраны)", price: 6040 },
-        { code: "A16.07.055.000.04", name: "Забор аутотрансплантанта кости из внутриротовых участков", price: 14490 },
-        { code: "A16.07.041.000.20", name: "Операция направленной регенерации кости (НРК) (без стоимости остеоиндуктивного материала)1ед.", price: 36230 },
-        { code: "A16.07.041.000.21", name: "Операция реконструкции костного гребня 2-х сторонними блоками (3D пластика)", price: 48060 },
-        { code: "A16.07.041.000.22", name: "Расщепление альвеолярного гребня", price: 18110 },
-        { code: "A16.07.040.000.20", name: "Забор соединительнотканного трансплантанта", price: 7250 },
-        { code: "A16.07.040.000.21", name: "Пластика мягких тканей в области имплантанта", price: 9180 },
-        { code: "A16.07.040.000.22", name: "Увеличение зоны прикрепленной кератинизированной десны", price: 15210 },
-        { code: "A16.07.054.000.11", name: "Удаление неинтегрированного импланта", price: 3620 },
-        { code: "A16.07.054.000.10", name: "Удаление интегрированного импланта", price: 8450 },
-        { code: "A23.07.002.000.40", name: "Изготовление индивидуального шаблона", price: 9660 },
-        { code: "A16.07.041.000.23", name: "Подготовка альвеолярного гребня к имплантации", price: 8450 },
-        { code: "A16.07.041.000.24", name: "Пластика альвеолярного гребня 1ед.", price: 24150 }
+        { code: "", name: "Внутрикостная дентальная имплантация (винтового) импланта системы Implantium Dentium/ без ст-ти матеиала/", price: 36780 },
+        { code: "", name: "Внутрикостная дентальная имплантация (винтового) импланта системы Osstem", price: 42000 },
+        { code: "", name: "Внутрикостная дентальная имплантация временного импланта", price: 19020 },
+        { code: "", name: "Внутрикостная дентальная имплантация (винтового) импланта системы Straumann", price: 94500 },
+        { code: "", name: "Установка формирователя десны Dentium", price: 6300 },
+        { code: "", name: "Внутрикостная дентальная имплантация: установка формирователя десны на имплант Osstem (Корея)", price: 6300 },
+        { code: "", name: "Внутрикостная дентальная имплантация: установка инпланта Osstem (Корея)", price: 42000 },
+        { code: "", name: "Внутрикостная дентальная имплантация: раскрытие дентального имплантата", price: 3150 },
+        { code: "", name: "Внутрикостная дентальная имплантация: извлечение интегрированного имплантата", price: 7140 },
+        { code: "", name: "Внутрикостная дентальная имплантация: извлечение дезинтегрированного имплантата", price: 3150 },
+        { code: "", name: "Хирургический шаблон (1 имплантат)", price: 6300 },
+        { code: "", name: "Синус-лифтинг (костная пластика, остеопластика) открытый (без стоимости остеоиндуктивного материала)", price: 53260 },
+        { code: "", name: "Синус-лифтинг (костная пластика, остеопластика) открытый (со стоимостью остеоиндуктивного материала+мембр.)", price: 90000 },
+        { code: "", name: "Синус-лифтинг (костная пластика, остеопластика) закрытый (без стоимости остеоиндуктивного материала)", price: 30430 },
+        { code: "", name: "Операция имплантации барьерной мембраны (без стоимости мембраны)", price: 6350 },
+        { code: "", name: "Забор аутотрансплантанта кости из внутриротовых участков", price: 15220 },
+        { code: "", name: "Операция направленной регенерации кости (НРК) (без стоимости остеоиндуктивного материала) 1ед.", price: 38050 },
+        { code: "", name: "Операция реконструкции костного гребня 2-х сторонними блоками (3D пластика)", price: 50470 },
+        { code: "", name: "Расщепление альвеолярного гребня", price: 19020 },
+        { code: "", name: "Забор соединительнотканного трансплантанта", price: 7620 },
+        { code: "", name: "Пластика мягких тканей в области имплантанта", price: 9640 },
+        { code: "", name: "Увеличение зоны прикрепленной кератинизированной десны", price: 15980 },
+        { code: "", name: "Удаление неинтегрированного импланта", price: 3810 },
+        { code: "", name: "Удаление интегрированного импланта", price: 8880 },
+        { code: "", name: "Изготовление индивидуального шаблона", price: 10150 },
+        { code: "", name: "Подготовка альвеолярного гребня к имплантации", price: 8880 },
+        { code: "", name: "Пластика альвеолярного гребня 1ед.", price: 25360 },
+        { code: "", name: "Операция All-on-4 (включая удаление и формирователи)", price: 200000 }
       ]
     },
     {
       subtitle: "Челюстно-лицевая хирургия",
       services: [
-        { code: "", name: "Пластика уздечки губы/языка", price: 4000 },
-        { code: "А16.07.042", name: "Пластика уздечки верхней губы, 1 ед.", price: 5070 },
-        { code: "А16.07.043", name: "Пластика уздечки нижней губы, 1ед.", price: 5070 },
-        { code: "А16.07.044", name: "Пластика уздечки языка, 1 ед.", price: 5070 },
-        { code: "А16.07.045", name: "Вестибулопластика, 1 ед.", price: 14370 },
-        { code: "А16.07.096", name: "Пластика перфорации верхнечелюстной пазухи, 1 ед.", price: 14370 },
-        { code: "А16.07.017", name: "Пластика альвеолярного отростка нижней челюсти, 1ед.", price: 4350 },
-        { code: "А16.07.017.002", name: "Коррекция объема и формы альвеолярного отростка, 1 ед.", price: 7250 },
-        { code: "А16.07.089.500", name: "Гингивопластика. Устранение рецессии десны, 1 зуб", price: 14370 },
-        { code: "А16.07.089 .501", name: "Гингивопластика. Хирургическое удлинение коронковой части зуба, 1 ед.", price: 8580 },
-        { code: "А16.07.090", name: "Гингивотомия, 1 ед.", price: 6520 },
-        { code: "А16.07.040", name: "Лоскутная операция в полости рта, 4-6 зубов", price: 6040 },
-        { code: "А16.30.032", name: "Иссечение новообразования мягких тканей, 1 ед.", price: 3020 }
+        { code: "", name: "Пластика уздечки верхней губы, 1 ед.", price: 5330 },
+        { code: "", name: "Пластика уздечки нижней губы, 1ед.", price: 5330 },
+        { code: "", name: "Пластика уздечки языка, 1 ед.", price: 5330 },
+        { code: "", name: "Вестибулопластика, 1 ед.", price: 15090 },
+        { code: "", name: "Пластика перфорации верхнечелюстной пазухи, 1 ед.", price: 15090 },
+        { code: "", name: "Пластика альвеолярного отростка нижней челюсти, 1ед.", price: 4570 },
+        { code: "", name: "Коррекция объема и формы альвеолярного отростка, 1 ед.", price: 7620 },
+        { code: "", name: "Гингивопластика. Устранение рецессии десны, 1 зуб", price: 15090 },
+        { code: "", name: "Гингивопластика. Хирургическое удлинение коронковой части зуба, 1 ед.", price: 9010 },
+        { code: "", name: "Гингивотомия, 1 ед.", price: 6850 },
+        { code: "", name: "Лоскутная операция в полости рта, 4-6 зубов", price: 6350 },
+        { code: "", name: "Иссечение новообразования мягких тканей, 1 ед.", price: 3180 }
       ]
     }
   ];
@@ -122,55 +113,127 @@ export default function SurgeryDentistryPage() {
         </div>
       </section>
 
-      <main className="py-3">
-        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
-          <header className="mb-6 ml-0 md:ml-4 lg:ml-8">
-            <h1 className="text-2xl md:text-3xl font-bold text-black leading-tight px-4 md:px-0">
-              Хирургическая стоматология в Одинцово — удаление зубов, имплантация в «<span className="italic">Альтамед-с</span>»
-            </h1>
-            <p className="text-gray-600 mt-2 px-4 md:px-0 text-sm md:text-base">
-              Профессиональное удаление зубов, имплантация, хирургические операции в стоматологии Одинцово. Опытные хирурги-стоматологи, современное оборудование, безболезненные операции.
-            </p>
-          </header>
-
-          <div className="mb-8">
-            <div className="block md:hidden w-full h-[300px] flex flex-col rounded-[20px] overflow-hidden shadow-md mx-auto relative">
-              <Image 
-                src="/images/services/Surgical dentistry.webp"
-                alt="Хирургическая стоматология"
-                fill
-                className="object-cover"
-                unoptimized
-              />
-              <div className="relative z-10 bg-white p-4 flex flex-col justify-between items-start gap-3 mt-auto">
-                <div className="text-black font-medium text-sm">Хирургическая стоматология в Одинцово</div>
-                <Link href="https://online.altamed-c.ru/" target="_blank" rel="noopener noreferrer" className="bg-blue-500 text-white rounded-full flex items-center justify-center w-full h-[46px] text-sm hover:bg-blue-600 transition-colors">
-                  Записаться на прием
-                  <svg className="w-5 h-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </Link>
-              </div>
+      {/* Banner */}
+      <section className="relative bg-gradient-to-r from-emerald-600 to-emerald-700 text-white">
+        <div className="absolute inset-0 bg-black opacity-20"></div>
+        <div className="relative mx-auto px-4 py-16 md:py-24" style={{ maxWidth: '83rem' }}>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            <div>
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+                Хирургическая стоматология в клинике «Альтамед-с»
+              </h1>
+              <p className="text-lg md:text-xl mb-8 text-emerald-100">
+                Удаление зубов, имплантация и хирургические операции в Одинцово
+              </p>
             </div>
-            <div className="hidden md:block h-[445px] relative overflow-hidden rounded-[20px] shadow-lg">
-              <Image 
-                src="/images/services/Surgical dentistry.webp"
-                alt="Хирургическая стоматология"
-                fill
-                className="object-cover"
-                unoptimized
+            <div className="relative">
+              <img 
+                src="/images/dentisrty/stom surgeon.webp" 
+                alt="Хирургическая стоматология" 
+                className="w-full h-auto rounded-lg shadow-2xl"
               />
-              <div className="absolute inset-0 flex flex-col justify-center items-start p-8 md:p-12 text-black z-10">
-                <h2 className="text-2xl md:text-4xl font-bold mb-4">Хирургическая стоматология в Одинцово</h2>
-                <p className="text-lg md:text-xl mb-6 max-w-md">Удаление зубов, имплантация, хирургические операции</p>
-                <Link href="https://online.altamed-c.ru/" target="_blank" rel="noopener noreferrer" className="bg-blue-500 text-white rounded-full px-8 py-3 font-medium hover:bg-blue-600 transition-colors">
-                  Записаться на прием
-                </Link>
-              </div>
             </div>
           </div>
         </div>
-      </main>
+      </section>
+
+      <section className="py-12 bg-white">
+        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div className="lg:col-span-2 space-y-5 text-gray-700 leading-relaxed">
+              <h2 className="text-3xl font-bold text-gray-900">Стоматолог-хирург в Одинцово: почему выбирают нас</h2>
+              <p>
+                Клиника «Альтамед-С» предлагает полный комплекс услуг стоматолога-хирурга в Одинцово — от
+                простого удаления зубов до сложных операций имплантации и челюстно-лицевой хирургии. Мы применяем
+                передовые методики, современное оборудование и учитываем индивидуальные особенности каждого пациента,
+                чтобы обеспечить безопасное и эффективное лечение.
+              </p>
+              <p>
+                Врач-стоматолог-хирург составляет персональный план лечения, учитывая состояние зубов, костной ткани
+                и пожелания пациента. У нас можно выполнить простое и сложное удаление зубов, установить импланты,
+                провести костную пластику и синус-лифтинг, выполнить пластику мягких тканей и другие хирургические
+                вмешательства.
+              </p>
+              <p>
+                Прозрачные цены позволяют планировать бюджет — стоимость услуг стоматолога-хирурга в Одинцово
+                фиксируется заранее, а пациенты получают подробную смету с поэтапным планом лечения.
+              </p>
+            </div>
+            <div className="bg-gray-50 rounded-[20px] p-6 shadow-md border-l-4 border-[#4A5568]">
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                Что вы получаете, выбирая «Альтамед-С»
+              </h3>
+              <ul className="space-y-3 text-gray-700 text-sm md:text-base leading-relaxed">
+                <li className="flex items-start">
+                  <span className="w-2 h-2 bg-[#4A5568] rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                  Персонализированный протокол хирургического лечения с учётом состояния зубов, костной ткани и эстетики.
+                </li>
+                <li className="flex items-start">
+                  <span className="w-2 h-2 bg-[#4A5568] rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                  Подготовку и сопровождение у команды узких специалистов: хирурга, имплантолога и ортопеда.
+                </li>
+                <li className="flex items-start">
+                  <span className="w-2 h-2 bg-[#4A5568] rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                  Цифровое планирование операций, проверка по 3D-модели и пошаговый контроль процесса.
+                </li>
+                <li className="flex items-start">
+                  <span className="w-2 h-2 bg-[#4A5568] rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                  Контрольный график визитов после операции, рекомендации по уходу и профилактике осложнений.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-12 bg-gray-50">
+        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">Преимущества услуг стоматолога-хирурга в «Альтамед-С»</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Опытные хирурги</h3>
+              <p className="text-gray-700 text-sm md:text-base leading-relaxed">
+                Врачи-стоматологи-хирурги с опытом более 15 лет выполняют сложные операции и работают в связке
+                с имплантологами и ортопедами для длительного результата.
+              </p>
+            </div>
+            <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Современные методики</h3>
+              <p className="text-gray-700 text-sm md:text-base leading-relaxed">
+                Используем атравматичные методики удаления, одномоментную имплантацию, костную пластику и
+                пластику мягких тканей по международным протоколам.
+              </p>
+            </div>
+            <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Безболезненное лечение</h3>
+              <p className="text-gray-700 text-sm md:text-base leading-relaxed">
+                Современная местная анестезия, седация и индивидуальные планы обезболивания минимизируют
+                дискомфорт во время и после операции.
+              </p>
+            </div>
+            <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Прозрачные цены</h3>
+              <p className="text-gray-700 text-sm md:text-base leading-relaxed">
+                Прайс фиксируется перед операцией — пациент знает стоимость услуг стоматолога-хирурга до начала лечения.
+              </p>
+            </div>
+            <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Комфортная реабилитация</h3>
+              <p className="text-gray-700 text-sm md:text-base leading-relaxed">
+                Подробные рекомендации по уходу после операции, контрольные визиты и поддержка врача на всех этапах
+                восстановления.
+              </p>
+            </div>
+            <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Гарантийное сопровождение</h3>
+              <p className="text-gray-700 text-sm md:text-base leading-relaxed">
+                Мы сопровождаем пациента на всех этапах — от консультации до контрольных осмотров и рекомендаций
+                по профилактике.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section className="py-12 bg-white">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
@@ -222,6 +285,31 @@ export default function SurgeryDentistryPage() {
                 </Link>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-12 bg-white">
+        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">
+            Стоматолог-хирург в Одинцово: цены и отзывы пациентов
+          </h2>
+          <div className="space-y-4 text-gray-700 leading-relaxed text-sm md:text-base mb-6">
+            <p>
+              Стоматология «Альтамед-С» — клиника, где услуги стоматолога-хирурга в Одинцове проводятся по международным
+              протоколам. Мы принимаем пациентов из Одинцово и всего Одинцовского городского округа, поэтому
+              запрос «стоматолог хирург одинцово область» полностью закрывает наши услуги.
+            </p>
+            <p>
+              Наши пациенты отмечают, что «стоматолог хирург одинцово отзывы» в точности описывают результат:
+              аккуратная работа хирургической команды и детальное сопровождение. Если вы ищете стоматологию,
+              где «стоматология хирургия одинцово» — это не просто слоган, а комплексная услуга, записывайтесь
+              на консультацию стоматолога-хирурга или ознакомьтесь с другими направлениями на{" "}
+              <Link href="/services/dentistry" className="text-emerald-600 hover:text-emerald-700 underline">
+                странице стоматологии
+              </Link>
+              .
+            </p>
           </div>
         </div>
       </section>
@@ -481,6 +569,187 @@ export default function SurgeryDentistryPage() {
               </p>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="py-12 bg-gray-50">
+        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">
+            Отзывы пациентов о стоматологе-хирурге в Одинцово
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Реальные отзывы из Одинцово</h3>
+              <p className="text-gray-700 text-sm md:text-base leading-relaxed">
+                Запрос «стоматолог хирург одинцово отзывы» подтверждается историями пациентов: они отмечают
+                безболезненность процедур, внимательное отношение и понятный план лечения.
+              </p>
+            </div>
+            <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Стабильные результаты</h3>
+              <p className="text-gray-700 text-sm md:text-base leading-relaxed">
+                Операции проходят без осложнений, а реабилитация проходит быстро, что соответствует ожиданиям
+                по запросу «стоматолог хирург в одинцове цены отзывы».
+              </p>
+            </div>
+            <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Комфортная реабилитация</h3>
+              <p className="text-gray-700 text-sm md:text-base leading-relaxed">
+                После операций в Одинцове пациенты отмечают минимальный дискомфорт; врачи на связи 24/7
+                и дают подробные инструкции по уходу.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-12 bg-white">
+        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">
+            Частые вопросы о стоматологе-хирурге в Одинцово
+          </h2>
+          <div className="space-y-4">
+            <details className="group bg-gray-50 rounded-[20px] shadow-md border border-gray-100">
+              <summary className="cursor-pointer px-6 py-4 flex items-center justify-between text-left">
+                <span className="text-lg font-semibold text-gray-900 group-open:text-emerald-700 transition-colors duration-300">
+                  Сколько стоит удаление зуба в Одинцово в клинике «Альтамед-С»?
+                </span>
+                <svg
+                  className="w-5 h-5 text-[#4A5568] group-open:rotate-180 transition-transform duration-300"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </summary>
+              <div className="px-6 pb-4 text-gray-700 leading-relaxed">
+                Стоимость зависит от сложности удаления. Простое удаление — от 2 170 ₽, сложное удаление — от 4 830 ₽,
+                удаление ретинированного зуба — от 10 400 ₽. Окончательный план лечения формируется после обследования
+                и фиксируется в договоре.
+              </div>
+            </details>
+            <details className="group bg-gray-50 rounded-[20px] shadow-md border border-gray-100">
+              <summary className="cursor-pointer px-6 py-4 flex items-center justify-between text-left">
+                <span className="text-lg font-semibold text-gray-900 group-open:text-emerald-700 transition-colors duration-300">
+                  Больно ли удалять зуб?
+                </span>
+                <svg
+                  className="w-5 h-5 text-[#4A5568] group-open:rotate-180 transition-transform duration-300"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </summary>
+              <div className="px-6 pb-4 text-gray-700 leading-relaxed">
+                Нет, удаление зубов проводится под местной анестезией, поэтому процедура полностью безболезненна.
+                Современные анестетики обеспечивают комфорт на протяжении всей операции.
+              </div>
+            </details>
+            <details className="group bg-gray-50 rounded-[20px] shadow-md border border-gray-100">
+              <summary className="cursor-pointer px-6 py-4 flex items-center justify-between text-left">
+                <span className="text-lg font-semibold text-gray-900 group-open:text-emerald-700 transition-colors duration-300">
+                  Сколько времени занимает заживление после удаления зуба?
+                </span>
+                <svg
+                  className="w-5 h-5 text-[#4A5568] group-open:rotate-180 transition-transform duration-300"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </summary>
+              <div className="px-6 pb-4 text-gray-700 leading-relaxed">
+                Заживление лунки после простого удаления занимает 7-10 дней, после сложного удаления — до 2-3 недель.
+                При соблюдении рекомендаций врача процесс проходит без осложнений.
+              </div>
+            </details>
+            <details className="group bg-gray-50 rounded-[20px] shadow-md border border-gray-100">
+              <summary className="cursor-pointer px-6 py-4 flex items-center justify-between text-left">
+                <span className="text-lg font-semibold text-gray-900 group-open:text-emerald-700 transition-colors duration-300">
+                  Выполняете ли вы имплантацию зубов?
+                </span>
+                <svg
+                  className="w-5 h-5 text-[#4A5568] group-open:rotate-180 transition-transform duration-300"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </summary>
+              <div className="px-6 pb-4 text-gray-700 leading-relaxed">
+                Да, наши стоматологи-хирурги проводят дентальную имплантацию, костную пластику и синус-лифтинг.
+                Мы используем импланты Straumann, Osstem, Dentium и другие системы мировых производителей.
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-12 bg-gray-50">
+        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
+          <div className="bg-gradient-to-r from-[#4A5568] to-[#5A6474] rounded-[20px] p-8 md:p-12 text-white flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
+            <div className="max-w-3xl">
+              <h2 className="text-2xl md:text-3xl font-bold mb-4">
+                Стоматолог-хирург в Одинцово — начните с бесплатного плана лечения
+              </h2>
+              <p className="text-white/90 text-sm md:text-base leading-relaxed">
+                Запишитесь на консультацию в клинику «Альтамед-С», чтобы узнать стоимость услуг стоматолога-хирурга,
+                подобрать подходящий метод лечения и получить индивидуальный план с учётом ваших пожеланий.
+              </p>
+            </div>
+            <Link
+              href="https://online.altamed-c.ru/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white text-[#4A5568] rounded-full px-8 py-3 font-medium hover:bg-gray-100 transition-colors text-center"
+            >
+              Записаться на приём
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="pb-12 bg-white">
+        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "MedicalBusiness",
+                name: "Клиника «Альтамед-С» — стоматолог-хирург в Одинцово",
+                url: "https://altamed-c.ru/services/dentistry/surgery",
+                image: "https://altamed-c.ru/images/dentisrty/stom surgeon.webp",
+                medicalSpecialty: "Dental",
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "298"
+                },
+                address: {
+                  "@type": "PostalAddress",
+                  addressLocality: "Одинцово",
+                  addressRegion: "Московская область",
+                  streetAddress: "ул. Советская, 9"
+                },
+                telephone: "+7 (495) 640-09-03",
+                priceRange: "₽₽₽",
+                serviceType: "Хирургическая стоматология",
+                areaServed: "Одинцово и Одинцовский городской округ",
+                description:
+                  "Стоматолог-хирург в Одинцово: удаление зубов, имплантация, челюстно-лицевая хирургия, костная пластика, синус-лифтинг и пластика мягких тканей.",
+                sameAs: [
+                  "https://altamed-c.ru",
+                  "https://yandex.ru/maps/org/altamed_s/1919839667"
+                ]
+              })
+            }}
+          />
         </div>
       </section>
 

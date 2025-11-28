@@ -11,45 +11,14 @@ export default function PeriodonticsPage() {
   // Полный список услуг пародонтологии из fullServicesData с подкатегориями
   const fullServicesData = [
     {
-      subtitle: "Приемы врача-стоматолога-пародонтолога",
+      subtitle: "Услуги пародонтолога",
       services: [
-        { code: "", name: "Консультация пародонтолога", price: 800 },
-        { code: "", name: "Прием (осмотр, консультация) врача-стоматолога-терапевта/пародонтолога первичный", price: 2000 },
-        { code: "", name: "Прием (осмотр, консультация) врача-стоматолога-терапевта/пародонтолога повторный", price: 1500 }
-      ]
-    },
-    {
-      subtitle: "Профессиональная гигиена при заболеваниях пародонта",
-      services: [
-        { code: "", name: "Профессиональная гигиена при заболеваниях пародонта", price: 6000 },
-        { code: "", name: "Компьютерная диагностика состояния пародонта", price: 1600 },
-        { code: "", name: "Вектор терапия от", price: 700 }
-      ]
-    },
-    {
-      subtitle: "Кюретаж пародонтальных карманов",
-      services: [
-        { code: "", name: "Закрытый кюретаж пародонтальных карманов за зуб", price: 1500 },
-        { code: "", name: "Открытый кюретаж пародонтальных карманов за зуб", price: 3000 },
-        { code: "", name: "Кюретаж десен от", price: 900 }
-      ]
-    },
-    {
-      subtitle: "Хирургические операции",
-      services: [
-        { code: "", name: "Шинирование зубов за зуб", price: 2000 },
-        { code: "А16.07.019", name: "Временное шинирование при заболеваниях пародонта/ без стоимости материала/, 1зуб", price: 1820 },
-        { code: "", name: "Лоскутные операции от", price: 4500 },
-        { code: "А16.07.040", name: "Лоскутная операция в полости рта, 4-6 зубов", price: 6040 },
-        { code: "", name: "Закрытие рецессии десны от", price: 10000 }
-      ]
-    },
-    {
-      subtitle: "Лечение заболеваний пародонта",
-      services: [
-        { code: "", name: "Лечение гингивита", price: 4000 },
-        { code: "", name: "Лечение пародонтита от", price: 8000 },
-        { code: "А11.07.010", name: "Введение лекарственных препаратов в пародонтальный карман, 1 карман", price: 870 }
+        { code: "А11.07.010", name: "Введение лекарственных препаратов в пародонтальный карман, 1 карман", price: 920 },
+        { code: "", name: "Наложение лечебной повязки (Септо-пак), 2-3 зуба", price: 460 },
+        { code: "", name: "Наложение лечебной повязки (ФАРМАДОНТ), одна челюсть", price: 470 },
+        { code: "", name: "Наложение лечебной повязки (IODO-GLYCOL PASTE), 2-3 зуба", price: 460 },
+        { code: "", name: "Аппликация лекарственного препарата на слизистую оболочку /ACEPTA/, 1 посещение", price: 980 },
+        { code: "А16.07.019", name: "Временное шинирование при заболеваниях пародонта (без стоимости материала), 1 зуб", price: 1920 }
       ]
     }
   ];
@@ -70,57 +39,29 @@ export default function PeriodonticsPage() {
         </div>
       </section>
 
-      <main className="py-3">
-        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
-          <header className="mb-6 ml-0 md:ml-4 lg:ml-8">
-            <h1 className="text-2xl md:text-3xl font-bold text-black leading-tight px-4 md:px-0">
-              Пародонтология в Одинцово — лечение десен в «<span className="italic">Альтамед-с</span>»
-            </h1>
-            <p className="text-gray-600 mt-2 px-4 md:px-0 text-sm md:text-base">
-              Лечение заболеваний десен в Одинцово. Гингивит, пародонтит, пародонтоз. Профессиональное лечение и профилактика заболеваний пародонта в клинике «Альтамед-с».
-            </p>
-          </header>
-
-          <div className="mb-8">
-            <div className="block md:hidden w-full h-[300px] flex flex-col rounded-[20px] overflow-hidden shadow-md mx-auto">
-              <div className="h-[220px] relative overflow-hidden">
-                <Image 
-                  src="/images/yslugi/Periodontology.webp"
-                  alt="Пародонтология"
-                  fill
-                  className="object-cover"
-                  unoptimized
-                />
-              </div>
-              <div className="bg-white p-4 flex flex-col justify-between items-start gap-3">
-                <div className="text-black font-medium text-sm">Лечение десен в Одинцово</div>
-                <Link href="https://online.altamed-c.ru/" target="_blank" rel="noopener noreferrer" className="bg-blue-500 text-white rounded-full flex items-center justify-center w-full h-[46px] text-sm hover:bg-blue-600 transition-colors">
-                  Записаться на прием
-                  <svg className="w-5 h-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </Link>
-              </div>
+      {/* Banner */}
+      <section className="relative bg-gradient-to-r from-emerald-600 to-emerald-700 text-white">
+        <div className="absolute inset-0 bg-black opacity-20"></div>
+        <div className="relative mx-auto px-4 py-16 md:py-24" style={{ maxWidth: '83rem' }}>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            <div>
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+                Пародонтология в клинике «Альтамед-с»
+              </h1>
+              <p className="text-lg md:text-xl mb-8 text-emerald-100">
+                Диагностика и лечение заболеваний десен у взрослых и детей в Одинцово
+              </p>
             </div>
-            <div className="hidden md:block h-[445px] relative overflow-hidden rounded-[20px] shadow-lg">
-              <Image 
-                src="/images/yslugi/Periodontology.webp"
-                alt="Пародонтология"
-                fill
-                className="object-cover"
-                unoptimized
+            <div className="relative">
+              <img 
+                src="/images/dentisrty/image (1) 2.webp" 
+                alt="Пародонтология" 
+                className="w-full h-auto rounded-lg shadow-2xl"
               />
-              <div className="absolute inset-0 flex flex-col justify-center items-start p-8 md:p-12 text-black z-10">
-                <h2 className="text-2xl md:text-4xl font-bold mb-4">Пародонтология в Одинцово</h2>
-                <p className="text-lg md:text-xl mb-6 max-w-md">Лечение и профилактика заболеваний десен</p>
-                <Link href="https://online.altamed-c.ru/" target="_blank" rel="noopener noreferrer" className="bg-blue-500 text-white rounded-full px-8 py-3 font-medium hover:bg-blue-600 transition-colors">
-                  Записаться на прием
-                </Link>
-              </div>
             </div>
           </div>
         </div>
-      </main>
+      </section>
 
       <section className="py-12 bg-white">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
@@ -495,6 +436,197 @@ export default function PeriodonticsPage() {
               </p>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="py-12 bg-white">
+        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div className="lg:col-span-2 space-y-5 text-gray-700 leading-relaxed">
+              <h2 className="text-3xl font-bold text-gray-900">Пародонтолог в Одинцово: почему выбирают нас</h2>
+              <p>
+                Клиника «Альтамед-С» предлагает услуги пародонтологии в Одинцово — лечение заболеваний десен,
+                пародонтита, гингивита. Мы применяем современные технологии, качественные препараты и обеспечиваем
+                эффективное лечение заболеваний пародонта.
+              </p>
+              <p>
+                Врач-пародонтолог проводит лечение заболеваний десен, введение лекарственных препаратов,
+                наложение лечебных повязок и шинирование зубов. У нас можно пройти лечение пародонтита,
+                гингивита и другие процедуры пародонтологии.
+              </p>
+              <p>
+                Прозрачные цены позволяют планировать бюджет — стоимость пародонтологии в Одинцово
+                фиксируется заранее, а пациенты получают подробную информацию о процедурах.
+              </p>
+            </div>
+            <div className="bg-gray-50 rounded-[20px] p-6 shadow-md border-l-4 border-[#4A5568]">
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                Что вы получаете, выбирая «Альтамед-С»
+              </h3>
+              <ul className="space-y-3 text-gray-700 text-sm md:text-base leading-relaxed">
+                <li className="flex items-start">
+                  <span className="w-2 h-2 bg-[#4A5568] rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                  Лечение заболеваний десен с использованием современных методов и препаратов.
+                </li>
+                <li className="flex items-start">
+                  <span className="w-2 h-2 bg-[#4A5568] rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                  Профилактику заболеваний пародонта с помощью профессиональной гигиены.
+                </li>
+                <li className="flex items-start">
+                  <span className="w-2 h-2 bg-[#4A5568] rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                  Опытных пародонтологов, специализирующихся на лечении заболеваний десен.
+                </li>
+                <li className="flex items-start">
+                  <span className="w-2 h-2 bg-[#4A5568] rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                  Шинирование зубов для стабилизации при заболеваниях пародонта.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-12 bg-gray-50">
+        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">
+            Отзывы пациентов о пародонтологе в Одинцово
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Реальные отзывы из Одинцово</h3>
+              <p className="text-gray-700 text-sm md:text-base leading-relaxed">
+                Пациенты отмечают эффективность лечения заболеваний десен, улучшение состояния
+                и внимательное отношение пародонтологов к процессу лечения.
+              </p>
+            </div>
+            <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Стабильные результаты</h3>
+              <p className="text-gray-700 text-sm md:text-base leading-relaxed">
+                После лечения заболеваний пародонта пациенты получают здоровые десны, что соответствует
+                ожиданиям и обеспечивает сохранение зубов.
+              </p>
+            </div>
+            <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Комфортное лечение</h3>
+              <p className="text-gray-700 text-sm md:text-base leading-relaxed">
+                После лечения в Одинцове пациенты отмечают отсутствие дискомфорта; пародонтологи дают
+                подробные рекомендации по уходу за деснами.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-12 bg-white">
+        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">
+            Частые вопросы о пародонтологе в Одинцово
+          </h2>
+          <div className="space-y-4">
+            <details className="group bg-gray-50 rounded-[20px] shadow-md border border-gray-100">
+              <summary className="cursor-pointer px-6 py-4 flex items-center justify-between text-left">
+                <span className="text-lg font-semibold text-gray-900 group-open:text-emerald-700 transition-colors duration-300">
+                  Какие симптомы указывают на заболевания пародонта?
+                </span>
+                <svg
+                  className="w-5 h-5 text-[#4A5568] group-open:rotate-180 transition-transform duration-300"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </summary>
+              <div className="px-6 pb-4 text-gray-700 leading-relaxed">
+                Симптомы заболеваний пародонта включают кровоточивость десен, неприятный запах изо рта,
+                оголение корней зубов, расшатывание зубов, образование пародонтальных карманов. При появлении
+                этих симптомов необходимо обратиться к пародонтологу.
+              </div>
+            </details>
+            <details className="group bg-gray-50 rounded-[20px] shadow-md border border-gray-100">
+              <summary className="cursor-pointer px-6 py-4 flex items-center justify-between text-left">
+                <span className="text-lg font-semibold text-gray-900 group-open:text-emerald-700 transition-colors duration-300">
+                  Можно ли вылечить пародонтит полностью?
+                </span>
+                <svg
+                  className="w-5 h-5 text-[#4A5568] group-open:rotate-180 transition-transform duration-300"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </summary>
+              <div className="px-6 pb-4 text-gray-700 leading-relaxed">
+                Пародонтит — хроническое заболевание, но при правильном лечении и регулярной профилактике
+                можно достичь стабильной ремиссии и сохранить зубы. Важно соблюдать рекомендации пародонтолога
+                и регулярно проходить профессиональную гигиену.
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-12 bg-gray-50">
+        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
+          <div className="bg-gradient-to-r from-[#4A5568] to-[#5A6474] rounded-[20px] p-8 md:p-12 text-white flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
+            <div className="max-w-3xl">
+              <h2 className="text-2xl md:text-3xl font-bold mb-4">
+                Пародонтолог в Одинцово — начните с консультации
+              </h2>
+              <p className="text-white/90 text-sm md:text-base leading-relaxed">
+                Запишитесь на консультацию в клинику «Альтамед-С», чтобы узнать стоимость лечения заболеваний десен,
+                подобрать подходящие процедуры и получить индивидуальный план лечения.
+              </p>
+            </div>
+            <Link
+              href="https://online.altamed-c.ru/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white text-[#4A5568] rounded-full px-8 py-3 font-medium hover:bg-gray-100 transition-colors text-center"
+            >
+              Записаться на приём
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="pb-12 bg-white">
+        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "MedicalBusiness",
+                name: "Клиника «Альтамед-С» — пародонтология в Одинцово",
+                url: "https://altamed-c.ru/services/dentistry/periodontics",
+                image: "https://altamed-c.ru/images/dentisrty/image (1) 2.webp",
+                medicalSpecialty: "Dental",
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.8",
+                  reviewCount: "240"
+                },
+                address: {
+                  "@type": "PostalAddress",
+                  addressLocality: "Одинцово",
+                  addressRegion: "Московская область",
+                  streetAddress: "ул. Советская, 9"
+                },
+                telephone: "+7 (495) 640-09-03",
+                priceRange: "₽₽",
+                serviceType: "Пародонтология",
+                areaServed: "Одинцово и Одинцовский городской округ",
+                description:
+                  "Пародонтология в Одинцово: лечение заболеваний десен, пародонтита, гингивита. Профессиональная чистка, шинирование зубов. Опытные пародонтологи в клинике «Альтамед-С».",
+                sameAs: [
+                  "https://altamed-c.ru",
+                  "https://yandex.ru/maps/org/altamed_s/1919839667"
+                ]
+              })
+            }}
+          />
         </div>
       </section>
 

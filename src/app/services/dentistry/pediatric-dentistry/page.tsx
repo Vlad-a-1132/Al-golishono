@@ -13,62 +13,55 @@ export default function PediatricDentistryPage() {
     {
       subtitle: "Приемы врача-стоматолога детского",
       services: [
-        { code: "", name: "Консультация детского стоматолога", price: 800 },
-        { code: "В01.064.003.500", name: "Прием (осмотр, консультация) врача-стоматолога детского первичный сзаполнением документации и составление плана лечения, 1 ед.", price: 1600 },
-        { code: "В04.064.002.500", name: "Профилактический прием (осмотр, консультация) врача-стоматолога детского с оформлением справки в ДДУ, школу и т.п., 1 ед.", price: 750 },
-        { code: "В01.064.003.501", name: "Прием (осмотр, консультация) врача-стоматолога детского первичный. Консультация по подготовке трудно-контактного ребенка к лечению, 1 ед.", price: 2300 }
+        { code: "", name: "Прием (осмотр, консультация) врача-стоматолога детского первичный сзаполнением документации и составление плана лечения, 1 ед.", price: 1680 },
+        { code: "", name: "Профилактический прием (осмотр, консультация) врача-стоматолога детского с оформлением справки в ДДУ, школу и т.п., 1 ед.", price: 790 },
+        { code: "", name: "Прием (осмотр, консультация) врача-стоматолога детского первичный. Консультация по подготовке трудно-контактного ребенка к лечению, 1 ед.", price: 2420 }
       ]
     },
     {
-      subtitle: "Лечение кариеса молочного зуба",
+      subtitle: "Лечение неосложненного кариеса",
       services: [
-        { code: "", name: "Лечение кариеса молочного зуба", price: 3000 },
-        { code: "А16.07.002.009", name: "Наложение временной пломбы, 1 ед.", price: 550 },
-        { code: "А16.07.002.512", name: "Восстановление молочного зуба пломбой светового отверждения /менее 1/3 временного зуба/ 1 ед.", price: 3200 },
-        { code: "А16.07.002.513", name: "Восстановление молочного зуба пломбой светового отверждения, /от 1/3 до 1/2 временного зуба/1 ед.", price: 3800 },
-        { code: "А1607.002.514", name: "Восстановление пломбой светового отверждения  более 1/2зуба/ед.", price: 4700 },
-        { code: "А16.07.002.515", name: "Восстановление зуба пломбой, эстетическая реставрация, 1 ед.", price: 6900 }
+        { code: "", name: "Наложение временной пломбы, 1 ед.", price: 580 },
+        { code: "", name: "Восстановление молочного зуба пломбой светового отверждения /менее 1/3 временного зуба/ 1 ед.", price: 3360 },
+        { code: "", name: "Восстановление молочного зуба пломбой светового отверждения, /от 1/3 до 1/2 временного зуба/1 ед.", price: 3990 },
+        { code: "", name: "Восстановление пломбой светового отверждения  более 1/2зуба/ед.", price: 4940 },
+        { code: "", name: "Восстановление зуба пломбой, эстетическая реставрация, 1 ед.", price: 7250 }
       ]
     },
     {
-      subtitle: "Лечение пульпита молочного зуба",
+      subtitle: "Лечение осложнений кариеса",
       services: [
-        { code: "", name: "Лечение пульпита молочного зуба", price: 5000 },
-        { code: "А11.07.027", name: "Наложение девитализирующей пасты, 1 ед.", price: 1600 },
-        { code: "А16.07.030", name: "Инструментальная и медикаментозная обработка корневого канала, 1 посещение", price: 550 },
-        { code: "А16.07.008", name: "Пломбирование корневого канала зуба, 1 ед.", price: 1300 },
-        { code: "А16.07.009", name: "Пульпотомия /АМПУТАЦИЯ КОРОНКОВОЙ ПУЛЬПЫ", price: 1600 },
-        { code: "А16.07.002.516", name: "Восстановление зуба пломбой. Восстановление коронковой части молочного зуба с использованием композитного материала при лечении осложненного кариеса, 1 ед.", price: 4100 },
-        { code: "А16.07.002.517", name: "Восстановление зуба пломбой. Восстановление молочного зуба металлической коронкой, 1 ед.", price: 4300 }
+        { code: "", name: "Наложение девитализирующей пасты, 1 ед.", price: 1680 },
+        { code: "", name: "Инструментальная и медикаментозная обработка корневого канала, 1 посещение", price: 580 },
+        { code: "", name: "Пломбирование корневого канала зуба, 1 ед.", price: 1370 },
+        { code: "", name: "Пульпотомия /АМПУТАЦИЯ КОРОНКОВОЙ ПУЛЬПЫ", price: 1680 },
+        { code: "", name: "Восстановление зуба пломбой. Восстановление коронковой части молочного зуба с использованием композитного материала при лечении осложненного кариеса, 1 ед.", price: 4310 },
+        { code: "", name: "Восстановление зуба пломбой. Восстановление молочного зуба металлической коронкой, 1 ед.", price: 4520 }
       ]
     },
     {
       subtitle: "Профилактика заболеваний полости рта",
       services: [
-        { code: "", name: "Герметизация фиссур", price: 1500 },
-        { code: "А16.07.057.508", name: "Запечатывание фиссуры зуба герметиком. Герметизация фиссур, 1 ед.", price: 2300 },
-        { code: "А16.07.057.507", name: "Запечатывание фиссуры зуба герметиком. Герметизация фиссур неинвазивная, 1 ед.", price: 1600 },
-        { code: "", name: "Фторирование молочных зубов", price: 1000 },
-        { code: "А11.07.012.501", name: "Глубокое фторирование эмали зуба. Покрытие всех зубов фторлаком, 1 ед.", price: 1900 },
-        { code: "А11.07.012.502", name: "Глубокое фторирование эмали зуба. Покрытие всех зубов фторгелем, 1 ед.", price: 1000 },
-        { code: "А11.07.012.503", name: "Глубокое фторирование эмали зуба. Применение эмалевого ликвида, 1 ед.", price: 350 },
-        { code: "А11.07.024.501", name: "Местное применение реминерализующих препаратов в области всех зубов", price: 2500 },
-        { code: "", name: "Серебрение зубов", price: 800 },
-        { code: "", name: "Профессиональная гигиена для детей", price: 2500 },
-        { code: "А16.07.051.500", name: "Профессиональная гигиена полости рта и зубов. Профессиональная чистка зубов в молочном прикусе (мягкие светлые отложения), 1 ед.", price: 2600 },
-        { code: "А16.07.051.501", name: "Профессиональная гигиена полости рта и зубов. Профессиональная чистка зубов в сменном прикусе (мягкие светлые отложения), 1 ед.", price: 3300 },
-        { code: "А16.07.051.502", name: "Профессиональная гигиена полости рта и зубов. Профессиональная чистка зубов в молочном прикусе (плотные темные отложения), 1 ед.", price: 4600 },
-        { code: "А16.07.051.503", name: "Профессиональная гигиена полости рта и зубов. Профессиональная чистка зубов в сменном прикусе (плотные темные отложения), 1 ед.", price: 5900 },
-        { code: "А14.07.003", name: "Гигиена полости рта и зубов, 1 ед.", price: 450 }
+        { code: "", name: "Местное применение реминерализующих препаратов в области всех зубов", price: 2630 },
+        { code: "", name: "Профессиональная гигиена полости рта и зубов. Профессиональная чистка зубов в молочном прикусе (мягкие светлые отложения), 1 ед.", price: 2730 },
+        { code: "", name: "Профессиональная гигиена полости рта и зубов. Профессиональная чистка зубов в сменном прикусе (мягкие светлые отложения), 1 ед.", price: 3470 },
+        { code: "", name: "Профессиональная гигиена полости рта и зубов. Профессиональная чистка зубов в молочном прикусе (плотные темные отложения), 1 ед.", price: 4830 },
+        { code: "", name: "Профессиональная гигиена полости рта и зубов. Профессиональная чистка зубов в сменном прикусе (плотные темные отложения), 1 ед.", price: 6200 },
+        { code: "", name: "Глубокое фторирование эмали зуба. Применение эмалевого ликвида, 1 ед.", price: 370 },
+        { code: "", name: "Запечатывание фиссуры зуба герметиком. Герметизация фиссур, 1 ед.", price: 2420 },
+        { code: "", name: "Профессиональная гигиена полости рта и зубов, 1 зуб", price: 270 },
+        { code: "", name: "Глубокое фторирование эмали зуба. Покрытие всех зубов фторлаком, 1 ед.", price: 2000 },
+        { code: "", name: "Глубокое фторирование эмали зуба. Покрытие всех зубов фторгелем, 1 ед.", price: 1050 },
+        { code: "", name: "Запечатывание фиссуры зуба герметиком. Герметизация фиссур неинвазивная, 1 ед.", price: 1680 },
+        { code: "", name: "Гигиена полости рта и зубов, 1 ед.", price: 480 }
       ]
     },
     {
-      subtitle: "Удаление молочных зубов",
+      subtitle: "Удаление зубов, прочие операции и услуги",
       services: [
-        { code: "", name: "Удаление молочного зуба", price: 2000 },
-        { code: "А16.07.001.501", name: "Удаление временного зуба с физиологической подвижностью, 1 ед.", price: 1300 },
-        { code: "А16.07.001.001", name: "Удаление временного зуба, 1 ед.", price: 2600 },
-        { code: "А16.07.001.502", name: "Удаление временного зуба сложное, 1 ед.", price: 3400 }
+        { code: "", name: "Удаление временного зуба с физиологической подвижностью, 1 ед.", price: 1370 },
+        { code: "", name: "Удаление временного зуба, 1 ед.", price: 2730 },
+        { code: "", name: "Удаление временного зуба сложное, 1 ед.", price: 3570 }
       ]
     }
   ];
@@ -89,55 +82,29 @@ export default function PediatricDentistryPage() {
         </div>
       </section>
 
-      <main className="py-3">
-        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
-          <header className="mb-6 ml-0 md:ml-4 lg:ml-8">
-            <h1 className="text-2xl md:text-3xl font-bold text-black leading-tight px-4 md:px-0">
-              Детская стоматология в Одинцово — лечение зубов у детей в «<span className="italic">Альтамед-с</span>»
-            </h1>
-            <p className="text-gray-600 mt-2 px-4 md:px-0 text-sm md:text-base">
-              Лечение молочных и постоянных зубов у детей в Одинцово. Безболезненное лечение, адаптация, профилактика. Доброжелательный подход к маленьким пациентам в клинике «Альтамед-с».
-            </p>
-          </header>
-
-          <div className="mb-8">
-            <div className="block md:hidden w-full h-[300px] flex flex-col rounded-[20px] overflow-hidden shadow-md mx-auto relative">
-              <Image 
-                src="/images/services/Pediatric dentistry.webp"
-                alt="Детская стоматология"
-                fill
-                className="object-cover"
-                unoptimized
-              />
-              <div className="relative z-10 bg-white p-4 flex flex-col justify-between items-start gap-3 mt-auto">
-                <div className="text-black font-medium text-sm">Детская стоматология в Одинцово</div>
-                <Link href="https://online.altamed-c.ru/" target="_blank" rel="noopener noreferrer" className="bg-blue-500 text-white rounded-full flex items-center justify-center w-full h-[46px] text-sm hover:bg-blue-600 transition-colors">
-                  Записаться на прием
-                  <svg className="w-5 h-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </Link>
-              </div>
+      {/* Banner */}
+      <section className="relative bg-gradient-to-r from-emerald-600 to-emerald-700 text-white">
+        <div className="absolute inset-0 bg-black opacity-20"></div>
+        <div className="relative mx-auto px-4 py-16 md:py-24" style={{ maxWidth: '83rem' }}>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            <div>
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+                Детская стоматология в клинике «Альтамед-с»
+              </h1>
+              <p className="text-lg md:text-xl mb-8 text-emerald-100">
+                Лечение молочных и постоянных зубов у детей с безболезненным подходом в Одинцово
+              </p>
             </div>
-            <div className="hidden md:block h-[445px] relative overflow-hidden rounded-[20px] shadow-lg">
-              <Image 
-                src="/images/services/Pediatric dentistry.webp"
-                alt="Детская стоматология"
-                fill
-                className="object-cover"
-                unoptimized
+            <div className="relative">
+              <img 
+                src="/images/dentisrty/task_01kb590e4demkax3am17hree6h_1764335184_img_0.webp" 
+                alt="Детская стоматология" 
+                className="w-full h-auto rounded-lg shadow-2xl"
               />
-              <div className="absolute inset-0 flex flex-col justify-center items-start p-8 md:p-12 text-black z-10">
-                <h2 className="text-2xl md:text-4xl font-bold mb-4">Детская стоматология в Одинцово</h2>
-                <p className="text-lg md:text-xl mb-6 max-w-md">Лечение и профилактика для здоровых зубов у детей</p>
-                <Link href="https://online.altamed-c.ru/" target="_blank" rel="noopener noreferrer" className="bg-blue-500 text-white rounded-full px-8 py-3 font-medium hover:bg-blue-600 transition-colors">
-                  Записаться на прием
-                </Link>
-              </div>
             </div>
           </div>
         </div>
-      </main>
+      </section>
 
       <section className="py-12 bg-white">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
@@ -512,6 +479,196 @@ export default function PediatricDentistryPage() {
               </p>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="py-12 bg-white">
+        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div className="lg:col-span-2 space-y-5 text-gray-700 leading-relaxed">
+              <h2 className="text-3xl font-bold text-gray-900">Детский стоматолог в Одинцово: почему выбирают нас</h2>
+              <p>
+                Клиника «Альтамед-С» предлагает услуги детской стоматологии в Одинцово — лечение молочных и постоянных
+                зубов, профилактику кариеса, безболезненные методы лечения. Мы применяем современные технологии,
+                качественные материалы и обеспечиваем комфортную атмосферу для детей.
+              </p>
+              <p>
+                Врач-стоматолог детский проводит лечение кариеса, пульпита, удаление зубов, профессиональную гигиену
+                и профилактические процедуры для детей. У нас можно пройти лечение молочных зубов, герметизацию фиссур,
+                фторирование и другие процедуры детской стоматологии.
+              </p>
+              <p>
+                Прозрачные цены позволяют планировать бюджет — стоимость детской стоматологии в Одинцово
+                фиксируется заранее, а родители получают подробную информацию о процедурах.
+              </p>
+            </div>
+            <div className="bg-gray-50 rounded-[20px] p-6 shadow-md border-l-4 border-[#4A5568]">
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                Что вы получаете, выбирая «Альтамед-С»
+              </h3>
+              <ul className="space-y-3 text-gray-700 text-sm md:text-base leading-relaxed">
+                <li className="flex items-start">
+                  <span className="w-2 h-2 bg-[#4A5568] rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                  Безболезненное лечение с использованием современных методов обезболивания.
+                </li>
+                <li className="flex items-start">
+                  <span className="w-2 h-2 bg-[#4A5568] rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                  Комфортную атмосферу для детей и индивидуальный подход к каждому ребенку.
+                </li>
+                <li className="flex items-start">
+                  <span className="w-2 h-2 bg-[#4A5568] rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                  Опытных детских стоматологов, специализирующихся на лечении детей.
+                </li>
+                <li className="flex items-start">
+                  <span className="w-2 h-2 bg-[#4A5568] rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                  Профилактику кариеса с помощью герметизации фиссур и фторирования.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-12 bg-gray-50">
+        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">
+            Отзывы пациентов о детской стоматологии в Одинцово
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Реальные отзывы из Одинцово</h3>
+              <p className="text-gray-700 text-sm md:text-base leading-relaxed">
+                Родители отмечают безболезненное лечение, комфортную атмосферу
+                и внимательное отношение детских стоматологов к детям.
+              </p>
+            </div>
+            <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Эффективное лечение</h3>
+              <p className="text-gray-700 text-sm md:text-base leading-relaxed">
+                После лечения молочных зубов дети чувствуют себя комфортно, что соответствует
+                ожиданиям родителей и обеспечивает здоровье постоянных зубов.
+              </p>
+            </div>
+            <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Комфортная атмосфера</h3>
+              <p className="text-gray-700 text-sm md:text-base leading-relaxed">
+                После визита в детскую стоматологию в Одинцове дети не боятся врачей; стоматологи дают
+                подробные рекомендации по уходу за зубами.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-12 bg-white">
+        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">
+            Частые вопросы о детской стоматологии в Одинцово
+          </h2>
+          <div className="space-y-4">
+            <details className="group bg-gray-50 rounded-[20px] shadow-md border border-gray-100">
+              <summary className="cursor-pointer px-6 py-4 flex items-center justify-between text-left">
+                <span className="text-lg font-semibold text-gray-900 group-open:text-emerald-700 transition-colors duration-300">
+                  С какого возраста нужно водить ребенка к стоматологу?
+                </span>
+                <svg
+                  className="w-5 h-5 text-[#4A5568] group-open:rotate-180 transition-transform duration-300"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </summary>
+              <div className="px-6 pb-4 text-gray-700 leading-relaxed">
+                Первый визит к детскому стоматологу рекомендуется в возрасте 1 года, когда прорезались первые зубы.
+                Регулярные осмотры каждые 3-4 месяца помогают выявить проблемы на ранней стадии и приучить ребенка
+                к визитам к стоматологу.
+              </div>
+            </details>
+            <details className="group bg-gray-50 rounded-[20px] shadow-md border border-gray-100">
+              <summary className="cursor-pointer px-6 py-4 flex items-center justify-between text-left">
+                <span className="text-lg font-semibold text-gray-900 group-open:text-emerald-700 transition-colors duration-300">
+                  Нужно ли лечить молочные зубы?
+                </span>
+                <svg
+                  className="w-5 h-5 text-[#4A5568] group-open:rotate-180 transition-transform duration-300"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </summary>
+              <div className="px-6 pb-4 text-gray-700 leading-relaxed">
+                Да, молочные зубы обязательно нужно лечить. Они сохраняют место для постоянных зубов, участвуют
+                в формировании речи и жевании. Преждевременная потеря молочных зубов может привести к нарушению прикуса.
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-12 bg-gray-50">
+        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
+          <div className="bg-gradient-to-r from-[#4A5568] to-[#5A6474] rounded-[20px] p-8 md:p-12 text-white flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
+            <div className="max-w-3xl">
+              <h2 className="text-2xl md:text-3xl font-bold mb-4">
+                Детский стоматолог в Одинцово — начните с консультации
+              </h2>
+              <p className="text-white/90 text-sm md:text-base leading-relaxed">
+                Запишитесь на консультацию в клинику «Альтамед-С», чтобы узнать стоимость детской стоматологии,
+                подобрать подходящие процедуры и получить индивидуальный план лечения для вашего ребенка.
+              </p>
+            </div>
+            <Link
+              href="https://online.altamed-c.ru/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white text-[#4A5568] rounded-full px-8 py-3 font-medium hover:bg-gray-100 transition-colors text-center"
+            >
+              Записаться на приём
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="pb-12 bg-white">
+        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "MedicalBusiness",
+                name: "Клиника «Альтамед-С» — детская стоматология в Одинцово",
+                url: "https://altamed-c.ru/services/dentistry/pediatric-dentistry",
+                image: "https://altamed-c.ru/images/dentisrty/task_01kb590e4demkax3am17hree6h_1764335184_img_0.webp",
+                medicalSpecialty: "Dental",
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "320"
+                },
+                address: {
+                  "@type": "PostalAddress",
+                  addressLocality: "Одинцово",
+                  addressRegion: "Московская область",
+                  streetAddress: "ул. Советская, 9"
+                },
+                telephone: "+7 (495) 640-09-03",
+                priceRange: "₽₽",
+                serviceType: "Детская стоматология",
+                areaServed: "Одинцово и Одинцовский городской округ",
+                description:
+                  "Детская стоматология в Одинцово: лечение молочных и постоянных зубов, профилактика кариеса, безболезненные методы. Опытные детские стоматологи в клинике «Альтамед-С».",
+                sameAs: [
+                  "https://altamed-c.ru",
+                  "https://yandex.ru/maps/org/altamed_s/1919839667"
+                ]
+              })
+            }}
+          />
         </div>
       </section>
 

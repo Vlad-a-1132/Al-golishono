@@ -10,14 +10,14 @@ export default function XrayDiagnosticsPage() {
 
   // Полный список услуг рентгенографии и диагностических исследований из fullServicesData
   const services = [
-    { code: "А06.07.001", name: "Панорамная рентгенография челюсти, 1 ед.", price: 720 },
-    { code: "А06.07.001.500", name: "Панорамная рентгенография челюсти. Панорамный снимок с распечаткой и выдачей на руки, 1 ед.", price: 780 },
-    { code: "А06.07.001.501", name: "Панорамная рентгенография челюсти. Панорамный снимок с диском, 1 ед.", price: 880 },
-    { code: "А06.07.012", name: "Радиовизиография, 1 ед.", price: 400 },
-    { code: "А06.07.012.500", name: "Радиовизиография. Снимок на визиографе с распечаткой на принтере и выдачей на руки, 1 ед.", price: 510 },
-    { code: "А06.07.006", name: "Телерентгенография челюстей, 1  ед.", price: 5050 },
-    { code: "А06.07.013.500", name: "Компьютерная томография челюстно-лицевой области. Цифровая диагностическая 3D-модель (без слепков), 1ед.", price: 5050 },
-    { code: "А06.07.013.501", name: "Компьютерная томография челюстно-лицевой области. Виртуальный SetUp (перемещение зубов на цифровой модели - без слепков), 1 ед.", price: 26570 }
+    { code: "А06.07.001", name: "Панорамная рентгенография челюсти, 1 ед.", price: 760 },
+    { code: "А06.07.001.500", name: "Панорамная рентгенография челюсти. Панорамный снимок с распечаткой и выдачей на руки, 1 ед.", price: 820 },
+    { code: "А06.07.001.501", name: "Панорамная рентгенография челюсти. Панорамный снимок с диском, 1 ед.", price: 930 },
+    { code: "А06.07.012", name: "Радиовизиография, 1 ед.", price: 420 },
+    { code: "А06.07.012.500", name: "Радиовизиография. Снимок на визиографе с распечаткой на принтере и выдачей на руки, 1 ед.", price: 540 },
+    { code: "А06.07.006", name: "Телерентгенография челюстей, 1 ед.", price: 5310 },
+    { code: "А06.07.013.500", name: "Компьютерная томография челюстно-лицевой области. Цифровая диагностическая 3D-модель (без слепков), 1ед.", price: 5310 },
+    { code: "А06.07.013.501", name: "Компьютерная томография челюстно-лицевой области. Виртуальный SetUp (перемещение зубов на цифровой модели - без слепков), 1 ед.", price: 27900 }
   ];
 
   return (
@@ -51,7 +51,7 @@ export default function XrayDiagnosticsPage() {
             <div className="block md:hidden w-full h-[300px] flex flex-col rounded-[20px] overflow-hidden shadow-md mx-auto">
               <div className="h-[220px] relative overflow-hidden">
                 <Image 
-                  src="/images/yslugi/Rentgenografiya.webp"
+                  src="/images/dentisrty/Rentgenografiya.webp"
                   alt="Рентгенография и диагностика"
                   fill
                   className="object-cover"
@@ -70,7 +70,7 @@ export default function XrayDiagnosticsPage() {
             </div>
             <div className="hidden md:block h-[445px] relative overflow-hidden rounded-[20px] shadow-lg">
               <Image 
-                src="/images/yslugi/Rentgenografiya.webp"
+                src="/images/dentisrty/Rentgenografiya.webp"
                 alt="Рентгенография и диагностика"
                 fill
                 className="object-cover"

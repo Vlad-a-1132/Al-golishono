@@ -5,9 +5,148 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import AppointmentForm from '@/components/AppointmentForm';
 
+type Service = {
+  id: string;
+  title: string;
+  description: string;
+  icon?: React.ReactNode;
+  category?: string;
+  hasSubmenu?: boolean;
+};
+
 export default function DentistryPage() {
   // State for tracking active service category
   const [activeCategory, setActiveCategory] = useState(0);
+
+  // Стоматологические услуги для блока "Основные услуги стоматологических клиник"
+  const dentistryServices = ['implantation', 'caries-treatment', 'dentistry-consultation', 'dentistry-pediatric', 'dentistry-surgery', 'dentistry-prosthodontist', 'dentistry-orthodontist', 'periodontics', 'dentistry-hygiene', 'dentistry-extraction', 'dentistry-emergency', 'dentistry-plastic', 'dentistry-aesthetic', 'dentistry-prosthetics', 'dentistry-cadcam', 'dentistry-constructions', 'dentistry-deposits', 'dentistry-braces', 'dentistry-removable-appliances', 'dentistry-fixed-appliances', 'dentistry-orthodontic-maintenance', 'dentistry-strengthening', 'dentistry-xray', 'dentistry-ct'];
+
+  const medicalServices: Service[] = [
+    {
+      id: 'implantation',
+      title: 'Имплантация',
+      description: 'Имплантация зубов в Одинцово',
+    },
+    {
+      id: 'caries-treatment',
+      title: 'Лечение кариеса',
+      description: 'Современное лечение кариеса и его осложнений',
+    },
+    {
+      id: 'dentistry-consultation',
+      title: 'Консультация стоматолога',
+      description: 'Прием и консультация врача-стоматолога в Одинцово',
+    },
+    {
+      id: 'dentistry-pediatric',
+      title: 'Детский стоматолог',
+      description: 'Лечение зубов у детей в Одинцово',
+    },
+    {
+      id: 'dentistry-surgery',
+      title: 'Стоматолог-хирург',
+      description: 'Удаление зубов, имплантация, челюстно-лицевая хирургия',
+    },
+    {
+      id: 'dentistry-prosthodontist',
+      title: 'Стоматолог-ортопед',
+      description: 'Протезирование зубов, коронки, виниры в Одинцово',
+    },
+    {
+      id: 'dentistry-orthodontist',
+      title: 'Стоматолог-ортодонт',
+      description: 'Исправление прикуса, брекеты, элайнеры в Одинцово',
+    },
+    {
+      id: 'periodontics',
+      title: 'Пародонтолог',
+      description: 'Лечение заболеваний пародонта и десен',
+    },
+    {
+      id: 'dentistry-hygiene',
+      title: 'Гигиена полости рта',
+      description: 'Профессиональная чистка зубов в Одинцово',
+    },
+    {
+      id: 'dentistry-extraction',
+      title: 'Удаление зубов',
+      description: 'Простое и сложное удаление зубов в Одинцово',
+    },
+    {
+      id: 'dentistry-emergency',
+      title: 'Экстренная хирургия',
+      description: 'Экстренная и гнойная хирургия в Одинцово',
+    },
+    {
+      id: 'dentistry-plastic',
+      title: 'Пластическая хирургия',
+      description: 'Пластика мягких тканей в Одинцово',
+    },
+    {
+      id: 'dentistry-aesthetic',
+      title: 'Эстетическая стоматология',
+      description: 'Отбеливание и эстетика зубов в Одинцово',
+    },
+    {
+      id: 'dentistry-prosthetics',
+      title: 'Протезирование зубов',
+      description: 'Протезирование на имплантатах, коронки, протезы в Одинцово',
+    },
+    {
+      id: 'dentistry-cadcam',
+      title: 'CAD/CAM-технологии',
+      description: 'Керамические вкладки, виниры, коронки CAD/CAM в Одинцово',
+    },
+    {
+      id: 'dentistry-constructions',
+      title: 'Стоматологические конструкции',
+      description: 'Изготовление и ремонт протезов, коронок в Одинцово',
+    },
+    {
+      id: 'dentistry-deposits',
+      title: 'Удаление зубных отложений',
+      description: 'Снятие налета и камня в Одинцово',
+    },
+    {
+      id: 'dentistry-braces',
+      title: 'Брекет-системы',
+      description: 'Металлические, керамические, сапфировые брекеты в Одинцово',
+    },
+    {
+      id: 'dentistry-removable-appliances',
+      title: 'Съемные аппараты',
+      description: 'Элайнеры, каппы для исправления прикуса в Одинцово',
+    },
+    {
+      id: 'dentistry-fixed-appliances',
+      title: 'Несъемные аппараты',
+      description: 'Ретейнеры, аппарат Forsus в Одинцово',
+    },
+    {
+      id: 'dentistry-orthodontic-maintenance',
+      title: 'Обслуживание ортодонтических аппаратов',
+      description: 'Ремонт брекетов, замена дуг, лигатур в Одинцово',
+    },
+    {
+      id: 'dentistry-strengthening',
+      title: 'Укрепление тканей зуба',
+      description: 'Фторирование и защита эмали в Одинцово',
+    },
+    {
+      id: 'dentistry-xray',
+      title: 'Рентгенология',
+      description: 'Рентген-диагностика в стоматологии',
+    },
+    {
+      id: 'dentistry-ct',
+      title: 'КТ',
+      description: 'Компьютерная томография челюстно-лицевой области',
+    },
+  ];
+
+  const dentistryData = dentistryServices
+    .map(id => medicalServices.find(service => service.id === id))
+    .filter((service): service is Service => service !== undefined);
   
   // Категории услуг стоматологии
   const serviceCategories = [
@@ -835,258 +974,490 @@ export default function DentistryPage() {
             Основные услуги стоматологических клиник
           </h2>
           
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
-            {/* Терапевтическая стоматология */}
-            <Link 
-              href="/services/dentistry/therapeutic"
-              className="bg-[#2C83A7] rounded-[24px] p-6 flex flex-col items-center justify-center h-[220px] md:h-[240px] hover:scale-[1.03] hover:shadow-2xl transition-all duration-300 group relative overflow-hidden shadow-lg"
-            >
-              <div className="absolute inset-0 flex items-center justify-center">
-                <Image 
-                  src="/images/services/Therapeutic dentistry.webp"
-                  alt="Терапевтическая стоматология"
-                  fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-500"
-                  unoptimized
-                />
-              </div>
-              {/* Градиентный overlay снизу для читаемости текста */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-300"></div>
-              <div className="relative z-10 flex flex-col items-center justify-end h-full w-full pb-4">
-                <h3 className="text-white font-bold text-center text-sm md:text-base leading-tight mb-2 group-hover:text-[#FFD700] transition-colors duration-300 drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)] px-2">
-                  Терапевтическая стоматология
-                </h3>
-                <svg className="w-5 h-5 text-white group-hover:text-[#FFD700] opacity-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </div>
-            </Link>
-
-            {/* Общие лечебно-диагностические услуги */}
-            <Link 
-              href="/services/dentistry/general-diagnostics"
-              className="bg-[#2C83A7] rounded-[24px] p-6 flex flex-col items-center justify-center h-[220px] md:h-[240px] hover:scale-[1.03] hover:shadow-2xl transition-all duration-300 group relative overflow-hidden shadow-lg"
-            >
-              <div className="absolute inset-0 flex items-center justify-center">
-                <Image 
-                  src="/images/services/sadasd.webp"
-                  alt="Общие лечебно-диагностические услуги"
-                  fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-500"
-                  unoptimized
-                />
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-300"></div>
-              <div className="relative z-10 flex flex-col items-center justify-end h-full w-full pb-4">
-                <h3 className="text-white font-bold text-center text-sm md:text-base leading-tight mb-2 group-hover:text-[#FFD700] transition-colors duration-300 drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)] px-2">
-                  Общие лечебно-диагностические услуги
-                </h3>
-                <svg className="w-5 h-5 text-white group-hover:text-[#FFD700] opacity-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </div>
-            </Link>
-
-            {/* Рентгенология и прочие сложные диагностические исследования */}
-            <Link 
-              href="/services/dentistry/xray-diagnostics"
-              className="bg-[#2C83A7] rounded-[24px] p-6 flex flex-col items-center justify-center h-[220px] md:h-[240px] hover:scale-[1.03] hover:shadow-2xl transition-all duration-300 group relative overflow-hidden shadow-lg"
-            >
-              <div className="absolute inset-0 flex items-center justify-center">
-                <Image 
-                  src="/images/yslugi/Rentgenografiya.webp"
-                  alt="Рентгенология и прочие сложные диагностические исследования"
-                  fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-500"
-                  unoptimized
-                />
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-300"></div>
-              <div className="relative z-10 flex flex-col items-center justify-end h-full w-full pb-4">
-                <h3 className="text-white font-bold text-center text-sm md:text-base leading-tight mb-2 group-hover:text-[#FFD700] transition-colors duration-300 drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)] px-2">
-                  Рентгенология и прочие сложные диагностические исследования
-                </h3>
-                <svg className="w-5 h-5 text-white group-hover:text-[#FFD700] opacity-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </div>
-            </Link>
-
-            {/* Компьютерная томография челюстно-лицевой области */}
-            <Link 
-              href="/services/dentistry/ct"
-              className="bg-[#2C83A7] rounded-[24px] p-6 flex flex-col items-center justify-center h-[220px] md:h-[240px] hover:scale-[1.03] hover:shadow-2xl transition-all duration-300 group relative overflow-hidden shadow-lg"
-            >
-              <div className="absolute inset-0 flex items-center justify-center">
-                <Image 
-                  src="/images/services/Computed tomography.webp"
-                  alt="Компьютерная томография челюстно-лицевой области"
-                  fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-500"
-                  unoptimized
-                />
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-300"></div>
-              <div className="relative z-10 flex flex-col items-center justify-end h-full w-full pb-4">
-                <h3 className="text-white font-bold text-center text-sm md:text-base leading-tight mb-2 group-hover:text-[#FFD700] transition-colors duration-300 drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)] px-2">
-                  Компьютерная томография челюстно-лицевой области
-                </h3>
-                <svg className="w-5 h-5 text-white group-hover:text-[#FFD700] opacity-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </div>
-            </Link>
-
-            {/* Рентгенография */}
-            <Link 
-              href="/services/dentistry/xray"
-              className="bg-[#2C83A7] rounded-[24px] p-6 flex flex-col items-center justify-center h-[220px] md:h-[240px] hover:scale-[1.03] hover:shadow-2xl transition-all duration-300 group relative overflow-hidden shadow-lg"
-            >
-              <div className="absolute inset-0 flex items-center justify-center">
-                <Image 
-                  src="/images/yslugi/Rentgenografiya.webp"
-                  alt="Рентгенография"
-                  fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-500"
-                  unoptimized
-                />
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-300"></div>
-              <div className="relative z-10 flex flex-col items-center justify-end h-full w-full pb-4">
-                <h3 className="text-white font-bold text-center text-sm md:text-base leading-tight mb-2 group-hover:text-[#FFD700] transition-colors duration-300 drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)] px-2">
-                  Рентгенография
-                </h3>
-                <svg className="w-5 h-5 text-white group-hover:text-[#FFD700] opacity-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </div>
-            </Link>
-
-            {/* Хирургическая стоматология */}
-            <Link 
-              href="/services/dentistry/surgery"
-              className="bg-[#2C83A7] rounded-[24px] p-6 flex flex-col items-center justify-center h-[220px] md:h-[240px] hover:scale-[1.03] hover:shadow-2xl transition-all duration-300 group relative overflow-hidden shadow-lg"
-            >
-              <div className="absolute inset-0 flex items-center justify-center">
-                <Image 
-                  src="/images/services/Surgical dentistry.webp"
-                  alt="Хирургическая стоматология"
-                  fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-500"
-                  unoptimized
-                />
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-300"></div>
-              <div className="relative z-10 flex flex-col items-center justify-end h-full w-full pb-4">
-                <h3 className="text-white font-bold text-center text-sm md:text-base leading-tight mb-2 group-hover:text-[#FFD700] transition-colors duration-300 drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)] px-2">
-                  Хирургическая стоматология
-                </h3>
-                <svg className="w-5 h-5 text-white group-hover:text-[#FFD700] opacity-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </div>
-            </Link>
-
-            {/* Ортопедическая стоматология */}
-            <Link 
-              href="/services/dentistry/prosthodontics"
-              className="bg-[#2C83A7] rounded-[24px] p-6 flex flex-col items-center justify-center h-[220px] md:h-[240px] hover:scale-[1.03] hover:shadow-2xl transition-all duration-300 group relative overflow-hidden shadow-lg"
-            >
-              <div className="absolute inset-0 flex items-center justify-center">
-                <Image 
-                  src="/images/yslugi/Orthopedic dentistry.webp"
-                  alt="Ортопедическая стоматология"
-                  fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-500"
-                  unoptimized
-                />
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-300"></div>
-              <div className="relative z-10 flex flex-col items-center justify-end h-full w-full pb-4">
-                <h3 className="text-white font-bold text-center text-sm md:text-base leading-tight mb-2 group-hover:text-[#FFD700] transition-colors duration-300 drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)] px-2">
-                  Ортопедическая стоматология
-                </h3>
-                <svg className="w-5 h-5 text-white group-hover:text-[#FFD700] opacity-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </div>
-            </Link>
-
-            {/* Ортодонтия */}
-            <Link 
-              href="/services/dentistry/orthodontics"
-              className="bg-[#2C83A7] rounded-[24px] p-6 flex flex-col items-center justify-center h-[220px] md:h-[240px] hover:scale-[1.03] hover:shadow-2xl transition-all duration-300 group relative overflow-hidden shadow-lg"
-            >
-              <div className="absolute inset-0 flex items-center justify-center">
-                <Image 
-                  src="/images/services/Orthodontist.webp"
-                  alt="Ортодонтия"
-                  fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-500"
-                  unoptimized
-                />
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-300"></div>
-              <div className="relative z-10 flex flex-col items-center justify-end h-full w-full pb-4">
-                <h3 className="text-white font-bold text-center text-sm md:text-base leading-tight mb-2 group-hover:text-[#FFD700] transition-colors duration-300 drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)] px-2">
-                  Ортодонтия
-                </h3>
-                <svg className="w-5 h-5 text-white group-hover:text-[#FFD700] opacity-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </div>
-            </Link>
-
-            {/* Детская стоматология */}
-            <Link 
-              href="/services/dentistry/pediatric-dentistry"
-              className="bg-[#2C83A7] rounded-[24px] p-6 flex flex-col items-center justify-center h-[220px] md:h-[240px] hover:scale-[1.03] hover:shadow-2xl transition-all duration-300 group relative overflow-hidden shadow-lg"
-            >
-              <div className="absolute inset-0 flex items-center justify-center">
-                <Image 
-                  src="/images/services/Pediatric dentistry.webp"
-                  alt="Детская стоматология"
-                  fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-500"
-                  unoptimized
-                />
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-300"></div>
-              <div className="relative z-10 flex flex-col items-center justify-end h-full w-full pb-4">
-                <h3 className="text-white font-bold text-center text-sm md:text-base leading-tight mb-2 group-hover:text-[#FFD700] transition-colors duration-300 drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)] px-2">
-                  Детская стоматология
-                </h3>
-                <svg className="w-5 h-5 text-white group-hover:text-[#FFD700] opacity-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </div>
-            </Link>
-
-            {/* Пародонтология */}
-            <Link 
-              href="/services/dentistry/periodontics"
-              className="bg-[#2C83A7] rounded-[24px] p-6 flex flex-col items-center justify-center h-[220px] md:h-[240px] hover:scale-[1.03] hover:shadow-2xl transition-all duration-300 group relative overflow-hidden shadow-lg"
-            >
-              <div className="absolute inset-0 flex items-center justify-center">
-                <Image 
-                  src="/images/yslugi/Periodontology.webp"
-                  alt="Пародонтология"
-                  fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-500"
-                  unoptimized
-                />
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-300"></div>
-              <div className="relative z-10 flex flex-col items-center justify-end h-full w-full pb-4">
-                <h3 className="text-white font-bold text-center text-sm md:text-base leading-tight mb-2 group-hover:text-[#FFD700] transition-colors duration-300 drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)] px-2">
-                  Пародонтология
-                </h3>
-                <svg className="w-5 h-5 text-white group-hover:text-[#FFD700] opacity-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </div>
-            </Link>
-
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 justify-items-center">
+            {dentistryData.map((service) => (
+              service.id === 'dentistry-consultation' ? (
+                <Link
+                  key={service.id}
+                  href="/services/dentistry/consultation"
+                  className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden"
+                >
+                  <img
+                    src="/images/dentisrty/dc792999-799a-442d-b88d-d1e7eadaae11 1.webp"
+                    alt="Консультация стоматолога"
+                    className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
+                  />
+                  <div className="flex-1 px-2 md:px-4">
+                    <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
+                      {service.title}
+                    </h3>
+                  </div>
+                  <svg className="w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-white group-hover:bg-emerald-500 rounded-full p-1 transition-all duration-300 flex-shrink-0 mr-2 md:mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              ) : service.id === 'caries-treatment' ? (
+                <Link
+                  key={service.id}
+                  href="/services/dentistry/caries"
+                  className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden"
+                >
+                  <img
+                    src="/images/dentisrty/task_01kb5855rne17bddh7ks55a0ze_1764334299_img_1.webp"
+                    alt="Лечение кариеса"
+                    className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
+                  />
+                  <div className="flex-1 px-2 md:px-4">
+                    <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
+                      {service.title}
+                    </h3>
+                  </div>
+                  <svg className="w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-white group-hover:bg-emerald-500 rounded-full p-1 transition-all duration-300 flex-shrink-0 mr-2 md:mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              ) : service.id === 'implantation' ? (
+                <Link
+                  key={service.id}
+                  href="/services/implantation"
+                  className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden"
+                >
+                  <img
+                    src="/images/yslugi/implant.webp"
+                    alt="Имплантация"
+                    className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
+                  />
+                  <div className="flex-1 px-2 md:px-4">
+                    <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
+                      {service.title}
+                    </h3>
+                  </div>
+                  <svg className="w-4 h-4 md:w-5 md:h-5 text-gray-400	group-hover:text-white group-hover:bg-emerald-500 rounded-full p-1 transition-all duration-300 flex-shrink-0 mr-2 md:mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              ) : service.id === 'periodontics' ? (
+                <Link
+                  key={service.id}
+                  href="/services/dentistry/periodontics"
+                  className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden"
+                >
+                  <img
+                    src="/images/dentisrty/image (1) 2.webp"
+                    alt="Пародонтология"
+                    className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
+                  />
+                  <div className="flex-1 px-2 md:px-4">
+                    <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
+                      {service.title}
+                    </h3>
+                  </div>
+                  <svg className="w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-white group-hover:bg-emerald-500 rounded-full p-1 transition-all duration-300 flex-shrink-0 mr-2 md:mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              ) : service.id === 'dentistry-hygiene' ? (
+                <Link
+                  key={service.id}
+                  href="/services/dentistry/hygiene"
+                  className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden"
+                >
+                  <img
+                    src="/images/dentisrty/ff0799f0-79d9-49cb-b32a-bac2ce8b6d2e 1.webp"
+                    alt="Гигиена полости рта"
+                    className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
+                  />
+                  <div className="flex-1 px-2 md:px-4">
+                    <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
+                      {service.title}
+                    </h3>
+                  </div>
+                  <svg className="w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-white group-hover:bg-emerald-500 rounded-full p-1 transition-all duration-300 flex-shrink-0 mr-2 md:mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              ) : service.id === 'dentistry-aesthetic' ? (
+                <Link
+                  key={service.id}
+                  href="/services/dentistry/aesthetic"
+                  className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden"
+                >
+                  <img
+                    src="/images/dentisrty/stad.webp"
+                    alt="Эстетическая стоматология"
+                    className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
+                  />
+                  <div className="flex-1 px-2 md:px-4">
+                    <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
+                      {service.title}
+                    </h3>
+                  </div>
+                  <svg className="w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-white group-hover:bg-emerald-500 rounded-full p-1 transition-all duration-300 flex-shrink-0 mr-2 md:mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              ) : service.id === 'dentistry-deposits' ? (
+                <Link
+                  key={service.id}
+                  href="/services/dentistry/deposits"
+                  className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden"
+                >
+                  <img
+                    src="/images/dentisrty/task_01kb5h4ze2ek2vjpgzt0wnmcvh_1764343713_img_0.webp"
+                    alt="Удаление зубных отложений"
+                    className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
+                  />
+                  <div className="flex-1 px-2 md:px-4">
+                    <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
+                      {service.title}
+                    </h3>
+                  </div>
+                  <svg className="w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-white group-hover:bg-emerald-500 rounded-full p-1 transition-all duration-300 flex-shrink-0 mr-2 md:mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              ) : service.id === 'dentistry-strengthening' ? (
+                <Link
+                  key={service.id}
+                  href="/services/dentistry/strengthening"
+                  className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden"
+                >
+                  <img
+                    src="/images/dentisrty/ftorirovanie2.jpg"
+                    alt="Укрепление тканей зуба"
+                    className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
+                  />
+                  <div className="flex-1 px-2 md:px-4">
+                    <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
+                      {service.title}
+                    </h3>
+                  </div>
+                  <svg className="w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-white group-hover:bg-emerald-500 rounded-full p-1 transition-all duration-300 flex-shrink-0 mr-2 md:mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              ) : service.id === 'dentistry-surgery' ? (
+                <Link
+                  key={service.id}
+                  href="/services/dentistry/surgery"
+                  className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden"
+                >
+                  <img
+                    src="/images/dentisrty/stom surgeon.webp"
+                    alt="Стоматолог-хирург"
+                    className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
+                  />
+                  <div className="flex-1 px-2 md:px-4">
+                    <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
+                      {service.title}
+                    </h3>
+                  </div>
+                  <svg className="w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-white group-hover:bg-emerald-500 rounded-full p-1 transition-all duration-300 flex-shrink-0 mr-2 md:mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              ) : service.id === 'dentistry-extraction' ? (
+                <Link
+                  key={service.id}
+                  href="/services/dentistry/extraction"
+                  className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden"
+                >
+                  <img
+                    src="/images/dentisrty/zeb.webp"
+                    alt="Удаление зубов"
+                    className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
+                  />
+                  <div className="flex-1 px-2 md:px-4">
+                    <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
+                      {service.title}
+                    </h3>
+                  </div>
+                  <svg className="w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-white group-hover:bg-emerald-500 rounded-full p-1 transition-all duration-300 flex-shrink-0 mr-2 md:mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              ) : service.id === 'dentistry-emergency' ? (
+                <Link
+                  key={service.id}
+                  href="/services/dentistry/emergency"
+                  className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden"
+                >
+                  <img
+                    src="/images/dentisrty/fdfs.webp"
+                    alt="Экстренная хирургия"
+                    className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
+                  />
+                  <div className="flex-1 px-2 md:px-4">
+                    <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
+                      {service.title}
+                    </h3>
+                  </div>
+                  <svg className="w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-white group-hover:bg-emerald-500 rounded-full p-1 transition-all duration-300 flex-shrink-0 mr-2 md:mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              ) : service.id === 'dentistry-plastic' ? (
+                <Link
+                  key={service.id}
+                  href="/services/dentistry/plastic"
+                  className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden"
+                >
+                  <img
+                    src="/images/dentisrty/fdfs.webp"
+                    alt="Пластическая хирургия"
+                    className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
+                  />
+                  <div className="flex-1 px-2 md:px-4">
+                    <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
+                      {service.title}
+                    </h3>
+                  </div>
+                  <svg className="w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-white group-hover:bg-emerald-500 rounded-full p-1 transition-all duration-300 flex-shrink-0 mr-2 md:mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              ) : service.id === 'dentistry-prosthodontist' ? (
+                <Link
+                  key={service.id}
+                  href="/services/dentistry/prosthodontics"
+                  className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden"
+                >
+                  <img
+                    src="/images/dentisrty/task_01kb59j9wbe6ma7c4wg6n4yecp_1764335787_img_0.webp"
+                    alt="Стоматолог-ортопед"
+                    className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
+                  />
+                  <div className="flex-1 px-2 md:px-4">
+                    <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
+                      {service.title}
+                    </h3>
+                  </div>
+                  <svg className="w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-white group-hover:bg-emerald-500 rounded-full p-1 transition-all duration-300 flex-shrink-0 mr-2 md:mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              ) : service.id === 'dentistry-prosthetics' ? (
+                <Link
+                  key={service.id}
+                  href="/services/dentistry/prosthetics"
+                  className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden"
+                >
+                  <img
+                    src="/images/dentisrty/task_01kb5fptcdfe9vny2vy0fadwrt_1764342213_img_0.webp"
+                    alt="Протезирование зубов"
+                    className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
+                  />
+                  <div className="flex-1 px-2 md:px-4">
+                    <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
+                      {service.title}
+                    </h3>
+                  </div>
+                  <svg className="w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-white group-hover:bg-emerald-500 rounded-full p-1 transition-all duration-300 flex-shrink-0 mr-2 md:mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              ) : service.id === 'dentistry-cadcam' ? (
+                <Link
+                  key={service.id}
+                  href="/services/dentistry/cadcam"
+                  className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden"
+                >
+                  <img
+                    src="/images/dentisrty/cad.webp"
+                    alt="CAD/CAM-технологии"
+                    className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
+                  />
+                  <div className="flex-1 px-2 md:px-4">
+                    <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
+                      {service.title}
+                    </h3>
+                  </div>
+                  <svg className="w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-white group-hover:bg-emerald-500 rounded-full p-1 transition-all duration-300 flex-shrink-0 mr-2 md:mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              ) : service.id === 'dentistry-constructions' ? (
+                <Link
+                  key={service.id}
+                  href="/services/dentistry/constructions"
+                  className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden"
+                >
+                  <img
+                    src="/images/dentisrty/task_01kb5fptcdfe9vny2vy0fadwrt_1764342213_img_0.webp"
+                    alt="Стоматологические конструкции"
+                    className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
+                  />
+                  <div className="flex-1 px-2 md:px-4">
+                    <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
+                      {service.title}
+                    </h3>
+                  </div>
+                  <svg className="w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-white group-hover:bg-emerald-500 rounded-full p-1 transition-all duration-300 flex-shrink-0 mr-2 md:mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              ) : service.id === 'dentistry-orthodontist' ? (
+                <Link
+                  key={service.id}
+                  href="/services/dentistry/orthodontics"
+                  className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden"
+                >
+                  <img
+                    src="/images/dentisrty/task_01kb59xabnenht3qwt33mm5r8v_1764336113_img_0.webp"
+                    alt="Стоматолог-ортодонт"
+                    className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
+                  />
+                  <div className="flex-1 px-2 md:px-4">
+                    <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
+                      {service.title}
+                    </h3>
+                  </div>
+                  <svg className="w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-white group-hover:bg-emerald-500 rounded-full p-1 transition-all duration-300 flex-shrink-0 mr-2 md:mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              ) : service.id === 'dentistry-braces' ? (
+                <Link
+                  key={service.id}
+                  href="/services/dentistry/braces"
+                  className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden"
+                >
+                  <img
+                    src="/images/dentisrty/task_01kb59xabnenht3qwt33mm5r8v_1764336113_img_0.webp"
+                    alt="Брекет-системы"
+                    className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
+                  />
+                  <div className="flex-1 px-2 md:px-4">
+                    <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
+                      {service.title}
+                    </h3>
+                  </div>
+                  <svg className="w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-white group-hover:bg-emerald-500 rounded-full p-1 transition-all duration-300 flex-shrink-0 mr-2 md:mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              ) : service.id === 'dentistry-removable-appliances' ? (
+                <Link
+                  key={service.id}
+                  href="/services/dentistry/removable-appliances"
+                  className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden"
+                >
+                  <img
+                    src="/images/dentisrty/task_01kb5hmq28fn0stdqj9ta6kefj_1764344227_img_0.webp"
+                    alt="Съемные аппараты"
+                    className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
+                  />
+                  <div className="flex-1 px-2 md:px-4">
+                    <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
+                      {service.title}
+                    </h3>
+                  </div>
+                  <svg className="w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-white group-hover:bg-emerald-500 rounded-full p-1 transition-all duration-300 flex-shrink-0 mr-2 md:mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              ) : service.id === 'dentistry-fixed-appliances' ? (
+                <Link
+                  key={service.id}
+                  href="/services/dentistry/fixed-appliances"
+                  className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden"
+                >
+                  <img
+                    src="/images/dentisrty/task_01kb5hy6cmevwbv12bpx0npyvx_1764344538_img_1.webp"
+                    alt="Несъемные аппараты"
+                    className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
+                  />
+                  <div className="flex-1 px-2 md:px-4">
+                    <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
+                      {service.title}
+                    </h3>
+                  </div>
+                  <svg className="w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-white group-hover:bg-emerald-500 rounded-full p-1 transition-all duration-300 flex-shrink-0 mr-2 md:mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              ) : service.id === 'dentistry-orthodontic-maintenance' ? (
+                <Link
+                  key={service.id}
+                  href="/services/dentistry/orthodontic-maintenance"
+                  className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden"
+                >
+                  <img
+                    src="/images/dentisrty/task_01kb5fptcdfe9vny2vy0fadwrt_1764342213_img_0.webp"
+                    alt="Обслуживание ортодонтических аппаратов"
+                    className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
+                  />
+                  <div className="flex-1 px-2 md:px-4">
+                    <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
+                      {service.title}
+                    </h3>
+                  </div>
+                  <svg className="w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-white group-hover:bg-emerald-500 rounded-full p-1 transition-all duration-300 flex-shrink-0 mr-2 md:mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              ) : service.id === 'dentistry-pediatric' ? (
+                <Link
+                  key={service.id}
+                  href="/services/dentistry/pediatric-dentistry"
+                  className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden"
+                >
+                  <img
+                    src="/images/dentisrty/task_01kb590e4demkax3am17hree6h_1764335184_img_0.webp"
+                    alt="Детский стоматолог"
+                    className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
+                  />
+                  <div className="flex-1 px-2 md:px-4">
+                    <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
+                      {service.title}
+                    </h3>
+                  </div>
+                  <svg className="w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-white group-hover:bg-emerald-500 rounded-full p-1 transition-all duration-300 flex-shrink-0 mr-2 md:mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              ) : service.id === 'dentistry-xray' ? (
+                <Link
+                  key={service.id}
+                  href="/services/dentistry/xray-diagnostics"
+                  className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden"
+                >
+                  <img
+                    src="/images/dentisrty/Rentgenografiya.webp"
+                    alt="Рентгенология"
+                    className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
+                  />
+                  <div className="flex-1 px-2 md:px-4">
+                    <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
+                      {service.title}
+                    </h3>
+                  </div>
+                  <svg className="w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-white group-hover:bg-emerald-500 rounded-full p-1 transition-all duration-300 flex-shrink-0 mr-2 md:mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              ) : service.id === 'dentistry-ct' ? (
+                <Link
+                  key={service.id}
+                  href="/services/dentistry/ct"
+                  className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden"
+                >
+                  <img
+                    src="/images/dentisrty/kt stomatologu.webp"
+                    alt="КТ"
+                    className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
+                  />
+                  <div className="flex-1 px-2 md:px-4">
+                    <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
+                      {service.title}
+                    </h3>
+                  </div>
+                  <svg className="w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-white group-hover:bg-emerald-500 rounded-full p-1 transition-all duration-300 flex-shrink-0 mr-2 md:mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              ) : null
+            ))}
           </div>
         </div>
       </section>
