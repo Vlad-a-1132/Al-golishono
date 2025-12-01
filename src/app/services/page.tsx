@@ -716,7 +716,8 @@ export default function ServicesPage() {
   const secondContainerData = medicalServices.filter(service => 
     !firstContainerServices.includes(service.id) &&
     !rehabilitationServices.includes(service.id) &&
-    !dentistryServices.includes(service.id)
+    !dentistryServices.includes(service.id) &&
+    service.id !== 'dentistry'
   );
 
   return (

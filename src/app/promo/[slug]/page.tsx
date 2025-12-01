@@ -96,6 +96,25 @@ export default function PromoDetailPage() {
         "Без дополнительной оплаты",
         "Акция действует весь 2025 год"
       ]
+    },
+    {
+      id: 6,
+      category: "massage",
+      image: "/images/promo/task_01kbdkwa0xftb9wh0jek05ksz3_1764615024_img_0.webp",
+      startDate: "01.01.2025",
+      endDate: "31.01.2026",
+      title: "Скидка 30% на общий массаж медицинский",
+      description: "А21.01.001 Общий массаж медицинский. Цена: 3430 ₽ (было 4200 ₽)",
+      fullDescription: "Специальное предложение! Скидка 30% на общий массаж медицинский (А21.01.001). Воспользуйтесь выгодным предложением и получите профессиональный медицинский массаж по сниженной цене. Экономия 770 рублей!",
+      details: [
+        "Скидка 30% на услугу А21.01.001",
+        "Общий массаж медицинский",
+        "Цена со скидкой: 3430 ₽",
+        "Обычная цена: 4200 ₽",
+        "Экономия: 770 ₽",
+        "Акция действует до 31 января 2026 года",
+        "Записывайтесь заранее, количество мест ограничено"
+      ]
     }
   ];
 
@@ -152,72 +171,31 @@ export default function PromoDetailPage() {
         </div>
       </section>
 
-      {/* Main section */}
-      <main className="py-3">
-        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
-          <header className="mb-6 ml-0 md:ml-4 lg:ml-8">
-            <div className="px-4 md:px-0">
-              <div className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-3 py-1 rounded-full mb-3">
-                Акция
-              </div>
+      {/* Banner */}
+      <section className="relative bg-gradient-to-r from-emerald-600 to-emerald-700 text-white">
+        <div className="absolute inset-0 bg-black opacity-20"></div>
+        <div className="relative mx-auto px-4 py-16 md:py-24" style={{ maxWidth: '83rem' }}>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            <div>
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+                {promo.title}
+              </h1>
+              <p className="text-lg md:text-xl mb-8 text-emerald-100">
+                {promo.description}
+              </p>
             </div>
-            <h1 className="text-2xl md:text-3xl font-bold text-black leading-tight px-4 md:px-0">
-              {promo.title}
-            </h1>
-            <p className="text-gray-600 mt-2 px-4 md:px-0 text-sm md:text-base">
-              С {promo.startDate} по {promo.endDate}
-            </p>
-          </header>
-
-          {/* Banner */}
-          <div className="mb-8">
-            <div className="block md:hidden w-full h-[300px] flex flex-col rounded-[20px] overflow-hidden shadow-md mx-auto">
-              <div className="h-[220px] bg-gradient-to-br from-emerald-500 to-emerald-700 relative overflow-hidden">
-                <div className="w-full h-full relative">
-                  <img
-                    src={promo.image}
-                    alt={promo.title}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </div>
-              <div className="bg-white p-4 flex flex-col justify-between items-start gap-3">
-                <div className="text-black font-medium text-sm">{promo.title}</div>
-                <Link 
-                  href="/appointments" 
-                  className="bg-emerald-600 text-white rounded-full flex items-center justify-center w-full h-[46px] text-sm hover:bg-emerald-700 transition-colors"
-                >
-                  Записаться
-                  <svg className="w-5 h-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </Link>
-              </div>
-            </div>
-            <div className="hidden md:block h-[445px] bg-gradient-to-br from-emerald-500 to-emerald-700 relative overflow-hidden rounded-[20px] shadow-lg">
-              <div className="w-full h-full relative">
-                <img
-                  src={promo.image}
-                  alt={promo.title}
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-transparent"></div>
-              </div>
-              <div className="absolute inset-0 flex flex-col justify-center items-start p-8 md:p-12 text-black">
-                <h2 className="text-2xl md:text-4xl font-bold mb-4">{promo.title}</h2>
-                <p className="text-lg md:text-xl mb-6 max-w-md">{promo.description}</p>
-                <Link 
-                  href="/appointments" 
-                  className="bg-emerald-600 text-white rounded-full px-8 py-3 font-medium hover:bg-emerald-700 transition-colors"
-                >
-                  Записаться
-                </Link>
-              </div>
+            <div className="relative">
+              <img 
+                src={promo.image} 
+                alt={promo.title} 
+                className="w-full h-auto rounded-lg shadow-2xl"
+              />
             </div>
           </div>
         </div>
-      </main>
+      </section>
 
+      {/* Main section */}
       {/* Время работы КТ (только для акции КТ) */}
       {promo.id === 1 && (
         <section className="py-8">

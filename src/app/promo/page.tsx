@@ -49,6 +49,15 @@ export default function PromoPage() {
       endDate: "31.12.2025",
       title: "При первичном приёме врача акушера-гинеколога - кольпоскопия в подарок!",
       description: "Акция до конца 2025 года"
+    },
+    {
+      id: 6,
+      category: "massage",
+      image: "/images/promo/task_01kbdkwa0xftb9wh0jek05ksz3_1764615024_img_0.webp",
+      startDate: "01.01.2025",
+      endDate: "31.01.2026",
+      title: "Скидка 30% на общий массаж медицинский",
+      description: "А21.01.001 Общий массаж медицинский. Цена: 3430 ₽ (было 4200 ₽)"
     }
   ];
 

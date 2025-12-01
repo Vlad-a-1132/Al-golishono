@@ -274,6 +274,92 @@ export default function MassagePage() {
         </div>
       </section>
 
+      {/* Services Price List */}
+      <section className="py-12 bg-gray-50">
+        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
+          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">
+            Прайс-лист услуг массажа в Одинцово
+          </h2>
+          
+          <div className="bg-white rounded-[20px] shadow-lg p-6 md:p-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+              {[
+                { code: "А21.01.001", name: "Общий массаж медицинский", price: 4200 },
+                { code: "А21.01.002", name: "Массаж лица медицинский", price: 800 },
+                { code: "А21.01.003", name: "Массаж шеи медицинский", price: 800 },
+                { code: "А21.01.004", name: "Массаж рук медицинский", price: 1300 },
+                { code: "А21.01.005", name: "Массаж волосистой части головы медицинский", price: 800 },
+                { code: "А21.01.006.01", name: "Пилинг-массаж (тело)", price: 2300 },
+                { code: "А21.01.007", name: "Вакуумный массаж кожи", price: 800 },
+                { code: "А21.01.008", name: "Массаж ног медицинский", price: 1600 },
+                { code: "А21.03.001", name: "Массаж при переломе костей", price: 1300 },
+                { code: "А21.03.002", name: "Массаж при заболеваниях позвоночника", price: 1600 },
+                { code: "А21.03.005", name: "Скелетное вытяжение", price: 1600 },
+                { code: "А21.05.002", name: "Массаж при заболеваниях органов системы кровотворения и крови", price: 1600 },
+                { code: "А21.09.002", name: "Массаж при хронических неспецифических заболеваниях легких", price: 1000 },
+                { code: "А21.24.003", name: "Вытяжение при заболеваниях периферической нервной системы", price: 1600 },
+                { code: "А21.24.004", name: "Массаж при заболеваниях периферической нервной системы", price: 1300 },
+                { code: "А21.30.001", name: "Массаж живота медицинский", price: 800 },
+                { code: "А21.30.002", name: "Массаж и гимнастика у детей раннего возраста", price: 1700 },
+                { code: "А21.30.003", name: "Массаж при заболеваниях нервной системы у детей раннего возраста", price: 1700 },
+                { code: "А21.30.004", name: "Массаж при заболеваниях опорно-двигательного аппарата у детей раннего возраста", price: 1700 },
+                { code: "А21.30.005", name: "Массаж грудной клетки медицинский", price: 1000 },
+                { code: "А21.01.003.001", name: "Массаж воротниковой области", price: 1200 },
+                { code: "А21.01.004.01", name: "Массаж верхней конечности медицинский", price: 1200 },
+                { code: "А21.01.004.001", name: "Массаж верхней конечности, надплечья и области лопатки", price: 1300 },
+                { code: "А21.01.004.002", name: "Массаж плечевого сустава", price: 800 },
+                { code: "А21.01.004.003", name: "Массаж локтевого сустава", price: 800 },
+                { code: "А21.01.004.004", name: "Массаж лучезапястного сустава", price: 800 },
+                { code: "А21.01.004.005", name: "Массаж кисти и предплечья", price: 800 },
+                { code: "А21.01.009", name: "Массаж нижней конечности медицинский", price: 1200 },
+                { code: "А21.01.009.001", name: "Массаж нижней конечности и поясницы", price: 1300 },
+                { code: "А21.01.009.002", name: "Массаж тазобедренного сустава и ягодичной области", price: 800 },
+                { code: "А21.01.009.003", name: "Массаж коленного сустава", price: 800 },
+                { code: "А21.01.009.004", name: "Массаж голеностопного сустава", price: 800 },
+                { code: "А21.01.009.005", name: "Массаж стопы и голени", price: 800 },
+                { code: "А21.03.002.001", name: "Массаж поясничного-крестцовой области", price: 1500 },
+                { code: "А21.03.002.002", name: "Сегментарный массаж пояснично-крестцовой области", price: 1200 },
+                { code: "А21.03.002.003", name: "Сегментарный массаж шейно-грудного отдела позвоночника", price: 2100 },
+                { code: "А21.03.002.004", name: "Массаж пояснично-крестцового отдела позвоночника", price: 1500 },
+                { code: "А21.03.002.004.01", name: "Массаж поясничного отдела позвоночника 1 ед.", price: 900 },
+                { code: "А21.03.002.005", name: "Массаж шейно-грудного отдела позвоночника", price: 1300 },
+                { code: "А21.03.002.005.01", name: "Массаж грудного отдела позвоночника 1ед.", price: 900 },
+                { code: "А21.03.007", name: "Массаж спины медицинский", price: 1200 }
+              ].map((service, serviceIndex) => (
+                <div
+                  key={serviceIndex}
+                  className="flex flex-col p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors border border-gray-200"
+                >
+                  <div className="flex items-start justify-between mb-2">
+                    <div className="flex-1">
+                      {service.code && (
+                        <div className="text-xs text-gray-500 mb-1">{service.code}</div>
+                      )}
+                      <span className="text-gray-700 font-medium text-sm leading-tight">
+                        {service.name}
+                      </span>
+                    </div>
+                  </div>
+                  <div className="flex items-center justify-between mt-2">
+                    <span className="font-semibold text-emerald-600 text-base whitespace-nowrap">
+                      {service.price.toLocaleString('ru-RU')} ₽
+                    </span>
+                    <svg className="w-4 h-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div className="mt-8 text-center">
+              <Link href="https://online.altamed-c.ru/" target="_blank" rel="noopener noreferrer" className="bg-purple-500 text-white px-8 py-3 rounded-full font-medium hover:bg-purple-600 transition-colors inline-block">
+                Записаться на консультацию
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ Section */}
       <section className="py-12">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>

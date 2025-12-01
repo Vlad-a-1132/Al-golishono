@@ -141,6 +141,13 @@ export default function Home() {
       buttonLink: "/promo/promo-5",
       buttonColor: "#13AB7B",
       image: "/images/slides/kolpos.webp"
+    },
+    {
+      title: "Скидка 30% на общий массаж медицинский",
+      buttonText: "Подробнее",
+      buttonLink: "/promo/promo-6",
+      buttonColor: "#13AB7B",
+      image: "/images/promo/task_01kbdkwa0xftb9wh0jek05ksz3_1764615024_img_0.webp"
     }
   ];
 
