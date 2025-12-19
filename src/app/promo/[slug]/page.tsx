@@ -115,6 +115,61 @@ export default function PromoDetailPage() {
         "Акция действует до 31 января 2026 года",
         "Записывайтесь заранее, количество мест ограничено"
       ]
+    },
+    {
+      id: 7,
+      category: "consultations",
+      image: "/images/yslugi/task_01kcqt39h1evj89apdf39y58f8_1766030720_img_1.webp",
+      startDate: "01.01.2025",
+      endDate: "31.12.2025",
+      title: "День пенсионера",
+      description: "Понедельник и Пятница – специальные скидки до 25%",
+      fullDescription: "Клиника «Альтамед-с» заботится о доступности медицинских услуг для пенсионеров. Специальные дни со скидками до 25% на широкий спектр медицинских услуг. Воспользуйтесь выгодным предложением!",
+      details: [
+        "Понедельник – скидка 20%",
+        "Пятница – скидка 20% (КТ – 25%)",
+        "Остальные дни – скидка 20%",
+        "Скидка распространяется на большинство услуг клиники",
+        "Скидка не суммируется с другими акциями"
+      ],
+      mondayServices: [
+        "Офтальмолог",
+        "Хирург",
+        "Кардиолог",
+        "Стоматолог-терапевт",
+        "Невролог",
+        "Дерматолог",
+        "Гинеколог",
+        "УЗИ",
+        "Терапевт",
+        "Физио процедуры",
+        "Рентген",
+        "Медицинский массаж",
+        "Отоларинголог",
+        "Сурдолог",
+        "ЭКГ",
+        "Холтеровское мониторирование",
+        "Карбокстерапия",
+        "Анализы"
+      ],
+      fridayServices: [
+        "КТ – 25%",
+        "Остальное – 20%"
+      ],
+      otherDaysServices: [
+        "Рентген",
+        "Отоларинголог",
+        "Сурдолог",
+        "Кардиолог",
+        "УЗИ",
+        "Уролог (Рагимханов)",
+        "Гастроэнтеролог",
+        "Физио процедуры",
+        "Терапевт",
+        "ЭКГ",
+        "Холтер",
+        "Гинеколог"
+      ]
     }
   ];
 
@@ -227,6 +282,88 @@ export default function PromoDetailPage() {
           </div>
         </div>
       </section>
+
+      {/* Специальный блок для акции "День пенсионера" */}
+      {promo.id === 7 && (
+        <section className="py-12 bg-gradient-to-br from-emerald-50 to-blue-50">
+          <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
+            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Услуги со скидкой</h2>
+            
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+              {/* Понедельник */}
+              <div className="bg-white rounded-2xl shadow-lg p-6 border-2 border-emerald-500">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-emerald-500 rounded-full flex items-center justify-center mr-3">
+                    <span className="text-white font-bold text-lg">Пн</span>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-gray-900">Понедельник</h3>
+                    <p className="text-emerald-600 font-semibold text-lg">Скидка 20%</p>
+                  </div>
+                </div>
+                <div className="space-y-2">
+                  {promo.mondayServices?.map((service, idx) => (
+                    <div key={idx} className="flex items-center text-gray-700">
+                      <svg className="w-5 h-5 text-emerald-500 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                      <span className="text-sm">{service}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Пятница */}
+              <div className="bg-white rounded-2xl shadow-lg p-6 border-2 border-blue-500">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mr-3">
+                    <span className="text-white font-bold text-lg">Пт</span>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-gray-900">Пятница</h3>
+                    <p className="text-blue-600 font-semibold text-lg">Скидка 20%</p>
+                    <p className="text-orange-600 font-semibold text-sm">КТ – 25%</p>
+                  </div>
+                </div>
+                <div className="space-y-3">
+                  <div className="bg-orange-50 rounded-lg p-3 border border-orange-200">
+                    <div className="flex items-center text-orange-700 font-semibold mb-1">
+                      <svg className="w-5 h-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                      </svg>
+                      <span>КТ – 25%</span>
+                    </div>
+                  </div>
+                  <div className="text-gray-600 text-sm font-medium">Остальное – 20%</div>
+                </div>
+              </div>
+
+              {/* Остальные дни */}
+              <div className="bg-white rounded-2xl shadow-lg p-6 border-2 border-purple-500">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center mr-3">
+                    <span className="text-white font-bold text-lg">Др</span>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-gray-900">Остальные дни</h3>
+                    <p className="text-purple-600 font-semibold text-lg">Скидка 20%</p>
+                  </div>
+                </div>
+                <div className="space-y-2">
+                  {promo.otherDaysServices?.map((service, idx) => (
+                    <div key={idx} className="flex items-center text-gray-700">
+                      <svg className="w-5 h-5 text-purple-500 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                      <span className="text-sm">{service}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Детали акции */}
       <section className="py-12 bg-gray-50">

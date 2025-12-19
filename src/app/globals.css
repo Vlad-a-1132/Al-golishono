@@ -541,3 +541,34 @@ html.accessibility-mode .text-right {
     width: 100% !important;
   }
 }
+
+/* Christmas Button Styles - только снежная шапка */
+.christmas-button {
+  position: relative;
+  overflow: visible;
+}
+
+.christmas-button > * {
+  position: relative;
+  z-index: 2;
+}
+
+.christmas-button::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -18px;
+  left: -5px;
+  right: -5px;
+  width: calc(100% + 10px);
+  height: 35px;
+  background: url('/images/yslugi/shapka.webp') no-repeat center top;
+  background-size: 100% auto;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.christmas-button > * {
+  position: relative;
+  z-index: 2;
+}

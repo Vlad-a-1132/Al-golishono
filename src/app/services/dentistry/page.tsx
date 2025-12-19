@@ -19,7 +19,7 @@ export default function DentistryPage() {
   const [activeCategory, setActiveCategory] = useState(0);
 
   // Стоматологические услуги для блока "Основные услуги стоматологических клиник"
-  const dentistryServices = ['implantation', 'caries-treatment', 'dentistry-consultation', 'dentistry-pediatric', 'dentistry-surgery', 'dentistry-prosthodontist', 'dentistry-orthodontist', 'periodontics', 'dentistry-hygiene', 'dentistry-extraction', 'dentistry-emergency', 'dentistry-plastic', 'dentistry-aesthetic', 'dentistry-prosthetics', 'dentistry-cadcam', 'dentistry-constructions', 'dentistry-deposits', 'dentistry-braces', 'dentistry-removable-appliances', 'dentistry-fixed-appliances', 'dentistry-orthodontic-maintenance', 'dentistry-strengthening', 'dentistry-xray', 'dentistry-ct'];
+  const dentistryServices = ['implantation', 'caries-treatment', 'dentistry-consultation', 'dentistry-pediatric', 'dentistry-surgery', 'dentistry-prosthodontist', 'dentistry-orthodontist', 'periodontics', 'dentistry-hygiene', 'airflow-prophylaxis-master', 'dentistry-extraction', 'dentistry-emergency', 'dentistry-plastic', 'dentistry-aesthetic', 'dentistry-prosthetics', 'dentistry-cadcam', 'dentistry-constructions', 'dentistry-deposits', 'dentistry-braces', 'dentistry-removable-appliances', 'dentistry-fixed-appliances', 'dentistry-orthodontic-maintenance', 'dentistry-strengthening', 'dentistry-xray', 'dentistry-ct'];
 
   const medicalServices: Service[] = [
     {
@@ -66,6 +66,11 @@ export default function DentistryPage() {
       id: 'dentistry-hygiene',
       title: 'Гигиена полости рта',
       description: 'Профессиональная чистка зубов в Одинцово',
+    },
+    {
+      id: 'airflow-prophylaxis-master',
+      title: 'AIRFLOW Prophylaxis Master',
+      description: 'Профессиональная гигиена по протоколу GBT',
     },
     {
       id: 'dentistry-extraction',
@@ -1076,6 +1081,29 @@ export default function DentistryPage() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
             </Link>
+              ) : service.id === 'airflow-prophylaxis-master' ? (
+                <Link
+                  key={service.id}
+                  href="/services/airflow-prophylaxis-master"
+                  className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden relative"
+                >
+                  <span className="absolute top-2 right-2 md:top-3 md:right-3 bg-gradient-to-r from-orange-500 to-red-500 text-white text-[10px] md:text-xs font-bold px-2 py-1 rounded-full shadow-md z-10 animate-pulse">
+                    NEW
+                  </span>
+                  <img
+                    src="/images/yslugi/air flow.webp"
+                    alt="AIRFLOW Prophylaxis Master"
+                    className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
+                  />
+                  <div className="flex-1 px-2 md:px-4">
+                    <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
+                      {service.title}
+                    </h3>
+                  </div>
+                  <svg className="w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-white group-hover:bg-emerald-500 rounded-full p-1 transition-all duration-300 flex-shrink-0 mr-2 md:mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
               ) : service.id === 'dentistry-aesthetic' ? (
             <Link 
                   key={service.id}

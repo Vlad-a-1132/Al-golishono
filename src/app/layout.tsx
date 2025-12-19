@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Lobster } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import ClientLayout from "../components/ClientLayout";
@@ -9,6 +9,12 @@ import { Suspense } from "react";
 const inter = Inter({
   subsets: ["latin", "cyrillic"],
   variable: "--font-inter",
+});
+
+const lobster = Lobster({
+  subsets: ["latin", "cyrillic"],
+  weight: "400",
+  variable: "--font-lobster",
 });
 
 export const metadata: Metadata = {
@@ -71,7 +77,7 @@ export default function RootLayout({
   return (
     <html lang="ru">
       <body
-        className={`${inter.variable} font-sans antialiased min-h-screen flex flex-col`}
+        className={`${inter.variable} ${lobster.variable} font-sans antialiased min-h-screen flex flex-col`}
       >
         <Script
           id="yandex-metrika"

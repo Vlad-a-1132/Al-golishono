@@ -58,6 +58,15 @@ export default function PromoPage() {
       endDate: "31.01.2026",
       title: "Скидка 30% на общий массаж медицинский",
       description: "А21.01.001 Общий массаж медицинский. Цена: 3430 ₽ (было 4200 ₽)"
+    },
+    {
+      id: 7,
+      category: "consultations",
+      image: "/images/yslugi/task_01kcqt39h1evj89apdf39y58f8_1766030720_img_1.webp",
+      startDate: "01.01.2025",
+      endDate: "31.12.2025",
+      title: "День пенсионера",
+      description: "Понедельник и Пятница – специальные скидки до 25%"
     }
   ];
 
@@ -111,9 +120,6 @@ export default function PromoPage() {
                       />
                     </div>
                     <div className="p-4">
-                      <div className="text-sm text-gray-500 mb-2">
-                        С {promo.startDate} по {promo.endDate}
-                      </div>
                       <h3 className="text-lg font-semibold text-gray-900 mb-2 line-clamp-2">
                         {promo.title}
                       </h3>

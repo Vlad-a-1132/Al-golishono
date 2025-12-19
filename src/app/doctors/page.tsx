@@ -2,14 +2,28 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { useState, useMemo } from 'react';
-import { doctors } from '../../data/static-data';
+import { useState, useMemo, useEffect } from 'react';
+import { doctors as defaultDoctors } from '../../data/static-data';
 
 export default function DoctorsPage() {
   const [searchName, setSearchName] = useState('');
   const [audienceFilter, setAudienceFilter] = useState<'all' | 'adults' | 'children'>('all');
   const [selectedSpecialization, setSelectedSpecialization] = useState<string>('');
   const [isSpecializationOpen, setIsSpecializationOpen] = useState(false);
+  const [doctors, setDoctors] = useState(defaultDoctors);
+
+  useEffect(() => {
+    // Загрузка данных из localStorage
+    const saved = localStorage.getItem('admin_doctors_data');
+    if (saved) {
+      try {
+        const parsed = JSON.parse(saved);
+        setDoctors(parsed);
+      } catch (e) {
+        // Если ошибка парсинга, используем дефолтные данные
+      }
+    }
+  }, []);
 
   // Get unique specializations
   const allSpecializations = useMemo(() => {
@@ -22,7 +36,7 @@ export default function DoctorsPage() {
       }
     });
     return Array.from(specs).sort();
-  }, []);
+  }, [doctors]);
 
   // Filter doctors
   const filteredDoctors = useMemo(() => {
@@ -210,9 +224,10 @@ export default function DoctorsPage() {
           {filteredDoctors.length > 0 ? (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
               {filteredDoctors.map((doctor) => (
-                <div 
-                  key={doctor.id} 
-                  className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all overflow-hidden flex flex-col"
+                <Link
+                  key={doctor.id}
+                  href={`/doctors/${(doctor as any).slug}`}
+                  className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all overflow-hidden flex flex-col cursor-pointer"
                 >
                   {/* Doctor Photo - Large rectangular with rounded corners on left */}
                   <div className="flex items-start p-4 gap-4">
@@ -255,14 +270,11 @@ export default function DoctorsPage() {
 
                   {/* Action Button - always at bottom */}
                   <div className="px-4 pb-4 mt-auto">
-                    <Link 
-                      href={`/doctors/${(doctor as any).slug}`}
-                      className="block w-full bg-emerald-500 hover:bg-emerald-600 text-white text-center py-2.5 px-4 rounded-lg font-medium transition-colors text-sm"
-                    >
+                    <div className="w-full bg-emerald-500 hover:bg-emerald-600 text-white text-center py-2.5 px-4 rounded-lg font-medium transition-colors text-sm">
                       Записаться онлайн
-                    </Link>
+                    </div>
                   </div>
-                </div>
+                </Link>
               ))}
             </div>
           ) : (

@@ -8,6 +8,8 @@ export function generateStaticParams() {
     { slug: 'promo-3' },
     { slug: 'promo-4' },
     { slug: 'promo-5' },
+    { slug: 'promo-6' },
+    { slug: 'promo-7' },
   ];
 }
 
@@ -41,6 +43,16 @@ const promotionsData: Record<string, {
     title: 'Кольпоскопия в подарок при первичном приеме гинеколога',
     description: 'При первичном приеме врача акушера-гинеколога в Одинцово - кольпоскопия в подарок! Акция действует весь 2025 год в клинике Альтамед-с.',
     image: '/images/slides/kolpos.webp',
+  },
+  'promo-6': {
+    title: 'Скидка 30% на общий массаж медицинский',
+    description: 'Скидка 30% на общий массаж медицинский (А21.01.001) в Одинцово. Цена: 3430 ₽ (было 4200 ₽). Экономия 770 рублей в клинике Альтамед-с.',
+    image: '/images/promo/task_01kbdkwa0xftb9wh0jek05ksz3_1764615024_img_0.webp',
+  },
+  'promo-7': {
+    title: 'День пенсионера',
+    description: 'День пенсионера в Одинцово - специальные скидки до 25% на медицинские услуги. Понедельник и Пятница - скидки 20-25% в клинике Альтамед-с.',
+    image: '/images/yslugi/task_01kcqt39h1evj89apdf39y58f8_1766030720_img_1.webp',
   },
 };
 

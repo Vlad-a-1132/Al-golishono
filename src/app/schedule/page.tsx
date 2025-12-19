@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import AppointmentForm from "@/components/AppointmentForm";
 
 interface Schedule {
@@ -93,6 +93,71 @@ function DoctorScheduleRow({ name, specialty, schedule }: DoctorScheduleRowProps
 
 export default function SchedulePage() {
   const [selectedBranch, setSelectedBranch] = useState('branch1');
+  const [savedSchedule, setSavedSchedule] = useState<any>(null);
+  
+  // Загрузка данных из localStorage с реактивностью
+  useEffect(() => {
+    const loadSavedSchedule = () => {
+      if (typeof window !== 'undefined') {
+        const saved = localStorage.getItem('admin_schedule_data');
+        if (saved) {
+          try {
+            return JSON.parse(saved);
+          } catch (e) {
+            return null;
+          }
+        }
+      }
+      return null;
+    };
+    
+    setSavedSchedule(loadSavedSchedule());
+    
+    // Слушаем изменения в localStorage
+    const handleStorageChange = () => {
+      setSavedSchedule(loadSavedSchedule());
+    };
+    
+    window.addEventListener('storage', handleStorageChange);
+    
+    // Также проверяем изменения каждую секунду (для того же окна)
+    const interval = setInterval(() => {
+      const current = loadSavedSchedule();
+      if (JSON.stringify(current) !== JSON.stringify(savedSchedule)) {
+        setSavedSchedule(current);
+      }
+    }, 1000);
+    
+    return () => {
+      window.removeEventListener('storage', handleStorageChange);
+      clearInterval(interval);
+    };
+  }, [savedSchedule]);
+
+  // Функция для объединения статических данных с данными из localStorage
+  const mergeDoctorsData = (staticDoctors: any[], savedDoctors: any[] | null | undefined) => {
+    if (!savedDoctors || !Array.isArray(savedDoctors)) {
+      return staticDoctors;
+    }
+    
+    // Создаем Map для быстрого поиска сохраненных врачей
+    const savedMap = new Map(savedDoctors.map((doc: any) => [doc.name, doc]));
+    
+    // Объединяем: статические данные имеют приоритет, localStorage только для новых врачей
+    const merged = staticDoctors.map((staticDoc: any) => {
+      // Всегда используем статические данные для врачей, которые есть в статике
+      return staticDoc;
+    });
+    
+    // Добавляем врачей из сохраненных данных, которых нет в статических
+    savedDoctors.forEach((savedDoc: any) => {
+      if (!staticDoctors.find((doc: any) => doc.name === savedDoc.name)) {
+        merged.push(savedDoc);
+      }
+    });
+    
+    return merged;
+  };
 
   const branch1Doctors = [
     {
@@ -108,7 +173,7 @@ export default function SchedulePage() {
     {
       name: "Иванова Ольга Юрьевна",
       specialty: "Отоларинголог",
-      schedule: { Monday: { start: "10:00", end: "19:00" }, Tuesday: { start: "10:00", end: "19:00" }, Thursday: { start: "10:00", end: "19:00" }, Saturday: { start: "11:00", end: "18:00" } }
+      schedule: { Monday: { start: "10:00", end: "19:00" }, Tuesday: { start: "10:00", end: "19:00" }, Thursday: { start: "10:00", end: "19:00" }, Saturday: { start: "10:00", end: "17:00" } }
     },
     {
       name: "Иванченко Светлана Викторовна",
@@ -133,7 +198,7 @@ export default function SchedulePage() {
     {
       name: "Полуэктова Оксана Николаевна",
       specialty: "Дерматовенеролог",
-      schedule: { Monday: { start: "13:00", end: "16:00" }, Thursday: { start: "16:00", end: "20:00" }, Saturday: { start: "09:00", end: "12:00" } }
+      schedule: { Monday: { start: "16:00", end: "20:00" }, Thursday: { start: "16:00", end: "20:00" }, Saturday: { start: "16:00", end: "20:00" } }
     },
     {
       name: "Стаченкова Светлана Валериевна",
@@ -168,7 +233,7 @@ export default function SchedulePage() {
     {
       name: "Понедельченко Надежда Ивановна",
       specialty: "Дерматокосметолог",
-      schedule: { Tuesday: { start: "15:00", end: "20:00" }, Thursday: { start: "15:00", end: "20:00" }, Saturday: { start: "09:00", end: "17:00" } }
+      schedule: { Tuesday: { start: "09:00", end: "20:00" }, Sunday: { start: "09:00", end: "17:00" } }
     },
     {
       name: "Емельянова Анна Игоревна",
@@ -179,6 +244,16 @@ export default function SchedulePage() {
       name: "Хомулло Валерия Викторовна",
       specialty: "Врач УЗИ",
       schedule: { Tuesday: { start: "16:00", end: "20:00" }, Wednesday: { start: "08:30", end: "15:00" } }
+    },
+    {
+      name: "Балян Мария Маисовна",
+      specialty: "Отоларинголог, Сурдолог",
+      schedule: { Wednesday: { start: "17:30", end: "20:00" }, Friday: { start: "17:30", end: "20:00" }, Sunday: { start: "10:00", end: "14:00" } }
+    },
+    {
+      name: "Рубцов Роман Владимирович",
+      specialty: "Стоматолог-ортопед",
+      schedule: { Tuesday: { start: "09:00", end: "20:00" }, Thursday: { start: "09:00", end: "20:00" }, Friday: { start: "09:00", end: "20:00" }, Saturday: { start: "09:00", end: "20:00" } }
     }
   ];
 
@@ -186,7 +261,7 @@ export default function SchedulePage() {
     {
       name: "Будко Елена Анатольевна",
       specialty: "Гастроэнтеролог",
-      schedule: { Monday: { start: "08:00", end: "19:00" }, Wednesday: { start: "09:00", end: "19:00" }, Thursday: { start: "08:30", end: "14:30" }, Sunday: { start: "09:00", end: "19:00" } }
+      schedule: { Monday: { start: "09:00", end: "19:00" }, Wednesday: { start: "09:00", end: "19:00" }, Thursday: { start: "09:00", end: "14:00" }, Sunday: { start: "09:00", end: "19:00" } }
     },
     {
       name: "Громов Евгений Викторович",
@@ -201,7 +276,7 @@ export default function SchedulePage() {
     {
       name: "Белянко Игорь Эдуардович",
       specialty: "Кардиолог",
-      schedule: { Monday: { start: "08:00", end: "15:00" }, Tuesday: { start: "08:00", end: "15:00" }, Thursday: { start: "08:00", end: "15:00" }, Friday: { start: "08:00", end: "15:00" }, Saturday: { start: "08:00", end: "19:20" } }
+      schedule: { Monday: { start: "08:00", end: "15:00" }, Tuesday: { start: "08:00", end: "15:00" }, Thursday: { start: "08:00", end: "15:00" }, Friday: { start: "08:00", end: "15:00" }, Saturday: { start: "08:00", end: "18:00" } }
     },
     {
       name: "Казакова Маргарита Витальевна",
@@ -216,7 +291,7 @@ export default function SchedulePage() {
     {
       name: "Лория Ольга Викторовна",
       specialty: "Педиатр",
-      schedule: { Monday: { start: "14:00", end: "18:00" }, Wednesday: { start: "16:00", end: "20:00" }, Friday: { start: "14:00", end: "18:00" }, Saturday: { start: "09:00", end: "13:00" } }
+      schedule: { Monday: { start: "14:00", end: "18:00" }, Wednesday: { start: "16:00", end: "20:00" }, Friday: { start: "10:00", end: "14:00" }, Saturday: { start: "09:00", end: "13:00" } }
     },
     {
       name: "Лысенко Ирина Владимировна",
@@ -236,7 +311,7 @@ export default function SchedulePage() {
     {
       name: "Дмитриев Алексей Олегович",
       specialty: "Невролог",
-      schedule: { Tuesday: { start: "09:00", end: "19:00" }, Thursday: { start: "16:00", end: "19:30" }, Friday: { start: "08:00", end: "14:00" }, Sunday: { start: "08:00", end: "16:00" } }
+      schedule: { Tuesday: { start: "08:30", end: "19:00" }, Thursday: { start: "16:00", end: "19:00" }, Friday: { start: "08:00", end: "14:00" }, Sunday: { start: "08:00", end: "17:30" } }
     },
     {
       name: "Русинович Валерий Михайлович",
@@ -251,7 +326,7 @@ export default function SchedulePage() {
     {
       name: "Ютанин Сергей Николаевич",
       specialty: "Хирург",
-      schedule: { Monday: { start: "08:00", end: "14:00" }, Tuesday: { start: "09:00", end: "14:00" }, Wednesday: { start: "09:00", end: "14:00" }, Thursday: { start: "09:00", end: "15:00" }, Friday: { start: "10:00", end: "11:00" }, Sunday: { start: "09:00", end: "14:00" } }
+      schedule: { Monday: { start: "08:00", end: "14:00" }, Tuesday: { start: "09:00", end: "14:00" }, Wednesday: { start: "09:00", end: "14:00" }, Thursday: { start: "09:00", end: "15:00" }, Sunday: { start: "09:00", end: "14:00" } }
     },
     {
       name: "Кузьминых Надежда Валентиновна",
@@ -266,12 +341,12 @@ export default function SchedulePage() {
     {
       name: "Бригадирова Елена Михайловна",
       specialty: "Гинеколог",
-      schedule: { Monday: { start: "09:00", end: "14:30" }, Thursday: { start: "08:00", end: "16:00" }, Friday: { start: "14:30", end: "20:00" }, Sunday: { start: "09:00", end: "16:00" } }
+      schedule: { Monday: { start: "09:00", end: "14:30" }, Wednesday: { start: "09:00", end: "15:30" }, Friday: { start: "09:00", end: "20:00" }, Sunday: { start: "09:00", end: "16:00" } }
     },
     {
       name: "Рыжов Андрей Иванович",
       specialty: "Оториноларинголог",
-      schedule: { Wednesday: { start: "17:00", end: "20:00" }, Friday: { start: "17:00", end: "20:00" } }
+      schedule: { Tuesday: { start: "17:00", end: "20:00" } }
     },
     {
       name: "Панова Ольга Юрьевна",
@@ -281,7 +356,7 @@ export default function SchedulePage() {
     {
       name: "Павлова Людмила Леонидовна",
       specialty: "УЗИ",
-      schedule: { Monday: { start: "09:00", end: "20:00" }, Wednesday: { start: "09:00", end: "20:00" }, Thursday: { start: "09:00", end: "13:00" }, Saturday: { start: "08:00", end: "20:00" } }
+      schedule: { Monday: { start: "09:00", end: "20:00" }, Wednesday: { start: "09:00", end: "20:00" }, Friday: { start: "09:00", end: "13:00" }, Saturday: { start: "09:00", end: "20:00" } }
     },
     {
       name: "Неклюдов Владимир Юрьевич",
@@ -334,7 +409,7 @@ export default function SchedulePage() {
     {
       name: "Рубцов Роман Владимирович",
       specialty: "Стоматолог-ортопед",
-      schedule: { Tuesday: { start: "09:00", end: "20:00" }, Thursday: { start: "09:00", end: "20:00" }, Saturday: { start: "09:00", end: "14:00" }, Sunday: { start: "09:00", end: "20:00" } }
+      schedule: { Tuesday: { start: "09:00", end: "20:00" }, Thursday: { start: "09:00", end: "20:00" }, Friday: { start: "09:00", end: "20:00" }, Saturday: { start: "09:00", end: "20:00" } }
     },
     {
       name: "Рубцова Ольга Юрьевна",
@@ -469,9 +544,14 @@ export default function SchedulePage() {
 
             {/* Мобильная версия - карточки врачей */}
             <div className="block md:hidden space-y-3">
-              {(selectedBranch === 'branch1' ? branch1Doctors : selectedBranch === 'branch2' ? branch2Doctors : selectedBranch === 'branch3' ? branch3Doctors : branch4Doctors).map((doctor, index) => (
-                <DoctorCardMobile key={index} {...doctor} />
-              ))}
+              {(() => {
+                const staticDoctors = selectedBranch === 'branch1' ? branch1Doctors : selectedBranch === 'branch2' ? branch2Doctors : selectedBranch === 'branch3' ? branch3Doctors : branch4Doctors;
+                const saved = savedSchedule?.[selectedBranch];
+                const doctors = mergeDoctorsData(staticDoctors, saved);
+                return doctors.map((doctor: any, index: number) => (
+                  <DoctorCardMobile key={index} {...doctor} />
+                ));
+              })()}
             </div>
 
             {/* Десктоп версия - таблица */}
@@ -491,9 +571,14 @@ export default function SchedulePage() {
                   </tr>
                 </thead>
                 <tbody>
-                  {(selectedBranch === 'branch1' ? branch1Doctors : selectedBranch === 'branch2' ? branch2Doctors : selectedBranch === 'branch3' ? branch3Doctors : branch4Doctors).map((doctor, index) => (
-                    <DoctorScheduleRow key={index} {...doctor} />
-                  ))}
+                  {(() => {
+                    const staticDoctors = selectedBranch === 'branch1' ? branch1Doctors : selectedBranch === 'branch2' ? branch2Doctors : selectedBranch === 'branch3' ? branch3Doctors : branch4Doctors;
+                    const saved = savedSchedule?.[selectedBranch];
+                    const doctors = mergeDoctorsData(staticDoctors, saved);
+                    return doctors.map((doctor: any, index: number) => (
+                      <DoctorScheduleRow key={index} {...doctor} />
+                    ));
+                  })()}
                 </tbody>
               </table>
             </div>

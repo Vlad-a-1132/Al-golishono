@@ -4,7 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect, useRef, useMemo } from "react";
 import AppointmentForm from "@/components/AppointmentForm";
-import { doctors } from "@/data/static-data";
+import Snowfall from "@/components/Snowfall";
+import { doctors as defaultDoctors } from "@/data/static-data";
 
 interface Schedule {
   start: string;
@@ -107,6 +108,13 @@ export default function Home() {
   
   // Slides data - используем нейтральные пути чтобы избежать блокировки рекламы
   const slides = [
+    {
+      title: "Понедельник и Пятница – специальные скидки до 25%",
+      buttonText: "Подробнее",
+      buttonLink: "/promo/promo-7",
+      buttonColor: "#13AB7B",
+      image: "/images/yslugi/task_01kcqtjckffxmbccp30z65x6yy_1766031210_img_0.webp"
+    },
     {
       title: "Скидки на компьютерную томографию",
       buttonText: "Подробнее",
@@ -253,6 +261,22 @@ export default function Home() {
     galleryTouchStartX.current = null;
   };
 
+  // Load doctors from localStorage or use default
+  const [doctors, setDoctors] = useState(defaultDoctors);
+  
+  useEffect(() => {
+    // Загрузка данных из localStorage
+    const saved = localStorage.getItem('admin_doctors_data');
+    if (saved) {
+      try {
+        const parsed = JSON.parse(saved);
+        setDoctors(parsed);
+      } catch (e) {
+        // Если ошибка парсинга, используем дефолтные данные
+      }
+    }
+  }, []);
+
   // Shuffled doctors array for slider - only shuffle on client after hydration
   const [shuffledDoctors, setShuffledDoctors] = useState(doctors);
   
@@ -267,7 +291,7 @@ export default function Home() {
       doctorsCopy[j] = temp;
     }
     setShuffledDoctors(doctorsCopy);
-  }, []);
+  }, [doctors]);
   
   // Интересы для нижней секции
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -471,84 +495,168 @@ export default function Home() {
             {/* Правая колонка с услугами */}
             {/* Мобильная версия - цветные блоки 2x6 */}
             <div className="md:hidden grid grid-cols-2 gap-3 w-full max-w-sm mx-auto">
-              <Link href="/services/allergology" className="bg-[#E8F4FD] p-3 rounded-[20px] flex items-center justify-between h-[80px]">
+              <Link href="/services/allergology" className="bg-[#E8F4FD] p-3 rounded-[20px] flex items-center justify-between h-[80px] relative overflow-hidden">
+                <Image 
+                  src="/images/yslugi/png-klev-club-k98x-p-vetki-yeli-s-igrushkami-png-27 1.webp"
+                  alt=""
+                  width={40}
+                  height={40}
+                  className="absolute top-0 right-0 w-10 h-10 object-contain"
+                />
                 <span className="font-medium text-sm text-gray-800">Аллергология</span>
                 <svg className="w-4 h-4 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </Link>
               
-              <Link href="/services/gastroenterology" className="bg-[#FFE8E1] p-3 rounded-[20px] flex items-center justify-between h-[80px]">
+              <Link href="/services/gastroenterology" className="bg-[#FFE8E1] p-3 rounded-[20px] flex items-center justify-between h-[80px] relative overflow-hidden">
+                <Image 
+                  src="/images/yslugi/png-klev-club-k98x-p-vetki-yeli-s-igrushkami-png-27 1.webp"
+                  alt=""
+                  width={40}
+                  height={40}
+                  className="absolute top-0 right-0 w-10 h-10 object-contain"
+                />
                 <span className="font-medium text-sm text-gray-800">Гастроэнтерология</span>
                 <svg className="w-4 h-4 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </Link>
               
-              <Link href="/services/gynecology" className="bg-[#E8F5E8] p-3 rounded-[20px] flex items-center justify-between h-[80px]">
+              <Link href="/services/gynecology" className="bg-[#E8F5E8] p-3 rounded-[20px] flex items-center justify-between h-[80px] relative overflow-hidden">
+                <Image 
+                  src="/images/yslugi/png-klev-club-k98x-p-vetki-yeli-s-igrushkami-png-27 1.webp"
+                  alt=""
+                  width={40}
+                  height={40}
+                  className="absolute top-0 right-0 w-10 h-10 object-contain"
+                />
                 <span className="font-medium text-sm text-gray-800">Гинекология</span>
                 <svg className="w-4 h-4 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </Link>
               
-              <Link href="/services/dermatology" className="bg-[#FFF8E1] p-3 rounded-[20px] flex items-center justify-between h-[80px]">
+              <Link href="/services/dermatology" className="bg-[#FFF8E1] p-3 rounded-[20px] flex items-center justify-between h-[80px] relative overflow-hidden">
+                <Image 
+                  src="/images/yslugi/png-klev-club-k98x-p-vetki-yeli-s-igrushkami-png-27 1.webp"
+                  alt=""
+                  width={40}
+                  height={40}
+                  className="absolute top-0 right-0 w-10 h-10 object-contain"
+                />
                 <span className="font-medium text-sm text-gray-800">Дерматология</span>
                 <svg className="w-4 h-4 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </Link>
               
-              <Link href="/services/cardiology" className="bg-[#E8F4FD] p-3 rounded-[20px] flex items-center justify-between h-[80px]">
+              <Link href="/services/cardiology" className="bg-[#E8F4FD] p-3 rounded-[20px] flex items-center justify-between h-[80px] relative overflow-hidden">
+                <Image 
+                  src="/images/yslugi/png-klev-club-k98x-p-vetki-yeli-s-igrushkami-png-27 1.webp"
+                  alt=""
+                  width={40}
+                  height={40}
+                  className="absolute top-0 right-0 w-10 h-10 object-contain"
+                />
                 <span className="font-medium text-sm text-gray-800">Кардиология</span>
                 <svg className="w-4 h-4 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </Link>
               
-              <Link href="/services/dentistry" className="bg-[#FFE8F0] p-3 rounded-[20px] flex items-center justify-between h-[80px]">
+              <Link href="/services/dentistry" className="bg-[#FFE8F0] p-3 rounded-[20px] flex items-center justify-between h-[80px] relative overflow-hidden">
+                <Image 
+                  src="/images/yslugi/png-klev-club-k98x-p-vetki-yeli-s-igrushkami-png-27 1.webp"
+                  alt=""
+                  width={40}
+                  height={40}
+                  className="absolute top-0 right-0 w-10 h-10 object-contain"
+                />
                 <span className="font-medium text-sm text-gray-800">Стоматология</span>
                 <svg className="w-4 h-4 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </Link>
               
-              <Link href="/services/mammology" className="bg-[#FFE8E1] p-3 rounded-[20px] flex items-center justify-between h-[80px]">
+              <Link href="/services/mammology" className="bg-[#FFE8E1] p-3 rounded-[20px] flex items-center justify-between h-[80px] relative overflow-hidden">
+                <Image 
+                  src="/images/yslugi/png-klev-club-k98x-p-vetki-yeli-s-igrushkami-png-27 1.webp"
+                  alt=""
+                  width={40}
+                  height={40}
+                  className="absolute top-0 right-0 w-10 h-10 object-contain"
+                />
                 <span className="font-medium text-sm text-gray-800">Маммология</span>
                 <svg className="w-4 h-4 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </Link>
               
-              <Link href="/services/neurology" className="bg-[#F0E8FF] p-3 rounded-[20px] flex items-center justify-between h-[80px]">
+              <Link href="/services/neurology" className="bg-[#F0E8FF] p-3 rounded-[20px] flex items-center justify-between h-[80px] relative overflow-hidden">
+                <Image 
+                  src="/images/yslugi/png-klev-club-k98x-p-vetki-yeli-s-igrushkami-png-27 1.webp"
+                  alt=""
+                  width={40}
+                  height={40}
+                  className="absolute top-0 right-0 w-10 h-10 object-contain"
+                />
                 <span className="font-medium text-sm text-gray-800">Неврология</span>
                 <svg className="w-4 h-4 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </Link>
 
-              <Link href="/services/otolaryngology" className="bg-[#F2F6D6] p-3 rounded-[20px] flex items-center justify-between h-[80px]">
+              <Link href="/services/otolaryngology" className="bg-[#F2F6D6] p-3 rounded-[20px] flex items-center justify-between h-[80px] relative overflow-hidden">
+                <Image 
+                  src="/images/yslugi/png-klev-club-k98x-p-vetki-yeli-s-igrushkami-png-27 1.webp"
+                  alt=""
+                  width={40}
+                  height={40}
+                  className="absolute top-0 right-0 w-10 h-10 object-contain"
+                />
                 <span className="font-medium text-sm text-gray-800">Отоларингология</span>
                 <svg className="w-4 h-4 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </Link>
 
-              <Link href="/services/ophthalmology" className="bg-[#E2F5F0] p-3 rounded-[20px] flex items-center justify-between h-[80px]">
+              <Link href="/services/ophthalmology" className="bg-[#E2F5F0] p-3 rounded-[20px] flex items-center justify-between h-[80px] relative overflow-hidden">
+                <Image 
+                  src="/images/yslugi/png-klev-club-k98x-p-vetki-yeli-s-igrushkami-png-27 1.webp"
+                  alt=""
+                  width={40}
+                  height={40}
+                  className="absolute top-0 right-0 w-10 h-10 object-contain"
+                />
                 <span className="font-medium text-sm text-gray-800">Офтальмология</span>
                 <svg className="w-4 h-4 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </Link>
 
-              <Link href="/services/pediatrics" className="bg-[#EEE0EE] p-3 rounded-[20px] flex items-center justify-between h-[80px]">
+              <Link href="/services/pediatrics" className="bg-[#EEE0EE] p-3 rounded-[20px] flex items-center justify-between h-[80px] relative overflow-hidden">
+                <Image 
+                  src="/images/yslugi/png-klev-club-k98x-p-vetki-yeli-s-igrushkami-png-27 1.webp"
+                  alt=""
+                  width={40}
+                  height={40}
+                  className="absolute top-0 right-0 w-10 h-10 object-contain"
+                />
                 <span className="font-medium text-sm text-gray-800">Педиатрия</span>
                 <svg className="w-4 h-4 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </Link>
 
-              <Link href="/services/proctology" className="bg-[#DFDBF0] p-3 rounded-[20px] flex items-center justify-between h-[80px]">
+              <Link href="/services/proctology" className="bg-[#DFDBF0] p-3 rounded-[20px] flex items-center justify-between h-[80px] relative overflow-hidden">
+                <Image 
+                  src="/images/yslugi/png-klev-club-k98x-p-vetki-yeli-s-igrushkami-png-27 1.webp"
+                  alt=""
+                  width={40}
+                  height={40}
+                  className="absolute top-0 right-0 w-10 h-10 object-contain"
+                />
                 <span className="font-medium text-sm text-gray-800">Проктология</span>
                 <svg className="w-4 h-4 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -560,7 +668,8 @@ export default function Home() {
             <div className="md:hidden mt-4 flex justify-center w-full max-w-sm mx-auto">
               <Link 
                 href="/services" 
-                className="bg-emerald-500 text-white rounded-full px-8 py-3 flex items-center justify-center font-medium text-sm hover:bg-emerald-600 transition-colors w-full"
+                className="christmas-button text-white rounded-full py-3 flex items-center justify-center font-medium text-sm transition-colors w-full"
+                style={{ paddingLeft: 'calc(2rem + 2px)', paddingRight: 'calc(2rem + 2px)', backgroundColor: '#5E0D0C' }}
               >
                 Все услуги
                 <svg className="w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -572,21 +681,42 @@ export default function Home() {
             {/* Десктопная версия - оригинальные серые блоки */}
             <div className="hidden md:flex flex-col space-y-4 md:space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
-                <Link href="/services/allergology" className="bg-[#EDF8F4] p-4 rounded-[20px] flex items-center justify-between w-full md:w-[224px] h-[89px]">
+                <Link href="/services/allergology" className="bg-[#EDF8F4] p-4 rounded-[20px] flex items-center justify-between w-full md:w-[224px] h-[89px] relative overflow-hidden">
+                  <Image 
+                    src="/images/yslugi/png-klev-club-k98x-p-vetki-yeli-s-igrushkami-png-27 1.webp"
+                    alt=""
+                    width={50}
+                    height={50}
+                    className="absolute top-0 right-0 w-12 h-12 object-contain"
+                  />
                   <span className="font-medium text-sm md:text-base">Аллергология</span>
                   <svg className="w-5 h-5 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
                 </Link>
                 
-                <Link href="/services/gastroenterology" className="bg-[#FFDCC7] p-4 rounded-[20px] flex items-center justify-between w-full md:w-[224px] h-[89px]">
+                <Link href="/services/gastroenterology" className="bg-[#FFDCC7] p-4 rounded-[20px] flex items-center justify-between w-full md:w-[224px] h-[89px] relative overflow-hidden">
+                  <Image 
+                    src="/images/yslugi/png-klev-club-k98x-p-vetki-yeli-s-igrushkami-png-27 1.webp"
+                    alt=""
+                    width={50}
+                    height={50}
+                    className="absolute top-0 right-0 w-12 h-12 object-contain"
+                  />
                   <span className="font-medium text-sm md:text-base">Гастроэнтерология</span>
                   <svg className="w-5 h-5 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
                 </Link>
                 
-                <Link href="/services/gynecology" className="bg-[#F6F8F7] p-4 rounded-[20px] flex items-center justify-between w-full md:w-[224px] h-[89px]">
+                <Link href="/services/gynecology" className="bg-[#F6F8F7] p-4 rounded-[20px] flex items-center justify-between w-full md:w-[224px] h-[89px] relative overflow-hidden">
+                  <Image 
+                    src="/images/yslugi/png-klev-club-k98x-p-vetki-yeli-s-igrushkami-png-27 1.webp"
+                    alt=""
+                    width={50}
+                    height={50}
+                    className="absolute top-0 right-0 w-12 h-12 object-contain"
+                  />
                   <span className="font-medium text-sm md:text-base">Гинекология</span>
                   <svg className="w-5 h-5 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -595,21 +725,42 @@ export default function Home() {
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
-                <Link href="/services/dermatology" className="bg-[#F2F6D6] p-4 rounded-[20px] flex items-center justify-between w-full md:w-[224px] h-[89px]">
+                <Link href="/services/dermatology" className="bg-[#F2F6D6] p-4 rounded-[20px] flex items-center justify-between w-full md:w-[224px] h-[89px] relative overflow-hidden">
+                  <Image 
+                    src="/images/yslugi/png-klev-club-k98x-p-vetki-yeli-s-igrushkami-png-27 1.webp"
+                    alt=""
+                    width={50}
+                    height={50}
+                    className="absolute top-0 right-0 w-12 h-12 object-contain"
+                  />
                   <span className="font-medium text-sm md:text-base">Дерматология</span>
                   <svg className="w-5 h-5 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
                 </Link>
                 
-                <Link href="/services/cardiology" className="bg-[#E2F5F0] p-4 rounded-[20px] flex items-center justify-between w-full md:w-[224px] h-[89px]">
+                <Link href="/services/cardiology" className="bg-[#E2F5F0] p-4 rounded-[20px] flex items-center justify-between w-full md:w-[224px] h-[89px] relative overflow-hidden">
+                  <Image 
+                    src="/images/yslugi/png-klev-club-k98x-p-vetki-yeli-s-igrushkami-png-27 1.webp"
+                    alt=""
+                    width={50}
+                    height={50}
+                    className="absolute top-0 right-0 w-12 h-12 object-contain"
+                  />
                   <span className="font-medium text-sm md:text-base">Кардиология</span>
                   <svg className="w-5 h-5 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
                 </Link>
                 
-                <Link href="/services/dentistry" className="bg-[#FDE3E2] p-4 rounded-[20px] flex items-center justify-between w-full md:w-[224px] h-[89px]">
+                <Link href="/services/dentistry" className="bg-[#FDE3E2] p-4 rounded-[20px] flex items-center justify-between w-full md:w-[224px] h-[89px] relative overflow-hidden">
+                  <Image 
+                    src="/images/yslugi/png-klev-club-k98x-p-vetki-yeli-s-igrushkami-png-27 1.webp"
+                    alt=""
+                    width={50}
+                    height={50}
+                    className="absolute top-0 right-0 w-12 h-12 object-contain"
+                  />
                   <span className="font-medium text-sm md:text-base">Стоматология</span>
                   <svg className="w-5 h-5 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -618,21 +769,42 @@ export default function Home() {
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
-                <Link href="/services/mammology" className="bg-[#EBD8C9] p-4 rounded-[20px] flex items-center justify-between w-full md:w-[224px] h-[89px]">
+                <Link href="/services/mammology" className="bg-[#EBD8C9] p-4 rounded-[20px] flex items-center justify-between w-full md:w-[224px] h-[89px] relative overflow-hidden">
+                  <Image 
+                    src="/images/yslugi/png-klev-club-k98x-p-vetki-yeli-s-igrushkami-png-27 1.webp"
+                    alt=""
+                    width={50}
+                    height={50}
+                    className="absolute top-0 right-0 w-12 h-12 object-contain"
+                  />
                   <span className="font-medium text-sm md:text-base">Маммология</span>
                   <svg className="w-5 h-5 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
                 </Link>
                 
-                <Link href="/services/neurology" className="bg-[#EEE0EE] p-4 rounded-[20px] flex items-center justify-between w-full md:w-[224px] h-[89px]">
+                <Link href="/services/neurology" className="bg-[#EEE0EE] p-4 rounded-[20px] flex items-center justify-between w-full md:w-[224px] h-[89px] relative overflow-hidden">
+                  <Image 
+                    src="/images/yslugi/png-klev-club-k98x-p-vetki-yeli-s-igrushkami-png-27 1.webp"
+                    alt=""
+                    width={50}
+                    height={50}
+                    className="absolute top-0 right-0 w-12 h-12 object-contain"
+                  />
                   <span className="font-medium text-sm md:text-base">Неврология</span>
                   <svg className="w-5 h-5 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
                 </Link>
                 
-                <Link href="/services/otolaryngology" className="bg-[#DBF0E9] p-4 rounded-[20px] flex items-center justify-between w-full md:w-[224px] h-[89px]">
+                <Link href="/services/otolaryngology" className="bg-[#DBF0E9] p-4 rounded-[20px] flex items-center justify-between w-full md:w-[224px] h-[89px] relative overflow-hidden">
+                  <Image 
+                    src="/images/yslugi/png-klev-club-k98x-p-vetki-yeli-s-igrushkami-png-27 1.webp"
+                    alt=""
+                    width={50}
+                    height={50}
+                    className="absolute top-0 right-0 w-12 h-12 object-contain"
+                  />
                   <span className="font-medium text-sm md:text-base">Отоларингология</span>
                   <svg className="w-5 h-5 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -641,21 +813,42 @@ export default function Home() {
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
-                <Link href="/services/ophthalmology" className="bg-[#DBF0E1] p-4 rounded-[20px] flex items-center justify-between w-full md:w-[224px] h-[89px]">
+                <Link href="/services/ophthalmology" className="bg-[#DBF0E1] p-4 rounded-[20px] flex items-center justify-between w-full md:w-[224px] h-[89px] relative overflow-hidden">
+                  <Image 
+                    src="/images/yslugi/png-klev-club-k98x-p-vetki-yeli-s-igrushkami-png-27 1.webp"
+                    alt=""
+                    width={50}
+                    height={50}
+                    className="absolute top-0 right-0 w-12 h-12 object-contain"
+                  />
                   <span className="font-medium text-sm md:text-base">Офтальмология</span>
                   <svg className="w-5 h-5 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
                 </Link>
                 
-                <Link href="/services/pediatrics" className="bg-[#DBE5F0] p-4 rounded-[20px] flex items-center justify-between w-full md:w-[224px] h-[89px]">
+                <Link href="/services/pediatrics" className="bg-[#DBE5F0] p-4 rounded-[20px] flex items-center justify-between w-full md:w-[224px] h-[89px] relative overflow-hidden">
+                  <Image 
+                    src="/images/yslugi/png-klev-club-k98x-p-vetki-yeli-s-igrushkami-png-27 1.webp"
+                    alt=""
+                    width={50}
+                    height={50}
+                    className="absolute top-0 right-0 w-12 h-12 object-contain"
+                  />
                   <span className="font-medium text-sm md:text-base">Педиатрия</span>
                   <svg className="w-5 h-5 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
                 </Link>
                 
-                <Link href="/services/proctology" className="bg-[#DFDBF0] p-4 rounded-[20px] flex items-center justify-between w-full md:w-[224px] h-[89px]">
+                <Link href="/services/proctology" className="bg-[#DFDBF0] p-4 rounded-[20px] flex items-center justify-between w-full md:w-[224px] h-[89px] relative overflow-hidden">
+                  <Image 
+                    src="/images/yslugi/png-klev-club-k98x-p-vetki-yeli-s-igrushkami-png-27 1.webp"
+                    alt=""
+                    width={50}
+                    height={50}
+                    className="absolute top-0 right-0 w-12 h-12 object-contain"
+                  />
                   <span className="font-medium text-sm md:text-base">Проктология</span>
                   <svg className="w-5 h-5 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -667,8 +860,8 @@ export default function Home() {
               <div className="flex justify-center">
                 <Link 
                   href="/services" 
-                  className="bg-emerald-500 text-white rounded-full py-3 flex items-center justify-center font-medium text-sm hover:bg-emerald-600 transition-colors"
-                  style={{ paddingLeft: '8rem', paddingRight: '8rem' }}
+                  className="christmas-button text-white rounded-full py-3 flex items-center justify-center font-medium text-sm transition-colors"
+                  style={{ paddingLeft: 'calc(8rem + 2px)', paddingRight: 'calc(8rem + 2px)', backgroundColor: '#5E0D0C' }}
                 >
                   Все услуги
                   <svg className="w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -1257,6 +1450,9 @@ export default function Home() {
 
       {/* Форма записи на прием */}
       <AppointmentForm />
+      
+      {/* Эффект падающего снега */}
+      <Snowfall />
   
     </div>
   );
