@@ -52,6 +52,20 @@ export default function AdminDashboard() {
     }
   }, [router]);
 
+  // Загрузка данных расписания из localStorage после монтирования
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const saved = localStorage.getItem('admin_schedule_data');
+      if (saved) {
+        try {
+          setScheduleData(JSON.parse(saved));
+        } catch (e) {
+          console.error('Error parsing schedule data:', e);
+        }
+      }
+    }
+  }, []);
+
   const handleLogout = () => {
     localStorage.removeItem('admin_authenticated');
     localStorage.removeItem('admin_login_time');
@@ -65,14 +79,16 @@ export default function AdminDashboard() {
 
   // Загрузка расписания из localStorage или использование дефолтных данных
   const loadScheduleData = (): { [key: string]: DoctorScheduleData[] } => {
-    const saved = localStorage.getItem('admin_schedule_data');
-    if (saved) {
-      return JSON.parse(saved);
+    if (typeof window !== 'undefined') {
+      const saved = localStorage.getItem('admin_schedule_data');
+      if (saved) {
+        return JSON.parse(saved);
+      }
     }
     return {};
   };
 
-  const [scheduleData, setScheduleData] = useState<{ [key: string]: DoctorScheduleData[] }>(loadScheduleData);
+  const [scheduleData, setScheduleData] = useState<{ [key: string]: DoctorScheduleData[] }>({});
 
   const branchNames = {
     branch1: 'бульвар Маршала Крылова, д. 23',

@@ -12,7 +12,7 @@ export default function Snowfall() {
     const sinkspeed = 0.6;
     const snowmaxsize = 40;
     const snowminsize = 8;
-    const snowingzone = 1;
+    const snowingzone: number = 1;
 
     const snow: HTMLSpanElement[] = [];
     let marginbottom: number;
