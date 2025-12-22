@@ -40,7 +40,7 @@ export default function DoctorsPage() {
 
   // Filter doctors
   const filteredDoctors = useMemo(() => {
-    return doctors.filter(doctor => {
+    const filtered = doctors.filter(doctor => {
       // Name filter
       if (searchName && !doctor.name.toLowerCase().includes(searchName.toLowerCase())) {
         return false;
@@ -74,7 +74,10 @@ export default function DoctorsPage() {
 
       return true;
     });
-  }, [searchName, audienceFilter, selectedSpecialization]);
+
+    // Sort by name alphabetically
+    return filtered.sort((a, b) => a.name.localeCompare(b.name, 'ru', { sensitivity: 'base' }));
+  }, [doctors, searchName, audienceFilter, selectedSpecialization]);
 
   const clearFilters = () => {
     setSearchName('');

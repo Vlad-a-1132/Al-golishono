@@ -1099,11 +1099,11 @@ export default function DentistryPage() {
                     <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
                       {service.title}
                     </h3>
-                  </div>
+              </div>
                   <svg className="w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-white group-hover:bg-emerald-500 rounded-full p-1 transition-all duration-300 flex-shrink-0 mr-2 md:mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
-                </Link>
+            </Link>
               ) : service.id === 'dentistry-aesthetic' ? (
             <Link 
                   key={service.id}

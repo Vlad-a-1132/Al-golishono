@@ -132,6 +132,7 @@ export default function PromoDetailPage() {
         "Скидка не суммируется с другими акциями"
       ],
       mondayServices: [
+        { name: "Анализы", discount: "20%", highlighted: true },
         "Офтальмолог",
         "Хирург",
         "Кардиолог",
@@ -148,11 +149,11 @@ export default function PromoDetailPage() {
         "Сурдолог",
         "ЭКГ",
         "Холтеровское мониторирование",
-        "Карбокстерапия",
-        "Анализы"
+        "Карбокстерапия"
       ],
       fridayServices: [
         { name: "КТ", discount: "25%", highlighted: true },
+        { name: "Анализы", discount: "20%", highlighted: true },
         "Рентген",
         "Отоларинголог",
         "Сурдолог",
@@ -298,14 +299,24 @@ export default function PromoDetailPage() {
                   </div>
                 </div>
                 <div className="space-y-2">
-                  {promo.mondayServices?.map((service, idx) => (
-                    <div key={idx} className="flex items-center text-gray-700">
-                      <svg className="w-5 h-5 text-emerald-500 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                      </svg>
-                      <span className="text-sm">{service}</span>
-                    </div>
-                  ))}
+                  {promo.mondayServices?.map((service, idx) => {
+                    const isHighlighted = typeof service === 'object' && service.highlighted;
+                    const serviceName = typeof service === 'object' ? `${service.name} – ${service.discount}` : service;
+                    
+                    return (
+                      <div 
+                        key={idx} 
+                        className={`flex items-center ${isHighlighted ? 'bg-orange-50 rounded-lg p-3 border border-orange-200' : 'text-gray-700'}`}
+                      >
+                        <svg className={`w-5 h-5 ${isHighlighted ? 'text-orange-500' : 'text-emerald-500'} mr-2 flex-shrink-0`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <span className={`text-sm ${isHighlighted ? 'text-orange-700 font-semibold' : ''}`}>
+                          {serviceName}
+                        </span>
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
 
