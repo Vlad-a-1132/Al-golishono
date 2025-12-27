@@ -143,10 +143,11 @@ export default function SchedulePage() {
     // Создаем Map для быстрого поиска сохраненных врачей
     const savedMap = new Map(savedDoctors.map((doc: any) => [doc.name, doc]));
     
-    // Объединяем: статические данные имеют приоритет, localStorage только для новых врачей
+    // Объединяем: данные из localStorage имеют приоритет, используем статические данные только если врача нет в сохраненных
     const merged = staticDoctors.map((staticDoc: any) => {
-      // Всегда используем статические данные для врачей, которые есть в статике
-      return staticDoc;
+      // Если врач есть в сохраненных данных, используем сохраненные данные
+      const savedDoc = savedMap.get(staticDoc.name);
+      return savedDoc || staticDoc;
     });
     
     // Добавляем врачей из сохраненных данных, которых нет в статических
@@ -234,11 +235,6 @@ export default function SchedulePage() {
       name: "Ростовцева Эмилия Вениаминовна",
       specialty: "Кардиолог",
       schedule: { Monday: { start: "09:00", end: "15:00" }, Wednesday: { start: "09:00", end: "15:00" }, Friday: { start: "09:00", end: "15:00" } }
-    },
-    {
-      name: "Рубцов Роман Владимирович",
-      specialty: "Стоматолог-ортопед",
-      schedule: { Tuesday: { start: "09:00", end: "20:00" }, Thursday: { start: "09:00", end: "20:00" }, Friday: { start: "09:00", end: "20:00" }, Saturday: { start: "09:00", end: "20:00" } }
     },
     {
       name: "Стаченкова Светлана Валериевна",
