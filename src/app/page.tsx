@@ -426,69 +426,80 @@ export default function Home() {
 
           <div className="flex flex-col md:flex-row gap-4 md:gap-8 justify-center mx-auto px-4 md:px-0">
             {/* Левая колонка с семейной картинкой и блоком для взрослых и детей - теперь слайдер */}
-            <div className="w-full md:w-[548px] h-[380px] md:h-[445px] flex flex-col rounded-[20px] overflow-hidden shadow-md flex-shrink-0 mx-auto md:mx-0">
-              {/* Слайдер */}
-              <div className="h-[300px] md:h-[358px] bg-emerald-500 relative overflow-hidden">
-                {/* Контент для текущего слайда остается тем же */}
-                <div className="w-full h-full relative">
-                  <img
-                    src={slides[currentSlide]?.image || slides[0].image}
-                    alt={slides[currentSlide]?.title || slides[0].title}
-                    className="w-full h-full object-cover"
-                    style={{ display: 'block' }}
-                    onError={(e) => {
-                      console.error('Failed to load image:', (slides[currentSlide]?.image || slides[0].image));
-                    }}
-                  />
+            <div className="w-full md:w-[548px] flex-shrink-0 mx-auto md:mx-0">
+              <div className="h-[380px] md:h-[445px] flex flex-col rounded-[20px] overflow-hidden shadow-md">
+                {/* Слайдер */}
+                <div className="h-[300px] md:h-[358px] bg-emerald-500 relative overflow-hidden">
+                  {/* Контент для текущего слайда остается тем же */}
+                  <div className="w-full h-full relative">
+                    <img
+                      src={slides[currentSlide]?.image || slides[0].image}
+                      alt={slides[currentSlide]?.title || slides[0].title}
+                      className="w-full h-full object-cover"
+                      style={{ display: 'block' }}
+                      onError={(e) => {
+                        console.error('Failed to load image:', (slides[currentSlide]?.image || slides[0].image));
+                      }}
+                    />
+                  </div>
+                  
+                  {/* Навигационные стрелки - скрываем на мобильных */}
+                  <button 
+                    onClick={prevSlide} 
+                    className="hidden md:block absolute left-3 top-1/2 transform -translate-y-1/2 bg-white/70 rounded-full p-2 shadow-md hover:bg-white"
+                  >
+                    <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                    </svg>
+                  </button>
+                  <button 
+                    onClick={nextSlide} 
+                    className="hidden md:block absolute right-3 top-1/2 transform -translate-y-1/2 bg-white/70 rounded-full p-2 shadow-md hover:bg-white"
+                  >
+                    <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </button>
+                  
+                  {/* Прогресс-бар в виде точек */}
+                  <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2" suppressHydrationWarning>
+                    {slides.map((_, index) => (
+                      <button
+                        key={index}
+                        onClick={() => goToSlide(index)}
+                        className={`w-3 h-3 rounded-full ${
+                          currentSlide === index ? "bg-white" : "bg-white/50"
+                        }`}
+                        suppressHydrationWarning
+                      ></button>
+                    ))}
+                  </div>
                 </div>
-                
-                {/* Навигационные стрелки - скрываем на мобильных */}
-                <button 
-                  onClick={prevSlide} 
-                  className="hidden md:block absolute left-3 top-1/2 transform -translate-y-1/2 bg-white/70 rounded-full p-2 shadow-md hover:bg-white"
-                >
-                  <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-                  </svg>
-                </button>
-                <button 
-                  onClick={nextSlide} 
-                  className="hidden md:block absolute right-3 top-1/2 transform -translate-y-1/2 bg-white/70 rounded-full p-2 shadow-md hover:bg-white"
-                >
-                  <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </button>
-                
-                {/* Прогресс-бар в виде точек */}
-                <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2" suppressHydrationWarning>
-                  {slides.map((_, index) => (
-                    <button
-                      key={index}
-                      onClick={() => goToSlide(index)}
-                      className={`w-3 h-3 rounded-full ${
-                        currentSlide === index ? "bg-white" : "bg-white/50"
-                      }`}
-                      suppressHydrationWarning
-                    ></button>
-                  ))}
+
+                {/* Нижняя часть - белый блок с текстом и кнопкой, меняется в зависимости от текущего слайда */}
+                <div className="bg-white p-3 md:p-4 flex flex-col md:flex-row justify-between items-start md:items-center gap-2 md:gap-0" suppressHydrationWarning>
+                  <div className="text-black font-medium text-sm md:text-base flex-1" suppressHydrationWarning>{slides[currentSlide]?.title || slides[0].title}</div>
+                  <Link 
+                    href={slides[currentSlide]?.buttonLink || slides[0].buttonLink} 
+                    className="text-white rounded-full flex items-center justify-center px-4 py-2 md:w-[185px] md:h-[46px] h-[36px] text-xs md:text-base"
+                    style={{ backgroundColor: slides[currentSlide]?.buttonColor || slides[0].buttonColor }}
+                    suppressHydrationWarning
+                  >
+                    <span suppressHydrationWarning>{slides[currentSlide]?.buttonText || slides[0].buttonText}</span>
+                    <svg className="w-4 h-4 md:w-5 md:h-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </Link>
                 </div>
               </div>
 
-              {/* Нижняя часть - белый блок с текстом и кнопкой, меняется в зависимости от текущего слайда */}
-              <div className="bg-white p-3 md:p-4 flex flex-col md:flex-row justify-between items-start md:items-center gap-2 md:gap-0" suppressHydrationWarning>
-                <div className="text-black font-medium text-sm md:text-base flex-1" suppressHydrationWarning>{slides[currentSlide]?.title || slides[0].title}</div>
-                <Link 
-                  href={slides[currentSlide]?.buttonLink || slides[0].buttonLink} 
-                  className="text-white rounded-full flex items-center justify-center px-4 py-2 md:w-[185px] md:h-[46px] h-[36px] text-xs md:text-base"
-                  style={{ backgroundColor: slides[currentSlide]?.buttonColor || slides[0].buttonColor }}
-                  suppressHydrationWarning
-                >
-                  <span suppressHydrationWarning>{slides[currentSlide]?.buttonText || slides[0].buttonText}</span>
-                  <svg className="w-4 h-4 md:w-5 md:h-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </Link>
+              {/* Блок-вывеска о нерабочих днях */}
+              <div className="mt-4">
+                <div className="bg-orange-50 border-2 border-orange-300 rounded-[20px] p-4 shadow-md">
+                  <p className="text-center text-orange-800 font-semibold text-sm md:text-base">
+                    Медицинский центр не работает 31 декабря, 1,2 и 7 января!
+                  </p>
+                </div>
               </div>
             </div>
 
