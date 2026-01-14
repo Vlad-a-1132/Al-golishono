@@ -172,11 +172,6 @@ export default function SchedulePage() {
       schedule: { Tuesday: { start: "08:00", end: "19:00" }, Wednesday: { start: "08:00", end: "19:00" }, Thursday: { start: "08:00", end: "19:00" }, Saturday: { start: "08:00", end: "19:00" }, Sunday: { start: "08:00", end: "19:00" } }
     },
     {
-      name: "Доброток Альбина Витальевна",
-      specialty: "Педиатр",
-      schedule: { Tuesday: { start: "18:40", end: "20:00" }, Sunday: { start: "10:00", end: "14:00" } }
-    },
-    {
       name: "Дячук Ольга Владимировна",
       specialty: "Психолог",
       schedule: { Tuesday: { start: "12:00", end: "16:00" } }

@@ -8,6 +8,7 @@ interface PromoBannerProps {
   buttonText?: string;
   buttonLink?: string;
   buttonColor?: string;
+  doctorImage?: string;
 }
 
 export default function PromoBanner({ 
@@ -16,7 +17,8 @@ export default function PromoBanner({
   image, 
   buttonText = 'Подробнее', 
   buttonLink = '/services',
-  buttonColor = '#13AB7B'
+  buttonColor = '#13AB7B',
+  doctorImage
 }: PromoBannerProps) {
   return (
     <div className="w-full rounded-[20px] overflow-hidden shadow-lg mb-8 relative">
@@ -29,8 +31,19 @@ export default function PromoBanner({
         priority
       />
       
-      {/* Кнопка "Подробнее" */}
-      {buttonText && (
+      {/* Изображение врача или кнопка "Подробнее" */}
+      {doctorImage ? (
+        <div className="absolute bottom-0 right-4">
+          <Image
+            src={doctorImage}
+            alt="Врач"
+            width={150}
+            height={200}
+            className="object-cover"
+            style={{ maxHeight: '200px', width: 'auto', display: 'block' }}
+          />
+        </div>
+      ) : buttonText ? (
         <div className="absolute bottom-4 right-4">
           <Link 
             href={buttonLink}
@@ -40,7 +53,7 @@ export default function PromoBanner({
             {buttonText}
           </Link>
         </div>
-      )}
+      ) : null}
     </div>
   );
 }

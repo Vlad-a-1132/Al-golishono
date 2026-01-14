@@ -75,7 +75,7 @@ function PatientInfoSection() {
                       </p>
                     </div>
                     <a 
-                      href="/images/documents/documenty-pravitelstvo-rossii.pdf" 
+                      href="/images/documents/narusheniya (1).docx" 
                       target="_blank" 
                       className="inline-flex items-center text-emerald-600 hover:text-emerald-700 font-medium whitespace-nowrap text-sm"
                     >

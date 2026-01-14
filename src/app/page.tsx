@@ -492,15 +492,6 @@ export default function Home() {
                   </Link>
                 </div>
               </div>
-
-              {/* Блок-вывеска о нерабочих днях */}
-              <div className="mt-4">
-                <div className="bg-orange-50 border-2 border-orange-300 rounded-[20px] p-4 shadow-md">
-                  <p className="text-center text-orange-800 font-semibold text-sm md:text-base">
-                    Медицинский центр не работает 31 декабря, 1,2 и 7 января!
-                  </p>
-                </div>
-              </div>
             </div>
 
             {/* Правая колонка с услугами */}

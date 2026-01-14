@@ -7,9 +7,7 @@ export default function ImplantBanner() {
       title="Имплантация зубов"
       subtitle="Консультация стоматолога перед процедурой - бесплатна"
       image="/images/dentisrty/action-implNT.webp"
-      buttonText="Подробнее"
-      buttonLink="/services/dentistry/implantation"
-      buttonColor="#13AB7B"
+      doctorImage="/images/promo/Abramov Yuno Eriilevich 1.webp"
     />
   );
 }
