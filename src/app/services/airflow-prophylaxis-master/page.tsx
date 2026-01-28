@@ -127,11 +127,11 @@ export default function AirflowProphylaxisMasterPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div>
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-                AIRFLOW® Prophylaxis Master — профессиональная гигиена по протоколу GBT в Одинцово
+                AIRFLOW® Prophylaxis Master — профессиональная гигиена по протоколу GBT в Альтамед Голицино
               </h1>
               <p className="text-lg md:text-xl mb-8 text-emerald-100">
                 Швейцарское оборудование для полного устранения биоплёнки, пигментированных участков и зубных отложений. 
-                Безболезненный процесс для взрослых и детей в клинике «Альтамед-С» в Одинцово
+                Безболезненный процесс для взрослых и детей в клинике «Альтамед Голицино» в Альтамед Голицино
               </p>
             </div>
             <div className="relative">
@@ -175,7 +175,7 @@ export default function AirflowProphylaxisMasterPage() {
             </div>
             <div className="bg-gray-50 rounded-[20px] p-6 shadow-md border-l-4 border-[#4A5568]">
               <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Что вы получаете, выбирая «Альтамед-С»
+                Что вы получаете, выбирая «Альтамед Голицино»
               </h3>
               <ul className="space-y-3 text-gray-700 text-sm md:text-base leading-relaxed">
                 <li className="flex items-start">
@@ -609,12 +609,12 @@ export default function AirflowProphylaxisMasterPage() {
                 Запишитесь на профессиональную гигиену по протоколу GBT
               </h2>
               <p className="text-white/90 text-sm md:text-base leading-relaxed">
-                Квалифицированные гигиенисты клиники «Альтамед-С» выполнят процедуру профессиональной гигиены с применением 
+                Квалифицированные гигиенисты клиники «Альтамед Голицино» выполнят процедуру профессиональной гигиены с применением 
                 аппарата AIRFLOW® Prophylaxis Master. Безболезненно, комфортно и результативно.
               </p>
             </div>
             <Link
-              href="https://online.altamed-c.ru/"
+              href="https://reg.altamed-golitsino.ru/"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white text-[#4A5568] rounded-full px-8 py-3 font-medium hover:bg-gray-100 transition-colors text-center"
@@ -633,9 +633,9 @@ export default function AirflowProphylaxisMasterPage() {
               __html: JSON.stringify({
                 "@context": "https://schema.org",
                 "@type": "MedicalBusiness",
-                name: "Клиника «Альтамед-С» — AIRFLOW Prophylaxis Master в Одинцово",
-                url: "https://altamed-s.ru/services/airflow-prophylaxis-master",
-                image: "https://altamed-s.ru/images/yslugi/air flow.webp",
+                name: "Клиника «Альтамед Голицино» — AIRFLOW Prophylaxis Master в Альтамед Голицино",
+                url: "https://altamed-golitsino.ru/services/airflow-prophylaxis-master",
+                image: "https://altamed-golitsino.ru/images/yslugi/air flow.webp",
                 medicalSpecialty: "Dental",
                 aggregateRating: {
                   "@type": "AggregateRating",
@@ -644,18 +644,18 @@ export default function AirflowProphylaxisMasterPage() {
                 },
                 address: {
                   "@type": "PostalAddress",
-                  addressLocality: "Одинцово",
+                  addressLocality: "Альтамед Голицино",
                   addressRegion: "Московская область",
                   streetAddress: "ул. Советская, 9"
                 },
                 telephone: "+7 (495) 640-09-03",
                 priceRange: "₽₽",
                 serviceType: "Профессиональная гигиена полости рта",
-                areaServed: "Одинцово и Одинцовский городской округ",
+                areaServed: "Альтамед Голицино и Одинцовский городской округ",
                 description:
-                  "Профессиональная гигиена полости рта по протоколу GBT с использованием швейцарского аппарата AIRFLOW® Prophylaxis Master. Безболезненная процедура для взрослых и детей в Одинцово.",
+                  "Профессиональная гигиена полости рта по протоколу GBT с использованием швейцарского аппарата AIRFLOW® Prophylaxis Master. Безболезненная процедура для взрослых и детей в Альтамед Голицино.",
                 sameAs: [
-                  "https://altamed-s.ru",
+                  "https://altamed-golitsino.ru",
                   "https://yandex.ru/maps/org/altamed_s/1919839667"
                 ]
               })

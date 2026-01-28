@@ -9,18 +9,6 @@ export default function ServicesPage() {
   // Все медицинские услуги из меню
   const medicalServices = [
     {
-      id: 'allergology',
-      title: 'Аллергология',
-      description: 'Диагностика и лечение аллергических заболеваний',
-      icon: (
-        <svg className="w-6 h-6 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-        </svg>
-      ),
-      category: 'treatment',
-      hasSubmenu: true
-    },
-    {
       id: 'gastroenterology',
       title: 'Гастроэнтерология',
       description: 'Лечение заболеваний желудочно-кишечного тракта',
@@ -67,31 +55,6 @@ export default function ServicesPage() {
       ),
       category: 'treatment',
       hasSubmenu: false
-    },
-    {
-      id: 'laser-cosmetology',
-      title: 'Лазерная косметология',
-      description: 'Современные методы омоложения и коррекции',
-      icon: (
-        <svg className="w-6 h-6 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-        </svg>
-      ),
-      category: 'treatment',
-      hasSubmenu: true
-    },
-    {
-      id: 'rentgenology',
-      title: 'Рентгенология',
-      description: 'Цифровая рентгенодиагностика',
-      icon: (
-        <svg className="w-6 h-6 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-3.866 0-7 1.343-7 3v8c0 1.657 3.134 3 7 3s7-1.343 7-3v-8c0-1.657-3.134-3-7-3z" />
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 11V8c0-1.657 3.134-3 7-3s7 1.343 7 3v3" />
-        </svg>
-      ),
-      category: 'diagnostics',
-      hasSubmenu: true
     },
     {
       id: 'caries-treatment',
@@ -398,18 +361,6 @@ export default function ServicesPage() {
       hasSubmenu: true
     },
     {
-      id: 'gnathology',
-      title: 'Гнатология',
-      description: 'Гнатологическая диагностика и лечение ВНЧС',
-      icon: (
-        <svg className="w-6 h-6 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l9-5-9-5-9 5 9 5zm0 0l9-5-9-5-9 5 9 5zm0 0v6" />
-        </svg>
-      ),
-      category: 'treatment',
-      hasSubmenu: true
-    },
-    {
       id: 'mammology',
       title: 'Маммология',
       description: 'Диагностика и лечение заболеваний молочных желез',
@@ -508,7 +459,7 @@ export default function ServicesPage() {
     },
     {
       id: 'therapy',
-      title: 'Терапия',
+      title: 'Терапевт',
       description: 'Общая терапия и внутренние болезни',
       icon: (
         <svg className="w-6 h-6 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -531,9 +482,9 @@ export default function ServicesPage() {
       hasSubmenu: true
     },
     {
-      id: 'urology',
-      title: 'Урология',
-      description: 'Лечение заболеваний мочеполовой системы',
+      id: 'urolog-golitsino',
+      title: 'Уролог',
+      description: 'Приём уролога и детского уролога-андролога в Голицино',
       icon: (
         <svg className="w-6 h-6 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
@@ -578,32 +529,32 @@ export default function ServicesPage() {
       category: 'treatment',
       hasSubmenu: false
     },
+    {
+      id: 'psihiatr-golitsino',
+      title: 'Психиатр Голицино',
+      description: 'Приём психиатра и психолога в Голицино',
+      icon: (
+        <svg className="w-6 h-6 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+        </svg>
+      ),
+      category: 'treatment',
+      hasSubmenu: false
+    },
+    {
+      id: 'onkolog-golitsino',
+      title: 'Онколог Голицино',
+      description: 'Приём врача-онколога и детского онколога в Голицино',
+      icon: (
+        <svg className="w-6 h-6 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+        </svg>
+      ),
+      category: 'treatment',
+      hasSubmenu: false
+    },
     // Диагностические услуги
     // Дополнительные услуги
-    {
-      id: 'psychology',
-      title: 'Психология',
-      description: 'Психологическая помощь',
-      icon: (
-        <svg className="w-6 h-6 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-        </svg>
-      ),
-      category: 'additional',
-      hasSubmenu: false
-    },
-    {
-      id: 'psychotherapy',
-      title: 'Психотерапия',
-      description: 'Психотерапевтическое лечение',
-      icon: (
-        <svg className="w-6 h-6 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-        </svg>
-      ),
-      category: 'additional',
-      hasSubmenu: false
-    },
     {
       id: 'carboxytherapy',
       title: 'Карбокситерапия',
@@ -629,66 +580,6 @@ export default function ServicesPage() {
       hasSubmenu: true
     },
     {
-      id: 'physiotherapy',
-      title: 'Физиотерапия',
-      description: 'Физиотерапевтическое лечение',
-      icon: (
-        <svg className="w-6 h-6 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-        </svg>
-      ),
-      category: 'additional',
-      hasSubmenu: true
-    },
-    {
-      id: 'family-psychology',
-      title: 'Семейная психология',
-      description: 'Семейное психологическое консультирование',
-      icon: (
-        <svg className="w-6 h-6 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z" />
-        </svg>
-      ),
-      category: 'additional',
-      hasSubmenu: false
-    },
-    {
-      id: 'massage',
-      title: 'Массаж',
-      description: 'Лечебный массаж',
-      icon: (
-        <svg className="w-6 h-6 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-        </svg>
-      ),
-      category: 'additional',
-      hasSubmenu: false
-    },
-    {
-      id: 'vacuum-massage',
-      title: 'Вакуумный массаж',
-      description: 'Вакуумно-массажная терапия',
-      icon: (
-        <svg className="w-6 h-6 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-        </svg>
-      ),
-      category: 'additional',
-      hasSubmenu: false
-    },
-    {
-      id: 'bioresonance',
-      title: 'Биорезонансная терапия',
-      description: 'Биорезонансное лечение',
-      icon: (
-        <svg className="w-6 h-6 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-        </svg>
-      ),
-      category: 'additional',
-      hasSubmenu: false
-    },
-    {
       id: 'shockwave-therapy',
       title: 'Ударно-волновая терапия',
       description: 'УВТ лечение',
@@ -699,23 +590,57 @@ export default function ServicesPage() {
       ),
       category: 'additional',
       hasSubmenu: true
+    },
+    {
+      id: 'manual-therapy',
+      title: 'Мануальная терапия',
+      description: 'Лечение опорно-двигательного аппарата',
+      icon: (
+        <svg className="w-6 h-6 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 11.5V14m0-2.5v-6a1.5 1.5 0 113 0m-3 6a1.5 1.5 0 00-3 0v2a7.5 7.5 0 0015 0v-5a1.5 1.5 0 00-3 0m-6-3V11m0-5.5v-1a1.5 1.5 0 013 0v1m0 0V11m0-5.5a1.5 1.5 0 013 0v3m0 0V11" />
+        </svg>
+      ),
+      category: 'additional',
+      hasSubmenu: true
+    },
+    {
+      id: 'functional-diagnostics',
+      title: 'Функциональная диагностика',
+      description: 'Оценка функционального состояния органов и систем',
+      icon: (
+        <svg className="w-6 h-6 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-5a2 2 0 00-2-2H5a2 2 0 00-2 2v5a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+        </svg>
+      ),
+      category: 'additional',
+      hasSubmenu: false
+    },
+    {
+      id: 'general-manipulations',
+      title: 'Манипуляции общего назначения',
+      description: 'Лечебные блокады, инфузионная терапия, диагностика',
+      icon: (
+        <svg className="w-6 h-6 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+        </svg>
+      ),
+      category: 'additional',
+      hasSubmenu: false
     }
   ];
 
   // Первый контейнер - основные услуги
   const firstContainerServices = [
-    'allergology', 'gastroenterology', 'gynecology', 'dermatology',
-    'cardiology', 'laser-cosmetology', 'rentgenology', 'gnathology', 'mammology', 'neurology',
+    'gastroenterology', 'gynecology', 'dermatology',
+    'cardiology', 'mammology', 'neurology',
     'otolaryngology', 'ophthalmology', 'pediatrics',
     'proctology', 'surdology', 'therapy', 'traumatology',
-    'urology', 'surgery', 'endocrinology', 'gonkongskiy-gripp'
+    'urolog-golitsino', 'surgery', 'endocrinology', 'gonkongskiy-gripp', 'psihiatr-golitsino', 'onkolog-golitsino'
   ];
 
   // Реабилитация - отдельная категория
   const rehabilitationServices = [
-    'psychology', 'psychotherapy', 'carboxytherapy', 'osteopathy',
-    'physiotherapy', 'family-psychology', 'massage', 'vacuum-massage',
-    'bioresonance', 'shockwave-therapy'
+    'carboxytherapy', 'osteopathy', 'shockwave-therapy', 'manual-therapy', 'functional-diagnostics', 'general-manipulations'
   ];
 
   // Стоматология - отдельная категория
@@ -751,24 +676,8 @@ export default function ServicesPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 justify-items-center">
             {firstContainerData.map((service) => (
-              service.id === 'allergology' ? (
-                <Link key={service.id} href="/services/allergology" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
-                    <img 
-                      src="/images/yslugi/allergoly.webp" 
-                      alt="Аллергология" 
-              className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
-            />
-            <div className="flex-1 px-2 md:px-4">
-              <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
-                {service.title}
-              </h3>
-            </div>
-            <svg className="w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-white group-hover:bg-emerald-500 rounded-full p-1 transition-all duration-300 flex-shrink-0 mr-2 md:mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-            </svg>
-          </Link>
-        ) : service.id === 'gastroenterology' ? (
-                <Link key={service.id} href="/services/gastroenterology" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
+              service.id === 'gastroenterology' ? (
+                <Link key={service.id} href="/services/gastroenterolog-golitsino" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
                     <img 
                       src="/images/yslugi/Gastroenterology.webp" 
                       alt="Гастроэнтерология" 
@@ -784,7 +693,7 @@ export default function ServicesPage() {
                     </svg>
                   </Link>
                 ) : service.id === 'gynecology' ? (
-                <Link key={service.id} href="/services/gynecology" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
+                <Link key={service.id} href="/services/ginekolog-golitsino" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
                     <img 
                       src="/images/yslugi/Gynecology.webp" 
                       alt="Гинекология" 
@@ -800,7 +709,7 @@ export default function ServicesPage() {
                     </svg>
                 </Link>
                 ) : service.id === 'dermatology' ? (
-                <Link key={service.id} href="/services/dermatology" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
+                <Link key={service.id} href="/services/dermatolog-golitsino" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
                     <img 
                       src="/images/yslugi/Dermatology.webp" 
                       alt="Дерматология" 
@@ -831,62 +740,11 @@ export default function ServicesPage() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
                   </Link>
-                ) : service.id === 'laser-cosmetology' ? (
-                <Link key={service.id} href="/services/laser-cosmetology" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
-                    <img 
-                      src="/images/yslugi/laser cosmetology 1.webp" 
-                      alt="Лазерная косметология" 
-                      className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
-                    />
-                    <div className="flex-1 px-2 md:px-4">
-                      <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
-                        {service.title}
-                      </h3>
-                    </div>
-                    <svg className="w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-white group-hover:bg-emerald-500 rounded-full p-1 transition-all duration-300 flex-shrink-0 mr-2 md:mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </Link>
                 ) : service.id === 'implantation' ? (
                 <Link key={service.id} href="/services/implantation" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
                     <img 
                       src="/images/yslugi/implant.webp" 
                       alt="Имплантация" 
-                      className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
-                    />
-                    <div className="flex-1 px-2 md:px-4">
-                      <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
-                        {service.title}
-                      </h3>
-                    </div>
-                    <svg className="w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-white group-hover:bg-emerald-500 rounded-full p-1 transition-all duration-300 flex-shrink-0 mr-2 md:mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </Link>
-                ) : service.id === 'rentgenology' ? (
-                <Link key={service.id} href="/services/rentgenology" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
-                    <img 
-                      src="/images/yslugi/rentgen.webp" 
-                      alt="Рентгенология" 
-                      className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
-                    />
-                    <div className="flex-1 px-2 md:px-4">
-                      <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
-                        {service.title}
-                      </h3>
-                      <p className="hidden md:block text-xs text-gray-500 mt-1">
-                        {service.description}
-                      </p>
-                    </div>
-                    <svg className="w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-white group-hover:bg-emerald-500 rounded-full p-1 transition-all duration-300 flex-shrink-0 mr-2 md:mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </Link>
-                ) : service.id === 'gnathology' ? (
-                <Link key={service.id} href="/services/gnathology" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
-                    <img 
-                      src="/images/yslugi/gnatologia.webp" 
-                      alt="Гнатология" 
                       className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
                     />
                     <div className="flex-1 px-2 md:px-4">
@@ -915,7 +773,7 @@ export default function ServicesPage() {
                     </svg>
                   </Link>
                 ) : service.id === 'neurology' ? (
-                <Link key={service.id} href="/services/neurology" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
+                <Link key={service.id} href="/services/nevrolog-golitsino" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
                     <img 
                       src="/images/images allergoly/nevrolog.webp" 
                       alt="Неврология" 
@@ -931,7 +789,7 @@ export default function ServicesPage() {
                     </svg>
                 </Link>
               ) : service.id === 'otolaryngology' ? (
-                <Link key={service.id} href="/services/otolaryngology" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
+                <Link key={service.id} href="/services/otorinolaringolog-golitsino" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
                     <img 
                       src="/images/yslugi/Otolaryngology.webp" 
                       alt="Отоларингология" 
@@ -947,7 +805,7 @@ export default function ServicesPage() {
                     </svg>
                 </Link>
                 ) : service.id === 'ophthalmology' ? (
-                <Link key={service.id} href="/services/ophthalmology" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
+                <Link key={service.id} href="/services/oftalmolog-golitsino" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
                     <img 
                       src="/images/yslugi/Ophthalmology.webp" 
                       alt="Офтальмология" 
@@ -963,7 +821,7 @@ export default function ServicesPage() {
                     </svg>
                 </Link>
                 ) : service.id === 'pediatrics' ? (
-                <Link key={service.id} href="/services/pediatrics" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
+                <Link key={service.id} href="/services/pediatr-golitsino" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
                     <img 
                       src="/images/yslugi/Pediatrician.webp" 
                       alt="Педиатрия" 
@@ -1011,10 +869,10 @@ export default function ServicesPage() {
                     </svg>
                   </Link>
                 ) : service.id === 'therapy' ? (
-                <Link key={service.id} href="/services/therapy" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
+                <Link key={service.id} href="/services/terapevt-golitsino" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
                     <img 
                       src="/images/yslugi/terapiay 1.webp" 
-                      alt="Терапия" 
+                      alt="Терапевт" 
                       className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
                     />
                     <div className="flex-1 px-2 md:px-4">
@@ -1042,11 +900,11 @@ export default function ServicesPage() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
                   </Link>
-                ) : service.id === 'urology' ? (
-                <Link key={service.id} href="/services/urology" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
+                ) : service.id === 'urolog-golitsino' ? (
+                <Link key={service.id} href="/services/urolog-golitsino" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
                     <img 
                       src="/images/yslugi/yrolog.webp" 
-                      alt="Урология" 
+                      alt="Уролог" 
                       className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
                     />
                     <div className="flex-1 px-2 md:px-4">
@@ -1095,6 +953,38 @@ export default function ServicesPage() {
                     <img 
                       src="/images/yslugi/h3n2.webp" 
                       alt="Гонконгский грипп" 
+                      className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
+                    />
+                    <div className="flex-1 px-2 md:px-4">
+                      <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
+                        {service.title}
+                      </h3>
+                    </div>
+                    <svg className="w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-white group-hover:bg-emerald-500 rounded-full p-1 transition-all duration-300 flex-shrink-0 mr-2 md:mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </Link>
+                ) : service.id === 'psihiatr-golitsino' ? (
+                <Link key={service.id} href="/services/psihiatr-golitsino" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
+                    <img 
+                      src="/images/yslugi/terapiay 1.webp" 
+                      alt="Психиатр Голицино" 
+                      className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
+                    />
+                    <div className="flex-1 px-2 md:px-4">
+                      <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
+                        {service.title}
+                      </h3>
+                    </div>
+                    <svg className="w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-white group-hover:bg-emerald-500 rounded-full p-1 transition-all duration-300 flex-shrink-0 mr-2 md:mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </Link>
+                ) : service.id === 'onkolog-golitsino' ? (
+                <Link key={service.id} href="/services/onkolog-golitsino" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
+                    <img 
+                      src="/images/yslugi/mammalogy.webp" 
+                      alt="Онколог Голицино" 
                       className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
                     />
                     <div className="flex-1 px-2 md:px-4">
@@ -1340,10 +1230,10 @@ export default function ServicesPage() {
           {/* Второй ряд - маленькие карточки */}
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 md:gap-4 mb-4">
             {/* УЗИ */}
-            <Link href="/services/ultrasound" className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer group p-3 md:p-4">
+            <Link href="/services/uzi-golitsino" className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer group p-3 md:p-4">
               <div className="flex items-center justify-between">
                 <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
-                  УЗИ
+                  УЗИ Голицино
                 </h3>
                 <div className="w-5 h-5 md:w-6 md:h-6 bg-gray-100 rounded-full flex items-center justify-center group-hover:bg-emerald-500 group-hover:text-white transition-all duration-300">
                   <svg className="w-2 h-2 md:w-3 md:h-3 text-gray-400 group-hover:text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -1402,6 +1292,20 @@ export default function ServicesPage() {
               <div className="flex items-center justify-between">
                 <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
                   Функциональная диагностика
+                </h3>
+                <div className="w-5 h-5 md:w-6 md:h-6 bg-gray-100 rounded-full flex items-center justify-center group-hover:bg-emerald-500 group-hover:text-white transition-all duration-300">
+                  <svg className="w-2 h-2 md:w-3 md:h-3 text-gray-400 group-hover:text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
+              </div>
+            </Link>
+
+            {/* Манипуляции общего назначения */}
+            <Link href="/services/general-manipulations" className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer group p-3 md:p-4">
+              <div className="flex items-center justify-between">
+                <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
+                  Манипуляции общего назначения
                 </h3>
                 <div className="w-5 h-5 md:w-6 md:h-6 bg-gray-100 rounded-full flex items-center justify-center group-hover:bg-emerald-500 group-hover:text-white transition-all duration-300">
                   <svg className="w-2 h-2 md:w-3 md:h-3 text-gray-400 group-hover:text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -1972,123 +1876,59 @@ export default function ServicesPage() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
                 </Link>
-              ) : service.id === 'physiotherapy' ? (
-                <Link key={service.id} href="/services/physiotherapy" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
-                  <img 
-                    src="/images/yslugi/fizio.webp" 
-                    alt="Физиотерапия" 
-                    className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
-                  />
-                  <div className="flex-1 px-2 md:px-4">
-                      <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
-                        {service.title}
-                      </h3>
-                    </div>
-                  <svg className="w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-white group-hover:bg-emerald-500 rounded-full p-1 transition-all duration-300 flex-shrink-0 mr-2 md:mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </Link>
-              ) : service.id === 'psychotherapy' ? (
-                <Link key={service.id} href="/services/psychotherapy" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
-                  <img 
-                    src="/images/yslugi/yrolog.webp" 
-                    alt="Психотерапия" 
-                    className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
-                  />
-                  <div className="flex-1 px-2 md:px-4">
-                      <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
-                        {service.title}
-                      </h3>
-                    </div>
-                  <svg className="w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-white group-hover:bg-emerald-500 rounded-full p-1 transition-all duration-300 flex-shrink-0 mr-2 md:mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </Link>
-              ) : service.id === 'psychology' ? (
-                <Link key={service.id} href="/services/psychology" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
-                  <img 
-                    src="/images/yslugi/famili.webp" 
-                    alt="Психология" 
-                    className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
-                  />
-                  <div className="flex-1 px-2 md:px-4">
-                      <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
-                        {service.title}
-                      </h3>
-                    </div>
-                  <svg className="w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-white group-hover:bg-emerald-500 rounded-full p-1 transition-all duration-300 flex-shrink-0 mr-2 md:mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </Link>
-              ) : service.id === 'family-psychology' ? (
-                <Link key={service.id} href="/services/family-psychology" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
-                  <img 
-                    src="/images/yslugi/famili.webp" 
-                    alt="Семейная психология" 
-                    className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
-                  />
-                  <div className="flex-1 px-2 md:px-4">
-                      <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
-                        {service.title}
-                      </h3>
-                    </div>
-                  <svg className="w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-white group-hover:bg-emerald-500 rounded-full p-1 transition-all duration-300 flex-shrink-0 mr-2 md:mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </Link>
-              ) : service.id === 'massage' ? (
-                <Link key={service.id} href="/services/massage" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
-                  <img 
-                    src="/images/yslugi/massaj.webp" 
-                    alt="Массаж" 
-                    className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
-                  />
-                  <div className="flex-1 px-2 md:px-4">
-                      <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
-                        {service.title}
-                      </h3>
-                    </div>
-                  <svg className="w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-white group-hover:bg-emerald-500 rounded-full p-1 transition-all duration-300 flex-shrink-0 mr-2 md:mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </Link>
-              ) : service.id === 'vacuum-massage' ? (
-                <Link key={service.id} href="/services/vacuum-massage" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
-                  <img 
-                    src="/images/yslugi/vakum.webp" 
-                    alt="Вакуумный массаж" 
-                    className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
-                  />
-                  <div className="flex-1 px-2 md:px-4">
-                      <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
-                        {service.title}
-                      </h3>
-                    </div>
-                  <svg className="w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-white group-hover:bg-emerald-500 rounded-full p-1 transition-all duration-300 flex-shrink-0 mr-2 md:mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </Link>
-              ) : service.id === 'bioresonance' ? (
-                <Link key={service.id} href="/services/bioresonance" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
-                  <img 
-                    src="/images/yslugi/yrolog.webp" 
-                    alt="Биорезонансная терапия" 
-                    className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
-                  />
-                  <div className="flex-1 px-2 md:px-4">
-                      <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
-                        {service.title}
-                      </h3>
-                    </div>
-                  <svg className="w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-white group-hover:bg-emerald-500 rounded-full p-1 transition-all duration-300 flex-shrink-0 mr-2 md:mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </Link>
               ) : service.id === 'shockwave-therapy' ? (
                 <Link key={service.id} href="/services/shockwave-therapy" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
                   <img 
                     src="/images/yslugi/yrolog.webp" 
                     alt="Ударно-волновая терапия" 
+                    className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
+                  />
+                  <div className="flex-1 px-2 md:px-4">
+                      <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
+                        {service.title}
+                      </h3>
+                    </div>
+                  <svg className="w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-white group-hover:bg-emerald-500 rounded-full p-1 transition-all duration-300 flex-shrink-0 mr-2 md:mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              ) : service.id === 'manual-therapy' ? (
+                <Link key={service.id} href="/services/manual-therapy" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
+                  <img 
+                    src="/images/yslugi/massaj.webp" 
+                    alt="Мануальная терапия" 
+                    className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
+                  />
+                  <div className="flex-1 px-2 md:px-4">
+                      <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
+                        {service.title}
+                      </h3>
+                    </div>
+                  <svg className="w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-white group-hover:bg-emerald-500 rounded-full p-1 transition-all duration-300 flex-shrink-0 mr-2 md:mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              ) : service.id === 'functional-diagnostics' ? (
+                <Link key={service.id} href="/services/functional-diagnostics" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
+                  <img 
+                    src="/images/yslugi/Hardware diagnostics.webp" 
+                    alt="Функциональная диагностика" 
+                    className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
+                  />
+                  <div className="flex-1 px-2 md:px-4">
+                      <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
+                        {service.title}
+                      </h3>
+                    </div>
+                  <svg className="w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-white group-hover:bg-emerald-500 rounded-full p-1 transition-all duration-300 flex-shrink-0 mr-2 md:mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              ) : service.id === 'general-manipulations' ? (
+                <Link key={service.id} href="/services/general-manipulations" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
+                  <img 
+                    src="/images/yslugi/fizio.webp" 
+                    alt="Манипуляции общего назначения" 
                     className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
                   />
                   <div className="flex-1 px-2 md:px-4">
@@ -2127,185 +1967,16 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* Additional physiotherapy procedures */}
-      <section className="py-8 bg-gray-50 overflow-x-hidden">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl md:text-3xl font-bold text-black mb-6 text-center md:text-left">
-            Дополнительные процедуры физиотерапии
-          </h2>
-          
-          {/* Мобильная версия */}
-          <div className="md:hidden space-y-4">
-            <Link href="/services/lymph-e-massage" className="bg-[#DAF2FF] rounded-[20px] p-4 h-[140px] flex relative overflow-hidden">
-              <div className="flex-1 flex flex-col justify-between">
-                <h3 className="text-lg font-bold">Пневмомассажер Лимфа-Э</h3>
-                <button className="bg-white text-black rounded-full px-6 py-2 w-fit text-sm">
-                  Подробнее
-                </button>
-              </div>
-            </Link>
-            
-            <div className="grid grid-cols-2 gap-3">
-              <Link href="/services/elgos-therapy" className="bg-[#FFD9E0] rounded-[20px] p-3 h-[140px] flex flex-col justify-between">
-                <h3 className="text-sm font-semibold">Аппарат глубокой осцилляции «ЭЛГОС»</h3>
-                <button className="bg-white text-black rounded-full px-4 py-1 w-fit text-xs">
-                  Подробнее
-                </button>
-              </Link>
-              
-              <Link href="/services/tekar-therapy" className="bg-[#FADFFF] rounded-[20px] p-3 h-[140px] flex flex-col justify-between">
-                <h3 className="text-sm font-semibold">Текар-терапия</h3>
-                <button className="bg-white text-black rounded-full px-4 py-1 w-fit text-xs">
-                  Подробнее
-                </button>
-              </Link>
-              
-              <Link href="/services/hilt-laser" className="bg-[#DBF0E9] rounded-[20px] p-3 h-[140px] flex flex-col justify-between">
-                <h3 className="text-sm font-semibold">Высокоинтенсивный лазер HILT</h3>
-                <button className="bg-white text-black rounded-full px-4 py-1 w-fit text-xs">
-                  Подробнее
-                </button>
-              </Link>
-              
-              <Link href="/services/sis-magnetotherapy" className="bg-[#FFF6C1] rounded-[20px] p-3 h-[140px] flex flex-col justify-between">
-                <h3 className="text-sm font-semibold">Высокоинтенсивная магнитотерапия (SIS)</h3>
-                <button className="bg-white text-black rounded-full px-4 py-1 w-fit text-xs">
-                  Подробнее
-                </button>
-              </Link>
-            </div>
-          </div>
-          
-          {/* Десктопная версия */}
-          <div className="hidden md:flex flex-col lg:flex-row gap-6 max-w-full mx-auto">
-            {/* Левый большой блок */}
-            <Link href="/services/lymph-e-massage" className="bg-[#DAF2FF] rounded-[20px] w-full lg:w-[593px] lg:max-w-[593px] h-[300px] md:h-[374px] flex flex-shrink-0 relative overflow-hidden">
-              <div className="p-6 md:p-8 flex flex-col justify-between z-10 w-full lg:w-[60%]">
-                <div>
-                  <h3 className="text-xl md:text-2xl font-bold mb-4">Пневмомассажер Лимфа-Э</h3>
-                </div>
-                
-                <button className="bg-white text-black rounded-full px-8 py-2 w-fit">
-                  Подробнее
-                </button>
-              </div>
-              
-              <div className="hidden lg:block absolute bottom-0 right-0 h-full w-[40%]">
-                <Image 
-                  src="/images/yslugi/Pneumatic massager Lymfa-E.webp" 
-                  alt="Пневмомассажер Лимфа-Э" 
-                  fill
-                  className="object-cover"
-                />
-              </div>
-            </Link>
-            
-            {/* Правая колонка с 4 блоками */}
-            <div className="flex flex-col gap-4 md:gap-6 flex-1 min-w-0 max-w-full">
-              {/* Верхний ряд */}
-              <div className="flex flex-col md:flex-row gap-4 md:gap-6">
-                {/* Блок 1 */}
-                <Link href="/services/elgos-therapy" className="bg-[#FFD9E0] rounded-[20px] w-full md:w-[calc(50%-12px)] lg:w-[332px] lg:max-w-[332px] h-[175px] p-4 md:p-6 flex flex-col justify-between relative overflow-hidden flex-shrink-0">
-                  <div className="hidden md:block absolute right-0 top-1/2 transform -translate-y-1/2 z-0">
-                    <Image 
-                      src="/images/yslugi/Deep oscillation d2evice.webp" 
-                      alt="Аппарат глубокой осцилляции ЭЛГОС" 
-                      width={120} 
-                      height={140}
-                      className="object-contain"
-                    />
-                  </div>
-                  <div className="relative z-10">
-                    <h3 className="text-sm md:text-base font-semibold mb-1 overflow-hidden text-ellipsis">Аппарат глубокой осцилляции «ЭЛГОС»</h3>
-                  </div>
-                  
-                  <button className="bg-white text-black rounded-full px-4 md:px-6 py-1 w-fit text-xs md:text-sm relative z-10">
-                    Подробнее
-                  </button>
-                </Link>
-                
-                {/* Блок 2 */}
-                <Link href="/services/tekar-therapy" className="bg-[#FADFFF] rounded-[20px] w-full md:w-[calc(50%-12px)] lg:w-[332px] lg:max-w-[332px] h-[175px] p-4 md:p-6 flex flex-col justify-between relative overflow-hidden flex-shrink-0">
-                  <div className="hidden md:block absolute right-0 bottom-0 z-0">
-                    <Image 
-                      src="/images/yslugi/Tekar therapy.webp" 
-                      alt="Текар-терапия" 
-                      width={180} 
-                      height={140}
-                      className="object-contain"
-                    />
-                  </div>
-                  <div className="relative z-10">
-                    <h3 className="text-sm md:text-base font-semibold mb-1 overflow-hidden text-ellipsis">Текар-терапия</h3>
-                  </div>
-                  
-                  <button className="bg-white text-black rounded-full px-4 md:px-6 py-1 w-fit text-xs md:text-sm relative z-10">
-                    Подробнее
-                  </button>
-                </Link>
-              </div>
-              
-              {/* Нижний ряд */}
-              <div className="flex flex-col md:flex-row gap-4 md:gap-6">
-                {/* Блок 3 */}
-                <Link href="/services/hilt-laser" className="bg-[#DBF0E9] rounded-[20px] w-full md:w-[calc(50%-12px)] lg:w-[332px] lg:max-w-[332px] h-[175px] p-4 md:p-6 flex flex-col justify-between relative overflow-hidden flex-shrink-0">
-                  <div className="hidden md:block absolute right-0 bottom-0 z-0">
-                    <Image 
-                      src="/images/yslugi/High Intensity Laser HILT.webp" 
-                      alt="Высокоинтенсивный лазер HILT" 
-                      width={280} 
-                      height={140}
-                      className="object-contain rounded-xl"
-                    />
-                  </div>
-                  <div className="relative z-10">
-                    <h3 className="text-sm md:text-base font-semibold mb-1">
-                      Высокоинтенсивный<br />лазер HILT
-                    </h3>
-                  </div>
-                  
-                  <button className="bg-white text-black rounded-full px-4 md:px-6 py-1 w-fit text-xs md:text-sm relative z-10">
-                    Подробнее
-                  </button>
-                </Link>
-                
-                {/* Блок 4 */}
-                <Link href="/services/sis-magnetotherapy" className="bg-[#FFF6C1] rounded-[20px] w-full md:w-[calc(50%-12px)] lg:w-[332px] lg:max-w-[332px] h-[175px] p-4 md:p-6 flex flex-col justify-between relative overflow-hidden flex-shrink-0">
-                  <div className="hidden md:block absolute right-0 bottom-0 z-0">
-                    <Image
-                      src="/images/yslugi/High Intensity Magnetic Therapy (SIS).webp" 
-                      alt="Высокоинтенсивная магнитотерапия SIS" 
-                      width={185} 
-                      height={140}
-                      className="object-contain rounded-xl"
-                    />
-                  </div>
-                  <div className="relative z-10">
-                    <h3 className="text-sm md:text-base font-semibold mb-1 overflow-hidden text-ellipsis">
-                      Высокоинтенсивная магнитотерапия (SIS)
-                    </h3>
-                  </div>
-                  
-                  <button className="bg-white text-black rounded-full px-4 md:px-6 py-1 w-fit text-xs md:text-sm relative z-10">
-                    Подробнее
-                  </button>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Второй контейнер услуг */}
       <section className="py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 justify-items-center">
             {secondContainerData.map((service) => (
-              service.id === 'urology' ? (
-                <Link key={service.id} href="/services/urology" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
+              service.id === 'urolog-golitsino' ? (
+                <Link key={service.id} href="/services/urolog-golitsino" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
                   <img 
                     src="/images/yslugi/yrolog.webp" 
-                    alt="Урология" 
+                    alt="Уролог" 
                     className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
                   />
                   <div className="flex-1 px-2 md:px-4">
@@ -2361,6 +2032,38 @@ export default function ServicesPage() {
                         {service.title}
                       </h3>
                     </div>
+                  <svg className="w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-white group-hover:bg-emerald-500 rounded-full p-1 transition-all duration-300 flex-shrink-0 mr-2 md:mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              ) : service.id === 'psihiatr-golitsino' ? (
+                <Link key={service.id} href="/services/psihiatr-golitsino" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
+                  <img 
+                    src="/images/yslugi/terapiay 1.webp" 
+                    alt="Психиатр Голицино" 
+                    className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
+                  />
+                  <div className="flex-1 px-2 md:px-4">
+                      <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
+                        {service.title}
+                      </h3>
+                    </div>
+                  <svg className="w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-white group-hover:bg-emerald-500 rounded-full p-1 transition-all duration-300 flex-shrink-0 mr-2 md:mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              ) : service.id === 'onkolog-golitsino' ? (
+                <Link key={service.id} href="/services/onkolog-golitsino" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
+                  <img 
+                    src="/images/yslugi/mammalogy.webp" 
+                    alt="Онколог Голицино" 
+                    className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
+                  />
+                  <div className="flex-1 px-2 md:px-4">
+                    <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
+                      {service.title}
+                    </h3>
+                  </div>
                   <svg className="w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-white group-hover:bg-emerald-500 rounded-full p-1 transition-all duration-300 flex-shrink-0 mr-2 md:mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>

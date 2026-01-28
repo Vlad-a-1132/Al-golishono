@@ -136,10 +136,10 @@ export default function OrthodonticsPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div>
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-                Ортодонтия в клинике «Альтамед-с»
+                Ортодонтия в клинике «Альтамед Голицино»
               </h1>
               <p className="text-lg md:text-xl mb-8 text-emerald-100">
-                Исправление прикуса брекетами, элайнерами и ретейнерами в Одинцово
+                Исправление прикуса брекетами, элайнерами и ретейнерами в Альтамед Голицино
               </p>
             </div>
             <div className="relative">
@@ -157,7 +157,7 @@ export default function OrthodonticsPage() {
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <div className="bg-gradient-to-br from-pink-50 to-rose-50 rounded-[20px] shadow-lg p-8 md:p-12">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6 text-center">
-              Методы исправления прикуса в стоматологии Одинцово
+              Методы исправления прикуса в стоматологии Альтамед Голицино
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
               <div className="bg-white rounded-lg p-6 shadow-md">
@@ -214,7 +214,7 @@ export default function OrthodonticsPage() {
       <section className="py-12 bg-gray-50">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8 text-center">
-            Услуги ортодонтии в Одинцово
+            Услуги ортодонтии в Альтамед Голицино
           </h2>
           
           <div className="bg-white rounded-[20px] shadow-lg p-6 md:p-8">
@@ -255,7 +255,7 @@ export default function OrthodonticsPage() {
               ))}
             </div>
             <div className="mt-8 text-center">
-              <Link href="https://online.altamed-c.ru/" target="_blank" rel="noopener noreferrer" className="bg-emerald-500 text-white px-8 py-3 rounded-full font-medium hover:bg-emerald-600 transition-colors inline-block">
+              <Link href="https://reg.altamed-golitsino.ru/" target="_blank" rel="noopener noreferrer" className="bg-emerald-500 text-white px-8 py-3 rounded-full font-medium hover:bg-emerald-600 transition-colors inline-block">
                 Записаться на консультацию
               </Link>
             </div>
@@ -267,7 +267,7 @@ export default function OrthodonticsPage() {
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <div className="bg-white rounded-[20px] shadow-lg p-8 md:p-12">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8 text-center">
-              Когда нужна ортодонтическая помощь в Одинцово
+              Когда нужна ортодонтическая помощь в Альтамед Голицино
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               {[
@@ -298,7 +298,7 @@ export default function OrthodonticsPage() {
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <div className="bg-gradient-to-br from-pink-50 to-rose-50 rounded-[20px] shadow-lg p-8 md:p-12">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8 text-center">
-              Преимущества ортодонтического лечения в «Альтамед-с» Одинцово
+              Преимущества ортодонтического лечения в «Альтамед Голицино» Альтамед Голицино
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {[
@@ -323,17 +323,17 @@ export default function OrthodonticsPage() {
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <div className="bg-white rounded-[20px] shadow-lg p-8 md:p-12">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8 text-center">
-              Стоимость ортодонтического лечения в стоматологии Одинцово
+              Стоимость ортодонтического лечения в стоматологии Альтамед Голицино
             </h2>
             <div className="prose prose-lg max-w-none text-gray-700">
               <p className="mb-4">
-                Цены на ортодонтическое лечение в клинике «Альтамед-с» Одинцово зависят от выбранной системы (брекеты или элайнеры), сложности случая и длительности лечения. Ортодонтия в Одинцово позволяет исправить прикус в любом возрасте.
+                Цены на ортодонтическое лечение в клинике «Альтамед Голицино» Альтамед Голицино зависят от выбранной системы (брекеты или элайнеры), сложности случая и длительности лечения. Ортодонтия в Альтамед Голицино позволяет исправить прикус в любом возрасте.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
                 <div className="bg-pink-50 rounded-lg p-6">
-                  <h3 className="text-xl font-semibold text-gray-800 mb-3">Брекет-системы в Одинцово</h3>
+                  <h3 className="text-xl font-semibold text-gray-800 mb-3">Брекет-системы в Альтамед Голицино</h3>
                   <p className="text-gray-600 mb-3">
-                    Брекеты в стоматологии Одинцово — это классический метод исправления прикуса. Цены зависят от материала: металлические — наиболее доступные, сапфировые — максимально эстетичные, лингвальные — полностью скрытые.
+                    Брекеты в стоматологии Альтамед Голицино — это классический метод исправления прикуса. Цены зависят от материала: металлические — наиболее доступные, сапфировые — максимально эстетичные, лингвальные — полностью скрытые.
                   </p>
                   <ul className="space-y-2 text-gray-600">
                     <li className="flex items-start">
@@ -357,9 +357,9 @@ export default function OrthodonticsPage() {
                   </ul>
                 </div>
                 <div className="bg-purple-50 rounded-lg p-6">
-                  <h3 className="text-xl font-semibold text-gray-800 mb-3">Элайнеры в Одинцово</h3>
+                  <h3 className="text-xl font-semibold text-gray-800 mb-3">Элайнеры в Альтамед Голицино</h3>
                   <p className="text-gray-600 mb-3">
-                    Элайнеры в клинике «Альтамед-с» Одинцово — это современная альтернатива брекетам. Прозрачные каппы практически незаметны и обеспечивают комфортное ношение. Цена зависит от сложности случая.
+                    Элайнеры в клинике «Альтамед Голицино» Альтамед Голицино — это современная альтернатива брекетам. Прозрачные каппы практически незаметны и обеспечивают комфортное ношение. Цена зависит от сложности случая.
                   </p>
                   <ul className="space-y-2 text-gray-600">
                     <li className="flex items-start">
@@ -384,7 +384,7 @@ export default function OrthodonticsPage() {
                 </div>
               </div>
               <p className="mt-6 text-gray-600">
-                Точную стоимость ортодонтического лечения в стоматологии Одинцово можно узнать после консультации и диагностики. Мы предлагаем рассрочку оплаты и комплексные программы лечения. Запишитесь на прием в «Альтамед-с» Одинцово для получения детальной информации.
+                Точную стоимость ортодонтического лечения в стоматологии Альтамед Голицино можно узнать после консультации и диагностики. Мы предлагаем рассрочку оплаты и комплексные программы лечения. Запишитесь на прием в «Альтамед Голицино» Альтамед Голицино для получения детальной информации.
               </p>
             </div>
           </div>
@@ -396,34 +396,34 @@ export default function OrthodonticsPage() {
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <div className="bg-gradient-to-br from-pink-50 to-purple-50 rounded-[20px] shadow-lg p-8 md:p-12">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8 text-center">
-              Виды ортодонтического лечения в стоматологии Одинцово
+              Виды ортодонтического лечения в стоматологии Альтамед Голицино
             </h2>
             <div className="space-y-8">
               <div className="bg-white rounded-lg p-6 shadow-md">
-                <h3 className="text-xl font-semibold text-gray-800 mb-4">Брекет-системы в Одинцово</h3>
+                <h3 className="text-xl font-semibold text-gray-800 mb-4">Брекет-системы в Альтамед Голицино</h3>
                 <p className="text-gray-700 mb-4">
-                  Брекет-системы в клинике «Альтамед-с» Одинцово — это наиболее эффективный метод исправления прикуса. Металлические брекеты — классический вариант с высокой надежностью. Керамические и сапфировые брекеты в стоматологии Одинцово обеспечивают эстетику, сливаясь с цветом зубов. Лингвальные брекеты устанавливаются с внутренней стороны зубов и полностью незаметны.
+                  Брекет-системы в клинике «Альтамед Голицино» Альтамед Голицино — это наиболее эффективный метод исправления прикуса. Металлические брекеты — классический вариант с высокой надежностью. Керамические и сапфировые брекеты в стоматологии Альтамед Голицино обеспечивают эстетику, сливаясь с цветом зубов. Лингвальные брекеты устанавливаются с внутренней стороны зубов и полностью незаметны.
                 </p>
                 <p className="text-gray-700">
-                  Лечение на брекетах в стоматологии Одинцово занимает от 1 до 2 лет в зависимости от сложности случая. Регулярные визиты к ортодонту в клинике Одинцово необходимы для активации аппарата и контроля процесса лечения.
+                  Лечение на брекетах в стоматологии Альтамед Голицино занимает от 1 до 2 лет в зависимости от сложности случая. Регулярные визиты к ортодонту в клинике Альтамед Голицино необходимы для активации аппарата и контроля процесса лечения.
                 </p>
               </div>
               <div className="bg-white rounded-lg p-6 shadow-md">
-                <h3 className="text-xl font-semibold text-gray-800 mb-4">Элайнеры в Одинцово</h3>
+                <h3 className="text-xl font-semibold text-gray-800 mb-4">Элайнеры в Альтамед Голицино</h3>
                 <p className="text-gray-700 mb-4">
-                  Элайнеры в стоматологии Одинцово — это прозрачные каппы, которые изготавливаются индивидуально для каждого пациента. В клинике «Альтамед-с» Одинцово мы используем элайнеры для исправления легких и средних нарушений прикуса. Каппы сменяются каждые 1-2 недели, постепенно перемещая зубы в правильное положение.
+                  Элайнеры в стоматологии Альтамед Голицино — это прозрачные каппы, которые изготавливаются индивидуально для каждого пациента. В клинике «Альтамед Голицино» Альтамед Голицино мы используем элайнеры для исправления легких и средних нарушений прикуса. Каппы сменяются каждые 1-2 недели, постепенно перемещая зубы в правильное положение.
                 </p>
                 <p className="text-gray-700">
-                  Преимущества элайнеров в Одинцово: полная незаметность, удобство ношения, возможность снятия для гигиены и приема пищи. Лечение элайнерами в стоматологии Одинцово особенно популярно среди взрослых пациентов, ценящих эстетику.
+                  Преимущества элайнеров в Альтамед Голицино: полная незаметность, удобство ношения, возможность снятия для гигиены и приема пищи. Лечение элайнерами в стоматологии Альтамед Голицино особенно популярно среди взрослых пациентов, ценящих эстетику.
                 </p>
               </div>
               <div className="bg-white rounded-lg p-6 shadow-md">
-                <h3 className="text-xl font-semibold text-gray-800 mb-4">Ретейнеры в Одинцово</h3>
+                <h3 className="text-xl font-semibold text-gray-800 mb-4">Ретейнеры в Альтамед Голицино</h3>
                 <p className="text-gray-700 mb-4">
-                  После завершения ортодонтического лечения в стоматологии Одинцово необходимо закрепить результат с помощью ретейнеров. В клинике «Альтамед-с» Одинцово мы устанавливаем как несъемные лингвальные ретейнеры, так и съемные каппы для ночного ношения.
+                  После завершения ортодонтического лечения в стоматологии Альтамед Голицино необходимо закрепить результат с помощью ретейнеров. В клинике «Альтамед Голицино» Альтамед Голицино мы устанавливаем как несъемные лингвальные ретейнеры, так и съемные каппы для ночного ношения.
                 </p>
                 <p className="text-gray-700">
-                  Ретенционный период в стоматологии Одинцово может длиться столько же, сколько и само лечение. Ношение ретейнеров в клинике Одинцово предотвращает возврат зубов в исходное положение и закрепляет достигнутый результат.
+                  Ретенционный период в стоматологии Альтамед Голицино может длиться столько же, сколько и само лечение. Ношение ретейнеров в клинике Альтамед Голицино предотвращает возврат зубов в исходное положение и закрепляет достигнутый результат.
                 </p>
               </div>
             </div>
@@ -436,13 +436,13 @@ export default function OrthodonticsPage() {
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <div className="bg-white rounded-[20px] shadow-lg p-8 md:p-12">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8 text-center">
-              В каком возрасте лучше начинать ортодонтическое лечение в Одинцово
+              В каком возрасте лучше начинать ортодонтическое лечение в Альтамед Голицино
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="bg-gradient-to-br from-pink-50 to-purple-50 rounded-lg p-6">
-                <h3 className="text-xl font-semibold text-gray-800 mb-4">Детская ортодонтия в Одинцово</h3>
+                <h3 className="text-xl font-semibold text-gray-800 mb-4">Детская ортодонтия в Альтамед Голицино</h3>
                 <p className="text-gray-700 mb-4">
-                  Первая консультация ортодонта в клинике «Альтамед-с» Одинцово рекомендуется в возрасте 6-7 лет, когда начинается смена молочных зубов на постоянные. Раннее ортодонтическое лечение в стоматологии Одинцово может предотвратить развитие серьезных нарушений прикуса и сократить длительность лечения в будущем.
+                  Первая консультация ортодонта в клинике «Альтамед Голицино» Альтамед Голицино рекомендуется в возрасте 6-7 лет, когда начинается смена молочных зубов на постоянные. Раннее ортодонтическое лечение в стоматологии Альтамед Голицино может предотвратить развитие серьезных нарушений прикуса и сократить длительность лечения в будущем.
                 </p>
                 <ul className="space-y-2 text-gray-700">
                   <li className="flex items-start">
@@ -466,9 +466,9 @@ export default function OrthodonticsPage() {
                 </ul>
               </div>
               <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-lg p-6">
-                <h3 className="text-xl font-semibold text-gray-800 mb-4">Ортодонтия для взрослых в Одинцово</h3>
+                <h3 className="text-xl font-semibold text-gray-800 mb-4">Ортодонтия для взрослых в Альтамед Голицино</h3>
                 <p className="text-gray-700 mb-4">
-                  Ортодонтическое лечение в стоматологии Одинцово возможно в любом возрасте. Взрослые пациенты в клинике «Альтамед-с» Одинцово часто выбирают элайнеры или лингвальные брекеты из-за эстетических соображений. Лечение во взрослом возрасте может занять больше времени, но результаты не менее эффективны.
+                  Ортодонтическое лечение в стоматологии Альтамед Голицино возможно в любом возрасте. Взрослые пациенты в клинике «Альтамед Голицино» Альтамед Голицино часто выбирают элайнеры или лингвальные брекеты из-за эстетических соображений. Лечение во взрослом возрасте может занять больше времени, но результаты не менее эффективны.
                 </p>
                 <ul className="space-y-2 text-gray-700">
                   <li className="flex items-start">
@@ -494,7 +494,7 @@ export default function OrthodonticsPage() {
             </div>
             <div className="mt-8 bg-white rounded-lg p-6 border-2 border-pink-200">
               <p className="text-gray-700 text-lg leading-relaxed">
-                Ортодонтическое лечение в клинике «Альтамед-с» Одинцово эффективно в любом возрасте. Специалисты стоматологии Одинцово подбирают оптимальный метод лечения с учетом индивидуальных особенностей пациента и его пожеланий. Раннее начало лечения позволяет сократить его длительность и избежать осложнений. Однако никогда не поздно начать исправление прикуса в стоматологии Одинцово для улучшения здоровья и эстетики улыбки.
+                Ортодонтическое лечение в клинике «Альтамед Голицино» Альтамед Голицино эффективно в любом возрасте. Специалисты стоматологии Альтамед Голицино подбирают оптимальный метод лечения с учетом индивидуальных особенностей пациента и его пожеланий. Раннее начало лечения позволяет сократить его длительность и избежать осложнений. Однако никогда не поздно начать исправление прикуса в стоматологии Альтамед Голицино для улучшения здоровья и эстетики улыбки.
               </p>
             </div>
           </div>
@@ -505,9 +505,9 @@ export default function OrthodonticsPage() {
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div className="lg:col-span-2 space-y-5 text-gray-700 leading-relaxed">
-              <h2 className="text-3xl font-bold text-gray-900">Стоматолог-ортодонт в Одинцово: почему выбирают нас</h2>
+              <h2 className="text-3xl font-bold text-gray-900">Стоматолог-ортодонт в Альтамед Голицино: почему выбирают нас</h2>
               <p>
-                Клиника «Альтамед-С» предлагает услуги ортодонтии в Одинцово — исправление прикуса брекетами,
+                Клиника «Альтамед Голицино» предлагает услуги ортодонтии в Альтамед Голицино — исправление прикуса брекетами,
                 элайнерами, ретейнерами. Мы применяем современные технологии, качественные аппараты и обеспечиваем
                 эффективное исправление прикуса.
               </p>
@@ -517,13 +517,13 @@ export default function OrthodonticsPage() {
                 элайнерами и другими методами ортодонтии.
               </p>
               <p>
-                Прозрачные цены позволяют планировать бюджет — стоимость ортодонтии в Одинцово
+                Прозрачные цены позволяют планировать бюджет — стоимость ортодонтии в Альтамед Голицино
                 фиксируется заранее, а пациенты получают подробную информацию о процедурах.
               </p>
             </div>
             <div className="bg-gray-50 rounded-[20px] p-6 shadow-md border-l-4 border-[#4A5568]">
               <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Что вы получаете, выбирая «Альтамед-С»
+                Что вы получаете, выбирая «Альтамед Голицино»
               </h3>
               <ul className="space-y-3 text-gray-700 text-sm md:text-base leading-relaxed">
                 <li className="flex items-start">
@@ -551,11 +551,11 @@ export default function OrthodonticsPage() {
       <section className="py-12 bg-gray-50">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <h2 className="text-3xl font-bold text-gray-900 mb-6">
-            Отзывы пациентов о стоматологе-ортодонте в Одинцово
+            Отзывы пациентов о стоматологе-ортодонте в Альтамед Голицино
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Реальные отзывы из Одинцово</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Реальные отзывы из Альтамед Голицино</h3>
               <p className="text-gray-700 text-sm md:text-base leading-relaxed">
                 Пациенты отмечают эффективность исправления прикуса, качество брекет-систем
                 и внимательное отношение ортодонтов к процессу лечения.
@@ -571,7 +571,7 @@ export default function OrthodonticsPage() {
             <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
               <h3 className="text-xl font-semibold text-gray-900 mb-3">Комфортное лечение</h3>
               <p className="text-gray-700 text-sm md:text-base leading-relaxed">
-                После установки брекетов в Одинцове пациенты отмечают комфорт; ортодонты дают
+                После установки брекетов в Голицино пациенты отмечают комфорт; ортодонты дают
                 подробные инструкции по уходу за аппаратами.
               </p>
             </div>
@@ -582,7 +582,7 @@ export default function OrthodonticsPage() {
       <section className="py-12 bg-white">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <h2 className="text-3xl font-bold text-gray-900 mb-6">
-            Частые вопросы о стоматологе-ортодонте в Одинцово
+            Частые вопросы о стоматологе-ортодонте в Альтамед Голицино
           </h2>
           <div className="space-y-4">
             <details className="group bg-gray-50 rounded-[20px] shadow-md border border-gray-100">
@@ -633,15 +633,15 @@ export default function OrthodonticsPage() {
           <div className="bg-gradient-to-r from-[#4A5568] to-[#5A6474] rounded-[20px] p-8 md:p-12 text-white flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
             <div className="max-w-3xl">
               <h2 className="text-2xl md:text-3xl font-bold mb-4">
-                Стоматолог-ортодонт в Одинцово — начните с консультации
+                Стоматолог-ортодонт в Альтамед Голицино — начните с консультации
               </h2>
               <p className="text-white/90 text-sm md:text-base leading-relaxed">
-                Запишитесь на консультацию в клинику «Альтамед-С», чтобы узнать стоимость исправления прикуса,
+                Запишитесь на консультацию в клинику «Альтамед Голицино», чтобы узнать стоимость исправления прикуса,
                 подобрать подходящие аппараты и получить индивидуальный план лечения.
               </p>
             </div>
             <Link
-              href="https://online.altamed-c.ru/"
+              href="https://reg.altamed-golitsino.ru/"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white text-[#4A5568] rounded-full px-8 py-3 font-medium hover:bg-gray-100 transition-colors text-center"
@@ -660,9 +660,9 @@ export default function OrthodonticsPage() {
               __html: JSON.stringify({
                 "@context": "https://schema.org",
                 "@type": "MedicalBusiness",
-                name: "Клиника «Альтамед-С» — ортодонтия в Одинцово",
-                url: "https://altamed-c.ru/services/dentistry/orthodontics",
-                image: "https://altamed-c.ru/images/dentisrty/task_01kb59xabnenht3qwt33mm5r8v_1764336113_img_0.webp",
+                name: "Клиника «Альтамед Голицино» — ортодонтия в Альтамед Голицино",
+                url: "https://altamed-golitsino.ru/services/dentistry/orthodontics",
+                image: "https://altamed-golitsino.ru/images/dentisrty/task_01kb59xabnenht3qwt33mm5r8v_1764336113_img_0.webp",
                 medicalSpecialty: "Dental",
                 aggregateRating: {
                   "@type": "AggregateRating",
@@ -671,18 +671,18 @@ export default function OrthodonticsPage() {
                 },
                 address: {
                   "@type": "PostalAddress",
-                  addressLocality: "Одинцово",
+                  addressLocality: "Альтамед Голицино",
                   addressRegion: "Московская область",
                   streetAddress: "ул. Советская, 9"
                 },
                 telephone: "+7 (495) 640-09-03",
                 priceRange: "₽₽₽",
                 serviceType: "Ортодонтия",
-                areaServed: "Одинцово и Одинцовский городской округ",
+                areaServed: "Альтамед Голицино и Одинцовский городской округ",
                 description:
-                  "Ортодонтия в Одинцово: исправление прикуса брекетами, элайнерами, ретейнерами. Опытные ортодонты, современные методы. Запишитесь на консультацию в клинику «Альтамед-С».",
+                  "Ортодонтия в Альтамед Голицино: исправление прикуса брекетами, элайнерами, ретейнерами. Опытные ортодонты, современные методы. Запишитесь на консультацию в клинику «Альтамед Голицино».",
                 sameAs: [
-                  "https://altamed-c.ru",
+                  "https://altamed-golitsino.ru",
                   "https://yandex.ru/maps/org/altamed_s/1919839667"
                 ]
               })

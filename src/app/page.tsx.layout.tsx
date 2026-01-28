@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     siteName: 'Альтамед-с',
     images: [
       {
-        url: 'https://altamed-s.ru/images/icons/S.webp',
+        url: 'https://altamed-s.ru/images/icons/altamed-golicyno3.png',
         width: 1200,
         height: 630,
         alt: 'Медицинский центр Альтамед-с',
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Медицинский центр Альтамед-Св Одинцово - Запись к врачу онлайн',
     description: 'Медицинский центр Альтамед-Св Одинцово - многопрофильная клиника с широким спектром медицинских услуг.',
-    images: ['https://altamed-s.ru/images/icons/S.webp'],
+    images: ['https://altamed-s.ru/images/icons/altamed-golicyno3.png'],
   },
   alternates: {
     canonical: 'https://altamed-s.ru',

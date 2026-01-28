@@ -41,10 +41,10 @@ export default function AestheticPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div>
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-                Эстетическая стоматология в клинике «Альтамед-с»
+                Эстетическая стоматология в клинике «Альтамед Голицино»
               </h1>
               <p className="text-lg md:text-xl mb-8 text-emerald-100">
-                Профессиональное отбеливание зубов системой PHILIPS ZOOM4 в Одинцово
+                Профессиональное отбеливание зубов системой PHILIPS ZOOM4 в Альтамед Голицино
               </p>
             </div>
             <div className="relative">
@@ -62,9 +62,9 @@ export default function AestheticPage() {
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div className="lg:col-span-2 space-y-5 text-gray-700 leading-relaxed">
-              <h2 className="text-3xl font-bold text-gray-900">Эстетическая стоматология в Одинцово: почему выбирают нас</h2>
+              <h2 className="text-3xl font-bold text-gray-900">Эстетическая стоматология в Альтамед Голицино: почему выбирают нас</h2>
               <p>
-                Клиника «Альтамед-С» предлагает услуги эстетической стоматологии в Одинцово — профессиональное
+                Клиника «Альтамед Голицино» предлагает услуги эстетической стоматологии в Альтамед Голицино — профессиональное
                 отбеливание зубов системой PHILIPS ZOOM4, реставрацию, виниры и другие процедуры для создания
                 идеальной улыбки. Мы применяем современные технологии, качественные материалы и обеспечиваем
                 долговечный эстетичный результат.
@@ -75,13 +75,13 @@ export default function AestheticPage() {
                 зубы на несколько тонов за одно посещение.
               </p>
               <p>
-                Прозрачные цены позволяют планировать бюджет — стоимость эстетической стоматологии в Одинцово
+                Прозрачные цены позволяют планировать бюджет — стоимость эстетической стоматологии в Альтамед Голицино
                 фиксируется заранее, а пациенты получают подробную информацию о процедуре.
               </p>
             </div>
             <div className="bg-gray-50 rounded-[20px] p-6 shadow-md border-l-4 border-[#4A5568]">
               <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Что вы получаете, выбирая «Альтамед-С»
+                Что вы получаете, выбирая «Альтамед Голицино»
               </h3>
               <ul className="space-y-3 text-gray-700 text-sm md:text-base leading-relaxed">
                 <li className="flex items-start">
@@ -108,7 +108,7 @@ export default function AestheticPage() {
 
       <section className="py-12 bg-gray-50">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">Преимущества эстетической стоматологии в «Альтамед-С»</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">Преимущества эстетической стоматологии в «Альтамед Голицино»</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
               <h3 className="text-xl font-semibold text-gray-900 mb-3">Опытные стоматологи</h3>
@@ -159,7 +159,7 @@ export default function AestheticPage() {
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <div className="bg-gradient-to-br from-pink-50 to-purple-50 rounded-[20px] shadow-lg p-8 md:p-12">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6 text-center">
-              Отбеливание зубов ZOOM4 в Одинцово
+              Отбеливание зубов ZOOM4 в Альтамед Голицино
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
               <div className="bg-white rounded-lg p-6 shadow-md">
@@ -191,7 +191,7 @@ export default function AestheticPage() {
               <div className="bg-white rounded-lg p-6 shadow-md">
                 <h3 className="text-xl font-semibold text-gray-800 mb-3">Эстетическая стоматология</h3>
                 <p className="text-gray-600">
-                  Процедуры, направленные в первую очередь на улучшение внешнего вида зубов. Отбеливание, реставрация, виниры — все для создания идеальной улыбки в Одинцово.
+                  Процедуры, направленные в первую очередь на улучшение внешнего вида зубов. Отбеливание, реставрация, виниры — все для создания идеальной улыбки в Альтамед Голицино.
                 </p>
               </div>
             </div>
@@ -202,7 +202,7 @@ export default function AestheticPage() {
       <section className="py-12 bg-gray-50">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8 text-center">
-            Услуги эстетической стоматологии в Одинцово
+            Услуги эстетической стоматологии в Альтамед Голицино
           </h2>
           
           <div className="bg-white rounded-[20px] shadow-lg p-6 md:p-8">
@@ -243,7 +243,7 @@ export default function AestheticPage() {
               ))}
             </div>
             <div className="mt-8 text-center">
-              <Link href="https://online.altamed-c.ru/" target="_blank" rel="noopener noreferrer" className="bg-emerald-500 text-white px-8 py-3 rounded-full font-medium hover:bg-emerald-600 transition-colors inline-block">
+              <Link href="https://reg.altamed-golitsino.ru/" target="_blank" rel="noopener noreferrer" className="bg-emerald-500 text-white px-8 py-3 rounded-full font-medium hover:bg-emerald-600 transition-colors inline-block">
                 Записаться на отбеливание
               </Link>
             </div>
@@ -254,16 +254,16 @@ export default function AestheticPage() {
       <section className="py-12 bg-white">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <h2 className="text-3xl font-bold text-gray-900 mb-6">
-            Эстетическая стоматология в Одинцово: цены и отзывы пациентов
+            Эстетическая стоматология в Альтамед Голицино: цены и отзывы пациентов
           </h2>
           <div className="space-y-4 text-gray-700 leading-relaxed text-sm md:text-base mb-6">
             <p>
-              Стоматология «Альтамед-С» — клиника, где эстетическая стоматология в Одинцове проводится
-              по международным протоколам. Мы принимаем пациентов из Одинцово и всего Одинцовского городского округа.
+              Стоматология «Альтамед Голицино» — клиника, где эстетическая стоматология в Альтамед Голицино проводится
+              по международным протоколам. Мы принимаем пациентов из Альтамед Голицино и всего Одинцовского городского округа.
             </p>
             <p>
               Наши пациенты отмечают отличные результаты отбеливания и долговечность эффекта. Если вы ищете стоматологию,
-              где «эстетическая стоматология одинцово» — это не просто слоган, а качественная услуга, записывайтесь
+              где «эстетическая стоматология голицино» — это не просто слоган, а качественная услуга, записывайтесь
               на консультацию стоматолога или ознакомьтесь с другими направлениями на{" "}
               <Link href="/services/dentistry" className="text-emerald-600 hover:text-emerald-700 underline">
                 странице стоматологии
@@ -277,11 +277,11 @@ export default function AestheticPage() {
       <section className="py-12 bg-gray-50">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <h2 className="text-3xl font-bold text-gray-900 mb-6">
-            Отзывы пациентов об эстетической стоматологии в Одинцово
+            Отзывы пациентов об эстетической стоматологии в Альтамед Голицино
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Реальные отзывы из Одинцово</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Реальные отзывы из Альтамед Голицино</h3>
               <p className="text-gray-700 text-sm md:text-base leading-relaxed">
                 Пациенты отмечают отличные результаты отбеливания, быстрый эффект и долговечность результата
                 после процедуры.
@@ -297,7 +297,7 @@ export default function AestheticPage() {
             <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
               <h3 className="text-xl font-semibold text-gray-900 mb-3">Комфортная процедура</h3>
               <p className="text-gray-700 text-sm md:text-base leading-relaxed">
-                После отбеливания в Одинцове пациенты отмечают минимальную чувствительность; врачи дают
+                После отбеливания в Альтамед Голицино пациенты отмечают минимальную чувствительность; врачи дают
                 подробные инструкции по уходу.
               </p>
             </div>
@@ -308,13 +308,13 @@ export default function AestheticPage() {
       <section className="py-12 bg-white">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <h2 className="text-3xl font-bold text-gray-900 mb-6">
-            Частые вопросы об эстетической стоматологии в Одинцово
+            Частые вопросы об эстетической стоматологии в Альтамед Голицино
           </h2>
           <div className="space-y-4">
             <details className="group bg-gray-50 rounded-[20px] shadow-md border border-gray-100">
               <summary className="cursor-pointer px-6 py-4 flex items-center justify-between text-left">
                 <span className="text-lg font-semibold text-gray-900 group-open:text-emerald-700 transition-colors duration-300">
-                  Сколько стоит отбеливание зубов ZOOM4 в Одинцово?
+                  Сколько стоит отбеливание зубов ZOOM4 в Альтамед Голицино?
                 </span>
                 <svg
                   className="w-5 h-5 text-[#4A5568] group-open:rotate-180 transition-transform duration-300"
@@ -377,15 +377,15 @@ export default function AestheticPage() {
           <div className="bg-gradient-to-r from-[#4A5568] to-[#5A6474] rounded-[20px] p-8 md:p-12 text-white flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
             <div className="max-w-3xl">
               <h2 className="text-2xl md:text-3xl font-bold mb-4">
-                Эстетическая стоматология в Одинцово — начните с консультации
+                Эстетическая стоматология в Альтамед Голицино — начните с консультации
               </h2>
               <p className="text-white/90 text-sm md:text-base leading-relaxed">
-                Запишитесь на консультацию в клинику «Альтамед-С», чтобы узнать стоимость отбеливания зубов,
+                Запишитесь на консультацию в клинику «Альтамед Голицино», чтобы узнать стоимость отбеливания зубов,
                 получить индивидуальный план лечения и ответы на все вопросы от опытных стоматологов.
               </p>
             </div>
             <Link
-              href="https://online.altamed-c.ru/"
+              href="https://reg.altamed-golitsino.ru/"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white text-[#4A5568] rounded-full px-8 py-3 font-medium hover:bg-gray-100 transition-colors text-center"
@@ -404,9 +404,9 @@ export default function AestheticPage() {
               __html: JSON.stringify({
                 "@context": "https://schema.org",
                 "@type": "MedicalBusiness",
-                name: "Клиника «Альтамед-С» — эстетическая стоматология в Одинцово",
-                url: "https://altamed-c.ru/services/dentistry/aesthetic",
-                image: "https://altamed-c.ru/images/dentisrty/stad.webp",
+                name: "Клиника «Альтамед Голицино» — эстетическая стоматология в Альтамед Голицино",
+                url: "https://altamed-golitsino.ru/services/dentistry/aesthetic",
+                image: "https://altamed-golitsino.ru/images/dentisrty/stad.webp",
                 medicalSpecialty: "Dental",
                 aggregateRating: {
                   "@type": "AggregateRating",
@@ -415,18 +415,18 @@ export default function AestheticPage() {
                 },
                 address: {
                   "@type": "PostalAddress",
-                  addressLocality: "Одинцово",
+                  addressLocality: "Альтамед Голицино",
                   addressRegion: "Московская область",
                   streetAddress: "ул. Советская, 9"
                 },
                 telephone: "+7 (495) 640-09-03",
                 priceRange: "₽₽₽",
                 serviceType: "Эстетическая стоматология",
-                areaServed: "Одинцово и Одинцовский городской округ",
+                areaServed: "Альтамед Голицино и Одинцовский городской округ",
                 description:
-                  "Эстетическая стоматология в Одинцово: профессиональное отбеливание зубов системой PHILIPS ZOOM4, реставрация, виниры и другие процедуры для создания идеальной улыбки.",
+                  "Эстетическая стоматология в Альтамед Голицино: профессиональное отбеливание зубов системой PHILIPS ZOOM4, реставрация, виниры и другие процедуры для создания идеальной улыбки.",
                 sameAs: [
-                  "https://altamed-c.ru",
+                  "https://altamed-golitsino.ru",
                   "https://yandex.ru/maps/org/altamed_s/1919839667"
                 ]
               })

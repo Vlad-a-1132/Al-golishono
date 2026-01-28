@@ -45,10 +45,10 @@ export default function FixedAppliancesPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div>
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-                Несъемные ортодонтические аппараты в клинике «Альтамед-с»
+                Несъемные ортодонтические аппараты в клинике «Альтамед Голицино»
               </h1>
               <p className="text-lg md:text-xl mb-8 text-emerald-100">
-                Ретейнеры и аппарат Forsus для закрепления результатов лечения в Одинцово
+                Ретейнеры и аппарат Forsus для закрепления результатов лечения в Альтамед Голицино
               </p>
             </div>
             <div className="relative">
@@ -66,9 +66,9 @@ export default function FixedAppliancesPage() {
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div className="lg:col-span-2 space-y-5 text-gray-700 leading-relaxed">
-              <h2 className="text-3xl font-bold text-gray-900">Несъемные аппараты в Одинцово: почему выбирают нас</h2>
+              <h2 className="text-3xl font-bold text-gray-900">Несъемные аппараты в Альтамед Голицино: почему выбирают нас</h2>
               <p>
-                Клиника «Альтамед-С» предлагает установку несъемных ортодонтических аппаратов в Одинцово — лингвальных
+                Клиника «Альтамед Голицино» предлагает установку несъемных ортодонтических аппаратов в Альтамед Голицино — лингвальных
                 ретейнеров, ретейнеров к одному зубу и аппаратов Forsus для исправления прикуса. Мы применяем современные
                 технологии, качественные материалы и учитываем индивидуальные особенности каждого пациента, чтобы обеспечить
                 эффективное исправление прикуса.
@@ -79,13 +79,13 @@ export default function FixedAppliancesPage() {
                 к одному зубу и аппараты Forsus для коррекции прикуса.
               </p>
               <p>
-                Прозрачные цены позволяют планировать бюджет — стоимость несъемных аппаратов в Одинцово
+                Прозрачные цены позволяют планировать бюджет — стоимость несъемных аппаратов в Альтамед Голицино
                 фиксируется заранее, а пациенты получают подробную информацию о лечении.
               </p>
             </div>
             <div className="bg-gray-50 rounded-[20px] p-6 shadow-md border-l-4 border-[#4A5568]">
               <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Что вы получаете, выбирая «Альтамед-С»
+                Что вы получаете, выбирая «Альтамед Голицино»
               </h3>
               <ul className="space-y-3 text-gray-700 text-sm md:text-base leading-relaxed">
                 <li className="flex items-start">
@@ -112,7 +112,7 @@ export default function FixedAppliancesPage() {
 
       <section className="py-12 bg-gray-50">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">Преимущества несъемных аппаратов в «Альтамед-С»</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">Преимущества несъемных аппаратов в «Альтамед Голицино»</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
               <h3 className="text-xl font-semibold text-gray-900 mb-3">Опытные ортодонты</h3>
@@ -160,16 +160,16 @@ export default function FixedAppliancesPage() {
       <section className="py-12 bg-white">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <h2 className="text-3xl font-bold text-gray-900 mb-6">
-            Несъемные аппараты в Одинцово: цены и отзывы пациентов
+            Несъемные аппараты в Альтамед Голицино: цены и отзывы пациентов
           </h2>
           <div className="space-y-4 text-gray-700 leading-relaxed text-sm md:text-base mb-6">
             <p>
-              Стоматология «Альтамед-С» — клиника, где установка несъемных аппаратов в Одинцове проводится
-              по международным протоколам. Мы принимаем пациентов из Одинцово и всего Одинцовского городского округа.
+              Стоматология «Альтамед Голицино» — клиника, где установка несъемных аппаратов в Альтамед Голицино проводится
+              по международным протоколам. Мы принимаем пациентов из Альтамед Голицино и всего Одинцовского городского округа.
             </p>
             <p>
               Наши пациенты отмечают эффективность исправления прикуса и комфорт при ношении аппаратов. Если вы ищете стоматологию,
-              где «несъемные аппараты одинцово» — это не просто слоган, а качественная услуга, записывайтесь
+              где «несъемные аппараты Альтамед Голицино» — это не просто слоган, а качественная услуга, записывайтесь
               на консультацию ортодонта или ознакомьтесь с другими направлениями на{" "}
               <Link href="/services/dentistry" className="text-emerald-600 hover:text-emerald-700 underline">
                 странице стоматологии
@@ -183,10 +183,10 @@ export default function FixedAppliancesPage() {
       <section className="py-12 bg-gray-50">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8 text-center">
-            Цены на несъемные аппараты в Одинцово
+            Цены на несъемные аппараты в Альтамед Голицино
           </h2>
           <p className="text-gray-700 mb-6 leading-relaxed text-center">
-            Стоимость установки несъемных аппаратов в клинике «Альтамед-С» формируется в зависимости от вида аппарата,
+            Стоимость установки несъемных аппаратов в клинике «Альтамед Голицино» формируется в зависимости от вида аппарата,
             но мы фиксируем цены в договоре, чтобы пациент точно понимал итоговую сумму.
           </p>
           
@@ -228,7 +228,7 @@ export default function FixedAppliancesPage() {
               ))}
             </div>
             <div className="mt-8 text-center">
-              <Link href="https://online.altamed-c.ru/" target="_blank" rel="noopener noreferrer" className="bg-emerald-500 text-white px-8 py-3 rounded-full font-medium hover:bg-emerald-600 transition-colors inline-block">
+              <Link href="https://reg.altamed-golitsino.ru/" target="_blank" rel="noopener noreferrer" className="bg-emerald-500 text-white px-8 py-3 rounded-full font-medium hover:bg-emerald-600 transition-colors inline-block">
                 Записаться на консультацию
               </Link>
             </div>
@@ -239,11 +239,11 @@ export default function FixedAppliancesPage() {
       <section className="py-12 bg-gray-50">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <h2 className="text-3xl font-bold text-gray-900 mb-6">
-            Отзывы пациентов о несъемных аппаратах в Одинцово
+            Отзывы пациентов о несъемных аппаратах в Альтамед Голицино
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Реальные отзывы из Одинцово</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Реальные отзывы из Альтамед Голицино</h3>
               <p className="text-gray-700 text-sm md:text-base leading-relaxed">
                 Пациенты отмечают эффективность исправления прикуса, комфорт при ношении аппаратов
                 и незаметность лингвальных ретейнеров.
@@ -259,7 +259,7 @@ export default function FixedAppliancesPage() {
             <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
               <h3 className="text-xl font-semibold text-gray-900 mb-3">Комфортное лечение</h3>
               <p className="text-gray-700 text-sm md:text-base leading-relaxed">
-                После установки несъемных аппаратов в Одинцове пациенты отмечают комфорт; врачи дают
+                После установки несъемных аппаратов в Альтамед Голицино пациенты отмечают комфорт; врачи дают
                 подробные инструкции по уходу.
               </p>
             </div>
@@ -270,7 +270,7 @@ export default function FixedAppliancesPage() {
       <section className="py-12 bg-white">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <h2 className="text-3xl font-bold text-gray-900 mb-6">
-            Частые вопросы о несъемных аппаратах в Одинцово
+            Частые вопросы о несъемных аппаратах в Альтамед Голицино
           </h2>
           <div className="space-y-4">
             <details className="group bg-gray-50 rounded-[20px] shadow-md border border-gray-100">
@@ -320,15 +320,15 @@ export default function FixedAppliancesPage() {
           <div className="bg-gradient-to-r from-[#4A5568] to-[#5A6474] rounded-[20px] p-8 md:p-12 text-white flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
             <div className="max-w-3xl">
               <h2 className="text-2xl md:text-3xl font-bold mb-4">
-                Несъемные аппараты в Одинцово — начните с консультации
+                Несъемные аппараты в Альтамед Голицино — начните с консультации
               </h2>
               <p className="text-white/90 text-sm md:text-base leading-relaxed">
-                Запишитесь на консультацию в клинику «Альтамед-С», чтобы узнать стоимость несъемных аппаратов,
+                Запишитесь на консультацию в клинику «Альтамед Голицино», чтобы узнать стоимость несъемных аппаратов,
                 подобрать подходящий вариант и получить индивидуальный план исправления прикуса.
               </p>
             </div>
             <Link
-              href="https://online.altamed-c.ru/"
+              href="https://reg.altamed-golitsino.ru/"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white text-[#4A5568] rounded-full px-8 py-3 font-medium hover:bg-gray-100 transition-colors text-center"
@@ -347,9 +347,9 @@ export default function FixedAppliancesPage() {
               __html: JSON.stringify({
                 "@context": "https://schema.org",
                 "@type": "MedicalBusiness",
-                name: "Клиника «Альтамед-С» — несъемные аппараты в Одинцово",
-                url: "https://altamed-c.ru/services/dentistry/fixed-appliances",
-                image: "https://altamed-c.ru/images/dentisrty/task_01kb5hy6cmevwbv12bpx0npyvx_1764344538_img_1.webp",
+                name: "Клиника «Альтамед Голицино» — несъемные аппараты в Альтамед Голицино",
+                url: "https://altamed-golitsino.ru/services/dentistry/fixed-appliances",
+                image: "https://altamed-golitsino.ru/images/dentisrty/task_01kb5hy6cmevwbv12bpx0npyvx_1764344538_img_1.webp",
                 medicalSpecialty: "Dental",
                 aggregateRating: {
                   "@type": "AggregateRating",
@@ -358,18 +358,18 @@ export default function FixedAppliancesPage() {
                 },
                 address: {
                   "@type": "PostalAddress",
-                  addressLocality: "Одинцово",
+                  addressLocality: "Альтамед Голицино",
                   addressRegion: "Московская область",
                   streetAddress: "ул. Советская, 9"
                 },
                 telephone: "+7 (495) 640-09-03",
                 priceRange: "₽₽",
                 serviceType: "Несъемные аппараты",
-                areaServed: "Одинцово и Одинцовский городской округ",
+                areaServed: "Альтамед Голицино и Одинцовский городской округ",
                 description:
-                  "Несъемные аппараты в Одинцово: лингвальные ретейнеры, ретейнеры к одному зубу, аппараты Forsus для исправления прикуса.",
+                  "Несъемные аппараты в Альтамед Голицино: лингвальные ретейнеры, ретейнеры к одному зубу, аппараты Forsus для исправления прикуса.",
                 sameAs: [
-                  "https://altamed-c.ru",
+                  "https://altamed-golitsino.ru",
                   "https://yandex.ru/maps/org/altamed_s/1919839667"
                 ]
               })

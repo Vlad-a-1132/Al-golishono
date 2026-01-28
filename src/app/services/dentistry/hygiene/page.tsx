@@ -41,10 +41,10 @@ export default function HygienePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div>
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-                Гигиена полости рта в клинике «Альтамед-с»
+                Гигиена полости рта в клинике «Альтамед Голицино»
               </h1>
               <p className="text-lg md:text-xl mb-8 text-emerald-100">
-                Профессиональная чистка зубов с использованием AIR FLOW, ультразвука и полировки в Одинцово
+                Профессиональная чистка зубов с использованием AIR FLOW, ультразвука и полировки в Альтамед Голицино
               </p>
             </div>
             <div className="relative">
@@ -62,9 +62,9 @@ export default function HygienePage() {
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div className="lg:col-span-2 space-y-5 text-gray-700 leading-relaxed">
-              <h2 className="text-3xl font-bold text-gray-900">Гигиена полости рта в Одинцово: почему выбирают нас</h2>
+              <h2 className="text-3xl font-bold text-gray-900">Гигиена полости рта в Альтамед Голицино: почему выбирают нас</h2>
               <p>
-                Клиника «Альтамед-С» предлагает профессиональную гигиену полости рта в Одинцово — комплексную
+                Клиника «Альтамед Голицино» предлагает профессиональную гигиену полости рта в Альтамед Голицино — комплексную
                 чистку зубов с использованием современных технологий AIR FLOW, ультразвука и полировки. Мы применяем
                 передовые методики, качественные материалы и учитываем индивидуальные особенности каждого пациента,
                 чтобы обеспечить здоровье зубов и красивую улыбку.
@@ -75,13 +75,13 @@ export default function HygienePage() {
                 все этапы профессиональной гигиены за одно посещение.
               </p>
               <p>
-                Прозрачные цены позволяют планировать бюджет — стоимость гигиены полости рта в Одинцово
+                Прозрачные цены позволяют планировать бюджет — стоимость гигиены полости рта в Альтамед Голицино
                 фиксируется заранее, а пациенты получают подробную информацию о процедуре.
               </p>
             </div>
             <div className="bg-gray-50 rounded-[20px] p-6 shadow-md border-l-4 border-[#4A5568]">
               <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Что вы получаете, выбирая «Альтамед-С»
+                Что вы получаете, выбирая «Альтамед Голицино»
               </h3>
               <ul className="space-y-3 text-gray-700 text-sm md:text-base leading-relaxed">
                 <li className="flex items-start">
@@ -108,7 +108,7 @@ export default function HygienePage() {
 
       <section className="py-12 bg-gray-50">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">Преимущества профессиональной гигиены в «Альтамед-С»</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">Преимущества профессиональной гигиены в «Альтамед Голицино»</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
               <h3 className="text-xl font-semibold text-gray-900 mb-3">Опытные гигиенисты</h3>
@@ -194,7 +194,7 @@ export default function HygienePage() {
       <section className="py-12 bg-gray-50">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8 text-center">
-            Услуги гигиены полости рта в Одинцово
+            Услуги гигиены полости рта в Альтамед Голицино
           </h2>
           
           <div className="bg-white rounded-[20px] shadow-lg p-6 md:p-8">
@@ -235,7 +235,7 @@ export default function HygienePage() {
               ))}
             </div>
             <div className="mt-8 text-center">
-              <Link href="https://online.altamed-c.ru/" target="_blank" rel="noopener noreferrer" className="bg-emerald-500 text-white px-8 py-3 rounded-full font-medium hover:bg-emerald-600 transition-colors inline-block">
+              <Link href="https://reg.altamed-golitsino.ru/" target="_blank" rel="noopener noreferrer" className="bg-emerald-500 text-white px-8 py-3 rounded-full font-medium hover:bg-emerald-600 transition-colors inline-block">
                 Записаться на чистку зубов
               </Link>
             </div>
@@ -246,16 +246,16 @@ export default function HygienePage() {
       <section className="py-12 bg-white">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <h2 className="text-3xl font-bold text-gray-900 mb-6">
-            Гигиена полости рта в Одинцово: цены и отзывы пациентов
+            Гигиена полости рта в Альтамед Голицино: цены и отзывы пациентов
           </h2>
           <div className="space-y-4 text-gray-700 leading-relaxed text-sm md:text-base mb-6">
             <p>
-              Стоматология «Альтамед-С» — клиника, где профессиональная гигиена полости рта в Одинцове проводится
-              по международным протоколам. Мы принимаем пациентов из Одинцово и всего Одинцовского городского округа.
+              Стоматология «Альтамед Голицино» — клиника, где профессиональная гигиена полости рта в Альтамед Голицино проводится
+              по международным протоколам. Мы принимаем пациентов из Альтамед Голицино и всего Одинцовского городского округа.
             </p>
             <p>
               Наши пациенты отмечают качество процедуры и комфорт во время чистки. Если вы ищете стоматологию,
-              где «гигиена полости рта одинцово» — это не просто слоган, а комплексная услуга, записывайтесь
+              где «гигиена полости рта Альтамед Голицино» — это не просто слоган, а комплексная услуга, записывайтесь
               на профессиональную чистку зубов или ознакомьтесь с другими направлениями на{" "}
               <Link href="/services/dentistry" className="text-emerald-600 hover:text-emerald-700 underline">
                 странице стоматологии
@@ -269,11 +269,11 @@ export default function HygienePage() {
       <section className="py-12 bg-gray-50">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <h2 className="text-3xl font-bold text-gray-900 mb-6">
-            Отзывы пациентов о гигиене полости рта в Одинцово
+            Отзывы пациентов о гигиене полости рта в Альтамед Голицино
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Реальные отзывы из Одинцово</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Реальные отзывы из Альтамед Голицино</h3>
               <p className="text-gray-700 text-sm md:text-base leading-relaxed">
                 Пациенты отмечают безболезненность процедуры, внимательное отношение гигиенистов и отличный
                 результат после чистки.
@@ -289,7 +289,7 @@ export default function HygienePage() {
             <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
               <h3 className="text-xl font-semibold text-gray-900 mb-3">Комфортная процедура</h3>
               <p className="text-gray-700 text-sm md:text-base leading-relaxed">
-                После чистки в Одинцове пациенты отмечают отсутствие дискомфорта; врачи дают подробные
+                После чистки в Альтамед Голицино пациенты отмечают отсутствие дискомфорта; врачи дают подробные
                 инструкции по уходу за зубами.
               </p>
             </div>
@@ -300,7 +300,7 @@ export default function HygienePage() {
       <section className="py-12 bg-white">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <h2 className="text-3xl font-bold text-gray-900 mb-6">
-            Частые вопросы о гигиене полости рта в Одинцово
+            Частые вопросы о гигиене полости рта в Альтамед Голицино
           </h2>
           <div className="space-y-4">
             <details className="group bg-gray-50 rounded-[20px] shadow-md border border-gray-100">
@@ -369,15 +369,15 @@ export default function HygienePage() {
           <div className="bg-gradient-to-r from-[#4A5568] to-[#5A6474] rounded-[20px] p-8 md:p-12 text-white flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
             <div className="max-w-3xl">
               <h2 className="text-2xl md:text-3xl font-bold mb-4">
-                Гигиена полости рта в Одинцово — начните с консультации
+                Гигиена полости рта в Альтамед Голицино — начните с консультации
               </h2>
               <p className="text-white/90 text-sm md:text-base leading-relaxed">
-                Запишитесь на профессиональную чистку зубов в клинику «Альтамед-С», чтобы узнать состояние ваших зубов,
+                Запишитесь на профессиональную чистку зубов в клинику «Альтамед Голицино», чтобы узнать состояние ваших зубов,
                 получить индивидуальные рекомендации по уходу и пройти комплексную гигиену полости рта.
               </p>
             </div>
             <Link
-              href="https://online.altamed-c.ru/"
+              href="https://reg.altamed-golitsino.ru/"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white text-[#4A5568] rounded-full px-8 py-3 font-medium hover:bg-gray-100 transition-colors text-center"
@@ -396,9 +396,9 @@ export default function HygienePage() {
               __html: JSON.stringify({
                 "@context": "https://schema.org",
                 "@type": "MedicalBusiness",
-                name: "Клиника «Альтамед-С» — гигиена полости рта в Одинцово",
-                url: "https://altamed-c.ru/services/dentistry/hygiene",
-                image: "https://altamed-c.ru/images/dentisrty/ff0799f0-79d9-49cb-b32a-bac2ce8b6d2e 1.webp",
+                name: "Клиника «Альтамед Голицино» — гигиена полости рта в Альтамед Голицино",
+                url: "https://altamed-golitsino.ru/services/dentistry/hygiene",
+                image: "https://altamed-golitsino.ru/images/dentisrty/ff0799f0-79d9-49cb-b32a-bac2ce8b6d2e 1.webp",
                 medicalSpecialty: "Dental",
                 aggregateRating: {
                   "@type": "AggregateRating",
@@ -407,18 +407,18 @@ export default function HygienePage() {
                 },
                 address: {
                   "@type": "PostalAddress",
-                  addressLocality: "Одинцово",
+                  addressLocality: "Альтамед Голицино",
                   addressRegion: "Московская область",
                   streetAddress: "ул. Советская, 9"
                 },
                 telephone: "+7 (495) 640-09-03",
                 priceRange: "₽₽",
                 serviceType: "Гигиена полости рта",
-                areaServed: "Одинцово и Одинцовский городской округ",
+                areaServed: "Альтамед Голицино и Одинцовский городской округ",
                 description:
-                  "Гигиена полости рта в Одинцово: профессиональная чистка зубов с использованием AIR FLOW, ультразвука и полировки, удаление зубного налета и камня.",
+                  "Гигиена полости рта в Альтамед Голицино: профессиональная чистка зубов с использованием AIR FLOW, ультразвука и полировки, удаление зубного налета и камня.",
                 sameAs: [
-                  "https://altamed-c.ru",
+                  "https://altamed-golitsino.ru",
                   "https://yandex.ru/maps/org/altamed_s/1919839667"
                 ]
               })

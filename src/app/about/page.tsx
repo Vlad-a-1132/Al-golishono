@@ -1527,12 +1527,12 @@ function PatientInfoSection() {
                     <p className="text-gray-700 mb-2">
                       Круглосуточно доступна услуга электронной записи через наш официальный сайт{' '}
                       <a 
-                        href="https://online.altamed-c.ru/" 
+                        href="https://reg.altamed-golitsino.ru/" 
                         target="_blank" 
                         rel="noopener noreferrer"
                         className="text-emerald-600 hover:text-emerald-700 font-medium underline"
                       >
-                        https://online.altamed-c.ru/
+                        https://reg.altamed-golitsino.ru/
                       </a>.
                     </p>
                     <p className="text-gray-700">

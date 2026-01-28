@@ -45,10 +45,10 @@ export default function ProsthodonticsPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div>
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-                Ортопедическая стоматология в клинике «Альтамед-с»
+                Ортопедическая стоматология в клинике «Альтамед Голицино»
               </h1>
               <p className="text-lg md:text-xl mb-8 text-emerald-100">
-                Протезирование зубов коронками, винирами и мостами в Одинцово
+                Протезирование зубов коронками, винирами и мостами в Альтамед Голицино
               </p>
             </div>
             <div className="relative">
@@ -66,7 +66,7 @@ export default function ProsthodonticsPage() {
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-[20px] shadow-lg p-8 md:p-12">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6 text-center">
-              Что такое ортопедическая стоматология в Одинцово
+              Что такое ортопедическая стоматология в Альтамед Голицино
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
               <div className="bg-white rounded-lg p-6 shadow-md">
@@ -99,7 +99,7 @@ export default function ProsthodonticsPage() {
                 </ul>
               </div>
               <div className="bg-white rounded-lg p-6 shadow-md">
-                <h3 className="text-xl font-semibold text-gray-800 mb-3">Преимущества в «Альтамед-с»</h3>
+                <h3 className="text-xl font-semibold text-gray-800 mb-3">Преимущества в «Альтамед Голицино»</h3>
                 <ul className="space-y-2 text-gray-600">
                   <li className="flex items-start">
                     <svg className="w-5 h-5 text-amber-600 mr-2 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -135,7 +135,7 @@ export default function ProsthodonticsPage() {
       <section className="py-12 bg-gray-50">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8 text-center">
-            Услуги ортопедической стоматологии в Одинцово
+            Услуги ортопедической стоматологии в Альтамед Голицино
           </h2>
           
           <div className="bg-white rounded-[20px] shadow-lg p-6 md:p-8">
@@ -176,7 +176,7 @@ export default function ProsthodonticsPage() {
               ))}
             </div>
             <div className="mt-8 text-center">
-              <Link href="https://online.altamed-c.ru/" target="_blank" rel="noopener noreferrer" className="bg-emerald-500 text-white px-8 py-3 rounded-full font-medium hover:bg-emerald-600 transition-colors inline-block">
+              <Link href="https://reg.altamed-golitsino.ru/" target="_blank" rel="noopener noreferrer" className="bg-emerald-500 text-white px-8 py-3 rounded-full font-medium hover:bg-emerald-600 transition-colors inline-block">
                 Записаться на консультацию
               </Link>
             </div>
@@ -188,28 +188,28 @@ export default function ProsthodonticsPage() {
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <div className="bg-white rounded-[20px] shadow-lg p-8 md:p-12">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8 text-center">
-              Современные технологии протезирования в Одинцово
+              Современные технологии протезирования в Альтамед Голицино
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
                 {
                   title: "CAD/CAM технологии",
-                  text: "В клинике «Альтамед-с» Одинцово используются современные CAD/CAM системы для точного изготовления коронок, виниров и вкладок. Это обеспечивает идеальную посадку и высокую эстетику протезов.",
+                  text: "В клинике «Альтамед Голицино» Альтамед Голицино используются современные CAD/CAM системы для точного изготовления коронок, виниров и вкладок. Это обеспечивает идеальную посадку и высокую эстетику протезов.",
                   icon: "💻"
                 },
                 {
                   title: "Диоксид циркония",
-                  text: "Протезы из диоксида циркония обладают высокой прочностью, биосовместимостью и естественной эстетикой. В стоматологии Одинцово мы используем только проверенные материалы.",
+                  text: "Протезы из диоксида циркония обладают высокой прочностью, биосовместимостью и естественной эстетикой. В стоматологии Альтамед Голицино мы используем только проверенные материалы.",
                   icon: "💎"
                 },
                 {
                   title: "Керамика E-max",
-                  text: "Керамика E-max идеально подходит для виниров и коронок на передние зубы. Высокая эстетика и долговечность делают эти протезы популярными в Одинцово.",
+                  text: "Керамика E-max идеально подходит для виниров и коронок на передние зубы. Высокая эстетика и долговечность делают эти протезы популярными в Альтамед Голицино.",
                   icon: "✨"
                 },
                 {
                   title: "Бюгельное протезирование",
-                  text: "Современные бюгельные протезы в «Альтамед-с» Одинцово изготавливаются с использованием микрозамков и кламмеров, обеспечивая комфорт и надежную фиксацию.",
+                  text: "Современные бюгельные протезы в «Альтамед Голицино» Альтамед Голицино изготавливаются с использованием микрозамков и кламмеров, обеспечивая комфорт и надежную фиксацию.",
                   icon: "🔧"
                 }
               ].map((item, idx) => (
@@ -228,7 +228,7 @@ export default function ProsthodonticsPage() {
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <div className="bg-white rounded-[20px] shadow-lg p-8 md:p-12">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8 text-center">
-              Этапы протезирования в стоматологии Одинцово
+              Этапы протезирования в стоматологии Альтамед Голицино
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {[
@@ -255,17 +255,17 @@ export default function ProsthodonticsPage() {
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <div className="bg-white rounded-[20px] shadow-lg p-8 md:p-12">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8 text-center">
-              Стоимость протезирования зубов в стоматологии Одинцово
+              Стоимость протезирования зубов в стоматологии Альтамед Голицино
             </h2>
             <div className="prose prose-lg max-w-none text-gray-700">
               <p className="mb-4">
-                Цены на протезирование в клинике «Альтамед-с» Одинцово зависят от типа протеза, используемых материалов и объема работы. Мы предлагаем различные варианты протезирования: от доступных металлокерамических коронок до премиальных протезов из диоксида циркония.
+                Цены на протезирование в клинике «Альтамед Голицино» Альтамед Голицино зависят от типа протеза, используемых материалов и объема работы. Мы предлагаем различные варианты протезирования: от доступных металлокерамических коронок до премиальных протезов из диоксида циркония.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
                 <div className="bg-amber-50 rounded-lg p-6">
-                  <h3 className="text-xl font-semibold text-gray-800 mb-3">Несъемное протезирование в Одинцово</h3>
+                  <h3 className="text-xl font-semibold text-gray-800 mb-3">Несъемное протезирование в Альтамед Голицино</h3>
                   <p className="text-gray-600 mb-3">
-                    Коронки и мосты в стоматологии Одинцово — это надежный способ восстановления зубов. Цены зависят от материала: металлокерамика — доступный вариант, диоксид циркония — премиум-решение с максимальной эстетикой.
+                    Коронки и мосты в стоматологии Альтамед Голицино — это надежный способ восстановления зубов. Цены зависят от материала: металлокерамика — доступный вариант, диоксид циркония — премиум-решение с максимальной эстетикой.
                   </p>
                   <ul className="space-y-2 text-gray-600">
                     <li className="flex items-start">
@@ -289,9 +289,9 @@ export default function ProsthodonticsPage() {
                   </ul>
                 </div>
                 <div className="bg-orange-50 rounded-lg p-6">
-                  <h3 className="text-xl font-semibold text-gray-800 mb-3">Съемное протезирование в Одинцово</h3>
+                  <h3 className="text-xl font-semibold text-gray-800 mb-3">Съемное протезирование в Альтамед Голицино</h3>
                   <p className="text-gray-600 mb-3">
-                    Съемные протезы в клинике «Альтамед-с» Одинцово используются при отсутствии большого количества зубов. Бюгельные протезы с микрозамками обеспечивают комфорт и надежную фиксацию.
+                    Съемные протезы в клинике «Альтамед Голицино» Альтамед Голицино используются при отсутствии большого количества зубов. Бюгельные протезы с микрозамками обеспечивают комфорт и надежную фиксацию.
                   </p>
                   <ul className="space-y-2 text-gray-600">
                     <li className="flex items-start">
@@ -316,7 +316,7 @@ export default function ProsthodonticsPage() {
                 </div>
               </div>
               <p className="mt-6 text-gray-600">
-                Точную стоимость протезирования в стоматологии Одинцово можно узнать после консультации и диагностики. Мы предлагаем рассрочку оплаты и комплексные программы протезирования. Запишитесь на прием в «Альтамед-с» Одинцово для получения детальной информации.
+                Точную стоимость протезирования в стоматологии Альтамед Голицино можно узнать после консультации и диагностики. Мы предлагаем рассрочку оплаты и комплексные программы протезирования. Запишитесь на прием в «Альтамед Голицино» Альтамед Голицино для получения детальной информации.
               </p>
             </div>
           </div>
@@ -328,43 +328,43 @@ export default function ProsthodonticsPage() {
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-[20px] shadow-lg p-8 md:p-12">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8 text-center">
-              Виды протезов в ортопедической стоматологии Одинцово
+              Виды протезов в ортопедической стоматологии Альтамед Голицино
             </h2>
             <div className="space-y-8">
               <div className="bg-white rounded-lg p-6 shadow-md">
-                <h3 className="text-xl font-semibold text-gray-800 mb-4">Коронки в стоматологии Одинцово</h3>
+                <h3 className="text-xl font-semibold text-gray-800 mb-4">Коронки в стоматологии Альтамед Голицино</h3>
                 <p className="text-gray-700 mb-4">
-                  Коронки в клинике «Альтамед-с» Одинцово используются для восстановления сильно разрушенных зубов. Металлокерамические коронки сочетают прочность и доступную цену. Коронки из диоксида циркония в стоматологии Одинцово обеспечивают максимальную эстетику и долговечность, идеально подходят для передних зубов.
+                  Коронки в клинике «Альтамед Голицино» Альтамед Голицино используются для восстановления сильно разрушенных зубов. Металлокерамические коронки сочетают прочность и доступную цену. Коронки из диоксида циркония в стоматологии Альтамед Голицино обеспечивают максимальную эстетику и долговечность, идеально подходят для передних зубов.
                 </p>
                 <p className="text-gray-700">
-                  В клинике Одинцово мы используем CAD/CAM технологии для изготовления коронок, что обеспечивает идеальную посадку и высокое качество. Все коронки в стоматологии Одинцово изготавливаются индивидуально с учетом особенностей прикуса пациента.
+                  В клинике Альтамед Голицино мы используем CAD/CAM технологии для изготовления коронок, что обеспечивает идеальную посадку и высокое качество. Все коронки в стоматологии Альтамед Голицино изготавливаются индивидуально с учетом особенностей прикуса пациента.
                 </p>
               </div>
               <div className="bg-white rounded-lg p-6 shadow-md">
-                <h3 className="text-xl font-semibold text-gray-800 mb-4">Виниры в Одинцово</h3>
+                <h3 className="text-xl font-semibold text-gray-800 mb-4">Виниры в Альтамед Голицино</h3>
                 <p className="text-gray-700 mb-4">
-                  Виниры в стоматологии Одинцово — это тонкие керамические пластинки, которые устанавливаются на переднюю поверхность зубов для улучшения их внешнего вида. В клинике «Альтамед-с» Одинцово мы используем виниры e-max, которые имеют высокую прочность и естественную прозрачность.
+                  Виниры в стоматологии Альтамед Голицино — это тонкие керамические пластинки, которые устанавливаются на переднюю поверхность зубов для улучшения их внешнего вида. В клинике «Альтамед Голицино» Альтамед Голицино мы используем виниры e-max, которые имеют высокую прочность и естественную прозрачность.
                 </p>
                 <p className="text-gray-700">
-                  Виниры в Одинцово идеально подходят для исправления цвета, формы зубов, закрытия промежутков между зубами. Процедура установки виниров в стоматологии Одинцово требует минимального препарирования зубов и обеспечивает долгосрочный результат.
+                  Виниры в Альтамед Голицино идеально подходят для исправления цвета, формы зубов, закрытия промежутков между зубами. Процедура установки виниров в стоматологии Альтамед Голицино требует минимального препарирования зубов и обеспечивает долгосрочный результат.
                 </p>
               </div>
               <div className="bg-white rounded-lg p-6 shadow-md">
-                <h3 className="text-xl font-semibold text-gray-800 mb-4">Мостовидные протезы в Одинцово</h3>
+                <h3 className="text-xl font-semibold text-gray-800 mb-4">Мостовидные протезы в Альтамед Голицино</h3>
                 <p className="text-gray-700 mb-4">
-                  Мостовидные протезы в стоматологии Одинцово используются для восстановления одного или нескольких отсутствующих зубов. Мост крепится на соседние зубы или импланты. В клинике «Альтамед-с» Одинцово мы изготавливаем мосты из различных материалов.
+                  Мостовидные протезы в стоматологии Альтамед Голицино используются для восстановления одного или нескольких отсутствующих зубов. Мост крепится на соседние зубы или импланты. В клинике «Альтамед Голицино» Альтамед Голицино мы изготавливаем мосты из различных материалов.
                 </p>
                 <p className="text-gray-700">
-                  Современные мостовидные протезы в Одинцово неотличимы от естественных зубов и обеспечивают полноценную жевательную функцию. Протезирование мостами в стоматологии Одинцово — это надежный способ восстановления утраченных зубов.
+                  Современные мостовидные протезы в Альтамед Голицино неотличимы от естественных зубов и обеспечивают полноценную жевательную функцию. Протезирование мостами в стоматологии Альтамед Голицино — это надежный способ восстановления утраченных зубов.
                 </p>
               </div>
               <div className="bg-white rounded-lg p-6 shadow-md">
-                <h3 className="text-xl font-semibold text-gray-800 mb-4">Съемные протезы в Одинцово</h3>
+                <h3 className="text-xl font-semibold text-gray-800 mb-4">Съемные протезы в Альтамед Голицино</h3>
                 <p className="text-gray-700 mb-4">
-                  Съемные протезы в клинике «Альтамед-с» Одинцово применяются при отсутствии большого количества зубов или полной адентии. Бюгельные протезы с кламмерами или микрозамками обеспечивают надежную фиксацию и комфорт при ношении.
+                  Съемные протезы в клинике «Альтамед Голицино» Альтамед Голицино применяются при отсутствии большого количества зубов или полной адентии. Бюгельные протезы с кламмерами или микрозамками обеспечивают надежную фиксацию и комфорт при ношении.
                 </p>
                 <p className="text-gray-700">
-                  Современные съемные протезы в стоматологии Одинцово изготавливаются из гипоаллергенных материалов и не вызывают дискомфорта. Протезирование в клинике Одинцово включает подгонку протеза и обучение пациента правильному уходу.
+                  Современные съемные протезы в стоматологии Альтамед Голицино изготавливаются из гипоаллергенных материалов и не вызывают дискомфорта. Протезирование в клинике Альтамед Голицино включает подгонку протеза и обучение пациента правильному уходу.
                 </p>
               </div>
             </div>
@@ -377,13 +377,13 @@ export default function ProsthodonticsPage() {
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <div className="bg-white rounded-[20px] shadow-lg p-8 md:p-12">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8 text-center">
-              Уход за протезами в стоматологии Одинцово
+              Уход за протезами в стоматологии Альтамед Голицино
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-lg p-6">
                 <h3 className="text-xl font-semibold text-gray-800 mb-4">Уход за несъемными протезами</h3>
                 <p className="text-gray-700 mb-4">
-                  Несъемные протезы (коронки, виниры, мосты) в стоматологии Одинцово требуют такого же ухода, как и естественные зубы. Регулярная чистка дважды в день, использование зубной нити и ирригатора помогут сохранить протезы в идеальном состоянии.
+                  Несъемные протезы (коронки, виниры, мосты) в стоматологии Альтамед Голицино требуют такого же ухода, как и естественные зубы. Регулярная чистка дважды в день, использование зубной нити и ирригатора помогут сохранить протезы в идеальном состоянии.
                 </p>
                 <ul className="space-y-2 text-gray-700">
                   <li className="flex items-start">
@@ -402,14 +402,14 @@ export default function ProsthodonticsPage() {
                     <svg className="w-5 h-5 text-amber-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
-                    Профессиональная чистка в клинике Одинцово раз в полгода
+                    Профессиональная чистка в клинике Альтамед Голицино раз в полгода
                   </li>
                 </ul>
               </div>
               <div className="bg-gradient-to-br from-orange-50 to-amber-50 rounded-lg p-6">
                 <h3 className="text-xl font-semibold text-gray-800 mb-4">Уход за съемными протезами</h3>
                 <p className="text-gray-700 mb-4">
-                  Съемные протезы в стоматологии Одинцово требуют особого ухода: ежедневная чистка специальными средствами, хранение в чистом состоянии. Врачи клиники «Альтамед-с» Одинцово дают подробные инструкции по уходу.
+                  Съемные протезы в стоматологии Альтамед Голицино требуют особого ухода: ежедневная чистка специальными средствами, хранение в чистом состоянии. Врачи клиники «Альтамед Голицино» Альтамед Голицино дают подробные инструкции по уходу.
                 </p>
                 <ul className="space-y-2 text-gray-700">
                   <li className="flex items-start">
@@ -428,14 +428,14 @@ export default function ProsthodonticsPage() {
                     <svg className="w-5 h-5 text-orange-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
-                    Регулярная перебазировка в клинике Одинцово
+                    Регулярная перебазировка в клинике Альтамед Голицино
                   </li>
                 </ul>
               </div>
             </div>
             <div className="mt-8 bg-white rounded-lg p-6 border-2 border-amber-200">
               <p className="text-gray-700 text-lg leading-relaxed">
-                Правильный уход за протезами в клинике «Альтамед-с» Одинцово обеспечивает их долговечность и комфорт при использовании. Специалисты стоматологии Одинцово обучают пациентов правильным техникам ухода и проводят регулярные контрольные осмотры для своевременной коррекции протезов. При правильном уходе протезы в стоматологии Одинцово прослужат многие годы.
+                Правильный уход за протезами в клинике «Альтамед Голицино» Альтамед Голицино обеспечивает их долговечность и комфорт при использовании. Специалисты стоматологии Альтамед Голицино обучают пациентов правильным техникам ухода и проводят регулярные контрольные осмотры для своевременной коррекции протезов. При правильном уходе протезы в стоматологии Альтамед Голицино прослужат многие годы.
               </p>
             </div>
           </div>
@@ -446,9 +446,9 @@ export default function ProsthodonticsPage() {
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div className="lg:col-span-2 space-y-5 text-gray-700 leading-relaxed">
-              <h2 className="text-3xl font-bold text-gray-900">Стоматолог-ортопед в Одинцово: почему выбирают нас</h2>
+              <h2 className="text-3xl font-bold text-gray-900">Стоматолог-ортопед в Альтамед Голицино: почему выбирают нас</h2>
               <p>
-                Клиника «Альтамед-С» предлагает услуги ортопедической стоматологии в Одинцово — протезирование зубов
+                Клиника «Альтамед Голицино» предлагает услуги ортопедической стоматологии в Альтамед Голицино — протезирование зубов
                 коронками, винирами, мостами, съемными протезами. Мы применяем современные технологии, качественные
                 материалы и обеспечиваем долговечность протезов.
               </p>
@@ -458,13 +458,13 @@ export default function ProsthodonticsPage() {
                 коронками и другие процедуры ортопедической стоматологии.
               </p>
               <p>
-                Прозрачные цены позволяют планировать бюджет — стоимость ортопедической стоматологии в Одинцово
+                Прозрачные цены позволяют планировать бюджет — стоимость ортопедической стоматологии в Альтамед Голицино
                 фиксируется заранее, а пациенты получают подробную информацию о процедурах.
               </p>
             </div>
             <div className="bg-gray-50 rounded-[20px] p-6 shadow-md border-l-4 border-[#4A5568]">
               <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Что вы получаете, выбирая «Альтамед-С»
+                Что вы получаете, выбирая «Альтамед Голицино»
               </h3>
               <ul className="space-y-3 text-gray-700 text-sm md:text-base leading-relaxed">
                 <li className="flex items-start">
@@ -492,11 +492,11 @@ export default function ProsthodonticsPage() {
       <section className="py-12 bg-gray-50">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <h2 className="text-3xl font-bold text-gray-900 mb-6">
-            Отзывы пациентов о стоматологе-ортопеде в Одинцово
+            Отзывы пациентов о стоматологе-ортопеде в Альтамед Голицино
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Реальные отзывы из Одинцово</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Реальные отзывы из Альтамед Голицино</h3>
               <p className="text-gray-700 text-sm md:text-base leading-relaxed">
                 Пациенты отмечают качество протезов, эстетику и долговечность
                 коронок и виниров, установленных ортопедами.
@@ -512,7 +512,7 @@ export default function ProsthodonticsPage() {
             <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
               <h3 className="text-xl font-semibold text-gray-900 mb-3">Долговечный результат</h3>
               <p className="text-gray-700 text-sm md:text-base leading-relaxed">
-                После протезирования в Одинцове пациенты отмечают долговечность протезов; ортопеды дают
+                После протезирования в Голицино пациенты отмечают долговечность протезов; ортопеды дают
                 подробные рекомендации по уходу за протезами.
               </p>
             </div>
@@ -523,7 +523,7 @@ export default function ProsthodonticsPage() {
       <section className="py-12 bg-white">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <h2 className="text-3xl font-bold text-gray-900 mb-6">
-            Частые вопросы о стоматологе-ортопеде в Одинцово
+            Частые вопросы о стоматологе-ортопеде в Альтамед Голицино
           </h2>
           <div className="space-y-4">
             <details className="group bg-gray-50 rounded-[20px] shadow-md border border-gray-100">
@@ -573,15 +573,15 @@ export default function ProsthodonticsPage() {
           <div className="bg-gradient-to-r from-[#4A5568] to-[#5A6474] rounded-[20px] p-8 md:p-12 text-white flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
             <div className="max-w-3xl">
               <h2 className="text-2xl md:text-3xl font-bold mb-4">
-                Стоматолог-ортопед в Одинцово — начните с консультации
+                Стоматолог-ортопед в Альтамед Голицино — начните с консультации
               </h2>
               <p className="text-white/90 text-sm md:text-base leading-relaxed">
-                Запишитесь на консультацию в клинику «Альтамед-С», чтобы узнать стоимость протезирования,
+                Запишитесь на консультацию в клинику «Альтамед Голицино», чтобы узнать стоимость протезирования,
                 подобрать подходящие протезы и получить индивидуальный план лечения.
               </p>
             </div>
             <Link
-              href="https://online.altamed-c.ru/"
+              href="https://reg.altamed-golitsino.ru/"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white text-[#4A5568] rounded-full px-8 py-3 font-medium hover:bg-gray-100 transition-colors text-center"
@@ -600,9 +600,9 @@ export default function ProsthodonticsPage() {
               __html: JSON.stringify({
                 "@context": "https://schema.org",
                 "@type": "MedicalBusiness",
-                name: "Клиника «Альтамед-С» — ортопедическая стоматология в Одинцово",
-                url: "https://altamed-c.ru/services/dentistry/prosthodontics",
-                image: "https://altamed-c.ru/images/dentisrty/task_01kb59j9wbe6ma7c4wg6n4yecp_1764335787_img_0.webp",
+                name: "Клиника «Альтамед Голицино» — ортопедическая стоматология в Альтамед Голицино",
+                url: "https://altamed-golitsino.ru/services/dentistry/prosthodontics",
+                image: "https://altamed-golitsino.ru/images/dentisrty/task_01kb59j9wbe6ma7c4wg6n4yecp_1764335787_img_0.webp",
                 medicalSpecialty: "Dental",
                 aggregateRating: {
                   "@type": "AggregateRating",
@@ -611,18 +611,18 @@ export default function ProsthodonticsPage() {
                 },
                 address: {
                   "@type": "PostalAddress",
-                  addressLocality: "Одинцово",
+                  addressLocality: "Альтамед Голицино",
                   addressRegion: "Московская область",
                   streetAddress: "ул. Советская, 9"
                 },
                 telephone: "+7 (495) 640-09-03",
                 priceRange: "₽₽₽",
                 serviceType: "Ортопедическая стоматология",
-                areaServed: "Одинцово и Одинцовский городской округ",
+                areaServed: "Альтамед Голицино и Одинцовский городской округ",
                 description:
-                  "Ортопедическая стоматология в Одинцово: протезирование зубов коронками, винирами, мостами, съемными протезами. Опытные ортопеды в клинике «Альтамед-С».",
+                  "Ортопедическая стоматология в Альтамед Голицино: протезирование зубов коронками, винирами, мостами, съемными протезами. Опытные ортопеды в клинике «Альтамед Голицино».",
                 sameAs: [
-                  "https://altamed-c.ru",
+                  "https://altamed-golitsino.ru",
                   "https://yandex.ru/maps/org/altamed_s/1919839667"
                 ]
               })

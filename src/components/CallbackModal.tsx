@@ -85,10 +85,7 @@ export default function CallbackModal() {
 
         {/* Header line with logo imitation */}
         <div className="flex items-center gap-3 md:gap-4 px-5 md:px-8 pt-5 md:pt-7">
-          <div className="w-9 h-9 md:w-12 md:h-12 rounded-lg overflow-hidden grid place-items-center">
-            <Image src="/images/icons/S.webp" alt="Альтамед-С" width={48} height={48} className="object-contain" />
-          </div>
-          <div className="font-extrabold text-2xl md:text-3xl text-[#13AB7B]">Альтамед-С</div>
+          <Image src="/images/icons/altamed-golicyno3.png" alt="Альтамед-С" width={140} height={140} className="object-contain" />
         </div>
 
         <div className="px-5 md:px-8 pb-6 md:pb-10">
@@ -151,13 +148,13 @@ export default function CallbackModal() {
             <div className="mx-auto max-w-sm bg-white rounded-2xl p-4 md:p-5 text-center border border-emerald-100">
               <div className="font-semibold text-gray-900 mb-3 md:mb-4 text-lg">Записаться по телефону</div>
               <a
-                href="tel:+74952554450"
+                href="tel:+74959896480"
                 className="inline-flex items-center justify-center gap-2 w-full h-12 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold shadow"
               >
                 <svg viewBox="0 0 24 24" className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2">
                   <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.362 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.574 2.81.7A2 2 0 0122 16.92z" />
                 </svg>
-                +7 (495) 255-44-50
+                +7 (495) 989 64 80
               </a>
               <div className="mt-2 text-xs text-gray-500">Пн–Вс: 08:00 — 21:00</div>
             </div>

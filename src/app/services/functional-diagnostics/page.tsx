@@ -1,41 +1,26 @@
 "use client";
 
-import { useState } from "react";
-import Link from "next/link";
-import AppointmentForm from '@/components/AppointmentForm';
+import Image from "next/image";
+import AppointmentForm from "@/components/AppointmentForm";
 
 export default function FunctionalDiagnosticsPage() {
-  const [expandedItems, setExpandedItems] = useState<number[]>([]);
-
-  const toggleExpanded = (index: number) => {
-    setExpandedItems(prev => 
-      prev.includes(index) 
-        ? prev.filter(i => i !== index)
-        : [...prev, index]
-    );
-  };
-
-  const procedures = [
+  const benefits = [
     {
-      title: "ЭКГ (Электрокардиография)",
-      description: "Запись электрической активности сердца для выявления нарушений ритма и проводимости"
+      title: "Безопасность методов.",
+      text: "Исследования неинвазивны и не несут лучевой нагрузки (кроме отдельных видов).",
     },
     {
-      title: "ЭХОКГ (Эхокардиография)",
-      description: "Ультразвуковое исследование сердца и сосудов"
+      title: "Безболезненность.",
+      text: "Процедуры комфортны для пациента и не требуют анестезии.",
     },
     {
-      title: "Холтеровское мониторирование",
-      description: "Суточная запись ЭКГ для выявления аритмий"
+      title: "Высокая информативность.",
+      text: "Позволяют оценить функцию органов в покое и при нагрузке.",
     },
     {
-      title: "Спирометрия",
-      description: "Оценка функции внешнего дыхания"
+      title: "Контроль эффективности лечения.",
+      text: "Повторные исследования дают объективную динамику состояния.",
     },
-    {
-      title: "КТГ (Кардиотокография)",
-      description: "Мониторинг состояния плода во время беременности"
-    }
   ];
 
   const indications = [
@@ -48,272 +33,314 @@ export default function FunctionalDiagnosticsPage() {
     "Подготовка к операции",
     "Контроль эффективности лечения",
     "Профилактические осмотры",
-    "Нарушения дыхания"
+    "Нарушения дыхания",
   ];
 
-  const advantages = [
-    "Безопасность методов",
-    "Безболезненность",
-    "Информативность",
-    "Контроль эффективности лечения",
-    "Ранняя диагностика"
+  const results = [
+    "Выявление нарушений ритма и проводимости",
+    "Оценка структуры и функции сердца",
+    "Диагностика ишемии и других патологий",
+    "Оценка функции внешнего дыхания",
+    "Мониторинг состояния плода при беременности",
+    "Ранняя диагностика заболеваний",
+    "Объективный контроль динамики лечения",
   ];
 
-  const faqItems = [
+  const fdServices = [
     {
-      question: "Что такое ЭКГ?",
-      answer: "ЭКГ (электрокардиография) - это метод регистрации электрической активности сердца. Это безболезненная процедура, которая длится 2-3 минуты и помогает выявить нарушения ритма, ишемию и другие патологии сердца."
+      category: "Функциональная диагностика",
+      services: [
+        { code: "A05.10.006", name: "Электрокардиография (ЭКГ)", price: 550 },
+        { code: "A05.10.004", name: "Эхокардиография (ЭхоКГ)", price: 2200 },
+        { code: "A02.12.002", name: "Спирометрия", price: 880 },
+        { code: "A12.10.001", name: "Суточное мониторирование ЭКГ (Холтер)", price: 2200 },
+        { code: "A12.09.001.004", name: "Суточное мониторирование АД", price: 1650 },
+        { code: "A09.05.193.001", name: "Кардиотокография (КТГ) плода", price: 1100 },
+        { code: "A12.09.001.004.001", name: "Расшифровка ЭКГ", price: 440 },
+      ],
     },
-    {
-      question: "Как готовиться к функциональной диагностике?",
-      answer: "Большинство методов функциональной диагностики не требуют специальной подготовки. Перед ЭКГ рекомендуется избегать физических нагрузок. Подробные инструкции вы получите при записи на исследование."
-    },
-    {
-      question: "Что покажет Холтер?",
-      answer: "Холтеровское мониторирование - это суточная запись ЭКГ, которая позволяет зафиксировать нарушения ритма и проводимости, возникающие не постоянно, а эпизодически в течение дня и ночи."
-    },
-    {
-      question: "Когда назначают ЭХОКГ?",
-      answer: "Эхокардиографию (УЗИ сердца) назначают для оценки структуры и функции сердца, выявления пороков, заболеваний сердечной мышцы и клапанов, контроля после лечения."
-    }
   ];
 
   return (
-    <div className="flex flex-col min-h-full bg-white">
-      {/* Breadcrumbs */}
-      <section className="py-4">
-        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
-          <nav className="flex" aria-label="Breadcrumb">
-            <ol className="inline-flex items-center space-x-1 md:space-x-3">
-              <li className="inline-flex items-center">
-                <Link href="/" className="inline-flex items-center text-sm font-medium text-gray-700 hover:text-emerald-600">
-                  <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
-                  </svg>
-                  Главная
-                </Link>
-              </li>
-              <li>
-                <div className="flex items-center">
-                  <svg className="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd"></path>
-                  </svg>
-                  <Link href="/services" className="ml-1 text-sm font-medium text-gray-700 hover:text-emerald-600 md:ml-2">Услуги</Link>
-                </div>
-              </li>
-              <li aria-current="page">
-                <div className="flex items-center">
-                  <svg className="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd"></path>
-                  </svg>
-                  <span className="ml-1 text-sm font-medium text-gray-500 md:ml-2">Функциональная диагностика</span>
-                </div>
-              </li>
-            </ol>
-          </nav>
+    <div className="flex flex-col bg-white">
+      {/* Title without banner */}
+      <section className="pt-4 md:pt-6">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+          <h1 className="text-2xl md:text-4xl font-bold text-black">
+            Функциональная диагностика в Голицино — исследования в медицинском центре Альтамед Голицино
+          </h1>
         </div>
       </section>
 
-      {/* Main section */}
-      <main className="py-3">
-        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
-          <header className="mb-6 ml-0 md:ml-4 lg:ml-8">
-            <h1 className="text-2xl md:text-3xl font-bold text-black leading-tight px-4 md:px-0">
-              Функциональная диагностика в клинике «<span className="italic">Альтамед-с</span>»
-            </h1>
-            <p className="text-gray-600 mt-2 px-4 md:px-0 text-sm md:text-base">
-              Оценка функционального состояния органов и систем
-            </p>
-          </header>
-
-          {/* Banner */}
-          <div className="mb-8">
-            <div className="block md:hidden w-full h-[300px] flex flex-col rounded-[20px] overflow-hidden shadow-md mx-auto">
-              <div className="h-[220px] bg-[#CC5656] relative overflow-hidden">
-                <div className="w-full h-full relative">
-                  <img
-                    src="/images/services/Screenshot_1832.png"
-                    alt="Функциональная диагностика"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
+      {/* Green info block */}
+      <section className="py-8">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+          <div className="bg-emerald-500 rounded-[20px] overflow-hidden">
+            <div className="flex flex-col md:flex-row">
+              <div className="w-full md:w-1/2 p-6 md:p-8 text-white">
+                <p className="mb-4">
+                  Функциональная диагностика — комплекс методов исследования, направленных на оценку функционального состояния органов и систем организма в покое и при нагрузке. В медицинском центре Альтамед Голицино исследования проводятся опытными специалистами на современном оборудовании.
+                </p>
+                <p className="mb-4">
+                  К методам функциональной диагностики относятся ЭКГ, эхокардиография, холтеровское мониторирование, спирометрия, КТГ и другие. Они позволяют выявить нарушения на ранних стадиях, оценить резервные возможности организма и проконтролировать эффективность лечения.
+                </p>
+                <p>
+                  Исследования безопасны, безболезненны и высокоинформативны. Записаться на функциональную диагностику в Альтамед Голицино можно через форму на сайте или по телефону.
+                </p>
               </div>
-              <div className="bg-white p-4 flex flex-col justify-between items-start gap-3">
-                <div className="text-black font-medium text-sm">Функциональная диагностика</div>
-                <Link 
-                  href="https://online.altamed-c.ru/" target="_blank" rel="noopener noreferrer" 
-                  className="bg-[#CC5656] text-white rounded-full flex items-center justify-center w-full h-[46px] text-sm hover:bg-[#b54b4b] transition-colors"
-                >
-                  Консультация
-                  <svg className="w-5 h-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </Link>
-              </div>
-            </div>
-            <div className="hidden md:block h-[445px] bg-[#CC5656] relative overflow-hidden rounded-[20px] shadow-lg">
-              <div className="w-full h-full relative">
-                <img
+              <div className="w-full md:w-1/2 relative h-[240px] md:h-auto">
+                <Image
                   src="/images/services/Screenshot_1832.png"
-                  alt="Функциональная диагностика в Одинцово"
-                  className="w-full h-full object-cover"
+                  alt="Функциональная диагностика в Альтамед Голицино"
+                  fill
+                  className="object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-transparent"></div>
-              </div>
-              <div className="absolute inset-0 flex flex-col justify-center items-start p-8 md:p-12 text-black">
-                <h2 className="text-2xl md:text-4xl font-bold mb-4">Функциональная диагностика</h2>
-                <p className="text-lg md:text-xl mb-6 max-w-md">Оценка работы органов и систем</p>
-                <Link 
-                  href="https://online.altamed-c.ru/" target="_blank" rel="noopener noreferrer" 
-                  className="bg-[#CC5656] text-white rounded-full px-8 py-3 font-medium hover:bg-[#b54b4b] transition-colors"
-                >
-                  Консультация
-                </Link>
               </div>
             </div>
           </div>
         </div>
-      </main>
+      </section>
 
-      {/* Виды исследований */}
-      <section className="py-12 bg-gray-50">
-        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
-          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">
-            Виды исследований
+      {/* Benefits */}
+      <section className="py-4">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+          <h2 className="text-2xl md:text-3xl font-bold text-black mb-6">
+            Преимущества функциональной диагностики в Альтамед Голицино
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {benefits.slice(0, 3).map((b, i) => (
+              <div key={i} className="flex gap-4 items-start">
+                <div className="w-12 h-12 rounded-full bg-emerald-500 text-white flex items-center justify-center text-xl font-bold">
+                  {i + 1}
+                </div>
+                <div>
+                  <div className="font-semibold mb-1">{b.title}</div>
+                  <div className="text-gray-700 text-sm md:text-base">{b.text}</div>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="mt-6">
+            <div className="flex gap-4 items-start">
+              <div className="w-12 h-12 rounded-full bg-emerald-500 text-white flex items-center justify-center text-xl font-bold">
+                4
+              </div>
+              <div>
+                <div className="font-semibold mb-1">{benefits[3].title}</div>
+                <div className="text-gray-700 text-sm md:text-base">{benefits[3].text}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Indications and results */}
+      <section className="py-6">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <h3 className="text-2xl font-bold mb-4">Показания к функциональной диагностике</h3>
+              <div className="bg-gray-50 rounded-[20px] p-6">
+                <ul className="space-y-3 text-gray-800">
+                  {indications.map((item, idx) => (
+                    <li key={idx} className="flex gap-3">
+                      <span className="mt-1 inline-block w-3 h-3 rounded-full border-2 border-emerald-500" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+                <p className="text-gray-700 mt-4">
+                  Функциональная диагностика в Альтамед Голицино назначается терапевтом, кардиологом, пульмонологом или другим специалистом при наличии жалоб или в рамках профилактического обследования.
+                </p>
+              </div>
+            </div>
+            <div>
+              <h3 className="text-2xl font-bold mb-4">Что дают исследования</h3>
+              <div className="bg-gray-50 rounded-[20px] p-6">
+                <ul className="space-y-3 text-gray-800">
+                  {results.map((item, idx) => (
+                    <li key={idx} className="flex gap-3">
+                      <span className="mt-1 inline-block w-3 h-3 rounded-full border-2 border-emerald-500" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+                <p className="text-gray-700 mt-4">
+                  Результаты исследований позволяют врачу поставить или уточнить диагноз, подобрать лечение и контролировать его эффективность. В Альтамед Голицино расшифровку проводит специалист.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* How it works */}
+      <section className="py-8 bg-gray-50">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+          <h2 className="text-2xl md:text-3xl font-bold text-black mb-6">
+            Как проводятся исследования в Альтамед Голицино
+          </h2>
+          <div className="space-y-4 text-gray-700">
+            <p className="text-base md:text-lg">
+              ЭКГ — запись электрической активности сердца в течение нескольких минут. Эхокардиография — ультразвуковое исследование сердца и сосудов. Холтеровское мониторирование — суточная запись ЭКГ для выявления аритмий. Спирометрия оценивает функцию внешнего дыхания. КТГ применяется для мониторинга состояния плода во время беременности.
+            </p>
+            <p className="text-base md:text-lg">
+              Большинство методов не требуют специальной подготовки. Перед ЭКГ рекомендуется избегать физических нагрузок. Подробные инструкции вы получите при записи на исследование в медицинском центре Альтамед Голицино.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Preparation */}
+      <section className="py-6">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+          <h3 className="text-2xl font-bold mb-4">Подготовка к исследованиям в Альтамед Голицино</h3>
+          <div className="text-gray-800 space-y-4">
+            <p>
+              Для ЭКГ и ЭхоКГ специальная подготовка не требуется. Перед ЭКГ желательно не переедать и не курить за 1–2 часа. Для холтеровского мониторирования в день исследования не рекомендуется принимать душ (устройство нельзя мочить). При записи на спирометрию или другие виды исследований администратор клиники Альтамед Голицино сообщит индивидуальные рекомендации.
+            </p>
+            <p>
+              Исследования проводятся в комфортных условиях. Длительность ЭКГ — 2–3 минуты, ЭхоКГ — около 20–30 минут. После процедур можно сразу вернуться к обычной деятельности.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Application areas */}
+      <section className="py-8 bg-gray-50">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+          <h2 className="text-2xl md:text-3xl font-bold text-black mb-6">
+            Виды исследований в Альтамед Голицино
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {procedures.map((procedure, idx) => (
-              <div key={idx} className="bg-white p-6 rounded-[20px] shadow-md hover:shadow-lg transition-shadow border border-gray-100">
-                <h3 className="text-xl font-semibold text-[#CC5656] mb-3">{procedure.title}</h3>
-                <p className="text-gray-600">{procedure.description}</p>
-              </div>
-            ))}
+            <div className="bg-white rounded-[20px] p-6 shadow-sm">
+              <h3 className="text-xl font-bold mb-4 text-emerald-600">Кардиология</h3>
+              <ul className="space-y-2 text-gray-700">
+                <li className="flex items-start">
+                  <span className="w-2 h-2 rounded-full bg-emerald-500 mt-2 mr-3 flex-shrink-0"></span>
+                  <span>ЭКГ — электрокардиография</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="w-2 h-2 rounded-full bg-emerald-500 mt-2 mr-3 flex-shrink-0"></span>
+                  <span>ЭхоКГ — эхокардиография (УЗИ сердца)</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="w-2 h-2 rounded-full bg-emerald-500 mt-2 mr-3 flex-shrink-0"></span>
+                  <span>Холтеровское мониторирование ЭКГ</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="w-2 h-2 rounded-full bg-emerald-500 mt-2 mr-3 flex-shrink-0"></span>
+                  <span>Суточное мониторирование АД</span>
+                </li>
+              </ul>
+            </div>
+            <div className="bg-white rounded-[20px] p-6 shadow-sm">
+              <h3 className="text-xl font-bold mb-4 text-emerald-600">Другие направления</h3>
+              <ul className="space-y-2 text-gray-700">
+                <li className="flex items-start">
+                  <span className="w-2 h-2 rounded-full bg-emerald-500 mt-2 mr-3 flex-shrink-0"></span>
+                  <span>Спирометрия — оценка функции дыхания</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="w-2 h-2 rounded-full bg-emerald-500 mt-2 mr-3 flex-shrink-0"></span>
+                  <span>КТГ — кардиотокография плода</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="w-2 h-2 rounded-full bg-emerald-500 mt-2 mr-3 flex-shrink-0"></span>
+                  <span>Расшифровка ЭКГ и заключения</span>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Почему Альтамед-С*/}
-      <section className="py-12">
-        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
-          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">
-            Почему «Альтамед-С»?
+      {/* Price list */}
+      <section className="py-8">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+          <h2 className="text-2xl md:text-3xl font-bold text-black mb-6">
+            Цены на функциональную диагностику
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="w-16 h-16 mx-auto mb-4 relative">
-                <img src="/images/yslugi/star 1.webp" alt="Звезда 1" className="w-full h-full object-contain" />
-                <span className="absolute inset-0 flex items-center justify-center text-white font-bold text-xl">1</span>
-              </div>
-              <p className="text-gray-700 font-medium">Современное оборудование</p>
-            </div>
-            <div className="text-center">
-              <div className="w-16 h-16 mx-auto mb-4 relative">
-                <img src="/images/yslugi/star 1.webp" alt="Звезда 2" className="w-full h-full object-contain" />
-                <span className="absolute inset-0 flex items-center justify-center text-white font-bold text-xl">2</span>
-              </div>
-              <p className="text-gray-700 font-medium">Опытные специалисты</p>
-            </div>
-            <div className="text-center">
-              <div className="w-16 h-16 mx-auto mb-4 relative">
-                <img src="/images/yslugi/star 1.webp" alt="Звезда 3" className="w-full h-full object-contain" />
-                <span className="absolute inset-0 flex items-center justify-center text-white font-bold text-xl">3</span>
-              </div>
-              <p className="text-gray-700 font-medium">Широкий спектр исследований</p>
-            </div>
-            <div className="text-center">
-              <div className="w-16 h-16 mx-auto mb-4 relative">
-                <img src="/images/yslugi/star 1.webp" alt="Звезда 4" className="w-full h-full object-contain" />
-                <span className="absolute inset-0 flex items-center justify-center text-white font-bold text-xl">4</span>
-              </div>
-              <p className="text-gray-700 font-medium">Быстрое получение результатов</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Описание */}
-      <section className="py-12 bg-gray-50">
-        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">Что такое функциональная диагностика?</h2>
-          <div className="mb-8">
-            <p className="text-gray-600 mb-4">
-              Функциональная диагностика - это комплекс методов исследования, направленных на оценку функционального состояния органов и систем организма в покое и при нагрузке.
-            </p>
-            <p className="text-gray-600">
-              Методы функциональной диагностики позволяют выявить нарушения на ранних стадиях, оценить резервные возможности организма, проконтролировать эффективность лечения.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Показания */}
-      <section className="py-12">
-        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">Когда назначают функциональную диагностику</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {indications.map((indication, idx) => (
-              <div key={idx} className="bg-white p-6 rounded-[20px] shadow-md hover:shadow-lg transition-shadow border border-gray-100">
-                <div className="flex items-start">
-                  <div className="w-2 h-2 bg-[#CC5656] rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                  <p className="text-gray-700">{indication}</p>
+          <p className="text-sm md:text-base text-gray-700 mb-4">
+            Стоимость указана за одно исследование и носит информационный характер. Актуальные цены уточняйте у администратора клиники Альтамед Голицино.
+          </p>
+          <div className="space-y-6">
+            {fdServices.map((block, idx) => (
+              <div key={idx} className="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden">
+                <div className="bg-emerald-50 px-4 md:px-6 py-3 border-b border-emerald-100">
+                  <h3 className="text-lg md:text-xl font-semibold text-emerald-900">
+                    {block.category}
+                  </h3>
+                </div>
+                <div className="p-4 md:p-6">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    {block.services.map((service) => (
+                      <div
+                        key={service.code}
+                        className="flex flex-col sm:flex-row sm:items-center sm:justify-between border border-gray-100 rounded-xl px-4 py-3 bg-gray-50"
+                      >
+                        <div className="flex-1 min-w-0">
+                          <div className="text-xs text-gray-500 font-mono mb-1">{service.code}</div>
+                          <div className="text-sm md:text-base font-medium text-gray-900">
+                            {service.name}
+                          </div>
+                        </div>
+                        <div className="mt-2 sm:mt-0 sm:ml-4 text-emerald-700 font-semibold text-base">
+                          {service.price.toLocaleString("ru-RU")} ₽
+                        </div>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
             ))}
           </div>
+          <p className="mt-4 text-xs md:text-sm text-gray-500">
+            Информация о ценах не является публичной офертой. Подробности уточняйте при записи на приём.
+          </p>
         </div>
       </section>
 
-      {/* Преимущества */}
-      <section className="py-12 bg-gray-50">
-        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
-          <h2 className="text-3xl font-bold text-gray-900 text-center mb-8">Преимущества функциональной диагностики</h2>
+      {/* Why choose us */}
+      <section className="py-8 bg-gray-50">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+          <h2 className="text-2xl md:text-3xl font-bold text-black mb-6">
+            Почему выбирают функциональную диагностику в Альтамед Голицино
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {advantages.map((advantage, idx) => (
-              <div key={idx} className="bg-white p-6 rounded-[20px] shadow-md hover:shadow-lg transition-shadow">
-                <div className="flex items-start">
-                  <svg className="w-6 h-6 text-[#CC5656] mr-3 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                  <p className="text-gray-700">{advantage}</p>
-                </div>
+            <div className="bg-white rounded-2xl p-6 shadow-sm">
+              <div className="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
               </div>
-            ))}
+              <h3 className="text-lg font-semibold mb-2">Современное оборудование</h3>
+              <p className="text-gray-700">Используем аппараты экспертного класса для точной диагностики</p>
+            </div>
+            <div className="bg-white rounded-2xl p-6 shadow-sm">
+              <div className="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                </svg>
+              </div>
+              <h3 className="text-lg font-semibold mb-2">Опытные специалисты</h3>
+              <p className="text-gray-700">Врачи функциональной диагностики с многолетним стажем</p>
+            </div>
+            <div className="bg-white rounded-2xl p-6 shadow-sm">
+              <div className="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 className="text-lg font-semibold mb-2">Удобная запись</h3>
+              <p className="text-gray-700">Записаться на исследование можно онлайн или по телефону</p>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* FAQ */}
-      <section className="py-12">
-        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
-          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Часто задаваемые вопросы</h2>
-          <div className="space-y-4">
-            {faqItems.map((item, index) => (
-              <div key={index} className="bg-white rounded-[20px] shadow-md overflow-hidden">
-                <button
-                  onClick={() => toggleExpanded(index)}
-                  className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors"
-                >
-                  <span className="text-lg font-semibold text-gray-900">{item.question}</span>
-                  <svg
-                    className={`w-5 h-5 text-[#CC5656] transform transition-transform ${expandedItems.includes(index) ? 'rotate-180' : ''}`}
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                  </svg>
-                </button>
-                {expandedItems.includes(index) && (
-                  <div className="px-6 pb-4 text-gray-600">{item.answer}</div>
-                )}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
+      {/* Appointment Form */}
       <AppointmentForm />
     </div>
   );
 }
-

@@ -39,10 +39,10 @@ export default function DiagnosticsPage() {
     },
     {
       id: 'ultrasound',
-      title: 'УЗИ',
-      description: 'Ультразвуковая диагностика органов и систем организма',
+      title: 'УЗИ Голицино',
+      description: 'УЗИ в Голицино: ультразвуковая диагностика органов и систем в Альтамед Голицино',
       image: '/images/services/yzi%20new.png',
-      link: '/services/ultrasound'
+      link: '/services/uzi-golitsino'
     },
     {
       id: 'ct',
@@ -141,8 +141,8 @@ export default function DiagnosticsPage() {
 
   const faqItems = [
     {
-      question: "Какие виды диагностики доступны в клинике «Альтамед-С»?",
-      answer: "Клиника «Альтамед-С» в Одинцово предоставляет полный спектр диагностических услуг: лучевая диагностика (рентген, КТ, УЗИ, МРТ), эндоскопические исследования (гастроскопия, колоноскопия, бронхоскопия), функциональная диагностика (ЭКГ, спирометрия, мониторирование), лабораторные анализы всех видов. Все исследования проводятся на современном оборудовании экспертного класса."
+      question: "Какие виды диагностики доступны в клинике «Альтамед Голицино»?",
+      answer: "Клиника «Альтамед Голицино» предоставляет полный спектр диагностических услуг: лучевая диагностика (рентген, КТ, УЗИ, МРТ), эндоскопические исследования (гастроскопия, колоноскопия, бронхоскопия), функциональная диагностика (ЭКГ, спирометрия, мониторирование), лабораторные анализы всех видов. Все исследования проводятся на современном оборудовании экспертного класса квалифицированными специалистами."
     },
     {
       question: "Нужна ли подготовка перед диагностическими процедурами?",
@@ -154,15 +154,15 @@ export default function DiagnosticsPage() {
     },
     {
       question: "Можно ли пройти диагностику без направления врача?",
-      answer: "Да, в клинике «Альтамед-С» вы можете пройти большинство диагностических исследований без направления врача в рамках профилактических программ или для уточнения диагноза. Однако для некоторых сложных исследований (например, КТ с контрастом, эндоскопия под наркозом) может потребоваться консультация врача и направление. Все ограничения вам сообщат при записи на исследование."
+      answer: "Да, в клинике «Альтамед Голицино» вы можете пройти большинство диагностических исследований без направления врача в рамках профилактических программ или для уточнения диагноза. Однако для некоторых сложных исследований (например, КТ с контрастом, эндоскопия под наркозом) может потребоваться консультация врача и направление. Все ограничения вам сообщат при записи на исследование. Специалисты Альтамед Голицино всегда готовы проконсультировать по выбору необходимых исследований."
     },
     {
       question: "Насколько безопасна диагностика для здоровья?",
-      answer: "Все диагностические процедуры в клинике «Альтамед-С» проводятся на современном оборудовании, соответствующем международным стандартам безопасности. Лучевая нагрузка при рентгене и КТ минимизируется благодаря современным цифровым аппаратам. УЗИ и МРТ вообще не несут лучевой нагрузки. Перед исследованиями с контрастированием проводится оценка противопоказаний и аллергопробы. Все процедуры максимально безопасны для пациентов."
+      answer: "Все диагностические процедуры в клинике «Альтамед Голицино» проводятся на современном оборудовании, соответствующем международным стандартам безопасности. Лучевая нагрузка при рентгене и КТ минимизируется благодаря современным цифровым аппаратам. УЗИ и МРТ вообще не несут лучевой нагрузки. Перед исследованиями с контрастированием проводится оценка противопоказаний и аллергопробы. Все процедуры максимально безопасны для пациентов. Врачи Альтамед Голицино всегда учитывают индивидуальные особенности пациента при выборе методов диагностики."
     },
     {
       question: "Работает ли клиника в выходные дни?",
-      answer: "Да, клиника «Альтамед-С» в Одинцово работает в будние дни, выходные и праздничные дни. Время работы и доступность конкретных исследований по дням недели уточняйте при записи. Также доступна онлайн-запись через сайт клиники в любое удобное время."
+      answer: "Да, клиника «Альтамед Голицино» работает в будние дни, выходные и праздничные дни. Время работы и доступность конкретных исследований по дням недели уточняйте при записи. Также доступна онлайн-запись через сайт клиники в любое удобное время. Специалисты Альтамед Голицино всегда готовы помочь вам выбрать удобное время для прохождения диагностики."
     }
   ];
 
@@ -199,7 +199,7 @@ export default function DiagnosticsPage() {
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <header className="mb-6 ml-0 md:ml-4 lg:ml-8">
             <h1 className="text-2xl md:text-3xl font-bold text-black leading-tight px-4 md:px-0">
-              Диагностика в клинике «<span className="italic">Альтамед-с</span>» в Одинцово
+              Диагностика в клинике «<span className="italic">Альтамед Голицино</span>» — современные методы точной диагностики
             </h1>
             <p className="text-gray-600 mt-2 px-4 md:px-0 text-sm md:text-base">
               Современные методы диагностики для точной постановки диагноза и контроля лечения
@@ -213,7 +213,7 @@ export default function DiagnosticsPage() {
                 <div className="w-full h-full relative">
                   <img
                     src="/images/img diagnostika/diagnostics.webp"
-                    alt="Диагностика в Одинцово"
+                    alt="Диагностика в Альтамед Голицино"
                     className="w-full h-full object-cover"
                     onError={(e) => {
                       (e.target as HTMLImageElement).src = '/images/yslugi/Hardware diagnostics.webp';
@@ -238,7 +238,7 @@ export default function DiagnosticsPage() {
               <div className="w-full h-full relative">
                 <img
                   src="/images/img diagnostika/diagnostics.webp"
-                  alt="Диагностика в Одинцово"
+                  alt="Диагностика в Альтамед Голицино"
                   className="w-full h-full object-cover"
                   onError={(e) => {
                     (e.target as HTMLImageElement).src = '/images/yslugi/Hardware diagnostics.webp';
@@ -247,7 +247,7 @@ export default function DiagnosticsPage() {
                 <div className="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-transparent"></div>
               </div>
               <div className="absolute inset-0 flex flex-col justify-center items-start p-8 md:p-12 text-black">
-                <h2 className="text-2xl md:text-4xl font-bold mb-4">Диагностика в Одинцово</h2>
+                <h2 className="text-2xl md:text-4xl font-bold mb-4">Диагностика в Голицино</h2>
                 <p className="text-lg md:text-xl mb-6 max-w-md">Современные методы диагностики</p>
                 <Link 
                   href="/appointments" 
@@ -269,7 +269,7 @@ export default function DiagnosticsPage() {
               Диагностические услуги
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Полный спектр диагностических исследований в клинике «Альтамед-С» в Одинцово
+              Полный спектр диагностических исследований в клинике «Альтамед Голицино»
             </p>
           </div>
 
@@ -312,19 +312,19 @@ export default function DiagnosticsPage() {
       {/* Description */}
       <section className="py-12 bg-white">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">Диагностика в Одинцово: современные методы точной диагностики</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">Диагностика в Голицино: современные методы точной диагностики в Альтамед Голицино</h2>
           <div className="mb-8">
-            <p className="text-gray-700 mb-4 leading-relaxed">
-              <strong>Диагностика</strong> — основа правильного лечения и сохранения здоровья. В медицинском центре «Альтамед-С» в Одинцово вы можете пройти полное диагностическое обследование с использованием современных высокоточных методов. Наша клиника оснащена передовым диагностическим оборудованием экспертного класса, позволяющим выявлять заболевания на самых ранних стадиях, когда лечение наиболее эффективно.
+            <p className="text-gray-700 mb-4 leading-relaxed text-base md:text-lg">
+              <strong>Диагностика</strong> — основа правильного лечения и сохранения здоровья. В медицинском центре «Альтамед Голицино» вы можете пройти полное диагностическое обследование с использованием современных высокоточных методов. Наша клиника оснащена передовым диагностическим оборудованием экспертного класса, позволяющим выявлять заболевания на самых ранних стадиях, когда лечение наиболее эффективно. Врачи-диагносты Альтамед Голицино имеют многолетний опыт работы и регулярно повышают свою квалификацию.
             </p>
-            <p className="text-gray-700 mb-4 leading-relaxed">
-              Мы предоставляем все виды диагностики: лучевые методы (рентген, компьютерная томография, УЗИ), эндоскопические исследования (гастроскопия, колоноскопия, бронхоскопия), функциональная диагностика (ЭКГ, спирометрия, мониторирование), лабораторные анализы различных видов. Все исследования проводятся квалифицированными врачами-диагностами с многолетним опытом работы.
+            <p className="text-gray-700 mb-4 leading-relaxed text-base md:text-lg">
+              Клиника «Альтамед Голицино» предоставляет все виды диагностики: лучевые методы (рентген, компьютерная томография, УЗИ), эндоскопические исследования (гастроскопия, колоноскопия, бронхоскопия), функциональная диагностика (ЭКГ, спирометрия, мониторирование), лабораторные анализы различных видов. Все исследования проводятся квалифицированными врачами-диагностами с многолетним опытом работы. В Альтамед Голицино используется только современное оборудование от ведущих мировых производителей.
             </p>
-            <p className="text-gray-700 mb-4 leading-relaxed">
-              В клинике «Альтамед-С» диагностика проводится быстро, без очередей, в комфортных условиях. Результаты исследований выдаются в кратчайшие сроки, часто в день проведения исследования. Результаты доступны в электронном виде через личный кабинет пациента, что удобно для дистанционного консультирования с врачами и долгосрочного хранения медицинских данных.
+            <p className="text-gray-700 mb-4 leading-relaxed text-base md:text-lg">
+              В клинике «Альтамед Голицино» диагностика проводится быстро, без очередей, в комфортных условиях. Результаты исследований выдаются в кратчайшие сроки, часто в день проведения исследования. Результаты доступны в электронном виде через личный кабинет пациента, что удобно для дистанционного консультирования с врачами и долгосрочного хранения медицинских данных. Специалисты Альтамед Голицино всегда готовы ответить на вопросы пациентов и помочь в интерпретации результатов.
             </p>
             <div className="bg-blue-50 rounded-[20px] p-6 shadow-md border-l-4 border-blue-600 mt-6">
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Почему выбирают диагностику в клинике «Альтамед-С» в Одинцово?</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Почему выбирают диагностику в клинике «Альтамед Голицино»?</h3>
               <ul className="space-y-2 text-gray-700">
                 <li className="flex items-start">
                   <svg className="w-5 h-5 text-blue-600 mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -371,7 +371,7 @@ export default function DiagnosticsPage() {
       {/* Diagnostic Methods */}
       <section className="py-12 bg-gray-50">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
-          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Методы диагностики в клинике «Альтамед-С»</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Методы диагностики в клинике «Альтамед Голицино»</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {diagnosticMethods.map((category, idx) => (
               <div key={idx} className="bg-white rounded-[20px] p-6 shadow-md border border-blue-100">
@@ -395,7 +395,7 @@ export default function DiagnosticsPage() {
       {/* Indications */}
       <section className="py-12 bg-white">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">Когда необходима диагностика в Одинцово?</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">Когда необходима диагностика в Альтамед Голицино?</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {indications.map((indication, idx) => (
               <div key={idx} className="bg-white p-6 rounded-[20px] shadow-md hover:shadow-lg transition-shadow border border-gray-100">
@@ -412,7 +412,7 @@ export default function DiagnosticsPage() {
       {/* Advantages */}
       <section className="py-12 bg-gray-50">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
-          <h2 className="text-3xl font-bold text-gray-900 text-center mb-8">Преимущества диагностики в клинике «Альтамед-С»</h2>
+          <h2 className="text-3xl font-bold text-gray-900 text-center mb-8">Преимущества диагностики в клинике «Альтамед Голицино»</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {advantages.map((advantage, idx) => (
               <div key={idx} className="bg-white p-6 rounded-[20px] shadow-md hover:shadow-lg transition-shadow border border-gray-100">
@@ -431,10 +431,10 @@ export default function DiagnosticsPage() {
       {/* Preparation for diagnostics */}
       <section className="py-12 bg-white">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">Подготовка к диагностическим исследованиям в Одинцово</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">Подготовка к диагностическим исследованиям в Альтамед Голицино</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-blue-50 rounded-[20px] p-8 shadow-lg border-l-4 border-blue-600">
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4">Подготовка к УЗИ в Одинцово</h3>
+              <h3 className="text-2xl font-semibold text-gray-900 mb-4">Подготовка к УЗИ в Альтамед Голицино</h3>
               <p className="text-gray-700 mb-4 leading-relaxed">
                 Правильная подготовка к УЗИ обеспечивает высокую информативность исследования:
               </p>
@@ -480,21 +480,21 @@ export default function DiagnosticsPage() {
       {/* Popular diagnostic studies */}
       <section className="py-12 bg-gray-50">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
-          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Популярные диагностические исследования в Одинцово</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Популярные диагностические исследования в Альтамед Голицино</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
               <h3 className="text-xl font-semibold text-gray-900 mb-4">УЗИ внутренних органов</h3>
               <p className="text-gray-700 leading-relaxed mb-4">
-                Ультразвуковое исследование органов брюшной полости (печень, желчный пузырь, поджелудочная железа, селезенка, почки) — одно из самых востребованных исследований в клинике «Альтамед-С» в Одинцово. Безопасный, быстрый и информативный метод диагностики.
+                Ультразвуковое исследование органов брюшной полости (печень, желчный пузырь, поджелудочная железа, селезенка, почки) — одно из самых востребованных исследований в клинике «Альтамед Голицино». Безопасный, быстрый и информативный метод диагностики. В Альтамед Голицино УЗИ проводится на современных аппаратах экспертного класса.
               </p>
-              <Link href="/services/ultrasound" className="text-blue-600 hover:text-blue-700 font-medium">
+              <Link href="/services/uzi-golitsino" className="text-blue-600 hover:text-blue-700 font-medium">
                 Подробнее об УЗИ →
               </Link>
             </div>
             <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
               <h3 className="text-xl font-semibold text-gray-900 mb-4">Компьютерная томография</h3>
               <p className="text-gray-700 leading-relaxed mb-4">
-                КТ с контрастированием и без для точной визуализации внутренних органов, сосудов, суставов. В клинике «Альтамед-С» в Одинцово КТ проводится на современном мультиспиральном томографе с минимальной лучевой нагрузкой.
+                КТ с контрастированием и без для точной визуализации внутренних органов, сосудов, суставов. В клинике «Альтамед Голицино» КТ проводится на современном мультиспиральном томографе с минимальной лучевой нагрузкой. Высокое качество изображений позволяет выявлять патологии на ранних стадиях.
               </p>
               <Link href="/services/ct" className="text-blue-600 hover:text-blue-700 font-medium">
                 Подробнее о КТ →
@@ -503,7 +503,7 @@ export default function DiagnosticsPage() {
             <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
               <h3 className="text-xl font-semibold text-gray-900 mb-4">Эндоскопические исследования</h3>
               <p className="text-gray-700 leading-relaxed mb-4">
-                Гастроскопия и колоноскопия под седацией — комфортное исследование ЖКТ с биопсией. Видеоэндоскопы экспертного класса в клинике «Альтамед-С» в Одинцово обеспечивают высокую четкость изображения и точную диагностику.
+                Гастроскопия и колоноскопия под седацией — комфортное исследование ЖКТ с биопсией. Видеоэндоскопы экспертного класса в клинике «Альтамед Голицино» обеспечивают высокую четкость изображения и точную диагностику. Все процедуры проводятся опытными эндоскопистами.
               </p>
               <Link href="/services/endoscopy" className="text-blue-600 hover:text-blue-700 font-medium">
                 Подробнее об эндоскопии →
@@ -513,10 +513,139 @@ export default function DiagnosticsPage() {
         </div>
       </section>
 
+      {/* Diagnostic Process */}
+      <section className="py-12 bg-white">
+        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">Как проходит диагностика в Альтамед Голицино</h2>
+          <div className="space-y-6">
+            <div className="bg-gradient-to-r from-blue-50 to-cyan-50 rounded-[20px] p-6 md:p-8">
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Этапы диагностического процесса</h3>
+              <div className="space-y-4 text-gray-700">
+                <div className="flex items-start">
+                  <div className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold mr-4 flex-shrink-0">1</div>
+                  <div>
+                    <h4 className="font-semibold mb-2">Запись на исследование</h4>
+                    <p className="text-base md:text-lg">Вы можете записаться на диагностику в Альтамед Голицино онлайн через сайт, по телефону или при личном визите в клинику. Наш администратор поможет выбрать удобное время и расскажет о подготовке к исследованию.</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <div className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold mr-4 flex-shrink-0">2</div>
+                  <div>
+                    <h4 className="font-semibold mb-2">Подготовка к исследованию</h4>
+                    <p className="text-base md:text-lg">В зависимости от вида диагностики специалисты Альтамед Голицино дадут подробные инструкции по подготовке. Это может включать голодание, очищение кишечника, отмену некоторых препаратов. Правильная подготовка обеспечивает точность результатов.</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <div className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold mr-4 flex-shrink-0">3</div>
+                  <div>
+                    <h4 className="font-semibold mb-2">Проведение исследования</h4>
+                    <p className="text-base md:text-lg">Все диагностические процедуры в Альтамед Голицино проводятся опытными специалистами в комфортных условиях. Врач объяснит процесс, ответит на вопросы и обеспечит максимальный комфорт во время исследования.</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <div className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold mr-4 flex-shrink-0">4</div>
+                  <div>
+                    <h4 className="font-semibold mb-2">Получение результатов</h4>
+                    <p className="text-base md:text-lg">Результаты большинства исследований в Альтамед Голицино готовы в день обращения или в течение 1-2 рабочих дней. Вы получите результаты в печатном виде и в электронном формате через личный кабинет. При необходимости врач-диагност проведет консультацию по результатам.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Equipment and Technology */}
+      <section className="py-12 bg-gray-50">
+        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Оборудование и технологии в Альтамед Голицино</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Лучевая диагностика</h3>
+              <ul className="space-y-2 text-gray-700">
+                <li className="flex items-start">
+                  <span className="w-2 h-2 rounded-full bg-blue-600 mt-2 mr-3 flex-shrink-0"></span>
+                  <span>Цифровые рентген-аппараты с минимальной лучевой нагрузкой</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="w-2 h-2 rounded-full bg-blue-600 mt-2 mr-3 flex-shrink-0"></span>
+                  <span>Мультиспиральный компьютерный томограф для высокоточной диагностики</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="w-2 h-2 rounded-full bg-blue-600 mt-2 mr-3 flex-shrink-0"></span>
+                  <span>Ультразвуковые сканеры экспертного класса с допплерографией</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="w-2 h-2 rounded-full bg-blue-600 mt-2 mr-3 flex-shrink-0"></span>
+                  <span>Современные системы обработки и архивации изображений</span>
+                </li>
+              </ul>
+            </div>
+            <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Эндоскопия и функциональная диагностика</h3>
+              <ul className="space-y-2 text-gray-700">
+                <li className="flex items-start">
+                  <span className="w-2 h-2 rounded-full bg-blue-600 mt-2 mr-3 flex-shrink-0"></span>
+                  <span>Видеоэндоскопы высокого разрешения для гастроскопии и колоноскопии</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="w-2 h-2 rounded-full bg-blue-600 mt-2 mr-3 flex-shrink-0"></span>
+                  <span>Современные кардиографы для ЭКГ и холтеровского мониторирования</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="w-2 h-2 rounded-full bg-blue-600 mt-2 mr-3 flex-shrink-0"></span>
+                  <span>Спирометры для исследования функции внешнего дыхания</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="w-2 h-2 rounded-full bg-blue-600 mt-2 mr-3 flex-shrink-0"></span>
+                  <span>Системы суточного мониторирования артериального давления</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Us */}
+      <section className="py-12 bg-white">
+        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
+          <h2 className="text-3xl font-bold text-gray-900 text-center mb-8">Почему выбирают диагностику в Альтамед Голицино</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-[20px] p-6 shadow-md">
+              <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+              </div>
+              <h3 className="text-lg font-semibold mb-2">Безопасность и точность</h3>
+              <p className="text-gray-700">Все исследования в Альтамед Голицино проводятся с соблюдением международных стандартов безопасности и качества</p>
+            </div>
+            <div className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-[20px] p-6 shadow-md">
+              <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 className="text-lg font-semibold mb-2">Быстрые результаты</h3>
+              <p className="text-gray-700">Большинство исследований в Альтамед Голицино готовы в день обращения, результаты доступны онлайн</p>
+            </div>
+            <div className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-[20px] p-6 shadow-md">
+              <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                </svg>
+              </div>
+              <h3 className="text-lg font-semibold mb-2">Опытные специалисты</h3>
+              <p className="text-gray-700">Врачи-диагносты Альтамед Голицино имеют высшую категорию и многолетний опыт работы</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ */}
       <section className="py-12 bg-gray-50">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
-          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Часто задаваемые вопросы о диагностике в Одинцово</h2>
+          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Часто задаваемые вопросы о диагностике в Альтамед Голицино</h2>
           <div className="space-y-4">
             {faqItems.map((item, index) => (
               <div key={index} className="bg-white rounded-[20px] shadow-md overflow-hidden border border-blue-100">

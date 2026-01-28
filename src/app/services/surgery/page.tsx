@@ -22,7 +22,7 @@ export default function SurgeryPage() {
       category: "Биопсии",
       services: [
         { name: "Биопсия кожи", price: "2 900 руб." },
-        { name: "Биопсия узелков, тофусов", price: "3 200 руб." },
+        { name: "Биопсия узлов, тофусов", price: "3 200 руб." },
         { name: "Биопсия тканей пролежня", price: "1 800 руб." },
         { name: "Биопсия мышцы", price: "4 900 руб." },
         { name: "Биопсия лимфатического узла", price: "3 200 руб." },
@@ -195,10 +195,10 @@ export default function SurgeryPage() {
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <header className="mb-6 ml-0 md:ml-4 lg:ml-8">
             <h1 className="text-2xl md:text-3xl font-bold text-black leading-tight px-4 md:px-0">
-              Хирургия в клинике «<span className="italic">Альтамед-с</span>»
+              Хирургия в клинике «<span className="italic">Альтамед Голицино</span>»
             </h1>
             <p className="text-gray-600 mt-2 px-4 md:px-0 text-sm md:text-base">
-              Современные хирургические методы лечения в Одинцово
+              Современные хирургические методы лечения в Голицино
             </p>
           </header>
 
@@ -222,7 +222,7 @@ export default function SurgeryPage() {
               <div className="bg-white p-4 flex flex-col justify-between items-start gap-3">
                 <div className="text-black font-medium text-sm">Хирургия</div>
                 <Link 
-                  href="https://online.altamed-c.ru/" 
+                  href="https://reg.altamed-golitsino.ru/" 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-blue-500 text-white rounded-full flex items-center justify-center w-full h-[46px] text-sm hover:bg-blue-600 transition-colors"
@@ -270,10 +270,10 @@ export default function SurgeryPage() {
               </div>
               <div className="flex-1 text-center md:text-left">
                 <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-3">
-                  Консультация врача-хирурга в Одинцово
+                  Консультация врача-хирурга в Голицино
                 </h2>
                 <p className="text-gray-700 text-sm md:text-base leading-relaxed">
-                  Опытные хирурги нашей клиники оказывают полный спектр хирургических услуг: от консультаций и диагностики до оперативных вмешательств различной сложности. Мы используем современное оборудование и передовые методики лечения.
+                  Опытные хирурги клиники Альтамед Голицино оказывают полный спектр хирургических услуг: от консультаций и диагностики до оперативных вмешательств различной сложности. Современное оборудование и передовые методики лечения в Голицино.
                 </p>
               </div>
             </div>
@@ -285,7 +285,7 @@ export default function SurgeryPage() {
       <section className="py-12 bg-gray-50">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">
-            Почему «Альтамед-С»?
+            Почему «Альтамед Голицино»?
           </h2>
           {/* Мобильная версия - вертикальный список */}
           <div className="md:hidden space-y-6">
@@ -404,7 +404,7 @@ export default function SurgeryPage() {
       <section className="py-16" aria-labelledby="services-heading">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 id="services-heading" className="text-2xl md:text-3xl font-bold text-black mb-8 text-center ml-0 md:ml-4 lg:ml-8">
-            Хирург в Одинцово - услуги диагностики и лечения
+            Хирург в Голицино — услуги диагностики и лечения
           </h2>
           
           <div className="space-y-12" itemScope itemType="https://schema.org/ItemList">
@@ -431,7 +431,7 @@ export default function SurgeryPage() {
                             <span itemProp="priceCurrency" content="RUB" className="sr-only">RUB</span>
                           </span>
                         <Link 
-                          href="https://online.altamed-c.ru/" 
+                          href="https://reg.altamed-golitsino.ru/" 
                           target="_blank"
                           rel="noopener noreferrer"
                             className="bg-emerald-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-emerald-700 transition-colors"
@@ -446,6 +446,13 @@ export default function SurgeryPage() {
               </div>
             ))}
           </div>
+
+          {/* Оферта по ценам */}
+          <p className="mt-8 text-xs md:text-sm text-gray-500 max-w-4xl mx-auto text-center">
+            Стоимость медицинских услуг указана в рублях и носит информационный характер, не являясь публичной
+            офертой. Актуальные цены и перечень услуг уточняйте у администраторов клиники или по телефону
+            регистратуры.
+          </p>
         </div>
       </section>
 

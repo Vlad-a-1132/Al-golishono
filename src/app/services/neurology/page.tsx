@@ -8,70 +8,40 @@ import AppointmentForm from '@/components/AppointmentForm';
 export default function NeurologyPage() {
   const [openAccordion, setOpenAccordion] = useState<number | null>(null);
 
-  // Услуги неврологии разделенные на категории
-  const neurologyServices = [
-    {
-      category: "Консультации невролога",
-      services: [
-        { name: "Прием (осмотр, консультация) врача-невролога первичный", price: "3 200 руб." },
-        { name: "Прием (осмотр, консультация) врача-невролога КМН первичный", price: "3 700 руб." },
-        { name: "Прием (осмотр, консультация) врача-невролога повторный", price: "2 700 руб." },
-        { name: "Прием (осмотр, консультация) врача-невролога КМН повторный", price: "3 200 руб." },
-        { name: "Диспансерный прием (осмотр, консультация) врача-невролога", price: "1 200 руб." },
-        { name: "Профилактический прием (осмотр, консультация) врача-невролога", price: "1 200 руб." }
-      ]
-    },
-    {
-      category: "Рефлексотерапия",
-      services: [
-        { name: "Прием (осмотр, консультация) врача рефлексотерапевта первичный", price: "4 800 руб." },
-        { name: "Прием (осмотр, консультация) врача рефлексотерапевта повторный", price: "4 100 руб." },
-        { name: "Рефлексотерапия при заболеваниях костной системы 1 сеанс", price: "3 700 руб." },
-        { name: "Рефлексотерапия при заболеваниях дыхательных путей и легочной ткани 1 сеанс", price: "4 100 руб." },
-        { name: "Рефлексотерапия при заболеваниях периферических сосудов 1 сеанс", price: "4 100 руб." },
-        { name: "Рефлексотерапия при заболеваниях периферической нервной системы 1 сеанс", price: "4 100 руб." },
-        { name: "Рефлексотерапия при заболеваниях печени и желчевыводящих путей 1 сеанс", price: "4 100 руб." },
-        { name: "Рефлексотерапия при заболеваниях пищевода желудка и 12-ти перстной кишки 1 сеанс", price: "4 100 руб." },
-        { name: "Рефлексотерапия при заболеваниях сердца и перикарда 1 сеанс", price: "4 100 руб." },
-        { name: "Рефлексотерапия при заболеваниях ЦНС 1 сеанс", price: "4 100 руб." }
-      ]
-    },
-    {
-      category: "Школы для больных",
-      services: [
-        { name: "Школа для больных с рассеянным склерозом", price: "4 400 руб." },
-        { name: "Школа для больных с эпилепсией", price: "3 700 руб." },
-        { name: "Школа для больных с гиперкинезами", price: "3 700 руб." },
-        { name: "Школа для больных с болезнью Паркинсона", price: "5 900 руб." },
-        { name: "Школа для больных с заболеваниями суставов и позвоночника", price: "5 100 руб." }
-      ]
-    },
-    {
-      category: "Медицинская реабилитация",
-      services: [
-        { name: "Услуги по медицинской реабилитации пациента, перенесшего острое нарушение мозгового кровообращения", price: "2 800 руб." },
-        { name: "Услуги по медицинской реабилитации пациента с заболеваниями нервной системы", price: "2 800 руб." },
-        { name: "Услуги по медицинской реабилитации пациента с заболеваниями центральной нервной системы", price: "2 800 руб." },
-        { name: "Услуги по медицинской реабилитации пациента с заболеваниями периферической нервной системы", price: "2 800 руб." },
-        { name: "Услуги по медицинской реабилитации пациента, перенесшего нейрохирургическую операцию", price: "4 400 руб." },
-        { name: "Услуги по медицинской реабилитации пациента, перенесшего черепно-мозговую травму", price: "3 700 руб." }
-      ]
-    },
-    {
-      category: "Назначения и процедуры",
-      services: [
-        { name: "Назначение лекарственных препаратов при заболеваниях центральной нервной системы и головного мозга", price: "700 руб." },
-        { name: "Назначение диетического питания при заболеваниях центральной нервной системы и головного мозга", price: "300 руб." },
-        { name: "Назначение лечебно-оздоровительного режима при заболеваниях центральной нервной системы и головного мозга", price: "200 руб." },
-        { name: "Назначение лекарственных препаратов при заболеваниях периферической нервной системы", price: "700 руб." },
-        { name: "Назначение диетического питания при заболеваниях периферической нервной системы", price: "200 руб." },
-        { name: "Назначение лекарственных препаратов при заболеваниях костной системы", price: "400 руб." },
-        { name: "Назначение лекарственных препаратов при заболеваниях суставов", price: "400 руб." },
-        { name: "Назначение лечебно-оздоровительного режима при заболеваниях периферической нервной системы", price: "200 руб." },
-        { name: "Введение лекарственных препаратов в область периферического нерва", price: "2 200 руб." },
-        { name: "Назначение комплекса упражнений (лечебной физкультуры)", price: "200 руб." }
-      ]
-    }
+  // Услуги невролога по прайсу (код, название, цена)
+  const neurologyServicesList = [
+    { code: "B01.023.001", name: "Прием (осмотр, консультация) врача-невролога", price: 2530 },
+    { code: "B04.023.002", name: "Диспансерный прием (осмотр, консультация) врача-невролога", price: 1820 },
+    { code: "B04.023.003", name: "Школа для больных с рассеянным склерозом", price: 4110 },
+    { code: "B04.023.004", name: "Школа для больных с эпилепсией", price: 3390 },
+    { code: "B04.023.005", name: "Школа для больных с гиперкинезами", price: 3390 },
+    { code: "B04.023.006", name: "Школа для больных с болезнью Паркинсона", price: 5450 },
+    { code: "B04.040.001", name: "Школа для больных с заболеваниями суставов и позвоночника (Услуга по обучению больных с заболеваниями суставов и позвоночника)", price: 4840 },
+    { code: "B05.023.001", name: "Услуги по медицинской реабилитации пациента, перенесшего острое нарушение мозгового кровообращения", price: 2540 },
+    { code: "B05.023.002", name: "Услуги по медицинской реабилитации пациента с заболеваниями нервной системы", price: 2540 },
+    { code: "B05.023.002.001", name: "Услуги по медицинской реабилитации пациента с заболеваниями центральной нервной системы", price: 2540 },
+    { code: "B05.023.002.002", name: "Услуги по медицинской реабилитации пациента с заболеваниями переферической нервной системы", price: 2540 },
+    { code: "B05.024.002", name: "Услуги по медицинской реабилитации пациента, перенесшего нейрохирургическую операцию", price: 4110 },
+    { code: "B05.024.003", name: "Услуги по медицинской реабилитации пациента, перенесшего черепно-мозговую травму", price: 3390 },
+    { code: "A25.23.001", name: "Назначение лекарственных препаратов при заболеваниях центральной нервной системы и головного мозга", price: 660 },
+    { code: "A25.23.002", name: "Назначение диетического питания при заболеваниях центральной нервной системы и головного мозга", price: 190 },
+    { code: "A25.23.003", name: "Назначение лечебно-оздоровительного режима при заболеваниях центральной нервной системы и головного мозга", price: 190 },
+    { code: "A25.24.001", name: "Назначение лекарственных препаратов при заболеваниях периферической нервной системы", price: 660 },
+    { code: "A25.24.002", name: "Назначение диетического питания при заболеваниях периферической нервной системы", price: 120 },
+    { code: "A25.03.001", name: "Назначение лекарственных препаратов при заболеваниях костной системы", price: 360 },
+    { code: "A25.04.001", name: "Назначение лекарственных препаратов при заболеваниях суставов", price: 360 },
+    { code: "A25.24.003", name: "Назначение лечебно-оздоровительного режима при заболеваниях периферической нервной системы", price: 120 },
+    { code: "A11.24.001", name: "Введение лекарственных препаратов в область периферического нерва", price: 2060 },
+    { code: "A11.24.001.001", name: "Введение лекарственных препаратов в область периферического нерва блокада грушевидной мышцы", price: 1820 },
+    { code: "A11.24.001.002", name: "Введение лекарственных препаратов в область периферического нерва блокада карпального канала", price: 1820 },
+    { code: "A11.24.001.003", name: "Введение лекарственных препаратов в область периферического нерва блокада кубитального канала", price: 1820 },
+    { code: "A11.24.001.004", name: "Введение лекарственных препаратов в область периферического нерва блокада лучевого нерва в области аркады Фрозе", price: 1820 },
+    { code: "A11.24.001.005", name: "Введение лекарственных препаратов в область периферического нерва блокада малоберцового нерва в области головки малоберцовой кости", price: 1820 },
+    { code: "A11.24.001.006", name: "Введение лекарственных препаратов в область периферического нерва блокада паравертебральная", price: 1820 },
+    { code: "A11.24.001.007", name: "Введение лекарственных препаратов в область периферического нерва блокада пресакральная", price: 1820 },
+    { code: "A11.24.001.008", name: "Введение лекарственных препаратов в область периферического нерва блокада триггерных точек с траумелем (без лекарства), 4 точки", price: 610 },
+    { code: "A23.30.001.001", name: "Пособие по подбору ортопедических стелек Изготовление индивидуальной ортопедической стельки ФормТотикс", price: 10290 },
+    { code: "A23.30.001.003", name: "Пособие по подбору ортопедических стелек Изготовление индивидуальной ортопедической стельки ФормТотикс детские", price: 9680 },
   ];
 
   return (
@@ -166,6 +136,44 @@ export default function NeurologyPage() {
         </div>
       </main>
 
+      {/* Прайс услуг невролога — сразу после баннера */}
+      <section className="py-12 bg-white" aria-labelledby="services-heading">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8">
+            <h2 id="services-heading" className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
+              Услуги невролога в Одинцово
+            </h2>
+            <p className="text-gray-600">Приём врача-невролога, школы для больных (рассеянный склероз, эпилепсия, Паркинсон), реабилитация после инсульта и ЧМТ, блокады, ортопедические стельки ФормТотикс. Клиника Альтамед-с.</p>
+          </div>
+
+          <p className="text-amber-800 bg-amber-50 border border-amber-200 rounded-lg px-4 py-3 mb-6 max-w-3xl mx-auto text-center text-sm">
+            Цена может быть неточной; мы стараемся своевременно её обновлять. Уточняйте стоимость при записи.
+          </p>
+
+          <div className="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-200">
+            <div className="bg-gradient-to-r from-emerald-600 to-emerald-700 px-6 py-4">
+              <h3 className="text-xl font-semibold text-white">Прайс услуг врача-невролога</h3>
+            </div>
+            <div className="p-6">
+              <div className="space-y-4 max-h-[70vh] overflow-y-auto pr-2">
+                {neurologyServicesList.map((service, index) => (
+                  <div key={index} className="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+                    <div className="flex-1 min-w-0">
+                      <div className="text-xs text-gray-500 font-mono mb-1">{service.code}</div>
+                      <h4 className="font-medium text-gray-900 text-sm leading-tight">{service.name}</h4>
+                      <div className="text-emerald-600 font-semibold text-lg mt-2">{service.price.toLocaleString("ru-RU")} ₽</div>
+                    </div>
+                    <Link href="https://online.altamed-c.ru/" target="_blank" rel="noopener noreferrer" className="bg-emerald-600 text-white px-4 py-2 rounded-md text-sm hover:bg-emerald-700 flex-shrink-0 text-center whitespace-nowrap">
+                      Записаться
+                    </Link>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Почему Альтамед-С*/}
       <section className="py-12 bg-gray-50">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
@@ -186,55 +194,6 @@ export default function NeurologyPage() {
       </section>
 
       <div className="flex-1">
-        {/* Services Section */}
-        <section className="py-16" aria-labelledby="services-heading">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 id="services-heading" className="text-2xl md:text-3xl font-bold text-black mb-8 text-center ml-0 md:ml-4 lg:ml-8">
-              Невролог в Одинцово - услуги диагностики и лечения заболеваний нервной системы
-            </h2>
-            
-            <div className="space-y-12" itemScope itemType="https://schema.org/ItemList">
-              {neurologyServices.map((category, categoryIndex) => (
-                <div key={categoryIndex} className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
-                  <div className="bg-emerald-50 px-6 py-4 border-b border-emerald-200">
-                    <h3 className="text-xl font-semibold text-emerald-800">{category.category}</h3>
-                  </div>
-                  <div className="p-6">
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                      {category.services.map((service, serviceIndex) => (
-                        <article
-                          key={serviceIndex}
-                          className="bg-gray-50 rounded-lg p-4 hover:shadow-md transition-shadow"
-                          itemScope
-                          itemType="https://schema.org/MedicalProcedure"
-                        >
-                          <h4 className="font-medium text-gray-900 mb-2 text-sm leading-relaxed" itemProp="name">
-                            {service.name}
-                          </h4>
-                          <div className="flex items-center justify-between">
-                            <span className="text-emerald-600 font-semibold" itemProp="offers" itemScope itemType="https://schema.org/Offer">
-                              <span itemProp="price">{service.price}</span>
-                              <span itemProp="priceCurrency" content="RUB" className="sr-only">RUB</span>
-                            </span>
-                        <Link 
-                          href="https://online.altamed-c.ru/" 
-                          target="_blank"
-                          rel="noopener noreferrer"
-                              className="bg-emerald-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-emerald-700 transition-colors"
-                            >
-                              Записаться
-                            </Link>
-                          </div>
-                        </article>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
         {/* Information Section */}
         <section className="py-16 bg-white">
           <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>

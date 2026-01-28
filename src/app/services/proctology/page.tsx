@@ -216,7 +216,7 @@ export default function ProctologyPage() {
               <div className="bg-white p-4 flex flex-col justify-between items-start gap-3">
                 <div className="text-black font-medium text-sm">Диагностика заболеваний прямой кишки</div>
                 <Link 
-                  href="https://online.altamed-c.ru/" 
+                  href="https://reg.altamed-golitsino.ru/" 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-blue-500 text-white rounded-full flex items-center justify-center w-full h-[46px] text-sm hover:bg-blue-600 transition-colors"
@@ -245,7 +245,7 @@ export default function ProctologyPage() {
                 <h2 className="text-2xl md:text-4xl font-bold mb-4">Проктология в Одинцово</h2>
                 <p className="text-lg md:text-xl mb-6 max-w-md">Профессиональная диагностика и лечение заболеваний прямой кишки</p>
                 <Link 
-                  href="https://online.altamed-c.ru/" 
+                  href="https://reg.altamed-golitsino.ru/" 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-blue-500 text-white rounded-full px-8 py-3 font-medium hover:bg-blue-600 transition-colors"
@@ -313,7 +313,7 @@ export default function ProctologyPage() {
                               </div>
                             </div>
                         <Link 
-                          href="https://online.altamed-c.ru/" 
+                          href="https://reg.altamed-golitsino.ru/" 
                           target="_blank"
                           rel="noopener noreferrer"
                               className="ml-3 bg-emerald-600 text-white px-3 py-1 rounded-md text-sm hover:bg-emerald-700 transition-colors duration-300 flex-shrink-0"

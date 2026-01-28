@@ -9,132 +9,38 @@ export default function UrologyPage() {
   // State for accordion
   const [openAccordion, setOpenAccordion] = useState<number | null>(null);
 
-  // Данные услуг урологии
-  const urologyServices = [
-    {
-      category: "Консультации уролога",
-      services: [
-        { name: "Прием (осмотр, консультация) врача-уролога первичный", price: "3 400 руб." },
-        { name: "Прием (осмотр, консультация) врача-уролога к.м.н. первичный", price: "3 800 руб." },
-        { name: "Прием (осмотр, консультация) врача-уролога повторный", price: "2 500 руб." },
-        { name: "Прием (осмотр, консультация) врача-уролога к.м.н. повторный", price: "2 600 руб." },
-        { name: "Прием (осмотр, консультация) врача - детского уролога-андролога первичный", price: "3 400 руб." },
-        { name: "Прием (осмотр, консультация) врача - детского уролога-андролога повторный", price: "2 300 руб." },
-      ]
-    },
-    {
-      category: "Ультразвуковые исследования",
-      services: [
-        { name: "Ультразвуковое исследование предстательной железы", price: "1 900 руб." },
-        { name: "Ультразвуковое исследование предстательной железы Трансректальное", price: "2 400 руб." },
-        { name: "Ультразвуковое исследование надпочечников", price: "1 900 руб." },
-        { name: "Ультразвуковое исследование почек", price: "1 900 руб." },
-        { name: "Ультразвуковое исследование мочевого пузыря с определением остаточной мочи", price: "1 700 руб." },
-        { name: "Ультразвуковое исследование органов мошонки", price: "2 300 руб." },
-        { name: "Ультразвуковое исследование сосудов полового члена без стоимости препарата", price: "7 000 руб." },
-      ]
-    },
-    {
-      category: "Биопсии",
-      services: [
-        { name: "Биопсия (мультифокальная) предстательной железы трансректальная пункционная под контролем ультразвукового исследования", price: "15 600 руб." },
-        { name: "Биопсия мочевого пузыря", price: "12 000 руб." },
-        { name: "Биопсия мочевого пузыря трансуретральная", price: "12 000 руб." },
-      ]
-    },
-    {
-      category: "Лабораторные исследования",
-      services: [
-        { name: "Получение уретрального отделяемого", price: "600 руб." },
-        { name: "Получение соскоба из уретры", price: "600 руб." },
-        { name: "Микроскопическое исследование спермы", price: "3 400 руб." },
-        { name: "Спермограмма", price: "3 400 руб." },
-      ]
-    },
-    {
-      category: "Манипуляции и уход",
-      services: [
-        { name: "Катетеризация мочевого пузыря", price: "3 000 руб." },
-        { name: "Инстилляция мочевого пузыря", price: "3 000 руб." },
-        { name: "Инстилляция уретры", price: "2 400 руб." },
-        { name: "Микроклизмирование уретры", price: "2 400 руб." },
-        { name: "Уход за мочевым катетером", price: "3 000 руб." },
-        { name: "Уход за цистостомой и уростомой", price: "3 000 руб." },
-        { name: "Замена цистостомического дренажа", price: "3 000 руб." },
-        { name: "Сбор секрета простаты", price: "1 600 руб." },
-        { name: "Массаж простаты", price: "1 800 руб." },
-        { name: "Инъекция в половой член", price: "1 700 руб." },
-      ]
-    },
-    {
-      category: "Функциональная диагностика",
-      services: [
-        { name: "Измерение скорости потока мочи (урофлоуметрия)", price: "2 000 руб." },
-        { name: "Трансректальное пальцевое исследование", price: "900 руб." },
-        { name: "Визуальное исследование при патологии мужских половых органов", price: "500 руб." },
-        { name: "Пальпация при патологии мужских половых органов", price: "800 руб." },
-        { name: "Визуальное исследование при патологии почек и мочевыделительной системы", price: "500 руб." },
-        { name: "Пальпация при патологии почек и мочевыделительной системы", price: "800 руб." },
-      ]
-    },
-    {
-      category: "Хирургические манипуляции",
-      services: [
-        { name: "Удаление атеромы генитально-паховой области", price: "23 900 руб." },
-        { name: "Удаление доброкачественных новообразований кожи", price: "3 100 руб." },
-        { name: "Обрезание крайней плоти", price: "45 900 руб." },
-        { name: "Иссечение оболочек яичка", price: "45 900 руб." },
-        { name: "Пластика оболочек яичка", price: "45 900 руб." },
-        { name: "Разрез мошонки и влагалищной оболочки", price: "21 700 руб." },
-        { name: "Иссечение кисты придатка яичка", price: "39 500 руб." },
-        { name: "Удаление доброкачественных новообразований полового члена", price: "23 900 руб." },
-        { name: "Пластика уздечки крайней плоти", price: "21 200 руб." },
-        { name: "Перевязка и пересечение яичковой вены субингвинальное", price: "74 400 руб." },
-        { name: "Рассечение внутренних спаек", price: "6 100 руб." },
-        { name: "Вправление парафимоза", price: "4 800 руб." },
-      ]
-    },
-    {
-      category: "Физиотерапия",
-      services: [
-        { name: "Ректальное воздействие магнитными полями при заболеваниях мужских половых органов", price: "2 300 руб." },
-        { name: "Воздействие переменным магнитным полем (ПеМП)", price: "1 300 руб." },
-        { name: "Воздействие высокоинтенсивным импульсным магнитным полем", price: "2 300 руб." },
-        { name: "Воздействие магнитными полями", price: "2 000 руб." },
-        { name: "Термовоздействие", price: "2 300 руб." },
-        { name: "Низкоинтенсивное лазерное облучение кожи", price: "2 400 руб." },
-        { name: "Ректальное воздействие низкоинтенсивным лазерным излучением при заболеваниях мужских половых органов", price: "2 500 руб." },
-        { name: "Воздействие низкоинтенсивным лазерным излучением при заболеваниях желез внутренней секреции", price: "2 400 руб." },
-        { name: "Воздействие ультразвуковом при заболеваниях желез внутренней секреции", price: "5 000 руб." },
-        { name: "Воздействие низкоинтенсивным лазерным излучением при заболеваниях почек и мочевыделительного тракта", price: "2 400 руб." },
-        { name: "Воздействие низкоинтенсивным лазерным излучением при заболеваниях мочевыделительного тракта", price: "2 400 руб." },
-        { name: "Вибрационное воздействие", price: "2 500 руб." },
-        { name: "Ударно-волновая терапия уро-генитальной области", price: "4 100 руб." },
-        { name: "Ректальная гипертермия при заболеваниях мужских половых органов", price: "2 300 руб." },
-      ]
-    },
-    {
-      category: "Рентгенологические исследования",
-      services: [
-        { name: "Обзорная урография (рентгенография мочевыделительной системы)", price: "3 400 руб." },
-        { name: "Уретрография восходящая", price: "5 100 руб." },
-        { name: "Цистография", price: "5 100 руб." },
-        { name: "Внутривенная урография", price: "7 900 руб." },
-      ]
-    },
-    {
-      category: "Лечебно-диагностические назначения",
-      services: [
-        { name: "Назначение лекарственных препаратов при заболеваниях желез внутренней секреции", price: "4 800 руб." },
-        { name: "Назначение лекарственных препаратов при заболеваниях мужских половых органов", price: "6 200 руб." },
-        { name: "Назначение лекарственных препаратов при заболеваниях почек и мочевыделительного тракта", price: "3 000 руб." },
-        { name: "Назначение лекарственных препаратов при неуточненных заболеваниях", price: "4 800 руб." },
-        { name: "Назначение лечебно-оздоровительного режима при заболеваниях мужских половых органов", price: "4 800 руб." },
-        { name: "Назначение диетической терапии при заболеваниях мужских половых органов", price: "3 000 руб." },
-        { name: "Назначение лечебно-оздоровительного режима при заболеваниях почек и мочевыделительного тракта", price: "4 800 руб." },
-        { name: "Назначение лечебно-оздоровительного режима при неуточненных заболеваниях", price: "3 000 руб." },
-      ]
-    },
+  // Услуги уролога (прайс Альтамед Голицино)
+  const urologyServicesList = [
+    { code: "B01.053.001", name: "Прием (осмотр, консультация) врача-уролога", price: 2530 },
+    { code: "B01.053.003", name: "Прием (осмотр, консультация) врача-детского уролога-андролога", price: 2420 },
+    { code: "B04.053.001", name: "Диспансерный прием (осмотр, консультация) врача-уролога", price: 1820 },
+    { code: "B04.053.003", name: "Диспансерный прием (осмотр, консультация) врача-детского уролога-андролога", price: 1820 },
+    { code: "A11.28.006", name: "Получение уретрального отделяемого", price: 470 },
+    { code: "A04.22.002", name: "Ультразвуковое исследование надпочечников", price: 1730 },
+    { code: "A11.28.007", name: "Катетеризация мочевого пузыря", price: 2790 },
+    { code: "A11.28.008", name: "Инстилляция мочевого пузыря", price: 2790 },
+    { code: "A16.01.017", name: "Удаление доброкачественных новообразований кожи", price: 3060 },
+    { code: "A25.22.001", name: "Назначение лекарственных препаратов при заболеваниях желез внутренней секреции", price: 5060 },
+    { code: "A17.21.003", name: "Ректальное воздействие магнитными полями при заболеваниях мужских половых органов", price: 2130 },
+    { code: "A17.30.019", name: "Воздействие переменным магнитным полем (ПеМП)", price: 1070 },
+    { code: "A17.30.029", name: "Воздействие высокоинтенсивным импульсным магнитным полем", price: 2130 },
+    { code: "A17.30.031", name: "Воздействие магнитными полями", price: 2130 },
+    { code: "A22.30.006", name: "Вибрационное воздействие", price: 2400 },
+    { code: "A24.21.001", name: "Ректальная гипертермия при заболеваниях мужских половых органов", price: 2130 },
+    { code: "A25.21.001", name: "Назначение лекарственных препаратов при заболеваниях мужских половых органов", price: 6520 },
+    { code: "A25.28.001", name: "Назначение лекарственных препаратов при заболеваниях почек и мочевыделительного тракта", price: 3190 },
+    { code: "A11.21.004", name: "Сбор секрета простаты", price: 1600 },
+    { code: "A21.21.001", name: "Массаж простаты", price: 1670 },
+    { code: "A25.21.003", name: "Назначение лечебно-оздоровительного режима при заболеваниях мужских половых органов", price: 5060 },
+    { code: "A25.21.002", name: "Назначение диетического питания при заболеваниях мужских половых органов", price: 3190 },
+    { code: "A25.28.003", name: "Назначение лечебно-оздоровительного режима при заболеваниях почек и мочевыделительного тракта", price: 5060 },
+    { code: "A25.30.001", name: "Назначение лекарственных препаратов при неуточненных заболеваниях", price: 5060 },
+    { code: "A25.30.003", name: "Назначение лечебно-оздоровительного режима при неуточненных заболеваниях", price: 3190 },
+    { code: "A01.19.004", name: "Трансректальное пальцевое исследование", price: 870 },
+    { code: "A01.21.002", name: "Визуальное исследование при патологии мужских половых органов", price: 400 },
+    { code: "A01.21.003", name: "Пальпация при патологии мужских половых органов", price: 740 },
+    { code: "A01.28.002", name: "Визуальное исследование при патологии почек и мочевыделительной системы", price: 400 },
+    { code: "A01.28.003", name: "Пальпация при патологии почек и мочевыделительной системы", price: 740 },
   ];
 
   return (
@@ -147,7 +53,7 @@ export default function UrologyPage() {
             <span className="mx-2" aria-hidden="true">/</span>
             <Link href="/services" className="hover:text-emerald-500">Услуги</Link>
             <span className="mx-2" aria-hidden="true">/</span>
-            <span className="text-gray-800">Урология</span>
+            <span className="text-gray-800">Уролог Голицино</span>
           </nav>
         </div>
       </section>
@@ -157,10 +63,10 @@ export default function UrologyPage() {
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <header className="mb-6 ml-0 md:ml-4 lg:ml-8">
             <h1 className="text-2xl md:text-3xl font-bold text-black leading-tight px-4 md:px-0">
-              Урология в клинике «<span className="italic">Альтамед-с</span>»
+              Уролог в Голицино — приём в «Альтамед Голицино»
             </h1>
             <p className="text-gray-600 mt-2 px-4 md:px-0 text-sm md:text-base">
-              Диагностика и лечение урологических заболеваний у мужчин и женщин в Одинцово
+              Приём врача-уролога и детского уролога-андролога, диагностика и лечение в Голицино
             </p>
           </header>
 
@@ -182,9 +88,9 @@ export default function UrologyPage() {
               </div>
               {/* Нижняя часть */}
               <div className="bg-white p-4 flex flex-col justify-between items-start gap-3">
-                <div className="text-black font-medium text-sm">Урология</div>
+                <div className="text-black font-medium text-sm">Уролог в Голицино</div>
                 <Link 
-                  href="https://online.altamed-c.ru/" 
+                  href="https://reg.altamed-golitsino.ru/" 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-blue-500 text-white rounded-full flex items-center justify-center w-full h-[46px] text-sm hover:bg-blue-600 transition-colors"
@@ -213,10 +119,10 @@ export default function UrologyPage() {
               
               {/* Content overlay */}
               <div className="absolute inset-0 flex flex-col justify-center items-start p-8 md:p-12 text-black">
-                <h2 className="text-2xl md:text-4xl font-bold mb-4">Урология</h2>
-                <p className="text-lg md:text-xl mb-6 max-w-md">Современные методы диагностики и лечения</p>
+                <h2 className="text-2xl md:text-4xl font-bold mb-4">Уролог в Голицино</h2>
+                <p className="text-lg md:text-xl mb-6 max-w-md">Приём уролога, детского уролога-андролога, УЗИ, манипуляции и физиотерапия в Альтамед Голицино</p>
                 <Link 
-                  href="https://online.altamed-c.ru/" 
+                  href="https://reg.altamed-golitsino.ru/" 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-blue-500 text-white rounded-full px-8 py-3 font-medium hover:bg-blue-600 transition-colors"
@@ -229,11 +135,11 @@ export default function UrologyPage() {
         </div>
       </main>
 
-      {/* Почему Альтамед-С*/}
+      {/* Почему Альтамед Голицино */}
       <section className="py-12 bg-gray-50">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">
-            Почему «Альтамед-С»?
+            Почему «Альтамед Голицино»?
           </h2>
           {/* Мобильная версия - вертикальный список */}
           <div className="md:hidden space-y-6">
@@ -353,47 +259,33 @@ export default function UrologyPage() {
       <section className="py-16" aria-labelledby="services-heading">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 id="services-heading" className="text-2xl md:text-3xl font-bold text-black mb-8 text-center ml-0 md:ml-4 lg:ml-8">
-            Уролог в Одинцово - услуги диагностики и лечения урологических заболеваний
+            Услуги уролога в Голицино
           </h2>
+
+          <p className="text-amber-800 bg-amber-50 border border-amber-200 rounded-lg px-4 py-3 mb-6 max-w-3xl mx-auto text-center text-sm">
+            Цена может быть неточной; уточняйте стоимость при записи.
+          </p>
           
-          <div className="space-y-12" itemScope itemType="https://schema.org/ItemList">
-            {urologyServices.map((category, categoryIndex) => (
-              <div key={categoryIndex} className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
-                <div className="bg-emerald-50 px-6 py-4 border-b border-emerald-200">
-                  <h3 className="text-xl font-semibold text-emerald-800">{category.category}</h3>
-                </div>
-                <div className="p-6">
-                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                    {category.services.map((service, serviceIndex) => (
-                      <article
-                        key={serviceIndex}
-                        className="bg-gray-50 rounded-lg p-4 hover:shadow-md transition-shadow"
-                        itemScope
-                        itemType="https://schema.org/MedicalProcedure"
-                      >
-                        <h4 className="font-medium text-gray-900 mb-2 text-sm leading-relaxed" itemProp="name">
-                          {service.name}
-                        </h4>
-                        <div className="flex items-center justify-between">
-                          <span className="text-emerald-600 font-semibold" itemProp="offers" itemScope itemType="https://schema.org/Offer">
-                            <span itemProp="price">{service.price}</span>
-                            <span itemProp="priceCurrency" content="RUB" className="sr-only">RUB</span>
-                          </span>
-                          <Link 
-                            href="https://online.altamed-c.ru/" 
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="bg-emerald-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-emerald-700 transition-colors"
-                          >
-                            Записаться
-                          </Link>
-                        </div>
-                      </article>
-                    ))}
+          <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+            <div className="bg-gradient-to-r from-emerald-600 to-emerald-700 px-6 py-4">
+              <h3 className="text-xl font-semibold text-white">Уролог</h3>
+            </div>
+            <div className="p-6">
+              <div className="space-y-4 max-h-[70vh] overflow-y-auto pr-2">
+                {urologyServicesList.map((service, index) => (
+                  <div key={index} className="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow duration-300 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+                    <div className="flex-1 min-w-0">
+                      <div className="text-xs text-gray-500 font-mono mb-1">{service.code}</div>
+                      <h4 className="font-medium text-gray-900 text-sm leading-tight">{service.name}</h4>
+                      <div className="text-emerald-600 font-semibold text-lg mt-2">{service.price.toLocaleString("ru-RU")} ₽</div>
+                    </div>
+                    <Link href="https://reg.altamed-golitsino.ru/" target="_blank" rel="noopener noreferrer" className="bg-emerald-600 text-white px-4 py-2 rounded-md text-sm hover:bg-emerald-700 transition-colors duration-300 flex-shrink-0 text-center whitespace-nowrap">
+                      Записаться
+                    </Link>
                   </div>
-                </div>
+                ))}
               </div>
-            ))}
+            </div>
           </div>
         </div>
       </section>
@@ -407,7 +299,7 @@ export default function UrologyPage() {
           
           <div className="space-y-6 text-gray-700 mb-8">
             <p>
-              В штат «Альтамед-С» входят врачи с большим опытом работы, которые внимательно относятся к каждому своему пациенту. Высокая квалификация сотрудников и самое современное диагностическое оборудование позволяют точно выявлять причину проблемы и успешно проводить лечение. Пациентам гарантируется полная конфиденциальность как при обследовании, так и при лечении.
+              В «Альтамед Голицино» в Голицино принимают врачи-урологи и детские урологи-андрологи. Проводятся приём, диспансерный приём, УЗИ надпочечников, катетеризация и инстилляция мочевого пузыря, сбор секрета простаты, массаж простаты, физиотерапия и другие услуги по прейскуранту. Стоимость уточняйте при записи.
             </p>
           </div>
 
@@ -617,23 +509,6 @@ export default function UrologyPage() {
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                Консультация хорошего врача-уролога в Одинцово
-              </h2>
-              <p className="text-lg text-gray-600 mb-6">
-                Уролог - это врач, специализирующийся на диагностировании и лечении различных заболеваний органов мужской мочеполовой системы и женской мочевой системы. 
-                В клинике «Альтамед-с» в Одинцово консультируют высококвалифицированные урологи с многолетним стажем работы и глубокими знаниями в области урологических заболеваний. 
-                Среди наших специалистов работают врачи высшей категории, кандидаты и доктора медицинских наук, активно участвующие в научно-исследовательской деятельности. 
-                Для получения качественной урологической помощи в Одинцово и Московской области рекомендуем обратиться именно в «Альтамед-с».
-              </p>
-              <p className="text-lg text-gray-600 mb-6">
-                Визит к врачу откладывать нельзя: чем раньше начать борьбу с недугом, тем быстрее и легче можно справиться с проблемой. 
-                В «Альтамед-с» работают врачи высокой квалификации, которые проведут тщательную и безболезненную диагностику и подберут наиболее эффективную схему лечения. 
-                Обнаружение у себя одного или сразу нескольких приведенных ниже симптомов свидетельствует о необходимости посещения уролога.
-              </p>
-              <p className="text-lg text-gray-600 mb-6">
-                По всем вопросам, связанным с заболеваниями и патологиями мужской половой системы, вы можете также получить консультацию у урологов-андрологов «Альтамед-с».
-              </p>
             </div>
             <div className="relative">
               <img 

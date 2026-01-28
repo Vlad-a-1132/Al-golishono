@@ -1,41 +1,41 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "AIRFLOW Prophylaxis Master - Профессиональная чистка зубов по протоколу GBT в Одинцово | Альтамед-С",
+  title: "AIRFLOW Prophylaxis Master - Профессиональная чистка зубов по протоколу GBT в Альтамед Голицино | Альтамед Голицино",
   description:
-    "Профессиональная гигиена полости рта по протоколу GBT аппаратом AIRFLOW® Prophylaxis Master в Одинцово. Безболезненное удаление биоплёнки, пигментаций и зубных отложений. Швейцарское оборудование, опытные гигиенисты. Запись онлайн.",
+    "Профессиональная гигиена полости рта по протоколу GBT аппаратом AIRFLOW® Prophylaxis Master в Альтамед Голицино. Безболезненное удаление биоплёнки, пигментаций и зубных отложений. Швейцарское оборудование, опытные гигиенисты. Запись онлайн.",
   keywords: [
-    "AIRFLOW Prophylaxis Master Одинцово",
-    "профессиональная гигиена полости рта Одинцово",
-    "GBT протокол Одинцово",
-    "чистка зубов Одинцово",
-    "удаление биоплёнки Одинцово",
-    "профгигиена Одинцово",
-    "AIRFLOW Одинцово",
-    "PERIOFLOW Одинцово",
+    "AIRFLOW Prophylaxis Master Альтамед Голицино",
+    "профессиональная гигиена полости рта Альтамед Голицино",
+    "GBT протокол Альтамед Голицино",
+    "чистка зубов Альтамед Голицино",
+    "удаление биоплёнки Альтамед Голицино",
+    "профгигиена Альтамед Голицино",
+    "AIRFLOW Альтамед Голицино",
+    "PERIOFLOW Альтамед Голицино",
     "PIEZON NO PAIN",
-    "профессиональная чистка зубов Одинцово",
-    "гигиена полости рта Одинцово",
-    "стоматологическая гигиена Одинцово",
+    "профессиональная чистка зубов Альтамед Голицино",
+    "гигиена полости рта Альтамед Голицино",
+    "стоматологическая гигиена Альтамед Голицино",
     "чистка зубов аппаратом AIRFLOW",
     "профгигиена по протоколу GBT",
     "безболезненная чистка зубов"
   ],
   alternates: {
-    canonical: "https://altamed-s.ru/services/airflow-prophylaxis-master"
+    canonical: "https://altamed-golitsino.ru/services/airflow-prophylaxis-master"
   },
   openGraph: {
-    title: "AIRFLOW Prophylaxis Master - Профессиональная чистка зубов по протоколу GBT в Одинцово | Альтамед-С",
+    title: "AIRFLOW Prophylaxis Master - Профессиональная чистка зубов по протоколу GBT в Альтамед Голицино | Альтамед Голицино",
     description:
-      "Профессиональная гигиена полости рта по протоколу GBT с использованием швейцарского аппарата AIRFLOW® Prophylaxis Master в Одинцово. Безболезненное удаление биоплёнки и зубных отложений.",
-    url: "https://altamed-s.ru/services/airflow-prophylaxis-master",
+      "Профессиональная гигиена полости рта по протоколу GBT с использованием швейцарского аппарата AIRFLOW® Prophylaxis Master в Альтамед Голицино. Безболезненное удаление биоплёнки и зубных отложений.",
+    url: "https://altamed-golitsino.ru/services/airflow-prophylaxis-master",
     type: "article",
     images: [
       {
-        url: "https://altamed-s.ru/images/yslugi/air flow.webp",
+        url: "https://altamed-golitsino.ru/images/yslugi/air flow.webp",
         width: 1200,
         height: 630,
-        alt: "AIRFLOW Prophylaxis Master - профессиональная гигиена зубов в Одинцово"
+        alt: "AIRFLOW Prophylaxis Master - профессиональная гигиена зубов в Альтамед Голицино"
       }
     ]
   },

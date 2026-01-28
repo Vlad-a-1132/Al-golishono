@@ -25,7 +25,7 @@ export default function DentistryPage() {
     {
       id: 'implantation',
       title: 'Имплантация',
-      description: 'Имплантация зубов в Одинцово',
+      description: 'Имплантация зубов в Альтамед Голицино',
     },
     {
       id: 'caries-treatment',
@@ -35,12 +35,12 @@ export default function DentistryPage() {
     {
       id: 'dentistry-consultation',
       title: 'Консультация стоматолога',
-      description: 'Прием и консультация врача-стоматолога в Одинцово',
+      description: 'Прием и консультация врача-стоматолога в Альтамед Голицино',
     },
     {
       id: 'dentistry-pediatric',
       title: 'Детский стоматолог',
-      description: 'Лечение зубов у детей в Одинцово',
+      description: 'Лечение зубов у детей в Альтамед Голицино',
     },
     {
       id: 'dentistry-surgery',
@@ -50,12 +50,12 @@ export default function DentistryPage() {
     {
       id: 'dentistry-prosthodontist',
       title: 'Стоматолог-ортопед',
-      description: 'Протезирование зубов, коронки, виниры в Одинцово',
+      description: 'Протезирование зубов, коронки, виниры в Альтамед Голицино',
     },
     {
       id: 'dentistry-orthodontist',
       title: 'Стоматолог-ортодонт',
-      description: 'Исправление прикуса, брекеты, элайнеры в Одинцово',
+      description: 'Исправление прикуса, брекеты, элайнеры в Альтамед Голицино',
     },
     {
       id: 'periodontics',
@@ -65,7 +65,7 @@ export default function DentistryPage() {
     {
       id: 'dentistry-hygiene',
       title: 'Гигиена полости рта',
-      description: 'Профессиональная чистка зубов в Одинцово',
+      description: 'Профессиональная чистка зубов в Альтамед Голицино',
     },
     {
       id: 'airflow-prophylaxis-master',
@@ -75,67 +75,67 @@ export default function DentistryPage() {
     {
       id: 'dentistry-extraction',
       title: 'Удаление зубов',
-      description: 'Простое и сложное удаление зубов в Одинцово',
+      description: 'Простое и сложное удаление зубов в Альтамед Голицино',
     },
     {
       id: 'dentistry-emergency',
       title: 'Экстренная хирургия',
-      description: 'Экстренная и гнойная хирургия в Одинцово',
+      description: 'Экстренная и гнойная хирургия в Альтамед Голицино',
     },
     {
       id: 'dentistry-plastic',
       title: 'Пластическая хирургия',
-      description: 'Пластика мягких тканей в Одинцово',
+      description: 'Пластика мягких тканей в Альтамед Голицино',
     },
     {
       id: 'dentistry-aesthetic',
       title: 'Эстетическая стоматология',
-      description: 'Отбеливание и эстетика зубов в Одинцово',
+      description: 'Отбеливание и эстетика зубов в Альтамед Голицино',
     },
     {
       id: 'dentistry-prosthetics',
       title: 'Протезирование зубов',
-      description: 'Протезирование на имплантатах, коронки, протезы в Одинцово',
+      description: 'Протезирование на имплантатах, коронки, протезы в Альтамед Голицино',
     },
     {
       id: 'dentistry-cadcam',
       title: 'CAD/CAM-технологии',
-      description: 'Керамические вкладки, виниры, коронки CAD/CAM в Одинцово',
+      description: 'Керамические вкладки, виниры, коронки CAD/CAM в Альтамед Голицино',
     },
     {
       id: 'dentistry-constructions',
       title: 'Стоматологические конструкции',
-      description: 'Изготовление и ремонт протезов, коронок в Одинцово',
+      description: 'Изготовление и ремонт протезов, коронок в Альтамед Голицино',
     },
     {
       id: 'dentistry-deposits',
       title: 'Удаление зубных отложений',
-      description: 'Снятие налета и камня в Одинцово',
+      description: 'Снятие налета и камня в Альтамед Голицино',
     },
     {
       id: 'dentistry-braces',
       title: 'Брекет-системы',
-      description: 'Металлические, керамические, сапфировые брекеты в Одинцово',
+      description: 'Металлические, керамические, сапфировые брекеты в Альтамед Голицино',
     },
     {
       id: 'dentistry-removable-appliances',
       title: 'Съемные аппараты',
-      description: 'Элайнеры, каппы для исправления прикуса в Одинцово',
+      description: 'Элайнеры, каппы для исправления прикуса в Альтамед Голицино',
     },
     {
       id: 'dentistry-fixed-appliances',
       title: 'Несъемные аппараты',
-      description: 'Ретейнеры, аппарат Forsus в Одинцово',
+      description: 'Ретейнеры, аппарат Forsus в Альтамед Голицино',
     },
     {
       id: 'dentistry-orthodontic-maintenance',
       title: 'Обслуживание ортодонтических аппаратов',
-      description: 'Ремонт брекетов, замена дуг, лигатур в Одинцово',
+      description: 'Ремонт брекетов, замена дуг, лигатур в Альтамед Голицино',
     },
     {
       id: 'dentistry-strengthening',
       title: 'Укрепление тканей зуба',
-      description: 'Фторирование и защита эмали в Одинцово',
+      description: 'Фторирование и защита эмали в Альтамед Голицино',
     },
     {
       id: 'dentistry-xray',
@@ -887,17 +887,17 @@ export default function DentistryPage() {
     const jsonLd = {
       "@context": "https://schema.org",
       "@type": "MedicalBusiness",
-      "name": "Стоматология Альтамед-СОдинцово",
-      "description": "Профессиональная стоматология в Одинцово. Лечение кариеса, имплантация зубов, протезирование, отбеливание, детская стоматология. Современное оборудование, опытные врачи.",
+      "name": "Стоматология Альтамед Голицино",
+      "description": "Профессиональная стоматология в Альтамед Голицино. Лечение кариеса, имплантация зубов, протезирование, отбеливание, детская стоматология. Современное оборудование, опытные врачи.",
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Одинцово",
+        "addressLocality": "Голицыно",
         "addressRegion": "Московская область",
-        "streetAddress": "бульвар Маршала Крылова, д.23, пом.I",
-        "postalCode": "143005"
+        "streetAddress": "Советская улица, 58",
+        "postalCode": "143040"
       },
-      "telephone": "+7 (495) 255-44-50",
-      "url": "https://altamed-s.ru/services/dentistry",
+      "telephone": "+7 (495) 989-64-80",
+      "url": "https://altamed-golitsino.ru/services/dentistry",
       "priceRange": "$$",
       "medicalSpecialty": [
         "Терапевтическая стоматология",
@@ -910,7 +910,7 @@ export default function DentistryPage() {
       ],
       "areaServed": {
         "@type": "City",
-        "name": "Одинцово"
+        "name": "Голицыно"
       }
     };
 
@@ -936,10 +936,10 @@ export default function DentistryPage() {
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <div className="text-center mb-8">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-              Стоматология в Одинцово — профессиональное лечение зубов в клинике «Альтамед-с»
+              Стоматология в Голицыно — профессиональное лечение зубов в клинике «Альтамед Голицино»
             </h1>
             <p className="text-lg md:text-xl text-gray-700 max-w-4xl mx-auto mb-6">
-              Современная стоматология в Одинцово с полным спектром услуг: лечение кариеса, имплантация зубов, протезирование, ортодонтия, детская стоматология, пародонтология. Опытные врачи, современное оборудование, доступные цены.
+              Современная стоматология в Альтамед Голицино с полным спектром услуг: лечение кариеса, имплантация зубов, протезирование, ортодонтия, детская стоматология, пародонтология. Опытные врачи, современное оборудование, доступные цены.
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
               <span className="bg-white px-4 py-2 rounded-full shadow-md">✓ Лечение без боли</span>
@@ -956,17 +956,17 @@ export default function DentistryPage() {
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <div className="prose prose-lg max-w-none">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
-              Стоматологические услуги в Одинцово — полный спектр услуг для здоровья зубов
+              Стоматологические услуги в Альтамед Голицино — полный спектр услуг для здоровья зубов
             </h2>
             <p className="text-gray-700 mb-6 text-lg leading-relaxed">
-              Клиника «Альтамед-с» в Одинцово предлагает широкий спектр стоматологических услуг для взрослых и детей. 
-              Наша стоматология в Одинцово оснащена современным оборудованием и использует передовые методы лечения. 
+              Клиника «Альтамед Голицино» предлагает широкий спектр стоматологических услуг для взрослых и детей. 
+              Наша стоматология в Альтамед Голицино оснащена современным оборудованием и использует передовые методы лечения. 
               Мы специализируемся на терапевтической стоматологии, хирургии, протезировании, имплантации, ортодонтии и детской стоматологии.
             </p>
             <p className="text-gray-700 mb-6 text-lg leading-relaxed">
-              В стоматологии Одинцово мы применяем безболезненные методы лечения с использованием современной анестезии. 
+              В стоматологии Альтамед Голицино мы применяем безболезненные методы лечения с использованием современной анестезии. 
               Наши врачи регулярно повышают квалификацию и используют только проверенные материалы мировых производителей. 
-              Лечение зубов в Одинцово в нашей клинике — это комфорт, качество и доступные цены.
+              Лечение зубов в Альтамед Голицино — это комфорт, качество и доступные цены.
             </p>
           </div>
         </div>
@@ -1603,7 +1603,7 @@ export default function DentistryPage() {
                 )}
 
                 <div className="mt-8 text-center">
-                  <Link href="https://online.altamed-c.ru/" target="_blank" rel="noopener noreferrer" className="bg-emerald-500 text-white px-8 py-3 rounded-full font-medium hover:bg-emerald-600 transition-colors inline-block">
+                  <Link href="https://reg.altamed-golitsino.ru/" target="_blank" rel="noopener noreferrer" className="bg-emerald-500 text-white px-8 py-3 rounded-full font-medium hover:bg-emerald-600 transition-colors inline-block">
                     Записаться на консультацию
                   </Link>
                 </div>
@@ -1613,12 +1613,12 @@ export default function DentistryPage() {
         </div>
       </section>
 
-      {/* Почему «Альтамед-С»? */}
+      {/* Почему «Альтамед Голицино»? */}
       <section className="py-12 bg-gray-50">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <div className="bg-white rounded-[20px] shadow-lg p-8 md:p-12">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8 text-center">
-              Почему «Альтамед-С»?
+              Почему «Альтамед Голицино»?
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               <div className="text-center">
@@ -1743,12 +1743,12 @@ export default function DentistryPage() {
         </div>
       </section>
 
-      {/* Как проходит прием у стоматолога в Одинцово */}
+      {/* Как проходит прием у стоматолога в Альтамед Голицино */}
       <section className="py-12 bg-white">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <div className="bg-gradient-to-br from-blue-50 to-emerald-50 rounded-[20px] shadow-lg p-8 md:p-12">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8 text-center">
-              Как проходит прием у стоматолога в «Альтамед-С»
+              Как проходит прием у стоматолога в «Альтамед Голицино»
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               <div className="text-center bg-white rounded-lg p-6 shadow-md">
@@ -1844,13 +1844,13 @@ export default function DentistryPage() {
       <section className="py-12 bg-white">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 text-center">
-            Основные направления стоматологии в клинике «Альтамед-с» Одинцово
+            Основные направления стоматологии в клинике «Альтамед Голицино»
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
             <div className="bg-gradient-to-br from-emerald-50 to-blue-50 rounded-lg p-6">
               <h3 className="text-xl font-semibold text-gray-800 mb-3">Терапевтическая стоматология</h3>
               <p className="text-gray-700 mb-4">
-                Лечение кариеса, пульпита и периодонтита в Одинцово. Современные методы эндодонтического лечения с использованием микроскопа и современных материалов.
+                Лечение кариеса, пульпита и периодонтита в Альтамед Голицино. Современные методы эндодонтического лечения с использованием микроскопа и современных материалов.
               </p>
               <Link href="/services/dentistry/therapeutic" className="text-emerald-600 font-semibold hover:text-emerald-700">
                 Подробнее →
@@ -1859,7 +1859,7 @@ export default function DentistryPage() {
             <div className="bg-gradient-to-br from-emerald-50 to-blue-50 rounded-lg p-6">
               <h3 className="text-xl font-semibold text-gray-800 mb-3">Хирургическая стоматология</h3>
               <p className="text-gray-700 mb-4">
-                Удаление зубов любой сложности, включая зубы мудрости, в Одинцово. Лечение воспалений, кист, резекция верхушки корня.
+                Удаление зубов любой сложности, включая зубы мудрости, в Альтамед Голицино. Лечение воспалений, кист, резекция верхушки корня.
               </p>
               <Link href="/services/dentistry/surgery" className="text-emerald-600 font-semibold hover:text-emerald-700">
                 Подробнее →
@@ -1868,7 +1868,7 @@ export default function DentistryPage() {
             <div className="bg-gradient-to-br from-emerald-50 to-blue-50 rounded-lg p-6">
               <h3 className="text-xl font-semibold text-gray-800 mb-3">Имплантация зубов</h3>
               <p className="text-gray-700 mb-4">
-                Восстановление утраченных зубов с помощью дентальных имплантатов в Одинцово. Современные системы имплантации, гарантия качества.
+                Восстановление утраченных зубов с помощью дентальных имплантатов в Альтамед Голицино. Современные системы имплантации, гарантия качества.
               </p>
               <Link href="/services/dentistry/implantation" className="text-emerald-600 font-semibold hover:text-emerald-700">
                 Подробнее →
@@ -1877,7 +1877,7 @@ export default function DentistryPage() {
             <div className="bg-gradient-to-br from-emerald-50 to-blue-50 rounded-lg p-6">
               <h3 className="text-xl font-semibold text-gray-800 mb-3">Ортопедическая стоматология</h3>
               <p className="text-gray-700 mb-4">
-                Протезирование зубов в Одинцово: коронки, мосты, виниры, съемные протезы. Восстановление жевательной функции и эстетики улыбки.
+                Протезирование зубов в Альтамед Голицино: коронки, мосты, виниры, съемные протезы. Восстановление жевательной функции и эстетики улыбки.
               </p>
               <Link href="/services/dentistry/prosthodontics" className="text-emerald-600 font-semibold hover:text-emerald-700">
                 Подробнее →
@@ -1886,7 +1886,7 @@ export default function DentistryPage() {
             <div className="bg-gradient-to-br from-emerald-50 to-blue-50 rounded-lg p-6">
               <h3 className="text-xl font-semibold text-gray-800 mb-3">Ортодонтия</h3>
               <p className="text-gray-700 mb-4">
-                Исправление прикуса в Одинцово с помощью брекет-систем и элайнеров. Лечение для детей и взрослых, современные методы ортодонтии.
+                Исправление прикуса в Альтамед Голицино с помощью брекет-систем и элайнеров. Лечение для детей и взрослых, современные методы ортодонтии.
               </p>
               <Link href="/services/dentistry/orthodontics" className="text-emerald-600 font-semibold hover:text-emerald-700">
                 Подробнее →
@@ -1895,7 +1895,7 @@ export default function DentistryPage() {
             <div className="bg-gradient-to-br from-emerald-50 to-blue-50 rounded-lg p-6">
               <h3 className="text-xl font-semibold text-gray-800 mb-3">Детская стоматология</h3>
               <p className="text-gray-700 mb-4">
-                Лечение зубов у детей в Одинцово. Безболезненное лечение, адаптация, профилактика. Доброжелательный подход к маленьким пациентам.
+                Лечение зубов у детей в Альтамед Голицино. Безболезненное лечение, адаптация, профилактика. Доброжелательный подход к маленьким пациентам.
               </p>
               <Link href="/services/dentistry/pediatric-dentistry" className="text-emerald-600 font-semibold hover:text-emerald-700">
                 Подробнее →
@@ -1905,25 +1905,25 @@ export default function DentistryPage() {
         </div>
       </section>
 
-      {/* SEO Content: Преимущества стоматологии в Одинцово */}
+      {/* SEO Content: Преимущества стоматологии в Альтамед Голицино */}
       <section className="py-12 bg-gray-50">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 text-center">
-            Преимущества стоматологии «Альтамед-с» в Одинцово
+            Преимущества стоматологии «Альтамед Голицино»
           </h2>
           <div className="prose prose-lg max-w-none">
             <p className="text-gray-700 mb-6 text-lg leading-relaxed">
-              Стоматология в Одинцово в клинике «Альтамед-с» предлагает комплексный подход к лечению зубов. 
+              Стоматология в Альтамед Голицино предлагает комплексный подход к лечению зубов. 
               Наша стоматология оснащена современным диагностическим оборудованием, включая цифровые рентген-аппараты, 
               компьютерную томографию и интраоральные камеры для точной диагностики.
             </p>
             <p className="text-gray-700 mb-6 text-lg leading-relaxed">
-              Лечение зубов в Одинцово проводится с использованием современных материалов ведущих мировых производителей: 
+              Лечение зубов в Альтамед Голицино проводится с использованием современных материалов ведущих мировых производителей: 
               Германии, США, Швейцарии. Наши врачи регулярно проходят обучение и повышение квалификации, 
               участвуют в международных конференциях и семинарах по стоматологии.
             </p>
             <p className="text-gray-700 mb-6 text-lg leading-relaxed">
-              Стоматология Одинцово в «Альтамед-с» — это индивидуальный подход к каждому пациенту, 
+              Стоматология Альтамед Голицино — это индивидуальный подход к каждому пациенту, 
               составление детального плана лечения, использование безболезненных методов анестезии и 
               гарантия качества выполненных работ. Мы заботимся о комфорте пациентов и создаем 
               приятную атмосферу в клинике.

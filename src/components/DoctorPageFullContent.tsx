@@ -69,7 +69,7 @@ export default function DoctorPageFullContent({
                       : ''}
                 </p>
               ) : null}
-              <a href="https://online.altamed-c.ru/" target="_blank" rel="noopener noreferrer" className="inline-block bg-gradient-to-r from-orange-400 to-orange-600 text-white px-6 py-3 rounded-xl hover:from-orange-500 hover:to-orange-700 transition-all font-medium w-full md:w-auto text-center">
+              <a href="https://reg.altamed-golitsino.ru/" target="_blank" rel="noopener noreferrer" className="inline-block bg-gradient-to-r from-orange-400 to-orange-600 text-white px-6 py-3 rounded-xl hover:from-orange-500 hover:to-orange-700 transition-all font-medium w-full md:w-auto text-center">
                 Записаться
               </a>
             </div>
@@ -316,22 +316,6 @@ export default function DoctorPageFullContent({
           )}
         </section>
       )}
-      {(!doctorDetails || (!doctorDetails.accreditation && (!doctorDetails.certificates || doctorDetails.certificates.length === 0))) && (
-        <section className="mt-8 bg-white rounded-2xl shadow-lg p-6">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">
-            Аккредитация
-          </h2>
-          <div className="flex items-start gap-3">
-            <div className="w-2 h-2 bg-emerald-500 rounded-full mt-2 flex-shrink-0"></div>
-            <div>
-              <p className="text-gray-700">
-                <span className="font-medium">Сертификат:</span> Сертификат по ультразвуковой диагностике. Действует до: 20.07.2026
-              </p>
-            </div>
-          </div>
-        </section>
-      )}
-
       {/* Additional Information Section */}
       <section className="mt-8 bg-white rounded-2xl shadow-lg p-6">
         <h2 className="text-2xl font-bold text-gray-900 mb-4">

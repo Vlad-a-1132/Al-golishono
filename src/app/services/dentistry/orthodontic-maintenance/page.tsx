@@ -85,10 +85,10 @@ export default function OrthodonticMaintenancePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div>
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-                Обслуживание ортодонтических аппаратов в клинике «Альтамед-с»
+                Обслуживание ортодонтических аппаратов в клинике «Альтамед Голицино»
               </h1>
               <p className="text-lg md:text-xl mb-8 text-emerald-100">
-                Ремонт, замена дуг и лигатур, активация брекет-систем в Одинцово
+                Ремонт, замена дуг и лигатур, активация брекет-систем в Альтамед Голицино
               </p>
             </div>
             <div className="relative">
@@ -106,9 +106,9 @@ export default function OrthodonticMaintenancePage() {
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div className="lg:col-span-2 space-y-5 text-gray-700 leading-relaxed">
-              <h2 className="text-3xl font-bold text-gray-900">Обслуживание ортодонтических аппаратов в Одинцово: почему выбирают нас</h2>
+              <h2 className="text-3xl font-bold text-gray-900">Обслуживание ортодонтических аппаратов в Альтамед Голицино: почему выбирают нас</h2>
               <p>
-                Клиника «Альтамед-С» предлагает услуги по обслуживанию ортодонтических аппаратов в Одинцово — ремонт,
+                Клиника «Альтамед Голицино» предлагает услуги по обслуживанию ортодонтических аппаратов в Альтамед Голицино — ремонт,
                 замена дуг и лигатур, активация брекет-систем и другие процедуры для поддержания эффективности лечения.
                 Мы применяем современные технологии, качественные материалы и обеспечиваем регулярное обслуживание
                 ортодонтических аппаратов.
@@ -119,13 +119,13 @@ export default function OrthodonticMaintenancePage() {
                 лигатур, активацию аппаратов и другие процедуры обслуживания.
               </p>
               <p>
-                Прозрачные цены позволяют планировать бюджет — стоимость обслуживания ортодонтических аппаратов в Одинцово
+                Прозрачные цены позволяют планировать бюджет — стоимость обслуживания ортодонтических аппаратов в Альтамед Голицино
                 фиксируется заранее, а пациенты получают подробную информацию о процедурах.
               </p>
             </div>
             <div className="bg-gray-50 rounded-[20px] p-6 shadow-md border-l-4 border-[#4A5568]">
               <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Что вы получаете, выбирая «Альтамед-С»
+                Что вы получаете, выбирая «Альтамед Голицино»
               </h3>
               <ul className="space-y-3 text-gray-700 text-sm md:text-base leading-relaxed">
                 <li className="flex items-start">
@@ -152,7 +152,7 @@ export default function OrthodonticMaintenancePage() {
 
       <section className="py-12 bg-gray-50">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">Преимущества обслуживания аппаратов в «Альтамед-С»</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">Преимущества обслуживания аппаратов в «Альтамед Голицино»</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
               <h3 className="text-xl font-semibold text-gray-900 mb-3">Опытные ортодонты</h3>
@@ -201,16 +201,16 @@ export default function OrthodonticMaintenancePage() {
       <section className="py-12 bg-white">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <h2 className="text-3xl font-bold text-gray-900 mb-6">
-            Обслуживание ортодонтических аппаратов в Одинцово: цены и отзывы пациентов
+            Обслуживание ортодонтических аппаратов в Альтамед Голицино: цены и отзывы пациентов
           </h2>
           <div className="space-y-4 text-gray-700 leading-relaxed text-sm md:text-base mb-6">
             <p>
-              Стоматология «Альтамед-С» — клиника, где обслуживание ортодонтических аппаратов в Одинцове проводится
-              по международным протоколам. Мы принимаем пациентов из Одинцово и всего Одинцовского городского округа.
+              Стоматология «Альтамед Голицино» — клиника, где обслуживание ортодонтических аппаратов в Альтамед Голицино проводится
+              по международным протоколам. Мы принимаем пациентов из Альтамед Голицино и всего Одинцовского городского округа.
             </p>
             <p>
               Наши пациенты отмечают качество обслуживания и эффективность лечения. Если вы ищете стоматологию,
-              где «обслуживание ортодонтических аппаратов одинцово» — это не просто слоган, а качественная услуга, записывайтесь
+              где «обслуживание ортодонтических аппаратов Альтамед Голицино» — это не просто слоган, а качественная услуга, записывайтесь
               на обслуживание или ознакомьтесь с другими направлениями на{" "}
               <Link href="/services/dentistry" className="text-emerald-600 hover:text-emerald-700 underline">
                 странице стоматологии
@@ -224,10 +224,10 @@ export default function OrthodonticMaintenancePage() {
       <section className="py-12 bg-gray-50">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8 text-center">
-            Цены на обслуживание ортодонтических аппаратов в Одинцово
+            Цены на обслуживание ортодонтических аппаратов в Альтамед Голицино
           </h2>
           <p className="text-gray-700 mb-6 leading-relaxed text-center">
-            Стоимость обслуживания ортодонтических аппаратов в клинике «Альтамед-С» формируется в зависимости от вида процедуры,
+            Стоимость обслуживания ортодонтических аппаратов в клинике «Альтамед Голицино» формируется в зависимости от вида процедуры,
             но мы фиксируем цены в договоре, чтобы пациент точно понимал итоговую сумму.
           </p>
           
@@ -269,7 +269,7 @@ export default function OrthodonticMaintenancePage() {
               ))}
             </div>
             <div className="mt-8 text-center">
-              <Link href="https://online.altamed-c.ru/" target="_blank" rel="noopener noreferrer" className="bg-emerald-500 text-white px-8 py-3 rounded-full font-medium hover:bg-emerald-600 transition-colors inline-block">
+              <Link href="https://reg.altamed-golitsino.ru/" target="_blank" rel="noopener noreferrer" className="bg-emerald-500 text-white px-8 py-3 rounded-full font-medium hover:bg-emerald-600 transition-colors inline-block">
                 Записаться на консультацию
               </Link>
             </div>
@@ -280,11 +280,11 @@ export default function OrthodonticMaintenancePage() {
       <section className="py-12 bg-gray-50">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <h2 className="text-3xl font-bold text-gray-900 mb-6">
-            Отзывы пациентов об обслуживании ортодонтических аппаратов в Одинцово
+            Отзывы пациентов об обслуживании ортодонтических аппаратов в Альтамед Голицино
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Реальные отзывы из Одинцово</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Реальные отзывы из Альтамед Голицино</h3>
               <p className="text-gray-700 text-sm md:text-base leading-relaxed">
                 Пациенты отмечают качество обслуживания, эффективность лечения и внимательное отношение
                 ортодонтов.
@@ -300,7 +300,7 @@ export default function OrthodonticMaintenancePage() {
             <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
               <h3 className="text-xl font-semibold text-gray-900 mb-3">Комфортное обслуживание</h3>
               <p className="text-gray-700 text-sm md:text-base leading-relaxed">
-                После обслуживания аппаратов в Одинцове пациенты отмечают комфорт; врачи дают
+                После обслуживания аппаратов в Альтамед Голицино пациенты отмечают комфорт; врачи дают
                 подробные инструкции по уходу.
               </p>
             </div>
@@ -311,7 +311,7 @@ export default function OrthodonticMaintenancePage() {
       <section className="py-12 bg-white">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <h2 className="text-3xl font-bold text-gray-900 mb-6">
-            Частые вопросы об обслуживании ортодонтических аппаратов в Одинцово
+            Частые вопросы об обслуживании ортодонтических аппаратов в Альтамед Голицино
           </h2>
           <div className="space-y-4">
             <details className="group bg-gray-50 rounded-[20px] shadow-md border border-gray-100">
@@ -361,15 +361,15 @@ export default function OrthodonticMaintenancePage() {
           <div className="bg-gradient-to-r from-[#4A5568] to-[#5A6474] rounded-[20px] p-8 md:p-12 text-white flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
             <div className="max-w-3xl">
               <h2 className="text-2xl md:text-3xl font-bold mb-4">
-                Обслуживание ортодонтических аппаратов в Одинцово — получите качественное обслуживание
+                Обслуживание ортодонтических аппаратов в Альтамед Голицино — получите качественное обслуживание
               </h2>
               <p className="text-white/90 text-sm md:text-base leading-relaxed">
-                Запишитесь на обслуживание в клинику «Альтамед-С», чтобы получить качественное обслуживание
+                Запишитесь на обслуживание в клинику «Альтамед Голицино», чтобы получить качественное обслуживание
                 ваших ортодонтических аппаратов и обеспечить эффективность лечения.
               </p>
             </div>
             <Link
-              href="https://online.altamed-c.ru/"
+              href="https://reg.altamed-golitsino.ru/"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white text-[#4A5568] rounded-full px-8 py-3 font-medium hover:bg-gray-100 transition-colors text-center"
@@ -388,9 +388,9 @@ export default function OrthodonticMaintenancePage() {
               __html: JSON.stringify({
                 "@context": "https://schema.org",
                 "@type": "MedicalBusiness",
-                name: "Клиника «Альтамед-С» — обслуживание ортодонтических аппаратов в Одинцово",
-                url: "https://altamed-c.ru/services/dentistry/orthodontic-maintenance",
-                image: "https://altamed-c.ru/images/dentisrty/task_01kb5fptcdfe9vny2vy0fadwrt_1764342213_img_0.webp",
+                name: "Клиника «Альтамед Голицино» — обслуживание ортодонтических аппаратов в Альтамед Голицино",
+                url: "https://altamed-golitsino.ru/services/dentistry/orthodontic-maintenance",
+                image: "https://altamed-golitsino.ru/images/dentisrty/task_01kb5fptcdfe9vny2vy0fadwrt_1764342213_img_0.webp",
                 medicalSpecialty: "Dental",
                 aggregateRating: {
                   "@type": "AggregateRating",
@@ -399,18 +399,18 @@ export default function OrthodonticMaintenancePage() {
                 },
                 address: {
                   "@type": "PostalAddress",
-                  addressLocality: "Одинцово",
+                  addressLocality: "Альтамед Голицино",
                   addressRegion: "Московская область",
                   streetAddress: "ул. Советская, 9"
                 },
                 telephone: "+7 (495) 640-09-03",
                 priceRange: "₽₽",
                 serviceType: "Обслуживание ортодонтических аппаратов",
-                areaServed: "Одинцово и Одинцовский городской округ",
+                areaServed: "Альтамед Голицино и Одинцовский городской округ",
                 description:
-                  "Обслуживание ортодонтических аппаратов в Одинцово: ремонт, замена дуг и лигатур, активация брекет-систем и другие процедуры обслуживания.",
+                  "Обслуживание ортодонтических аппаратов в Альтамед Голицино: ремонт, замена дуг и лигатур, активация брекет-систем и другие процедуры обслуживания.",
                 sameAs: [
-                  "https://altamed-c.ru",
+                  "https://altamed-golitsino.ru",
                   "https://yandex.ru/maps/org/altamed_s/1919839667"
                 ]
               })

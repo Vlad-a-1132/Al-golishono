@@ -89,10 +89,10 @@ export default function PediatricDentistryPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div>
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-                Детская стоматология в клинике «Альтамед-с»
+                Детская стоматология в клинике «Альтамед Голицино»
               </h1>
               <p className="text-lg md:text-xl mb-8 text-emerald-100">
-                Лечение молочных и постоянных зубов у детей с безболезненным подходом в Одинцово
+                Лечение молочных и постоянных зубов у детей с безболезненным подходом в Альтамед Голицино
               </p>
             </div>
             <div className="relative">
@@ -110,7 +110,7 @@ export default function PediatricDentistryPage() {
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <div className="bg-gradient-to-br from-cyan-50 to-blue-50 rounded-[20px] shadow-lg p-8 md:p-12">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6 text-center">
-              Особенности детской стоматологии в Одинцово
+              Особенности детской стоматологии в Альтамед Голицино
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
               <div className="bg-white rounded-lg p-6 shadow-md">
@@ -179,7 +179,7 @@ export default function PediatricDentistryPage() {
       <section className="py-12 bg-gray-50">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8 text-center">
-            Услуги детской стоматологии в Одинцово
+            Услуги детской стоматологии в Альтамед Голицино
           </h2>
           
           <div className="bg-white rounded-[20px] shadow-lg p-6 md:p-8">
@@ -220,7 +220,7 @@ export default function PediatricDentistryPage() {
               ))}
             </div>
             <div className="mt-8 text-center">
-              <Link href="https://online.altamed-c.ru/" target="_blank" rel="noopener noreferrer" className="bg-emerald-500 text-white px-8 py-3 rounded-full font-medium hover:bg-emerald-600 transition-colors inline-block">
+              <Link href="https://reg.altamed-golitsino.ru/" target="_blank" rel="noopener noreferrer" className="bg-emerald-500 text-white px-8 py-3 rounded-full font-medium hover:bg-emerald-600 transition-colors inline-block">
                 Записаться на консультацию
               </Link>
             </div>
@@ -232,28 +232,28 @@ export default function PediatricDentistryPage() {
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <div className="bg-white rounded-[20px] shadow-lg p-8 md:p-12">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8 text-center">
-              Почему важно лечить молочные зубы в Одинцово
+              Почему важно лечить молочные зубы в Альтамед Голицино
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
                 {
                   title: "Сохранить место для постоянных зубов",
-                  text: "Молочные зубы удерживают место для постоянных. Преждевременное удаление может привести к нарушению прикуса. В клинике «Альтамед-с» Одинцово мы стараемся сохранить молочные зубы до естественной смены.",
+                  text: "Молочные зубы удерживают место для постоянных. Преждевременное удаление может привести к нарушению прикуса. В клинике «Альтамед Голицино» Альтамед Голицино мы стараемся сохранить молочные зубы до естественной смены.",
                   icon: "🦷"
                 },
                 {
                   title: "Предотвратить осложнения",
-                  text: "Кариес молочных зубов может перерасти в пульпит и периодонтит, что негативно влияет на зачатки постоянных зубов. Своевременное лечение в стоматологии Одинцово защищает постоянные зубы.",
+                  text: "Кариес молочных зубов может перерасти в пульпит и периодонтит, что негативно влияет на зачатки постоянных зубов. Своевременное лечение в стоматологии Альтамед Голицино защищает постоянные зубы.",
                   icon: "🛡️"
                 },
                 {
                   title: "Заложить основы здоровья",
-                  text: "Раннее обучение гигиене и регулярные визиты к детскому стоматологу в Одинцово формируют правильные привычки ухода за зубами на всю жизнь.",
+                  text: "Раннее обучение гигиене и регулярные визиты к детскому стоматологу в Альтамед Голицино формируют правильные привычки ухода за зубами на всю жизнь.",
                   icon: "⭐"
                 },
                 {
                   title: "Избежать страха перед лечением",
-                  text: "Доброжелательный подход и адаптация ребенка в «Альтамед-с» Одинцово помогают избежать развития дентофобии и делают лечение комфортным для маленьких пациентов.",
+                  text: "Доброжелательный подход и адаптация ребенка в «Альтамед Голицино» Альтамед Голицино помогают избежать развития дентофобии и делают лечение комфортным для маленьких пациентов.",
                   icon: "😊"
                 }
               ].map((item, idx) => (
@@ -272,7 +272,7 @@ export default function PediatricDentistryPage() {
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <div className="bg-gradient-to-br from-cyan-50 to-blue-50 rounded-[20px] shadow-lg p-8 md:p-12">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8 text-center">
-              Когда нужно посетить детского стоматолога в Одинцово
+              Когда нужно посетить детского стоматолога в Альтамед Голицино
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               {[
@@ -304,17 +304,17 @@ export default function PediatricDentistryPage() {
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <div className="bg-white rounded-[20px] shadow-lg p-8 md:p-12">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8 text-center">
-              Стоимость детской стоматологии в Одинцово
+              Стоимость детской стоматологии в Альтамед Голицино
             </h2>
             <div className="prose prose-lg max-w-none text-gray-700">
               <p className="mb-4">
-                Цены на детскую стоматологию в клинике «Альтамед-с» Одинцово учитывают особенности работы с детьми. Мы используем щадящие методы лечения и специальные материалы для молочных зубов. Детская стоматология в Одинцово включает лечение кариеса, пульпита, профилактику и удаление молочных зубов.
+                Цены на детскую стоматологию в клинике «Альтамед Голицино» Альтамед Голицино учитывают особенности работы с детьми. Мы используем щадящие методы лечения и специальные материалы для молочных зубов. Детская стоматология в Альтамед Голицино включает лечение кариеса, пульпита, профилактику и удаление молочных зубов.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
                 <div className="bg-cyan-50 rounded-lg p-6">
-                  <h3 className="text-xl font-semibold text-gray-800 mb-3">Лечение кариеса у детей в Одинцово</h3>
+                  <h3 className="text-xl font-semibold text-gray-800 mb-3">Лечение кариеса у детей в Альтамед Голицино</h3>
                   <p className="text-gray-600 mb-3">
-                    Лечение кариеса молочных зубов в стоматологии Одинцово важно для сохранения места для постоянных зубов. Мы используем специальные материалы и щадящие методы лечения, чтобы сделать процедуру комфортной для ребенка.
+                    Лечение кариеса молочных зубов в стоматологии Альтамед Голицино важно для сохранения места для постоянных зубов. Мы используем специальные материалы и щадящие методы лечения, чтобы сделать процедуру комфортной для ребенка.
                   </p>
                   <ul className="space-y-2 text-gray-600">
                     <li className="flex items-start">
@@ -338,9 +338,9 @@ export default function PediatricDentistryPage() {
                   </ul>
                 </div>
                 <div className="bg-blue-50 rounded-lg p-6">
-                  <h3 className="text-xl font-semibold text-gray-800 mb-3">Профилактика в детской стоматологии Одинцово</h3>
+                  <h3 className="text-xl font-semibold text-gray-800 mb-3">Профилактика в детской стоматологии Альтамед Голицино</h3>
                   <p className="text-gray-600 mb-3">
-                    Профилактические процедуры в стоматологии Одинцово помогают сохранить здоровье молочных зубов и предотвратить развитие кариеса. Герметизация фиссур и фторирование укрепляют эмаль и защищают зубы.
+                    Профилактические процедуры в стоматологии Альтамед Голицино помогают сохранить здоровье молочных зубов и предотвратить развитие кариеса. Герметизация фиссур и фторирование укрепляют эмаль и защищают зубы.
                   </p>
                   <ul className="space-y-2 text-gray-600">
                     <li className="flex items-start">
@@ -365,7 +365,7 @@ export default function PediatricDentistryPage() {
                 </div>
               </div>
               <p className="mt-6 text-gray-600">
-                Точную стоимость детской стоматологии в Одинцово можно узнать после консультации. Мы создаем комфортную атмосферу для детей и используем специальные методы работы с маленькими пациентами. Запишитесь на прием в «Альтамед-с» Одинцово для получения детальной информации.
+                Точную стоимость детской стоматологии в Альтамед Голицино можно узнать после консультации. Мы создаем комфортную атмосферу для детей и используем специальные методы работы с маленькими пациентами. Запишитесь на прием в «Альтамед Голицино» Альтамед Голицино для получения детальной информации.
               </p>
             </div>
           </div>
@@ -377,34 +377,34 @@ export default function PediatricDentistryPage() {
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <div className="bg-gradient-to-br from-cyan-50 to-blue-50 rounded-[20px] shadow-lg p-8 md:p-12">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8 text-center">
-              Особенности детской стоматологии в Одинцово
+              Особенности детской стоматологии в Альтамед Голицино
             </h2>
             <div className="space-y-8">
               <div className="bg-white rounded-lg p-6 shadow-md">
-                <h3 className="text-xl font-semibold text-gray-800 mb-4">Психологический подход в детской стоматологии Одинцово</h3>
+                <h3 className="text-xl font-semibold text-gray-800 mb-4">Психологический подход в детской стоматологии Альтамед Голицино</h3>
                 <p className="text-gray-700 mb-4">
-                  Работа с детьми в клинике «Альтамед-с» Одинцово требует особого подхода. Наши детские стоматологи используют методы адаптации и психологической подготовки маленьких пациентов. В стоматологии Одинцово мы создаем дружелюбную атмосферу, чтобы ребенок чувствовал себя комфортно.
+                  Работа с детьми в клинике «Альтамед Голицино» Альтамед Голицино требует особого подхода. Наши детские стоматологи используют методы адаптации и психологической подготовки маленьких пациентов. В стоматологии Альтамед Голицино мы создаем дружелюбную атмосферу, чтобы ребенок чувствовал себя комфортно.
                 </p>
                 <p className="text-gray-700">
-                  Первый визит в детскую стоматологию Одинцово обычно проходит без лечения — это знакомство с врачом и клиникой. Такой подход помогает сформировать позитивное отношение к стоматологии и избежать страха перед лечением в будущем.
+                  Первый визит в детскую стоматологию Альтамед Голицино обычно проходит без лечения — это знакомство с врачом и клиникой. Такой подход помогает сформировать позитивное отношение к стоматологии и избежать страха перед лечением в будущем.
                 </p>
               </div>
               <div className="bg-white rounded-lg p-6 shadow-md">
-                <h3 className="text-xl font-semibold text-gray-800 mb-4">Лечение молочных зубов в Одинцово</h3>
+                <h3 className="text-xl font-semibold text-gray-800 mb-4">Лечение молочных зубов в Альтамед Голицино</h3>
                 <p className="text-gray-700 mb-4">
-                  Молочные зубы в детской стоматологии Одинцово требуют особого внимания, так как они влияют на формирование прикуса и развитие челюстей. Лечение кариеса молочных зубов в клинике «Альтамед-с» Одинцово позволяет сохранить зубы до их естественной смены.
+                  Молочные зубы в детской стоматологии Альтамед Голицино требуют особого внимания, так как они влияют на формирование прикуса и развитие челюстей. Лечение кариеса молочных зубов в клинике «Альтамед Голицино» Альтамед Голицино позволяет сохранить зубы до их естественной смены.
                 </p>
                 <p className="text-gray-700">
-                  В стоматологии Одинцово мы используем специальные материалы для молочных зубов, которые учитывают их особенности. Лечение пульпита в детской стоматологии Одинцово проводится щадящими методами с сохранением зуба.
+                  В стоматологии Альтамед Голицино мы используем специальные материалы для молочных зубов, которые учитывают их особенности. Лечение пульпита в детской стоматологии Альтамед Голицино проводится щадящими методами с сохранением зуба.
                 </p>
               </div>
               <div className="bg-white rounded-lg p-6 shadow-md">
-                <h3 className="text-xl font-semibold text-gray-800 mb-4">Профилактика в детской стоматологии Одинцово</h3>
+                <h3 className="text-xl font-semibold text-gray-800 mb-4">Профилактика в детской стоматологии Альтамед Голицино</h3>
                 <p className="text-gray-700 mb-4">
-                  Профилактика в детской стоматологии Одинцово — это основа здоровых зубов в будущем. Герметизация фиссур в клинике «Альтамед-с» Одинцово защищает жевательные зубы от кариеса. Фторирование укрепляет эмаль и снижает риск развития кариеса.
+                  Профилактика в детской стоматологии Альтамед Голицино — это основа здоровых зубов в будущем. Герметизация фиссур в клинике «Альтамед Голицино» Альтамед Голицино защищает жевательные зубы от кариеса. Фторирование укрепляет эмаль и снижает риск развития кариеса.
                 </p>
                 <p className="text-gray-700">
-                  Регулярные профилактические осмотры в стоматологии Одинцово рекомендуются каждые 3-4 месяца. Профессиональная гигиена для детей в клинике Одинцово проводится мягкими методами с учетом особенностей детских зубов.
+                  Регулярные профилактические осмотры в стоматологии Альтамед Голицино рекомендуются каждые 3-4 месяца. Профессиональная гигиена для детей в клинике Альтамед Голицино проводится мягкими методами с учетом особенностей детских зубов.
                 </p>
               </div>
             </div>
@@ -417,13 +417,13 @@ export default function PediatricDentistryPage() {
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <div className="bg-white rounded-[20px] shadow-lg p-8 md:p-12">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8 text-center">
-              Почему важна детская стоматология в Одинцово
+              Почему важна детская стоматология в Альтамед Голицино
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="bg-gradient-to-br from-cyan-50 to-blue-50 rounded-lg p-6">
                 <h3 className="text-xl font-semibold text-gray-800 mb-4">Сохранение молочных зубов</h3>
                 <p className="text-gray-700 mb-4">
-                  Молочные зубы в детской стоматологии Одинцово играют важную роль: они сохраняют место для постоянных зубов, участвуют в формировании речи и жевании. Ранняя потеря молочных зубов в стоматологии Одинцово может привести к нарушению прикуса.
+                  Молочные зубы в детской стоматологии Альтамед Голицино играют важную роль: они сохраняют место для постоянных зубов, участвуют в формировании речи и жевании. Ранняя потеря молочных зубов в стоматологии Альтамед Голицино может привести к нарушению прикуса.
                 </p>
                 <ul className="space-y-2 text-gray-700">
                   <li className="flex items-start">
@@ -449,7 +449,7 @@ export default function PediatricDentistryPage() {
               <div className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-lg p-6">
                 <h3 className="text-xl font-semibold text-gray-800 mb-4">Профилактика заболеваний</h3>
                 <p className="text-gray-700 mb-4">
-                  Регулярные визиты в детскую стоматологию Одинцово помогают выявить проблемы на ранней стадии. Профилактические процедуры в клинике «Альтамед-с» Одинцово значительно снижают риск развития кариеса и других заболеваний.
+                  Регулярные визиты в детскую стоматологию Альтамед Голицино помогают выявить проблемы на ранней стадии. Профилактические процедуры в клинике «Альтамед Голицино» Альтамед Голицино значительно снижают риск развития кариеса и других заболеваний.
                 </p>
                 <ul className="space-y-2 text-gray-700">
                   <li className="flex items-start">
@@ -475,7 +475,7 @@ export default function PediatricDentistryPage() {
             </div>
             <div className="mt-8 bg-white rounded-lg p-6 border-2 border-cyan-200">
               <p className="text-gray-700 text-lg leading-relaxed">
-                Детская стоматология в клинике «Альтамед-с» Одинцово — это забота о здоровье зубов вашего ребенка с раннего возраста. Регулярные визиты в стоматологию Одинцово, правильная гигиена и своевременное лечение молочных зубов формируют основу для здоровых постоянных зубов. Опытные детские стоматологи в Одинцово создают комфортную атмосферу и помогают детям полюбить походы к врачу.
+                Детская стоматология в клинике «Альтамед Голицино» Альтамед Голицино — это забота о здоровье зубов вашего ребенка с раннего возраста. Регулярные визиты в стоматологию Альтамед Голицино, правильная гигиена и своевременное лечение молочных зубов формируют основу для здоровых постоянных зубов. Опытные детские стоматологи в Альтамед Голицино создают комфортную атмосферу и помогают детям полюбить походы к врачу.
               </p>
             </div>
           </div>
@@ -486,9 +486,9 @@ export default function PediatricDentistryPage() {
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div className="lg:col-span-2 space-y-5 text-gray-700 leading-relaxed">
-              <h2 className="text-3xl font-bold text-gray-900">Детский стоматолог в Одинцово: почему выбирают нас</h2>
+              <h2 className="text-3xl font-bold text-gray-900">Детский стоматолог в Альтамед Голицино: почему выбирают нас</h2>
               <p>
-                Клиника «Альтамед-С» предлагает услуги детской стоматологии в Одинцово — лечение молочных и постоянных
+                Клиника «Альтамед Голицино» предлагает услуги детской стоматологии в Альтамед Голицино — лечение молочных и постоянных
                 зубов, профилактику кариеса, безболезненные методы лечения. Мы применяем современные технологии,
                 качественные материалы и обеспечиваем комфортную атмосферу для детей.
               </p>
@@ -498,13 +498,13 @@ export default function PediatricDentistryPage() {
                 фторирование и другие процедуры детской стоматологии.
               </p>
               <p>
-                Прозрачные цены позволяют планировать бюджет — стоимость детской стоматологии в Одинцово
+                Прозрачные цены позволяют планировать бюджет — стоимость детской стоматологии в Альтамед Голицино
                 фиксируется заранее, а родители получают подробную информацию о процедурах.
               </p>
             </div>
             <div className="bg-gray-50 rounded-[20px] p-6 shadow-md border-l-4 border-[#4A5568]">
               <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Что вы получаете, выбирая «Альтамед-С»
+                Что вы получаете, выбирая «Альтамед Голицино»
               </h3>
               <ul className="space-y-3 text-gray-700 text-sm md:text-base leading-relaxed">
                 <li className="flex items-start">
@@ -532,11 +532,11 @@ export default function PediatricDentistryPage() {
       <section className="py-12 bg-gray-50">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <h2 className="text-3xl font-bold text-gray-900 mb-6">
-            Отзывы пациентов о детской стоматологии в Одинцово
+            Отзывы пациентов о детской стоматологии в Альтамед Голицино
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Реальные отзывы из Одинцово</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Реальные отзывы из Альтамед Голицино</h3>
               <p className="text-gray-700 text-sm md:text-base leading-relaxed">
                 Родители отмечают безболезненное лечение, комфортную атмосферу
                 и внимательное отношение детских стоматологов к детям.
@@ -552,7 +552,7 @@ export default function PediatricDentistryPage() {
             <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
               <h3 className="text-xl font-semibold text-gray-900 mb-3">Комфортная атмосфера</h3>
               <p className="text-gray-700 text-sm md:text-base leading-relaxed">
-                После визита в детскую стоматологию в Одинцове дети не боятся врачей; стоматологи дают
+                После визита в детскую стоматологию в Голицино дети не боятся врачей; стоматологи дают
                 подробные рекомендации по уходу за зубами.
               </p>
             </div>
@@ -563,7 +563,7 @@ export default function PediatricDentistryPage() {
       <section className="py-12 bg-white">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <h2 className="text-3xl font-bold text-gray-900 mb-6">
-            Частые вопросы о детской стоматологии в Одинцово
+            Частые вопросы о детской стоматологии в Альтамед Голицино
           </h2>
           <div className="space-y-4">
             <details className="group bg-gray-50 rounded-[20px] shadow-md border border-gray-100">
@@ -614,15 +614,15 @@ export default function PediatricDentistryPage() {
           <div className="bg-gradient-to-r from-[#4A5568] to-[#5A6474] rounded-[20px] p-8 md:p-12 text-white flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
             <div className="max-w-3xl">
               <h2 className="text-2xl md:text-3xl font-bold mb-4">
-                Детский стоматолог в Одинцово — начните с консультации
+                Детский стоматолог в Альтамед Голицино — начните с консультации
               </h2>
               <p className="text-white/90 text-sm md:text-base leading-relaxed">
-                Запишитесь на консультацию в клинику «Альтамед-С», чтобы узнать стоимость детской стоматологии,
+                Запишитесь на консультацию в клинику «Альтамед Голицино», чтобы узнать стоимость детской стоматологии,
                 подобрать подходящие процедуры и получить индивидуальный план лечения для вашего ребенка.
               </p>
             </div>
             <Link
-              href="https://online.altamed-c.ru/"
+              href="https://reg.altamed-golitsino.ru/"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white text-[#4A5568] rounded-full px-8 py-3 font-medium hover:bg-gray-100 transition-colors text-center"
@@ -641,9 +641,9 @@ export default function PediatricDentistryPage() {
               __html: JSON.stringify({
                 "@context": "https://schema.org",
                 "@type": "MedicalBusiness",
-                name: "Клиника «Альтамед-С» — детская стоматология в Одинцово",
-                url: "https://altamed-c.ru/services/dentistry/pediatric-dentistry",
-                image: "https://altamed-c.ru/images/dentisrty/task_01kb590e4demkax3am17hree6h_1764335184_img_0.webp",
+                name: "Клиника «Альтамед Голицино» — детская стоматология в Альтамед Голицино",
+                url: "https://altamed-golitsino.ru/services/dentistry/pediatric-dentistry",
+                image: "https://altamed-golitsino.ru/images/dentisrty/task_01kb590e4demkax3am17hree6h_1764335184_img_0.webp",
                 medicalSpecialty: "Dental",
                 aggregateRating: {
                   "@type": "AggregateRating",
@@ -652,18 +652,18 @@ export default function PediatricDentistryPage() {
                 },
                 address: {
                   "@type": "PostalAddress",
-                  addressLocality: "Одинцово",
+                  addressLocality: "Альтамед Голицино",
                   addressRegion: "Московская область",
                   streetAddress: "ул. Советская, 9"
                 },
                 telephone: "+7 (495) 640-09-03",
                 priceRange: "₽₽",
                 serviceType: "Детская стоматология",
-                areaServed: "Одинцово и Одинцовский городской округ",
+                areaServed: "Альтамед Голицино и Одинцовский городской округ",
                 description:
-                  "Детская стоматология в Одинцово: лечение молочных и постоянных зубов, профилактика кариеса, безболезненные методы. Опытные детские стоматологи в клинике «Альтамед-С».",
+                  "Детская стоматология в Альтамед Голицино: лечение молочных и постоянных зубов, профилактика кариеса, безболезненные методы. Опытные детские стоматологи в клинике «Альтамед Голицино».",
                 sameAs: [
-                  "https://altamed-c.ru",
+                  "https://altamed-golitsino.ru",
                   "https://yandex.ru/maps/org/altamed_s/1919839667"
                 ]
               })

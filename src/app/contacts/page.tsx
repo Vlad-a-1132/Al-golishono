@@ -1,82 +1,25 @@
 "use client";
 
-import Image from 'next/image';
 import Link from 'next/link';
-import { useState, useEffect, FormEvent } from 'react';
+import { useEffect } from 'react';
 
 export default function ContactsPage() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState<{ type: 'success' | 'error' | null; message: string }>({ type: null, message: '' });
-
-  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    
-    if (!name.trim() || !email.trim() || !message.trim()) {
-      setSubmitStatus({ type: 'error', message: 'Пожалуйста, заполните все обязательные поля' });
-      return;
-    }
-
-    setIsSubmitting(true);
-    setSubmitStatus({ type: null, message: '' });
-
-    try {
-      // Отправляем данные на API
-      const response = await fetch('/api/appointment', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          name: name.trim(),
-          phone: email.trim(), // Для формы контактов используем email как телефон (обязательное поле)
-          email: email.trim(), // Передаем email отдельно
-          message: message.trim(),
-        }),
-      });
-
-      const data = await response.json();
-
-      if (response.ok) {
-        setSubmitStatus({ type: 'success', message: 'Ваше сообщение успешно отправлено! Мы свяжемся с вами в ближайшее время.' });
-        setName("");
-        setEmail("");
-        setMessage("");
-      } else {
-        setSubmitStatus({ type: 'error', message: data.error || 'Произошла ошибка при отправке' });
-      }
-    } catch (error) {
-      console.error('Ошибка:', error);
-      setSubmitStatus({ type: 'error', message: 'Произошла ошибка при отправке. Попробуйте позже.' });
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
   const addresses = [
     {
-      title: 'Клиника на бульваре Маршала Крылова',
-      address: '143005, Московская область, Одинцовский городской округ, г.Одинцово, бульвар Маршала Крылова, д.23, пом.I',
-      mapLink: 'https://yandex.ru/maps/?rtext=~55.680564,37.291079&rtt=auto',
-    },
-    {
-      title: 'Клиника на Можайском шоссе',
-      address: '143005, Московская область, Одинцовский городской округ, г.Одинцово, ул. Можайское шоссе, д.141, пом.4',
-      mapLink: 'https://yandex.ru/maps/?rtext=~55.676321,37.306184&rtt=auto',
+      title: 'Медицинский центр Альтамед Голицино',
+      address: '143040, Московская область, Одинцовский городской округ, Голицыно, Советская улица, 58',
+      mapLink: 'https://yandex.ru/maps/org/altamed_golitsyno/1109627586',
     },
   ];
 
   const contactInfo = {
-    phone: '+7 (495) 255-44-50',
-    email: 'info@altamed-c.ru',
-    workingHours: 'Пн-Вс: 8.00 - 21.00',
+    phone: '+7 (495) 989-64-80',
+    email: 'medcentr@altamed-golitsino.ru',
+    workingHours: 'Ежедневно: 8:00 - 20:00',
+    labHours: 'Прием анализов: ежедневно 8:00 - 12:00',
+    labDiscount: 'Каждую среду, пятницу и воскресенье скидка на анализы 10%',
   };
 
-  const managementSchedule = [
-    { position: 'Генеральный директор', day: 'Понедельник', time: '13:00-15:00' },
-    { position: 'Главный врач', day: 'Среда', time: '10:00-13:00' },
-  ];
 
   // Load Yandex Maps script
   useEffect(() => {
@@ -130,10 +73,22 @@ export default function ContactsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl font-bold text-blue-900 mb-6">Контакты</h1>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-4">
               Вы можете связаться с нами любым удобным для вас способом. 
               Мы всегда готовы ответить на ваши вопросы и помочь вам.
             </p>
+            <div className="bg-white rounded-xl p-6 max-w-4xl mx-auto shadow-sm">
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">Мы рядом</h2>
+              <p className="text-gray-700 mb-4 leading-relaxed">
+                Мы работаем ежедневно с 8:00 - 20:00. Вы можете позвонить в любое время. Мы ответим Вам так скоро, как представится возможным.
+              </p>
+              <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-600">
+                <p className="text-gray-700 font-semibold mb-2">Прием анализов ежедневно 8:00 - 12:00</p>
+                <p className="text-gray-700">
+                  Каждую среду, пятницу и воскресенье скидка на анализы <span className="font-bold text-blue-600">10%</span>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -179,8 +134,8 @@ export default function ContactsPage() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
               </svg>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Адреса</h3>
-              <p className="text-gray-600 text-sm">2 медицинских центра</p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Адрес</h3>
+              <p className="text-gray-600 text-sm">Голицыно, Советская улица, 58</p>
             </div>
           </div>
         </div>
@@ -189,206 +144,153 @@ export default function ContactsPage() {
       {/* Addresses Section */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-            {addresses.map((address, index) => (
-              <div key={index} className="bg-white p-8 rounded-xl shadow-sm">
-                <h2 className="text-2xl font-bold text-gray-900 mb-4">{address.title}</h2>
-                <p className="text-gray-600 mb-6 leading-relaxed">{address.address}</p>
-                <div className="space-y-4">
-                  <div className="flex items-center text-gray-600">
-                    <svg className="w-5 h-5 mr-2 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                    </svg>
-                    <a href={`tel:${contactInfo.phone.replace(/\s/g, '')}`} className="hover:text-blue-600">
-                      {contactInfo.phone}
+          <div className="mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Посетите наш Медцентр</h2>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              {addresses.map((address, index) => (
+                <div key={index} className="bg-white p-8 rounded-xl shadow-sm">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">{address.title}</h3>
+                  <p className="text-gray-600 mb-6 leading-relaxed">{address.address}</p>
+                  <div className="space-y-4">
+                    <div className="flex items-center text-gray-600">
+                      <svg className="w-5 h-5 mr-2 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                      </svg>
+                      <a href={`tel:${contactInfo.phone.replace(/\s/g, '')}`} className="hover:text-blue-600 font-medium">
+                        {contactInfo.phone}
+                      </a>
+                    </div>
+                    <div className="flex items-center text-gray-600">
+                      <svg className="w-5 h-5 mr-2 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                      </svg>
+                      <a href={`mailto:${contactInfo.email}`} className="hover:text-blue-600 font-medium">
+                        {contactInfo.email}
+                      </a>
+                    </div>
+                    <a
+                      href={address.mapLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium"
+                    >
+                      <svg className="w-5 h-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                      </svg>
+                      проложить маршрут
                     </a>
                   </div>
-                  <div className="flex items-center text-gray-600">
-                    <svg className="w-5 h-5 mr-2 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </div>
+              ))}
+              
+              {/* How to get there */}
+              <div className="bg-white p-8 rounded-xl shadow-sm">
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Как добраться на общественном транспорте</h3>
+                <div className="space-y-4 text-gray-700">
+                  <div className="flex items-start">
+                    <svg className="w-5 h-5 text-blue-600 mr-3 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
                     </svg>
-                    <a href={`mailto:${contactInfo.email}`} className="hover:text-blue-600">
-                      {contactInfo.email}
-                    </a>
+                    <p><strong>На электричке</strong> от станции Белорусская до станции Голицыно</p>
                   </div>
-                  <a
-                    href={address.mapLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium"
-                  >
-                    <svg className="w-5 h-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  <div className="flex items-start">
+                    <svg className="w-5 h-5 text-blue-600 mr-3 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
                     </svg>
-                    проложить маршрут
-                  </a>
+                    <p><strong>На автобусе №1055</strong> из города Одинцово до остановки "Девятки"</p>
+                  </div>
+                  <div className="flex items-start">
+                    <svg className="w-5 h-5 text-blue-600 mr-3 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+                    </svg>
+                    <p><strong>На автобусе №45</strong> из города Кубинка до остановки "Девятки"</p>
+                  </div>
+                  <div className="flex items-start">
+                    <svg className="w-5 h-5 text-blue-600 mr-3 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+                    </svg>
+                    <p><strong>На автобусе №22</strong> из города Звенигород до остановки "Девятки"</p>
+                  </div>
                 </div>
               </div>
-            ))}
+            </div>
           </div>
 
           {/* Map */}
           <div className="bg-white p-8 rounded-xl shadow-sm mb-12">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">Как нас найти</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">Голицыно — Яндекс Карты</h2>
             <div className="relative h-96 w-full mb-4 overflow-hidden rounded-lg" id="yandex-map-contacts">
               <div id="yandex-map-contacts-inner" style={{ width: '100%', height: '100%' }}></div>
             </div>
           </div>
 
-          {/* Working Hours and Management Schedule */}
+          {/* Working Hours and Contact Methods */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {/* Working Hours */}
             <div className="bg-white p-8 rounded-xl shadow-sm">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">График работы</h2>
               <div className="space-y-4">
-                <div className="flex items-center mb-6">
+                <div className="flex items-center mb-4">
                   <svg className="w-6 h-6 text-blue-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                   <div>
                     <p className="text-gray-900 font-semibold">{contactInfo.workingHours}</p>
+                    <p className="text-gray-600 text-sm mt-2">Вы можете позвонить в любое время. Мы ответим Вам так скоро, как представится возможным.</p>
                   </div>
                 </div>
-                <Link href="/appointments" className="bg-blue-600 text-white px-5 py-2 rounded-md font-medium hover:bg-blue-700 transition inline-block">
+                <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-600 mb-4">
+                  <p className="text-gray-900 font-semibold mb-1">{contactInfo.labHours}</p>
+                  <p className="text-gray-700 text-sm">{contactInfo.labDiscount}</p>
+                </div>
+                <a href="https://reg.altamed-golitsino.ru/" target="_blank" rel="noopener noreferrer" className="bg-blue-600 text-white px-5 py-2 rounded-md font-medium hover:bg-blue-700 transition inline-block">
                   Записаться на прием
-                </Link>
+                </a>
               </div>
             </div>
 
-            {/* Management Schedule */}
+            {/* Contact Methods */}
             <div className="bg-white p-8 rounded-xl shadow-sm">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6">
-                График приема граждан руководителями:
-                <span className="block w-20 h-1 bg-orange-500 mt-2"></span>
-              </h2>
-              <div className="space-y-4">
-                {managementSchedule.map((item, index) => (
-                  <div key={index} className="border-b border-gray-200 pb-4 last:border-b-0">
-                    <p className="text-gray-900 font-semibold mb-1">{item.position}</p>
-                    <p className="text-gray-600">
-                      {item.day} {item.time}
-                    </p>
-                  </div>
-                ))}
+              <h2 className="text-2xl font-bold text-gray-900 mb-6">Свяжитесь с нами</h2>
+              <div className="space-y-6">
+                <div>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-3 flex items-center">
+                    <svg className="w-5 h-5 text-blue-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                    </svg>
+                    Позвоните нам
+                  </h3>
+                  <a href={`tel:${contactInfo.phone.replace(/\s/g, '')}`} className="text-blue-600 hover:text-blue-700 font-medium text-lg">
+                    {contactInfo.phone}
+                  </a>
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-3 flex items-center">
+                    <svg className="w-5 h-5 text-blue-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                    Напишите нам
+                  </h3>
+                  <a href={`mailto:${contactInfo.email}`} className="text-blue-600 hover:text-blue-700 font-medium">
+                    {contactInfo.email}
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Contact Form Section */}
-      <section className="py-16 bg-white">
+      {/* Disclaimer */}
+      <section className="py-8 bg-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Contact Form */}
-            <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">Остались вопросы? Отправьте их нам</h2>
-              <div className="bg-gray-50 p-8 rounded-xl shadow-sm">
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  {submitStatus.type && (
-                    <div className={`p-4 rounded-lg ${
-                      submitStatus.type === 'success' 
-                        ? 'bg-green-100 text-green-800 border border-green-300' 
-                        : 'bg-red-100 text-red-800 border border-red-300'
-                    }`}>
-                      {submitStatus.message}
-                    </div>
-                  )}
-                  
-                  <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
-                      Как Вас зовут? <span className="text-red-500">*</span>
-                    </label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      value={name}
-                      onChange={(e) => setName(e.target.value)}
-                      required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
-                      placeholder="Ваше имя"
-                    />
-                  </div>
-                  
-                  <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                      Email <span className="text-red-500">*</span>
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
-                      required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
-                      placeholder="your@email.com"
-                    />
-                  </div>
-                  
-                  <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-                      Сообщение <span className="text-red-500">*</span>
-                    </label>
-                    <textarea
-                      id="message"
-                      name="message"
-                      rows={5}
-                      value={message}
-                      onChange={(e) => setMessage(e.target.value)}
-                      required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
-                      placeholder="Ваше сообщение"
-                    ></textarea>
-                  </div>
-                  
-                  <button
-                    type="submit"
-                    disabled={isSubmitting}
-                    className="w-full px-6 py-3 bg-teal-500 text-white rounded-md font-medium hover:bg-teal-600 transition disabled:opacity-50 disabled:cursor-not-allowed"
-                  >
-                    {isSubmitting ? 'Отправка...' : 'Отправить'}
-                  </button>
-                  
-                  <p className="text-sm text-gray-500 text-center">
-                    Поля, отмеченные <span className="text-red-500">*</span>, обязательны для заполнения
-                  </p>
-                </form>
-              </div>
-            </div>
-
-            {/* Company Details */}
-            <div className="bg-blue-600 text-white p-8 rounded-xl shadow-sm">
-              <h2 className="text-2xl font-bold mb-6">Банковские реквизиты:</h2>
-              <div className="space-y-4 mb-8">
-                <p className="text-sm">р/с 40702810040000425309</p>
-                <p className="text-sm">к/с 30101810400000000225</p>
-                <p className="text-sm">БИК 044525225</p>
-                <p className="text-sm">ПАО Сбербанк</p>
-                <p className="text-sm">г.Москва</p>
-                <p className="text-sm">ОКОНХ 86.21</p>
-                <p className="text-sm">ОКПО 42239956</p>
-                <p className="text-sm">ОГРН 1025004063193</p>
-                <p className="text-sm mt-4">Ген.директор Лебедев Александр Анатольевич</p>
-                <p className="text-sm">Гл.бухгалтер Кузьмина Ирина Евгеньевна</p>
-              </div>
-
-              <h2 className="text-2xl font-bold mb-6 mt-8">Наши реквизиты:</h2>
-              <div className="space-y-4 mb-8">
-                <p className="text-sm">ООО «Альтамед-С»</p>
-                <p className="text-sm">143005, Московская область, г. Одинцово, б-р М. Крылова, д.23</p>
-                <p className="text-sm">ИНН 5032035051</p>
-                <p className="text-sm">КПП 503201001</p>
-              </div>
-
-              <h2 className="text-2xl font-bold mb-6 mt-8">Почтовый адрес:</h2>
-              <div className="space-y-4">
-                <p className="text-sm">143005, Московская область, г. Одинцово, б-р М. Крылова, д.23</p>
-              </div>
-            </div>
-          </div>
+          <p className="text-sm text-gray-600 text-center leading-relaxed">
+            Вся информация на сайте имеет ознакомительный характер.<br />
+            Не используйте данную информацию для самолечения.<br />
+            Возможны противопоказания.<br />
+            Обязательно проконсультируйтесь с врачом.
+          </p>
         </div>
       </section>
     </div>

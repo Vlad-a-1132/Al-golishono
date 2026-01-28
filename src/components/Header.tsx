@@ -35,13 +35,12 @@ export default function Header() {
               {/* Логотип */}
               <Link href="/" className="flex items-center">
                 <Image 
-                  src="/images/icons/S.webp" 
+                  src="/images/icons/altamed-golicyno3.png" 
                   alt="Альтамед-с" 
-                  width={40}
-                  height={40}
+                  width={140}
+                  height={140}
                   className="object-contain"
                 />
-                <div className="text-[#13AB7B] font-semibold ml-2 text-xl">Альтамед-С</div>
               </Link>
               
               {/* Телефон - скрываем на мобильных */}
@@ -49,7 +48,7 @@ export default function Header() {
                 <svg className="w-5 h-5 text-gray-600 mr-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.362 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.574 2.81.7A2 2 0 0122 16.92z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
-                <span className="text-gray-900 font-medium">+7 (495) 255-44-50</span>
+                <a href="tel:+74959896480" className="text-gray-900 font-medium hover:text-[#13AB7B] transition">+7 (495) 989 64 80</a>
               </div>
             </div>
             
@@ -79,7 +78,7 @@ export default function Header() {
               {/* Мобильные кнопки */}
               <div className="md:hidden flex items-center space-x-2">
                 <Link 
-                  href="https://online.altamed-c.ru/" 
+                  href="https://reg.altamed-golitsino.ru/" 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-orange-500 text-white px-3 py-1.5 rounded-md hover:bg-orange-600 transition-colors text-xs font-medium shadow-sm"
@@ -89,7 +88,7 @@ export default function Header() {
               </div>
               
               {/* Десктопная кнопка записи */}
-              <Link href="https://online.altamed-c.ru/" target="_blank" rel="noopener noreferrer" className="hidden md:block bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600 transition text-sm">
+              <Link href="https://reg.altamed-golitsino.ru/" target="_blank" rel="noopener noreferrer" className="hidden md:block bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600 transition text-sm">
                 Записаться онлайн
               </Link>
               
@@ -234,7 +233,7 @@ export default function Header() {
             <svg className="w-5 h-5 text-gray-600 mr-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.362 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.574 2.81.7A2 2 0 0122 16.92z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
-            <a href="tel:+74952554450" className="text-gray-900 font-medium">+7 (495) 255-44-50</a>
+            <a href="tel:+74959896480" className="text-gray-900 font-medium hover:text-[#13AB7B] transition">+7 (495) 989 64 80</a>
           </div>
         </div>
         

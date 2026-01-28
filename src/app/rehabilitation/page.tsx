@@ -17,20 +17,6 @@ export default function RehabilitationPage() {
 
   const rehabilitationServices = [
     {
-      id: 'psychology',
-      title: 'Психология',
-      description: 'Профессиональная психологическая помощь, консультирование и поддержка',
-      image: '/images/yslugi/psychology.webp',
-      link: '/services/psychology'
-    },
-    {
-      id: 'psychotherapy',
-      title: 'Психотерапия',
-      description: 'Комплексное лечение психических расстройств и психологических проблем',
-      image: '/images/yslugi/psychotherapy.webp',
-      link: '/services/psychotherapy'
-    },
-    {
       id: 'carboxytherapy',
       title: 'Карбокситерапия',
       description: 'Инновационный метод лечения с использованием углекислого газа',
@@ -45,46 +31,32 @@ export default function RehabilitationPage() {
       link: '/services/osteopathy'
     },
     {
-      id: 'physiotherapy',
-      title: 'Физиотерапия',
-      description: 'Физические методы лечения с использованием современных аппаратов',
-      image: '/images/yslugi/fizio.webp',
-      link: '/services/physiotherapy'
-    },
-    {
-      id: 'family-psychology',
-      title: 'Семейная психология',
-      description: 'Решение семейных конфликтов и улучшение взаимоотношений',
-      image: '/images/yslugi/family-psychology.webp',
-      link: '/services/family-psychology'
-    },
-    {
-      id: 'massage',
-      title: 'Массаж',
-      description: 'Классический и лечебный массаж для восстановления организма',
-      image: '/images/yslugi/massage.webp',
-      link: '/services/massage'
-    },
-    {
-      id: 'vacuum-massage',
-      title: 'Вакуумный массаж',
-      description: 'Массаж с использованием вакуумных банок для лимфодренажа',
-      image: '/images/yslugi/vacuum-massage.webp',
-      link: '/services/vacuum-massage'
-    },
-    {
-      id: 'bioresonance',
-      title: 'Биорезонансная терапия',
-      description: 'Безмедикаментозное лечение методом биорезонанса',
-      image: '/images/yslugi/bioresonance.webp',
-      link: '/services/bioresonance'
-    },
-    {
       id: 'shockwave-therapy',
       title: 'Ударно-волновая терапия',
       description: 'Лечение заболеваний суставов и позвоночника ударными волнами',
       image: '/images/yslugi/shockwave.webp',
       link: '/services/shockwave-therapy'
+    },
+    {
+      id: 'manual-therapy',
+      title: 'Мануальная терапия',
+      description: 'Лечение позвоночника и суставов с помощью специальных ручных техник',
+      image: '/images/yslugi/massaj.webp',
+      link: '/services/manual-therapy'
+    },
+    {
+      id: 'functional-diagnostics',
+      title: 'Функциональная диагностика',
+      description: 'Оценка функционального состояния органов и систем организма',
+      image: '/images/yslugi/Hardware diagnostics.webp',
+      link: '/services/functional-diagnostics'
+    },
+    {
+      id: 'general-manipulations',
+      title: 'Манипуляции общего назначения',
+      description: 'Лечебные блокады, инфузионная терапия, экспресс-диагностика',
+      image: '/images/yslugi/fizio.webp',
+      link: '/services/general-manipulations'
     }
   ];
 
@@ -93,7 +65,7 @@ export default function RehabilitationPage() {
     "Индивидуальный подбор методов реабилитации",
     "Опытные специалисты с многолетним стажем",
     "Современное оборудование экспертного класса",
-    "Удобное расположение в центре Одинцово",
+    "Удобное расположение в Голицино",
     "Мягкое воздействие без побочных эффектов"
   ];
 
@@ -113,7 +85,7 @@ export default function RehabilitationPage() {
   const faqItems = [
     {
       question: "Что включает в себя программа реабилитации?",
-      answer: "Программа реабилитации в клинике «Альтамед-С» включает комплексный подход: диагностику состояния пациента, индивидуальный подбор методов реабилитации, курс процедур с использованием современных методов (физиотерапия, массаж, остеопатия, психологическая поддержка), контроль эффективности и корректировку программы при необходимости."
+      answer: "Программа реабилитации в клинике «Альтамед Голицино» включает комплексный подход: диагностику состояния пациента, индивидуальный подбор методов реабилитации, курс процедур с использованием современных методов (физиотерапия, массаж, остеопатия, психологическая поддержка), контроль эффективности и корректировку программы при необходимости."
     },
     {
       question: "Сколько длится курс реабилитации?",
@@ -121,7 +93,7 @@ export default function RehabilitationPage() {
     },
     {
       question: "Можно ли совмещать разные методы реабилитации?",
-      answer: "Да, в клинике «Альтамед-С» практикуется комплексный подход к реабилитации. Врач может назначить комбинацию различных методов: например, физиотерапию с массажем, остеопатию с психологической поддержкой, ударно-волновую терапию с лечебной физкультурой. Все методы подбираются индивидуально для максимальной эффективности."
+      answer: "Да, в клинике «Альтамед Голицино» практикуется комплексный подход к реабилитации. Врач может назначить комбинацию различных методов: например, физиотерапию с массажем, остеопатию с психологической поддержкой, ударно-волновую терапию с лечебной физкультурой. Все методы подбираются индивидуально для максимальной эффективности."
     },
     {
       question: "Нужна ли подготовка к реабилитационным процедурам?",
@@ -166,7 +138,7 @@ export default function RehabilitationPage() {
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <header className="mb-6 ml-0 md:ml-4 lg:ml-8">
             <h1 className="text-2xl md:text-3xl font-bold text-black leading-tight px-4 md:px-0">
-              Реабилитация в клинике «<span className="italic">Альтамед-с</span>» в Одинцово
+              Реабилитация в клинике «<span className="italic">Альтамед Голицино</span>» — комплексное восстановление здоровья
             </h1>
             <p className="text-gray-600 mt-2 px-4 md:px-0 text-sm md:text-base">
               Комплексное восстановление здоровья с использованием современных методов реабилитации
@@ -180,7 +152,7 @@ export default function RehabilitationPage() {
                 <div className="w-full h-full relative">
                   <img
                     src="/images/yslugi/rehabilitation.webp"
-                    alt="Реабилитация в Одинцово"
+                    alt="Реабилитация в Альтамед Голицино"
                     className="w-full h-full object-cover"
                     onError={(e) => {
                       (e.target as HTMLImageElement).src = '/images/yslugi/yrolog.webp';
@@ -205,7 +177,7 @@ export default function RehabilitationPage() {
               <div className="w-full h-full relative">
                 <img
                   src="/images/yslugi/rehabilitation.webp"
-                  alt="Реабилитация в Одинцово"
+                  alt="Реабилитация в Альтамед Голицино"
                   className="w-full h-full object-cover"
                   onError={(e) => {
                     (e.target as HTMLImageElement).src = '/images/yslugi/yrolog.webp';
@@ -214,7 +186,7 @@ export default function RehabilitationPage() {
                 <div className="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-transparent"></div>
               </div>
               <div className="absolute inset-0 flex flex-col justify-center items-start p-8 md:p-12 text-black">
-                <h2 className="text-2xl md:text-4xl font-bold mb-4">Реабилитация в Одинцово</h2>
+                <h2 className="text-2xl md:text-4xl font-bold mb-4">Реабилитация в Голицино</h2>
                 <p className="text-lg md:text-xl mb-6 max-w-md">Комплексное восстановление здоровья</p>
                 <Link 
                   href="/appointments" 
@@ -236,7 +208,7 @@ export default function RehabilitationPage() {
               Направления реабилитации
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Полный спектр реабилитационных услуг в клинике «Альтамед-С» в Одинцово
+              Полный спектр реабилитационных услуг в клинике «Альтамед Голицино»
             </p>
           </div>
 
@@ -279,19 +251,19 @@ export default function RehabilitationPage() {
       {/* Description */}
       <section className="py-12 bg-white">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">Реабилитация в Одинцово: комплексное восстановление здоровья</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">Реабилитация в Голицино: комплексное восстановление здоровья в Альтамед Голицино</h2>
           <div className="mb-8">
-            <p className="text-gray-700 mb-4 leading-relaxed">
-              <strong>Реабилитация</strong> — это комплекс медицинских, психологических, социальных мероприятий, направленных на восстановление и поддержание здоровья человека после перенесенных заболеваний, травм, операций или при хронических состояниях. В медицинском центре «Альтамед-С» в Одинцово реабилитация проводится по современным протоколам с использованием передовых методов и технологий.
+            <p className="text-gray-700 mb-4 leading-relaxed text-base md:text-lg">
+              <strong>Реабилитация</strong> — это комплекс медицинских, психологических, социальных мероприятий, направленных на восстановление и поддержание здоровья человека после перенесенных заболеваний, травм, операций или при хронических состояниях. В медицинском центре «Альтамед Голицино» реабилитация проводится по современным протоколам с использованием передовых методов и технологий. Наши специалисты имеют многолетний опыт работы в области реабилитационной медицины и регулярно повышают свою квалификацию.
             </p>
-            <p className="text-gray-700 mb-4 leading-relaxed">
-              Наша клиника предлагает широкий спектр реабилитационных услуг: физиотерапию для восстановления функций опорно-двигательного аппарата, психологическую и психотерапевтическую помощь для решения эмоциональных и психических проблем, остеопатию для комплексного воздействия на организм, массаж и вакуумный массаж для улучшения кровообращения и лимфодренажа, биорезонансную терапию для безмедикаментозного лечения, ударно-волновую терапию для лечения заболеваний суставов и позвоночника.
+            <p className="text-gray-700 mb-4 leading-relaxed text-base md:text-lg">
+              Клиника «Альтамед Голицино» предлагает широкий спектр реабилитационных услуг: физиотерапию для восстановления функций опорно-двигательного аппарата, психологическую и психотерапевтическую помощь для решения эмоциональных и психических проблем, остеопатию для комплексного воздействия на организм, массаж и вакуумный массаж для улучшения кровообращения и лимфодренажа, биорезонансную терапию для безмедикаментозного лечения, ударно-волновую терапию для лечения заболеваний суставов и позвоночника, мануальную терапию для коррекции нарушений опорно-двигательного аппарата.
             </p>
-            <p className="text-gray-700 mb-4 leading-relaxed">
-              Отличительной особенностью реабилитации в клинике «Альтамед-С» является индивидуальный подход к каждому пациенту. Врач-реабилитолог проводит комплексное обследование, оценивает функциональное состояние, выявляет проблемы и составляет персональную программу восстановления. Реабилитация учитывает особенности пациента, его образ жизни, сопутствующие заболевания и цели лечения.
+            <p className="text-gray-700 mb-4 leading-relaxed text-base md:text-lg">
+              Отличительной особенностью реабилитации в клинике «Альтамед Голицино» является индивидуальный подход к каждому пациенту. Врач-реабилитолог проводит комплексное обследование, оценивает функциональное состояние, выявляет проблемы и составляет персональную программу восстановления. Реабилитация учитывает особенности пациента, его образ жизни, сопутствующие заболевания и цели лечения. В Альтамед Голицино используются только проверенные и эффективные методы реабилитации, которые доказали свою эффективность в клинической практике.
             </p>
             <div className="bg-purple-50 rounded-[20px] p-6 shadow-md border-l-4 border-purple-600">
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Принципы реабилитации в клинике «Альтамед-С»:</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Принципы реабилитации в клинике «Альтамед Голицино»:</h3>
               <ul className="space-y-2 text-gray-700">
                 <li className="flex items-start">
                   <svg className="w-5 h-5 text-purple-600 mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -338,7 +310,7 @@ export default function RehabilitationPage() {
       {/* Indications */}
       <section className="py-12 bg-gray-50">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">Показания к реабилитации в Одинцово</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">Показания к реабилитации в Альтамед Голицино</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {indications.map((indication, idx) => (
               <div key={idx} className="bg-white p-6 rounded-[20px] shadow-md hover:shadow-lg transition-shadow border border-gray-100">
@@ -355,7 +327,7 @@ export default function RehabilitationPage() {
       {/* Advantages */}
       <section className="py-12 bg-white">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
-          <h2 className="text-3xl font-bold text-gray-900 text-center mb-8">Преимущества реабилитации в клинике «Альтамед-С»</h2>
+          <h2 className="text-3xl font-bold text-gray-900 text-center mb-8">Преимущества реабилитации в клинике «Альтамед Голицино»</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {advantages.map((advantage, idx) => (
               <div key={idx} className="bg-white p-6 rounded-[20px] shadow-md hover:shadow-lg transition-shadow border border-gray-100">
@@ -379,7 +351,7 @@ export default function RehabilitationPage() {
             <div className="bg-white rounded-[20px] p-8 shadow-lg border-l-4 border-purple-600">
               <h3 className="text-2xl font-semibold text-gray-900 mb-4">Виды реабилитации</h3>
               <p className="text-gray-700 mb-4 leading-relaxed">
-                Реабилитация в клинике «Альтамед-С» включает несколько основных направлений:
+                Реабилитация в клинике «Альтамед Голицино» включает несколько основных направлений:
               </p>
               <ul className="space-y-3 text-gray-700">
                 <li className="flex items-start">
@@ -424,10 +396,139 @@ export default function RehabilitationPage() {
         </div>
       </section>
 
-      {/* FAQ */}
+      {/* Rehabilitation Process */}
       <section className="py-12 bg-white">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
-          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Часто задаваемые вопросы о реабилитации в Одинцово</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">Как проходит реабилитация в Альтамед Голицино</h2>
+          <div className="space-y-6">
+            <div className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-[20px] p-6 md:p-8">
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Этапы реабилитационного процесса</h3>
+              <div className="space-y-4 text-gray-700">
+                <div className="flex items-start">
+                  <div className="w-8 h-8 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold mr-4 flex-shrink-0">1</div>
+                  <div>
+                    <h4 className="font-semibold mb-2">Первичная консультация и диагностика</h4>
+                    <p className="text-base md:text-lg">Врач-реабилитолог клиники Альтамед Голицино проводит тщательное обследование пациента, изучает историю болезни, результаты анализов и инструментальных исследований. На основе полученных данных составляется индивидуальная программа реабилитации.</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <div className="w-8 h-8 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold mr-4 flex-shrink-0">2</div>
+                  <div>
+                    <h4 className="font-semibold mb-2">Разработка программы реабилитации</h4>
+                    <p className="text-base md:text-lg">Специалисты Альтамед Голицино подбирают оптимальные методы реабилитации с учетом диагноза, возраста пациента, сопутствующих заболеваний и индивидуальных особенностей. Программа может включать различные комбинации методов для максимальной эффективности.</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <div className="w-8 h-8 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold mr-4 flex-shrink-0">3</div>
+                  <div>
+                    <h4 className="font-semibold mb-2">Проведение реабилитационных процедур</h4>
+                    <p className="text-base md:text-lg">Курс реабилитации в Альтамед Голицино проводится под постоянным контролем врача. Все процедуры выполняются опытными специалистами с использованием современного оборудования. Регулярно оценивается динамика восстановления и при необходимости корректируется программа.</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <div className="w-8 h-8 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold mr-4 flex-shrink-0">4</div>
+                  <div>
+                    <h4 className="font-semibold mb-2">Контроль результатов и поддержание эффекта</h4>
+                    <p className="text-base md:text-lg">После завершения основного курса реабилитации в Альтамед Голицино врач дает рекомендации по поддержанию достигнутого результата, профилактике рецидивов и дальнейшему укреплению здоровья. При необходимости назначаются поддерживающие процедуры.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Methods of Rehabilitation */}
+      <section className="py-12 bg-gray-50">
+        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">Методы реабилитации в Альтамед Голицино</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Физиотерапевтические методы</h3>
+              <ul className="space-y-2 text-gray-700">
+                <li className="flex items-start">
+                  <span className="w-2 h-2 rounded-full bg-purple-600 mt-2 mr-3 flex-shrink-0"></span>
+                  <span>Ударно-волновая терапия для лечения заболеваний суставов и позвоночника</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="w-2 h-2 rounded-full bg-purple-600 mt-2 mr-3 flex-shrink-0"></span>
+                  <span>Карбокситерапия для улучшения кровообращения и обмена веществ</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="w-2 h-2 rounded-full bg-purple-600 mt-2 mr-3 flex-shrink-0"></span>
+                  <span>Электрофорез и магнитотерапия для снятия воспалений и болей</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="w-2 h-2 rounded-full bg-purple-600 mt-2 mr-3 flex-shrink-0"></span>
+                  <span>Лазерная терапия для ускорения регенерации тканей</span>
+                </li>
+              </ul>
+            </div>
+            <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Мануальные методы</h3>
+              <ul className="space-y-2 text-gray-700">
+                <li className="flex items-start">
+                  <span className="w-2 h-2 rounded-full bg-purple-600 mt-2 mr-3 flex-shrink-0"></span>
+                  <span>Остеопатия для комплексного воздействия на организм</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="w-2 h-2 rounded-full bg-purple-600 mt-2 mr-3 flex-shrink-0"></span>
+                  <span>Мануальная терапия для коррекции позвоночника и суставов</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="w-2 h-2 rounded-full bg-purple-600 mt-2 mr-3 flex-shrink-0"></span>
+                  <span>Лечебный массаж для улучшения кровообращения и лимфодренажа</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="w-2 h-2 rounded-full bg-purple-600 mt-2 mr-3 flex-shrink-0"></span>
+                  <span>Краниосакральная терапия для работы с черепом и позвоночником</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Us */}
+      <section className="py-12 bg-white">
+        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
+          <h2 className="text-3xl font-bold text-gray-900 text-center mb-8">Почему выбирают реабилитацию в Альтамед Голицино</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-[20px] p-6 shadow-md">
+              <div className="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                </svg>
+              </div>
+              <h3 className="text-lg font-semibold mb-2">Опытные специалисты</h3>
+              <p className="text-gray-700">Врачи-реабилитологи Альтамед Голицино имеют многолетний опыт работы и регулярно повышают квалификацию</p>
+            </div>
+            <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-[20px] p-6 shadow-md">
+              <div className="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 className="text-lg font-semibold mb-2">Современное оборудование</h3>
+              <p className="text-gray-700">Используем только проверенное оборудование экспертного класса для максимальной эффективности лечения</p>
+            </div>
+            <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-[20px] p-6 shadow-md">
+              <div className="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 className="text-lg font-semibold mb-2">Индивидуальный подход</h3>
+              <p className="text-gray-700">Каждая программа реабилитации разрабатывается персонально с учетом особенностей пациента</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-12 bg-gray-50">
+        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
+          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Часто задаваемые вопросы о реабилитации в Альтамед Голицино</h2>
           <div className="space-y-4">
             {faqItems.map((item, index) => (
               <div key={index} className="bg-white rounded-[20px] shadow-md overflow-hidden border border-purple-100">

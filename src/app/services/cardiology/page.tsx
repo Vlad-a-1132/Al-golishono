@@ -8,15 +8,10 @@ import AppointmentForm from '@/components/AppointmentForm';
 export default function CardiologyPage() {
   const [openAccordion, setOpenAccordion] = useState<number | null>(null);
 
-  // Услуги кардиологии
+  // Услуги кардиологии (прайс Альтамед Голицино)
   const cardiologyServices = [
-    { id: 1, name: "Прием (осмотр, консультация) врача-кардиолога к.м.н. первичный", price: "4 200 руб.", image: "/images/yslugi/Cardiology.webp", description: "Первичная консультация у врача-кардиолога кандидата медицинских наук" },
-    { id: 2, name: "Прием (осмотр, консультация) врача-кардиолога к.м.н. повторный", price: "3 600 руб.", image: "/images/yslugi/Cardiology.webp", description: "Повторная консультация у врача-кардиолога кандидата медицинских наук" },
-    { id: 3, name: "Прием (осмотр, консультация) врача-кардиолога первичный", price: "3 900 руб.", image: "/images/yslugi/Cardiology.webp", description: "Первичная консультация и осмотр у врача-кардиолога" },
-    { id: 4, name: "Прием (осмотр, консультация) врача-кардиолога повторный", price: "3 300 руб.", image: "/images/yslugi/Cardiology.webp", description: "Повторная консультация у врача-кардиолога" },
-    { id: 5, name: "Регистрация электрокардиограммы", price: "1 300 руб.", image: "/images/yslugi/Cardiology.webp", description: "Запись электрокардиограммы сердца" },
-    { id: 6, name: "Расшифровка, описание и интерпретация электрокардиографических данных", price: "1 100 руб.", image: "/images/yslugi/Cardiology.webp", description: "Анализ и расшифровка результатов ЭКГ" },
-    { id: 7, name: "Суточное мониторирование ЭКГ по Холтеру", price: "3 400 руб.", image: "/images/yslugi/Cardiology.webp", description: "24-часовое мониторирование сердечной деятельности" }
+    { code: "B01.015.001", name: "Прием (осмотр, консультация) врача-кардиолога", price: 2750 },
+    { code: "A09.05.193.001", name: "Экспресс-исследование уровня тропонинов І, Т в крови", price: 1800 },
   ];
 
   return (
@@ -39,10 +34,10 @@ export default function CardiologyPage() {
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <header className="mb-6 ml-0 md:ml-4 lg:ml-8">
             <h1 className="text-2xl md:text-3xl font-bold text-black leading-tight px-4 md:px-0">
-              Кардиология в клинике «<span className="italic">Альтамед-с</span>»
+              Кардиолог в Голицино — приём в «Альтамед Голицино»
             </h1>
             <p className="text-gray-600 mt-2 px-4 md:px-0 text-sm md:text-base">
-              Диагностика и лечение заболеваний сердца и сосудов у взрослых и детей в Одинцово
+              Приём врача-кардиолога и экспресс-исследование уровня тропонинов в Голицино
             </p>
           </header>
 
@@ -54,7 +49,7 @@ export default function CardiologyPage() {
                 <div className="w-full h-full relative">
                   <Image
                     src="/images/images allergoly/kardiolog.webp"
-                    alt="Лечение заболеваний сердца"
+                    alt="Кардиолог Голицино"
                     fill
                     className="object-cover"
                     unoptimized
@@ -64,9 +59,9 @@ export default function CardiologyPage() {
               </div>
               {/* Нижняя часть */}
               <div className="bg-white p-4 flex flex-col justify-between items-start gap-3">
-                <div className="text-black font-medium text-sm">Лечение заболеваний сердца</div>
+                <div className="text-black font-medium text-sm">Кардиолог в Голицино</div>
                 <Link 
-                  href="https://online.altamed-c.ru/" 
+                  href="https://reg.altamed-golitsino.ru/" 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-blue-500 text-white rounded-full flex items-center justify-center w-full h-[46px] text-sm hover:bg-blue-600 transition-colors"
@@ -83,7 +78,7 @@ export default function CardiologyPage() {
               <div className="w-full h-full relative">
                 <Image
                   src="/images/images allergoly/kardiolog.webp"
-                  alt="Лечение заболеваний сердца"
+                  alt="Кардиолог Голицино"
                   fill
                   className="object-cover"
                   unoptimized
@@ -95,10 +90,10 @@ export default function CardiologyPage() {
               
               {/* Content overlay */}
               <div className="absolute inset-0 flex flex-col justify-center items-start p-8 md:p-12 text-black">
-                <h2 className="text-2xl md:text-4xl font-bold mb-4">Лечение заболеваний сердца</h2>
-                <p className="text-lg md:text-xl mb-6 max-w-md">Современные методы диагностики и лечения</p>
+                <h2 className="text-2xl md:text-4xl font-bold mb-4">Кардиолог в Голицино</h2>
+                <p className="text-lg md:text-xl mb-6 max-w-md">Приём кардиолога и экспресс-исследование тропонинов в Альтамед Голицино</p>
                 <Link 
-                  href="https://online.altamed-c.ru/" 
+                  href="https://reg.altamed-golitsino.ru/" 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-blue-500 text-white rounded-full px-8 py-3 font-medium hover:bg-blue-600 transition-colors"
@@ -114,7 +109,7 @@ export default function CardiologyPage() {
       {/* Почему Альтамед-С*/}
       <section className="py-12 bg-gray-50">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
-          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Почему «Альтамед-С»?</h2>
+          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Почему «Альтамед Голицино»?</h2>
           <div className="md:hidden space-y-6">
             <div className="flex items-start gap-4"><div className="w-16 h-16 flex-shrink-0 relative"><img src="/images/yslugi/star 1.webp" alt="1" className="w-full h-full object-contain" /><span className="absolute inset-0 flex items-center justify-center text-white font-bold text-xl">1</span></div><p className="text-gray-700 font-medium text-left pt-2">Лечение в соответствии с мировыми клиническими рекомендациями</p></div>
             <div className="flex items-start gap-4"><div className="w-16 h-16 flex-shrink-0 relative"><img src="/images/yslugi/star 1.webp" alt="2" className="w-full h-full object-contain" /><span className="absolute inset-0 flex items-center justify-center text-white font-bold text-xl">2</span></div><p className="text-gray-700 font-medium text-left pt-2">Комплексная оценка заболевания и прогноза лечения</p></div>
@@ -136,39 +131,44 @@ export default function CardiologyPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 id="services-heading" className="text-3xl font-bold text-gray-900 mb-4">
-                Кардиолог в Одинцово - услуги диагностики и лечения сердечно-сосудистых заболеваний
+                Услуги кардиолога в Голицино
               </h2>
               <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                Полный спектр услуг кардиологии
+                Приём врача-кардиолога и экспресс-исследование уровня тропонинов в Альтамед Голицино
               </p>
             </div>
+
+            <p className="text-amber-800 bg-amber-50 border border-amber-200 rounded-lg px-4 py-3 mb-6 max-w-3xl mx-auto text-center text-sm">
+              Цена может быть неточной; уточняйте стоимость при записи.
+            </p>
 
             <div className="space-y-8">
               <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
                 <div className="bg-gradient-to-r from-emerald-600 to-emerald-700 px-6 py-4">
-                  <h3 className="text-xl font-semibold text-white">Услуги кардиологии</h3>
+                  <h3 className="text-xl font-semibold text-white">Кардиолог</h3>
                 </div>
                 <div className="p-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                     {cardiologyServices.map((service, index) => (
                       <div 
-                        key={service.id}
+                        key={index}
                         className="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow duration-300"
                       >
-                        <div className="flex justify-between items-start">
-                          <div className="flex-1">
+                        <div className="flex justify-between items-start gap-3">
+                          <div className="flex-1 min-w-0">
+                            <div className="text-xs text-gray-500 font-mono mb-1">{service.code}</div>
                             <h4 className="font-medium text-gray-900 text-sm leading-tight mb-2">
                               {service.name}
                             </h4>
                             <div className="text-emerald-600 font-semibold text-lg">
-                              {service.price}
+                              {service.price.toLocaleString("ru-RU")} ₽
                             </div>
                           </div>
                           <Link 
-                            href="https://online.altamed-c.ru/"
+                            href="https://reg.altamed-golitsino.ru/"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="ml-3 bg-emerald-600 text-white px-3 py-1 rounded-md text-sm hover:bg-emerald-700 transition-colors duration-300 flex-shrink-0"
+                            className="ml-3 bg-emerald-600 text-white px-3 py-2 rounded-md text-sm hover:bg-emerald-700 transition-colors duration-300 flex-shrink-0"
                           >
                             Записаться
                           </Link>
@@ -188,25 +188,19 @@ export default function CardiologyPage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
                 <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                  Консультация кардиолога в Одинцово - профессиональная диагностика сердечно-сосудистых заболеваний
+                  Кардиолог в Голицино — приём и экспресс-исследование тропонинов
                 </h2>
                 <p className="text-lg text-gray-600 mb-6">
-                  Кардиолог в Одинцово - это медицинский специалист, который занимается диагностикой, лечением и профилактикой заболеваний сердца и сосудов. 
-                  В клинике «Альтамед-с» в Одинцово консультируют высококвалифицированные кардиологи с многолетним стажем работы и глубокими знаниями в области сердечно-сосудистых заболеваний. 
-                  Среди наших специалистов работают врачи высшей категории, кандидаты и доктора медицинских наук, активно участвующие в научно-исследовательской деятельности. 
-                  Для получения качественной кардиологической помощи в Одинцово и Московской области рекомендуем обратиться именно в «Альтамед-с».
+                  Кардиолог занимается диагностикой, лечением и профилактикой заболеваний сердца и сосудов. В «Альтамед Голицино» вы можете записаться на приём (осмотр, консультацию) врача-кардиолога и пройти экспресс-исследование уровня тропонинов І и Т в крови — маркеров повреждения миокарда.
                 </p>
                 <p className="text-lg text-gray-600 mb-6">
-                  Консультация кардиолога в Одинцово требуется при появлении болей в области сердца, одышки, перебоев в работе сердца, повышении артериального давления или других симптомов сердечно-сосудистых заболеваний. 
-                  Сердечные заболевания требуют профессионального подхода, поэтому самостоятельная диагностика крайне нежелательна. 
-                  Наиболее эффективным решением станет обращение к опытному кардиологу в «Альтамед-с» в Одинцово. 
-                  Наши специалисты проведут комплексное обследование, включая ЭКГ, холтер, эхокардиографию, лабораторные анализы, установят точный диагноз, разработают индивидуальную схему терапии и дадут рекомендации по поддержанию здоровья сердца.
+                  К кардиологу обращаются при болях в области сердца, одышке, перебоях в работе сердца, повышении артериального давления и других симптомах сердечно-сосудистых заболеваний. Запись на приём — на сайте или по телефону. Стоимость услуг уточняйте при записи.
                 </p>
               </div>
               <div className="relative">
                 <img 
                   src="/images/images allergoly/kardiolog.webp" 
-                  alt="Кардиология" 
+                  alt="Кардиолог Голицино" 
                   className="w-full h-auto rounded-full shadow-lg"
                 />
               </div>
@@ -223,7 +217,7 @@ export default function CardiologyPage() {
             
             <div className="space-y-6 text-gray-700 mb-8">
               <p>
-                Врачи-кардиологи «Альтамед-с» в Одинцово успешно лечат широкий спектр сердечно-сосудистых заболеваний, к которым относятся болезни сосудов сердца, артерий и вен, многие из которых приводят к недостаточности кровообращения и серьезным осложнениям, инфарктам и инсультам.
+                Врачи-кардиологи «Альтамед Голицино» в Голицино успешно лечат широкий спектр сердечно-сосудистых заболеваний, к которым относятся болезни сосудов сердца, артерий и вен, многие из которых приводят к недостаточности кровообращения и серьезным осложнениям, инфарктам и инсультам.
               </p>
             </div>
 
@@ -361,7 +355,7 @@ export default function CardiologyPage() {
         <section className="py-16 bg-white" aria-labelledby="reasons-heading">
           <div className="max-w-6xl mx-auto px-8">
             <h2 id="reasons-heading" className="text-2xl font-bold text-gray-800 mb-8">
-              Когда нужен кардиолог в Одинцово - симптомы сердечно-сосудистых заболеваний
+              Когда нужен кардиолог в Голицино — симптомы сердечно-сосудистых заболеваний
             </h2>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -421,7 +415,7 @@ export default function CardiologyPage() {
         <section className="py-16 bg-gray-50" aria-labelledby="faq-heading">
           <div className="max-w-6xl mx-auto px-8">
             <h2 id="faq-heading" className="text-2xl font-bold text-gray-800 mb-8 text-center">
-              Часто задаваемые вопросы о кардиологии в Одинцово
+              Часто задаваемые вопросы о кардиологии в Голицино
             </h2>
             <div className="space-y-6" itemScope itemType="https://schema.org/FAQPage">
               <div className="bg-white rounded-lg shadow-sm border-l-4 border-emerald-500 overflow-hidden" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
@@ -447,7 +441,7 @@ export default function CardiologyPage() {
                   <div className="px-6 pb-6" itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
                     <div className="space-y-4 text-gray-700" itemProp="text">
                       <p>
-                        В клинике «Альтамед-с» применяются современные методы диагностики сердечно-сосудистых заболеваний:
+                        В клинике «Альтамед Голицино» применяются современные методы диагностики сердечно-сосудистых заболеваний:
                       </p>
                       
                       <div className="space-y-4">
@@ -507,7 +501,7 @@ export default function CardiologyPage() {
                   <div className="px-6 pb-6" itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
                     <div className="space-y-4 text-gray-700" itemProp="text">
                       <p>
-                        Лечение сердечно-сосудистых заболеваний в «Альтамед-с» включает комплексный подход:
+                        Лечение сердечно-сосудистых заболеваний в «Альтамед Голицино» включает комплексный подход:
                       </p>
                       
                       <div className="space-y-4">

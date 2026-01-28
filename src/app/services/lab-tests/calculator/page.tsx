@@ -130,7 +130,7 @@ export default function LabCalculatorPage() {
     
     // Add logo and wait for it to load
     const logoImg = document.createElement('img');
-    logoImg.src = '/images/general/S.webp';
+    logoImg.src = '/images/icons/altamed-golicyno3.png';
     logoImg.style.width = '40px';
     logoImg.style.height = '40px';
     logoImg.style.marginRight = '15px';

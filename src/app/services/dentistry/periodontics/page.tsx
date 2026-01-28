@@ -46,10 +46,10 @@ export default function PeriodonticsPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div>
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-                Пародонтология в клинике «Альтамед-с»
+                Пародонтология в клинике «Альтамед Голицино»
               </h1>
               <p className="text-lg md:text-xl mb-8 text-emerald-100">
-                Диагностика и лечение заболеваний десен у взрослых и детей в Одинцово
+                Диагностика и лечение заболеваний десен у взрослых и детей в Альтамед Голицино
               </p>
             </div>
             <div className="relative">
@@ -67,7 +67,7 @@ export default function PeriodonticsPage() {
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-[20px] shadow-lg p-8 md:p-12">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6 text-center">
-              Что такое пародонтология в стоматологии Одинцово
+              Что такое пародонтология в стоматологии Альтамед Голицино
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
               <div className="bg-white rounded-lg p-6 shadow-md">
@@ -100,7 +100,7 @@ export default function PeriodonticsPage() {
                 </ul>
               </div>
               <div className="bg-white rounded-lg p-6 shadow-md">
-                <h3 className="text-xl font-semibold text-gray-800 mb-3">Методы лечения в «Альтамед-с»</h3>
+                <h3 className="text-xl font-semibold text-gray-800 mb-3">Методы лечения в «Альтамед Голицино»</h3>
                 <ul className="space-y-2 text-gray-600">
                   <li className="flex items-start">
                     <svg className="w-5 h-5 text-green-600 mr-2 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -136,7 +136,7 @@ export default function PeriodonticsPage() {
       <section className="py-12 bg-gray-50">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8 text-center">
-            Услуги пародонтологии в Одинцово
+            Услуги пародонтологии в Альтамед Голицино
           </h2>
           
           <div className="bg-white rounded-[20px] shadow-lg p-6 md:p-8">
@@ -177,7 +177,7 @@ export default function PeriodonticsPage() {
               ))}
             </div>
             <div className="mt-8 text-center">
-              <Link href="https://online.altamed-c.ru/" target="_blank" rel="noopener noreferrer" className="bg-emerald-500 text-white px-8 py-3 rounded-full font-medium hover:bg-emerald-600 transition-colors inline-block">
+              <Link href="https://reg.altamed-golitsino.ru/" target="_blank" rel="noopener noreferrer" className="bg-emerald-500 text-white px-8 py-3 rounded-full font-medium hover:bg-emerald-600 transition-colors inline-block">
                 Записаться на консультацию
               </Link>
             </div>
@@ -189,7 +189,7 @@ export default function PeriodonticsPage() {
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <div className="bg-white rounded-[20px] shadow-lg p-8 md:p-12">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8 text-center">
-              Симптомы заболеваний пародонта в Одинцово
+              Симптомы заболеваний пародонта в Альтамед Голицино
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               {[
@@ -220,28 +220,28 @@ export default function PeriodonticsPage() {
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-[20px] shadow-lg p-8 md:p-12">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8 text-center">
-              Почему важно лечить пародонтит в Одинцово
+              Почему важно лечить пародонтит в Альтамед Голицино
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
                 {
                   title: "Предотвратить потерю зубов",
-                  text: "Запущенный пародонтит приводит к расшатыванию и выпадению зубов. Своевременное лечение в стоматологии Одинцово позволяет сохранить зубы и восстановить здоровье десен.",
+                  text: "Запущенный пародонтит приводит к расшатыванию и выпадению зубов. Своевременное лечение в стоматологии Альтамед Голицино позволяет сохранить зубы и восстановить здоровье десен.",
                   icon: "🦷"
                 },
                 {
                   title: "Улучшить общее здоровье",
-                  text: "Заболевания пародонта связаны с риском сердечно-сосудистых заболеваний, диабета. Лечение в «Альтамед-с» Одинцово положительно влияет на весь организм.",
+                  text: "Заболевания пародонта связаны с риском сердечно-сосудистых заболеваний, диабета. Лечение в «Альтамед Голицино» Альтамед Голицино положительно влияет на весь организм.",
                   icon: "❤️"
                 },
                 {
                   title: "Восстановить эстетику",
-                  text: "Здоровые десны — важная часть красивой улыбки. Лечение пародонтита в Одинцово восстанавливает естественный вид десен и зубов.",
+                  text: "Здоровые десны — важная часть красивой улыбки. Лечение пародонтита в Альтамед Голицино восстанавливает естественный вид десен и зубов.",
                   icon: "✨"
                 },
                 {
                   title: "Избавиться от дискомфорта",
-                  text: "Воспаление десен вызывает боль, кровоточивость, неприятный запах. Профессиональное лечение в клинике Одинцово устраняет все эти симптомы.",
+                  text: "Воспаление десен вызывает боль, кровоточивость, неприятный запах. Профессиональное лечение в клинике Альтамед Голицино устраняет все эти симптомы.",
                   icon: "😊"
                 }
               ].map((item, idx) => (
@@ -261,17 +261,17 @@ export default function PeriodonticsPage() {
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <div className="bg-white rounded-[20px] shadow-lg p-8 md:p-12">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8 text-center">
-              Стоимость лечения заболеваний пародонта в стоматологии Одинцово
+              Стоимость лечения заболеваний пародонта в стоматологии Альтамед Голицино
             </h2>
             <div className="prose prose-lg max-w-none text-gray-700">
               <p className="mb-4">
-                Цены на пародонтологическое лечение в клинике «Альтамед-с» Одинцово зависят от стадии заболевания и выбранного метода лечения. Пародонтология в Одинцово включает лечение гингивита, пародонтита, профессиональную гигиену и хирургические методы.
+                Цены на пародонтологическое лечение в клинике «Альтамед Голицино» Альтамед Голицино зависят от стадии заболевания и выбранного метода лечения. Пародонтология в Альтамед Голицино включает лечение гингивита, пародонтита, профессиональную гигиену и хирургические методы.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
                 <div className="bg-green-50 rounded-lg p-6">
-                  <h3 className="text-xl font-semibold text-gray-800 mb-3">Консервативное лечение в Одинцово</h3>
+                  <h3 className="text-xl font-semibold text-gray-800 mb-3">Консервативное лечение в Альтамед Голицино</h3>
                   <p className="text-gray-600 mb-3">
-                    Консервативное лечение заболеваний пародонта в стоматологии Одинцово включает профессиональную гигиену, кюретаж пародонтальных карманов и медикаментозную терапию. Эти методы эффективны на ранних стадиях заболеваний.
+                    Консервативное лечение заболеваний пародонта в стоматологии Альтамед Голицино включает профессиональную гигиену, кюретаж пародонтальных карманов и медикаментозную терапию. Эти методы эффективны на ранних стадиях заболеваний.
                   </p>
                   <ul className="space-y-2 text-gray-600">
                     <li className="flex items-start">
@@ -295,9 +295,9 @@ export default function PeriodonticsPage() {
                   </ul>
                 </div>
                 <div className="bg-emerald-50 rounded-lg p-6">
-                  <h3 className="text-xl font-semibold text-gray-800 mb-3">Хирургическое лечение в Одинцово</h3>
+                  <h3 className="text-xl font-semibold text-gray-800 mb-3">Хирургическое лечение в Альтамед Голицино</h3>
                   <p className="text-gray-600 mb-3">
-                    Хирургические методы в пародонтологии Одинцово применяются при запущенных формах заболеваний. Открытый кюретаж, лоскутные операции и закрытие рецессий позволяют восстановить здоровье десен.
+                    Хирургические методы в пародонтологии Альтамед Голицино применяются при запущенных формах заболеваний. Открытый кюретаж, лоскутные операции и закрытие рецессий позволяют восстановить здоровье десен.
                   </p>
                   <ul className="space-y-2 text-gray-600">
                     <li className="flex items-start">
@@ -322,7 +322,7 @@ export default function PeriodonticsPage() {
                 </div>
               </div>
               <p className="mt-6 text-gray-600">
-                Точную стоимость пародонтологического лечения в стоматологии Одинцово можно узнать после консультации и диагностики. Мы предлагаем комплексные программы лечения с учетом стадии заболевания. Запишитесь на прием в «Альтамед-с» Одинцово для получения детальной информации.
+                Точную стоимость пародонтологического лечения в стоматологии Альтамед Голицино можно узнать после консультации и диагностики. Мы предлагаем комплексные программы лечения с учетом стадии заболевания. Запишитесь на прием в «Альтамед Голицино» Альтамед Голицино для получения детальной информации.
               </p>
             </div>
           </div>
@@ -334,34 +334,34 @@ export default function PeriodonticsPage() {
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-[20px] shadow-lg p-8 md:p-12">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8 text-center">
-              Заболевания пародонта в стоматологии Одинцово
+              Заболевания пародонта в стоматологии Альтамед Голицино
             </h2>
             <div className="space-y-8">
               <div className="bg-white rounded-lg p-6 shadow-md">
-                <h3 className="text-xl font-semibold text-gray-800 mb-4">Гингивит в Одинцово</h3>
+                <h3 className="text-xl font-semibold text-gray-800 mb-4">Гингивит в Альтамед Голицино</h3>
                 <p className="text-gray-700 mb-4">
-                  Гингивит — это начальная стадия заболевания пародонта, проявляющаяся воспалением десен. Лечение гингивита в стоматологии Одинцово включает профессиональную гигиену, удаление зубного налета и камня. В клинике «Альтамед-с» Одинцово лечение гингивита проводится на ранних стадиях, что предотвращает развитие пародонтита.
+                  Гингивит — это начальная стадия заболевания пародонта, проявляющаяся воспалением десен. Лечение гингивита в стоматологии Альтамед Голицино включает профессиональную гигиену, удаление зубного налета и камня. В клинике «Альтамед Голицино» Альтамед Голицино лечение гингивита проводится на ранних стадиях, что предотвращает развитие пародонтита.
                 </p>
                 <p className="text-gray-700">
-                  Симптомы гингивита: кровоточивость десен, покраснение, отечность. При своевременном лечении в стоматологии Одинцово гингивит полностью излечим. Регулярная профессиональная гигиена в клинике Одинцово помогает предотвратить развитие заболевания.
+                  Симптомы гингивита: кровоточивость десен, покраснение, отечность. При своевременном лечении в стоматологии Альтамед Голицино гингивит полностью излечим. Регулярная профессиональная гигиена в клинике Альтамед Голицино помогает предотвратить развитие заболевания.
                 </p>
               </div>
               <div className="bg-white rounded-lg p-6 shadow-md">
-                <h3 className="text-xl font-semibold text-gray-800 mb-4">Пародонтит в Одинцово</h3>
+                <h3 className="text-xl font-semibold text-gray-800 mb-4">Пародонтит в Альтамед Голицино</h3>
                 <p className="text-gray-700 mb-4">
-                  Пародонтит — это воспаление тканей пародонта с образованием пародонтальных карманов и разрушением костной ткани. Лечение пародонтита в стоматологии Одинцово требует комплексного подхода: профессиональная гигиена, кюретаж карманов, медикаментозная терапия.
+                  Пародонтит — это воспаление тканей пародонта с образованием пародонтальных карманов и разрушением костной ткани. Лечение пародонтита в стоматологии Альтамед Голицино требует комплексного подхода: профессиональная гигиена, кюретаж карманов, медикаментозная терапия.
                 </p>
                 <p className="text-gray-700">
-                  При запущенных формах пародонтита в клинике «Альтамед-с» Одинцово применяются хирургические методы: открытый кюретаж, лоскутные операции. Лечение пародонтита в стоматологии Одинцово направлено на остановку разрушения тканей и сохранение зубов.
+                  При запущенных формах пародонтита в клинике «Альтамед Голицино» Альтамед Голицино применяются хирургические методы: открытый кюретаж, лоскутные операции. Лечение пародонтита в стоматологии Альтамед Голицино направлено на остановку разрушения тканей и сохранение зубов.
                 </p>
               </div>
               <div className="bg-white rounded-lg p-6 shadow-md">
-                <h3 className="text-xl font-semibold text-gray-800 mb-4">Пародонтоз в Одинцово</h3>
+                <h3 className="text-xl font-semibold text-gray-800 mb-4">Пародонтоз в Альтамед Голицино</h3>
                 <p className="text-gray-700 mb-4">
-                  Пародонтоз — это дистрофическое заболевание пародонта, характеризующееся убылью костной ткани без воспаления. Лечение пародонтоза в стоматологии Одинцово включает комплекс мер: профессиональную гигиену, физиотерапию, медикаментозное лечение.
+                  Пародонтоз — это дистрофическое заболевание пародонта, характеризующееся убылью костной ткани без воспаления. Лечение пародонтоза в стоматологии Альтамед Голицино включает комплекс мер: профессиональную гигиену, физиотерапию, медикаментозное лечение.
                 </p>
                 <p className="text-gray-700">
-                  В клинике «Альтамед-с» Одинцово лечение пародонтоза направлено на замедление процесса разрушения тканей. Регулярные поддерживающие курсы лечения в стоматологии Одинцово помогают сохранить зубы и замедлить прогрессирование заболевания.
+                  В клинике «Альтамед Голицино» Альтамед Голицино лечение пародонтоза направлено на замедление процесса разрушения тканей. Регулярные поддерживающие курсы лечения в стоматологии Альтамед Голицино помогают сохранить зубы и замедлить прогрессирование заболевания.
                 </p>
               </div>
             </div>
@@ -374,13 +374,13 @@ export default function PeriodonticsPage() {
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <div className="bg-white rounded-[20px] shadow-lg p-8 md:p-12">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8 text-center">
-              Профилактика заболеваний пародонта в стоматологии Одинцово
+              Профилактика заболеваний пародонта в стоматологии Альтамед Голицино
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-lg p-6">
                 <h3 className="text-xl font-semibold text-gray-800 mb-4">Домашний уход</h3>
                 <p className="text-gray-700 mb-4">
-                  Правильный домашний уход в пародонтологии Одинцово — это основа профилактики заболеваний десен. Регулярная чистка зубов, использование зубной нити и ирригатора помогают удалять налет и предотвращать воспаление десен.
+                  Правильный домашний уход в пародонтологии Альтамед Голицино — это основа профилактики заболеваний десен. Регулярная чистка зубов, использование зубной нити и ирригатора помогают удалять налет и предотвращать воспаление десен.
                 </p>
                 <ul className="space-y-2 text-gray-700">
                   <li className="flex items-start">
@@ -406,7 +406,7 @@ export default function PeriodonticsPage() {
               <div className="bg-gradient-to-br from-emerald-50 to-green-50 rounded-lg p-6">
                 <h3 className="text-xl font-semibold text-gray-800 mb-4">Профессиональная профилактика</h3>
                 <p className="text-gray-700 mb-4">
-                  Регулярная профессиональная гигиена в пародонтологии Одинцово необходима для удаления зубного камня и налета, которые невозможно удалить в домашних условиях. В клинике «Альтамед-с» Одинцово мы рекомендуем профессиональную чистку каждые 6 месяцев.
+                  Регулярная профессиональная гигиена в пародонтологии Альтамед Голицино необходима для удаления зубного камня и налета, которые невозможно удалить в домашних условиях. В клинике «Альтамед Голицино» Альтамед Голицино мы рекомендуем профессиональную чистку каждые 6 месяцев.
                 </p>
                 <ul className="space-y-2 text-gray-700">
                   <li className="flex items-start">
@@ -425,14 +425,14 @@ export default function PeriodonticsPage() {
                     <svg className="w-5 h-5 text-emerald-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
-                    Регулярные осмотры пародонтолога в Одинцово
+                    Регулярные осмотры пародонтолога в Альтамед Голицино
                   </li>
                 </ul>
               </div>
             </div>
             <div className="mt-8 bg-white rounded-lg p-6 border-2 border-green-200">
               <p className="text-gray-700 text-lg leading-relaxed">
-                Профилактика заболеваний пародонта в клинике «Альтамед-с» Одинцово — это комплекс мер, направленных на сохранение здоровья десен. Регулярная профессиональная гигиена в стоматологии Одинцово в сочетании с правильным домашним уходом позволяет предотвратить развитие гингивита и пародонтита. Специалисты пародонтологии Одинцово обучают пациентов правильным техникам ухода и подбирают индивидуальные программы профилактики.
+                Профилактика заболеваний пародонта в клинике «Альтамед Голицино» Альтамед Голицино — это комплекс мер, направленных на сохранение здоровья десен. Регулярная профессиональная гигиена в стоматологии Альтамед Голицино в сочетании с правильным домашним уходом позволяет предотвратить развитие гингивита и пародонтита. Специалисты пародонтологии Альтамед Голицино обучают пациентов правильным техникам ухода и подбирают индивидуальные программы профилактики.
               </p>
             </div>
           </div>
@@ -443,9 +443,9 @@ export default function PeriodonticsPage() {
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div className="lg:col-span-2 space-y-5 text-gray-700 leading-relaxed">
-              <h2 className="text-3xl font-bold text-gray-900">Пародонтолог в Одинцово: почему выбирают нас</h2>
+              <h2 className="text-3xl font-bold text-gray-900">Пародонтолог в Альтамед Голицино: почему выбирают нас</h2>
               <p>
-                Клиника «Альтамед-С» предлагает услуги пародонтологии в Одинцово — лечение заболеваний десен,
+                Клиника «Альтамед Голицино» предлагает услуги пародонтологии в Альтамед Голицино — лечение заболеваний десен,
                 пародонтита, гингивита. Мы применяем современные технологии, качественные препараты и обеспечиваем
                 эффективное лечение заболеваний пародонта.
               </p>
@@ -455,13 +455,13 @@ export default function PeriodonticsPage() {
                 гингивита и другие процедуры пародонтологии.
               </p>
               <p>
-                Прозрачные цены позволяют планировать бюджет — стоимость пародонтологии в Одинцово
+                Прозрачные цены позволяют планировать бюджет — стоимость пародонтологии в Альтамед Голицино
                 фиксируется заранее, а пациенты получают подробную информацию о процедурах.
               </p>
             </div>
             <div className="bg-gray-50 rounded-[20px] p-6 shadow-md border-l-4 border-[#4A5568]">
               <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Что вы получаете, выбирая «Альтамед-С»
+                Что вы получаете, выбирая «Альтамед Голицино»
               </h3>
               <ul className="space-y-3 text-gray-700 text-sm md:text-base leading-relaxed">
                 <li className="flex items-start">
@@ -489,11 +489,11 @@ export default function PeriodonticsPage() {
       <section className="py-12 bg-gray-50">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <h2 className="text-3xl font-bold text-gray-900 mb-6">
-            Отзывы пациентов о пародонтологе в Одинцово
+            Отзывы пациентов о пародонтологе в Альтамед Голицино
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Реальные отзывы из Одинцово</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Реальные отзывы из Альтамед Голицино</h3>
               <p className="text-gray-700 text-sm md:text-base leading-relaxed">
                 Пациенты отмечают эффективность лечения заболеваний десен, улучшение состояния
                 и внимательное отношение пародонтологов к процессу лечения.
@@ -509,7 +509,7 @@ export default function PeriodonticsPage() {
             <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
               <h3 className="text-xl font-semibold text-gray-900 mb-3">Комфортное лечение</h3>
               <p className="text-gray-700 text-sm md:text-base leading-relaxed">
-                После лечения в Одинцове пациенты отмечают отсутствие дискомфорта; пародонтологи дают
+                После лечения в Голицино пациенты отмечают отсутствие дискомфорта; пародонтологи дают
                 подробные рекомендации по уходу за деснами.
               </p>
             </div>
@@ -520,7 +520,7 @@ export default function PeriodonticsPage() {
       <section className="py-12 bg-white">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <h2 className="text-3xl font-bold text-gray-900 mb-6">
-            Частые вопросы о пародонтологе в Одинцово
+            Частые вопросы о пародонтологе в Альтамед Голицино
           </h2>
           <div className="space-y-4">
             <details className="group bg-gray-50 rounded-[20px] shadow-md border border-gray-100">
@@ -572,15 +572,15 @@ export default function PeriodonticsPage() {
           <div className="bg-gradient-to-r from-[#4A5568] to-[#5A6474] rounded-[20px] p-8 md:p-12 text-white flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
             <div className="max-w-3xl">
               <h2 className="text-2xl md:text-3xl font-bold mb-4">
-                Пародонтолог в Одинцово — начните с консультации
+                Пародонтолог в Альтамед Голицино — начните с консультации
               </h2>
               <p className="text-white/90 text-sm md:text-base leading-relaxed">
-                Запишитесь на консультацию в клинику «Альтамед-С», чтобы узнать стоимость лечения заболеваний десен,
+                Запишитесь на консультацию в клинику «Альтамед Голицино», чтобы узнать стоимость лечения заболеваний десен,
                 подобрать подходящие процедуры и получить индивидуальный план лечения.
               </p>
             </div>
             <Link
-              href="https://online.altamed-c.ru/"
+              href="https://reg.altamed-golitsino.ru/"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white text-[#4A5568] rounded-full px-8 py-3 font-medium hover:bg-gray-100 transition-colors text-center"
@@ -599,9 +599,9 @@ export default function PeriodonticsPage() {
               __html: JSON.stringify({
                 "@context": "https://schema.org",
                 "@type": "MedicalBusiness",
-                name: "Клиника «Альтамед-С» — пародонтология в Одинцово",
-                url: "https://altamed-c.ru/services/dentistry/periodontics",
-                image: "https://altamed-c.ru/images/dentisrty/image (1) 2.webp",
+                name: "Клиника «Альтамед Голицино» — пародонтология в Альтамед Голицино",
+                url: "https://altamed-golitsino.ru/services/dentistry/periodontics",
+                image: "https://altamed-golitsino.ru/images/dentisrty/image (1) 2.webp",
                 medicalSpecialty: "Dental",
                 aggregateRating: {
                   "@type": "AggregateRating",
@@ -610,18 +610,18 @@ export default function PeriodonticsPage() {
                 },
                 address: {
                   "@type": "PostalAddress",
-                  addressLocality: "Одинцово",
+                  addressLocality: "Альтамед Голицино",
                   addressRegion: "Московская область",
                   streetAddress: "ул. Советская, 9"
                 },
                 telephone: "+7 (495) 640-09-03",
                 priceRange: "₽₽",
                 serviceType: "Пародонтология",
-                areaServed: "Одинцово и Одинцовский городской округ",
+                areaServed: "Альтамед Голицино и Одинцовский городской округ",
                 description:
-                  "Пародонтология в Одинцово: лечение заболеваний десен, пародонтита, гингивита. Профессиональная чистка, шинирование зубов. Опытные пародонтологи в клинике «Альтамед-С».",
+                  "Пародонтология в Альтамед Голицино: лечение заболеваний десен, пародонтита, гингивита. Профессиональная чистка, шинирование зубов. Опытные пародонтологи в клинике «Альтамед Голицино».",
                 sameAs: [
-                  "https://altamed-c.ru",
+                  "https://altamed-golitsino.ru",
                   "https://yandex.ru/maps/org/altamed_s/1919839667"
                 ]
               })
