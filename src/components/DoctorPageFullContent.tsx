@@ -435,7 +435,7 @@ export default function DoctorPageFullContent({
           <div className="mt-6">
             <div className="relative w-full h-auto rounded-lg overflow-hidden shadow-md">
               <Image
-                src="/images/documents/Screenshot_1749.png"
+                src="/images/doctors/Screenshot_586.png"
                 alt="Инструкция: как оставить отзыв в Яндекс.Картах"
                 width={800}
                 height={600}
@@ -449,7 +449,7 @@ export default function DoctorPageFullContent({
           
           <div className="mt-6 text-center">
             <a 
-              href="https://yandex.ru/search/?text=%D0%B0%D0%BB%D1%8C%D1%82%D0%B0%D0%BC%D0%B5%D0%B4+%D1%81+%D0%BE%D0%B4%D0%B8%D0%BD%D1%86%D0%BE%D0%B2%D0%BE&lr=121257&src=suggest_Pers"
+              href="https://yandex.ru/search/?text=%D0%B0%D0%BB%D1%8C%D1%82%D0%B0%D0%BC%D0%B5%D0%B4+%D0%B3%D0%BE%D0%BB%D0%B8%D1%86%D1%8B%D0%BD%D0%BE&clid=2411726&lr=11062"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center bg-emerald-500 text-white px-8 py-4 rounded-full font-medium hover:bg-emerald-600 transition-colors"

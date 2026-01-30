@@ -1614,9 +1614,25 @@ function PatientInfoSection() {
   );
 }
 
+const SOUT_IMAGES = [
+  '/images/documents/vedomost-rezultatov-provedeniya-sout-izobrazheniya-0(1).jpg',
+  '/images/documents/vedomost-rezultatov-provedeniya-sout-izobrazheniya-1.jpg',
+  '/images/documents/vedomost-rezultatov-provedeniya-sout-izobrazheniya-2.jpg',
+  '/images/documents/vedomost-rezultatov-provedeniya-sout-izobrazheniya-3.jpg',
+];
+
+const PERECHEN_IMAGES = [
+  '/images/documents/perechen-rekomenduemyh-meropriyatiy-po-uluchsheniyu-usloviy-truda-altamed--golicyno-izobrazheniya-0.jpg',
+  '/images/documents/perechen-rekomenduemyh-meropriyatiy-po-uluchsheniyu-usloviy-truda-altamed--golicyno-izobrazheniya-1.jpg',
+  '/images/documents/perechen-rekomenduemyh-meropriyatiy-po-uluchsheniyu-usloviy-truda-altamed--golicyno-izobrazheniya-2.jpg',
+  '/images/documents/perechen-rekomenduemyh-meropriyatiy-po-uluchsheniyu-usloviy-truda-altamed--golicyno-izobrazheniya-3.jpg',
+];
+
 function AboutPageContent() {
   const searchParams = useSearchParams();
-  const [activeSection, setActiveSection] = useState('photogallery');
+  const [activeSection, setActiveSection] = useState('medical-org');
+  const [soutSlideIndex, setSoutSlideIndex] = useState(0);
+  const [perechenSlideIndex, setPerechenSlideIndex] = useState(0);
   
   // Проверяем, есть ли якорь в URL
   useEffect(() => {
@@ -1626,58 +1642,8 @@ function AboutPageContent() {
     }
   }, [searchParams]);
   
-  // Фотогалерея - все фото из папки fotogelery
-  const galleryImages = [
-    '/images/fotogelery/Altamed-С Odintsovo.webp',
-    '/images/fotogelery/Altamed-С Odintsovo1.webp',
-    '/images/fotogelery/Altamed-С Odintsovo2.webp',
-    '/images/fotogelery/Altamed-С Odintsovo3.webp',
-    '/images/fotogelery/Altamed-С Odintsovo4.webp',
-    '/images/fotogelery/Altamed-С Odintsovo5.webp',
-    '/images/fotogelery/Altamed-С Odintsovo6.webp',
-    '/images/fotogelery/Altamed-С Odintsovo7.webp',
-    '/images/fotogelery/Altamed-С Odintsovo8.webp',
-    '/images/fotogelery/Altamed-С Odintsovo9.webp',
-    '/images/fotogelery/Altamed-С Odintsovo10.webp',
-    '/images/fotogelery/Altamed-С Odintsovo11.webp',
-    '/images/fotogelery/Altamed-С Odintsovo12.webp',
-    '/images/fotogelery/Altamed-С Odintsovo13.webp',
-    '/images/fotogelery/Altamed-С Odintsovo14.webp',
-    '/images/fotogelery/Altamed-С Odintsovo15.webp',
-    '/images/fotogelery/Altamed-С Odintsovo16.webp',
-    '/images/fotogelery/Altamed-С Odintsovo17.webp',
-    '/images/fotogelery/Altamed-С Odintsovo18.webp',
-    '/images/fotogelery/Altamed-С Odintsovo19.webp',
-    '/images/fotogelery/Altamed-С Odintsovo20.webp',
-    '/images/fotogelery/Altamed-С Odintsovo21.webp',
-    '/images/fotogelery/Altamed-С Odintsovo22.webp',
-    '/images/fotogelery/Altamed-С Odintsovo23.webp',
-    '/images/fotogelery/Altamed-С Odintsovo24.webp',
-    '/images/fotogelery/Altamed-С Odintsovo25.webp',
-    '/images/fotogelery/Altamed-С Odintsovo26.webp',
-    '/images/fotogelery/kt-Altamed-C.webp',
-    '/images/fotogelery/Altamed-C home.webp'
-  ];
-
   return (
     <div className="flex flex-col min-h-full bg-white">
-      {/* Hero Section */}
-      <section className="bg-blue-50 py-8">
-        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
-          <div className="text-center">
-            <h1 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4">О нас</h1>
-            <div className="text-base md:text-lg text-gray-600 max-w-3xl mx-auto space-y-3">
-              <p>
-                Медицинский центр «Альтамед-С» начал свою деятельность уже более 20 лет назад и с тех нашей основной задачей является развитие и предоставление качественных медицинских, в том числе и стоматологических услуг для детей и взрослых в Одинцово.
-                </p>
-                <p>
-                Наш центр оснащен современным оборудованием, позволяющим проводить максимально точную диагностику и эффективное лечение. У нас работают вежливые, опытные и квалифицированные специалисты. Мы постоянно заботимся о высоком качестве обслуживания и всегда помним, что главная цель нашей деятельности — это Ваше скорейшее выздоровление.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Main content with sidebar menu */}
       <section className="py-8">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
@@ -1687,14 +1653,14 @@ function AboutPageContent() {
               <div className="bg-white rounded-lg shadow-md p-4 sticky top-4">
                 <nav className="space-y-2">
                   <button
-                    onClick={() => setActiveSection('photogallery')}
+                    onClick={() => setActiveSection('medical-org')}
                     className={`w-full text-left px-4 py-3 rounded-lg transition-colors ${
-                      activeSection === 'photogallery'
+                      activeSection === 'medical-org'
                         ? 'bg-emerald-500 text-white'
                         : 'text-gray-700 hover:bg-gray-100'
                     }`}
                   >
-                    Фотогалерея
+                    О медицинской организации
                   </button>
                   <button
                     onClick={() => setActiveSection('news')}
@@ -1782,23 +1748,230 @@ function AboutPageContent() {
 
             {/* Right content area */}
             <main className="flex-1">
-              {/* Фотогалерея */}
-              {activeSection === 'photogallery' && (
+              {/* О медицинской организации */}
+              {activeSection === 'medical-org' && (
                 <div className="bg-white rounded-lg shadow-md p-6">
-                  <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Фотогалерея</h2>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                    {galleryImages.map((image, index) => (
-                      <div key={index} className="relative h-48 rounded-lg overflow-hidden group cursor-pointer">
+                  <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">О медицинской организации</h2>
+                  <div className="prose max-w-none text-gray-700 space-y-4">
+                    <p className="font-semibold text-gray-900">
+                      Полное наименование:<br />
+                      ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ «АЛЬТАМЕД-ГОЛИЦЫНО»<br />
+                      (ООО «Альтамед-Голицыно»)
+                    </p>
+                    <p>
+                      <strong>ИНН</strong> 5032216756 &nbsp; <strong>КПП</strong> 503201001 &nbsp; <strong>ОГРН</strong> 1105032000182 (21.12.2010 г.)
+                    </p>
+                    <div>
+                      <strong>Лицензия:</strong>
+                      <ul className="list-disc list-inside mt-2 space-y-1 ml-2">
+                        <li>Регистрационный номер лицензии: Л041-01162-50/00287739;</li>
+                        <li>Дата предоставления лицензии: 29.12.2020;</li>
+                      </ul>
+                      <div className="mt-3">
                         <Image
-                          src={image}
-                          alt={`Фотография клиники Альтамед-С${index + 1}`}
-                          fill
-                          className="object-cover group-hover:scale-110 transition-transform duration-300"
+                          src="/images/doctors/2025-07-18_12-22-52.png"
+                          alt="QR-код лицензии"
+                          width={120}
+                          height={120}
+                          className="inline-block"
                         />
-              </div>
-            ))}
-          </div>
-        </div>
+                      </div>
+                    </div>
+                    <p><strong>Генеральный директор:</strong> Лебедев Александр Анатольевич</p>
+                    <p><strong>Юридический адрес:</strong> 143040, Московская область, Одинцовский городской округ, Голицыно, Советская улица, 58</p>
+                    <p><strong>Адрес места осуществления лицензируемых видов деятельности:</strong> 143040, Московская область, Одинцовский городской округ, г. Голицыно, ул. Советская, д. 58, помещение 1</p>
+                    <p>
+                      <strong>Тел.:</strong>{' '}
+                      <a href="tel:+74959896480" className="text-emerald-600 hover:text-emerald-700">+7 (495) 989 64 80</a>
+                    </p>
+                    <p>
+                      <strong>Сайт:</strong>{' '}
+                      <a href="https://altamed-golitsino.ru/" target="_blank" rel="noopener noreferrer" className="text-emerald-600 hover:text-emerald-700">https://altamed-golitsino.ru/</a>
+                    </p>
+                    <p>
+                      <strong>E-mail:</strong>{' '}
+                      <a href="mailto:medcentr@altamed-golitsino.ru" className="text-emerald-600 hover:text-emerald-700">medcentr@altamed-golitsino.ru</a>
+                    </p>
+
+                    <div className="pt-4 border-t border-gray-200 mt-6">
+                      <p className="font-semibold text-gray-900 mb-3">Дата государственной регистрации, сведения об учредителе (учредителях);</p>
+                      <ul className="space-y-2 mb-4">
+                        <li>
+                          <strong>Выписка ЕГРЮЛ</strong>{' '}
+                          <a href="/images/documents/ЕГРЮЛ%20Альтамед%20Голицыно.pdf" target="_blank" rel="noopener noreferrer" className="text-emerald-600 hover:text-emerald-700 inline-flex items-center">
+                            Скачать файл
+                            <svg className="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" /></svg>
+                          </a>
+                        </li>
+                        <li>
+                          <strong>Свидетельство о государственной регистрации</strong>{' '}
+                          <a href="/images/documents/svidetelstvo-o-gosregistracii-altamed-golicyno.jpg" target="_blank" rel="noopener noreferrer" className="text-emerald-600 hover:text-emerald-700 inline-flex items-center">
+                            Скачать файл
+                            <svg className="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" /></svg>
+                          </a>
+                        </li>
+                        <li>
+                          <strong>Лицензия</strong>{' '}
+                          <a href="/images/documents/licenziyaAG20.pdf" target="_blank" rel="noopener noreferrer" className="text-emerald-600 hover:text-emerald-700 inline-flex items-center">
+                            Скачать файл
+                            <svg className="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" /></svg>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div className="pt-4 border-t border-gray-200">
+                      <p className="font-semibold text-gray-900 mb-3">Режим и график работы;</p>
+                      <ul className="list-none space-y-1 text-gray-700">
+                        <li>Понедельник: 08:00 - 20:00</li>
+                        <li>Вторник: 08:00 - 20:00</li>
+                        <li>Среда: 08:00 - 20:00</li>
+                        <li>Четверг: 08:00 - 20:00</li>
+                        <li>Пятница: 08:00 - 20:00</li>
+                        <li>Суббота: 08:00 - 20:00</li>
+                        <li>Воскресенье: 08:00 - 20:00</li>
+                      </ul>
+                      <p className="mt-2 text-gray-700">Прием анализов ежедневно с 08:00 - 13:00</p>
+                      <p className="mt-2 text-gray-700">Не рабочие праздничные дни в 2025 году: 1 января, 7 января, 8 марта, 9 мая, 31 декабря.</p>
+                    </div>
+
+                    <div className="pt-4 border-t border-gray-200">
+                      <p className="font-semibold text-gray-900 mb-3">График приема граждан руководителями:</p>
+                      <div className="space-y-4 text-gray-700">
+                        <div>
+                          <p className="font-medium">Заместитель генерального директора Лебедева Алла Игоревна</p>
+                          <p>Каждый второй понедельник месяца с 12-00 до 15-00</p>
+                          <p>Если понедельник приходится на праздничный день, прием переносится на вторник – с 12-00 до 15-00</p>
+                          <p>тел.: <a href="tel:+74959896480" className="text-emerald-600 hover:text-emerald-700">+7 (495) 989-64-80</a></p>
+                          <p>E-mail: <a href="mailto:lebedeva@altamed-golitsino.ru" className="text-emerald-600 hover:text-emerald-700">lebedeva@altamed-golitsino.ru</a></p>
+                        </div>
+                        <div>
+                          <p className="font-medium">Прием главного врача Соболев Дмитрий Васильевич</p>
+                          <p>Каждый четверг с 15:00 до 17:00</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="pt-4 border-t border-gray-200">
+                      <p className="font-semibold text-gray-900 mb-2">Выписка из реестра лицензий</p>
+                      <p className="text-gray-700 mb-2">Выписка из реестра Альтамед-Голицыно</p>
+                      <a
+                        href="/images/documents/_из_реестра_-Альтамед-Голицыно.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center text-emerald-600 hover:text-emerald-700 font-medium"
+                      >
+                        Скачать файл
+                        <svg className="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                        </svg>
+                      </a>
+                    </div>
+
+                    <div className="pt-6 border-t border-gray-200">
+                      <h3 className="text-lg font-semibold text-gray-900 mb-2">Данные о результатах специальной оценки условий труда</h3>
+                      <p className="text-gray-700 mb-4">Ведомость результатов проведения СОУТ</p>
+                      <div className="relative max-w-3xl">
+                        <div className="rounded-lg overflow-hidden shadow-md bg-gray-100">
+                          <Image
+                            src={SOUT_IMAGES[soutSlideIndex]}
+                            alt={`Ведомость СОУТ, страница ${soutSlideIndex + 1} из ${SOUT_IMAGES.length}`}
+                            width={800}
+                            height={1100}
+                            className="w-full h-auto object-contain"
+                          />
+                        </div>
+                        <button
+                          type="button"
+                          onClick={() => setSoutSlideIndex((i) => (i === 0 ? SOUT_IMAGES.length - 1 : i - 1))}
+                          className="absolute left-2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/90 shadow-md flex items-center justify-center text-gray-700 hover:bg-white transition-colors"
+                          aria-label="Предыдущее изображение"
+                        >
+                          <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                          </svg>
+                        </button>
+                        <button
+                          type="button"
+                          onClick={() => setSoutSlideIndex((i) => (i === SOUT_IMAGES.length - 1 ? 0 : i + 1))}
+                          className="absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/90 shadow-md flex items-center justify-center text-gray-700 hover:bg-white transition-colors"
+                          aria-label="Следующее изображение"
+                        >
+                          <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                          </svg>
+                        </button>
+                        <div className="flex justify-center gap-2 mt-3">
+                          {SOUT_IMAGES.map((_, idx) => (
+                            <button
+                              key={idx}
+                              type="button"
+                              onClick={() => setSoutSlideIndex(idx)}
+                              className={`w-2.5 h-2.5 rounded-full transition-colors ${
+                                idx === soutSlideIndex ? 'bg-emerald-500' : 'bg-gray-300 hover:bg-gray-400'
+                              }`}
+                              aria-label={`Страница ${idx + 1}`}
+                            />
+                          ))}
+                        </div>
+                        <p className="text-center text-sm text-gray-500 mt-1">
+                          {soutSlideIndex + 1} / {SOUT_IMAGES.length}
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="pt-6 border-t border-gray-200">
+                      <h3 className="text-lg font-semibold text-gray-900 mb-2">Перечень рекомендуемых мероприятий по улучшению условий труда Альтамед-Голицыно</h3>
+                      <div className="relative max-w-3xl">
+                        <div className="rounded-lg overflow-hidden shadow-md bg-gray-100">
+                          <Image
+                            src={PERECHEN_IMAGES[perechenSlideIndex]}
+                            alt={`Перечень мероприятий, страница ${perechenSlideIndex + 1} из ${PERECHEN_IMAGES.length}`}
+                            width={800}
+                            height={1100}
+                            className="w-full h-auto object-contain"
+                          />
+                        </div>
+                        <button
+                          type="button"
+                          onClick={() => setPerechenSlideIndex((i) => (i === 0 ? PERECHEN_IMAGES.length - 1 : i - 1))}
+                          className="absolute left-2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/90 shadow-md flex items-center justify-center text-gray-700 hover:bg-white transition-colors"
+                          aria-label="Предыдущее изображение"
+                        >
+                          <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                          </svg>
+                        </button>
+                        <button
+                          type="button"
+                          onClick={() => setPerechenSlideIndex((i) => (i === PERECHEN_IMAGES.length - 1 ? 0 : i + 1))}
+                          className="absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/90 shadow-md flex items-center justify-center text-gray-700 hover:bg-white transition-colors"
+                          aria-label="Следующее изображение"
+                        >
+                          <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                          </svg>
+                        </button>
+                        <div className="flex justify-center gap-2 mt-3">
+                          {PERECHEN_IMAGES.map((_, idx) => (
+                            <button
+                              key={idx}
+                              type="button"
+                              onClick={() => setPerechenSlideIndex(idx)}
+                              className={`w-2.5 h-2.5 rounded-full transition-colors ${
+                                idx === perechenSlideIndex ? 'bg-emerald-500' : 'bg-gray-300 hover:bg-gray-400'
+                              }`}
+                              aria-label={`Страница ${idx + 1}`}
+                            />
+                          ))}
+                        </div>
+                        <p className="text-center text-sm text-gray-500 mt-1">
+                          {perechenSlideIndex + 1} / {PERECHEN_IMAGES.length}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               )}
 
               {/* Статьи / Пресс-центр */}
@@ -1987,7 +2160,7 @@ function AboutPageContent() {
                     <div className="mt-6">
                       <div className="relative w-full h-auto rounded-lg overflow-hidden shadow-md">
                         <Image
-                          src="/images/documents/Screenshot_1749.png"
+                          src="/images/doctors/Screenshot_586.png"
                           alt="Инструкция: как оставить отзыв в Яндекс.Картах"
                           width={800}
                           height={600}
@@ -2001,7 +2174,7 @@ function AboutPageContent() {
           
                     <div className="mt-6 text-center">
                       <a 
-                        href="https://yandex.ru/search/?text=%D0%B0%D0%BB%D1%8C%D1%82%D0%B0%D0%BC%D0%B5%D0%B4+%D1%81+%D0%BE%D0%B4%D0%B8%D0%BD%D1%86%D0%BE%D0%B2%D0%BE&lr=121257&src=suggest_Pers"
+                        href="https://yandex.ru/search/?text=%D0%B0%D0%BB%D1%8C%D1%82%D0%B0%D0%BC%D0%B5%D0%B4+%D0%B3%D0%BE%D0%BB%D0%B8%D1%86%D1%8B%D0%BD%D0%BE&clid=2411726&lr=11062"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center bg-emerald-500 text-white px-8 py-4 rounded-full font-medium hover:bg-emerald-600 transition-colors"
@@ -2216,8 +2389,8 @@ function AboutPageContent() {
                       <div className="space-y-2 text-gray-700 ml-4">
                         <p>Справочная Росздравнадзора: <a href="tel:+74956984538" className="text-emerald-600 hover:text-emerald-700">+7 (495) 698-45-38</a>; <a href="tel:+74995780230" className="text-emerald-600 hover:text-emerald-700">+7 (499) 578-02-30</a></p>
                         <p>Адрес: 109074, Москва, Славянская площадь, д.4, стр. 1</p>
-          </div>
-        </div>
+                      </div>
+                    </div>
 
                     <div>
                       <h3 className="text-lg font-semibold text-gray-800 mb-3">Управление Федеральной службы по надзору в сфере защиты прав потребителей и благополучия человека по Московской области</h3>
@@ -2228,24 +2401,24 @@ function AboutPageContent() {
                         <p>Факс: (495) 586-12-68</p>
                         <p>E-mail: <a href="mailto:org@50.rospotrebnadzor.ru" className="text-emerald-600 hover:text-emerald-700">org@50.rospotrebnadzor.ru</a></p>
                       </div>
-          </div>
-          
+                    </div>
+
                     <div>
                       <h3 className="text-lg font-semibold text-gray-800 mb-3">Министерство здравоохранения Московской области</h3>
                       <div className="space-y-2 text-gray-700 ml-4">
                         <p>143407, Московская область, г. Красногорск-7, бульвар Строителей, д. 1</p>
-                        <p>Телефон: <a href="tel:+74986020301" className="text-emerald-600 hover:text-emerald-700">+7 (498) 602-03-01</a></p>
+                        <p><a href="tel:+74986020301" className="text-emerald-600 hover:text-emerald-700">+7 (498) 602-03-01</a></p>
                         <p>E-mail: <a href="mailto:minzdrav@mosreg.ru" className="text-emerald-600 hover:text-emerald-700">minzdrav@mosreg.ru</a></p>
                       </div>
-                      <div className="mt-2 ml-4">
+                      <div className="mt-3 ml-4">
                         <h4 className="text-sm font-semibold text-gray-700 mb-2">Пресс-секретарь Министерства здравоохранения Московской области</h4>
                         <div className="space-y-1 text-gray-700">
                           <p>Контактные телефоны: <a href="tel:+74986020420" className="text-emerald-600 hover:text-emerald-700">+7 498 602 04 20 доб. 4 64 92</a></p>
-                          <p>Факс: +7 498 602-03-00</p>
+                          <p>+7 498 602-03-00 факс</p>
                           <p>E-mail: <a href="mailto:pressminzdrav@mosreg.ru" className="text-emerald-600 hover:text-emerald-700">pressminzdrav@mosreg.ru</a></p>
                         </div>
                       </div>
-              </div>
+                    </div>
 
                     <div>
                       <h3 className="text-lg font-semibold text-gray-800 mb-3">Федеральная служба по надзору в сфере защиты прав потребителей и благополучия человека</h3>
@@ -2253,51 +2426,53 @@ function AboutPageContent() {
                         <p className="text-sm text-gray-600">Сокращенное название: Роспотребнадзор</p>
                         <p>Адрес: 127994, г. Москва, Вадковский переулок, дом 18, строение 5 и 7</p>
                         <p>Телефон: <a href="tel:+74999732690" className="text-emerald-600 hover:text-emerald-700">+7 (499) 973-26-90</a></p>
-                        <p>Сайт: <a href="https://www.rospotrebnadzor.ru/" target="_blank" rel="noopener noreferrer" className="text-emerald-600 hover:text-emerald-700">https://www.rospotrebnadzor.ru/</a></p>
-          </div>
-        </div>
+                        <p>Электронная почта — Сайт: <a href="https://www.rospotrebnadzor.ru/" target="_blank" rel="noopener noreferrer" className="text-emerald-600 hover:text-emerald-700">https://www.rospotrebnadzor.ru/</a></p>
+                      </div>
+                    </div>
 
                     <div>
                       <h3 className="text-lg font-semibold text-gray-800 mb-3">Главное Управление МВД России по Московской области</h3>
                       <div className="space-y-2 text-gray-700 ml-4">
-                        <p>Почтовый адрес: 125009, г. Москва, Никитский пер., д. 3</p>
-                        <p>Адрес официального интернет-сайта: <a href="https://50.мвд.рф" target="_blank" rel="noopener noreferrer" className="text-emerald-600 hover:text-emerald-700">50.мвд.рф</a></p>
+                        <p>Почтовый адрес для направления письменных обращений и запросов информации: 125009, г. Москва, Никитский пер., д. 3</p>
+                        <p>Адрес официального интернет-сайта ГУ МВД России по Московской области для подачи обращений и запросов информации в электронной форме: <a href="https://50.мвд.рф" target="_blank" rel="noopener noreferrer" className="text-emerald-600 hover:text-emerald-700">50.мвд.рф</a></p>
+                        <p><strong>Справочные телефоны:</strong></p>
                         <p>Приемная ГУ МВД: <a href="tel:+74956098474" className="text-emerald-600 hover:text-emerald-700">8 (495) 609-84-74</a>; <a href="tel:+74956098502" className="text-emerald-600 hover:text-emerald-700">8 (495) 609-85-02</a></p>
                         <p>Дежурная часть: <a href="tel:+74956094952" className="text-emerald-600 hover:text-emerald-700">8 (495) 609-49-52</a>, ф. <a href="tel:+74956094951" className="text-emerald-600 hover:text-emerald-700">8 (495) 609-49-51</a></p>
-                        <p>Телефон доверия: <a href="tel:+74956927066" className="text-emerald-600 hover:text-emerald-700">8 (495) 692-70-66</a></p>
+                        <p>Телефон доверия ГУ МВД России по Московской области: <a href="tel:+74956927066" className="text-emerald-600 hover:text-emerald-700">8 (495) 692-70-66</a> (по вопросам нарушения прав и законных интересов граждан сотрудниками органов внутренних дел)</p>
                       </div>
-          </div>
-          
+                    </div>
+
                     <div>
                       <h3 className="text-lg font-semibold text-gray-800 mb-3">ГУ МЧС России по Московской области</h3>
                       <div className="space-y-2 text-gray-700 ml-4">
-                        <p className="text-sm text-gray-600">Руководитель подразделения: Полетыкин Сергей Алексеевич</p>
+                        <p>Руководитель подразделения: Полетыкин Сергей Алексеевич</p>
                         <p>Адрес: г. Москва ул. Обручева д. 46</p>
-                        <p>Телефон доверия: <a href="tel:+74997430272" className="text-emerald-600 hover:text-emerald-700">+7(499) 743-02-72</a></p>
-                        <p>Сайт: <a href="https://50.mchs.gov.ru/" target="_blank" rel="noopener noreferrer" className="text-emerald-600 hover:text-emerald-700">https://50.mchs.gov.ru/</a></p>
-          </div>
-        </div>
+                        <p><strong>Телефоны:</strong></p>
+                        <p>Телефон доверия: <a href="tel:+74997430272" className="text-emerald-600 hover:text-emerald-700">+7 (499) 743-02-72</a></p>
+                        <p>Сайт в Интернете: <a href="https://50.mchs.gov.ru/" target="_blank" rel="noopener noreferrer" className="text-emerald-600 hover:text-emerald-700">https://50.mchs.gov.ru/</a></p>
+                      </div>
+                    </div>
 
                     <div>
                       <h3 className="text-lg font-semibold text-gray-800 mb-3">Учредители компании:</h3>
                       <div className="space-y-2 text-gray-700 ml-4">
-                        <p>Лебедев Александр Анатольевич</p>
-                        <p>ИНН 503204811430</p>
-                        <p className="mt-3">Гребцов Сергей Борисович</p>
+                        <p>Гребцов Сергей Борисович</p>
                         <p>ИНН 503205994105</p>
+                        <p className="mt-3">Лебедева Алевтина Игоревна</p>
+                        <p>ИНН 503204810877</p>
                       </div>
-          </div>
-          
+                    </div>
+
                     <div>
                       <h3 className="text-lg font-semibold text-gray-800 mb-3">Одинцовский территориальный отдел Управления Федеральной службы по надзору в сфере защиты прав потребителей и благополучия человека по Московской области</h3>
                       <div className="space-y-2 text-gray-700 ml-4">
                         <p>143000, Московская область, г. Одинцово, Можайское шоссе, д.12</p>
-                        <p className="text-sm text-gray-600">Начальник отдела Мозгалина Наталья Юрьевна</p>
-                        <p>Тел./факс: <a href="tel:+74955935143" className="text-emerald-600 hover:text-emerald-700">495-593-51-43</a></p>
+                        <p>Начальник отдела Мозгалина Наталья Юрьевна</p>
+                        <p>т/ф. <a href="tel:+74955935143" className="text-emerald-600 hover:text-emerald-700">495-593-51-43</a></p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-          </div>
-        </div>
               )}
 
               {/* Обслуживание по договорам ДМС */}
@@ -2309,36 +2484,17 @@ function AboutPageContent() {
                       Обеспечение медицинской помощью своих сотрудников — неотъемлемая часть корпоративной культуры. Имея определенный социальный пакет, компания приобретает уважение и авторитет в глазах не только сотрудников, но и деловых партнеров, формирует имидж солидной организации, заинтересованной в повышении работоспособности коллектива.
                     </p>
                     <p>Для реализации этой задачи мы предлагаем.</p>
-                    <p>Заключение договора добровольного медицинского страхования (ДМС) через наших партнеров для прикрепления на обслуживание в Альтамед-С:</p>
+                    <p>Заключение договора добровольного медицинского страхования (ДМС) через наших партнеров для прикрепления на обслуживание в Альтамед-Голицыно:</p>
                   </div>
 
                   <div className="bg-gray-50 rounded-lg p-4 mb-6">
                     <ul className="grid grid-cols-1 md:grid-cols-2 gap-2 text-gray-700">
                       <li>• АО Альфа Страхование</li>
-                      <li>• ОПФ Группа Ренессанс Страхование</li>
                       <li>• СПАО Ингосстрах</li>
-                      <li>• ООО Абсолют Страхование</li>
                       <li>• САО ВСК</li>
-                      <li>• ПАО Росгосстрах</li>
-                      <li>• АО МАКС</li>
-                      <li>• АО СК Совкомбанк жизнь</li>
-                      <li>• АО СОГАЗ</li>
-                      <li>• ООО Зетта Страхование жизни</li>
-                      <li>• САО РЕСО-Гарантия</li>
+                      <li>• ООО СК Альянс Жизнь</li>
+                      <li>• СПАО РЕСО-Гарантия</li>
                       <li>• ОО СК Согласие</li>
-                      <li>• ООО Регион-Медсервис</li>
-                      <li>• САО Медэкспресс</li>
-                      <li>• ПАО «САК «Энергогарант»</li>
-                      <li>• ООО "Капитал Лайф Страхование жизни"</li>
-                      <li>• ПАО САК "Энергогарант столичный филиал"</li>
-                      <li>• ООО "ПСБ-страхование"</li>
-                      <li>• ООО РСО "ЕВРОИНС"</li>
-                      <li>• ООО "Инлайф страхование"</li>
-                      <li>• ООО "Бестдоктор"</li>
-                      <li>• ООО "Совкомбанк страхование"</li>
-                      <li>• АО ГСК "ЮГОРИЯ"</li>
-                      <li>• ООО СК "Сбербанк страхование"</li>
-                      <li>• АО СК Полис Гарант</li>
                     </ul>
                   </div>
 
@@ -2347,27 +2503,27 @@ function AboutPageContent() {
                     <ul className="space-y-2 text-gray-700">
                       <li className="flex items-start">
                         <span className="text-emerald-500 mr-2">✓</span>
-                        <span>Многопрофильность</span>
+                        <span>многопрофильность</span>
                       </li>
                       <li className="flex items-start">
                         <span className="text-emerald-500 mr-2">✓</span>
-                        <span>Сервис и комфорт</span>
+                        <span>сервис и комфорт</span>
                       </li>
                       <li className="flex items-start">
                         <span className="text-emerald-500 mr-2">✓</span>
-                        <span>Высокий профессионализм специалистов</span>
+                        <span>высокий профессионализм специалистов</span>
                       </li>
                       <li className="flex items-start">
                         <span className="text-emerald-500 mr-2">✓</span>
-                        <span>Гибкая ценовая политика</span>
+                        <span>гибкая ценовая политика</span>
                       </li>
                       <li className="flex items-start">
                         <span className="text-emerald-500 mr-2">✓</span>
-                        <span>Оптимальное соотношение цена-качество-сервис</span>
+                        <span>оптимальное соотношение цена-качество-сервис</span>
                       </li>
                       <li className="flex items-start">
                         <span className="text-emerald-500 mr-2">✓</span>
-                        <span>Удобный режим работы: ежедневно 9.00–20.00 без перерыва на обед и выходных</span>
+                        <span>удобный режим работы: ежедневно 9.00–20.00 без перерыва на обед и выходных</span>
                       </li>
                     </ul>
                   </div>

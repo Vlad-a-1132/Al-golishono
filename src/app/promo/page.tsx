@@ -3,70 +3,70 @@
 import Link from "next/link";
 
 export default function PromoPage() {
-  // Данные акций
+  // Данные акций на февраль 2026
   const promotions = [
     {
       id: 1,
-      category: "diagnostics",
-      image: "/images/slides/1-kt.webp",
-      startDate: "01.10.2025",
-      endDate: "31.12.2025",
-      title: "Скидки на компьютерную томографию",
-      description: "Понедельник, Среда, Пятница – 20%, Суббота – 25%"
+      category: "dentistry",
+      image: "/images/dentisrty/ff0799f0-79d9-49cb-b32a-bac2ce8b6d2e 1.webp",
+      startDate: "01.02.2026",
+      endDate: "28.02.2026",
+      title: "Профессиональная гигиена полости рта",
+      description: "Цена: 4600 ₽ (было 6600 ₽)"
     },
     {
       id: 2,
-      category: "diagnostics",
-      image: "/images/slides/yzi.webp",
-      startDate: "01.10.2025",
-      endDate: "31.12.2025",
-      title: "Комплексное ультразвуковое исследование для женщин",
-      description: "УЗИ органов малого таза + молочных желез + щитовидной железы. Цена: 5000 ₽ (было 6200 ₽)"
+      category: "dentistry",
+      image: "/images/promo/st prom.png",
+      startDate: "01.02.2026",
+      endDate: "28.02.2026",
+      title: "Лечение зубов (терапия)",
+      description: "Скидка 20% на все виды лечения"
     },
     {
       id: 3,
-      category: "consultations",
-      image: "/images/slides/2-pensia.webp",
-      startDate: "01.10.2025",
-      endDate: "31.12.2025",
-      title: "Скидки для пенсионеров и многодетных",
-      description: "– 10% на все услуги, кроме стоматологии"
+      category: "dentistry",
+      image: "/images/yslugi/implant.webp",
+      startDate: "01.02.2026",
+      endDate: "28.02.2026",
+      title: "Имплантация зубов",
+      description: "Скидка 30% — цена: 41160 ₽ (было 58800 ₽)"
     },
     {
       id: 4,
       category: "diagnostics",
       image: "/images/slides/3-analizy.webp",
-      startDate: "01.10.2025",
-      endDate: "31.12.2025",
-      title: "Скидки на анализы",
-      description: "Понедельник, Среда, Пятница - 10%, Воскресенье - 15%. (скидки не суммируются)"
+      startDate: "01.02.2026",
+      endDate: "15.02.2026",
+      title: "Скидки на анализы (1-15 февраля)",
+      description: "Понедельник-Суббота 15%, Воскресенье 25%"
     },
     {
       id: 5,
-      category: "consultations",
-      image: "/images/slides/kolpos.webp",
-      startDate: "01.01.2025",
-      endDate: "31.12.2025",
-      title: "При первичном приёме врача акушера-гинеколога - кольпоскопия в подарок!",
-      description: "Акция до конца 2025 года"
+      category: "diagnostics",
+      image: "/images/slides/3-analizy.webp",
+      startDate: "15.02.2026",
+      endDate: "28.02.2026",
+      title: "Скидки на анализы (15-28 февраля)",
+      description: "Пн/Ср/Пт 15%, Вт/Вс 25%"
     },
     {
       id: 6,
-      category: "massage",
-      image: "/images/promo/task_01kbdkwa0xftb9wh0jek05ksz3_1764615024_img_0.webp",
-      startDate: "01.01.2025",
-      endDate: "31.01.2026",
-      title: "Скидка 30% на общий массаж медицинский",
-      description: "А21.01.001 Общий массаж медицинский. Цена: 3430 ₽ (было 4200 ₽)"
+      category: "special",
+      image: "/images/promo/23prom.png",
+      startDate: "23.02.2026",
+      endDate: "23.02.2026",
+      title: "День защитника Отечества",
+      description: "23 февраля — мужчинам скидка 20% на всё"
     },
     {
       id: 7,
       category: "consultations",
-      image: "/images/yslugi/task_01kcqt39h1evj89apdf39y58f8_1766030720_img_1.webp",
-      startDate: "01.01.2025",
-      endDate: "31.12.2025",
-      title: "День пенсионера",
-      description: "Понедельник и Пятница – специальные скидки до 25%"
+      image: "/images/slides/2-pensia.webp",
+      startDate: "01.02.2026",
+      endDate: "28.02.2026",
+      title: "Скидки для пенсионеров",
+      description: "10% на приём врача, УЗИ, анализы"
     }
   ];
 

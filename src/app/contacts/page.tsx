@@ -39,7 +39,7 @@ export default function ContactsPage() {
       script.type = 'text/javascript';
       script.charset = 'utf-8';
       script.async = true;
-      script.src = `https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A45b2f50250d7120a4c2242f7d1dffcb1e5024476e057fef53a1c87499479b853&width=${containerWidth}&height=${containerHeight}&lang=ru_RU&scroll=true`;
+      script.src = `https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A107b2d29e874da2b55f76a21eb40dc0d6cd90094a7e623655885d705a9628487&width=${containerWidth}&height=${containerHeight}&lang=ru_RU&scroll=true`;
       script.id = 'yandex-map-script-contacts';
       
       innerContainer.appendChild(script);

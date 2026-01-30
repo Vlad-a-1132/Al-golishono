@@ -109,53 +109,46 @@ export default function Home() {
   // Slides data - используем нейтральные пути чтобы избежать блокировки рекламы
   const slides = [
     {
-      title: "Понедельник и Пятница – специальные скидки до 25%",
-      buttonText: "Подробнее",
-      buttonLink: "/promo/promo-7",
-      buttonColor: "#13AB7B",
-      image: "/images/yslugi/task_01kcqtjckffxmbccp30z65x6yy_1766031210_img_0.webp"
-    },
-    {
-      title: "Скидки на компьютерную томографию",
+      title: "Профессиональная гигиена полости рта — 4600 ₽",
       buttonText: "Подробнее",
       buttonLink: "/promo/promo-1",
       buttonColor: "#13AB7B",
-      image: "/images/slides/1-kt.webp"
+      image: "/images/dentisrty/ff0799f0-79d9-49cb-b32a-bac2ce8b6d2e 1.webp"
     },
     {
-      title: "Комплексное ультразвуковое исследование для женщин",
+      title: "Лечение зубов — скидка 20%",
       buttonText: "Подробнее",
       buttonLink: "/promo/promo-2",
       buttonColor: "#13AB7B",
-      image: "/images/slides/yzi.webp"
+      image: "/images/promo/st prom.png"
     },
     {
-      title: "Скидки для пенсионеров и многодетных",
+      title: "Имплантация зубов — скидка 30%",
       buttonText: "Подробнее",
       buttonLink: "/promo/promo-3",
       buttonColor: "#13AB7B",
-      image: "/images/slides/2-pensia.webp"
+      image: "/images/yslugi/implant.webp"
     },
     {
-      title: "Скидки на анализы",
+      title: "Скидки на анализы до 25%",
       buttonText: "Подробнее",
       buttonLink: "/promo/promo-4",
       buttonColor: "#13AB7B",
       image: "/images/slides/3-analizy.webp"
     },
     {
-      title: "При первичном приёме врача акушера-гинеколога",
-      buttonText: "Подробнее",
-      buttonLink: "/promo/promo-5",
-      buttonColor: "#13AB7B",
-      image: "/images/slides/kolpos.webp"
-    },
-    {
-      title: "Скидка 30% на общий массаж медицинский",
+      title: "23 февраля — мужчинам скидка 20%",
       buttonText: "Подробнее",
       buttonLink: "/promo/promo-6",
       buttonColor: "#13AB7B",
-      image: "/images/promo/task_01kbdkwa0xftb9wh0jek05ksz3_1764615024_img_0.webp"
+      image: "/images/promo/23prom.png"
+    },
+    {
+      title: "Скидки для пенсионеров 10%",
+      buttonText: "Подробнее",
+      buttonLink: "/promo/promo-7",
+      buttonColor: "#13AB7B",
+      image: "/images/slides/2-pensia.webp"
     }
   ];
 
@@ -368,7 +361,7 @@ export default function Home() {
       script.type = 'text/javascript';
       script.charset = 'utf-8';
       script.async = true;
-      script.src = `https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A45b2f50250d7120a4c2242f7d1dffcb1e5024476e057fef53a1c87499479b853&width=${containerWidth}&height=${height}&lang=ru_RU&scroll=true`;
+      script.src = `https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A107b2d29e874da2b55f76a21eb40dc0d6cd90094a7e623655885d705a9628487&width=${containerWidth}&height=${height}&lang=ru_RU&scroll=true`;
       script.id = `yandex-map-script-${containerId}`;
       
       innerContainer.appendChild(script);
@@ -542,6 +535,20 @@ export default function Home() {
                 </svg>
               </Link>
               
+              <Link href="/services/dentistry/implantation" className="bg-[#E8F0F8] p-3 rounded-[20px] flex items-center justify-between h-[80px] relative overflow-hidden">
+                <Image 
+                  src="/images/yslugi/png-klev-club-k98x-p-vetki-yeli-s-igrushkami-png-27 1.webp"
+                  alt=""
+                  width={40}
+                  height={40}
+                  className="absolute top-0 right-0 w-10 h-10 object-contain"
+                />
+                <span className="font-medium text-sm text-gray-800">Имплантация</span>
+                <svg className="w-4 h-4 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </Link>
+              
               <Link href="/services/dermatolog-golitsino" className="bg-[#FFF8E1] p-3 rounded-[20px] flex items-center justify-between h-[80px] relative overflow-hidden">
                 <Image 
                   src="/images/yslugi/png-klev-club-k98x-p-vetki-yeli-s-igrushkami-png-27 1.webp"
@@ -709,6 +716,20 @@ export default function Home() {
                     className="absolute top-0 right-0 w-12 h-12 object-contain"
                   />
                   <span className="font-medium text-sm md:text-base">Гинекология</span>
+                  <svg className="w-5 h-5 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
+                
+                <Link href="/services/dentistry/implantation" className="bg-[#E8F0F8] p-4 rounded-[20px] flex items-center justify-between w-full md:w-[224px] h-[89px] relative overflow-hidden">
+                  <Image 
+                    src="/images/yslugi/png-klev-club-k98x-p-vetki-yeli-s-igrushkami-png-27 1.webp"
+                    alt=""
+                    width={50}
+                    height={50}
+                    className="absolute top-0 right-0 w-12 h-12 object-contain"
+                  />
+                  <span className="font-medium text-sm md:text-base">Имплантация</span>
                   <svg className="w-5 h-5 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
