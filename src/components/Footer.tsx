@@ -20,7 +20,7 @@ export default function Footer() {
               />
             </div>
             <p className="text-gray-300 text-sm">
-              Сеть современных медицинских центров в Одинцово, предоставляющих качественные медицинские услуги и современную диагностику.
+              Медицинский центр в Голицино: качественные медицинские услуги и современная диагностика.
             </p>
           </div>
           
@@ -93,9 +93,7 @@ export default function Footer() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
                 <div className="text-gray-300 text-sm">
-                  <div>г. Одинцово,</div>
-                  <div>бульвар Маршала Крылова, д.23</div>
-                  <div className="mt-1">ул. Можайское шоссе, д.141</div>
+                  143040, Московская область, Одинцовский городской округ, Голицыно, Советская улица, 58
                 </div>
               </li>
               <li className="flex items-start space-x-2">
@@ -116,8 +114,8 @@ export default function Footer() {
                 <svg className="h-5 w-5 text-[#13AB7B] flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
-                <a href="mailto:info@altamed-c.ru" className="text-gray-300 hover:text-[#13AB7B] transition text-sm">
-                  info@altamed-c.ru
+                <a href="mailto:medcentr@altamed-golitsino.ru" className="text-gray-300 hover:text-[#13AB7B] transition text-sm">
+                  medcentr@altamed-golitsino.ru
                 </a>
               </li>
             </ul>
@@ -125,7 +123,7 @@ export default function Footer() {
         </div>
         
         <div className="mt-12 pt-8 border-t border-gray-700">
-          <p className="text-gray-400 text-sm text-center">© {currentYear} Медицинский центр «Альтамед-С». Все права защищены.</p>
+          <p className="text-gray-400 text-sm text-center">© {currentYear} Медицинский центр «Альтамед Голицино». Все права защищены.</p>
         </div>
       </div>
     </footer>

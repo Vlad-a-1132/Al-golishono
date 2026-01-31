@@ -118,7 +118,7 @@ export default function PregnancyScreeningPage() {
               Скрининг при беременности в клинике «<span className="italic">Альтамед-с</span>»
             </h1>
             <p className="text-gray-600 mt-2 px-4 md:px-0 text-sm md:text-base">
-              Комплексное наблюдение беременности в Одинцово
+              Комплексное наблюдение беременности в Голицино
             </p>
           </header>
 
@@ -151,7 +151,7 @@ export default function PregnancyScreeningPage() {
               <div className="w-full h-full relative">
                 <img
                   src="/images/services/Screenshot_1835.png"
-                  alt="Скрининг при беременности в Одинцово"
+                  alt="Скрининг при беременности в Голицино"
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-transparent"></div>

@@ -4,6 +4,9 @@ import Link from "next/link";
 import { useParams } from "next/navigation";
 import AppointmentForm from '@/components/AppointmentForm';
 
+type DayServiceItem = string | { name: string; discount: string; highlighted?: boolean };
+type PromoWithDayServices = { mondayServices?: DayServiceItem[]; fridayServices?: DayServiceItem[] };
+
 export default function PromoDetailPage() {
   const params = useParams();
   const slug = params?.slug as string;
@@ -274,7 +277,7 @@ export default function PromoDetailPage() {
                   </div>
                 </div>
                 <div className="space-y-2">
-                  {promo.mondayServices?.map((service, idx) => {
+                  {(promo as PromoWithDayServices).mondayServices?.map((service, idx) => {
                     const isHighlighted = typeof service === 'object' && service.highlighted;
                     const serviceName = typeof service === 'object' ? `${service.name} – ${service.discount}` : service;
                     
@@ -308,7 +311,7 @@ export default function PromoDetailPage() {
                   </div>
                 </div>
                 <div className="space-y-2">
-                  {promo.fridayServices?.map((service, idx) => {
+                  {(promo as PromoWithDayServices).fridayServices?.map((service, idx) => {
                     const isHighlighted = typeof service === 'object' && service.highlighted;
                     const serviceName = typeof service === 'object' ? `${service.name} – ${service.discount}` : service;
                     const serviceDiscount = typeof service === 'object' ? service.discount : null;

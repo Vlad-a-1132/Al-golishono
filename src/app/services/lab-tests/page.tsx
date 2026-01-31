@@ -50,7 +50,7 @@ export default function LabTestsPage() {
                   <div className="mb-6">
                     <h3 className="text-lg md:text-xl font-semibold mb-3">Расчет стоимости анализов</h3>
                     <p className="text-sm md:text-base opacity-95 mb-4 leading-relaxed">
-                      Узнайте актуальные цены на любые анализы в клинике «Альтамед-с» Одинцово. Калькулятор позволяет рассчитать общую стоимость нескольких анализов, создать индивидуальный список исследований и спланировать бюджет на диагностику.
+                      Узнайте актуальные цены на любые анализы в клинике «Альтамед-с» Голицино. Калькулятор позволяет рассчитать общую стоимость нескольких анализов, создать индивидуальный список исследований и спланировать бюджет на диагностику.
                     </p>
                     <ul className="space-y-2 text-sm md:text-base opacity-95">
                       <li className="flex items-start">
@@ -98,7 +98,7 @@ export default function LabTestsPage() {
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <div className="bg-gradient-to-br from-orange-50 to-amber-50 rounded-[20px] shadow-lg p-8 md:p-12">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 text-center">
-              Калькулятор анализов в Одинцово — удобный инструмент для поиска и расчета стоимости
+              Калькулятор анализов в Голицино — удобный инструмент для поиска и расчета стоимости
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
               <div className="bg-white rounded-lg p-6 shadow-md">
@@ -142,7 +142,7 @@ export default function LabTestsPage() {
                   Расчет стоимости анализов
                 </h3>
                 <p className="text-gray-700 mb-4">
-                  Узнайте актуальные цены на любые анализы в клинике «Альтамед-с» Одинцово. 
+                  Узнайте актуальные цены на любые анализы в клинике «Альтамед-с» Голицино. 
                   Калькулятор позволяет рассчитать общую стоимость нескольких анализов, 
                   создать индивидуальный список исследований и спланировать бюджет на диагностику.
                 </p>
@@ -170,7 +170,7 @@ export default function LabTestsPage() {
             </div>
             <div className="bg-white rounded-lg p-6 shadow-md">
               <h3 className="text-xl font-semibold text-gray-800 mb-4 text-center">
-                Чем полезен калькулятор анализов в Одинцово?
+                Чем полезен калькулятор анализов в Голицино?
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="text-center">
@@ -248,7 +248,7 @@ export default function LabTestsPage() {
                     <h4 className="font-semibold text-gray-800 mb-1">Запись на сдачу</h4>
                     <p className="text-gray-600 text-sm">
                       После формирования списка анализов вы можете записаться на сдачу в клинику «Альтамед-с» 
-                      в Одинцово через онлайн-форму или по телефону.
+                      в Голицино через онлайн-форму или по телефону.
                     </p>
                   </div>
                 </div>

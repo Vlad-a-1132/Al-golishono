@@ -9,7 +9,7 @@ declare global {
   }
 }
 
-const METRIKA_ID = 105270439;
+const METRIKA_ID = 106549967;
 
 export default function YandexMetrika() {
   const pathname = usePathname();

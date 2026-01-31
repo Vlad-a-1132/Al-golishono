@@ -27,7 +27,7 @@ async function sendEmail(appointment: Appointment, formType: string = 'Запи�
       port: smtpPort,
       secure: false, // Порт 25 обычно использует STARTTLS, не SSL
       auth: {
-        user: process.env.SMTP_USER || 'zakaz@altamed-c.ru',
+        user: process.env.SMTP_USER || 'reg@altamed-golitsino.ru',
         pass: process.env.SMTP_PASSWORD || '',
       },
       tls: {
@@ -39,11 +39,11 @@ async function sendEmail(appointment: Appointment, formType: string = 'Запи�
     });
 
     // Email получателя из переменной окружения или используем по умолчанию
-    const emailTo = process.env.EMAIL_TO || 'zakaz@altamed-c.ru';
+    const emailTo = process.env.EMAIL_TO || 'reg@altamed-golitsino.ru';
 
     // Формируем текст письма
     const mailOptions = {
-      from: `"Сайт Альтамед-С" <${process.env.SMTP_USER || 'zakaz@altamed-c.ru'}>`,
+      from: `"Сайт Альтамед Голицино" <${process.env.SMTP_USER || 'reg@altamed-golitsino.ru'}>`,
       to: emailTo,
       subject: `${formType} - новая заявка с сайта`,
       html: `
@@ -57,7 +57,7 @@ async function sendEmail(appointment: Appointment, formType: string = 'Запи�
             <p><strong>Дата заявки:</strong> ${appointment.date}</p>
             <p><strong>ID заявки:</strong> ${appointment.id}</p>
           </div>
-          <p style="color: #666; font-size: 12px;">Это автоматическое уведомление с сайта altamed-c.ru</p>
+          <p style="color: #666; font-size: 12px;">Это автоматическое уведомление с сайта Альтамед Голицино</p>
         </div>
       `,
       text: `

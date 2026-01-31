@@ -222,7 +222,7 @@ export default function SurdologyPage() {
               Сурдология в клинике «<span className="italic">Альтамед-с</span>»
             </h1>
             <p className="text-gray-600 mt-2 px-4 md:px-0 text-sm md:text-base">
-              Диагностика и лечение заболеваний органов слуха в Одинцово
+              Диагностика и лечение заболеваний органов слуха в Голицино
             </p>
           </header>
 
@@ -260,7 +260,7 @@ export default function SurdologyPage() {
               <div className="w-full h-full relative">
                 <img
                   src="/images/images allergoly/sydrolog.webp"
-                  alt="Сурдология в Одинцово"
+                  alt="Сурдология в Голицино"
                   className="w-full h-full object-cover"
                 />
                 {/* Белый градиентный слой */}
@@ -269,7 +269,7 @@ export default function SurdologyPage() {
               
               {/* Content overlay */}
               <div className="absolute inset-0 flex flex-col justify-center items-start p-8 md:p-12 text-black">
-                <h2 className="text-2xl md:text-4xl font-bold mb-4">Сурдология в Одинцово</h2>
+                <h2 className="text-2xl md:text-4xl font-bold mb-4">Сурдология в Голицино</h2>
                 <p className="text-lg md:text-xl mb-6 max-w-md">Профессиональная диагностика и лечение заболеваний органов слуха</p>
                 <Link 
                   href="https://reg.altamed-golitsino.ru/" 
@@ -491,7 +491,7 @@ export default function SurdologyPage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
                 <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                  Консультация хорошего врача-сурдолога в Одинцово
+                  Консультация хорошего врача-сурдолога в Голицино
                 </h2>
                 <p className="text-lg text-gray-600 mb-6">
                   Сурдология — это наука о нарушениях восприятия и проведения звука в органе слуха человека. 

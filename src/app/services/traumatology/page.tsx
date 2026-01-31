@@ -112,7 +112,7 @@ export default function TraumatologyPage() {
               Травматология в клинике «<span className="italic">Альтамед-с</span>»
             </h1>
             <p className="text-gray-600 mt-2 px-4 md:px-0 text-sm md:text-base">
-              Консультация хорошего врача травматолога-ортопеда в Одинцово
+              Консультация хорошего врача травматолога-ортопеда в Голицино
             </p>
           </header>
 
@@ -150,7 +150,7 @@ export default function TraumatologyPage() {
               <div className="w-full h-full relative">
                 <img
                   src="/images/yslugi/travmatolog.webp"
-                  alt="Травматология в Одинцово"
+                  alt="Травматология в Голицино"
                   className="w-full h-full object-cover"
                 />
                 {/* Белый градиентный слой */}
@@ -159,7 +159,7 @@ export default function TraumatologyPage() {
               
               {/* Content overlay */}
               <div className="absolute inset-0 flex flex-col justify-center items-start p-8 md:p-12 text-black">
-                <h2 className="text-2xl md:text-4xl font-bold mb-4">Травматология в Одинцово</h2>
+                <h2 className="text-2xl md:text-4xl font-bold mb-4">Травматология в Голицино</h2>
                 <p className="text-lg md:text-xl mb-6 max-w-md">Профессиональная диагностика и лечение заболеваний опорно-двигательного аппарата</p>
                 <Link 
                   href="https://reg.altamed-golitsino.ru/" 
@@ -303,7 +303,7 @@ export default function TraumatologyPage() {
         <section className="py-16" aria-labelledby="services-heading">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 id="services-heading" className="text-2xl md:text-3xl font-bold text-black mb-8 text-center ml-0 md:ml-4 lg:ml-8">
-              Травматолог-ортопед в Одинцово - услуги диагностики и лечения
+              Травматолог-ортопед в Голицино - услуги диагностики и лечения
             </h2>
             
             <div className="space-y-12" itemScope itemType="https://schema.org/ItemList">
@@ -571,11 +571,11 @@ export default function TraumatologyPage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
                 <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                  Консультация врача травматолога-ортопеда в Одинцово - профессиональная диагностика заболеваний опорно-двигательного аппарата
+                  Консультация врача травматолога-ортопеда в Голицино - профессиональная диагностика заболеваний опорно-двигательного аппарата
                 </h2>
                 <p className="text-lg text-gray-600 mb-6">
-                  Травматолог-ортопед в Одинцово - это медицинский специалист, который занимается диагностикой, лечением и профилактикой заболеваний опорно-двигательного аппарата, травм и повреждений костей, суставов, мышц, связок и сухожилий. 
-                  В клинике «Альтамед-С» в Одинцово консультируют высококвалифицированные травматологи-ортопеды с многолетним стажем работы и глубокими знаниями в области лечения травм и заболеваний опорно-двигательного аппарата.
+                  Травматолог-ортопед в Голицино - это медицинский специалист, который занимается диагностикой, лечением и профилактикой заболеваний опорно-двигательного аппарата, травм и повреждений костей, суставов, мышц, связок и сухожилий. 
+                  В клинике «Альтамед-С» в Голицино консультируют высококвалифицированные травматологи-ортопеды с многолетним стажем работы и глубокими знаниями в области лечения травм и заболеваний опорно-двигательного аппарата.
                 </p>
                 <p className="text-lg text-gray-600 mb-6">
                   Наши специалисты проведут комплексное обследование, включая осмотр, инструментальные исследования, установят точный диагноз, разработают индивидуальную схему терапии и дадут рекомендации по профилактике заболеваний опорно-двигательного аппарата.

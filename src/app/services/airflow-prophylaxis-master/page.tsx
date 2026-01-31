@@ -651,7 +651,7 @@ export default function AirflowProphylaxisMasterPage() {
                 telephone: "+7 (495) 640-09-03",
                 priceRange: "₽₽",
                 serviceType: "Профессиональная гигиена полости рта",
-                areaServed: "Альтамед Голицино и Одинцовский городской округ",
+                areaServed: "Альтамед Голицино и Голицино",
                 description:
                   "Профессиональная гигиена полости рта по протоколу GBT с использованием швейцарского аппарата AIRFLOW® Prophylaxis Master. Безболезненная процедура для взрослых и детей в Альтамед Голицино.",
                 sameAs: [

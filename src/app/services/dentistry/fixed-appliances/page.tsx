@@ -365,7 +365,7 @@ export default function FixedAppliancesPage() {
                 telephone: "+7 (495) 640-09-03",
                 priceRange: "₽₽",
                 serviceType: "Несъемные аппараты",
-                areaServed: "Альтамед Голицино и Одинцовский городской округ",
+                areaServed: "Альтамед Голицино и Голицино",
                 description:
                   "Несъемные аппараты в Альтамед Голицино: лингвальные ретейнеры, ретейнеры к одному зубу, аппараты Forsus для исправления прикуса.",
                 sameAs: [
