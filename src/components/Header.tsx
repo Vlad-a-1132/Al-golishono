@@ -75,16 +75,17 @@ export default function Header() {
                 </svg>
                 Личный кабинет
               </Link>
-              {/* Мобильные кнопки */}
+              {/* Мобильные: номер телефона на зеленом блоке */}
               <div className="md:hidden flex items-center space-x-2">
-                <Link 
-                  href="https://reg.altamed-golitsino.ru/" 
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-orange-500 text-white px-3 py-1.5 rounded-md hover:bg-orange-600 transition-colors text-xs font-medium shadow-sm"
+                <a 
+                  href="tel:+74959896480" 
+                  className="bg-[#13AB7B] text-white px-3 py-1.5 rounded-md hover:bg-[#10a070] transition-colors text-xs font-medium shadow-sm flex items-center"
                 >
-                  Запись
-                </Link>
+                  <svg className="w-4 h-4 mr-1.5 flex-shrink-0" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.362 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.574 2.81.7A2 2 0 0122 16.92z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                  +7 (495) 989 64 80
+                </a>
               </div>
               
               {/* Десктопная кнопка записи */}
@@ -258,6 +259,12 @@ export default function Header() {
               <path d="M12 12C14.21 12 16 10.21 16 8C16 5.79 14.21 4 12 4C9.79 4 8 5.79 8 8C8 10.21 9.79 12 12 12ZM12 14C9.33 14 4 15.34 4 18V20H20V18C20 15.34 14.67 14 12 14Z" fill="currentColor"/>
             </svg>
             Личный кабинет
+          </Link>
+          <Link href="https://reg.altamed-golitsino.ru/" target="_blank" rel="noopener noreferrer" className="flex items-center px-3 py-2 rounded-md text-base font-medium bg-orange-500 text-white hover:bg-orange-600">
+            <svg className="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+            Запись
           </Link>
           <Link href="/doctors" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
             Врачи
