@@ -643,6 +643,16 @@ export default function ServicesPage() {
     'carboxytherapy', 'osteopathy', 'shockwave-therapy', 'manual-therapy', 'functional-diagnostics', 'general-manipulations'
   ];
 
+  // Диагностические услуги (соответствуют странице /diagnostics)
+  const diagnosticsServices = [
+    { id: 'ultrasound', title: 'Ультразвуковое обследование (УЗИ)', description: 'Информативный и безопасный метод инструментальной диагностики органов и систем', image: '/images/documents/ultrazvukovoe-obsledovanie-uzi_3.jpg', link: '/services/ultrasound' },
+    { id: 'uzi-serdca', title: 'УЗИ сердца', description: 'Эхокардиография для оценки структуры и функции сердца', image: '/images/yslugi/Hardware diagnostics.webp', link: '/services/uzi-serdca' },
+    { id: 'lab-tests', title: 'Лабораторные исследования', description: 'Полный спектр лабораторных анализов для комплексной диагностики', image: '/images/yslugi/Laboratory tests.webp', link: '/services/lab-tests' },
+    { id: 'ekg', title: 'Снятие электрокардиограммы (ЭКГ)', description: 'Регистрация электрической активности сердца для диагностики', image: '/images/services/Screenshot_1832.png', link: '/services/ekg' },
+    { id: 'sutochnoe-monitorirovanie-ad', title: 'Суточное мониторирование артериального давления', description: 'Непрерывная регистрация АД в течение 24 часов в условиях обычной активности', image: '/images/services/Screenshot_1832.png', link: '/services/sutochnoe-monitorirovanie-ad' },
+    { id: 'holter', title: 'Холтерское мониторирование электрокардиограммы', description: 'Суточная запись ЭКГ для выявления нарушений ритма и ишемии', image: '/images/services/Screenshot_1832.png', link: '/services/holter' }
+  ];
+
   // Стоматология - отдельная категория
   const dentistryServices = ['implantation', 'caries-treatment', 'dentistry-consultation', 'dentistry-pediatric', 'dentistry-surgery', 'dentistry-prosthodontist', 'dentistry-orthodontist', 'periodontics', 'dentistry-hygiene', 'airflow-prophylaxis-master', 'dentistry-extraction', 'dentistry-emergency', 'dentistry-plastic', 'dentistry-aesthetic', 'dentistry-prosthetics', 'dentistry-cadcam', 'dentistry-constructions', 'dentistry-deposits', 'dentistry-braces', 'dentistry-removable-appliances', 'dentistry-fixed-appliances', 'dentistry-orthodontic-maintenance', 'dentistry-strengthening', 'dentistry-xray', 'dentistry-ct'];
 
@@ -1041,85 +1051,82 @@ export default function ServicesPage() {
             Акции
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
-            {/* Кольпоскопия в подарок при первичном приёме акушера-гинеколога */}
-            <Link href="/promo/promo-5" className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer group h-[300px] md:h-[377.22px] flex flex-col">
-              <div className="h-[200px] md:h-[259.22px] relative flex-shrink-0">
-                <img 
-                  src="/images/yslugi/Colposcopy.webp" 
-                  alt="Кольпоскопия" 
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="h-[100px] md:h-[118px] bg-emerald-500 flex flex-col justify-between px-4 md:px-6 py-3 flex-grow">
-                <h3 className="text-white font-semibold text-sm md:text-lg">Кольпоскопия в подарок</h3>
-                <div className="md:hidden">
-                  <button className="bg-white text-emerald-500 rounded-full px-4 py-1.5 text-xs font-medium hover:bg-gray-100 transition-colors">
-                    Подробнее
-                  </button>
-                </div>
-                <div className="hidden md:flex items-center justify-between">
-                  <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <svg className="w-4 h-4 text-emerald-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </div>
-                </div>
-              </div>
-            </Link>
-
-            {/* Скидка для пенсионеров 10% на все услуги кроме стоматологии */}
+            {/* Имплантация зубов */}
             <Link href="/promo/promo-3" className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer group h-[300px] md:h-[377.22px] flex flex-col">
               <div className="h-[200px] md:h-[259.22px] relative flex-shrink-0">
                 <img 
-                  src="/images/yslugi/pensia 1.webp" 
-                  alt="Скидка для пенсионеров" 
+                  src="/images/yslugi/implant.webp" 
+                  alt="Имплантация зубов" 
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="h-[118px] bg-[#c49a68] flex flex-col justify-between px-4 md:px-6 py-3 flex-grow">
-                <h3 className="text-white font-semibold text-sm md:text-lg">Скидка для пенсионеров 10%</h3>
-                <div className="md:hidden">
-                  <button className="bg-white text-[#c49a68] rounded-full px-4 py-1.5 text-xs font-medium hover:bg-gray-100 transition-colors">
-                    Подробнее
-                  </button>
+              <div className="h-[100px] md:h-[118px] bg-emerald-500 flex flex-col flex-shrink-0 px-4 md:px-6 py-3">
+                <div className="flex-1 min-h-0 flex flex-col justify-center">
+                  <h3 className="text-white font-semibold text-sm md:text-lg leading-tight">Имплантация зубов</h3>
+                  <p className="text-white/95 text-xs md:text-sm mt-0.5 leading-tight">Скидка 30% — цена: 41160 ₽ (было 58800 ₽)</p>
                 </div>
-                <div className="hidden md:flex items-center justify-between">
-                  <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <svg className="w-4 h-4 text-[#c49a68]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                <div className="flex-shrink-0 h-8 flex items-center justify-end hidden md:flex">
+                  <span className="hidden bg-white text-emerald-600 rounded-full px-4 py-1.5 text-xs font-medium mr-2">Подробнее</span>
+                  <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-md">
+                    <svg className="w-4 h-4 text-gray-800" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
                     </svg>
                   </div>
                 </div>
               </div>
             </Link>
 
-            {/* Скидки на компьютерную томографию */}
+            {/* Скидки для пенсионеров */}
+            <Link href="/promo/promo-7" className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer group h-[300px] md:h-[377.22px] flex flex-col">
+              <div className="h-[200px] md:h-[259.22px] relative flex-shrink-0">
+                <img 
+                  src="/images/slides/2-pensia.webp" 
+                  alt="Скидки для пенсионеров" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="h-[100px] md:h-[118px] bg-[#c49a68] flex flex-col flex-shrink-0 px-4 md:px-6 py-3">
+                <div className="flex-1 min-h-0 flex flex-col justify-center">
+                  <h3 className="text-white font-semibold text-sm md:text-lg leading-tight">Скидки для пенсионеров</h3>
+                  <p className="text-white/95 text-xs md:text-sm mt-0.5 leading-tight">10% на приём врача, УЗИ, анализы</p>
+                </div>
+                <div className="flex-shrink-0 h-8 flex items-center justify-end hidden md:flex">
+                  <span className="hidden bg-white text-[#c49a68] rounded-full px-4 py-1.5 text-xs font-medium mr-2">Подробнее</span>
+                  <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-md">
+                    <svg className="w-4 h-4 text-gray-800" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </Link>
+
+            {/* Профессиональная гигиена полости рта */}
             <Link href="/promo/promo-1" className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer group h-[300px] md:h-[377.22px] flex flex-col">
               <div className="h-[200px] md:h-[259.22px] relative flex-shrink-0">
                 <img 
-                  src="/images/yslugi/KT.webp" 
-                  alt="Компьютерная томография" 
+                  src="/images/dentisrty/ff0799f0-79d9-49cb-b32a-bac2ce8b6d2e 1.webp" 
+                  alt="Профессиональная гигиена полости рта" 
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="h-[118px] bg-[#69a0bd] flex flex-col justify-between px-4 md:px-6 py-3 flex-grow">
-                <h3 className="text-white font-semibold text-sm md:text-lg">Скидки на КТ!</h3>
-                <div className="md:hidden">
-                  <button className="bg-white text-[#69a0bd] rounded-full px-4 py-1.5 text-xs font-medium hover:bg-gray-100 transition-colors">
-                    Подробнее
-                  </button>
+              <div className="h-[100px] md:h-[118px] bg-[#69a0bd] flex flex-col flex-shrink-0 px-4 md:px-6 py-3">
+                <div className="flex-1 min-h-0 flex flex-col justify-center">
+                  <h3 className="text-white font-semibold text-sm md:text-lg leading-tight">Профессиональная гигиена полости рта</h3>
+                  <p className="text-white/95 text-xs md:text-sm mt-0.5 leading-tight">Цена: 4600 ₽ (было 6600 ₽)</p>
                 </div>
-                <div className="hidden md:flex items-center justify-between">
-                  <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <svg className="w-4 h-4 text-[#69a0bd]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                <div className="flex-shrink-0 h-8 flex items-center justify-end hidden md:flex">
+                  <span className="hidden bg-white text-[#69a0bd] rounded-full px-4 py-1.5 text-xs font-medium mr-2">Подробнее</span>
+                  <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-md">
+                    <svg className="w-4 h-4 text-gray-800" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
                     </svg>
                   </div>
                 </div>
               </div>
             </Link>
 
-            {/* Скидки на анализы */}
+            {/* Скидки на анализы (1-15 февраля) */}
             <Link href="/promo/promo-4" className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer group h-[300px] md:h-[377.22px] flex flex-col">
               <div className="h-[200px] md:h-[259.22px] relative flex-shrink-0">
                 <img 
@@ -1128,17 +1135,16 @@ export default function ServicesPage() {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="h-[118px] bg-orange-500 flex flex-col justify-between px-4 md:px-6 py-3 flex-grow">
-                <h3 className="text-white font-semibold text-sm md:text-lg">СКИДКИ НА АНАЛИЗЫ</h3>
-                <div className="md:hidden">
-                  <button className="bg-white text-orange-500 rounded-full px-4 py-1.5 text-xs font-medium hover:bg-gray-100 transition-colors">
-                    Подробнее
-                  </button>
+              <div className="h-[100px] md:h-[118px] bg-orange-500 flex flex-col flex-shrink-0 px-4 md:px-6 py-3">
+                <div className="flex-1 min-h-0 flex flex-col justify-center">
+                  <h3 className="text-white font-semibold text-sm md:text-lg leading-tight">Скидки на анализы (1-15 февраля)</h3>
+                  <p className="text-white/95 text-xs md:text-sm mt-0.5 leading-tight">Пн-Сб 15%, Вс 25%</p>
                 </div>
-                <div className="hidden md:flex items-center justify-between">
-                  <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <svg className="w-4 h-4 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                <div className="flex-shrink-0 h-8 flex items-center justify-end hidden md:flex">
+                  <span className="hidden bg-white text-orange-500 rounded-full px-4 py-1.5 text-xs font-medium mr-2">Подробнее</span>
+                  <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-md">
+                    <svg className="w-4 h-4 text-gray-800" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
                     </svg>
                   </div>
                 </div>
@@ -1148,174 +1154,43 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* Диагностические услуги */}
+      {/* Диагностические услуги (соответствуют странице /diagnostics) */}
       <section className="py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-bold text-gray-900 mb-8">
             Диагностические услуги
           </h2>
-          
-          {/* Первый ряд - большие карточки с изображениями */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mb-6">
-            {/* Аппаратная диагностика */}
-            <Link href="/services/hardware-diagnostics" className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer group p-4 md:p-6">
-              <div className="flex items-center space-x-3 md:space-x-4">
-                <div className="w-12 h-12 md:w-16 md:h-16 rounded-full flex items-center justify-center flex-shrink-0 overflow-hidden">
-                  <img 
-                    src="/images/yslugi/Hardware diagnostics.webp" 
-                    alt="Аппаратная диагностика" 
-                    className="w-full h-full object-cover rounded-full"
-                  />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+            {diagnosticsServices.map((service) => (
+              <Link key={service.id} href={service.link} className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer group p-4 md:p-6">
+                <div className="flex items-center space-x-3 md:space-x-4">
+                  <div className="w-12 h-12 md:w-16 md:h-16 rounded-full flex items-center justify-center flex-shrink-0 overflow-hidden">
+                    <img
+                      src={service.image}
+                      alt={service.title}
+                      className="w-full h-full object-cover rounded-full"
+                      onError={(e) => {
+                        (e.target as HTMLImageElement).src = '/images/yslugi/Hardware diagnostics.webp';
+                      }}
+                    />
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <h3 className="text-base md:text-lg font-semibold text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
+                      {service.title}
+                    </h3>
+                    <p className="text-sm text-gray-600 mt-1 line-clamp-2">
+                      {service.description}
+                    </p>
+                  </div>
+                  <div className="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center group-hover:bg-emerald-500 group-hover:text-white transition-all duration-300 flex-shrink-0">
+                    <svg className="w-4 h-4 text-gray-400 group-hover:text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </div>
                 </div>
-                <div className="flex-1">
-                  <h3 className="text-base md:text-lg font-semibold text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
-                    Аппаратная диагностика
-                  </h3>
-                </div>
-                <div className="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center group-hover:bg-emerald-500 group-hover:text-white transition-all duration-300">
-                  <svg className="w-4 h-4 text-gray-400 group-hover:text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </div>
-              </div>
-            </Link>
-
-            {/* Лабораторные анализы */}
-            <Link href="/services/lab-tests" className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer group p-4 md:p-6">
-              <div className="flex items-center space-x-3 md:space-x-4">
-                <div className="w-12 h-12 md:w-16 md:h-16 rounded-full flex items-center justify-center flex-shrink-0 overflow-hidden">
-                  <img 
-                    src="/images/yslugi/Laboratory tests.webp" 
-                    alt="Лабораторные анализы" 
-                    className="w-full h-full object-cover rounded-full"
-                  />
-                </div>
-                <div className="flex-1">
-                  <h3 className="text-base md:text-lg font-semibold text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
-                    Лабораторные анализы
-                  </h3>
-                </div>
-                <div className="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center group-hover:bg-emerald-500 group-hover:text-white transition-all duration-300">
-                  <svg className="w-4 h-4 text-gray-400 group-hover:text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </div>
-              </div>
-            </Link>
-
-            {/* Скрининг при беременности */}
-            <Link href="/services/pregnancy-screening" className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer group p-4 md:p-6">
-              <div className="flex items-center space-x-3 md:space-x-4">
-                <div className="w-12 h-12 md:w-16 md:h-16 rounded-full flex items-center justify-center flex-shrink-0 overflow-hidden">
-                  <img 
-                    src="/images/services/Screenshot_1835.png" 
-                    alt="Скрининг при беременности" 
-                    className="w-full h-full object-cover rounded-full"
-                  />
-                </div>
-                <div className="flex-1">
-                  <h3 className="text-base md:text-lg font-semibold text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
-                    Скрининг при беременности
-                  </h3>
-                </div>
-                <div className="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center group-hover:bg-emerald-500 group-hover:text-white transition-all duration-300">
-                  <svg className="w-4 h-4 text-gray-400 group-hover:text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </div>
-              </div>
-            </Link>
+              </Link>
+            ))}
           </div>
-
-          {/* Второй ряд - маленькие карточки */}
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 md:gap-4 mb-4">
-            {/* УЗИ */}
-            <Link href="/services/uzi-golitsino" className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer group p-3 md:p-4">
-              <div className="flex items-center justify-between">
-                <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
-                  УЗИ Голицино
-                </h3>
-                <div className="w-5 h-5 md:w-6 md:h-6 bg-gray-100 rounded-full flex items-center justify-center group-hover:bg-emerald-500 group-hover:text-white transition-all duration-300">
-                  <svg className="w-2 h-2 md:w-3 md:h-3 text-gray-400 group-hover:text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </div>
-              </div>
-            </Link>
-
-            
-
-            {/* КТ */}
-            <Link href="/services/ct" className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer group p-3 md:p-4">
-              <div className="flex items-center justify-between">
-                <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
-                  КТ
-                </h3>
-                <div className="w-5 h-5 md:w-6 md:h-6 bg-gray-100 rounded-full flex items-center justify-center group-hover:bg-emerald-500 group-hover:text-white transition-all duration-300">
-                  <svg className="w-2 h-2 md:w-3 md:h-3 text-gray-400 group-hover:text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </div>
-              </div>
-            </Link>
-
-            {/* Эндоскопия */}
-            <Link href="/services/endoscopy" className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer group p-3 md:p-4">
-              <div className="flex items-center justify-between">
-                <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
-                  Эндоскопия
-                </h3>
-                <div className="w-5 h-5 md:w-6 md:h-6 bg-gray-100 rounded-full flex items-center justify-center group-hover:bg-emerald-500 group-hover:text-white transition-all duration-300">
-                  <svg className="w-2 h-2 md:w-3 md:h-3 text-gray-400 group-hover:text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </div>
-              </div>
-            </Link>
-
-            {/* Рентген */}
-            <Link href="/services/xray" className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer group p-3 md:p-4">
-              <div className="flex items-center justify-between">
-                <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
-                  Рентген
-                </h3>
-                <div className="w-5 h-5 md:w-6 md:h-6 bg-gray-100 rounded-full flex items-center justify-center group-hover:bg-emerald-500 group-hover:text-white transition-all duration-300">
-                  <svg className="w-2 h-2 md:w-3 md:h-3 text-gray-400 group-hover:text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </div>
-              </div>
-            </Link>
-
-            {/* Функциональная диагностика */}
-            <Link href="/services/functional-diagnostics" className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer group p-3 md:p-4">
-              <div className="flex items-center justify-between">
-                <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
-                  Функциональная диагностика
-                </h3>
-                <div className="w-5 h-5 md:w-6 md:h-6 bg-gray-100 rounded-full flex items-center justify-center group-hover:bg-emerald-500 group-hover:text-white transition-all duration-300">
-                  <svg className="w-2 h-2 md:w-3 md:h-3 text-gray-400 group-hover:text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </div>
-              </div>
-            </Link>
-
-            {/* Манипуляции общего назначения */}
-            <Link href="/services/general-manipulations" className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer group p-3 md:p-4">
-              <div className="flex items-center justify-between">
-                <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
-                  Манипуляции общего назначения
-                </h3>
-                <div className="w-5 h-5 md:w-6 md:h-6 bg-gray-100 rounded-full flex items-center justify-center group-hover:bg-emerald-500 group-hover:text-white transition-all duration-300">
-                  <svg className="w-2 h-2 md:w-3 md:h-3 text-gray-400 group-hover:text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </div>
-              </div>
-            </Link>
-          </div>
-
         </div>
       </section>
 

@@ -17,18 +17,18 @@ export default function RehabilitationPage() {
 
   const rehabilitationServices = [
     {
-      id: 'carboxytherapy',
-      title: 'Карбокситерапия',
-      description: 'Инновационный метод лечения с использованием углекислого газа',
-      image: '/images/yslugi/Carboxytherapy.webp',
-      link: '/services/carboxytherapy'
-    },
-    {
       id: 'osteopathy',
       title: 'Остеопатия',
       description: 'Холистический подход к лечению заболеваний опорно-двигательного аппарата',
       image: '/images/yslugi/Osteopathy.webp',
       link: '/services/osteopathy'
+    },
+    {
+      id: 'carboxytherapy',
+      title: 'Карбокситерапия',
+      description: 'Инновационный метод лечения с использованием углекислого газа',
+      image: '/images/yslugi/Carboxytherapy.webp',
+      link: '/services/carboxytherapy'
     },
     {
       id: 'shockwave-therapy',
@@ -43,20 +43,6 @@ export default function RehabilitationPage() {
       description: 'Лечение позвоночника и суставов с помощью специальных ручных техник',
       image: '/images/yslugi/massaj.webp',
       link: '/services/manual-therapy'
-    },
-    {
-      id: 'functional-diagnostics',
-      title: 'Функциональная диагностика',
-      description: 'Оценка функционального состояния органов и систем организма',
-      image: '/images/yslugi/Hardware diagnostics.webp',
-      link: '/services/functional-diagnostics'
-    },
-    {
-      id: 'general-manipulations',
-      title: 'Манипуляции общего назначения',
-      description: 'Лечебные блокады, инфузионная терапия, экспресс-диагностика',
-      image: '/images/yslugi/fizio.webp',
-      link: '/services/general-manipulations'
     }
   ];
 

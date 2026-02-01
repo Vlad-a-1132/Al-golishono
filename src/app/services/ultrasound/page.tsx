@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import AppointmentForm from '@/components/AppointmentForm';
 
 export default function UltrasoundPage() {
@@ -191,105 +192,110 @@ export default function UltrasoundPage() {
   ];
 
   return (
-    <div className="flex flex-col min-h-full bg-white">
-      {/* Breadcrumbs */}
-      <section className="py-4">
-        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
-          <nav className="flex" aria-label="Breadcrumb">
-            <ol className="inline-flex items-center space-x-1 md:space-x-3">
-              <li className="inline-flex items-center">
-                <Link href="/" className="inline-flex items-center text-sm font-medium text-gray-700 hover:text-emerald-600">
-                  <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
-                  </svg>
-                  Главная
-                </Link>
-              </li>
-              <li>
-                <div className="flex items-center">
-                  <svg className="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd"></path>
-                  </svg>
-                  <Link href="/services" className="ml-1 text-sm font-medium text-gray-700 hover:text-emerald-600 md:ml-2">Услуги</Link>
-                </div>
-              </li>
-              <li aria-current="page">
-                <div className="flex items-center">
-                  <svg className="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd"></path>
-                  </svg>
-                  <span className="ml-1 text-sm font-medium text-gray-500 md:ml-2">УЗИ</span>
-                </div>
-              </li>
-            </ol>
+    <div className="flex flex-col bg-white">
+      <section className="pt-4 md:pt-6">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+          <nav aria-label="Breadcrumb" className="flex items-center space-x-2 text-sm text-gray-600 mb-4">
+            <Link href="/" className="hover:text-emerald-600">Главная</Link>
+            <span>/</span>
+            <Link href="/diagnostics" className="hover:text-emerald-600">Диагностика</Link>
+            <span>/</span>
+            <span className="text-gray-900">УЗИ</span>
           </nav>
+          <h1 className="text-2xl md:text-4xl font-bold text-black">
+            Ультразвуковое обследование (УЗИ) в Голицино — исследование в медицинском центре Альтамед Голицино
+          </h1>
         </div>
       </section>
 
-      {/* Main section */}
-      <main className="py-3">
-        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
-          <header className="mb-6 ml-0 md:ml-4 lg:ml-8">
-            <h1 className="text-2xl md:text-3xl font-bold text-black leading-tight px-4 md:px-0">
-              УЗИ в клинике «<span className="italic">Альтамед-с</span>» в Голицино
-            </h1>
-            <p className="text-gray-600 mt-2 px-4 md:px-0 text-sm md:text-base">
-              Современная ультразвуковая диагностика на оборудовании экспертного класса в Голицино
-            </p>
-          </header>
-
-          {/* Banner */}
-          <div className="mb-8">
-            <div className="block md:hidden w-full h-[300px] flex flex-col rounded-[20px] overflow-hidden shadow-md mx-auto">
-              <div className="h-[220px] bg-[#2C83A7] relative overflow-hidden">
-                <div className="w-full h-full relative">
-                  <img
-                    src="/images/services/yzi%20new.png"
-                    alt="УЗИ в Голицино"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </div>
-              <div className="bg-white p-4 flex flex-col justify-between items-start gap-3">
-                <div className="text-black font-medium text-sm">Ультразвуковая диагностика</div>
-                <Link 
-                  href="https://reg.altamed-golitsino.ru/" target="_blank" rel="noopener noreferrer" 
-                  className="bg-[#2C83A7] text-white rounded-full flex items-center justify-center w-full h-[46px] text-sm hover:bg-[#267399] transition-colors"
-                >
-                  Записаться
-                  <svg className="w-5 h-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </Link>
+      <section className="py-8">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+          <div className="flex flex-col md:flex-row gap-6 items-center">
+            <div className="w-full md:w-1/2">
+              <div className="relative w-full aspect-square max-w-md mx-auto rounded-full overflow-hidden">
+                <Image
+                  src="/images/documents/ultrazvukovoe-obsledovanie-uzi_3.jpg"
+                  alt="УЗИ в Альтамед Голицино"
+                  fill
+                  className="object-cover"
+                />
               </div>
             </div>
-            <div className="hidden md:block h-[445px] bg-[#2C83A7] relative overflow-hidden rounded-[20px] shadow-lg">
-              <div className="w-full h-full relative">
-                <img
-                  src="/images/services/yzi%20new.png"
-                  alt="УЗИ в Голицино"
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-transparent"></div>
-              </div>
-              <div className="absolute inset-0 flex flex-col justify-center items-start p-8 md:p-12 text-black">
-                <h2 className="text-2xl md:text-4xl font-bold mb-4">УЗИ в Голицино</h2>
-                <p className="text-lg md:text-xl mb-6 max-w-md">Современная безопасная диагностика</p>
-                <Link 
-                  href="https://reg.altamed-golitsino.ru/" target="_blank" rel="noopener noreferrer" 
-                  className="bg-[#2C83A7] text-white rounded-full px-8 py-3 font-medium hover:bg-[#267399] transition-colors"
-                >
-                  Записаться на УЗИ
-                </Link>
-              </div>
+            <div className="w-full md:w-1/2 text-gray-700 space-y-4">
+              <h2 className="text-2xl md:text-3xl font-bold text-black">УЗИ в Голицино</h2>
+              <p>
+                Ультразвуковое исследование (сонография) — один из наиболее современных, информативных и доступных методов инструментальной диагностики. В медицинском центре Альтамед Голицино УЗИ проводится на современном оборудовании экспертного класса. Несомненным преимуществом УЗИ является неинвазивность и отсутствие лучевой нагрузки.
+              </p>
+              <p>
+                Для изучения внутренних органов применяются звуковые волны сверхвысокой частоты. «Картинка» выводится на экран в режиме реального времени, что даёт возможность отслеживать динамические процессы, в частности движение крови в сосудах.
+              </p>
+              <p>
+                В медицинском центре Альтамед Голицино УЗИ проводится на современном оборудовании экспертного класса. Врачи-диагносты имеют большой опыт работы и проводят исследования по стандартизированным протоколам. Записаться на УЗИ можно через форму на сайте или по телефону клиники.
+              </p>
             </div>
           </div>
         </div>
-      </main>
+      </section>
+
+      <section className="py-8 bg-gray-50">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+          <h2 className="text-2xl md:text-3xl font-bold text-black mb-4">Ультразвуковое исследование — что это такое?</h2>
+          <p className="text-gray-700 leading-relaxed text-base md:text-lg mb-4">
+            Ультразвуковое исследование (сонография) – это один из наиболее современных, информативных и доступных методов инструментальной диагностики. Несомненным преимуществом УЗИ является его неинвазивность, т. е. в процессе исследования на кожу и другие ткани не оказывается повреждающего механического воздействия. Диагностика не связана с болевыми или иными неприятными для пациента ощущениями. В отличие от широко распространенной рентгенографии, при УЗИ не используются опасные для организма излучения.
+          </p>
+          <p className="text-gray-700 leading-relaxed text-base md:text-lg mb-4">
+            Для изучения внутренних органов применяются звуковые волны сверхвысокой частоты – ультразвук. Поскольку «картинка» выводится на экран в режиме реального времени, это дает возможность отслеживать ряд динамических процессов, происходящих в организме, в частности – движение крови в сосудах. С точки зрения физики ультразвуковое исследование базируется на пьезоэлектрическом эффекте.
+          </p>
+          <h3 className="text-xl font-bold text-black mt-8 mb-3">Принцип действия</h3>
+          <p className="text-gray-700 leading-relaxed text-base md:text-lg mb-4">
+            В качестве пьезоэлементов, которые попеременно работают в качестве передатчика и приемника сигнала, используются монокристаллы кварца или титаната бария. При воздействии на них высокочастотных звуковых колебаний на поверхности возникают заряды, а при подаче на кристаллы тока – механические вибрации, сопровождающиеся излучением ультразвука. Пьезоэлементы-трансдюсеры являются базовой составляющей диагностических аппаратов. Базовой характеристикой исследуемой среды является ее акустический импеданс — степень сопротивления ультразвуку.
+          </p>
+        </div>
+      </section>
+
+      <section className="py-8">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+          <h2 className="text-xl md:text-2xl font-bold text-black mb-4">Противопоказания и ограничения к УЗИ в Голицино</h2>
+          <p className="text-gray-700 leading-relaxed text-base md:text-lg mb-4">
+            Ультразвуковое исследование не имеет абсолютных противопоказаний. Метод безопасен для детей любого возраста, беременных и пожилых людей; его можно проводить многократно без вреда для здоровья. В отличие от рентгена и КТ, при УЗИ не используется ионизирующее излучение.
+          </p>
+          <p className="text-gray-700 leading-relaxed text-base md:text-lg mb-4">
+            Ограничения могут быть связаны с типом исследования: например, при УЗИ органов брюшной полости информативность снижается при выраженном метеоризме (газ в кишечнике плохо пропускает ультразвук), поэтому важна подготовка — диета и голод перед исследованием. При УЗИ органов малого таза трансабдоминальным доступом нужен наполненный мочевой пузырь; при трансвагинальном или трансректальном доступе подготовка не требуется. В медицинском центре Альтамед Голицино врачи подберут оптимальный вид исследования и дадут рекомендации по подготовке.
+          </p>
+        </div>
+      </section>
+
+      <section className="py-8">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+          <h2 className="text-2xl md:text-3xl font-bold text-black mb-6">Наименования обследований</h2>
+          <div className="overflow-x-auto">
+            <table className="w-full border-collapse border border-gray-300 text-sm md:text-base">
+              <thead>
+                <tr className="bg-emerald-600 text-white">
+                  <th className="border border-gray-300 px-3 py-2 text-left">Наименование обследования</th>
+                  <th className="border border-gray-300 px-3 py-2 text-left">Комплекс</th>
+                  <th className="border border-gray-300 px-3 py-2 text-left">Отдельный орган</th>
+                </tr>
+              </thead>
+              <tbody className="text-gray-700">
+                <tr className="bg-gray-50"><td className="border border-gray-300 px-3 py-2 font-medium">Органы брюшной полости</td><td className="border border-gray-300 px-3 py-2">— печень, желчный пузырь, поджелудочная железа, селезенка</td><td className="border border-gray-300 px-3 py-2">— печень, желчный пузырь, желчные протоки, поджелудочная железа, селезенка</td></tr>
+                <tr><td className="border border-gray-300 px-3 py-2">УЗИ органов брюшной полости с пробным завтраком</td><td className="border border-gray-300 px-3 py-2"></td><td className="border border-gray-300 px-3 py-2"></td></tr>
+                <tr className="bg-gray-50"><td className="border border-gray-300 px-3 py-2 font-medium">Органы мочеполовой системы (женские)</td><td className="border border-gray-300 px-3 py-2">— почки, мочевой пузырь, матка, придатки</td><td className="border border-gray-300 px-3 py-2">— почки, мочевой пузырь, матка, придатки</td></tr>
+                <tr><td className="border border-gray-300 px-3 py-2 font-medium">Органы мочеполовой системы (мужские)</td><td className="border border-gray-300 px-3 py-2">— почки, мочевой пузырь (+остаточная моча), простата, мошонка, семенные пузырьки</td><td className="border border-gray-300 px-3 py-2">— почки, мочевой пузырь с определением остаточной мочи, мочевой пузырь, простата, простата (чрезпузырно), простата (трансректально), ТРУЗИ, органы мошонки, семенные пузырьки, почки, надпочечники</td></tr>
+                <tr className="bg-gray-50"><td className="border border-gray-300 px-3 py-2 font-medium">Беременность</td><td className="border border-gray-300 px-3 py-2"></td><td className="border border-gray-300 px-3 py-2">— определение беременности до 10–15 недель; УЗИ оценка (фетометрия) плода &gt; 10 недель; фетометрия + УЗИ внутренних органов плода II–III триместр; мониторинг фолликулогенеза</td></tr>
+                <tr><td className="border border-gray-300 px-3 py-2 font-medium">УЗИ поверхностных структур</td><td className="border border-gray-300 px-3 py-2"></td><td className="border border-gray-300 px-3 py-2">— щитовидная железа, молочные железы, лимфатические узлы подкожные внутримышечные, образования</td></tr>
+                <tr className="bg-gray-50"><td className="border border-gray-300 px-3 py-2">Комплексное исследование 3-х зон</td><td className="border border-gray-300 px-3 py-2">(по желанию пациента)</td><td className="border border-gray-300 px-3 py-2"></td></tr>
+                <tr><td className="border border-gray-300 px-3 py-2">Комплексное исследование 4-х зон</td><td className="border border-gray-300 px-3 py-2">(по желанию пациента)</td><td className="border border-gray-300 px-3 py-2"></td></tr>
+                <tr className="bg-gray-50"><td className="border border-gray-300 px-3 py-2 font-medium">Полное комплексное исследование 5-ти зон</td><td className="border border-gray-300 px-3 py-2">— щитовидная железа, молочные железы, брюшная полость, мочевой пузырь, матка, придатки</td><td className="border border-gray-300 px-3 py-2"></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
 
       {/* Услуги УЗИ */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-8 bg-gray-50">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
               Услуги ультразвуковой диагностики
@@ -352,7 +358,7 @@ export default function UltrasoundPage() {
 
       {/* Описание */}
       <section className="py-12 bg-white">
-        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <h2 className="text-3xl font-bold text-gray-900 mb-8">УЗИ в Голицино: современная безопасная диагностика</h2>
           <div className="mb-8">
             <p className="text-gray-700 mb-4 leading-relaxed">
@@ -402,7 +408,7 @@ export default function UltrasoundPage() {
 
       {/* Показания */}
       <section className="py-12 bg-gray-50">
-        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <h2 className="text-3xl font-bold text-gray-900 mb-8">Показания к УЗИ в Голицино</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {indications.map((indication, idx) => (
@@ -419,7 +425,7 @@ export default function UltrasoundPage() {
 
       {/* Популярные УЗИ */}
       <section className="py-12 bg-white">
-        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Популярные УЗИ-исследования в Голицино</h2>
           <p className="text-gray-700 mb-6 text-center max-w-3xl mx-auto">
             В медицинском центре «Альтамед-С» в Голицино наиболее часто выполняются следующие виды ультразвуковой диагностики:
@@ -491,7 +497,7 @@ export default function UltrasoundPage() {
 
       {/* УЗИ детям */}
       <section className="py-12 bg-gray-50">
-        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <h2 className="text-3xl font-bold text-gray-900 mb-8">УЗИ детям в Голицино</h2>
           <div className="bg-white rounded-[20px] p-8 shadow-lg border-l-4 border-[#2C83A7]">
             <p className="text-gray-700 mb-4 leading-relaxed">
@@ -509,7 +515,7 @@ export default function UltrasoundPage() {
 
       {/* Подготовка к УЗИ */}
       <section className="py-12 bg-white">
-        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <h2 className="text-3xl font-bold text-gray-900 mb-8">Подготовка к УЗИ в Голицино</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="bg-white border-2 border-blue-100 rounded-[20px] p-6 shadow-md">
@@ -578,7 +584,7 @@ export default function UltrasoundPage() {
 
       {/* FAQ */}
       <section className="py-12 bg-gray-50">
-        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Часто задаваемые вопросы об УЗИ в Голицино</h2>
           <div className="space-y-4">
             {faqItems.map((item, index) => (

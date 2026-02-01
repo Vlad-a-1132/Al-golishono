@@ -1628,11 +1628,26 @@ const PERECHEN_IMAGES = [
   '/images/documents/perechen-rekomenduemyh-meropriyatiy-po-uluchsheniyu-usloviy-truda-altamed--golicyno-izobrazheniya-3.jpg',
 ];
 
+const LICENSE_IMAGES = [
+  '/images/documents/liz1.jpg',
+  '/images/documents/liz2.jpg',
+  '/images/documents/liz3.jpg',
+  '/images/documents/liz4.jpg',
+];
+
+const VYPISKA_IMAGES = [
+  '/images/documents/vp1.jpg',
+  '/images/documents/vp2.jpg',
+  '/images/documents/vp3.jpg',
+];
+
 function AboutPageContent() {
   const searchParams = useSearchParams();
   const [activeSection, setActiveSection] = useState('medical-org');
   const [soutSlideIndex, setSoutSlideIndex] = useState(0);
   const [perechenSlideIndex, setPerechenSlideIndex] = useState(0);
+  const [licenseSlideIndex, setLicenseSlideIndex] = useState(0);
+  const [vypiskaSlideIndex, setVypiskaSlideIndex] = useState(0);
   
   // Проверяем, есть ли якорь в URL
   useEffect(() => {
@@ -1798,7 +1813,7 @@ function AboutPageContent() {
                       <ul className="space-y-2 mb-4">
                         <li>
                           <strong>Выписка ЕГРЮЛ</strong>{' '}
-                          <a href="/images/documents/ЕГРЮЛ%20Альтамед%20Голицыно.pdf" target="_blank" rel="noopener noreferrer" className="text-emerald-600 hover:text-emerald-700 inline-flex items-center">
+                          <a href="/images/documents/ЕГРЮЛ%20Альтамед%20Голицыно%20(1).pdf" target="_blank" rel="noopener noreferrer" className="text-emerald-600 hover:text-emerald-700 inline-flex items-center">
                             Скачать файл
                             <svg className="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" /></svg>
                           </a>
@@ -1812,7 +1827,7 @@ function AboutPageContent() {
                         </li>
                         <li>
                           <strong>Лицензия</strong>{' '}
-                          <a href="/images/documents/licenziyaAG20.pdf" target="_blank" rel="noopener noreferrer" className="text-emerald-600 hover:text-emerald-700 inline-flex items-center">
+                          <a href="/images/documents/licenziyaAG20%20(1).pdf" target="_blank" rel="noopener noreferrer" className="text-emerald-600 hover:text-emerald-700 inline-flex items-center">
                             Скачать файл
                             <svg className="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" /></svg>
                           </a>
@@ -1856,7 +1871,7 @@ function AboutPageContent() {
                       <p className="font-semibold text-gray-900 mb-2">Выписка из реестра лицензий</p>
                       <p className="text-gray-700 mb-2">Выписка из реестра Альтамед-Голицыно</p>
                       <a
-                        href="/images/documents/_из_реестра_-Альтамед-Голицыно.pdf"
+                        href="/images/documents/_из_реестра_-Альтамед-Голицыно(1).pdf"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center text-emerald-600 hover:text-emerald-700 font-medium"
@@ -2317,66 +2332,98 @@ function AboutPageContent() {
               {activeSection === 'licenses' && (
                 <div className="bg-white rounded-lg shadow-md p-6">
                   <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Лицензии</h2>
-                  <div className="space-y-4">
-                    <div className="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition-colors">
-                      <a href="/images/documents/vypiska-egryul (1).pdf" target="_blank" className="flex items-center justify-between group">
-                        <span className="text-gray-700 group-hover:text-emerald-600">Выписка ЕГРЮЛ</span>
-                        <svg className="w-5 h-5 text-gray-400 group-hover:text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13" />
-                        </svg>
-                      </a>
-                    </div>
-
-                    <div className="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition-colors">
-                      <a href="/images/documents/ogrn (1).pdf" target="_blank" className="flex items-center justify-between group">
-                        <span className="text-gray-700 group-hover:text-emerald-600">Свидетельство о государственной регистрации</span>
-                        <svg className="w-5 h-5 text-gray-400 group-hover:text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13" />
-                        </svg>
-                      </a>
-                    </div>
-
-                    <div className="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition-colors">
-                      <a href="/images/documents/vypiska-iz-reestra-altamed-s-2025 (1).pdf" target="_blank" className="flex items-center justify-between group">
-                        <span className="text-gray-700 group-hover:text-emerald-600">Выписка из реестра Альтамед-С</span>
-                        <svg className="w-5 h-5 text-gray-400 group-hover:text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13" />
-                        </svg>
-                      </a>
-                    </div>
-
-                    <div className="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition-colors">
-                      <a href="/images/documents/sanepid-zaklyuchenie-krylova-23-ot-03.11.2023g (1).pdf" target="_blank" className="flex items-center justify-between group">
-                        <span className="text-gray-700 group-hover:text-emerald-600">Санитарно-эпидемиологическое заключение по радиационной безопасности</span>
-                        <svg className="w-5 h-5 text-gray-400 group-hover:text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13" />
-                        </svg>
-                      </a>
-          </div>
-          
-                    <div className="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition-colors">
-                      <a href="/images/documents/san_epid_zaklyuchenie_mozhajskoe_sh_141_rentgen (1).pdf" target="_blank" className="flex items-center justify-between group">
-                        <span className="text-gray-700 group-hover:text-emerald-600">Санитарно-эпидемиологическое заключение по радиационной безопасности</span>
-                        <svg className="w-5 h-5 text-gray-400 group-hover:text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13" />
-                        </svg>
-                      </a>
-                    </div>
-
-                    {/* Лицензия Медицинской деятельности */}
-                    <div className="mt-6 pt-6 border-t border-gray-200">
-                      <h3 className="text-xl font-semibold text-gray-800 mb-4">Лицензия Медицинской деятельности</h3>
+                  <div className="space-y-6">
+                    {/* Ссылки на документы */}
+                    <div className="space-y-3">
                       <div className="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition-colors">
-                        <a href="/images/documents/med deatlenost.pdf" target="_blank" className="flex items-center justify-between group">
-                          <span className="text-gray-700 group-hover:text-emerald-600">Лицензия на осуществление медицинской деятельности</span>
-                          <svg className="w-5 h-5 text-gray-400 group-hover:text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13" />
+                        <a href="/images/documents/licenziyaAG20%20(1).pdf" target="_blank" rel="noopener noreferrer" className="flex items-center justify-between group">
+                          <span className="text-gray-700 group-hover:text-emerald-600">Лицензия</span>
+                          <span className="text-emerald-600 text-sm">Скачать файл</span>
+                          <svg className="w-5 h-5 text-gray-400 group-hover:text-emerald-600 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                          </svg>
+                        </a>
+                      </div>
+                      <div className="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition-colors">
+                        <a href="/images/documents/svidetelstvo-o-gosregistracii-altamed-golicyno%20(1).jpg" target="_blank" rel="noopener noreferrer" className="flex items-center justify-between group">
+                          <span className="text-gray-700 group-hover:text-emerald-600">Свидетельство о государственной регистрации</span>
+                          <span className="text-emerald-600 text-sm">Скачать файл</span>
+                          <svg className="w-5 h-5 text-gray-400 group-hover:text-emerald-600 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                          </svg>
+                        </a>
+                      </div>
+                      <div className="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition-colors">
+                        <a href="/images/documents/ЕГРЮЛ%20Альтамед%20Голицыно%20(1).pdf" target="_blank" rel="noopener noreferrer" className="flex items-center justify-between group">
+                          <span className="text-gray-700 group-hover:text-emerald-600">Выписка ЕГРЮЛ</span>
+                          <span className="text-emerald-600 text-sm">Скачать файл</span>
+                          <svg className="w-5 h-5 text-gray-400 group-hover:text-emerald-600 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
                           </svg>
                         </a>
                       </div>
                     </div>
+
+                    {/* Слайдер — страницы лицензии (liz1–liz4) */}
+                    <div className="pt-4 border-t border-gray-200">
+                      <h3 className="text-lg font-semibold text-gray-900 mb-4">Лицензия на осуществление медицинской деятельности</h3>
+                      <div className="relative max-w-3xl">
+                        <div className="rounded-lg overflow-hidden shadow-md bg-gray-100">
+                          <Image
+                            src={LICENSE_IMAGES[licenseSlideIndex]}
+                            alt={`Лицензия, страница ${licenseSlideIndex + 1} из ${LICENSE_IMAGES.length}`}
+                            width={800}
+                            height={1100}
+                            className="w-full h-auto object-contain"
+                          />
+                        </div>
+                        <button type="button" onClick={() => setLicenseSlideIndex((i) => (i === 0 ? LICENSE_IMAGES.length - 1 : i - 1))} className="absolute left-2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/90 shadow-md flex items-center justify-center text-gray-700 hover:bg-white transition-colors" aria-label="Предыдущее"> <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" /></svg> </button>
+                        <button type="button" onClick={() => setLicenseSlideIndex((i) => (i === LICENSE_IMAGES.length - 1 ? 0 : i + 1))} className="absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/90 shadow-md flex items-center justify-center text-gray-700 hover:bg-white transition-colors" aria-label="Следующее"> <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg> </button>
+                        <div className="flex justify-center gap-2 mt-3">
+                          {LICENSE_IMAGES.map((_, idx) => (
+                            <button key={idx} type="button" onClick={() => setLicenseSlideIndex(idx)} className={`w-2.5 h-2.5 rounded-full transition-colors ${idx === licenseSlideIndex ? 'bg-emerald-500' : 'bg-gray-300 hover:bg-gray-400'}`} aria-label={`Страница ${idx + 1}`} />
+                          ))}
+                        </div>
+                        <p className="text-center text-sm text-gray-500 mt-1">{licenseSlideIndex + 1} / {LICENSE_IMAGES.length}</p>
+                      </div>
+                    </div>
+
+                    {/* Выписка из реестра лицензий — слайдер vp1, vp2, vp3 */}
+                    <div className="pt-6 border-t border-gray-200">
+                      <h3 className="text-lg font-semibold text-gray-900 mb-4">Выписка из реестра лицензий</h3>
+                      <div className="relative max-w-3xl">
+                        <div className="rounded-lg overflow-hidden shadow-md bg-gray-100">
+                          <Image
+                            src={VYPISKA_IMAGES[vypiskaSlideIndex]}
+                            alt={`Выписка из реестра лицензий, страница ${vypiskaSlideIndex + 1} из ${VYPISKA_IMAGES.length}`}
+                            width={800}
+                            height={1100}
+                            className="w-full h-auto object-contain"
+                          />
+                        </div>
+                        <button type="button" onClick={() => setVypiskaSlideIndex((i) => (i === 0 ? VYPISKA_IMAGES.length - 1 : i - 1))} className="absolute left-2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/90 shadow-md flex items-center justify-center text-gray-700 hover:bg-white transition-colors" aria-label="Предыдущее"> <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" /></svg> </button>
+                        <button type="button" onClick={() => setVypiskaSlideIndex((i) => (i === VYPISKA_IMAGES.length - 1 ? 0 : i + 1))} className="absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/90 shadow-md flex items-center justify-center text-gray-700 hover:bg-white transition-colors" aria-label="Следующее"> <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg> </button>
+                        <div className="flex justify-center gap-2 mt-3">
+                          {VYPISKA_IMAGES.map((_, idx) => (
+                            <button key={idx} type="button" onClick={() => setVypiskaSlideIndex(idx)} className={`w-2.5 h-2.5 rounded-full transition-colors ${idx === vypiskaSlideIndex ? 'bg-emerald-500' : 'bg-gray-300 hover:bg-gray-400'}`} aria-label={`Страница ${idx + 1}`} />
+                          ))}
+                        </div>
+                        <p className="text-center text-sm text-gray-500 mt-1">{vypiskaSlideIndex + 1} / {VYPISKA_IMAGES.length}</p>
+                      </div>
+                    </div>
+
+                    {/* Выписка из реестра Альтамед-Голицыно */}
+                    <div className="pt-6 border-t border-gray-200">
+                      <h3 className="text-lg font-semibold text-gray-900 mb-3">Выписка из реестра Альтамед-Голицыно</h3>
+                      <a href="/images/documents/_из_реестра_-Альтамед-Голицыно(1).pdf" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-emerald-600 hover:text-emerald-700 font-medium">
+                        Скачать файл
+                        <svg className="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                        </svg>
+                      </a>
+                    </div>
                   </div>
-              </div>
+                </div>
               )}
 
               {/* Контакты контролирующих органов */}

@@ -130,7 +130,7 @@ export default function Home() {
       image: "/images/yslugi/implant.webp"
     },
     {
-      title: "Скидки на анализы до 25%",
+      title: "Скидки на анализы! Пн, ср, пт — 10%, Вс — 15%",
       buttonText: "Подробнее",
       buttonLink: "/promo/promo-4",
       buttonColor: "#13AB7B",
@@ -1168,12 +1168,12 @@ export default function Home() {
           <div className="md:hidden px-4">
             <div className="flex flex-col gap-4">
               {/* Блок "Скидки на анализы!" */}
-              <Link href="/promo" className="bg-[#DAF2FF] rounded-[20px] p-5 h-auto min-h-[160px] flex flex-col justify-between">
+              <Link href="/promo/promo-4" className="bg-[#DAF2FF] rounded-[20px] p-5 h-auto min-h-[160px] flex flex-col justify-between">
                 <div className="flex-1 flex flex-col justify-between">
                   <div>
                     <h3 className="text-xl font-bold mb-2">Скидки на анализы!</h3>
-                    <p className="text-base text-gray-700 mb-1">Понедельник, среда, пятница - 10%</p>
-                    <p className="text-base text-gray-700">Воскресенье - 15%</p>
+                    <p className="text-base text-gray-700 mb-1">Понедельник, среда, пятница — 10%</p>
+                    <p className="text-base text-gray-700">Воскресенье — 15%</p>
                   </div>
                 </div>
                 <div className="flex items-center justify-end mt-4">
@@ -1196,11 +1196,11 @@ export default function Home() {
                 </div>
               </Link>
 
-              {/* Блок "Скидки на КТ до 25%" */}
-              <Link href="/promo" className="bg-[#FFF6C1] rounded-[20px] p-5 h-auto min-h-[140px] flex flex-col justify-between">
+              {/* Блок "Имплантация зубов" */}
+              <Link href="/promo/promo-3" className="bg-[#FFF6C1] rounded-[20px] p-5 h-auto min-h-[140px] flex flex-col justify-between">
                 <div>
-                  <h3 className="text-xl font-bold mb-2">Скидки на КТ до 25%</h3>
-                  <p className="text-base text-gray-700">для взрослых и детей</p>
+                  <h3 className="text-xl font-bold mb-2">Имплантация зубов</h3>
+                  <p className="text-base text-gray-700">Скидка 30% — цена: 41160 ₽ (было 58800 ₽)</p>
                 </div>
                 <div className="flex items-center justify-end mt-4">
                   <svg className="w-5 h-5 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -1219,13 +1219,13 @@ export default function Home() {
           {/* Десктопная версия - оригинальные блоки */}
           <div className="hidden md:flex flex-col lg:flex-row gap-6 justify-center max-w-[1300px] mx-auto px-4 lg:px-0">
             {/* Левый большой блок */}
-            <Link href="/promo" className="bg-[#DAF2FF] rounded-[20px] w-full lg:w-[593px] h-[300px] md:h-[374px] flex flex-shrink-0 relative overflow-hidden cursor-pointer">
+            <Link href="/promo/promo-4" className="bg-[#DAF2FF] rounded-[20px] w-full lg:w-[593px] h-[300px] md:h-[374px] flex flex-shrink-0 relative overflow-hidden cursor-pointer">
               <div className="p-6 md:p-8 flex flex-col justify-between z-10 w-full lg:w-[60%]">
                 <div>
                   <h3 className="text-2xl md:text-3xl font-bold mb-4">Скидки на анализы!</h3>
                   <div className="text-black text-sm md:text-base">
-                    <p>Понедельник, среда, пятница - 10%</p>
-                    <p>Воскресенье - 15%</p>
+                    <p>Понедельник, среда, пятница — 10%</p>
+                    <p>Воскресенье — 15%</p>
                   </div>
                 </div>
                 
@@ -1273,26 +1273,17 @@ export default function Home() {
               
               {/* Нижний ряд */}
               <div className="flex flex-col md:flex-row gap-4 md:gap-6">
-                {/* Блок 4 */}
-                <Link href="/promo" className="bg-[#FFF6C1] rounded-[20px] w-full md:w-full h-[175px] p-4 md:p-6 flex flex-col items-center justify-center relative overflow-hidden cursor-pointer">
+                {/* Блок 4 — Имплантация зубов */}
+                <Link href="/promo/promo-3" className="bg-[#FFF6C1] rounded-[20px] w-full md:w-full h-[175px] p-4 md:p-6 flex flex-col items-center justify-center relative overflow-hidden cursor-pointer">
                   <div className="text-center mb-4 z-10">
                     <h3 className="text-lg md:text-2xl font-bold mb-2 text-gray-900">
-                      Скидки на КТ до 25%<br />для взрослых и детей
+                      Имплантация зубов
                     </h3>
+                    <p className="text-gray-700 text-sm md:text-base">Скидка 30% — цена: 41160 ₽ (было 58800 ₽)</p>
                   </div>
                   
                   <div className="bg-white text-gray-900 rounded-full px-6 md:px-8 py-2 md:py-3 text-sm md:text-base font-semibold shadow-md hover:shadow-lg hover:bg-gray-50 transition-all duration-200 z-10">
                     Подробнее
-                  </div>
-                  
-                  <div className="hidden md:block absolute right-0 top-1/2 transform -translate-y-1/2">
-                    <Image
-                      src="/images/icons/promoKT.png" 
-                      alt="КТ сканирование" 
-                      width={180} 
-                      height={80}
-                      className="object-contain"
-                    />
                   </div>
                 </Link>
               </div>

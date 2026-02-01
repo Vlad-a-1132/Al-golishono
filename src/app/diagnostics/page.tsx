@@ -17,60 +17,46 @@ export default function DiagnosticsPage() {
 
   const diagnosticsServices = [
     {
-      id: 'hardware-diagnostics',
-      title: 'Аппаратная диагностика',
-      description: 'Современные методы инструментальной диагностики для точной постановки диагноза',
+      id: 'ultrasound',
+      title: 'Ультразвуковое обследование (УЗИ)',
+      description: 'Информативный и безопасный метод инструментальной диагностики органов и систем',
+      image: '/images/documents/ultrazvukovoe-obsledovanie-uzi_3.jpg',
+      link: '/services/ultrasound'
+    },
+    {
+      id: 'uzi-serdca',
+      title: 'УЗИ сердца',
+      description: 'Эхокардиография для оценки структуры и функции сердца',
       image: '/images/yslugi/Hardware diagnostics.webp',
-      link: '/services/hardware-diagnostics'
+      link: '/services/uzi-serdca'
     },
     {
       id: 'lab-tests',
-      title: 'Лабораторные анализы',
-      description: 'Полный спектр лабораторных исследований для комплексной диагностики',
+      title: 'Лабораторные исследования',
+      description: 'Полный спектр лабораторных анализов для комплексной диагностики',
       image: '/images/yslugi/Laboratory tests.webp',
       link: '/services/lab-tests'
     },
     {
-      id: 'pregnancy-screening',
-      title: 'Скрининг при беременности',
-      description: 'Комплексное обследование для будущих мам на разных сроках беременности',
-      image: '/images/services/Screenshot_1835.png',
-      link: '/services/pregnancy-screening'
-    },
-    {
-      id: 'ultrasound',
-      title: 'УЗИ Голицино',
-      description: 'УЗИ в Голицино: ультразвуковая диагностика органов и систем в Альтамед Голицино',
-      image: '/images/services/yzi%20new.png',
-      link: '/services/uzi-golitsino'
-    },
-    {
-      id: 'ct',
-      title: 'КТ',
-      description: 'Компьютерная томография для детальной визуализации внутренних органов',
-      image: '/images/yslugi/KT.webp',
-      link: '/services/ct'
-    },
-    {
-      id: 'endoscopy',
-      title: 'Эндоскопия',
-      description: 'Исследование внутренних органов с помощью эндоскопических методов',
-      image: '/images/services/Screenshot_1831.png',
-      link: '/services/endoscopy'
-    },
-    {
-      id: 'xray',
-      title: 'Рентген',
-      description: 'Рентгенографические исследования различных органов и систем',
-      image: '/images/services/Screenshot_1830.png',
-      link: '/services/xray'
-    },
-    {
-      id: 'functional-diagnostics',
-      title: 'Функциональная диагностика',
-      description: 'Оценка функционального состояния органов и систем организма',
+      id: 'ekg',
+      title: 'Снятие электрокардиограммы (ЭКГ)',
+      description: 'Регистрация электрической активности сердца для диагностики',
       image: '/images/services/Screenshot_1832.png',
-      link: '/services/functional-diagnostics'
+      link: '/services/ekg'
+    },
+    {
+      id: 'sutochnoe-monitorirovanie-ad',
+      title: 'Суточное мониторирование артериального давления',
+      description: 'Непрерывная регистрация АД в течение 24 часов в условиях обычной активности',
+      image: '/images/services/Screenshot_1832.png',
+      link: '/services/sutochnoe-monitorirovanie-ad'
+    },
+    {
+      id: 'holter',
+      title: 'Холтерское мониторирование электрокардиограммы',
+      description: 'Суточная запись ЭКГ для выявления нарушений ритма и ишемии',
+      image: '/images/services/Screenshot_1832.png',
+      link: '/services/holter'
     }
   ];
 
@@ -480,35 +466,19 @@ export default function DiagnosticsPage() {
       {/* Popular diagnostic studies */}
       <section className="py-12 bg-gray-50">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
-          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Популярные диагностические исследования в Альтамед Голицино</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">УЗИ внутренних органов</h3>
-              <p className="text-gray-700 leading-relaxed mb-4">
-                Ультразвуковое исследование органов брюшной полости (печень, желчный пузырь, поджелудочная железа, селезенка, почки) — одно из самых востребованных исследований в клинике «Альтамед Голицино». Безопасный, быстрый и информативный метод диагностики. В Альтамед Голицино УЗИ проводится на современных аппаратах экспертного класса.
-              </p>
-              <Link href="/services/uzi-golitsino" className="text-blue-600 hover:text-blue-700 font-medium">
-                Подробнее об УЗИ →
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Диагностические исследования в Альтамед Голицино</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {diagnosticsServices.map((service) => (
+              <Link key={service.id} href={service.link} className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100 hover:shadow-lg transition-shadow block">
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">{service.title}</h3>
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  {service.description}
+                </p>
+                <span className="text-blue-600 hover:text-blue-700 font-medium">
+                  Подробнее →
+                </span>
               </Link>
-            </div>
-            <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Компьютерная томография</h3>
-              <p className="text-gray-700 leading-relaxed mb-4">
-                КТ с контрастированием и без для точной визуализации внутренних органов, сосудов, суставов. В клинике «Альтамед Голицино» КТ проводится на современном мультиспиральном томографе с минимальной лучевой нагрузкой. Высокое качество изображений позволяет выявлять патологии на ранних стадиях.
-              </p>
-              <Link href="/services/ct" className="text-blue-600 hover:text-blue-700 font-medium">
-                Подробнее о КТ →
-              </Link>
-            </div>
-            <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Эндоскопические исследования</h3>
-              <p className="text-gray-700 leading-relaxed mb-4">
-                Гастроскопия и колоноскопия под седацией — комфортное исследование ЖКТ с биопсией. Видеоэндоскопы экспертного класса в клинике «Альтамед Голицино» обеспечивают высокую четкость изображения и точную диагностику. Все процедуры проводятся опытными эндоскопистами.
-              </p>
-              <Link href="/services/endoscopy" className="text-blue-600 hover:text-blue-700 font-medium">
-                Подробнее об эндоскопии →
-              </Link>
-            </div>
+            ))}
           </div>
         </div>
       </section>

@@ -1,27 +1,56 @@
 "use client";
 
 import Link from 'next/link';
+import Image from 'next/image';
 import AppointmentForm from '@/components/AppointmentForm';
 
 export default function LabTestsPage() {
   return (
-    <div className="flex flex-col min-h-full bg-white">
-      {/* Breadcrumbs */}
-      <section className="py-4">
-        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
-          <nav aria-label="Breadcrumb" className="flex items-center space-x-2 text-sm text-gray-600">
+    <div className="flex flex-col bg-white">
+      <section className="pt-4 md:pt-6">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+          <nav aria-label="Breadcrumb" className="flex items-center space-x-2 text-sm text-gray-600 mb-4">
             <Link href="/" className="hover:text-emerald-600">Главная</Link>
             <span>/</span>
-            <Link href="/services" className="hover:text-emerald-600">Услуги</Link>
+            <Link href="/diagnostics" className="hover:text-emerald-600">Диагностика</Link>
             <span>/</span>
-            <span className="text-gray-900">Лабораторные анализы</span>
+            <span className="text-gray-900">Лабораторные исследования</span>
           </nav>
+          <h1 className="text-2xl md:text-4xl font-bold text-black">
+            Лабораторные исследования в Голицино — анализы в медицинском центре Альтамед Голицино
+          </h1>
         </div>
       </section>
 
-      {/* Top row of quick links (as in example) */}
-      <section className="pb-4">
-        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
+      <section className="py-8">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+          <div className="flex flex-col md:flex-row gap-6 items-center">
+            <div className="w-full md:w-1/2">
+              <div className="relative w-full aspect-square max-w-md mx-auto rounded-full overflow-hidden">
+                <Image
+                  src="/images/yslugi/Laboratory tests.webp"
+                  alt="Лабораторные исследования в Альтамед Голицино"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            </div>
+            <div className="w-full md:w-1/2 text-gray-700 space-y-4">
+              <h2 className="text-2xl md:text-3xl font-bold text-black">Лабораторные анализы в Голицино</h2>
+              <p>
+                В медицинском центре Альтамед Голицино вы можете сдать полный спектр лабораторных анализов: общеклинические, биохимические, гормональные, иммунологические, микробиологические исследования. Современное оборудование и контроль качества обеспечивают точность результатов.
+              </p>
+              <p>
+                Результаты анализов готовы в кратчайшие сроки, доступны в электронном виде. Калькулятор анализов на сайте позволяет рассчитать стоимость комплекса исследований. Записаться на сдачу анализов можно через форму на сайте или по телефону клиники.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Top row of quick links */}
+      <section className="py-4 bg-gray-50">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {[
               { title: 'Подготовка к сдаче анализов' },
@@ -38,8 +67,8 @@ export default function LabTestsPage() {
       </section>
 
       {/* Calculator */}
-      <section className="py-2">
-        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
+      <section className="py-8">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="bg-[#FF8A26] rounded-[20px] overflow-hidden shadow-md">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
               <div className="p-6 md:p-8 text-white flex flex-col justify-between">
@@ -95,7 +124,7 @@ export default function LabTestsPage() {
 
       {/* Описание возможностей калькулятора анализов */}
       <section className="py-12 bg-white">
-        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="bg-gradient-to-br from-orange-50 to-amber-50 rounded-[20px] shadow-lg p-8 md:p-12">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 text-center">
               Калькулятор анализов в Голицино — удобный инструмент для поиска и расчета стоимости
@@ -271,7 +300,7 @@ export default function LabTestsPage() {
 
       {/* Категории анализов (4 карточки) */}
       <section className="py-8">
-        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
             {/* Онкология */}
             <div className="bg-white rounded-2xl border border-gray-200 p-5 shadow-sm">
@@ -316,7 +345,7 @@ export default function LabTestsPage() {
 
       {/* Виды лабораторных анализов и исследований */}
       <section className="py-10 bg-gray-50">
-        <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div>
               <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Виды лабораторных анализов и исследований</h2>

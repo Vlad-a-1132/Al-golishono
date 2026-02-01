@@ -61,19 +61,19 @@ export default function Footer() {
             <h3 className="text-lg font-semibold">Информация для пациентов</h3>
             <ul className="space-y-2">
               <li>
-                <a href="/images/documents/privacy.pdf" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-[#13AB7B] transition">
+                <a href="/policy" className="text-gray-300 hover:text-[#13AB7B] transition">
                   Политика конфиденциальности
                 </a>
               </li>
               <li>
-                <a href="/images/documents/terms.pdf" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-[#13AB7B] transition">
+                <a href="/privacy-policy" className="text-gray-300 hover:text-[#13AB7B] transition">
                   Пользовательское соглашение
                 </a>
               </li>
               <li>
-                <a href="/images/documents/personal_data.docx" download className="text-gray-300 hover:text-[#13AB7B] transition">
+                <Link href="/consent" className="text-gray-300 hover:text-[#13AB7B] transition">
                   Согласие на обработку персональных данных
-                </a>
+                </Link>
               </li>
               <li>
                 <a href="/images/documents/sogl.docx" download className="text-gray-300 hover:text-[#13AB7B] transition">
