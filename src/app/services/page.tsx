@@ -95,31 +95,6 @@ export default function ServicesPage() {
       hasSubmenu: true
     },
     {
-      id: 'dentistry-xray',
-      title: 'Рентгенология',
-      description: 'Рентген-диагностика в стоматологии',
-      icon: (
-        <svg className="w-6 h-6 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-3.866 0-7 1.343-7 3v8c0 1.657 3.134 3 7 3s7-1.343 7-3v-8c0-1.657-3.134-3-7-3z" />
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 11V8c0-1.657 3.134-3 7-3s7 1.343 7 3v3" />
-        </svg>
-      ),
-      category: 'diagnostics',
-      hasSubmenu: true
-    },
-    {
-      id: 'dentistry-ct',
-      title: 'КТ',
-      description: 'Компьютерная томография челюстно-лицевой области',
-      icon: (
-        <svg className="w-6 h-6 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
-        </svg>
-      ),
-      category: 'diagnostics',
-      hasSubmenu: true
-    },
-    {
       id: 'dentistry-consultation',
       title: 'Консультация стоматолога',
       description: 'Прием и консультация врача-стоматолога в Голицино',
@@ -531,7 +506,7 @@ export default function ServicesPage() {
     },
     {
       id: 'psihiatr-golitsino',
-      title: 'Психиатр Голицино',
+      title: 'Психиатр',
       description: 'Приём психиатра и психолога в Голицино',
       icon: (
         <svg className="w-6 h-6 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -543,7 +518,7 @@ export default function ServicesPage() {
     },
     {
       id: 'onkolog-golitsino',
-      title: 'Онколог Голицино',
+      title: 'Онколог',
       description: 'Приём врача-онколога и детского онколога в Голицино',
       icon: (
         <svg className="w-6 h-6 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -654,7 +629,7 @@ export default function ServicesPage() {
   ];
 
   // Стоматология - отдельная категория
-  const dentistryServices = ['implantation', 'caries-treatment', 'dentistry-consultation', 'dentistry-pediatric', 'dentistry-surgery', 'dentistry-prosthodontist', 'dentistry-orthodontist', 'periodontics', 'dentistry-hygiene', 'airflow-prophylaxis-master', 'dentistry-extraction', 'dentistry-emergency', 'dentistry-plastic', 'dentistry-aesthetic', 'dentistry-prosthetics', 'dentistry-cadcam', 'dentistry-constructions', 'dentistry-deposits', 'dentistry-braces', 'dentistry-removable-appliances', 'dentistry-fixed-appliances', 'dentistry-orthodontic-maintenance', 'dentistry-strengthening', 'dentistry-xray', 'dentistry-ct'];
+  const dentistryServices = ['implantation', 'caries-treatment', 'dentistry-consultation', 'dentistry-pediatric', 'dentistry-surgery', 'dentistry-prosthodontist', 'dentistry-orthodontist', 'periodontics', 'dentistry-hygiene', 'airflow-prophylaxis-master', 'dentistry-extraction', 'dentistry-emergency', 'dentistry-plastic', 'dentistry-aesthetic', 'dentistry-prosthetics', 'dentistry-cadcam', 'dentistry-constructions', 'dentistry-deposits', 'dentistry-braces', 'dentistry-removable-appliances', 'dentistry-fixed-appliances', 'dentistry-orthodontic-maintenance', 'dentistry-strengthening'];
 
   // Первый контейнер услуг
   const firstContainerData = medicalServices.filter(service => 
@@ -978,7 +953,7 @@ export default function ServicesPage() {
                 <Link key={service.id} href="/services/psihiatr-golitsino" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
                     <img 
                       src="/images/yslugi/terapiay 1.webp" 
-                      alt="Психиатр Голицино" 
+                      alt="Психиатр" 
                       className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
                     />
                     <div className="flex-1 px-2 md:px-4">
@@ -994,7 +969,7 @@ export default function ServicesPage() {
                 <Link key={service.id} href="/services/onkolog-golitsino" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
                     <img 
                       src="/images/yslugi/mammalogy.webp" 
-                      alt="Онколог Голицино" 
+                      alt="Онколог" 
                       className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
                     />
                     <div className="flex-1 px-2 md:px-4">
@@ -1665,46 +1640,6 @@ export default function ServicesPage() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
                 </Link>
-              ) : service.id === 'dentistry-xray' ? (
-                <Link
-                  key={service.id}
-                  href="/services/dentistry/xray-diagnostics"
-                  className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden"
-                >
-                  <img
-                    src="/images/dentisrty/Rentgenografiya.webp"
-                    alt="Рентгенология"
-                    className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
-                  />
-                  <div className="flex-1 px-2 md:px-4">
-                    <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
-                      {service.title}
-                    </h3>
-                  </div>
-                  <svg className="w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-white group-hover:bg-emerald-500 rounded-full p-1 transition-all duration-300 flex-shrink-0 mr-2 md:mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </Link>
-              ) : service.id === 'dentistry-ct' ? (
-                <Link
-                  key={service.id}
-                  href="/services/dentistry/ct"
-                  className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden"
-                >
-                  <img
-                    src="/images/dentisrty/kt stomatologu.webp"
-                    alt="КТ"
-                    className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
-                  />
-                  <div className="flex-1 px-2 md:px-4">
-                    <h3 className="text-xs md:text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
-                      {service.title}
-                    </h3>
-                  </div>
-                  <svg className="w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-white group-hover:bg-emerald-500 rounded-full p-1 transition-all duration-300 flex-shrink-0 mr-2 md:mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </Link>
               ) : null
             ))}
           </div>
@@ -1915,7 +1850,7 @@ export default function ServicesPage() {
                 <Link key={service.id} href="/services/psihiatr-golitsino" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
                   <img 
                     src="/images/yslugi/terapiay 1.webp" 
-                    alt="Психиатр Голицино" 
+                    alt="Психиатр" 
                     className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
                   />
                   <div className="flex-1 px-2 md:px-4">
@@ -1931,7 +1866,7 @@ export default function ServicesPage() {
                 <Link key={service.id} href="/services/onkolog-golitsino" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
                   <img 
                     src="/images/yslugi/mammalogy.webp" 
-                    alt="Онколог Голицино" 
+                    alt="Онколог" 
                     className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
                   />
                   <div className="flex-1 px-2 md:px-4">
