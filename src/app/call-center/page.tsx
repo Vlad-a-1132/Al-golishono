@@ -120,7 +120,7 @@ export default function CallCenterPage() {
       <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-teal-500 to-emerald-600">
         <div className="bg-white rounded-2xl shadow-2xl p-8 w-full max-w-md">
           <h1 className="text-2xl font-bold text-gray-800 mb-6 text-center">
-            Call Center - Альтамед-С
+            Call Center - Альтамед Голицино
           </h1>
           <form onSubmit={handleLogin} className="space-y-4">
             <div>
@@ -161,7 +161,7 @@ export default function CallCenterPage() {
           <div className="flex justify-between items-center">
             <div>
               <h1 className="text-3xl font-bold text-gray-800 mb-2">
-                Call Center - Альтамед-С
+                Call Center - Альтамед Голицино
               </h1>
               <div className="flex gap-4 text-sm text-gray-600">
                 <span>

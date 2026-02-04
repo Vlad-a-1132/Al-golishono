@@ -28,7 +28,7 @@ export default function MammologyPage() {
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <header className="mb-6 ml-0 md:ml-4 lg:ml-8">
             <h1 className="text-2xl md:text-3xl font-bold text-black leading-tight px-4 md:px-0">
-              Маммология в клинике «<span className="italic">Альтамед-с</span>»
+              Маммология в клинике «<span className="italic">Альтамед Голицино</span>»
             </h1>
             <p className="text-gray-600 mt-2 px-4 md:px-0 text-sm md:text-base">
               Диагностика и лечение заболеваний молочных желез у женщин всех возрастов в Голицино
@@ -100,10 +100,10 @@ export default function MammologyPage() {
         </div>
       </main>
 
-      {/* Почему Альтамед-С*/}
+      {/* Почему Альтамед Голицино*/}
       <section className="py-12 bg-gray-50">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
-          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Почему «Альтамед-С»?</h2>
+          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Почему «Альтамед Голицино»?</h2>
           <div className="md:hidden space-y-6">
             <div className="flex items-start gap-4"><div className="w-16 h-16 flex-shrink-0 relative"><img src="/images/yslugi/star 1.webp" alt="1" className="w-full h-full object-contain" /><span className="absolute inset-0 flex items-center justify-center text-white font-bold text-xl">1</span></div><p className="text-gray-700 font-medium text-left pt-2">Лечение в соответствии с мировыми клиническими рекомендациями</p></div>
             <div className="flex items-start gap-4"><div className="w-16 h-16 flex-shrink-0 relative"><img src="/images/yslugi/star 1.webp" alt="2" className="w-full h-full object-contain" /><span className="absolute inset-0 flex items-center justify-center text-white font-bold text-xl">2</span></div><p className="text-gray-700 font-medium text-left pt-2">Комплексная оценка заболевания и прогноза лечения</p></div>
@@ -197,14 +197,14 @@ export default function MammologyPage() {
                 </h2>
                 <p className="text-lg text-gray-600 mb-6">
                   Маммолог в Голицино - это медицинский специалист, который занимается диагностикой, лечением и профилактикой заболеваний молочных желез. 
-                  В клинике «Альтамед-с» в Голицино консультируют высококвалифицированные маммологи с многолетним стажем работы и глубокими знаниями в области заболеваний молочных желез. 
+                  В клинике «Альтамед Голицино» в Голицино консультируют высококвалифицированные маммологи с многолетним стажем работы и глубокими знаниями в области заболеваний молочных желез. 
                   Среди наших специалистов работают врачи высшей категории, кандидаты и доктора медицинских наук, активно участвующие в научно-исследовательской деятельности. 
-                  Для получения качественной маммологической помощи в Голицино и Московской области рекомендуем обратиться именно в «Альтамед-с».
+                  Для получения качественной маммологической помощи в Голицино и Московской области рекомендуем обратиться именно в «Альтамед Голицино».
                 </p>
                 <p className="text-lg text-gray-600 mb-6">
                   Консультация маммолога в Голицино требуется при появлении болей в молочных железах, уплотнений, выделений из сосков, изменений формы груди или других симптомов заболеваний молочных желез. 
                   Заболевания молочных желез требуют профессионального подхода, поэтому самостоятельная диагностика крайне нежелательна. 
-                  Наиболее эффективным решением станет обращение к опытному маммологу в «Альтамед-с» в Голицино. 
+                  Наиболее эффективным решением станет обращение к опытному маммологу в «Альтамед Голицино» в Голицино. 
                   Наши специалисты проведут комплексное обследование, включая УЗИ, маммографию, лабораторные анализы, установят точный диагноз, разработают индивидуальную схему терапии и дадут рекомендации по профилактике заболеваний молочных желез.
                 </p>
               </div>
@@ -249,7 +249,7 @@ export default function MammologyPage() {
                   <div className="px-6 pb-6" itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
                     <div className="space-y-4 text-gray-700" itemProp="text">
                       <p>
-                        В клинике «Альтамед-с» применяются современные методы диагностики заболеваний молочных желез:
+                        В клинике «Альтамед Голицино» применяются современные методы диагностики заболеваний молочных желез:
                       </p>
                       
                       <div className="space-y-4">
@@ -309,7 +309,7 @@ export default function MammologyPage() {
                   <div className="px-6 pb-6" itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
                     <div className="space-y-4 text-gray-700" itemProp="text">
                       <p>
-                        Лечение заболеваний молочных желез в «Альтамед-с» включает комплексный подход:
+                        Лечение заболеваний молочных желез в «Альтамед Голицино» включает комплексный подход:
                       </p>
                       
                       <div className="space-y-4">

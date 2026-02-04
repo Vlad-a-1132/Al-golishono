@@ -15,31 +15,31 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   
   if (!article) {
     return {
-      title: 'Статья не найдена - Альтамед-С',
+      title: 'Статья не найдена - Альтамед Голицино',
       description: 'Статья не найдена',
     };
   }
 
   // Создаем описание из содержимого статьи (первые 160 символов)
   const contentText = article.content?.replace(/<[^>]*>/g, '').substring(0, 160) || '';
-  const description = contentText ? `${contentText}...` : `Читайте статью "${article.title}" в блоге медицинского центра Альтамед-Св Одинцово. Полезная информация о здоровье и медицине.`;
+  const description = contentText ? `${contentText}...` : `Читайте статью "${article.title}" в блоге медицинского центра Альтамед Голицино. Полезная информация о здоровье и медицине.`;
 
   return {
-    title: `${article.title} - Блог | Медицинский центр Альтамед-Св Одинцово`,
+    title: `${article.title} - Блог | Медицинский центр Альтамед Голицино`,
     description: description,
     keywords: [
-      'медицинские статьи Одинцово',
-      'статьи о здоровье Одинцово',
-      'блог Альтамед-с',
+      'медицинские статьи Голицино',
+      'статьи о здоровье Голицино',
+      'блог Альтамед Голицино',
       article.title.toLowerCase(),
       'Московская область медицинские статьи',
-      'Одинцовский район статьи о здоровье'
+      'Голицино статьи о здоровье'
     ],
     openGraph: {
-      title: `${article.title} - Блог | Альтамед-с`,
+      title: `${article.title} - Блог | Альтамед Голицино`,
       description: description,
       url: `https://altamed-s.ru/blog/${id}`,
-      siteName: 'Альтамед-с',
+      siteName: 'Альтамед Голицино',
       images: article.image ? [
         {
           url: `https://altamed-s.ru${article.image}`,
@@ -72,7 +72,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ id: st
         <div className="container mx-auto px-4 py-4">
           <nav className="flex items-center justify-between">
             <Link href="/" className="text-2xl font-bold text-emerald-600">
-              Альтамед-С
+              Альтамед Голицино
             </Link>
             <div className="hidden md:flex space-x-8">
               <Link href="/services" className="text-gray-600 hover:text-emerald-600">Услуги</Link>

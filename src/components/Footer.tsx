@@ -13,7 +13,7 @@ export default function Footer() {
             <div className="flex items-center space-x-2">
               <Image 
                 src="/images/icons/altamed-golicyno3.png" 
-                alt="Альтамед-С" 
+                alt="Альтамед Голицино" 
                 width={140}
                 height={140}
                 className="object-contain"

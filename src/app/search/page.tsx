@@ -29,7 +29,7 @@ function SearchContent() {
     { title: 'Реабилитация', url: '/rehabilitation', description: 'Реабилитационные услуги', keywords: ['реабилитация', 'восстановление'] },
     { title: 'Акции', url: '/promo', description: 'Акции и специальные предложения', keywords: ['акция', 'скидка', 'промо'] },
     { title: 'Расписание', url: '/schedule', description: 'Расписание работы врачей', keywords: ['расписание', 'запись', 'время'] },
-    { title: 'О нас', url: '/about', description: 'О клинике Альтамед-С', keywords: ['о нас', 'клиника', 'информация'] },
+    { title: 'О нас', url: '/about', description: 'О клинике Альтамед Голицино', keywords: ['о нас', 'клиника', 'информация'] },
     { title: 'Контакты', url: '/contacts', description: 'Контактная информация', keywords: ['контакт', 'адрес', 'телефон'] },
     
     // Стоматология

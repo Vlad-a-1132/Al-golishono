@@ -345,7 +345,7 @@ function PatientInfoSection() {
                   <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
                     <div className="flex-1">
                       <p className="text-gray-700 mb-1 text-sm">
-                        АНТИКОРРУПЦИОННАЯ ПОЛИТИКА ОБЩЕСТВА С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ «АЛЬТАМЕД-С»
+                        АНТИКОРРУПЦИОННАЯ ПОЛИТИКА ОБЩЕСТВА С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ «АЛЬТАМЕД-ГОЛИЦЫНО»
                       </p>
                     </div>
                     <a 
@@ -409,7 +409,7 @@ function PatientInfoSection() {
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
                   <div className="flex-1">
                     <div className="text-gray-700 font-medium mb-1">Порядок оказания платных услуг</div>
-                    <div className="text-sm text-gray-600">Положение о порядке и условиях предоставления платных медицинских услуг в ООО «Альтамед-С»</div>
+                    <div className="text-sm text-gray-600">Положение о порядке и условиях предоставления платных медицинских услуг в ООО «Альтамед-Голицыно»</div>
                   </div>
                   <a 
                     href="/images/documents/pravila-predostavleniya-platnyh-medicinskih-uslug-2025.pdf" 
@@ -428,7 +428,7 @@ function PatientInfoSection() {
               <div className="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition-colors">
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
                   <div className="flex-1">
-                    <div className="text-gray-700 font-medium mb-1">Правила внутреннего распорядка для пациентов в ООО «Альтамед-С»</div>
+                    <div className="text-gray-700 font-medium mb-1">Правила внутреннего распорядка для пациентов в ООО «Альтамед-Голицыно»</div>
                   </div>
                   <a 
                     href="/images/documents/pravila-vnutrennego-rasporyadka-1.pdf" 
@@ -512,7 +512,7 @@ function PatientInfoSection() {
               <div className="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition-colors">
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
                   <div className="flex-1">
-                    <div className="text-gray-700 font-medium mb-1">Положение о порядке выдачи и использования дисконтных карт ООО «Альтамед-С»</div>
+                    <div className="text-gray-700 font-medium mb-1">Положение о порядке выдачи и использования дисконтных карт ООО «Альтамед-Голицыно»</div>
                   </div>
                   <a 
                     href="/images/documents/polozhenie-o-diskontnyh-kartah.pdf" 
@@ -531,7 +531,7 @@ function PatientInfoSection() {
               <div className="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition-colors">
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
                   <div className="flex-1">
-                    <div className="text-gray-700 font-medium mb-1">Инструкция по порядку заключения договора на оказание платных медицинских услуг в ООО «Альтамед-С»</div>
+                    <div className="text-gray-700 font-medium mb-1">Инструкция по порядку заключения договора на оказание платных медицинских услуг в ООО «Альтамед-Голицыно»</div>
                   </div>
                   <a 
                     href="/images/documents/polozheniya-o-garantii-nyh-obyazatelstvah-i-srokah-sluzhby-2025.pdf" 
@@ -626,7 +626,7 @@ function PatientInfoSection() {
               <div className="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition-colors">
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
                   <div className="flex-1">
-                    <div className="text-gray-700 font-medium mb-1">Памятка об основных правах пациентов в ООО «Альтамед-С»</div>
+                    <div className="text-gray-700 font-medium mb-1">Памятка об основных правах пациентов в ООО «Альтамед-Голицыно»</div>
                   </div>
                   <a 
                     href="/images/documents/pamyatka-o-pravakh-pacientov.pdf" 
@@ -780,7 +780,7 @@ function PatientInfoSection() {
               <div className="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition-colors">
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
                   <div className="flex-1">
-                    <div className="text-gray-700 font-medium mb-1">Отказ от видов медицинских вмешательств, включенных в Перечень определенных видов медицинских вмешательств, на которые граждане дают информированное добровольное согласие при выборе врача и медицинской организации для получения первичной медико-санитарной помощи в ООО «Альтамед-С»</div>
+                    <div className="text-gray-700 font-medium mb-1">Отказ от видов медицинских вмешательств, включенных в Перечень определенных видов медицинских вмешательств, на которые граждане дают информированное добровольное согласие при выборе врача и медицинской организации для получения первичной медико-санитарной помощи в ООО «Альтамед-Голицыно»</div>
                   </div>
                   <a 
                     href="/images/documents/list_of_failure.pdf" 
@@ -875,7 +875,7 @@ function PatientInfoSection() {
               <div className="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition-colors">
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
                   <div className="flex-1">
-                    <div className="text-gray-700 font-medium mb-1">Отказ от видов медицинских вмешательств, включенных в Перечень определенных видов медицинских вмешательств, на которые граждане дают информированное добровольное согласие при выборе врача и медицинской организации для получения первичной медико-санитарной помощи в ООО «Альтамед-С»</div>
+                    <div className="text-gray-700 font-medium mb-1">Отказ от видов медицинских вмешательств, включенных в Перечень определенных видов медицинских вмешательств, на которые граждане дают информированное добровольное согласие при выборе врача и медицинской организации для получения первичной медико-санитарной помощи в ООО «Альтамед-Голицыно»</div>
                   </div>
                   <a 
                     href="/images/documents/list_of_failure (1).pdf" 
@@ -1450,7 +1450,7 @@ function PatientInfoSection() {
           {isSoutOpen && (
             <div className="px-4 pb-4 border-t border-gray-200 space-y-3">
               <p className="text-gray-700 mt-4">
-                Сводные ведомости и планы мероприятий по специальной оценке условий труда в клинике «Альтамед-С».
+                Сводные ведомости и планы мероприятий по специальной оценке условий труда в клинике «Альтамед Голицино».
                 Документы доступны в формате PDF.
               </p>
               {[
@@ -1641,6 +1641,49 @@ const VYPISKA_IMAGES = [
   '/images/documents/vp3.jpg',
 ];
 
+const PD_DOCUMENTS: { title: string; file: string }[] = [
+  { title: 'Акт оценки возможного вреда', file: '+Акт оценки возможного вреда.docx' },
+  { title: 'Политика оператора в отношении обработки персональных данных НОВАЯ ДЛЯ МЕДИЦИНЫ', file: '+Политика оператора в отношении обработки персональных данных НОВАЯ ДЛЯ МЕДИЦИНЫ.docx' },
+  { title: 'ЖУРНАЛ проведения инструктажей по обработке пд', file: 'ЖУРНАЛ проведения инструктажей по обработке пд.docx' },
+  { title: 'ЖУРНАЛ учета запросов субъектов ПД', file: 'ЖУРНАЛ учета запросов субъектов ПД.docx' },
+  { title: 'ЖУРНАЛ учета съемный носителей', file: 'ЖУРНАЛ учета съемный носителей.docx' },
+  { title: 'Инструкция ответственного за безопасность пд в организации', file: 'инструкция ответственного за безопасность пд в организации.docx' },
+  { title: 'Инструкция ответственного за организацию обработки пд', file: 'инструкция ответственного за организацию обработки пд.docx' },
+  { title: 'Инструкция по антивирусной защите пд', file: 'инструкция по антивирусной защите пд.docx' },
+  { title: 'Инструкция по организации резервного копирования пд', file: 'инструкция по организации резервного копирования пд.docx' },
+  { title: 'Инструкция по осуществлению внутреннего контроля безопасности', file: 'инструкция по осуществлению внутреннего контроля безопасности.docx' },
+  { title: 'Инструкция по порядку уничтожения персональных данных', file: 'Инструкция по порядку уничтожения персональных данных.docx' },
+  { title: 'Инструкция по проведению инструктажа лиц, допущенных к работе с ПД', file: 'инструкция по проведению инструктажа лиц, допущенных к работе с ПДdocx.docx' },
+  { title: 'Инструкция по учёту и хранению съёмных носителей персональных данных', file: 'Инструкция по учёту и хранению съёмных носителей персональных данных.docx' },
+  { title: 'Инструкция по учету лиц допущенных к обработке пд', file: 'инструкция по учету лиц допущенных к обработке пд.docx' },
+  { title: 'Инструкция пользователя информационной системы пд', file: 'инструкция пользователя информаионной системы пд.docx.docx' },
+  { title: 'Инструкция пользователя информационной системы персональных данных при возникновении нештатных ситуаций', file: 'Инструкция пользователя информационной системы персональных данных при возникновении нештатных ситуаций.docx' },
+  { title: 'Образец. Выгрузка из журнала регистрации событий в информационной системе', file: 'Образец . Выгрузка из журнала регистрации событий в информационной системе.docx' },
+  { title: 'Обязательство о неразглашении пд', file: 'Обязательство о неразглашении пд.docx' },
+  { title: 'Положение об обработке персональных данных', file: 'Положение об обработке персональных данных.docx' },
+  { title: 'ПРАВИЛА ОБРАБОТКИ ПЕРСОНАЛЬНЫХ ДАННЫХ без использования средств автоматизации', file: 'ПРАВИЛА ОБРАБОТКИ ПЕРСОНАЛЬНЫХ ДАННЫХ без использования средств автоматизации.docx' },
+  { title: 'ПРАВИЛА оценки возможного вреда субъектам пд', file: 'ПРАВИЛА оценки возможного вреда субъектам пд.docx' },
+  { title: 'ПРАВИЛА РАССМОТРЕНИЯ ЗАПРОСОВ СУБЪЕКТОВ', file: 'ПРАВИЛА РАССМОТРЕНИЯ ЗАПРОСОВ СУБЪЕКТОВ.docx' },
+  { title: 'Приказ о назначении лица, ответственного за безопасность ПД', file: 'Приказ  о назначении лица, ответственного за безопасность ПД.docx' },
+  { title: 'Приказ о назначении лица, ответственного за обработку ПД', file: 'Приказ  о назначении лица, ответственного за обработку ПД.docx' },
+  { title: 'Приказ о создании комиссии по обработке пд и формы актов', file: 'Приказ о создании комиссии по обработке пд и формы актов.docx' },
+  { title: 'Приказ о создании комиссии по уничтожению ПД и АКТ об уничтожении', file: 'Приказ о создании комиссии по уничтожению ПД +АКТ об уничтожении.docx' },
+  { title: 'Приказ о хранении материальных носителей и допуска лиц', file: 'приказ о хранении материальных носителей и допуска лиц.docx' },
+  { title: 'Приказ об утверждении границ контролируемой территории', file: 'Приказ об утверждении границ контролируемой территории .docx' },
+  { title: 'Приказ об утверждении и введении в действие инструкций', file: 'Приказ об утверждении и введении в действие инструкций .docx' },
+  { title: 'Приказ об утверждении и введении в действие правил оператора', file: 'Приказ об утверждении и введении в действие правил оператора .docx' },
+  { title: 'Приказ об утверждении перечня информационных систем', file: 'приказ об утверждении перечня информационных систем.docx' },
+  { title: 'Приказ об утверждении перечня обрабатываемых данных', file: 'приказ об утверждении перечня обрабатываемых данных.docx' },
+  { title: 'Приказ об утверждении Политики и Положения по обработке персональных данных', file: 'приказ об утверждении Политики и Положения по обработке персональных данных.docx' },
+  { title: 'Приказ об утверждении форм согласий пд', file: 'Приказ об утверждении форм согласий пд .docx' },
+  { title: 'Согласие на обработку пд для сайта', file: 'согласие на обработку пд для сайта.docx' },
+  { title: 'Согласие на обработку персональных данных пациентов', file: 'согласие на обработку персональных данных пациентов.docx' },
+  { title: 'Согласие на обработку персональных данных работников', file: 'согласие на обработку персональных данных работников.docx' },
+  { title: 'Согласие на получение СМС', file: 'Согласие на получение СМС.docx' },
+  { title: 'Согласие на размещение ПД работников на сайте', file: 'Согласие на размещение ПД работников на сайте.docx' },
+  { title: 'Условия обработки ПД неограниченным кругом лиц', file: 'Усливия обработки ПД неограниченным кругом лиц.docx' },
+];
+
 function AboutPageContent() {
   const searchParams = useSearchParams();
   const [activeSection, setActiveSection] = useState('medical-org');
@@ -1654,6 +1697,8 @@ function AboutPageContent() {
     const section = searchParams.get('section');
     if (section === 'reviews') {
       setActiveSection('reviews');
+    } else if (section === 'personal-data') {
+      setActiveSection('personal-data');
     }
   }, [searchParams]);
   
@@ -1756,6 +1801,16 @@ function AboutPageContent() {
                     }`}
                   >
                     Информация для пациентов
+                  </button>
+                  <button
+                    onClick={() => setActiveSection('personal-data')}
+                    className={`w-full text-left px-4 py-3 rounded-lg transition-colors ${
+                      activeSection === 'personal-data'
+                        ? 'bg-emerald-500 text-white'
+                        : 'text-gray-700 hover:bg-gray-100'
+                    }`}
+                  >
+                    Персональные данные
                   </button>
                 </nav>
               </div>
@@ -2009,63 +2064,6 @@ function AboutPageContent() {
                   
                   {/* Карточки новостей */}
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
-                    {/* Новость 1 */}
-                    <div className="bg-gray-50 rounded-[20px] overflow-hidden">
-                      <div className="relative">
-                        <div className="w-full h-[180px] overflow-hidden">
-                          <Image
-                            src="/images/news/sert-ivanova-1200x831.jpg"
-                            alt="День донора в СМ-Клиника"
-                            width={400}
-                            height={180}
-                            className="w-full h-full object-cover"
-                          />
-                        </div>
-                        <div className="absolute top-2 right-2 bg-white px-2 py-1 rounded-md text-sm">
-                          06.05.2025
-                        </div>
-                      </div>
-                      <div className="p-4">
-                        <h3 className="font-bold text-lg mb-2 line-clamp-2">Иванова Ольга Юрьевна посетила XXVI Конгресс педиатров России</h3>
-                        <p className="text-sm text-gray-700 mb-4 line-clamp-3">
-                          ВРАЧ СУРДОЛОГ – ОТОРИНОЛАРИНГОЛОГ
-                          Участвовала в научной программе XXVI Конгресса педиатров России с международным участием
-                          «Актуальные проблемы педиатрии»
-                        </p>
-                        <button className="text-black font-medium">
-                          Подробнее
-                        </button>
-                      </div>
-                    </div>
-                    
-                    {/* Новость 2 */}
-                    <div className="bg-gray-50 rounded-[20px] overflow-hidden">
-                      <div className="relative">
-                        <div className="w-full h-[180px] overflow-hidden">
-                          <Image
-                            src="/images/news/Интервью с Еленой Будко.webp"
-                            alt="Интервью с Еленой Будко"
-                            width={400}
-                            height={180}
-                            className="w-full object-cover"
-                            style={{ height: '341px' }}
-                          />
-                        </div>
-                        <div className="absolute top-2 right-2 bg-white px-2 py-1 rounded-md text-sm">
-                          06.05.2025
-                        </div>
-                      </div>
-                      <div className="p-4">
-                        <h3 className="font-bold text-lg mb-2 line-clamp-2">Интервью с Еленой Будко</h3>
-                        <p className="text-sm text-gray-700 mb-4 line-clamp-3">
-                          Прежде всего, профессия врача – это большая ответственность за здоровье и жизнь другого человека. Грамотный врач должен непрерывно развиваться и расширять свои знания в различных областях медицины
-                        </p>
-                        <button className="text-black font-medium">
-                          Подробнее
-                        </button>
-                      </div>
-                    </div>
-                    
                     {/* Новость 3 */}
                     <div className="bg-gray-50 rounded-[20px] overflow-hidden">
                       <div className="relative">
@@ -2584,6 +2582,42 @@ function AboutPageContent() {
               {/* Информация для пациентов */}
               {activeSection === 'patient-info' && (
                 <PatientInfoSection />
+              )}
+
+              {/* Персональные данные */}
+              {activeSection === 'personal-data' && (
+                <div className="bg-white rounded-lg shadow-md p-6">
+                  <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Персональные данные</h2>
+                  <p className="text-gray-700 mb-6">
+                    Документы по обработке и защите персональных данных. Название документа можно скачать по ссылке.
+                  </p>
+                  <div className="space-y-4">
+                    {PD_DOCUMENTS.map((doc, index) => (
+                      <div
+                        key={index}
+                        className="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition-colors"
+                      >
+                        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+                          <div className="flex-1">
+                            <h3 className="text-gray-800 font-medium">{doc.title}</h3>
+                          </div>
+                          <a
+                            href={`/images/documents/PD/${encodeURIComponent(doc.file)}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            download
+                            className="inline-flex items-center text-emerald-600 hover:text-emerald-700 font-medium whitespace-nowrap text-sm"
+                          >
+                            Скачать файл
+                            <svg className="w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
               )}
             </main>
           </div>

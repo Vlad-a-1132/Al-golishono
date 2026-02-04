@@ -106,9 +106,9 @@ export default function SchedulePage() {
       name: "Абдуллаев Муртазаали Абдуллахович",
       specialty: "Стоматолог-терапевт",
       schedule: { 
+        Monday: { start: "10:00", end: "18:00" }, 
         Tuesday: { start: "10:00", end: "18:00" }, 
-        Wednesday: { start: "10:00", end: "18:00" }, 
-        Thursday: { start: "10:00", end: "18:00" }, 
+        Saturday: { start: "10:00", end: "18:00" }, 
         Sunday: { start: "10:00", end: "18:00" } 
       }
     },
@@ -116,7 +116,7 @@ export default function SchedulePage() {
       name: "Чернова Алла Валерьевна",
       specialty: "Стоматолог-терапевт",
       schedule: { 
-        Monday: { start: "11:00", end: "17:00" } 
+        Thursday: { start: "10:00", end: "17:00" } 
       }
     },
     {
@@ -214,7 +214,8 @@ export default function SchedulePage() {
       name: "Глуцкая Наталья Юрьевна",
       specialty: "Гастроэнтеролог, Гастроэнтеролог детский",
       schedule: { 
-        Tuesday: { start: "17:00", end: "19:00" } 
+        Tuesday: { start: "16:00", end: "19:00" }, 
+        Friday: { start: "16:00", end: "19:00" } 
       }
     },
     {

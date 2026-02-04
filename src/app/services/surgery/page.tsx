@@ -281,7 +281,7 @@ export default function SurgeryPage() {
         </div>
       </section>
 
-      {/* Почему Альтамед-С*/}
+      {/* Почему Альтамед Голицино */}
       <section className="py-12 bg-gray-50">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">

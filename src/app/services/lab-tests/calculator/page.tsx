@@ -152,7 +152,7 @@ export default function LabCalculatorPage() {
     header.style.alignItems = 'center';
     
     const clinicName = document.createElement('span');
-    clinicName.textContent = 'Альтамед-с';
+    clinicName.textContent = 'Альтамед Голицино';
     clinicName.style.fontSize = '24px';
     clinicName.style.fontWeight = 'bold';
     clinicName.style.color = '#10b981';

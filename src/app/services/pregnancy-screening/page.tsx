@@ -115,7 +115,7 @@ export default function PregnancyScreeningPage() {
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <header className="mb-6 ml-0 md:ml-4 lg:ml-8">
             <h1 className="text-2xl md:text-3xl font-bold text-black leading-tight px-4 md:px-0">
-              Скрининг при беременности в клинике «<span className="italic">Альтамед-с</span>»
+              Скрининг при беременности в клинике «<span className="italic">Альтамед Голицино</span>»
             </h1>
             <p className="text-gray-600 mt-2 px-4 md:px-0 text-sm md:text-base">
               Комплексное наблюдение беременности в Голицино
@@ -189,11 +189,11 @@ export default function PregnancyScreeningPage() {
         </div>
       </section>
 
-      {/* Почему Альтамед-С*/}
+      {/* Почему Альтамед Голицино*/}
       <section className="py-12">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">
-            Почему «Альтамед-С»?
+            Почему «Альтамед Голицино»?
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
