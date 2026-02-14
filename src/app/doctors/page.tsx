@@ -268,7 +268,7 @@ export default function DoctorsPage() {
                   {/* Location */}
                   <div className="px-4 mb-4 flex items-center text-sm text-gray-600">
                     <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
-                    Голицино
+                    Голицыно
                   </div>
 
                   {/* Action Button - always at bottom */}

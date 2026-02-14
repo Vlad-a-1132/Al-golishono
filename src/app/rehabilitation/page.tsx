@@ -51,7 +51,7 @@ export default function RehabilitationPage() {
     "Индивидуальный подбор методов реабилитации",
     "Опытные специалисты с многолетним стажем",
     "Современное оборудование экспертного класса",
-    "Удобное расположение в Голицино",
+    "Удобное расположение в Голицыно",
     "Мягкое воздействие без побочных эффектов"
   ];
 
@@ -71,7 +71,7 @@ export default function RehabilitationPage() {
   const faqItems = [
     {
       question: "Что включает в себя программа реабилитации?",
-      answer: "Программа реабилитации в клинике «Альтамед Голицино» включает комплексный подход: диагностику состояния пациента, индивидуальный подбор методов реабилитации, курс процедур с использованием современных методов (физиотерапия, массаж, остеопатия, психологическая поддержка), контроль эффективности и корректировку программы при необходимости."
+      answer: "Программа реабилитации в клинике «Альтамед Голицыно» включает комплексный подход: диагностику состояния пациента, индивидуальный подбор методов реабилитации, курс процедур с использованием современных методов (физиотерапия, массаж, остеопатия, психологическая поддержка), контроль эффективности и корректировку программы при необходимости."
     },
     {
       question: "Сколько длится курс реабилитации?",
@@ -79,7 +79,7 @@ export default function RehabilitationPage() {
     },
     {
       question: "Можно ли совмещать разные методы реабилитации?",
-      answer: "Да, в клинике «Альтамед Голицино» практикуется комплексный подход к реабилитации. Врач может назначить комбинацию различных методов: например, физиотерапию с массажем, остеопатию с психологической поддержкой, ударно-волновую терапию с лечебной физкультурой. Все методы подбираются индивидуально для максимальной эффективности."
+      answer: "Да, в клинике «Альтамед Голицыно» практикуется комплексный подход к реабилитации. Врач может назначить комбинацию различных методов: например, физиотерапию с массажем, остеопатию с психологической поддержкой, ударно-волновую терапию с лечебной физкультурой. Все методы подбираются индивидуально для максимальной эффективности."
     },
     {
       question: "Нужна ли подготовка к реабилитационным процедурам?",
@@ -124,7 +124,7 @@ export default function RehabilitationPage() {
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <header className="mb-6 ml-0 md:ml-4 lg:ml-8">
             <h1 className="text-2xl md:text-3xl font-bold text-black leading-tight px-4 md:px-0">
-              Реабилитация в клинике «<span className="italic">Альтамед Голицино</span>» — комплексное восстановление здоровья
+              Реабилитация в клинике «<span className="italic">Альтамед Голицыно</span>» — комплексное восстановление здоровья
             </h1>
             <p className="text-gray-600 mt-2 px-4 md:px-0 text-sm md:text-base">
               Комплексное восстановление здоровья с использованием современных методов реабилитации
@@ -138,7 +138,7 @@ export default function RehabilitationPage() {
                 <div className="w-full h-full relative">
                   <img
                     src="/images/yslugi/rehabilitation.webp"
-                    alt="Реабилитация в Альтамед Голицино"
+                    alt="Реабилитация в Альтамед Голицыно"
                     className="w-full h-full object-cover"
                     onError={(e) => {
                       (e.target as HTMLImageElement).src = '/images/yslugi/yrolog.webp';
@@ -163,7 +163,7 @@ export default function RehabilitationPage() {
               <div className="w-full h-full relative">
                 <img
                   src="/images/yslugi/rehabilitation.webp"
-                  alt="Реабилитация в Альтамед Голицино"
+                  alt="Реабилитация в Альтамед Голицыно"
                   className="w-full h-full object-cover"
                   onError={(e) => {
                     (e.target as HTMLImageElement).src = '/images/yslugi/yrolog.webp';
@@ -172,7 +172,7 @@ export default function RehabilitationPage() {
                 <div className="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-transparent"></div>
               </div>
               <div className="absolute inset-0 flex flex-col justify-center items-start p-8 md:p-12 text-black">
-                <h2 className="text-2xl md:text-4xl font-bold mb-4">Реабилитация в Голицино</h2>
+                <h2 className="text-2xl md:text-4xl font-bold mb-4">Реабилитация в Голицыно</h2>
                 <p className="text-lg md:text-xl mb-6 max-w-md">Комплексное восстановление здоровья</p>
                 <Link 
                   href="/appointments" 
@@ -194,7 +194,7 @@ export default function RehabilitationPage() {
               Направления реабилитации
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Полный спектр реабилитационных услуг в клинике «Альтамед Голицино»
+              Полный спектр реабилитационных услуг в клинике «Альтамед Голицыно»
             </p>
           </div>
 
@@ -237,19 +237,19 @@ export default function RehabilitationPage() {
       {/* Description */}
       <section className="py-12 bg-white">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">Реабилитация в Голицино: комплексное восстановление здоровья в Альтамед Голицино</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">Реабилитация в Голицыно: комплексное восстановление здоровья в Альтамед Голицыно</h2>
           <div className="mb-8">
             <p className="text-gray-700 mb-4 leading-relaxed text-base md:text-lg">
-              <strong>Реабилитация</strong> — это комплекс медицинских, психологических, социальных мероприятий, направленных на восстановление и поддержание здоровья человека после перенесенных заболеваний, травм, операций или при хронических состояниях. В медицинском центре «Альтамед Голицино» реабилитация проводится по современным протоколам с использованием передовых методов и технологий. Наши специалисты имеют многолетний опыт работы в области реабилитационной медицины и регулярно повышают свою квалификацию.
+              <strong>Реабилитация</strong> — это комплекс медицинских, психологических, социальных мероприятий, направленных на восстановление и поддержание здоровья человека после перенесенных заболеваний, травм, операций или при хронических состояниях. В медицинском центре «Альтамед Голицыно» реабилитация проводится по современным протоколам с использованием передовых методов и технологий. Наши специалисты имеют многолетний опыт работы в области реабилитационной медицины и регулярно повышают свою квалификацию.
             </p>
             <p className="text-gray-700 mb-4 leading-relaxed text-base md:text-lg">
-              Клиника «Альтамед Голицино» предлагает широкий спектр реабилитационных услуг: физиотерапию для восстановления функций опорно-двигательного аппарата, психологическую и психотерапевтическую помощь для решения эмоциональных и психических проблем, остеопатию для комплексного воздействия на организм, массаж и вакуумный массаж для улучшения кровообращения и лимфодренажа, биорезонансную терапию для безмедикаментозного лечения, ударно-волновую терапию для лечения заболеваний суставов и позвоночника, мануальную терапию для коррекции нарушений опорно-двигательного аппарата.
+              Клиника «Альтамед Голицыно» предлагает широкий спектр реабилитационных услуг: физиотерапию для восстановления функций опорно-двигательного аппарата, психологическую и психотерапевтическую помощь для решения эмоциональных и психических проблем, остеопатию для комплексного воздействия на организм, массаж и вакуумный массаж для улучшения кровообращения и лимфодренажа, биорезонансную терапию для безмедикаментозного лечения, ударно-волновую терапию для лечения заболеваний суставов и позвоночника, мануальную терапию для коррекции нарушений опорно-двигательного аппарата.
             </p>
             <p className="text-gray-700 mb-4 leading-relaxed text-base md:text-lg">
-              Отличительной особенностью реабилитации в клинике «Альтамед Голицино» является индивидуальный подход к каждому пациенту. Врач-реабилитолог проводит комплексное обследование, оценивает функциональное состояние, выявляет проблемы и составляет персональную программу восстановления. Реабилитация учитывает особенности пациента, его образ жизни, сопутствующие заболевания и цели лечения. В Альтамед Голицино используются только проверенные и эффективные методы реабилитации, которые доказали свою эффективность в клинической практике.
+              Отличительной особенностью реабилитации в клинике «Альтамед Голицыно» является индивидуальный подход к каждому пациенту. Врач-реабилитолог проводит комплексное обследование, оценивает функциональное состояние, выявляет проблемы и составляет персональную программу восстановления. Реабилитация учитывает особенности пациента, его образ жизни, сопутствующие заболевания и цели лечения. В Альтамед Голицыно используются только проверенные и эффективные методы реабилитации, которые доказали свою эффективность в клинической практике.
             </p>
             <div className="bg-purple-50 rounded-[20px] p-6 shadow-md border-l-4 border-purple-600">
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Принципы реабилитации в клинике «Альтамед Голицино»:</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Принципы реабилитации в клинике «Альтамед Голицыно»:</h3>
               <ul className="space-y-2 text-gray-700">
                 <li className="flex items-start">
                   <svg className="w-5 h-5 text-purple-600 mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -296,7 +296,7 @@ export default function RehabilitationPage() {
       {/* Indications */}
       <section className="py-12 bg-gray-50">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">Показания к реабилитации в Альтамед Голицино</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">Показания к реабилитации в Альтамед Голицыно</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {indications.map((indication, idx) => (
               <div key={idx} className="bg-white p-6 rounded-[20px] shadow-md hover:shadow-lg transition-shadow border border-gray-100">
@@ -313,7 +313,7 @@ export default function RehabilitationPage() {
       {/* Advantages */}
       <section className="py-12 bg-white">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
-          <h2 className="text-3xl font-bold text-gray-900 text-center mb-8">Преимущества реабилитации в клинике «Альтамед Голицино»</h2>
+          <h2 className="text-3xl font-bold text-gray-900 text-center mb-8">Преимущества реабилитации в клинике «Альтамед Голицыно»</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {advantages.map((advantage, idx) => (
               <div key={idx} className="bg-white p-6 rounded-[20px] shadow-md hover:shadow-lg transition-shadow border border-gray-100">
@@ -337,7 +337,7 @@ export default function RehabilitationPage() {
             <div className="bg-white rounded-[20px] p-8 shadow-lg border-l-4 border-purple-600">
               <h3 className="text-2xl font-semibold text-gray-900 mb-4">Виды реабилитации</h3>
               <p className="text-gray-700 mb-4 leading-relaxed">
-                Реабилитация в клинике «Альтамед Голицино» включает несколько основных направлений:
+                Реабилитация в клинике «Альтамед Голицыно» включает несколько основных направлений:
               </p>
               <ul className="space-y-3 text-gray-700">
                 <li className="flex items-start">
@@ -385,7 +385,7 @@ export default function RehabilitationPage() {
       {/* Rehabilitation Process */}
       <section className="py-12 bg-white">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">Как проходит реабилитация в Альтамед Голицино</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">Как проходит реабилитация в Альтамед Голицыно</h2>
           <div className="space-y-6">
             <div className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-[20px] p-6 md:p-8">
               <h3 className="text-xl font-semibold text-gray-900 mb-4">Этапы реабилитационного процесса</h3>
@@ -394,28 +394,28 @@ export default function RehabilitationPage() {
                   <div className="w-8 h-8 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold mr-4 flex-shrink-0">1</div>
                   <div>
                     <h4 className="font-semibold mb-2">Первичная консультация и диагностика</h4>
-                    <p className="text-base md:text-lg">Врач-реабилитолог клиники Альтамед Голицино проводит тщательное обследование пациента, изучает историю болезни, результаты анализов и инструментальных исследований. На основе полученных данных составляется индивидуальная программа реабилитации.</p>
+                    <p className="text-base md:text-lg">Врач-реабилитолог клиники Альтамед Голицыно проводит тщательное обследование пациента, изучает историю болезни, результаты анализов и инструментальных исследований. На основе полученных данных составляется индивидуальная программа реабилитации.</p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <div className="w-8 h-8 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold mr-4 flex-shrink-0">2</div>
                   <div>
                     <h4 className="font-semibold mb-2">Разработка программы реабилитации</h4>
-                    <p className="text-base md:text-lg">Специалисты Альтамед Голицино подбирают оптимальные методы реабилитации с учетом диагноза, возраста пациента, сопутствующих заболеваний и индивидуальных особенностей. Программа может включать различные комбинации методов для максимальной эффективности.</p>
+                    <p className="text-base md:text-lg">Специалисты Альтамед Голицыно подбирают оптимальные методы реабилитации с учетом диагноза, возраста пациента, сопутствующих заболеваний и индивидуальных особенностей. Программа может включать различные комбинации методов для максимальной эффективности.</p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <div className="w-8 h-8 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold mr-4 flex-shrink-0">3</div>
                   <div>
                     <h4 className="font-semibold mb-2">Проведение реабилитационных процедур</h4>
-                    <p className="text-base md:text-lg">Курс реабилитации в Альтамед Голицино проводится под постоянным контролем врача. Все процедуры выполняются опытными специалистами с использованием современного оборудования. Регулярно оценивается динамика восстановления и при необходимости корректируется программа.</p>
+                    <p className="text-base md:text-lg">Курс реабилитации в Альтамед Голицыно проводится под постоянным контролем врача. Все процедуры выполняются опытными специалистами с использованием современного оборудования. Регулярно оценивается динамика восстановления и при необходимости корректируется программа.</p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <div className="w-8 h-8 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold mr-4 flex-shrink-0">4</div>
                   <div>
                     <h4 className="font-semibold mb-2">Контроль результатов и поддержание эффекта</h4>
-                    <p className="text-base md:text-lg">После завершения основного курса реабилитации в Альтамед Голицино врач дает рекомендации по поддержанию достигнутого результата, профилактике рецидивов и дальнейшему укреплению здоровья. При необходимости назначаются поддерживающие процедуры.</p>
+                    <p className="text-base md:text-lg">После завершения основного курса реабилитации в Альтамед Голицыно врач дает рекомендации по поддержанию достигнутого результата, профилактике рецидивов и дальнейшему укреплению здоровья. При необходимости назначаются поддерживающие процедуры.</p>
                   </div>
                 </div>
               </div>
@@ -427,7 +427,7 @@ export default function RehabilitationPage() {
       {/* Methods of Rehabilitation */}
       <section className="py-12 bg-gray-50">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">Методы реабилитации в Альтамед Голицино</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">Методы реабилитации в Альтамед Голицыно</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
               <h3 className="text-xl font-semibold text-gray-900 mb-4">Физиотерапевтические методы</h3>
@@ -478,7 +478,7 @@ export default function RehabilitationPage() {
       {/* Why Choose Us */}
       <section className="py-12 bg-white">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
-          <h2 className="text-3xl font-bold text-gray-900 text-center mb-8">Почему выбирают реабилитацию в Альтамед Голицино</h2>
+          <h2 className="text-3xl font-bold text-gray-900 text-center mb-8">Почему выбирают реабилитацию в Альтамед Голицыно</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-[20px] p-6 shadow-md">
               <div className="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center mb-4">
@@ -487,7 +487,7 @@ export default function RehabilitationPage() {
                 </svg>
               </div>
               <h3 className="text-lg font-semibold mb-2">Опытные специалисты</h3>
-              <p className="text-gray-700">Врачи-реабилитологи Альтамед Голицино имеют многолетний опыт работы и регулярно повышают квалификацию</p>
+              <p className="text-gray-700">Врачи-реабилитологи Альтамед Голицыно имеют многолетний опыт работы и регулярно повышают квалификацию</p>
             </div>
             <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-[20px] p-6 shadow-md">
               <div className="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center mb-4">
@@ -514,7 +514,7 @@ export default function RehabilitationPage() {
       {/* FAQ */}
       <section className="py-12 bg-gray-50">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
-          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Часто задаваемые вопросы о реабилитации в Альтамед Голицино</h2>
+          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Часто задаваемые вопросы о реабилитации в Альтамед Голицыно</h2>
           <div className="space-y-4">
             {faqItems.map((item, index) => (
               <div key={index} className="bg-white rounded-[20px] shadow-md overflow-hidden border border-purple-100">

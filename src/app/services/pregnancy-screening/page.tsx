@@ -115,10 +115,10 @@ export default function PregnancyScreeningPage() {
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <header className="mb-6 ml-0 md:ml-4 lg:ml-8">
             <h1 className="text-2xl md:text-3xl font-bold text-black leading-tight px-4 md:px-0">
-              Скрининг при беременности в клинике «<span className="italic">Альтамед Голицино</span>»
+              Скрининг при беременности в клинике «<span className="italic">Альтамед Голицыно</span>»
             </h1>
             <p className="text-gray-600 mt-2 px-4 md:px-0 text-sm md:text-base">
-              Комплексное наблюдение беременности в Голицино
+              Комплексное наблюдение беременности в Голицыно
             </p>
           </header>
 
@@ -151,7 +151,7 @@ export default function PregnancyScreeningPage() {
               <div className="w-full h-full relative">
                 <img
                   src="/images/services/Screenshot_1835.png"
-                  alt="Скрининг при беременности в Голицино"
+                  alt="Скрининг при беременности в Голицыно"
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-transparent"></div>
@@ -189,11 +189,11 @@ export default function PregnancyScreeningPage() {
         </div>
       </section>
 
-      {/* Почему Альтамед Голицино*/}
+      {/* Почему Альтамед Голицыно*/}
       <section className="py-12">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">
-            Почему «Альтамед Голицино»?
+            Почему «Альтамед Голицыно»?
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">

@@ -195,10 +195,10 @@ export default function SurgeryPage() {
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <header className="mb-6 ml-0 md:ml-4 lg:ml-8">
             <h1 className="text-2xl md:text-3xl font-bold text-black leading-tight px-4 md:px-0">
-              Хирургия в клинике «<span className="italic">Альтамед Голицино</span>»
+              Хирургия в клинике «<span className="italic">Альтамед Голицыно</span>»
             </h1>
             <p className="text-gray-600 mt-2 px-4 md:px-0 text-sm md:text-base">
-              Современные хирургические методы лечения в Голицино
+              Современные хирургические методы лечения в Голицыно
             </p>
           </header>
 
@@ -270,10 +270,10 @@ export default function SurgeryPage() {
               </div>
               <div className="flex-1 text-center md:text-left">
                 <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-3">
-                  Консультация врача-хирурга в Голицино
+                  Консультация врача-хирурга в Голицыно
                 </h2>
                 <p className="text-gray-700 text-sm md:text-base leading-relaxed">
-                  Опытные хирурги клиники Альтамед Голицино оказывают полный спектр хирургических услуг: от консультаций и диагностики до оперативных вмешательств различной сложности. Современное оборудование и передовые методики лечения в Голицино.
+                  Опытные хирурги клиники Альтамед Голицыно оказывают полный спектр хирургических услуг: от консультаций и диагностики до оперативных вмешательств различной сложности. Современное оборудование и передовые методики лечения в Голицыно.
                 </p>
               </div>
             </div>
@@ -281,11 +281,11 @@ export default function SurgeryPage() {
         </div>
       </section>
 
-      {/* Почему Альтамед Голицино */}
+      {/* Почему Альтамед Голицыно */}
       <section className="py-12 bg-gray-50">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">
-            Почему «Альтамед Голицино»?
+            Почему «Альтамед Голицыно»?
           </h2>
           {/* Мобильная версия - вертикальный список */}
           <div className="md:hidden space-y-6">
@@ -404,7 +404,7 @@ export default function SurgeryPage() {
       <section className="py-16" aria-labelledby="services-heading">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 id="services-heading" className="text-2xl md:text-3xl font-bold text-black mb-8 text-center ml-0 md:ml-4 lg:ml-8">
-            Хирург в Голицино — услуги диагностики и лечения
+            Хирург в Голицыно — услуги диагностики и лечения
           </h2>
           
           <div className="space-y-12" itemScope itemType="https://schema.org/ItemList">

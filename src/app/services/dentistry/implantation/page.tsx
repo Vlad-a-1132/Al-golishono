@@ -58,10 +58,10 @@ export default function ImplantationPage() {
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <header className="mb-6 ml-0 md:ml-4 lg:ml-8">
             <h1 className="text-2xl md:text-3xl font-bold text-black leading-tight px-4 md:px-0">
-              Имплантация зубов в Альтамед Голицино — современные методы восстановления зубов в «<span className="italic">Альтамед Голицино</span>»
+              Имплантация зубов в Альтамед Голицыно — современные методы восстановления зубов в «<span className="italic">Альтамед Голицыно</span>»
             </h1>
             <p className="text-gray-600 mt-2 px-4 md:px-0 text-sm md:text-base">
-              Профессиональная имплантация зубов в Альтамед Голицино. Современные импланты, опытные специалисты, гарантия качества. Восстановление зубов с помощью дентальной имплантации.
+              Профессиональная имплантация зубов в Альтамед Голицыно. Современные импланты, опытные специалисты, гарантия качества. Восстановление зубов с помощью дентальной имплантации.
             </p>
           </header>
 
@@ -77,7 +77,7 @@ export default function ImplantationPage() {
               />
               <div className="absolute inset-0 bg-gradient-to-r from-blue-600/80 to-transparent"></div>
               <div className="relative z-10 bg-white p-4 flex flex-col justify-between items-start gap-3 mt-auto">
-                <div className="text-black font-medium text-sm">Имплантация зубов в Альтамед Голицино</div>
+                <div className="text-black font-medium text-sm">Имплантация зубов в Альтамед Голицыно</div>
                 <Link href="https://reg.altamed-golitsino.ru/" target="_blank" rel="noopener noreferrer" className="bg-blue-500 text-white rounded-full flex items-center justify-center w-full h-[46px] text-sm hover:bg-blue-600 transition-colors">
                   Записаться на прием
                   <svg className="w-5 h-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -96,7 +96,7 @@ export default function ImplantationPage() {
               />
               <div className="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-transparent"></div>
               <div className="absolute inset-0 flex flex-col justify-center items-start p-8 md:p-12 text-black z-10">
-                <h2 className="text-2xl md:text-4xl font-bold mb-4">Имплантация зубов в Альтамед Голицино</h2>
+                <h2 className="text-2xl md:text-4xl font-bold mb-4">Имплантация зубов в Альтамед Голицыно</h2>
                 <p className="text-lg md:text-xl mb-6 max-w-md">Современные методы восстановления зубов с помощью дентальной имплантации</p>
                 <Link href="https://reg.altamed-golitsino.ru/" target="_blank" rel="noopener noreferrer" className="bg-blue-500 text-white rounded-full px-8 py-3 font-medium hover:bg-blue-600 transition-colors">
                   Записаться на прием
@@ -111,7 +111,7 @@ export default function ImplantationPage() {
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <div className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-[20px] shadow-lg p-8 md:p-12">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6 text-center">
-              Услуги имплантации зубов в Альтамед Голицино
+              Услуги имплантации зубов в Альтамед Голицыно
             </h2>
             
             <div className="bg-white rounded-[20px] shadow-lg p-6 md:p-8">

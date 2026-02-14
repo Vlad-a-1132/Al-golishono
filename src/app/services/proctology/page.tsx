@@ -192,10 +192,10 @@ export default function ProctologyPage() {
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <header className="mb-6 ml-0 md:ml-4 lg:ml-8">
             <h1 className="text-2xl md:text-3xl font-bold text-black leading-tight px-4 md:px-0">
-              Проктология в клинике «<span className="italic">Альтамед Голицино</span>»
+              Проктология в клинике «<span className="italic">Альтамед Голицыно</span>»
             </h1>
             <p className="text-gray-600 mt-2 px-4 md:px-0 text-sm md:text-base">
-              Диагностика и лечение заболеваний прямой кишки и анальной области в Голицино
+              Диагностика и лечение заболеваний прямой кишки и анальной области в Голицыно
             </p>
           </header>
 
@@ -233,7 +233,7 @@ export default function ProctologyPage() {
               <div className="w-full h-full relative">
                 <img
                   src="/images/images allergoly/proktolog.webp"
-                  alt="Проктология в Голицино"
+                  alt="Проктология в Голицыно"
                   className="w-full h-full object-cover"
                 />
                 {/* Белый градиентный слой */}
@@ -242,7 +242,7 @@ export default function ProctologyPage() {
               
               {/* Content overlay */}
               <div className="absolute inset-0 flex flex-col justify-center items-start p-8 md:p-12 text-black">
-                <h2 className="text-2xl md:text-4xl font-bold mb-4">Проктология в Голицино</h2>
+                <h2 className="text-2xl md:text-4xl font-bold mb-4">Проктология в Голицыно</h2>
                 <p className="text-lg md:text-xl mb-6 max-w-md">Профессиональная диагностика и лечение заболеваний прямой кишки</p>
                 <Link 
                   href="https://reg.altamed-golitsino.ru/" 
@@ -258,10 +258,10 @@ export default function ProctologyPage() {
         </div>
       </main>
 
-      {/* Почему Альтамед Голицино*/}
+      {/* Почему Альтамед Голицыно*/}
       <section className="py-12 bg-gray-50">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
-          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Почему «Альтамед Голицино»?</h2>
+          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Почему «Альтамед Голицыно»?</h2>
           <div className="md:hidden space-y-6">
             <div className="flex items-start gap-4"><div className="w-16 h-16 flex-shrink-0 relative"><img src="/images/yslugi/star 1.webp" alt="1" className="w-full h-full object-contain" /><span className="absolute inset-0 flex items-center justify-center text-white font-bold text-xl">1</span></div><p className="text-gray-700 font-medium text-left pt-2">Лечение в соответствии с мировыми клиническими рекомендациями</p></div>
             <div className="flex items-start gap-4"><div className="w-16 h-16 flex-shrink-0 relative"><img src="/images/yslugi/star 1.webp" alt="2" className="w-full h-full object-contain" /><span className="absolute inset-0 flex items-center justify-center text-white font-bold text-xl">2</span></div><p className="text-gray-700 font-medium text-left pt-2">Комплексная оценка заболевания и прогноза лечения</p></div>
@@ -340,7 +340,7 @@ export default function ProctologyPage() {
             
             <div className="space-y-6 text-gray-700 mb-8">
               <p>
-                Врачи-колопроктологи «Альтамед Голицино» успешно занимаются диагностикой, профилактикой и лечением заболеваний промежности, а также толстой, прямой и ободочной кишки, в том числе полипов, анальных трещин и геморроя, используя в своей работе современные методы диагностики.
+                Врачи-колопроктологи «Альтамед Голицыно» успешно занимаются диагностикой, профилактикой и лечением заболеваний промежности, а также толстой, прямой и ободочной кишки, в том числе полипов, анальных трещин и геморроя, используя в своей работе современные методы диагностики.
               </p>
             </div>
 
@@ -464,7 +464,7 @@ export default function ProctologyPage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
                 <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                  Консультация хорошего врача-колопроктолога в Голицино
+                  Консультация хорошего врача-колопроктолога в Голицыно
                 </h2>
                 <p className="text-lg text-gray-600 mb-6">
                   Проктологические заболевания могут длительное время протекать бессимптомно, а беспокоить начинают уже в запущенной, трудно поддающейся излечению стадии. 
@@ -472,7 +472,7 @@ export default function ProctologyPage() {
                 </p>
                 <p className="text-lg text-gray-600 mb-6">
                   Основными симптомами проктологических заболеваний являются дискомфортные ощущения в области кишечника и заднего прохода. 
-                  В клинике «Альтамед Голицино» ведут прием опытные колопроктологи, которые занимаются диагностикой и лечением заболеваний прямой кишки и анальной области. 
+                  В клинике «Альтамед Голицыно» ведут прием опытные колопроктологи, которые занимаются диагностикой и лечением заболеваний прямой кишки и анальной области. 
                   Мы используем современное оборудование и передовые методики для обеспечения качественной медицинской помощи.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">

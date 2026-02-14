@@ -50,10 +50,10 @@ export default function ExtractionPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div>
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-                Удаление зубов в клинике «Альтамед Голицино»
+                Удаление зубов в клинике «Альтамед Голицыно»
               </h1>
               <p className="text-lg md:text-xl mb-8 text-emerald-100">
-                Простое и сложное удаление зубов, удаление ретинированных зубов в Альтамед Голицино
+                Простое и сложное удаление зубов, удаление ретинированных зубов в Альтамед Голицыно
               </p>
             </div>
             <div className="relative">
@@ -71,9 +71,9 @@ export default function ExtractionPage() {
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div className="lg:col-span-2 space-y-5 text-gray-700 leading-relaxed">
-              <h2 className="text-3xl font-bold text-gray-900">Удаление зубов в Альтамед Голицино: почему выбирают нас</h2>
+              <h2 className="text-3xl font-bold text-gray-900">Удаление зубов в Альтамед Голицыно: почему выбирают нас</h2>
               <p>
-                Клиника «Альтамед Голицино» предлагает удаление зубов в Альтамед Голицино — от простого удаления до сложных
+                Клиника «Альтамед Голицыно» предлагает удаление зубов в Альтамед Голицыно — от простого удаления до сложных
                 операций по удалению ретинированных и дистопированных зубов. Мы применяем передовые методики,
                 современную анестезию и учитываем индивидуальные особенности каждого пациента, чтобы обеспечить
                 безопасное и безболезненное удаление.
@@ -84,13 +84,13 @@ export default function ExtractionPage() {
                 сложное удаление с разъединением корней, удаление ретинированных и дистопированных зубов.
               </p>
               <p>
-                Прозрачные цены позволяют планировать бюджет — стоимость удаления зубов в Альтамед Голицино
+                Прозрачные цены позволяют планировать бюджет — стоимость удаления зубов в Альтамед Голицыно
                 фиксируется заранее, а пациенты получают подробную информацию о процедуре.
               </p>
             </div>
             <div className="bg-gray-50 rounded-[20px] p-6 shadow-md border-l-4 border-[#4A5568]">
               <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Что вы получаете, выбирая «Альтамед Голицино»
+                Что вы получаете, выбирая «Альтамед Голицыно»
               </h3>
               <ul className="space-y-3 text-gray-700 text-sm md:text-base leading-relaxed">
                 <li className="flex items-start">
@@ -117,7 +117,7 @@ export default function ExtractionPage() {
 
       <section className="py-12 bg-gray-50">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">Преимущества удаления зубов в «Альтамед Голицино»</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">Преимущества удаления зубов в «Альтамед Голицыно»</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
               <h3 className="text-xl font-semibold text-gray-900 mb-3">Опытные хирурги</h3>
@@ -163,16 +163,16 @@ export default function ExtractionPage() {
       <section className="py-12 bg-white">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <h2 className="text-3xl font-bold text-gray-900 mb-6">
-            Удаление зубов в Альтамед Голицино: цены и отзывы пациентов
+            Удаление зубов в Альтамед Голицыно: цены и отзывы пациентов
           </h2>
           <div className="space-y-4 text-gray-700 leading-relaxed text-sm md:text-base mb-6">
             <p>
-              Стоматология «Альтамед Голицино» — клиника, где удаление зубов в Голицино проводится по международным
-              протоколам. Мы принимаем пациентов из Голицино и всего района.
+              Стоматология «Альтамед Голицыно» — клиника, где удаление зубов в Голицыно проводится по международным
+              протоколам. Мы принимаем пациентов из Голицыно и всего района.
             </p>
             <p>
               Наши пациенты отмечают безболезненность процедуры и быстрое заживление. Если вы ищете стоматологию,
-              где «удаление зубов Альтамед Голицино» — это не просто слоган, а качественная услуга, записывайтесь
+              где «удаление зубов Альтамед Голицыно» — это не просто слоган, а качественная услуга, записывайтесь
               на консультацию стоматолога-хирурга или ознакомьтесь с другими направлениями на{" "}
               <Link href="/services/dentistry" className="text-emerald-600 hover:text-emerald-700 underline">
                 странице стоматологии
@@ -186,10 +186,10 @@ export default function ExtractionPage() {
       <section className="py-12 bg-gray-50">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8 text-center">
-            Цены на удаление зубов в Альтамед Голицино
+            Цены на удаление зубов в Альтамед Голицыно
           </h2>
           <p className="text-gray-700 mb-6 leading-relaxed text-center">
-            Стоимость удаления зубов в клинике «Альтамед Голицино» формируется в зависимости от сложности процедуры,
+            Стоимость удаления зубов в клинике «Альтамед Голицыно» формируется в зависимости от сложности процедуры,
             но мы фиксируем цены в договоре, чтобы пациент точно понимал итоговую сумму.
           </p>
           
@@ -253,11 +253,11 @@ export default function ExtractionPage() {
       <section className="py-12 bg-gray-50">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <h2 className="text-3xl font-bold text-gray-900 mb-6">
-            Отзывы пациентов об удалении зубов в Альтамед Голицино
+            Отзывы пациентов об удалении зубов в Альтамед Голицыно
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Реальные отзывы из Голицино</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Реальные отзывы из Голицыно</h3>
               <p className="text-gray-700 text-sm md:text-base leading-relaxed">
                 Пациенты отмечают безболезненность процедуры, внимательное отношение хирургов и быстрое заживление
                 после удаления.
@@ -272,7 +272,7 @@ export default function ExtractionPage() {
             <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
               <h3 className="text-xl font-semibold text-gray-900 mb-3">Комфортная реабилитация</h3>
               <p className="text-gray-700 text-sm md:text-base leading-relaxed">
-                После удаления в Голицино пациенты отмечают минимальный дискомфорт; врачи дают подробные
+                После удаления в Голицыно пациенты отмечают минимальный дискомфорт; врачи дают подробные
                 инструкции по уходу.
               </p>
             </div>
@@ -283,7 +283,7 @@ export default function ExtractionPage() {
       <section className="py-12 bg-white">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <h2 className="text-3xl font-bold text-gray-900 mb-6">
-            Частые вопросы об удалении зубов в Альтамед Голицино
+            Частые вопросы об удалении зубов в Альтамед Голицыно
           </h2>
           <div className="space-y-4">
             <details className="group bg-gray-50 rounded-[20px] shadow-md border border-gray-100">
@@ -352,10 +352,10 @@ export default function ExtractionPage() {
           <div className="bg-gradient-to-r from-[#4A5568] to-[#5A6474] rounded-[20px] p-8 md:p-12 text-white flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
             <div className="max-w-3xl">
               <h2 className="text-2xl md:text-3xl font-bold mb-4">
-                Удаление зубов в Альтамед Голицино — начните с консультации
+                Удаление зубов в Альтамед Голицыно — начните с консультации
               </h2>
               <p className="text-white/90 text-sm md:text-base leading-relaxed">
-                Запишитесь на консультацию в клинику «Альтамед Голицино», чтобы узнать стоимость удаления зуба,
+                Запишитесь на консультацию в клинику «Альтамед Голицыно», чтобы узнать стоимость удаления зуба,
                 получить индивидуальный план лечения и ответы на все вопросы от опытных стоматологов-хирургов.
               </p>
             </div>
@@ -379,7 +379,7 @@ export default function ExtractionPage() {
               __html: JSON.stringify({
                 "@context": "https://schema.org",
                 "@type": "MedicalBusiness",
-                name: "Клиника «Альтамед Голицино» — удаление зубов в Альтамед Голицино",
+                name: "Клиника «Альтамед Голицыно» — удаление зубов в Альтамед Голицыно",
                 url: "https://altamed-golitsino.ru/services/dentistry/extraction",
                 image: "https://altamed-golitsino.ru/images/dentisrty/zeb.webp",
                 medicalSpecialty: "Dental",
@@ -390,16 +390,16 @@ export default function ExtractionPage() {
                 },
                 address: {
                   "@type": "PostalAddress",
-                  addressLocality: "Голицино",
+                  addressLocality: "Голицыно",
                   addressRegion: "Московская область",
                   streetAddress: "ул. Советская, 9"
                 },
                 telephone: "+7 (495) 640-09-03",
                 priceRange: "₽₽",
                 serviceType: "Удаление зубов",
-                areaServed: "Голицино и район",
+                areaServed: "Голицыно и район",
                 description:
-                  "Удаление зубов в Альтамед Голицино: простое и сложное удаление, удаление ретинированных зубов, безболезненное лечение и быстрое заживление.",
+                  "Удаление зубов в Альтамед Голицыно: простое и сложное удаление, удаление ретинированных зубов, безболезненное лечение и быстрое заживление.",
                 sameAs: [
                   "https://altamed-golitsino.ru",
                   "https://yandex.ru/maps/org/altamed_s/1919839667"

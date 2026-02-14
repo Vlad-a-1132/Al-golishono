@@ -6,7 +6,7 @@ import { useEffect } from 'react';
 export default function ContactsPage() {
   const addresses = [
     {
-      title: 'Медицинский центр Альтамед Голицино',
+      title: 'Медицинский центр Альтамед Голицыно',
       address: '143040, Московская область, Одинцовский городской округ, Голицыно, Советская улица, 58',
       mapLink: 'https://yandex.ru/maps/org/altamed_golitsyno/1109627586',
     },

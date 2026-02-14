@@ -85,7 +85,7 @@ export default function CallbackModal() {
 
         {/* Header line with logo imitation */}
         <div className="flex items-center gap-3 md:gap-4 px-5 md:px-8 pt-5 md:pt-7">
-          <Image src="/images/icons/altamed-golicyno3.png" alt="Альтамед Голицино" width={140} height={140} className="object-contain" />
+          <Image src="/images/icons/altamed-golicyno3.png" alt="Альтамед Голицыно" width={140} height={140} className="object-contain" />
         </div>
 
         <div className="px-5 md:px-8 pb-6 md:pb-10">

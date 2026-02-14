@@ -13,14 +13,14 @@ export default function Footer() {
             <div className="flex items-center space-x-2">
               <Image 
                 src="/images/icons/altamed-golicyno3.png" 
-                alt="Альтамед Голицино" 
+                alt="Альтамед Голицыно" 
                 width={140}
                 height={140}
                 className="object-contain"
               />
             </div>
             <p className="text-gray-300 text-sm">
-              Медицинский центр в Голицино: качественные медицинские услуги и современная диагностика.
+              Медицинский центр в Голицыно: качественные медицинские услуги и современная диагностика.
             </p>
           </div>
           
@@ -123,7 +123,7 @@ export default function Footer() {
         </div>
         
         <div className="mt-12 pt-8 border-t border-gray-700">
-          <p className="text-gray-400 text-sm text-center">© {currentYear} Медицинский центр «Альтамед Голицино». Все права защищены.</p>
+          <p className="text-gray-400 text-sm text-center">© {currentYear} Медицинский центр «Альтамед Голицыно». Все права защищены.</p>
         </div>
       </div>
     </footer>

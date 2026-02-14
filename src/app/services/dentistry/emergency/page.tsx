@@ -45,10 +45,10 @@ export default function EmergencyPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div>
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-                Экстренная хирургия в клинике «Альтамед Голицино»
+                Экстренная хирургия в клинике «Альтамед Голицыно»
               </h1>
               <p className="text-lg md:text-xl mb-8 text-emerald-100">
-                Хирургическая обработка ран, вскрытие абсцессов и лечение альвеолита в Альтамед Голицино
+                Хирургическая обработка ран, вскрытие абсцессов и лечение альвеолита в Альтамед Голицыно
               </p>
             </div>
             <div className="relative">
@@ -66,9 +66,9 @@ export default function EmergencyPage() {
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div className="lg:col-span-2 space-y-5 text-gray-700 leading-relaxed">
-              <h2 className="text-3xl font-bold text-gray-900">Экстренная хирургия в Альтамед Голицино: почему выбирают нас</h2>
+              <h2 className="text-3xl font-bold text-gray-900">Экстренная хирургия в Альтамед Голицыно: почему выбирают нас</h2>
               <p>
-                Клиника «Альтамед Голицино» предлагает услуги экстренной хирургии в Альтамед Голицино — хирургическую обработку ран,
+                Клиника «Альтамед Голицыно» предлагает услуги экстренной хирургии в Альтамед Голицыно — хирургическую обработку ран,
                 вскрытие абсцессов, лечение альвеолита и другие неотложные стоматологические вмешательства. Мы применяем
                 современные методики, качественные материалы и обеспечиваем быстрое оказание помощи при острых состояниях.
               </p>
@@ -78,13 +78,13 @@ export default function EmergencyPage() {
                 полости рта.
               </p>
               <p>
-                Прозрачные цены позволяют планировать бюджет — стоимость экстренной хирургии в Альтамед Голицино
+                Прозрачные цены позволяют планировать бюджет — стоимость экстренной хирургии в Альтамед Голицыно
                 фиксируется заранее, а пациенты получают подробную информацию о процедуре.
               </p>
             </div>
             <div className="bg-gray-50 rounded-[20px] p-6 shadow-md border-l-4 border-[#4A5568]">
               <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Что вы получаете, выбирая «Альтамед Голицино»
+                Что вы получаете, выбирая «Альтамед Голицыно»
               </h3>
               <ul className="space-y-3 text-gray-700 text-sm md:text-base leading-relaxed">
                 <li className="flex items-start">
@@ -111,7 +111,7 @@ export default function EmergencyPage() {
 
       <section className="py-12 bg-gray-50">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">Преимущества экстренной хирургии в «Альтамед Голицино»</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">Преимущества экстренной хирургии в «Альтамед Голицыно»</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
               <h3 className="text-xl font-semibold text-gray-900 mb-3">Опытные хирурги</h3>
@@ -159,16 +159,16 @@ export default function EmergencyPage() {
       <section className="py-12 bg-white">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <h2 className="text-3xl font-bold text-gray-900 mb-6">
-            Экстренная хирургия в Альтамед Голицино: цены и отзывы пациентов
+            Экстренная хирургия в Альтамед Голицыно: цены и отзывы пациентов
           </h2>
           <div className="space-y-4 text-gray-700 leading-relaxed text-sm md:text-base mb-6">
             <p>
-              Стоматология «Альтамед Голицино» — клиника, где экстренная хирургия в Альтамед Голицино проводится по международным
-              протоколам. Мы принимаем пациентов из Альтамед Голицино и всего Одинцовского городского округа.
+              Стоматология «Альтамед Голицыно» — клиника, где экстренная хирургия в Альтамед Голицыно проводится по международным
+              протоколам. Мы принимаем пациентов из Альтамед Голицыно и всего Одинцовского городского округа.
             </p>
             <p>
               Наши пациенты отмечают быстрое оказание помощи и эффективное лечение. Если вы ищете стоматологию,
-              где «экстренная хирургия голицино» — это не просто слоган, а качественная услуга, записывайтесь
+              где «экстренная хирургия Голицыно» — это не просто слоган, а качественная услуга, записывайтесь
               на консультацию стоматолога-хирурга или ознакомьтесь с другими направлениями на{" "}
               <Link href="/services/dentistry" className="text-emerald-600 hover:text-emerald-700 underline">
                 странице стоматологии
@@ -182,10 +182,10 @@ export default function EmergencyPage() {
       <section className="py-12 bg-gray-50">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8 text-center">
-            Цены на экстренную хирургию в Альтамед Голицино
+            Цены на экстренную хирургию в Альтамед Голицыно
           </h2>
           <p className="text-gray-700 mb-6 leading-relaxed text-center">
-            Стоимость экстренной хирургии в клинике «Альтамед Голицино» формируется в зависимости от вида вмешательства,
+            Стоимость экстренной хирургии в клинике «Альтамед Голицыно» формируется в зависимости от вида вмешательства,
             но мы фиксируем цены в договоре, чтобы пациент точно понимал итоговую сумму.
           </p>
           
@@ -238,11 +238,11 @@ export default function EmergencyPage() {
       <section className="py-12 bg-gray-50">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <h2 className="text-3xl font-bold text-gray-900 mb-6">
-            Отзывы пациентов об экстренной хирургии в Альтамед Голицино
+            Отзывы пациентов об экстренной хирургии в Альтамед Голицыно
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Реальные отзывы из Альтамед Голицино</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Реальные отзывы из Альтамед Голицыно</h3>
               <p className="text-gray-700 text-sm md:text-base leading-relaxed">
                 Пациенты отмечают быстрое оказание помощи, эффективное лечение альвеолита и абсцессов
                 и внимательное отношение врачей.
@@ -258,7 +258,7 @@ export default function EmergencyPage() {
             <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
               <h3 className="text-xl font-semibold text-gray-900 mb-3">Комфортное лечение</h3>
               <p className="text-gray-700 text-sm md:text-base leading-relaxed">
-                После экстренной помощи в Альтамед Голицино пациенты отмечают быстрое улучшение состояния; врачи дают
+                После экстренной помощи в Альтамед Голицыно пациенты отмечают быстрое улучшение состояния; врачи дают
                 подробные инструкции по уходу.
               </p>
             </div>
@@ -269,7 +269,7 @@ export default function EmergencyPage() {
       <section className="py-12 bg-white">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <h2 className="text-3xl font-bold text-gray-900 mb-6">
-            Частые вопросы об экстренной хирургии в Альтамед Голицино
+            Частые вопросы об экстренной хирургии в Альтамед Голицыно
           </h2>
           <div className="space-y-4">
             <details className="group bg-gray-50 rounded-[20px] shadow-md border border-gray-100">
@@ -319,10 +319,10 @@ export default function EmergencyPage() {
           <div className="bg-gradient-to-r from-[#4A5568] to-[#5A6474] rounded-[20px] p-8 md:p-12 text-white flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
             <div className="max-w-3xl">
               <h2 className="text-2xl md:text-3xl font-bold mb-4">
-                Экстренная хирургия в Альтамед Голицино — получите помощь быстро
+                Экстренная хирургия в Альтамед Голицыно — получите помощь быстро
               </h2>
               <p className="text-white/90 text-sm md:text-base leading-relaxed">
-                Запишитесь на экстренный прием в клинику «Альтамед Голицино», чтобы получить помощь при острых состояниях,
+                Запишитесь на экстренный прием в клинику «Альтамед Голицыно», чтобы получить помощь при острых состояниях,
                 альвеолите, абсцессах и других неотложных ситуациях.
               </p>
             </div>
@@ -346,7 +346,7 @@ export default function EmergencyPage() {
               __html: JSON.stringify({
                 "@context": "https://schema.org",
                 "@type": "MedicalBusiness",
-                name: "Клиника «Альтамед Голицино» — экстренная хирургия в Альтамед Голицино",
+                name: "Клиника «Альтамед Голицыно» — экстренная хирургия в Альтамед Голицыно",
                 url: "https://altamed-golitsino.ru/services/dentistry/emergency",
                 image: "https://altamed-golitsino.ru/images/dentisrty/fdfs.webp",
                 medicalSpecialty: "Dental",
@@ -357,16 +357,16 @@ export default function EmergencyPage() {
                 },
                 address: {
                   "@type": "PostalAddress",
-                  addressLocality: "Альтамед Голицино",
+                  addressLocality: "Альтамед Голицыно",
                   addressRegion: "Московская область",
                   streetAddress: "ул. Советская, 9"
                 },
                 telephone: "+7 (495) 640-09-03",
                 priceRange: "₽₽",
                 serviceType: "Экстренная хирургия",
-                areaServed: "Альтамед Голицино и Голицино",
+                areaServed: "Альтамед Голицыно и Голицыно",
                 description:
-                  "Экстренная хирургия в Альтамед Голицино: хирургическая обработка ран, вскрытие абсцессов, лечение альвеолита и других неотложных состояний.",
+                  "Экстренная хирургия в Альтамед Голицыно: хирургическая обработка ран, вскрытие абсцессов, лечение альвеолита и других неотложных состояний.",
                 sameAs: [
                   "https://altamed-golitsino.ru",
                   "https://yandex.ru/maps/org/altamed_s/1919839667"

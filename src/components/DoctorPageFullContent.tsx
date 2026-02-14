@@ -45,7 +45,7 @@ export default function DoctorPageFullContent({
               <div className="w-full max-w-[280px] md:w-48 h-[360px] md:h-64 relative rounded-2xl overflow-hidden">
                 <Image
                   src={doctor.photo}
-                  alt={`${currentSpecialization} ${doctor.name} в клинике Альтамед Голицино`}
+                  alt={`${currentSpecialization} ${doctor.name} в клинике Альтамед Голицыно`}
                   fill
                   className="object-cover"
                 />
@@ -55,7 +55,7 @@ export default function DoctorPageFullContent({
             {/* Doctor Info */}
             <div className="flex-1">
               <h1 className="text-3xl font-bold text-gray-900 mb-2">
-                {currentSpecialization} {doctor.name} в Голицино
+                {currentSpecialization} {doctor.name} в Голицыно
               </h1>
               <div className="inline-block bg-emerald-50 text-emerald-700 px-3 py-1 rounded-full text-sm font-medium mb-3">
                 {doctor.specialization}
@@ -156,10 +156,10 @@ export default function DoctorPageFullContent({
                   </div>
                   <div>
                     <p className="font-medium text-gray-900 mb-1">
-                      Голицино
+                      Голицыно
                     </p>
                     <p className="text-sm text-gray-600">
-                      «Альтамед Голицино» на ул. Можайское шоссе, д. 2
+                      «Альтамед Голицыно» на ул. Можайское шоссе, д. 2
                     </p>
                   </div>
                 </div>

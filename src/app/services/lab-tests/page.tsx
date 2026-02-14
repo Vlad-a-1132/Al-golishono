@@ -17,7 +17,7 @@ export default function LabTestsPage() {
             <span className="text-gray-900">Лабораторные исследования</span>
           </nav>
           <h1 className="text-2xl md:text-4xl font-bold text-black">
-            Лабораторные исследования в Голицино — анализы в медицинском центре Альтамед Голицино
+            Лабораторные исследования в Голицыно — анализы в медицинском центре Альтамед Голицыно
           </h1>
         </div>
       </section>
@@ -29,16 +29,16 @@ export default function LabTestsPage() {
               <div className="relative w-full aspect-square max-w-md mx-auto rounded-full overflow-hidden">
                 <Image
                   src="/images/yslugi/Laboratory tests.webp"
-                  alt="Лабораторные исследования в Альтамед Голицино"
+                  alt="Лабораторные исследования в Альтамед Голицыно"
                   fill
                   className="object-cover"
                 />
               </div>
             </div>
             <div className="w-full md:w-1/2 text-gray-700 space-y-4">
-              <h2 className="text-2xl md:text-3xl font-bold text-black">Лабораторные анализы в Голицино</h2>
+              <h2 className="text-2xl md:text-3xl font-bold text-black">Лабораторные анализы в Голицыно</h2>
               <p>
-                В медицинском центре Альтамед Голицино вы можете сдать полный спектр лабораторных анализов: общеклинические, биохимические, гормональные, иммунологические, микробиологические исследования. Современное оборудование и контроль качества обеспечивают точность результатов.
+                В медицинском центре Альтамед Голицыно вы можете сдать полный спектр лабораторных анализов: общеклинические, биохимические, гормональные, иммунологические, микробиологические исследования. Современное оборудование и контроль качества обеспечивают точность результатов.
               </p>
               <p>
                 Результаты анализов готовы в кратчайшие сроки, доступны в электронном виде. Калькулятор анализов на сайте позволяет рассчитать стоимость комплекса исследований. Записаться на сдачу анализов можно через форму на сайте или по телефону клиники.
@@ -79,7 +79,7 @@ export default function LabTestsPage() {
                   <div className="mb-6">
                     <h3 className="text-lg md:text-xl font-semibold mb-3">Расчет стоимости анализов</h3>
                     <p className="text-sm md:text-base opacity-95 mb-4 leading-relaxed">
-                      Узнайте актуальные цены на любые анализы в клинике «Альтамед Голицино» Голицино. Калькулятор позволяет рассчитать общую стоимость нескольких анализов, создать индивидуальный список исследований и спланировать бюджет на диагностику.
+                      Узнайте актуальные цены на любые анализы в клинике «Альтамед Голицыно» Голицыно. Калькулятор позволяет рассчитать общую стоимость нескольких анализов, создать индивидуальный список исследований и спланировать бюджет на диагностику.
                     </p>
                     <ul className="space-y-2 text-sm md:text-base opacity-95">
                       <li className="flex items-start">
@@ -127,7 +127,7 @@ export default function LabTestsPage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="bg-gradient-to-br from-orange-50 to-amber-50 rounded-[20px] shadow-lg p-8 md:p-12">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 text-center">
-              Калькулятор анализов в Голицино — удобный инструмент для поиска и расчета стоимости
+              Калькулятор анализов в Голицыно — удобный инструмент для поиска и расчета стоимости
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
               <div className="bg-white rounded-lg p-6 shadow-md">
@@ -171,7 +171,7 @@ export default function LabTestsPage() {
                   Расчет стоимости анализов
                 </h3>
                 <p className="text-gray-700 mb-4">
-                  Узнайте актуальные цены на любые анализы в клинике «Альтамед Голицино» Голицино. 
+                  Узнайте актуальные цены на любые анализы в клинике «Альтамед Голицыно» Голицыно. 
                   Калькулятор позволяет рассчитать общую стоимость нескольких анализов, 
                   создать индивидуальный список исследований и спланировать бюджет на диагностику.
                 </p>
@@ -199,7 +199,7 @@ export default function LabTestsPage() {
             </div>
             <div className="bg-white rounded-lg p-6 shadow-md">
               <h3 className="text-xl font-semibold text-gray-800 mb-4 text-center">
-                Чем полезен калькулятор анализов в Голицино?
+                Чем полезен калькулятор анализов в Голицыно?
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="text-center">
@@ -276,8 +276,8 @@ export default function LabTestsPage() {
                   <div>
                     <h4 className="font-semibold text-gray-800 mb-1">Запись на сдачу</h4>
                     <p className="text-gray-600 text-sm">
-                      После формирования списка анализов вы можете записаться на сдачу в клинику «Альтамед Голицино» 
-                      в Голицино через онлайн-форму или по телефону.
+                      После формирования списка анализов вы можете записаться на сдачу в клинику «Альтамед Голицыно» 
+                      в Голицыно через онлайн-форму или по телефону.
                     </p>
                   </div>
                 </div>

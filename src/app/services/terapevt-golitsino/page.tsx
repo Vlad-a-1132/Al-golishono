@@ -55,7 +55,7 @@ export default function TerapevtGolitsinoPage() {
                 </Link>
               </li>
               <li><div className="flex items-center"><svg className="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd"></path></svg><Link href="/services" className="ml-1 text-sm font-medium text-gray-700 hover:text-emerald-600 md:ml-2">Услуги</Link></div></li>
-              <li aria-current="page"><div className="flex items-center"><svg className="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd"></path></svg><span className="ml-1 text-sm font-medium text-gray-500 md:ml-2">Терапевт Голицино</span></div></li>
+              <li aria-current="page"><div className="flex items-center"><svg className="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd"></path></svg><span className="ml-1 text-sm font-medium text-gray-500 md:ml-2">Терапевт Голицыно</span></div></li>
             </ol>
           </nav>
         </div>
@@ -65,10 +65,10 @@ export default function TerapevtGolitsinoPage() {
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <header className="mb-6 ml-0 md:ml-4 lg:ml-8">
             <h1 className="text-2xl md:text-3xl font-bold text-black leading-tight px-4 md:px-0">
-              Терапевт в Голицино — приём и консультация в «Альтамед Голицино»
+              Терапевт в Голицыно — приём и консультация в «Альтамед Голицыно»
             </h1>
             <p className="text-gray-600 mt-2 px-4 md:px-0 text-sm md:text-base">
-              Консультация врача-терапевта в Голицино: диагностика, лечение, оформление справок
+              Консультация врача-терапевта в Голицыно: диагностика, лечение, оформление справок
             </p>
           </header>
 
@@ -77,11 +77,11 @@ export default function TerapevtGolitsinoPage() {
             <div className="block md:hidden w-full h-[300px] flex flex-col rounded-[20px] overflow-hidden shadow-md mx-auto">
               <div className="h-[220px] bg-emerald-500 relative overflow-hidden">
                 <div className="w-full h-full relative">
-                  <img src="/images/yslugi/terapiay 1.webp" alt="Терапевт Голицино" className="w-full h-full object-cover" />
+                  <img src="/images/yslugi/terapiay 1.webp" alt="Терапевт Голицыно" className="w-full h-full object-cover" />
                 </div>
               </div>
               <div className="bg-white p-4 flex flex-col justify-between items-start gap-3">
-                <div className="text-black font-medium text-sm">Терапевт в Голицино</div>
+                <div className="text-black font-medium text-sm">Терапевт в Голицыно</div>
                 <Link href="https://reg.altamed-golitsino.ru/" target="_blank" rel="noopener noreferrer" className="bg-blue-500 text-white rounded-full flex items-center justify-center w-full h-[46px] text-sm hover:bg-blue-600 transition-colors">
                   Консультация <svg className="w-5 h-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
                 </Link>
@@ -89,12 +89,12 @@ export default function TerapevtGolitsinoPage() {
             </div>
             <div className="hidden md:block h-[445px] bg-emerald-500 relative overflow-hidden rounded-[20px] shadow-lg">
               <div className="w-full h-full relative">
-                <img src="/images/yslugi/terapiay 1.webp" alt="Терапевт Голицино" className="w-full h-full object-cover" />
+                <img src="/images/yslugi/terapiay 1.webp" alt="Терапевт Голицыно" className="w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-transparent"></div>
               </div>
               <div className="absolute inset-0 flex flex-col justify-center items-start p-8 md:p-12 text-black">
-                <h2 className="text-2xl md:text-4xl font-bold mb-4">Терапевт в Голицино</h2>
-                <p className="text-lg md:text-xl mb-6 max-w-md">Приём врача-терапевта, консультации, оформление справок (070/у, 072/у, 095/у) в Альтамед Голицино</p>
+                <h2 className="text-2xl md:text-4xl font-bold mb-4">Терапевт в Голицыно</h2>
+                <p className="text-lg md:text-xl mb-6 max-w-md">Приём врача-терапевта, консультации, оформление справок (070/у, 072/у, 095/у) в Альтамед Голицыно</p>
                 <Link href="https://reg.altamed-golitsino.ru/" target="_blank" rel="noopener noreferrer" className="bg-blue-500 text-white rounded-full px-8 py-3 font-medium hover:bg-blue-600 transition-colors">Консультация</Link>
               </div>
             </div>
@@ -102,10 +102,10 @@ export default function TerapevtGolitsinoPage() {
         </div>
       </main>
 
-      {/* Почему Альтамед Голицино */}
+      {/* Почему Альтамед Голицыно */}
       <section className="py-12 bg-gray-50">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
-          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Почему «Альтамед Голицино»?</h2>
+          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Почему «Альтамед Голицыно»?</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               "Следование международным стандартам медицинской помощи",
@@ -133,7 +133,7 @@ export default function TerapevtGolitsinoPage() {
             Терапевт — врач широкого профиля: диагностика, лечение и профилактика заболеваний внутренних органов. Консультация терапевта нужна перед операцией, при беременности, при записи в спортсекции и бассейны, при хронических заболеваниях.
           </p>
           <p className="text-gray-600">
-            Запись к терапевту в «Альтамед Голицино» — это приём у опытных специалистов, комплексная диагностика и оформление справок (070/у, 072/у, 095/у и другие) в Голицино.
+            Запись к терапевту в «Альтамед Голицыно» — это приём у опытных специалистов, комплексная диагностика и оформление справок (070/у, 072/у, 095/у и другие) в Голицыно.
           </p>
         </div>
       </section>
@@ -142,8 +142,8 @@ export default function TerapevtGolitsinoPage() {
       <section className="py-16" aria-labelledby="services-heading">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 id="services-heading" className="text-3xl font-bold text-gray-900 mb-4">Услуги терапевта в Голицино</h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">Приём врача-терапевта, консультации и оформление справок в Альтамед Голицино</p>
+            <h2 id="services-heading" className="text-3xl font-bold text-gray-900 mb-4">Услуги терапевта в Голицыно</h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">Приём врача-терапевта, консультации и оформление справок в Альтамед Голицыно</p>
           </div>
 
           <p className="text-amber-800 bg-amber-50 border border-amber-200 rounded-lg px-4 py-3 mb-6 max-w-3xl mx-auto text-center text-sm">
@@ -202,7 +202,7 @@ export default function TerapevtGolitsinoPage() {
                 <p className="text-white/85 text-sm">Запись через сайт предварительная. Сотрудник свяжется с вами для подтверждения записи к терапевту.</p>
               </div>
               <div className="absolute right-0 top-0 bottom-0 w-1/3 lg:w-1/3 z-0">
-                <NextImage src="/images/yslugi/NEW DOC2.webp" alt="Врач терапевт Голицино" fill className="object-contain object-right-bottom" />
+                <NextImage src="/images/yslugi/NEW DOC2.webp" alt="Врач терапевт Голицыно" fill className="object-contain object-right-bottom" />
               </div>
             </div>
           </div>
@@ -230,13 +230,13 @@ export default function TerapevtGolitsinoPage() {
           <div className="flex flex-col lg:flex-row items-center gap-8">
             <div className="w-full lg:w-1/2">
               <div className="w-64 h-64 mx-auto lg:mx-0 rounded-full overflow-hidden">
-                <img src="/images/yslugi/terapiay 1.webp" alt="Справки терапевта Голицино" className="w-full h-full object-cover" />
+                <img src="/images/yslugi/terapiay 1.webp" alt="Справки терапевта Голицыно" className="w-full h-full object-cover" />
               </div>
             </div>
             <div className="w-full lg:w-1/2">
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Справки и медицинские документы</h2>
               <p className="text-gray-600 mb-4">
-                В «Альтамед Голицино» терапевт оформляет справки для трудоустройства, учёбы, спортивных секций, бассейна, санатория. Мы выдаём справки по формам 070/у (для путевки в санаторий), 072/у (санаторно-курортная карта), 095/у (временная нетрудоспособность студента) и другие — после осмотра и при необходимости обследований.
+                В «Альтамед Голицыно» терапевт оформляет справки для трудоустройства, учёбы, спортивных секций, бассейна, санатория. Мы выдаём справки по формам 070/у (для путевки в санаторий), 072/у (санаторно-курортная карта), 095/у (временная нетрудоспособность студента) и другие — после осмотра и при необходимости обследований.
               </p>
               <p className="text-gray-600">Документы оформляются в соответствии с законодательством РФ, заверяются печатями и штампами клиники.</p>
             </div>

@@ -127,8 +127,8 @@ export default function DiagnosticsPage() {
 
   const faqItems = [
     {
-      question: "Какие виды диагностики доступны в клинике «Альтамед Голицино»?",
-      answer: "Клиника «Альтамед Голицино» предоставляет полный спектр диагностических услуг: лучевая диагностика (рентген, КТ, УЗИ, МРТ), эндоскопические исследования (гастроскопия, колоноскопия, бронхоскопия), функциональная диагностика (ЭКГ, спирометрия, мониторирование), лабораторные анализы всех видов. Все исследования проводятся на современном оборудовании экспертного класса квалифицированными специалистами."
+      question: "Какие виды диагностики доступны в клинике «Альтамед Голицыно»?",
+      answer: "Клиника «Альтамед Голицыно» предоставляет полный спектр диагностических услуг: лучевая диагностика (рентген, КТ, УЗИ, МРТ), эндоскопические исследования (гастроскопия, колоноскопия, бронхоскопия), функциональная диагностика (ЭКГ, спирометрия, мониторирование), лабораторные анализы всех видов. Все исследования проводятся на современном оборудовании экспертного класса квалифицированными специалистами."
     },
     {
       question: "Нужна ли подготовка перед диагностическими процедурами?",
@@ -140,15 +140,15 @@ export default function DiagnosticsPage() {
     },
     {
       question: "Можно ли пройти диагностику без направления врача?",
-      answer: "Да, в клинике «Альтамед Голицино» вы можете пройти большинство диагностических исследований без направления врача в рамках профилактических программ или для уточнения диагноза. Однако для некоторых сложных исследований (например, КТ с контрастом, эндоскопия под наркозом) может потребоваться консультация врача и направление. Все ограничения вам сообщат при записи на исследование. Специалисты Альтамед Голицино всегда готовы проконсультировать по выбору необходимых исследований."
+      answer: "Да, в клинике «Альтамед Голицыно» вы можете пройти большинство диагностических исследований без направления врача в рамках профилактических программ или для уточнения диагноза. Однако для некоторых сложных исследований (например, КТ с контрастом, эндоскопия под наркозом) может потребоваться консультация врача и направление. Все ограничения вам сообщат при записи на исследование. Специалисты Альтамед Голицыно всегда готовы проконсультировать по выбору необходимых исследований."
     },
     {
       question: "Насколько безопасна диагностика для здоровья?",
-      answer: "Все диагностические процедуры в клинике «Альтамед Голицино» проводятся на современном оборудовании, соответствующем международным стандартам безопасности. Лучевая нагрузка при рентгене и КТ минимизируется благодаря современным цифровым аппаратам. УЗИ и МРТ вообще не несут лучевой нагрузки. Перед исследованиями с контрастированием проводится оценка противопоказаний и аллергопробы. Все процедуры максимально безопасны для пациентов. Врачи Альтамед Голицино всегда учитывают индивидуальные особенности пациента при выборе методов диагностики."
+      answer: "Все диагностические процедуры в клинике «Альтамед Голицыно» проводятся на современном оборудовании, соответствующем международным стандартам безопасности. Лучевая нагрузка при рентгене и КТ минимизируется благодаря современным цифровым аппаратам. УЗИ и МРТ вообще не несут лучевой нагрузки. Перед исследованиями с контрастированием проводится оценка противопоказаний и аллергопробы. Все процедуры максимально безопасны для пациентов. Врачи Альтамед Голицыно всегда учитывают индивидуальные особенности пациента при выборе методов диагностики."
     },
     {
       question: "Работает ли клиника в выходные дни?",
-      answer: "Да, клиника «Альтамед Голицино» работает в будние дни, выходные и праздничные дни. Время работы и доступность конкретных исследований по дням недели уточняйте при записи. Также доступна онлайн-запись через сайт клиники в любое удобное время. Специалисты Альтамед Голицино всегда готовы помочь вам выбрать удобное время для прохождения диагностики."
+      answer: "Да, клиника «Альтамед Голицыно» работает в будние дни, выходные и праздничные дни. Время работы и доступность конкретных исследований по дням недели уточняйте при записи. Также доступна онлайн-запись через сайт клиники в любое удобное время. Специалисты Альтамед Голицыно всегда готовы помочь вам выбрать удобное время для прохождения диагностики."
     }
   ];
 
@@ -185,7 +185,7 @@ export default function DiagnosticsPage() {
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <header className="mb-6 ml-0 md:ml-4 lg:ml-8">
             <h1 className="text-2xl md:text-3xl font-bold text-black leading-tight px-4 md:px-0">
-              Диагностика в клинике «<span className="italic">Альтамед Голицино</span>» — современные методы точной диагностики
+              Диагностика в клинике «<span className="italic">Альтамед Голицыно</span>» — современные методы точной диагностики
             </h1>
             <p className="text-gray-600 mt-2 px-4 md:px-0 text-sm md:text-base">
               Современные методы диагностики для точной постановки диагноза и контроля лечения
@@ -199,7 +199,7 @@ export default function DiagnosticsPage() {
                 <div className="w-full h-full relative">
                   <img
                     src="/images/img diagnostika/diagnostics.webp"
-                    alt="Диагностика в Альтамед Голицино"
+                    alt="Диагностика в Альтамед Голицыно"
                     className="w-full h-full object-cover"
                     onError={(e) => {
                       (e.target as HTMLImageElement).src = '/images/yslugi/Hardware diagnostics.webp';
@@ -224,7 +224,7 @@ export default function DiagnosticsPage() {
               <div className="w-full h-full relative">
                 <img
                   src="/images/img diagnostika/diagnostics.webp"
-                  alt="Диагностика в Альтамед Голицино"
+                  alt="Диагностика в Альтамед Голицыно"
                   className="w-full h-full object-cover"
                   onError={(e) => {
                     (e.target as HTMLImageElement).src = '/images/yslugi/Hardware diagnostics.webp';
@@ -233,7 +233,7 @@ export default function DiagnosticsPage() {
                 <div className="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-transparent"></div>
               </div>
               <div className="absolute inset-0 flex flex-col justify-center items-start p-8 md:p-12 text-black">
-                <h2 className="text-2xl md:text-4xl font-bold mb-4">Диагностика в Голицино</h2>
+                <h2 className="text-2xl md:text-4xl font-bold mb-4">Диагностика в Голицыно</h2>
                 <p className="text-lg md:text-xl mb-6 max-w-md">Современные методы диагностики</p>
                 <Link 
                   href="/appointments" 
@@ -255,7 +255,7 @@ export default function DiagnosticsPage() {
               Диагностические услуги
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Полный спектр диагностических исследований в клинике «Альтамед Голицино»
+              Полный спектр диагностических исследований в клинике «Альтамед Голицыно»
             </p>
           </div>
 
@@ -298,19 +298,19 @@ export default function DiagnosticsPage() {
       {/* Description */}
       <section className="py-12 bg-white">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">Диагностика в Голицино: современные методы точной диагностики в Альтамед Голицино</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">Диагностика в Голицыно: современные методы точной диагностики в Альтамед Голицыно</h2>
           <div className="mb-8">
             <p className="text-gray-700 mb-4 leading-relaxed text-base md:text-lg">
-              <strong>Диагностика</strong> — основа правильного лечения и сохранения здоровья. В медицинском центре «Альтамед Голицино» вы можете пройти полное диагностическое обследование с использованием современных высокоточных методов. Наша клиника оснащена передовым диагностическим оборудованием экспертного класса, позволяющим выявлять заболевания на самых ранних стадиях, когда лечение наиболее эффективно. Врачи-диагносты Альтамед Голицино имеют многолетний опыт работы и регулярно повышают свою квалификацию.
+              <strong>Диагностика</strong> — основа правильного лечения и сохранения здоровья. В медицинском центре «Альтамед Голицыно» вы можете пройти полное диагностическое обследование с использованием современных высокоточных методов. Наша клиника оснащена передовым диагностическим оборудованием экспертного класса, позволяющим выявлять заболевания на самых ранних стадиях, когда лечение наиболее эффективно. Врачи-диагносты Альтамед Голицыно имеют многолетний опыт работы и регулярно повышают свою квалификацию.
             </p>
             <p className="text-gray-700 mb-4 leading-relaxed text-base md:text-lg">
-              Клиника «Альтамед Голицино» предоставляет все виды диагностики: лучевые методы (рентген, компьютерная томография, УЗИ), эндоскопические исследования (гастроскопия, колоноскопия, бронхоскопия), функциональная диагностика (ЭКГ, спирометрия, мониторирование), лабораторные анализы различных видов. Все исследования проводятся квалифицированными врачами-диагностами с многолетним опытом работы. В Альтамед Голицино используется только современное оборудование от ведущих мировых производителей.
+              Клиника «Альтамед Голицыно» предоставляет все виды диагностики: лучевые методы (рентген, компьютерная томография, УЗИ), эндоскопические исследования (гастроскопия, колоноскопия, бронхоскопия), функциональная диагностика (ЭКГ, спирометрия, мониторирование), лабораторные анализы различных видов. Все исследования проводятся квалифицированными врачами-диагностами с многолетним опытом работы. В Альтамед Голицыно используется только современное оборудование от ведущих мировых производителей.
             </p>
             <p className="text-gray-700 mb-4 leading-relaxed text-base md:text-lg">
-              В клинике «Альтамед Голицино» диагностика проводится быстро, без очередей, в комфортных условиях. Результаты исследований выдаются в кратчайшие сроки, часто в день проведения исследования. Результаты доступны в электронном виде через личный кабинет пациента, что удобно для дистанционного консультирования с врачами и долгосрочного хранения медицинских данных. Специалисты Альтамед Голицино всегда готовы ответить на вопросы пациентов и помочь в интерпретации результатов.
+              В клинике «Альтамед Голицыно» диагностика проводится быстро, без очередей, в комфортных условиях. Результаты исследований выдаются в кратчайшие сроки, часто в день проведения исследования. Результаты доступны в электронном виде через личный кабинет пациента, что удобно для дистанционного консультирования с врачами и долгосрочного хранения медицинских данных. Специалисты Альтамед Голицыно всегда готовы ответить на вопросы пациентов и помочь в интерпретации результатов.
             </p>
             <div className="bg-blue-50 rounded-[20px] p-6 shadow-md border-l-4 border-blue-600 mt-6">
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Почему выбирают диагностику в клинике «Альтамед Голицино»?</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Почему выбирают диагностику в клинике «Альтамед Голицыно»?</h3>
               <ul className="space-y-2 text-gray-700">
                 <li className="flex items-start">
                   <svg className="w-5 h-5 text-blue-600 mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -357,7 +357,7 @@ export default function DiagnosticsPage() {
       {/* Diagnostic Methods */}
       <section className="py-12 bg-gray-50">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
-          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Методы диагностики в клинике «Альтамед Голицино»</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Методы диагностики в клинике «Альтамед Голицыно»</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {diagnosticMethods.map((category, idx) => (
               <div key={idx} className="bg-white rounded-[20px] p-6 shadow-md border border-blue-100">
@@ -381,7 +381,7 @@ export default function DiagnosticsPage() {
       {/* Indications */}
       <section className="py-12 bg-white">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">Когда необходима диагностика в Альтамед Голицино?</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">Когда необходима диагностика в Альтамед Голицыно?</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {indications.map((indication, idx) => (
               <div key={idx} className="bg-white p-6 rounded-[20px] shadow-md hover:shadow-lg transition-shadow border border-gray-100">
@@ -398,7 +398,7 @@ export default function DiagnosticsPage() {
       {/* Advantages */}
       <section className="py-12 bg-gray-50">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
-          <h2 className="text-3xl font-bold text-gray-900 text-center mb-8">Преимущества диагностики в клинике «Альтамед Голицино»</h2>
+          <h2 className="text-3xl font-bold text-gray-900 text-center mb-8">Преимущества диагностики в клинике «Альтамед Голицыно»</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {advantages.map((advantage, idx) => (
               <div key={idx} className="bg-white p-6 rounded-[20px] shadow-md hover:shadow-lg transition-shadow border border-gray-100">
@@ -417,10 +417,10 @@ export default function DiagnosticsPage() {
       {/* Preparation for diagnostics */}
       <section className="py-12 bg-white">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">Подготовка к диагностическим исследованиям в Альтамед Голицино</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">Подготовка к диагностическим исследованиям в Альтамед Голицыно</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-blue-50 rounded-[20px] p-8 shadow-lg border-l-4 border-blue-600">
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4">Подготовка к УЗИ в Альтамед Голицино</h3>
+              <h3 className="text-2xl font-semibold text-gray-900 mb-4">Подготовка к УЗИ в Альтамед Голицыно</h3>
               <p className="text-gray-700 mb-4 leading-relaxed">
                 Правильная подготовка к УЗИ обеспечивает высокую информативность исследования:
               </p>
@@ -466,7 +466,7 @@ export default function DiagnosticsPage() {
       {/* Popular diagnostic studies */}
       <section className="py-12 bg-gray-50">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
-          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Диагностические исследования в Альтамед Голицино</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Диагностические исследования в Альтамед Голицыно</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {diagnosticsServices.map((service) => (
               <Link key={service.id} href={service.link} className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100 hover:shadow-lg transition-shadow block">
@@ -486,7 +486,7 @@ export default function DiagnosticsPage() {
       {/* Diagnostic Process */}
       <section className="py-12 bg-white">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">Как проходит диагностика в Альтамед Голицино</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">Как проходит диагностика в Альтамед Голицыно</h2>
           <div className="space-y-6">
             <div className="bg-gradient-to-r from-blue-50 to-cyan-50 rounded-[20px] p-6 md:p-8">
               <h3 className="text-xl font-semibold text-gray-900 mb-4">Этапы диагностического процесса</h3>
@@ -495,28 +495,28 @@ export default function DiagnosticsPage() {
                   <div className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold mr-4 flex-shrink-0">1</div>
                   <div>
                     <h4 className="font-semibold mb-2">Запись на исследование</h4>
-                    <p className="text-base md:text-lg">Вы можете записаться на диагностику в Альтамед Голицино онлайн через сайт, по телефону или при личном визите в клинику. Наш администратор поможет выбрать удобное время и расскажет о подготовке к исследованию.</p>
+                    <p className="text-base md:text-lg">Вы можете записаться на диагностику в Альтамед Голицыно онлайн через сайт, по телефону или при личном визите в клинику. Наш администратор поможет выбрать удобное время и расскажет о подготовке к исследованию.</p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <div className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold mr-4 flex-shrink-0">2</div>
                   <div>
                     <h4 className="font-semibold mb-2">Подготовка к исследованию</h4>
-                    <p className="text-base md:text-lg">В зависимости от вида диагностики специалисты Альтамед Голицино дадут подробные инструкции по подготовке. Это может включать голодание, очищение кишечника, отмену некоторых препаратов. Правильная подготовка обеспечивает точность результатов.</p>
+                    <p className="text-base md:text-lg">В зависимости от вида диагностики специалисты Альтамед Голицыно дадут подробные инструкции по подготовке. Это может включать голодание, очищение кишечника, отмену некоторых препаратов. Правильная подготовка обеспечивает точность результатов.</p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <div className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold mr-4 flex-shrink-0">3</div>
                   <div>
                     <h4 className="font-semibold mb-2">Проведение исследования</h4>
-                    <p className="text-base md:text-lg">Все диагностические процедуры в Альтамед Голицино проводятся опытными специалистами в комфортных условиях. Врач объяснит процесс, ответит на вопросы и обеспечит максимальный комфорт во время исследования.</p>
+                    <p className="text-base md:text-lg">Все диагностические процедуры в Альтамед Голицыно проводятся опытными специалистами в комфортных условиях. Врач объяснит процесс, ответит на вопросы и обеспечит максимальный комфорт во время исследования.</p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <div className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold mr-4 flex-shrink-0">4</div>
                   <div>
                     <h4 className="font-semibold mb-2">Получение результатов</h4>
-                    <p className="text-base md:text-lg">Результаты большинства исследований в Альтамед Голицино готовы в день обращения или в течение 1-2 рабочих дней. Вы получите результаты в печатном виде и в электронном формате через личный кабинет. При необходимости врач-диагност проведет консультацию по результатам.</p>
+                    <p className="text-base md:text-lg">Результаты большинства исследований в Альтамед Голицыно готовы в день обращения или в течение 1-2 рабочих дней. Вы получите результаты в печатном виде и в электронном формате через личный кабинет. При необходимости врач-диагност проведет консультацию по результатам.</p>
                   </div>
                 </div>
               </div>
@@ -528,7 +528,7 @@ export default function DiagnosticsPage() {
       {/* Equipment and Technology */}
       <section className="py-12 bg-gray-50">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
-          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Оборудование и технологии в Альтамед Голицино</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Оборудование и технологии в Альтамед Голицыно</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
               <h3 className="text-xl font-semibold text-gray-900 mb-4">Лучевая диагностика</h3>
@@ -579,7 +579,7 @@ export default function DiagnosticsPage() {
       {/* Why Choose Us */}
       <section className="py-12 bg-white">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
-          <h2 className="text-3xl font-bold text-gray-900 text-center mb-8">Почему выбирают диагностику в Альтамед Голицино</h2>
+          <h2 className="text-3xl font-bold text-gray-900 text-center mb-8">Почему выбирают диагностику в Альтамед Голицыно</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-[20px] p-6 shadow-md">
               <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mb-4">
@@ -588,7 +588,7 @@ export default function DiagnosticsPage() {
                 </svg>
               </div>
               <h3 className="text-lg font-semibold mb-2">Безопасность и точность</h3>
-              <p className="text-gray-700">Все исследования в Альтамед Голицино проводятся с соблюдением международных стандартов безопасности и качества</p>
+              <p className="text-gray-700">Все исследования в Альтамед Голицыно проводятся с соблюдением международных стандартов безопасности и качества</p>
             </div>
             <div className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-[20px] p-6 shadow-md">
               <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mb-4">
@@ -597,7 +597,7 @@ export default function DiagnosticsPage() {
                 </svg>
               </div>
               <h3 className="text-lg font-semibold mb-2">Быстрые результаты</h3>
-              <p className="text-gray-700">Большинство исследований в Альтамед Голицино готовы в день обращения, результаты доступны онлайн</p>
+              <p className="text-gray-700">Большинство исследований в Альтамед Голицыно готовы в день обращения, результаты доступны онлайн</p>
             </div>
             <div className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-[20px] p-6 shadow-md">
               <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mb-4">
@@ -606,7 +606,7 @@ export default function DiagnosticsPage() {
                 </svg>
               </div>
               <h3 className="text-lg font-semibold mb-2">Опытные специалисты</h3>
-              <p className="text-gray-700">Врачи-диагносты Альтамед Голицино имеют высшую категорию и многолетний опыт работы</p>
+              <p className="text-gray-700">Врачи-диагносты Альтамед Голицыно имеют высшую категорию и многолетний опыт работы</p>
             </div>
           </div>
         </div>
@@ -615,7 +615,7 @@ export default function DiagnosticsPage() {
       {/* FAQ */}
       <section className="py-12 bg-gray-50">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
-          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Часто задаваемые вопросы о диагностике в Альтамед Голицино</h2>
+          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Часто задаваемые вопросы о диагностике в Альтамед Голицыно</h2>
           <div className="space-y-4">
             {faqItems.map((item, index) => (
               <div key={index} className="bg-white rounded-[20px] shadow-md overflow-hidden border border-blue-100">

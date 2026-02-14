@@ -219,10 +219,10 @@ export default function SurdologyPage() {
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <header className="mb-6 ml-0 md:ml-4 lg:ml-8">
             <h1 className="text-2xl md:text-3xl font-bold text-black leading-tight px-4 md:px-0">
-              Сурдология в клинике «<span className="italic">Альтамед Голицино</span>»
+              Сурдология в клинике «<span className="italic">Альтамед Голицыно</span>»
             </h1>
             <p className="text-gray-600 mt-2 px-4 md:px-0 text-sm md:text-base">
-              Диагностика и лечение заболеваний органов слуха в Голицино
+              Диагностика и лечение заболеваний органов слуха в Голицыно
             </p>
           </header>
 
@@ -260,7 +260,7 @@ export default function SurdologyPage() {
               <div className="w-full h-full relative">
                 <img
                   src="/images/images allergoly/sydrolog.webp"
-                  alt="Сурдология в Голицино"
+                  alt="Сурдология в Голицыно"
                   className="w-full h-full object-cover"
                 />
                 {/* Белый градиентный слой */}
@@ -269,7 +269,7 @@ export default function SurdologyPage() {
               
               {/* Content overlay */}
               <div className="absolute inset-0 flex flex-col justify-center items-start p-8 md:p-12 text-black">
-                <h2 className="text-2xl md:text-4xl font-bold mb-4">Сурдология в Голицино</h2>
+                <h2 className="text-2xl md:text-4xl font-bold mb-4">Сурдология в Голицыно</h2>
                 <p className="text-lg md:text-xl mb-6 max-w-md">Профессиональная диагностика и лечение заболеваний органов слуха</p>
                 <Link 
                   href="https://reg.altamed-golitsino.ru/" 
@@ -285,10 +285,10 @@ export default function SurdologyPage() {
         </div>
       </main>
 
-      {/* Почему Альтамед Голицино*/}
+      {/* Почему Альтамед Голицыно*/}
       <section className="py-12 bg-gray-50">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
-          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Почему «Альтамед Голицино»?</h2>
+          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Почему «Альтамед Голицыно»?</h2>
           <div className="md:hidden space-y-6">
             <div className="flex items-start gap-4"><div className="w-16 h-16 flex-shrink-0 relative"><img src="/images/yslugi/star 1.webp" alt="1" className="w-full h-full object-contain" /><span className="absolute inset-0 flex items-center justify-center text-white font-bold text-xl">1</span></div><p className="text-gray-700 font-medium text-left pt-2">Лечение в соответствии с мировыми клиническими рекомендациями</p></div>
             <div className="flex items-start gap-4"><div className="w-16 h-16 flex-shrink-0 relative"><img src="/images/yslugi/star 1.webp" alt="2" className="w-full h-full object-contain" /><span className="absolute inset-0 flex items-center justify-center text-white font-bold text-xl">2</span></div><p className="text-gray-700 font-medium text-left pt-2">Комплексная оценка заболевания и прогноза лечения</p></div>
@@ -437,7 +437,7 @@ export default function SurdologyPage() {
             
             <div className="space-y-6 text-gray-700 mb-8 text-center">
               <p>
-                Взрослому человеку следует записаться на прием к сурдологу в «Альтамед Голицино» при различных проблемах. Все эти симптомы нельзя игнорировать, так как они не только вызывают дискомфорт, но и в целом снижают уровень качества жизни.
+                Взрослому человеку следует записаться на прием к сурдологу в «Альтамед Голицыно» при различных проблемах. Все эти симптомы нельзя игнорировать, так как они не только вызывают дискомфорт, но и в целом снижают уровень качества жизни.
               </p>
             </div>
             
@@ -491,12 +491,12 @@ export default function SurdologyPage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
                 <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                  Консультация хорошего врача-сурдолога в Голицино
+                  Консультация хорошего врача-сурдолога в Голицыно
                 </h2>
                 <p className="text-lg text-gray-600 mb-6">
                   Сурдология — это наука о нарушениях восприятия и проведения звука в органе слуха человека. 
                   Около 60% людей имеют проблемы со слухом, и сертифицированные врачи с опытом работы могут решить как симптомы, так и причины в специально оборудованных аудиологических кабинетах. 
-                  В клинике «Альтамед Голицино» ведут прием опытные сурдологи, которые занимаются диагностикой и лечением заболеваний органов слуха.
+                  В клинике «Альтамед Голицыно» ведут прием опытные сурдологи, которые занимаются диагностикой и лечением заболеваний органов слуха.
                 </p>
                 <p className="text-lg text-gray-600 mb-6">
                   Снижение слуха значительно влияет на социальную адаптацию, а полная потеря слуха приводит к инвалидности. 

@@ -34,7 +34,7 @@ const nextConfig = {
     ignoreDuringBuilds: false,
   },
 
-  // Редиректы со старых URL на новые (терапевт, педиатр, гастроэнтеролог, ЛОР, офтальмолог, дерматолог Голицино)
+  // Редиректы со старых URL на новые (терапевт, педиатр, гастроэнтеролог, ЛОР, офтальмолог, дерматолог Голицыно)
   async redirects() {
     return [
       { source: '/services/therapy', destination: '/services/terapevt-golitsino', permanent: true },

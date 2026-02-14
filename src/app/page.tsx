@@ -430,7 +430,7 @@ export default function Home() {
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <div className="mb-6 ml-0 md:ml-4 lg:ml-8">
             <h1 className="text-2xl md:text-3xl font-bold text-black leading-tight px-4 md:px-0">
-              Медицинский центр <span className="italic">Альтамед-Голицино</span>
+              Медицинский центр <span className="italic">Альтамед-Голицыно</span>
             </h1>
           </div>
 

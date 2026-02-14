@@ -21,7 +21,7 @@ export default function OnkologGolitsinoPage() {
             <span className="mx-2" aria-hidden="true">/</span>
             <Link href="/services" className="hover:text-emerald-500">Услуги</Link>
             <span className="mx-2" aria-hidden="true">/</span>
-            <span className="text-gray-800">Онколог Голицино</span>
+            <span className="text-gray-800">Онколог Голицыно</span>
           </nav>
         </div>
       </section>
@@ -31,10 +31,10 @@ export default function OnkologGolitsinoPage() {
         <div className="mx-auto px-4" style={{ maxWidth: "83rem" }}>
           <header className="mb-6 ml-0 md:ml-4 lg:ml-8">
             <h1 className="text-2xl md:text-3xl font-bold text-black leading-tight px-4 md:px-0">
-              Онколог в Голицино — приём в «Альтамед Голицино»
+              Онколог в Голицыно — приём в «Альтамед Голицыно»
             </h1>
             <p className="text-gray-600 mt-2 px-4 md:px-0 text-sm md:text-base">
-              Приём врача-онколога и детского онколога, консультации и диспансерное наблюдение в Голицино
+              Приём врача-онколога и детского онколога, консультации и диспансерное наблюдение в Голицыно
             </p>
           </header>
 
@@ -44,7 +44,7 @@ export default function OnkologGolitsinoPage() {
                 <div className="w-full h-full relative">
                   <Image
                     src="/images/yslugi/mammalogy.webp"
-                    alt="Онколог Голицино"
+                    alt="Онколог Голицыно"
                     fill
                     className="object-cover"
                     unoptimized
@@ -53,7 +53,7 @@ export default function OnkologGolitsinoPage() {
                 </div>
               </div>
               <div className="bg-white p-4 flex flex-col justify-between items-start gap-3">
-                <div className="text-black font-medium text-sm">Онколог в Голицино</div>
+                <div className="text-black font-medium text-sm">Онколог в Голицыно</div>
                 <Link
                   href="https://reg.altamed-golitsino.ru/"
                   target="_blank"
@@ -71,7 +71,7 @@ export default function OnkologGolitsinoPage() {
               <div className="w-full h-full relative">
                 <Image
                   src="/images/yslugi/mammalogy.webp"
-                  alt="Онколог Голицино"
+                  alt="Онколог Голицыно"
                   fill
                   className="object-cover"
                   unoptimized
@@ -80,8 +80,8 @@ export default function OnkologGolitsinoPage() {
               </div>
               <div className="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-transparent" />
               <div className="absolute inset-0 flex flex-col justify-center items-start p-8 md:p-12 text-black">
-                <h2 className="text-2xl md:text-4xl font-bold mb-4">Онколог в Голицино</h2>
-                <p className="text-lg md:text-xl mb-6 max-w-md">Приём онколога и детского онколога, консультации и диспансерное наблюдение в Альтамед Голицино</p>
+                <h2 className="text-2xl md:text-4xl font-bold mb-4">Онколог в Голицыно</h2>
+                <p className="text-lg md:text-xl mb-6 max-w-md">Приём онколога и детского онколога, консультации и диспансерное наблюдение в Альтамед Голицыно</p>
                 <Link
                   href="https://reg.altamed-golitsino.ru/"
                   target="_blank"
@@ -96,18 +96,18 @@ export default function OnkologGolitsinoPage() {
         </div>
       </main>
 
-      {/* SEO-текст: Онкология в Голицино */}
+      {/* SEO-текст: Онкология в Голицыно */}
       <section className="py-12 bg-white">
         <div className="mx-auto px-4" style={{ maxWidth: "83rem" }}>
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Онкология в Голицино</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Онкология в Голицыно</h2>
           <p className="text-gray-600 mb-4 leading-relaxed">
-            Онколог в Голицино — специалист по диагностике, лечению и наблюдению пациентов с онкологическими заболеваниями и подозрением на них. В медицинском центре «Альтамед Голицино» ведут приём врачи-онкологи и детские онкологи: первичный приём (осмотр, консультация), диспансерный приём для контроля состояния и наблюдения после лечения.
+            Онколог в Голицыно — специалист по диагностике, лечению и наблюдению пациентов с онкологическими заболеваниями и подозрением на них. В медицинском центре «Альтамед Голицыно» ведут приём врачи-онкологи и детские онкологи: первичный приём (осмотр, консультация), диспансерный приём для контроля состояния и наблюдения после лечения.
           </p>
           <p className="text-gray-600 mb-4 leading-relaxed">
-            Записаться к онкологу в Голицино можно онлайн на сайте регистратуры или по телефону клиники. «Альтамед Голицино» находится по адресу: Голицыно, Советская улица, 58. Онкологическая помощь взрослым и детям — жителям Голицино и Одинцовского городского округа Московской области.
+            Записаться к онкологу в Голицыно можно онлайн на сайте регистратуры или по телефону клиники. «Альтамед Голицыно» находится по адресу: Голицыно, Советская улица, 58. Онкологическая помощь взрослым и детям — жителям Голицыно и Одинцовского городского округа Московской области.
           </p>
           <p className="text-gray-600 leading-relaxed">
-            К онкологу обращаются при подозрении на новообразования, для интерпретации результатов обследований, составления плана лечения и диспансерного наблюдения. Детский онколог в Голицино принимает детей для консультаций и диспансерного наблюдения по направлению педиатра или других специалистов.
+            К онкологу обращаются при подозрении на новообразования, для интерпретации результатов обследований, составления плана лечения и диспансерного наблюдения. Детский онколог в Голицыно принимает детей для консультаций и диспансерного наблюдения по направлению педиатра или других специалистов.
           </p>
         </div>
       </section>
@@ -118,7 +118,7 @@ export default function OnkologGolitsinoPage() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div className="lg:col-span-2">
               <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-                Когда нужно обратиться к онкологу в Голицино
+                Когда нужно обратиться к онкологу в Голицыно
               </h2>
               <p className="text-gray-700 mb-4 leading-relaxed">
                 Важно не откладывать консультацию врача-онколога, если вы заметили изменения в состоянии здоровья
@@ -126,7 +126,7 @@ export default function OnkologGolitsinoPage() {
                 подтвердить или опровергнуть онкологический диагноз и подобрать безопасную тактику наблюдения.
               </p>
               <p className="text-gray-700 leading-relaxed">
-                В «Альтамед Голицино» онколог проводит первичную и повторную консультацию, помогает с выбором
+                В «Альтамед Голицыно» онколог проводит первичную и повторную консультацию, помогает с выбором
                 специализированного стационара, оценивает динамику лечения и контролирует состояние пациентов,
                 прошедших хирургическое, лучевое или лекарственное лечение в других медицинских учреждениях.
               </p>
@@ -156,7 +156,7 @@ export default function OnkologGolitsinoPage() {
                 Как подготовиться к консультации онколога
               </h2>
               <p className="text-gray-700 mb-3 leading-relaxed">
-                Чтобы приём онколога в Голицино был максимально информативным, заранее соберите медицинскую
+                Чтобы приём онколога в Голицыно был максимально информативным, заранее соберите медицинскую
                 документацию: выписки из стационаров, результаты КТ, МРТ, УЗИ, гистологии и лабораторных анализов.
                 Это поможет врачу быстрее оценить ситуацию и избежать повторных исследований.
               </p>
@@ -168,10 +168,10 @@ export default function OnkologGolitsinoPage() {
             </div>
             <div className="bg-gray-50 rounded-2xl border border-gray-200 p-6">
               <h3 className="text-lg font-semibold text-gray-900 mb-3">
-                Преимущества наблюдения у онколога в «Альтамед Голицино»
+                Преимущества наблюдения у онколога в «Альтамед Голицыно»
               </h3>
               <ul className="space-y-2 text-sm md:text-base text-gray-700 list-disc list-inside">
-                <li>удобное расположение для жителей Голицино и близлежащих населённых пунктов;</li>
+                <li>удобное расположение для жителей Голицыно и близлежащих населённых пунктов;</li>
                 <li>возможность регулярного диспансерного наблюдения у одного специалиста;</li>
                 <li>комплексный подход с привлечением смежных специалистов клиники;</li>
                 <li>помощь в подборе профильных онкологических центров для госпитализации и лечения;</li>
@@ -182,10 +182,10 @@ export default function OnkologGolitsinoPage() {
         </div>
       </section>
 
-      {/* Почему Альтамед Голицино */}
+      {/* Почему Альтамед Голицыно */}
       <section className="py-12 bg-gray-50">
         <div className="mx-auto px-4" style={{ maxWidth: "83rem" }}>
-          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Почему «Альтамед Голицино»?</h2>
+          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Почему «Альтамед Голицыно»?</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               "Лечение в соответствии с мировыми клиническими рекомендациями",
@@ -209,7 +209,7 @@ export default function OnkologGolitsinoPage() {
       <section className="py-16" aria-labelledby="services-heading">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 id="services-heading" className="text-2xl md:text-3xl font-bold text-black mb-8 text-center">
-            Услуги онколога в Голицино
+            Услуги онколога в Голицыно
           </h2>
           <p className="text-amber-800 bg-amber-50 border border-amber-200 rounded-lg px-4 py-3 mb-6 max-w-3xl mx-auto text-center text-sm">
             Стоимость указана в рублях и носит информационный характер; уточняйте цены при записи.

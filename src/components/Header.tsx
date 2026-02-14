@@ -36,7 +36,7 @@ export default function Header() {
               <Link href="/" className="flex items-center">
                 <Image 
                   src="/images/icons/altamed-golicyno3.png" 
-                  alt="Альтамед Голицино" 
+                  alt="Альтамед Голицыно" 
                   width={140}
                   height={140}
                   className="object-contain"

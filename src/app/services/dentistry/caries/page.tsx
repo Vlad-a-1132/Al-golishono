@@ -92,10 +92,10 @@ export default function CariesTreatmentPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div>
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-                Лечение кариеса в клинике «Альтамед Голицино»
+                Лечение кариеса в клинике «Альтамед Голицыно»
               </h1>
               <p className="text-lg md:text-xl mb-8 text-emerald-100">
-                Современное и безболезненное лечение кариеса всех стадий в Альтамед Голицино
+                Современное и безболезненное лечение кариеса всех стадий в Альтамед Голицыно
               </p>
             </div>
             <div className="relative">
@@ -113,9 +113,9 @@ export default function CariesTreatmentPage() {
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div className="lg:col-span-2 space-y-5 text-gray-700 leading-relaxed">
-              <h2 className="text-3xl font-bold text-gray-900">Лечение кариеса в Альтамед Голицино: почему выбирают нас</h2>
+              <h2 className="text-3xl font-bold text-gray-900">Лечение кариеса в Альтамед Голицыно: почему выбирают нас</h2>
               <p>
-                Клиника «Альтамед Голицино» предлагает комплексное лечение кариеса всех стадий в Альтамед Голицино — от
+                Клиника «Альтамед Голицыно» предлагает комплексное лечение кариеса всех стадий в Альтамед Голицыно — от
                 поверхностного кариеса до глубокого поражения с использованием современных материалов и
                 безболезненных методик. Мы применяем передовые технологии, качественные композитные пломбы
                 и учитываем индивидуальные особенности каждого пациента, чтобы сохранить здоровье зубов
@@ -128,13 +128,13 @@ export default function CariesTreatmentPage() {
                 для защиты пульпы.
               </p>
               <p>
-                Прозрачные цены позволяют планировать бюджет — стоимость лечения кариеса в Альтамед Голицино
+                Прозрачные цены позволяют планировать бюджет — стоимость лечения кариеса в Альтамед Голицыно
                 фиксируется заранее, а пациенты получают подробную смету с поэтапным планом лечения.
               </p>
             </div>
             <div className="bg-gray-50 rounded-[20px] p-6 shadow-md border-l-4 border-[#4A5568]">
               <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Что вы получаете, выбирая «Альтамед Голицино»
+                Что вы получаете, выбирая «Альтамед Голицыно»
               </h3>
               <ul className="space-y-3 text-gray-700 text-sm md:text-base leading-relaxed">
                 <li className="flex items-start">
@@ -161,7 +161,7 @@ export default function CariesTreatmentPage() {
 
       <section className="py-12 bg-gray-50">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">Преимущества лечения кариеса в «Альтамед Голицино»</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">Преимущества лечения кариеса в «Альтамед Голицыно»</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
               <h3 className="text-xl font-semibold text-gray-900 mb-3">Опытные стоматологи-терапевты</h3>
@@ -246,7 +246,7 @@ export default function CariesTreatmentPage() {
                 </ul>
               </div>
               <div className="bg-white rounded-lg p-6 shadow-md">
-                <h3 className="text-xl font-semibold text-gray-800 mb-3">Преимущества лечения в «Альтамед Голицино»</h3>
+                <h3 className="text-xl font-semibold text-gray-800 mb-3">Преимущества лечения в «Альтамед Голицыно»</h3>
                 <ul className="space-y-2 text-gray-600">
                   <li className="flex items-start">
                     <svg className="w-5 h-5 text-emerald-600 mr-2 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -283,7 +283,7 @@ export default function CariesTreatmentPage() {
       <section className="py-12 bg-gray-50">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8 text-center">
-            Методы лечения кариеса в Альтамед Голицино
+            Методы лечения кариеса в Альтамед Голицыно
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-white rounded-lg p-6 shadow-md">
@@ -315,7 +315,7 @@ export default function CariesTreatmentPage() {
       <section className="py-12 bg-white">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8 text-center">
-            Как проходит лечение кариеса в клинике «Альтамед Голицино»
+            Как проходит лечение кариеса в клинике «Альтамед Голицыно»
           </h2>
           <div className="space-y-6">
             <div className="bg-gradient-to-r from-emerald-50 to-blue-50 rounded-lg p-6">
@@ -392,7 +392,7 @@ export default function CariesTreatmentPage() {
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <div className="bg-white rounded-lg p-8 shadow-lg">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6 text-center">
-              Профилактика кариеса в Альтамед Голицино
+              Профилактика кариеса в Альтамед Голицыно
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
@@ -404,7 +404,7 @@ export default function CariesTreatmentPage() {
               <div>
                 <h3 className="text-xl font-semibold text-gray-800 mb-3">Профессиональная чистка</h3>
                 <p className="text-gray-600 mb-4">
-                  Регулярная профессиональная гигиена полости рта в клинике «Альтамед Голицино» позволяет удалить зубной налет и камни, которые невозможно убрать в домашних условиях.
+                  Регулярная профессиональная гигиена полости рта в клинике «Альтамед Голицыно» позволяет удалить зубной налет и камни, которые невозможно убрать в домашних условиях.
                 </p>
               </div>
               <div>
@@ -427,23 +427,23 @@ export default function CariesTreatmentPage() {
       <section className="py-12 bg-white">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <h2 className="text-3xl font-bold text-gray-900 mb-6">
-            Лечение кариеса в Альтамед Голицино: цены и отзывы пациентов
+            Лечение кариеса в Альтамед Голицыно: цены и отзывы пациентов
           </h2>
           <div className="space-y-4 text-gray-700 leading-relaxed text-sm md:text-base mb-6">
             <p>
-              Стоматология «Альтамед Голицино» — клиника, где лечение кариеса в Голицино проводится по международным
-              протоколам. Мы принимаем пациентов из Голицино и всего Одинцовского городского округа, поэтому
-              запрос «лечение кариеса Альтамед Голицино область» полностью закрывает наши услуги.
+              Стоматология «Альтамед Голицыно» — клиника, где лечение кариеса в Голицыно проводится по международным
+              протоколам. Мы принимаем пациентов из Голицыно и всего Одинцовского городского округа, поэтому
+              запрос «лечение кариеса Альтамед Голицыно область» полностью закрывает наши услуги.
             </p>
             <p>
               Прайс ниже отвечает на популярные поисковые запросы Wordstat: «лечение кариеса в одинцове цены»,
-              «лечение кариеса Альтамед Голицино отзывы», «Альтамед Голицино лечение кариеса цена». Мы регулярно обновляем
-              данные, чтобы стоимость лечения кариеса Альтамед Голицино оставалась прозрачной и понятной.
+              «лечение кариеса Альтамед Голицыно отзывы», «Альтамед Голицыно лечение кариеса цена». Мы регулярно обновляем
+              данные, чтобы стоимость лечения кариеса Альтамед Голицыно оставалась прозрачной и понятной.
             </p>
             <p>
-              Наши пациенты отмечают, что «лечение кариеса Альтамед Голицино отзывы» в точности описывают результат:
+              Наши пациенты отмечают, что «лечение кариеса Альтамед Голицыно отзывы» в точности описывают результат:
               аккуратная работа стоматологов-терапевтов и детальное сопровождение. Если вы ищете стоматологию,
-              где «стоматология лечение кариеса Альтамед Голицино» — это не просто слоган, а комплексная услуга, записывайтесь
+              где «стоматология лечение кариеса Альтамед Голицыно» — это не просто слоган, а комплексная услуга, записывайтесь
               на консультацию стоматолога-терапевта или ознакомьтесь с другими направлениями на{" "}
               <Link href="/services/dentistry" className="text-emerald-600 hover:text-emerald-700 underline">
                 странице стоматологии
@@ -458,10 +458,10 @@ export default function CariesTreatmentPage() {
       <section className="py-12 bg-white">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8 text-center">
-            Цены на лечение кариеса в Альтамед Голицино
+            Цены на лечение кариеса в Альтамед Голицыно
           </h2>
           <p className="text-gray-700 mb-6 leading-relaxed text-center">
-            Стоимость лечения кариеса в клинике «Альтамед Голицино» формируется индивидуально в зависимости от стадии
+            Стоимость лечения кариеса в клинике «Альтамед Голицыно» формируется индивидуально в зависимости от стадии
             кариеса и выбранного материала, но мы фиксируем цены в договоре, чтобы пациент точно понимал итоговую сумму.
           </p>
           <div className="space-y-6">
@@ -509,13 +509,13 @@ export default function CariesTreatmentPage() {
       <section className="py-12 bg-gray-50">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <h2 className="text-3xl font-bold text-gray-900 mb-6">
-            Отзывы пациентов о лечении кариеса в Альтамед Голицино
+            Отзывы пациентов о лечении кариеса в Альтамед Голицыно
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Реальные отзывы из Голицино</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Реальные отзывы из Голицыно</h3>
               <p className="text-gray-700 text-sm md:text-base leading-relaxed">
-                Запрос «лечение кариеса Альтамед Голицино отзывы» подтверждается историями пациентов: они отмечают
+                Запрос «лечение кариеса Альтамед Голицыно отзывы» подтверждается историями пациентов: они отмечают
                 безболезненность процедуры, внимательное отношение и понятный план лечения.
               </p>
             </div>
@@ -529,7 +529,7 @@ export default function CariesTreatmentPage() {
             <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
               <h3 className="text-xl font-semibold text-gray-900 mb-3">Комфортное лечение</h3>
               <p className="text-gray-700 text-sm md:text-base leading-relaxed">
-                После лечения кариеса в Голицино пациенты отмечают отсутствие дискомфорта; врачи на связи
+                После лечения кариеса в Голицыно пациенты отмечают отсутствие дискомфорта; врачи на связи
                 и дают подробные инструкции по уходу за пломбами.
               </p>
             </div>
@@ -540,13 +540,13 @@ export default function CariesTreatmentPage() {
       <section className="py-12 bg-white">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <h2 className="text-3xl font-bold text-gray-900 mb-6">
-            Частые вопросы о лечении кариеса в Альтамед Голицино
+            Частые вопросы о лечении кариеса в Альтамед Голицыно
           </h2>
           <div className="space-y-4">
             <details className="group bg-gray-50 rounded-[20px] shadow-md border border-gray-100">
               <summary className="cursor-pointer px-6 py-4 flex items-center justify-between text-left">
                 <span className="text-lg font-semibold text-gray-900 group-open:text-emerald-700 transition-colors duration-300">
-                  Сколько стоит лечение кариеса в Альтамед Голицино в клинике «Альтамед Голицино»?
+                  Сколько стоит лечение кариеса в Альтамед Голицыно в клинике «Альтамед Голицыно»?
                 </span>
                 <svg
                   className="w-5 h-5 text-[#4A5568] group-open:rotate-180 transition-transform duration-300"
@@ -629,10 +629,10 @@ export default function CariesTreatmentPage() {
           <div className="bg-gradient-to-r from-[#4A5568] to-[#5A6474] rounded-[20px] p-8 md:p-12 text-white flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
             <div className="max-w-3xl">
               <h2 className="text-2xl md:text-3xl font-bold mb-4">
-                Лечение кариеса в Альтамед Голицино — начните с бесплатного плана лечения
+                Лечение кариеса в Альтамед Голицыно — начните с бесплатного плана лечения
               </h2>
               <p className="text-white/90 text-sm md:text-base leading-relaxed">
-                Запишитесь на консультацию в клинику «Альтамед Голицино», чтобы узнать стоимость лечения кариеса, подобрать
+                Запишитесь на консультацию в клинику «Альтамед Голицыно», чтобы узнать стоимость лечения кариеса, подобрать
                 подходящий материал для пломбы и получить индивидуальный план с учётом ваших пожеланий.
               </p>
             </div>
@@ -656,7 +656,7 @@ export default function CariesTreatmentPage() {
               __html: JSON.stringify({
                 "@context": "https://schema.org",
                 "@type": "MedicalBusiness",
-                name: "Клиника «Альтамед Голицино» — лечение кариеса в Альтамед Голицино",
+                name: "Клиника «Альтамед Голицыно» — лечение кариеса в Альтамед Голицыно",
                 url: "https://altamed-golitsino.ru/services/dentistry/caries",
                 image: "https://altamed-golitsino.ru/images/dentisrty/task_01kb5855rne17bddh7ks55a0ze_1764334299_img_1.webp",
                 medicalSpecialty: "Dental",
@@ -667,16 +667,16 @@ export default function CariesTreatmentPage() {
                 },
                 address: {
                   "@type": "PostalAddress",
-                  addressLocality: "Голицино",
+                  addressLocality: "Голицыно",
                   addressRegion: "Московская область",
                   streetAddress: "ул. Советская, 9"
                 },
                 telephone: "+7 (495) 640-09-03",
                 priceRange: "₽₽",
                 serviceType: "Лечение кариеса",
-                areaServed: "Голицино и Голицино",
+                areaServed: "Голицыно и Голицыно",
                 description:
-                  "Лечение кариеса в Альтамед Голицино: поверхностный, средний и глубокий кариес, качественные пломбы, безболезненное лечение, современные материалы и доступные цены.",
+                  "Лечение кариеса в Альтамед Голицыно: поверхностный, средний и глубокий кариес, качественные пломбы, безболезненное лечение, современные материалы и доступные цены.",
                 sameAs: [
                   "https://altamed-golitsino.ru",
                   "https://yandex.ru/maps/org/altamed_s/1919839667"

@@ -43,7 +43,7 @@ async function sendEmail(appointment: Appointment, formType: string = 'Запи�
 
     // Формируем текст письма
     const mailOptions = {
-      from: `"Сайт Альтамед Голицино" <${process.env.SMTP_USER || 'reg@altamed-golitsino.ru'}>`,
+      from: `"Сайт Альтамед Голицыно" <${process.env.SMTP_USER || 'reg@altamed-golitsino.ru'}>`,
       to: emailTo,
       subject: `${formType} - новая заявка с сайта`,
       html: `
@@ -57,7 +57,7 @@ async function sendEmail(appointment: Appointment, formType: string = 'Запи�
             <p><strong>Дата заявки:</strong> ${appointment.date}</p>
             <p><strong>ID заявки:</strong> ${appointment.id}</p>
           </div>
-          <p style="color: #666; font-size: 12px;">Это автоматическое уведомление с сайта Альтамед Голицино</p>
+          <p style="color: #666; font-size: 12px;">Это автоматическое уведомление с сайта Альтамед Голицыно</p>
         </div>
       `,
       text: `

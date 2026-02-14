@@ -44,10 +44,10 @@ export default function CADCAMPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div>
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-                CAD/CAM-технологии в клинике «Альтамед Голицино»
+                CAD/CAM-технологии в клинике «Альтамед Голицыно»
               </h1>
               <p className="text-lg md:text-xl mb-8 text-emerald-100">
-                Керамические вкладки, виниры e-max и коронки из диоксида циркония в Альтамед Голицино
+                Керамические вкладки, виниры e-max и коронки из диоксида циркония в Альтамед Голицыно
               </p>
             </div>
             <div className="relative">
@@ -65,9 +65,9 @@ export default function CADCAMPage() {
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div className="lg:col-span-2 space-y-5 text-gray-700 leading-relaxed">
-              <h2 className="text-3xl font-bold text-gray-900">CAD/CAM-технологии в Альтамед Голицино: почему выбирают нас</h2>
+              <h2 className="text-3xl font-bold text-gray-900">CAD/CAM-технологии в Альтамед Голицыно: почему выбирают нас</h2>
               <p>
-                Клиника «Альтамед Голицино» предлагает услуги CAD/CAM-технологий в Альтамед Голицино — изготовление коронок,
+                Клиника «Альтамед Голицыно» предлагает услуги CAD/CAM-технологий в Альтамед Голицыно — изготовление коронок,
                 виниров и вкладок с использованием компьютерного моделирования и фрезерования. Мы применяем
                 современные материалы, передовое оборудование и обеспечиваем высочайшую точность и эстетику
                 ортопедических конструкций.
@@ -78,13 +78,13 @@ export default function CADCAMPage() {
                 керамики e-max, виниры и вкладки с использованием современных технологий.
               </p>
               <p>
-                Прозрачные цены позволяют планировать бюджет — стоимость CAD/CAM-конструкций в Альтамед Голицино
+                Прозрачные цены позволяют планировать бюджет — стоимость CAD/CAM-конструкций в Альтамед Голицыно
                 фиксируется заранее, а пациенты получают подробную информацию о процедуре.
               </p>
             </div>
             <div className="bg-gray-50 rounded-[20px] p-6 shadow-md border-l-4 border-[#4A5568]">
               <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Что вы получаете, выбирая «Альтамед Голицино»
+                Что вы получаете, выбирая «Альтамед Голицыно»
               </h3>
               <ul className="space-y-3 text-gray-700 text-sm md:text-base leading-relaxed">
                 <li className="flex items-start">
@@ -111,7 +111,7 @@ export default function CADCAMPage() {
 
       <section className="py-12 bg-gray-50">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">Преимущества CAD/CAM-технологий в «Альтамед Голицино»</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">Преимущества CAD/CAM-технологий в «Альтамед Голицыно»</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
               <h3 className="text-xl font-semibold text-gray-900 mb-3">Высочайшая точность</h3>
@@ -185,7 +185,7 @@ export default function CADCAMPage() {
       <section className="py-12 bg-gray-50">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8 text-center">
-            Услуги CAD/CAM-технологий в Альтамед Голицино
+            Услуги CAD/CAM-технологий в Альтамед Голицыно
           </h2>
           
           <div className="bg-white rounded-[20px] shadow-lg p-6 md:p-8">
@@ -237,16 +237,16 @@ export default function CADCAMPage() {
       <section className="py-12 bg-white">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <h2 className="text-3xl font-bold text-gray-900 mb-6">
-            CAD/CAM-технологии в Альтамед Голицино: цены и отзывы пациентов
+            CAD/CAM-технологии в Альтамед Голицыно: цены и отзывы пациентов
           </h2>
           <div className="space-y-4 text-gray-700 leading-relaxed text-sm md:text-base mb-6">
             <p>
-              Стоматология «Альтамед Голицино» — клиника, где CAD/CAM-технологии в Альтамед Голицино применяются по международным
-              протоколам. Мы принимаем пациентов из Альтамед Голицино и всего Одинцовского городского округа.
+              Стоматология «Альтамед Голицыно» — клиника, где CAD/CAM-технологии в Альтамед Голицыно применяются по международным
+              протоколам. Мы принимаем пациентов из Альтамед Голицыно и всего Одинцовского городского округа.
             </p>
             <p>
               Наши пациенты отмечают точность и качество конструкций. Если вы ищете стоматологию,
-              где «CAD/CAM голицино» — это не просто слоган, а качественная услуга, записывайтесь
+              где «CAD/CAM Голицыно» — это не просто слоган, а качественная услуга, записывайтесь
               на консультацию стоматолога-ортопеда или ознакомьтесь с другими направлениями на{" "}
               <Link href="/services/dentistry" className="text-emerald-600 hover:text-emerald-700 underline">
                 странице стоматологии
@@ -260,11 +260,11 @@ export default function CADCAMPage() {
       <section className="py-12 bg-gray-50">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <h2 className="text-3xl font-bold text-gray-900 mb-6">
-            Отзывы пациентов о CAD/CAM-технологиях в Альтамед Голицино
+            Отзывы пациентов о CAD/CAM-технологиях в Альтамед Голицыно
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Реальные отзывы из Альтамед Голицино</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Реальные отзывы из Альтамед Голицыно</h3>
               <p className="text-gray-700 text-sm md:text-base leading-relaxed">
                 Пациенты отмечают точность и качество CAD/CAM-конструкций, идеальное прилегание
                 и эстетичный внешний вид.
@@ -280,7 +280,7 @@ export default function CADCAMPage() {
             <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
               <h3 className="text-xl font-semibold text-gray-900 mb-3">Комфортное лечение</h3>
               <p className="text-gray-700 text-sm md:text-base leading-relaxed">
-                После установки CAD/CAM-конструкций в Альтамед Голицино пациенты отмечают комфорт; врачи дают
+                После установки CAD/CAM-конструкций в Альтамед Голицыно пациенты отмечают комфорт; врачи дают
                 подробные инструкции по уходу.
               </p>
             </div>
@@ -291,7 +291,7 @@ export default function CADCAMPage() {
       <section className="py-12 bg-white">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <h2 className="text-3xl font-bold text-gray-900 mb-6">
-            Частые вопросы о CAD/CAM-технологиях в Альтамед Голицино
+            Частые вопросы о CAD/CAM-технологиях в Альтамед Голицыно
           </h2>
           <div className="space-y-4">
             <details className="group bg-gray-50 rounded-[20px] shadow-md border border-gray-100">
@@ -341,10 +341,10 @@ export default function CADCAMPage() {
           <div className="bg-gradient-to-r from-[#4A5568] to-[#5A6474] rounded-[20px] p-8 md:p-12 text-white flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
             <div className="max-w-3xl">
               <h2 className="text-2xl md:text-3xl font-bold mb-4">
-                CAD/CAM-технологии в Альтамед Голицино — начните с консультации
+                CAD/CAM-технологии в Альтамед Голицыно — начните с консультации
               </h2>
               <p className="text-white/90 text-sm md:text-base leading-relaxed">
-                Запишитесь на консультацию в клинику «Альтамед Голицино», чтобы узнать стоимость CAD/CAM-конструкций,
+                Запишитесь на консультацию в клинику «Альтамед Голицыно», чтобы узнать стоимость CAD/CAM-конструкций,
                 подобрать подходящий материал и получить индивидуальный план лечения.
               </p>
             </div>
@@ -368,7 +368,7 @@ export default function CADCAMPage() {
               __html: JSON.stringify({
                 "@context": "https://schema.org",
                 "@type": "MedicalBusiness",
-                name: "Клиника «Альтамед Голицино» — CAD/CAM-технологии в Альтамед Голицино",
+                name: "Клиника «Альтамед Голицыно» — CAD/CAM-технологии в Альтамед Голицыно",
                 url: "https://altamed-golitsino.ru/services/dentistry/cadcam",
                 image: "https://altamed-golitsino.ru/images/dentisrty/cad.webp",
                 medicalSpecialty: "Dental",
@@ -379,16 +379,16 @@ export default function CADCAMPage() {
                 },
                 address: {
                   "@type": "PostalAddress",
-                  addressLocality: "Альтамед Голицино",
+                  addressLocality: "Альтамед Голицыно",
                   addressRegion: "Московская область",
                   streetAddress: "ул. Советская, 9"
                 },
                 telephone: "+7 (495) 640-09-03",
                 priceRange: "₽₽₽",
                 serviceType: "CAD/CAM-технологии",
-                areaServed: "Альтамед Голицино и Голицино",
+                areaServed: "Альтамед Голицыно и Голицыно",
                 description:
-                  "CAD/CAM-технологии в Альтамед Голицино: изготовление коронок, виниров и вкладок с использованием компьютерного моделирования и фрезерования, диоксид циркония и керамика e-max.",
+                  "CAD/CAM-технологии в Альтамед Голицыно: изготовление коронок, виниров и вкладок с использованием компьютерного моделирования и фрезерования, диоксид циркония и керамика e-max.",
                 sameAs: [
                   "https://altamed-golitsino.ru",
                   "https://yandex.ru/maps/org/altamed_s/1919839667"

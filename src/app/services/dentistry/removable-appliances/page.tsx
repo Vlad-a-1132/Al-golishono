@@ -46,10 +46,10 @@ export default function RemovableAppliancesPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div>
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-                Съемные ортодонтические аппараты в клинике «Альтамед Голицино»
+                Съемные ортодонтические аппараты в клинике «Альтамед Голицыно»
               </h1>
               <p className="text-lg md:text-xl mb-8 text-emerald-100">
-                Прозрачные элайнеры для исправления прикуса в Альтамед Голицино
+                Прозрачные элайнеры для исправления прикуса в Альтамед Голицыно
               </p>
             </div>
             <div className="relative">
@@ -67,9 +67,9 @@ export default function RemovableAppliancesPage() {
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div className="lg:col-span-2 space-y-5 text-gray-700 leading-relaxed">
-              <h2 className="text-3xl font-bold text-gray-900">Съемные аппараты в Альтамед Голицино: почему выбирают нас</h2>
+              <h2 className="text-3xl font-bold text-gray-900">Съемные аппараты в Альтамед Голицыно: почему выбирают нас</h2>
               <p>
-                Клиника «Альтамед Голицино» предлагает лечение съемными ортодонтическими аппаратами в Альтамед Голицино — элайнеры
+                Клиника «Альтамед Голицыно» предлагает лечение съемными ортодонтическими аппаратами в Альтамед Голицыно — элайнеры
                 для исправления прикуса простого и сложного случая. Мы применяем современные технологии, качественные
                 материалы и учитываем индивидуальные особенности каждого пациента, чтобы обеспечить эффективное
                 исправление прикуса.
@@ -80,13 +80,13 @@ export default function RemovableAppliancesPage() {
                 на одну или две челюсти.
               </p>
               <p>
-                Прозрачные цены позволяют планировать бюджет — стоимость лечения съемными аппаратами в Альтамед Голицино
+                Прозрачные цены позволяют планировать бюджет — стоимость лечения съемными аппаратами в Альтамед Голицыно
                 фиксируется заранее, а пациенты получают подробную информацию о лечении.
               </p>
             </div>
             <div className="bg-gray-50 rounded-[20px] p-6 shadow-md border-l-4 border-[#4A5568]">
               <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Что вы получаете, выбирая «Альтамед Голицино»
+                Что вы получаете, выбирая «Альтамед Голицыно»
               </h3>
               <ul className="space-y-3 text-gray-700 text-sm md:text-base leading-relaxed">
                 <li className="flex items-start">
@@ -113,7 +113,7 @@ export default function RemovableAppliancesPage() {
 
       <section className="py-12 bg-gray-50">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">Преимущества съемных аппаратов в «Альтамед Голицино»</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">Преимущества съемных аппаратов в «Альтамед Голицыно»</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
               <h3 className="text-xl font-semibold text-gray-900 mb-3">Опытные ортодонты</h3>
@@ -162,16 +162,16 @@ export default function RemovableAppliancesPage() {
       <section className="py-12 bg-white">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <h2 className="text-3xl font-bold text-gray-900 mb-6">
-            Съемные аппараты в Альтамед Голицино: цены и отзывы пациентов
+            Съемные аппараты в Альтамед Голицыно: цены и отзывы пациентов
           </h2>
           <div className="space-y-4 text-gray-700 leading-relaxed text-sm md:text-base mb-6">
             <p>
-              Стоматология «Альтамед Голицино» — клиника, где лечение съемными аппаратами в Альтамед Голицино проводится
-              по международным протоколам. Мы принимаем пациентов из Альтамед Голицино и всего Одинцовского городского округа.
+              Стоматология «Альтамед Голицыно» — клиника, где лечение съемными аппаратами в Альтамед Голицыно проводится
+              по международным протоколам. Мы принимаем пациентов из Альтамед Голицыно и всего Одинцовского городского округа.
             </p>
             <p>
               Наши пациенты отмечают эффективность исправления прикуса и комфорт при ношении элайнеров. Если вы ищете стоматологию,
-              где «элайнеры Альтамед Голицино» — это не просто слоган, а качественная услуга, записывайтесь
+              где «элайнеры Альтамед Голицыно» — это не просто слоган, а качественная услуга, записывайтесь
               на консультацию ортодонта или ознакомьтесь с другими направлениями на{" "}
               <Link href="/services/dentistry" className="text-emerald-600 hover:text-emerald-700 underline">
                 странице стоматологии
@@ -185,10 +185,10 @@ export default function RemovableAppliancesPage() {
       <section className="py-12 bg-gray-50">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8 text-center">
-            Цены на съемные аппараты в Альтамед Голицино
+            Цены на съемные аппараты в Альтамед Голицыно
           </h2>
           <p className="text-gray-700 mb-6 leading-relaxed text-center">
-            Стоимость лечения съемными аппаратами в клинике «Альтамед Голицино» формируется в зависимости от сложности случая,
+            Стоимость лечения съемными аппаратами в клинике «Альтамед Голицыно» формируется в зависимости от сложности случая,
             но мы фиксируем цены в договоре, чтобы пациент точно понимал итоговую сумму.
           </p>
           
@@ -241,11 +241,11 @@ export default function RemovableAppliancesPage() {
       <section className="py-12 bg-gray-50">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <h2 className="text-3xl font-bold text-gray-900 mb-6">
-            Отзывы пациентов о съемных аппаратах в Альтамед Голицино
+            Отзывы пациентов о съемных аппаратах в Альтамед Голицыно
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Реальные отзывы из Альтамед Голицино</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Реальные отзывы из Альтамед Голицыно</h3>
               <p className="text-gray-700 text-sm md:text-base leading-relaxed">
                 Пациенты отмечают эффективность исправления прикуса, комфорт при ношении элайнеров
                 и незаметность аппаратов.
@@ -261,7 +261,7 @@ export default function RemovableAppliancesPage() {
             <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
               <h3 className="text-xl font-semibold text-gray-900 mb-3">Комфортное лечение</h3>
               <p className="text-gray-700 text-sm md:text-base leading-relaxed">
-                После установки элайнеров в Альтамед Голицино пациенты отмечают комфорт; врачи дают
+                После установки элайнеров в Альтамед Голицыно пациенты отмечают комфорт; врачи дают
                 подробные инструкции по уходу.
               </p>
             </div>
@@ -272,7 +272,7 @@ export default function RemovableAppliancesPage() {
       <section className="py-12 bg-white">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <h2 className="text-3xl font-bold text-gray-900 mb-6">
-            Частые вопросы о съемных аппаратах в Альтамед Голицино
+            Частые вопросы о съемных аппаратах в Альтамед Голицыно
           </h2>
           <div className="space-y-4">
             <details className="group bg-gray-50 rounded-[20px] shadow-md border border-gray-100">
@@ -322,10 +322,10 @@ export default function RemovableAppliancesPage() {
           <div className="bg-gradient-to-r from-[#4A5568] to-[#5A6474] rounded-[20px] p-8 md:p-12 text-white flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
             <div className="max-w-3xl">
               <h2 className="text-2xl md:text-3xl font-bold mb-4">
-                Съемные аппараты в Альтамед Голицино — начните с консультации
+                Съемные аппараты в Альтамед Голицыно — начните с консультации
               </h2>
               <p className="text-white/90 text-sm md:text-base leading-relaxed">
-                Запишитесь на консультацию в клинику «Альтамед Голицино», чтобы узнать стоимость лечения элайнерами,
+                Запишитесь на консультацию в клинику «Альтамед Голицыно», чтобы узнать стоимость лечения элайнерами,
                 подобрать подходящий вариант и получить индивидуальный план исправления прикуса.
               </p>
             </div>
@@ -349,7 +349,7 @@ export default function RemovableAppliancesPage() {
               __html: JSON.stringify({
                 "@context": "https://schema.org",
                 "@type": "MedicalBusiness",
-                name: "Клиника «Альтамед Голицино» — съемные аппараты в Альтамед Голицино",
+                name: "Клиника «Альтамед Голицыно» — съемные аппараты в Альтамед Голицыно",
                 url: "https://altamed-golitsino.ru/services/dentistry/removable-appliances",
                 image: "https://altamed-golitsino.ru/images/dentisrty/task_01kb5hmq28fn0stdqj9ta6kefj_1764344227_img_0.webp",
                 medicalSpecialty: "Dental",
@@ -360,16 +360,16 @@ export default function RemovableAppliancesPage() {
                 },
                 address: {
                   "@type": "PostalAddress",
-                  addressLocality: "Альтамед Голицино",
+                  addressLocality: "Альтамед Голицыно",
                   addressRegion: "Московская область",
                   streetAddress: "ул. Советская, 9"
                 },
                 telephone: "+7 (495) 640-09-03",
                 priceRange: "₽₽₽",
                 serviceType: "Съемные аппараты",
-                areaServed: "Альтамед Голицино и Голицино",
+                areaServed: "Альтамед Голицыно и Голицыно",
                 description:
-                  "Съемные аппараты в Альтамед Голицино: лечение элайнерами простого и сложного случая, исправление прикуса незаметными съемными аппаратами.",
+                  "Съемные аппараты в Альтамед Голицыно: лечение элайнерами простого и сложного случая, исправление прикуса незаметными съемными аппаратами.",
                 sameAs: [
                   "https://altamed-golitsino.ru",
                   "https://yandex.ru/maps/org/altamed_s/1919839667"

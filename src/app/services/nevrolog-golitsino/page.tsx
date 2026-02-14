@@ -50,7 +50,7 @@ const reasonsToVisit = [
 
 const faqItems = [
   { q: "Когда обращаться к неврологу?", a: "К неврологу обращаются при головных болях, головокружении, болях в спине и шее, онемении конечностей, нарушениях сна и памяти, при рассеянном склерозе, эпилепсии, болезни Паркинсона, а также для реабилитации после инсульта и черепно-мозговой травмы." },
-  { q: "Какие услуги оказывает невролог в Альтамед Голицино?", a: "В «Альтамед Голицино» проводятся приём и диспансерный приём врача-невролога, школы для больных (рассеянный склероз, эпилепсия, Паркинсон, суставы и позвоночник), реабилитация после инсульта и ЧМТ, блокады периферических нервов, ортопедические стельки ФормТотикс по прейскуранту." },
+  { q: "Какие услуги оказывает невролог в Альтамед Голицыно?", a: "В «Альтамед Голицыно» проводятся приём и диспансерный приём врача-невролога, школы для больных (рассеянный склероз, эпилепсия, Паркинсон, суставы и позвоночник), реабилитация после инсульта и ЧМТ, блокады периферических нервов, ортопедические стельки ФормТотикс по прейскуранту." },
   { q: "Что такое школы для больных и ФормТотикс?", a: "Школы для больных — групповые занятия по ведению заболевания (рассеянный склероз, эпилепсия, Паркинсон и др.). ФормТотикс — индивидуальные ортопедические стельки. Стоимость уточняйте при записи." },
 ];
 
@@ -70,7 +70,7 @@ export default function NevrologGolitsinoPage() {
                 </Link>
               </li>
               <li><div className="flex items-center"><svg className="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" /></svg><Link href="/services" className="ml-1 text-sm font-medium text-gray-700 hover:text-emerald-600 md:ml-2">Услуги</Link></div></li>
-              <li aria-current="page"><div className="flex items-center"><svg className="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" /></svg><span className="ml-1 text-sm font-medium text-gray-500 md:ml-2">Невролог Голицино</span></div></li>
+              <li aria-current="page"><div className="flex items-center"><svg className="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" /></svg><span className="ml-1 text-sm font-medium text-gray-500 md:ml-2">Невролог Голицыно</span></div></li>
             </ol>
           </nav>
         </div>
@@ -80,31 +80,31 @@ export default function NevrologGolitsinoPage() {
         <div className="mx-auto px-4" style={{ maxWidth: "83rem" }}>
           <header className="mb-6 ml-0 md:ml-4 lg:ml-8">
             <h1 className="text-2xl md:text-3xl font-bold text-black leading-tight px-4 md:px-0">
-              Невролог в Голицино — приём и лечение нервной системы в «Альтамед Голицино»
+              Невролог в Голицыно — приём и лечение нервной системы в «Альтамед Голицыно»
             </h1>
             <p className="text-gray-600 mt-2 px-4 md:px-0 text-sm md:text-base">
-              Диагностика и лечение заболеваний нервной системы у взрослых и детей в Голицино
+              Диагностика и лечение заболеваний нервной системы у взрослых и детей в Голицыно
             </p>
           </header>
 
           <div className="mb-8">
             <div className="block md:hidden w-full rounded-[20px] overflow-hidden shadow-md mx-auto">
               <div className="h-[220px] bg-emerald-500 relative overflow-hidden">
-                <img src="/images/images allergoly/nevrolog.webp" alt="Невролог Голицино" className="w-full h-full object-cover" />
+                <img src="/images/images allergoly/nevrolog.webp" alt="Невролог Голицыно" className="w-full h-full object-cover" />
               </div>
               <div className="bg-white p-4 flex flex-col gap-3">
-                <div className="text-black font-medium text-sm">Невролог в Голицино</div>
+                <div className="text-black font-medium text-sm">Невролог в Голицыно</div>
                 <Link href="https://reg.altamed-golitsino.ru/" target="_blank" rel="noopener noreferrer" className="bg-blue-500 text-white rounded-full flex items-center justify-center w-full h-[46px] text-sm hover:bg-blue-600 transition-colors">
                   Консультация <svg className="w-5 h-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
                 </Link>
               </div>
             </div>
             <div className="hidden md:block h-[445px] bg-emerald-500 relative overflow-hidden rounded-[20px] shadow-lg">
-              <img src="/images/images allergoly/nevrolog.webp" alt="Невролог Голицино" className="w-full h-full object-cover" />
+              <img src="/images/images allergoly/nevrolog.webp" alt="Невролог Голицыно" className="w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-transparent" />
               <div className="absolute inset-0 flex flex-col justify-center items-start p-8 md:p-12 text-black">
-                <h2 className="text-2xl md:text-4xl font-bold mb-4">Невролог в Голицино</h2>
-                <p className="text-lg md:text-xl mb-6 max-w-md">Приём врача-невролога, школы для больных, реабилитация после инсульта и ЧМТ в Альтамед Голицино</p>
+                <h2 className="text-2xl md:text-4xl font-bold mb-4">Невролог в Голицыно</h2>
+                <p className="text-lg md:text-xl mb-6 max-w-md">Приём врача-невролога, школы для больных, реабилитация после инсульта и ЧМТ в Альтамед Голицыно</p>
                 <Link href="https://reg.altamed-golitsino.ru/" target="_blank" rel="noopener noreferrer" className="bg-blue-500 text-white rounded-full px-8 py-3 font-medium hover:bg-blue-600 transition-colors">Консультация</Link>
               </div>
             </div>
@@ -114,9 +114,9 @@ export default function NevrologGolitsinoPage() {
 
       <section className="py-12 bg-gray-50">
         <div className="mx-auto px-4" style={{ maxWidth: "83rem" }}>
-          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Почему «Альтамед Голицино»?</h2>
+          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Почему «Альтамед Голицыно»?</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {["Опытные врачи-неврологи", "Школы для больных (рассеянный склероз, эпилепсия, Паркинсон)", "Реабилитация после инсульта и ЧМТ, блокады", "Ортопедические стельки ФормТотикс в Голицино"].map((text, i) => (
+            {["Опытные врачи-неврологи", "Школы для больных (рассеянный склероз, эпилепсия, Паркинсон)", "Реабилитация после инсульта и ЧМТ, блокады", "Ортопедические стельки ФормТотикс в Голицыно"].map((text, i) => (
               <div key={i} className="text-center">
                 <div className="w-16 h-16 mx-auto mb-4 relative">
                   <img src="/images/yslugi/star 1.webp" alt="" className="w-full h-full object-contain" />
@@ -131,19 +131,19 @@ export default function NevrologGolitsinoPage() {
 
       <section className="py-12">
         <div className="mx-auto px-4" style={{ maxWidth: "83rem" }}>
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">Неврология в Голицино</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">Неврология в Голицыно</h2>
           <p className="text-gray-600 mb-6">
             Невролог занимается диагностикой и лечением заболеваний нервной системы, позвоночника и сосудов: приём и консультация, диспансерный приём, школы для больных (рассеянный склероз, эпилепсия, гиперкинезы, болезнь Паркинсона, суставы и позвоночник), реабилитация после инсульта и черепно-мозговой травмы, блокады периферических нервов, ортопедические стельки ФормТотикс.
           </p>
-          <p className="text-gray-600">В «Альтамед Голицино» вы можете записаться к неврологу и пройти обследование в Голицино.</p>
+          <p className="text-gray-600">В «Альтамед Голицыно» вы можете записаться к неврологу и пройти обследование в Голицыно.</p>
         </div>
       </section>
 
       <section className="py-16" aria-labelledby="services-heading">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 id="services-heading" className="text-3xl font-bold text-gray-900 mb-4">Услуги невролога в Голицино</h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">Приём врача-невролога, школы для больных, реабилитация, блокады, ортопедические стельки ФормТотикс в Альтамед Голицино</p>
+            <h2 id="services-heading" className="text-3xl font-bold text-gray-900 mb-4">Услуги невролога в Голицыно</h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">Приём врача-невролога, школы для больных, реабилитация, блокады, ортопедические стельки ФормТотикс в Альтамед Голицыно</p>
           </div>
 
           <p className="text-amber-800 bg-amber-50 border border-amber-200 rounded-lg px-4 py-3 mb-6 max-w-3xl mx-auto text-center text-sm">

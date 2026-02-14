@@ -1450,7 +1450,7 @@ function PatientInfoSection() {
           {isSoutOpen && (
             <div className="px-4 pb-4 border-t border-gray-200 space-y-3">
               <p className="text-gray-700 mt-4">
-                Сводные ведомости и планы мероприятий по специальной оценке условий труда в клинике «Альтамед Голицино».
+                Сводные ведомости и планы мероприятий по специальной оценке условий труда в клинике «Альтамед Голицыно».
                 Документы доступны в формате PDF.
               </p>
               {[
@@ -2281,7 +2281,7 @@ function AboutPageContent() {
 
                       <div>
                         <h3 className="text-xl font-bold text-gray-800 mb-3 pb-2 border-b-2 border-emerald-500">
-                          ММЦ «Альтамед-Голицино»
+                          ММЦ «Альтамед-Голицыно»
                         </h3>
                         <div className="space-y-2 text-gray-700">
                           <p>г. Голицыно, ул. Советская, д.58</p>

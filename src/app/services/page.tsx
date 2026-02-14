@@ -71,7 +71,7 @@ export default function ServicesPage() {
     {
       id: 'implantation',
       title: 'Имплантация',
-      description: 'Имплантация зубов в Голицино',
+      description: 'Имплантация зубов в Голицыно',
       icon: (
         <svg className="w-6 h-6 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 5v14m7-7H5" />
@@ -97,7 +97,7 @@ export default function ServicesPage() {
     {
       id: 'dentistry-consultation',
       title: 'Консультация стоматолога',
-      description: 'Прием и консультация врача-стоматолога в Голицино',
+      description: 'Прием и консультация врача-стоматолога в Голицыно',
       icon: (
         <svg className="w-6 h-6 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
@@ -109,7 +109,7 @@ export default function ServicesPage() {
     {
       id: 'dentistry-hygiene',
       title: 'Гигиена полости рта',
-      description: 'Профессиональная чистка зубов в Голицино',
+      description: 'Профессиональная чистка зубов в Голицыно',
       icon: (
         <svg className="w-6 h-6 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -133,7 +133,7 @@ export default function ServicesPage() {
     {
       id: 'dentistry-aesthetic',
       title: 'Эстетическая стоматология',
-      description: 'Отбеливание и эстетика зубов в Голицино',
+      description: 'Отбеливание и эстетика зубов в Голицыно',
       icon: (
         <svg className="w-6 h-6 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
@@ -145,7 +145,7 @@ export default function ServicesPage() {
     {
       id: 'dentistry-deposits',
       title: 'Удаление зубных отложений',
-      description: 'Снятие налета и камня в Голицино',
+      description: 'Снятие налета и камня в Голицыно',
       icon: (
         <svg className="w-6 h-6 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
@@ -157,7 +157,7 @@ export default function ServicesPage() {
     {
       id: 'dentistry-strengthening',
       title: 'Укрепление тканей зуба',
-      description: 'Фторирование и защита эмали в Голицино',
+      description: 'Фторирование и защита эмали в Голицыно',
       icon: (
         <svg className="w-6 h-6 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
@@ -181,7 +181,7 @@ export default function ServicesPage() {
     {
       id: 'dentistry-extraction',
       title: 'Удаление зубов',
-      description: 'Простое и сложное удаление зубов в Голицино',
+      description: 'Простое и сложное удаление зубов в Голицыно',
       icon: (
         <svg className="w-6 h-6 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
@@ -193,7 +193,7 @@ export default function ServicesPage() {
     {
       id: 'dentistry-emergency',
       title: 'Экстренная хирургия',
-      description: 'Экстренная и гнойная хирургия в Голицино',
+      description: 'Экстренная и гнойная хирургия в Голицыно',
       icon: (
         <svg className="w-6 h-6 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
@@ -205,7 +205,7 @@ export default function ServicesPage() {
     {
       id: 'dentistry-plastic',
       title: 'Пластическая хирургия',
-      description: 'Пластика мягких тканей в Голицино',
+      description: 'Пластика мягких тканей в Голицыно',
       icon: (
         <svg className="w-6 h-6 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
@@ -217,7 +217,7 @@ export default function ServicesPage() {
     {
       id: 'dentistry-prosthodontist',
       title: 'Стоматолог-ортопед',
-      description: 'Протезирование зубов, коронки, виниры в Голицино',
+      description: 'Протезирование зубов, коронки, виниры в Голицыно',
       icon: (
         <svg className="w-6 h-6 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -229,7 +229,7 @@ export default function ServicesPage() {
     {
       id: 'dentistry-prosthetics',
       title: 'Протезирование зубов',
-      description: 'Протезирование на имплантатах, коронки, протезы в Голицино',
+      description: 'Протезирование на имплантатах, коронки, протезы в Голицыно',
       icon: (
         <svg className="w-6 h-6 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
@@ -241,7 +241,7 @@ export default function ServicesPage() {
     {
       id: 'dentistry-cadcam',
       title: 'CAD/CAM-технологии',
-      description: 'Керамические вкладки, виниры, коронки CAD/CAM в Голицино',
+      description: 'Керамические вкладки, виниры, коронки CAD/CAM в Голицыно',
       icon: (
         <svg className="w-6 h-6 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -253,7 +253,7 @@ export default function ServicesPage() {
     {
       id: 'dentistry-constructions',
       title: 'Стоматологические конструкции',
-      description: 'Изготовление и ремонт протезов, коронок в Голицино',
+      description: 'Изготовление и ремонт протезов, коронок в Голицыно',
       icon: (
         <svg className="w-6 h-6 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
@@ -265,7 +265,7 @@ export default function ServicesPage() {
     {
       id: 'dentistry-orthodontist',
       title: 'Стоматолог-ортодонт',
-      description: 'Исправление прикуса, брекеты, элайнеры в Голицино',
+      description: 'Исправление прикуса, брекеты, элайнеры в Голицыно',
       icon: (
         <svg className="w-6 h-6 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -277,7 +277,7 @@ export default function ServicesPage() {
     {
       id: 'dentistry-braces',
       title: 'Брекет-системы',
-      description: 'Металлические, керамические, сапфировые брекеты в Голицино',
+      description: 'Металлические, керамические, сапфировые брекеты в Голицыно',
       icon: (
         <svg className="w-6 h-6 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -289,7 +289,7 @@ export default function ServicesPage() {
     {
       id: 'dentistry-removable-appliances',
       title: 'Съемные аппараты',
-      description: 'Элайнеры, каппы для исправления прикуса в Голицино',
+      description: 'Элайнеры, каппы для исправления прикуса в Голицыно',
       icon: (
         <svg className="w-6 h-6 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -301,7 +301,7 @@ export default function ServicesPage() {
     {
       id: 'dentistry-fixed-appliances',
       title: 'Несъемные аппараты',
-      description: 'Ретейнеры, аппарат Forsus в Голицино',
+      description: 'Ретейнеры, аппарат Forsus в Голицыно',
       icon: (
         <svg className="w-6 h-6 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -313,7 +313,7 @@ export default function ServicesPage() {
     {
       id: 'dentistry-orthodontic-maintenance',
       title: 'Обслуживание ортодонтических аппаратов',
-      description: 'Ремонт брекетов, замена дуг, лигатур в Голицино',
+      description: 'Ремонт брекетов, замена дуг, лигатур в Голицыно',
       icon: (
         <svg className="w-6 h-6 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
@@ -326,7 +326,7 @@ export default function ServicesPage() {
     {
       id: 'dentistry-pediatric',
       title: 'Детский стоматолог',
-      description: 'Лечение зубов у детей в Голицино',
+      description: 'Лечение зубов у детей в Голицыно',
       icon: (
         <svg className="w-6 h-6 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
@@ -459,7 +459,7 @@ export default function ServicesPage() {
     {
       id: 'urolog-golitsino',
       title: 'Уролог',
-      description: 'Приём уролога и детского уролога-андролога в Голицино',
+      description: 'Приём уролога и детского уролога-андролога в Голицыно',
       icon: (
         <svg className="w-6 h-6 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
@@ -507,7 +507,7 @@ export default function ServicesPage() {
     {
       id: 'psihiatr-golitsino',
       title: 'Психиатр',
-      description: 'Приём психиатра и психолога в Голицино',
+      description: 'Приём психиатра и психолога в Голицыно',
       icon: (
         <svg className="w-6 h-6 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
@@ -519,7 +519,7 @@ export default function ServicesPage() {
     {
       id: 'onkolog-golitsino',
       title: 'Онколог',
-      description: 'Приём врача-онколога и детского онколога в Голицино',
+      description: 'Приём врача-онколога и детского онколога в Голицыно',
       icon: (
         <svg className="w-6 h-6 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />

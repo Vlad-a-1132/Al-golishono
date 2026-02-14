@@ -9,7 +9,7 @@ export default function UrologyPage() {
   // State for accordion
   const [openAccordion, setOpenAccordion] = useState<number | null>(null);
 
-  // Услуги уролога (прайс Альтамед Голицино)
+  // Услуги уролога (прайс Альтамед Голицыно)
   const urologyServicesList = [
     { code: "B01.053.001", name: "Прием (осмотр, консультация) врача-уролога", price: 2530 },
     { code: "B01.053.003", name: "Прием (осмотр, консультация) врача-детского уролога-андролога", price: 2420 },
@@ -53,7 +53,7 @@ export default function UrologyPage() {
             <span className="mx-2" aria-hidden="true">/</span>
             <Link href="/services" className="hover:text-emerald-500">Услуги</Link>
             <span className="mx-2" aria-hidden="true">/</span>
-            <span className="text-gray-800">Уролог Голицино</span>
+            <span className="text-gray-800">Уролог Голицыно</span>
           </nav>
         </div>
       </section>
@@ -63,10 +63,10 @@ export default function UrologyPage() {
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <header className="mb-6 ml-0 md:ml-4 lg:ml-8">
             <h1 className="text-2xl md:text-3xl font-bold text-black leading-tight px-4 md:px-0">
-              Уролог в Голицино — приём в «Альтамед Голицино»
+              Уролог в Голицыно — приём в «Альтамед Голицыно»
             </h1>
             <p className="text-gray-600 mt-2 px-4 md:px-0 text-sm md:text-base">
-              Приём врача-уролога и детского уролога-андролога, диагностика и лечение в Голицино
+              Приём врача-уролога и детского уролога-андролога, диагностика и лечение в Голицыно
             </p>
           </header>
 
@@ -88,7 +88,7 @@ export default function UrologyPage() {
               </div>
               {/* Нижняя часть */}
               <div className="bg-white p-4 flex flex-col justify-between items-start gap-3">
-                <div className="text-black font-medium text-sm">Уролог в Голицино</div>
+                <div className="text-black font-medium text-sm">Уролог в Голицыно</div>
                 <Link 
                   href="https://reg.altamed-golitsino.ru/" 
                   target="_blank"
@@ -119,8 +119,8 @@ export default function UrologyPage() {
               
               {/* Content overlay */}
               <div className="absolute inset-0 flex flex-col justify-center items-start p-8 md:p-12 text-black">
-                <h2 className="text-2xl md:text-4xl font-bold mb-4">Уролог в Голицино</h2>
-                <p className="text-lg md:text-xl mb-6 max-w-md">Приём уролога, детского уролога-андролога, УЗИ, манипуляции и физиотерапия в Альтамед Голицино</p>
+                <h2 className="text-2xl md:text-4xl font-bold mb-4">Уролог в Голицыно</h2>
+                <p className="text-lg md:text-xl mb-6 max-w-md">Приём уролога, детского уролога-андролога, УЗИ, манипуляции и физиотерапия в Альтамед Голицыно</p>
                 <Link 
                   href="https://reg.altamed-golitsino.ru/" 
                   target="_blank"
@@ -135,11 +135,11 @@ export default function UrologyPage() {
         </div>
       </main>
 
-      {/* Почему Альтамед Голицино */}
+      {/* Почему Альтамед Голицыно */}
       <section className="py-12 bg-gray-50">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">
-            Почему «Альтамед Голицино»?
+            Почему «Альтамед Голицыно»?
           </h2>
           {/* Мобильная версия - вертикальный список */}
           <div className="md:hidden space-y-6">
@@ -259,7 +259,7 @@ export default function UrologyPage() {
       <section className="py-16" aria-labelledby="services-heading">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 id="services-heading" className="text-2xl md:text-3xl font-bold text-black mb-8 text-center ml-0 md:ml-4 lg:ml-8">
-            Услуги уролога в Голицино
+            Услуги уролога в Голицыно
           </h2>
 
           <p className="text-amber-800 bg-amber-50 border border-amber-200 rounded-lg px-4 py-3 mb-6 max-w-3xl mx-auto text-center text-sm">
@@ -299,7 +299,7 @@ export default function UrologyPage() {
           
           <div className="space-y-6 text-gray-700 mb-8">
             <p>
-              В «Альтамед Голицино» в Голицино принимают врачи-урологи и детские урологи-андрологи. Проводятся приём, диспансерный приём, УЗИ надпочечников, катетеризация и инстилляция мочевого пузыря, сбор секрета простаты, массаж простаты, физиотерапия и другие услуги по прейскуранту. Стоимость уточняйте при записи.
+              В «Альтамед Голицыно» в Голицыно принимают врачи-урологи и детские урологи-андрологи. Проводятся приём, диспансерный приём, УЗИ надпочечников, катетеризация и инстилляция мочевого пузыря, сбор секрета простаты, массаж простаты, физиотерапия и другие услуги по прейскуранту. Стоимость уточняйте при записи.
             </p>
           </div>
 

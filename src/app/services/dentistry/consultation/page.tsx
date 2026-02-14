@@ -45,10 +45,10 @@ export default function ConsultationPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div>
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-                Консультация стоматолога в клинике «Альтамед Голицино»
+                Консультация стоматолога в клинике «Альтамед Голицыно»
               </h1>
               <p className="text-lg md:text-xl mb-8 text-emerald-100">
-                Первичный и повторный прием врача-стоматолога, стоматолога-терапевта в Альтамед Голицино
+                Первичный и повторный прием врача-стоматолога, стоматолога-терапевта в Альтамед Голицыно
               </p>
             </div>
             <div className="relative">
@@ -66,9 +66,9 @@ export default function ConsultationPage() {
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div className="lg:col-span-2 space-y-5 text-gray-700 leading-relaxed">
-              <h2 className="text-3xl font-bold text-gray-900">Консультация стоматолога в Альтамед Голицино: почему выбирают нас</h2>
+              <h2 className="text-3xl font-bold text-gray-900">Консультация стоматолога в Альтамед Голицыно: почему выбирают нас</h2>
               <p>
-                Клиника «Альтамед Голицино» предлагает профессиональную консультацию стоматолога в Альтамед Голицино — от
+                Клиника «Альтамед Голицыно» предлагает профессиональную консультацию стоматолога в Альтамед Голицыно — от
                 первичного осмотра и диагностики до составления комплексного плана лечения. Мы применяем
                 современные методы диагностики, включая КТ-исследования, и учитываем индивидуальные
                 особенности каждого пациента, чтобы предложить оптимальное решение для здоровья зубов.
@@ -80,13 +80,13 @@ export default function ConsultationPage() {
                 в одной клинике для удобства пациентов.
               </p>
               <p>
-                Прозрачные цены позволяют планировать бюджет — стоимость консультации стоматолога в Альтамед Голицино
+                Прозрачные цены позволяют планировать бюджет — стоимость консультации стоматолога в Альтамед Голицыно
                 фиксируется заранее, а пациенты получают подробный план лечения с указанием всех этапов и цен.
               </p>
             </div>
             <div className="bg-gray-50 rounded-[20px] p-6 shadow-md border-l-4 border-[#4A5568]">
               <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Что вы получаете, выбирая «Альтамед Голицино»
+                Что вы получаете, выбирая «Альтамед Голицыно»
               </h3>
               <ul className="space-y-3 text-gray-700 text-sm md:text-base leading-relaxed">
                 <li className="flex items-start">
@@ -113,7 +113,7 @@ export default function ConsultationPage() {
 
       <section className="py-12 bg-gray-50">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">Преимущества консультации стоматолога в «Альтамед Голицино»</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">Преимущества консультации стоматолога в «Альтамед Голицыно»</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
               <h3 className="text-xl font-semibold text-gray-900 mb-3">Опытные стоматологи</h3>
@@ -145,7 +145,7 @@ export default function ConsultationPage() {
             <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
               <h3 className="text-xl font-semibold text-gray-900 mb-3">Удобная запись</h3>
               <p className="text-gray-700 text-sm md:text-base leading-relaxed">
-                Онлайн-запись на консультацию стоматолога в Альтамед Голицино доступна круглосуточно, можно выбрать
+                Онлайн-запись на консультацию стоматолога в Альтамед Голицыно доступна круглосуточно, можно выбрать
                 удобное время.
               </p>
             </div>
@@ -164,7 +164,7 @@ export default function ConsultationPage() {
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <div className="bg-gradient-to-br from-blue-50 to-emerald-50 rounded-[20px] shadow-lg p-8 md:p-12">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6 text-center">
-              Консультация стоматолога в Альтамед Голицино
+              Консультация стоматолога в Альтамед Голицыно
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
               <div className="bg-white rounded-lg p-6 shadow-md">
@@ -197,7 +197,7 @@ export default function ConsultationPage() {
                 </ul>
               </div>
               <div className="bg-white rounded-lg p-6 shadow-md">
-                <h3 className="text-xl font-semibold text-gray-800 mb-3">Специалисты в «Альтамед Голицино»</h3>
+                <h3 className="text-xl font-semibold text-gray-800 mb-3">Специалисты в «Альтамед Голицыно»</h3>
                 <ul className="space-y-2 text-gray-600">
                   <li className="flex items-start">
                     <svg className="w-5 h-5 text-emerald-600 mr-2 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -239,23 +239,23 @@ export default function ConsultationPage() {
       <section className="py-12 bg-white">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <h2 className="text-3xl font-bold text-gray-900 mb-6">
-            Консультация стоматолога в Альтамед Голицино: цены и отзывы пациентов
+            Консультация стоматолога в Альтамед Голицыно: цены и отзывы пациентов
           </h2>
           <div className="space-y-4 text-gray-700 leading-relaxed text-sm md:text-base mb-6">
             <p>
-              Стоматология «Альтамед Голицино» — клиника, где консультация стоматолога в Альтамед Голицино проводится по международным
-              протоколам. Мы принимаем пациентов из Альтамед Голицино и всего Одинцовского городского округа, поэтому
-              запрос «консультация стоматолога Альтамед Голицино область» полностью закрывает наши услуги.
+              Стоматология «Альтамед Голицыно» — клиника, где консультация стоматолога в Альтамед Голицыно проводится по международным
+              протоколам. Мы принимаем пациентов из Альтамед Голицыно и всего Одинцовского городского округа, поэтому
+              запрос «консультация стоматолога Альтамед Голицыно область» полностью закрывает наши услуги.
             </p>
             <p>
               Прайс ниже отвечает на популярные поисковые запросы Wordstat: «консультация стоматолога в одинцове цены»,
-              «консультация стоматолога Альтамед Голицино отзывы», «Альтамед Голицино стоматолог цена». Мы регулярно обновляем
-              данные, чтобы стоимость консультации стоматолога Альтамед Голицино оставалась прозрачной и понятной.
+              «консультация стоматолога Альтамед Голицыно отзывы», «Альтамед Голицыно стоматолог цена». Мы регулярно обновляем
+              данные, чтобы стоимость консультации стоматолога Альтамед Голицыно оставалась прозрачной и понятной.
             </p>
             <p>
-              Наши пациенты отмечают, что «консультация стоматолога Альтамед Голицино отзывы» в точности описывают результат:
+              Наши пациенты отмечают, что «консультация стоматолога Альтамед Голицыно отзывы» в точности описывают результат:
               внимательное отношение врачей и детальное объяснение плана лечения. Если вы ищете стоматологию,
-              где «стоматология Альтамед Голицино» — это не просто слоган, а комплексная услуга, записывайтесь
+              где «стоматология Альтамед Голицыно» — это не просто слоган, а комплексная услуга, записывайтесь
               на консультацию стоматолога или ознакомьтесь с другими направлениями на{" "}
               <Link href="/services/dentistry" className="text-emerald-600 hover:text-emerald-700 underline">
                 странице стоматологии
@@ -269,10 +269,10 @@ export default function ConsultationPage() {
       <section className="py-12 bg-gray-50">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8 text-center">
-            Цены на консультацию стоматолога в Альтамед Голицино
+            Цены на консультацию стоматолога в Альтамед Голицыно
           </h2>
           <p className="text-gray-700 mb-6 leading-relaxed text-center">
-            Стоимость консультации стоматолога в клинике «Альтамед Голицино» формируется в зависимости от типа приёма,
+            Стоимость консультации стоматолога в клинике «Альтамед Голицыно» формируется в зависимости от типа приёма,
             но мы фиксируем цены в договоре, чтобы пациент точно понимал итоговую сумму.
           </p>
           
@@ -326,13 +326,13 @@ export default function ConsultationPage() {
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <div className="bg-gradient-to-br from-blue-50 to-emerald-50 rounded-[20px] shadow-lg p-8 md:p-12">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8 text-center">
-              Почему выбирают стоматолога в «Альтамед Голицино» Альтамед Голицино
+              Почему выбирают стоматолога в «Альтамед Голицыно» Альтамед Голицыно
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
                 {
                   title: "Опытные специалисты",
-                  text: "В клинике «Альтамед Голицино» работают квалифицированные стоматологи с большим опытом работы. Стоматолог-терапевт, стоматолог-хирург, детский стоматолог, стоматолог-ортопед и ортодонт в Альтамед Голицино.",
+                  text: "В клинике «Альтамед Голицыно» работают квалифицированные стоматологи с большим опытом работы. Стоматолог-терапевт, стоматолог-хирург, детский стоматолог, стоматолог-ортопед и ортодонт в Альтамед Голицыно.",
                   icon: "👨‍⚕️"
                 },
                 {
@@ -347,7 +347,7 @@ export default function ConsultationPage() {
                 },
                 {
                   title: "Удобное расположение",
-                  text: "Клиника «Альтамед Голицино» находится в Альтамед Голицино, легко добраться. Записаться к стоматологу можно онлайн или по телефону.",
+                  text: "Клиника «Альтамед Голицыно» находится в Альтамед Голицыно, легко добраться. Записаться к стоматологу можно онлайн или по телефону.",
                   icon: "📍"
                 }
               ].map((item, idx) => (
@@ -366,7 +366,7 @@ export default function ConsultationPage() {
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <div className="bg-white rounded-[20px] shadow-lg p-8 md:p-12">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8 text-center">
-              Как записаться к стоматологу в Альтамед Голицино
+              Как записаться к стоматологу в Альтамед Голицыно
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="text-center">
@@ -393,7 +393,7 @@ export default function ConsultationPage() {
             </div>
             <div className="mt-8 text-center">
               <Link href="https://reg.altamed-golitsino.ru/" target="_blank" rel="noopener noreferrer" className="bg-emerald-500 text-white px-8 py-3 rounded-full font-medium hover:bg-emerald-600 transition-colors inline-block">
-                Записаться к стоматологу в Альтамед Голицино
+                Записаться к стоматологу в Альтамед Голицыно
               </Link>
             </div>
           </div>
@@ -403,13 +403,13 @@ export default function ConsultationPage() {
       <section className="py-12 bg-gray-50">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <h2 className="text-3xl font-bold text-gray-900 mb-6">
-            Отзывы пациентов о консультации стоматолога в Альтамед Голицино
+            Отзывы пациентов о консультации стоматолога в Альтамед Голицыно
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Реальные отзывы из Альтамед Голицино</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Реальные отзывы из Альтамед Голицыно</h3>
               <p className="text-gray-700 text-sm md:text-base leading-relaxed">
-                Запрос «консультация стоматолога Альтамед Голицино отзывы» подтверждается историями пациентов: они отмечают
+                Запрос «консультация стоматолога Альтамед Голицыно отзывы» подтверждается историями пациентов: они отмечают
                 внимательное отношение, подробное объяснение плана лечения и комфортную атмосферу.
               </p>
             </div>
@@ -423,7 +423,7 @@ export default function ConsultationPage() {
             <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
               <h3 className="text-xl font-semibold text-gray-900 mb-3">Удобная запись</h3>
               <p className="text-gray-700 text-sm md:text-base leading-relaxed">
-                После консультации стоматолога в Альтамед Голицино пациенты отмечают удобство онлайн-записи; врачи на связи
+                После консультации стоматолога в Альтамед Голицыно пациенты отмечают удобство онлайн-записи; врачи на связи
                 и дают подробные рекомендации по дальнейшему лечению.
               </p>
             </div>
@@ -434,13 +434,13 @@ export default function ConsultationPage() {
       <section className="py-12 bg-white">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <h2 className="text-3xl font-bold text-gray-900 mb-6">
-            Частые вопросы о консультации стоматолога в Альтамед Голицино
+            Частые вопросы о консультации стоматолога в Альтамед Голицыно
           </h2>
           <div className="space-y-4">
             <details className="group bg-gray-50 rounded-[20px] shadow-md border border-gray-100">
               <summary className="cursor-pointer px-6 py-4 flex items-center justify-between text-left">
                 <span className="text-lg font-semibold text-gray-900 group-open:text-emerald-700 transition-colors duration-300">
-                  Сколько стоит консультация стоматолога в Альтамед Голицино в клинике «Альтамед Голицино»?
+                  Сколько стоит консультация стоматолога в Альтамед Голицыно в клинике «Альтамед Голицыно»?
                 </span>
                 <svg
                   className="w-5 h-5 text-[#4A5568] group-open:rotate-180 transition-transform duration-300"
@@ -492,7 +492,7 @@ export default function ConsultationPage() {
                 </svg>
               </summary>
               <div className="px-6 pb-4 text-gray-700 leading-relaxed">
-                Да, запись к стоматологу в Альтамед Голицино доступна онлайн через форму на сайте или по телефону.
+                Да, запись к стоматологу в Альтамед Голицыно доступна онлайн через форму на сайте или по телефону.
                 Вы можете выбрать удобное время и специалиста (терапевт, хирург, ортопед, ортодонт, детский стоматолог).
               </div>
             </details>
@@ -525,10 +525,10 @@ export default function ConsultationPage() {
           <div className="bg-gradient-to-r from-[#4A5568] to-[#5A6474] rounded-[20px] p-8 md:p-12 text-white flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
             <div className="max-w-3xl">
               <h2 className="text-2xl md:text-3xl font-bold mb-4">
-                Консультация стоматолога в Альтамед Голицино — начните с бесплатного плана лечения
+                Консультация стоматолога в Альтамед Голицыно — начните с бесплатного плана лечения
               </h2>
               <p className="text-white/90 text-sm md:text-base leading-relaxed">
-                Запишитесь на консультацию в клинику «Альтамед Голицино», чтобы узнать состояние ваших зубов, получить
+                Запишитесь на консультацию в клинику «Альтамед Голицыно», чтобы узнать состояние ваших зубов, получить
                 индивидуальный план лечения и ответы на все вопросы от опытных стоматологов.
               </p>
             </div>
@@ -552,7 +552,7 @@ export default function ConsultationPage() {
               __html: JSON.stringify({
                 "@context": "https://schema.org",
                 "@type": "MedicalBusiness",
-                name: "Клиника «Альтамед Голицино» — консультация стоматолога в Альтамед Голицино",
+                name: "Клиника «Альтамед Голицыно» — консультация стоматолога в Альтамед Голицыно",
                 url: "https://altamed-golitsino.ru/services/dentistry/consultation",
                 image: "https://altamed-golitsino.ru/images/dentisrty/dc792999-799a-442d-b88d-d1e7eadaae11 1.webp",
                 medicalSpecialty: "Dental",
@@ -563,16 +563,16 @@ export default function ConsultationPage() {
                 },
                 address: {
                   "@type": "PostalAddress",
-                  addressLocality: "Альтамед Голицино",
+                  addressLocality: "Альтамед Голицыно",
                   addressRegion: "Московская область",
                   streetAddress: "ул. Советская, 9"
                 },
                 telephone: "+7 (495) 640-09-03",
                 priceRange: "₽",
                 serviceType: "Консультация стоматолога",
-                areaServed: "Альтамед Голицино и Голицино",
+                areaServed: "Альтамед Голицыно и Голицыно",
                 description:
-                  "Консультация стоматолога в Альтамед Голицино: первичный и повторный прием, осмотр полости рта, составление плана лечения по КТ, оформление справок и доступные цены.",
+                  "Консультация стоматолога в Альтамед Голицыно: первичный и повторный прием, осмотр полости рта, составление плана лечения по КТ, оформление справок и доступные цены.",
                 sameAs: [
                   "https://altamed-golitsino.ru",
                   "https://yandex.ru/maps/org/altamed_s/1919839667"

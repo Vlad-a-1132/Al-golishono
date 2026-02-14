@@ -44,10 +44,10 @@ export default function StrengtheningPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div>
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-                Укрепление тканей зуба в клинике «Альтамед Голицино»
+                Укрепление тканей зуба в клинике «Альтамед Голицыно»
               </h1>
               <p className="text-lg md:text-xl mb-8 text-emerald-100">
-                Глубокое фторирование и защита эмали для предотвращения кариеса в Альтамед Голицино
+                Глубокое фторирование и защита эмали для предотвращения кариеса в Альтамед Голицыно
               </p>
             </div>
             <div className="relative">
@@ -65,9 +65,9 @@ export default function StrengtheningPage() {
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div className="lg:col-span-2 space-y-5 text-gray-700 leading-relaxed">
-              <h2 className="text-3xl font-bold text-gray-900">Укрепление тканей зуба в Альтамед Голицино: почему выбирают нас</h2>
+              <h2 className="text-3xl font-bold text-gray-900">Укрепление тканей зуба в Альтамед Голицыно: почему выбирают нас</h2>
               <p>
-                Клиника «Альтамед Голицино» предлагает услуги по укреплению тканей зуба в Альтамед Голицино — глубокое фторирование,
+                Клиника «Альтамед Голицыно» предлагает услуги по укреплению тканей зуба в Альтамед Голицыно — глубокое фторирование,
                 покрытие фторсодержащими препаратами и запечатывание фиссур для профилактики кариеса. Мы применяем
                 современные технологии, качественные материалы и обеспечиваем эффективную защиту зубов от кариеса.
               </p>
@@ -77,13 +77,13 @@ export default function StrengtheningPage() {
                 фиссур для профилактики кариеса.
               </p>
               <p>
-                Прозрачные цены позволяют планировать бюджет — стоимость укрепления тканей зуба в Альтамед Голицино
+                Прозрачные цены позволяют планировать бюджет — стоимость укрепления тканей зуба в Альтамед Голицыно
                 фиксируется заранее, а пациенты получают подробную информацию о процедурах.
               </p>
             </div>
             <div className="bg-gray-50 rounded-[20px] p-6 shadow-md border-l-4 border-[#4A5568]">
               <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Что вы получаете, выбирая «Альтамед Голицино»
+                Что вы получаете, выбирая «Альтамед Голицыно»
               </h3>
               <ul className="space-y-3 text-gray-700 text-sm md:text-base leading-relaxed">
                 <li className="flex items-start">
@@ -110,7 +110,7 @@ export default function StrengtheningPage() {
 
       <section className="py-12 bg-gray-50">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">Преимущества укрепления тканей зуба в «Альтамед Голицино»</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">Преимущества укрепления тканей зуба в «Альтамед Голицыно»</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
               <h3 className="text-xl font-semibold text-gray-900 mb-3">Опытные стоматологи</h3>
@@ -224,7 +224,7 @@ export default function StrengtheningPage() {
       <section className="py-12 bg-gray-50">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8 text-center">
-            Услуги укрепления тканей зуба в Альтамед Голицино
+            Услуги укрепления тканей зуба в Альтамед Голицыно
           </h2>
           
           <div className="bg-white rounded-[20px] shadow-lg p-6 md:p-8">
@@ -276,16 +276,16 @@ export default function StrengtheningPage() {
       <section className="py-12 bg-white">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <h2 className="text-3xl font-bold text-gray-900 mb-6">
-            Укрепление тканей зуба в Альтамед Голицино: цены и отзывы пациентов
+            Укрепление тканей зуба в Альтамед Голицыно: цены и отзывы пациентов
           </h2>
           <div className="space-y-4 text-gray-700 leading-relaxed text-sm md:text-base mb-6">
             <p>
-              Стоматология «Альтамед Голицино» — клиника, где укрепление тканей зуба в Альтамед Голицино проводится
-              по международным протоколам. Мы принимаем пациентов из Альтамед Голицино и всего Одинцовского городского округа.
+              Стоматология «Альтамед Голицыно» — клиника, где укрепление тканей зуба в Альтамед Голицыно проводится
+              по международным протоколам. Мы принимаем пациентов из Альтамед Голицыно и всего Одинцовского городского округа.
             </p>
             <p>
               Наши пациенты отмечают эффективность процедур и долговечность результата. Если вы ищете стоматологию,
-              где «укрепление тканей зуба Альтамед Голицино» — это не просто слоган, а качественная услуга, записывайтесь
+              где «укрепление тканей зуба Альтамед Голицыно» — это не просто слоган, а качественная услуга, записывайтесь
               на процедуру или ознакомьтесь с другими направлениями на{" "}
               <Link href="/services/dentistry" className="text-emerald-600 hover:text-emerald-700 underline">
                 странице стоматологии
@@ -299,11 +299,11 @@ export default function StrengtheningPage() {
       <section className="py-12 bg-gray-50">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <h2 className="text-3xl font-bold text-gray-900 mb-6">
-            Отзывы пациентов об укреплении тканей зуба в Альтамед Голицино
+            Отзывы пациентов об укреплении тканей зуба в Альтамед Голицыно
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Реальные отзывы из Альтамед Голицино</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Реальные отзывы из Альтамед Голицыно</h3>
               <p className="text-gray-700 text-sm md:text-base leading-relaxed">
                 Пациенты отмечают эффективность укрепления эмали, профилактику кариеса
                 и долговечность результата после процедур.
@@ -319,7 +319,7 @@ export default function StrengtheningPage() {
             <div className="bg-white rounded-[20px] p-6 shadow-md border border-gray-100">
               <h3 className="text-xl font-semibold text-gray-900 mb-3">Комфортная процедура</h3>
               <p className="text-gray-700 text-sm md:text-base leading-relaxed">
-                После укрепления тканей зуба в Альтамед Голицино пациенты отмечают отсутствие дискомфорта; врачи дают
+                После укрепления тканей зуба в Альтамед Голицыно пациенты отмечают отсутствие дискомфорта; врачи дают
                 подробные инструкции по уходу.
               </p>
             </div>
@@ -330,7 +330,7 @@ export default function StrengtheningPage() {
       <section className="py-12 bg-white">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
           <h2 className="text-3xl font-bold text-gray-900 mb-6">
-            Частые вопросы об укреплении тканей зуба в Альтамед Голицино
+            Частые вопросы об укреплении тканей зуба в Альтамед Голицыно
           </h2>
           <div className="space-y-4">
             <details className="group bg-gray-50 rounded-[20px] shadow-md border border-gray-100">
@@ -380,10 +380,10 @@ export default function StrengtheningPage() {
           <div className="bg-gradient-to-r from-[#4A5568] to-[#5A6474] rounded-[20px] p-8 md:p-12 text-white flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
             <div className="max-w-3xl">
               <h2 className="text-2xl md:text-3xl font-bold mb-4">
-                Укрепление тканей зуба в Альтамед Голицино — начните с консультации
+                Укрепление тканей зуба в Альтамед Голицыно — начните с консультации
               </h2>
               <p className="text-white/90 text-sm md:text-base leading-relaxed">
-                Запишитесь на консультацию в клинику «Альтамед Голицино», чтобы узнать стоимость укрепления тканей зуба,
+                Запишитесь на консультацию в клинику «Альтамед Голицыно», чтобы узнать стоимость укрепления тканей зуба,
                 подобрать подходящие процедуры и получить индивидуальный план профилактики кариеса.
               </p>
             </div>
@@ -407,7 +407,7 @@ export default function StrengtheningPage() {
               __html: JSON.stringify({
                 "@context": "https://schema.org",
                 "@type": "MedicalBusiness",
-                name: "Клиника «Альтамед Голицино» — укрепление тканей зуба в Альтамед Голицино",
+                name: "Клиника «Альтамед Голицыно» — укрепление тканей зуба в Альтамед Голицыно",
                 url: "https://altamed-golitsino.ru/services/dentistry/strengthening",
                 image: "https://altamed-golitsino.ru/images/dentisrty/task_01kb5fptcdfe9vny2vy0fadwrt_1764342213_img_0.webp",
                 medicalSpecialty: "Dental",
@@ -418,16 +418,16 @@ export default function StrengtheningPage() {
                 },
                 address: {
                   "@type": "PostalAddress",
-                  addressLocality: "Альтамед Голицино",
+                  addressLocality: "Альтамед Голицыно",
                   addressRegion: "Московская область",
                   streetAddress: "ул. Советская, 9"
                 },
                 telephone: "+7 (495) 640-09-03",
                 priceRange: "₽₽",
                 serviceType: "Укрепление тканей зуба",
-                areaServed: "Альтамед Голицино и Голицино",
+                areaServed: "Альтамед Голицыно и Голицыно",
                 description:
-                  "Укрепление тканей зуба в Альтамед Голицино: глубокое фторирование, покрытие фторсодержащими препаратами, запечатывание фиссур для профилактики кариеса.",
+                  "Укрепление тканей зуба в Альтамед Голицыно: глубокое фторирование, покрытие фторсодержащими препаратами, запечатывание фиссур для профилактики кариеса.",
                 sameAs: [
                   "https://altamed-golitsino.ru",
                   "https://yandex.ru/maps/org/altamed_s/1919839667"
