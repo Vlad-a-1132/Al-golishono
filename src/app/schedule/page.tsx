@@ -209,6 +209,15 @@ export default function SchedulePage() {
       }
     },
     {
+      name: "Мареева Полина Александровна",
+      specialty: "Педиатр",
+      schedule: { 
+        Tuesday: { start: "10:00", end: "15:00" }, 
+        Wednesday: { start: "10:00", end: "15:00" }, 
+        Thursday: { start: "10:00", end: "15:00" } 
+      }
+    },
+    {
       name: "Ананкина Ирина Ивановна",
       specialty: "Офтальмолог",
       schedule: { 
