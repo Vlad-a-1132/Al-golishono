@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect, useRef, useMemo } from "react";
 import AppointmentForm from "@/components/AppointmentForm";
-import Snowfall from "@/components/Snowfall";
+import March8HeartScene from "@/components/March8HeartScene";
 import { doctors as defaultDoctors } from "@/data/static-data";
 
 interface Schedule {
@@ -135,13 +135,6 @@ export default function Home() {
       buttonLink: "/promo/promo-4",
       buttonColor: "#13AB7B",
       image: "/images/slides/3-analizy.webp"
-    },
-    {
-      title: "23 февраля — мужчинам скидка 20%",
-      buttonText: "Подробнее",
-      buttonLink: "/promo/promo-6",
-      buttonColor: "#13AB7B",
-      image: "/images/promo/23prom.png"
     },
     {
       title: "Скидки для пенсионеров 10%",
@@ -508,13 +501,6 @@ export default function Home() {
             {/* Мобильная версия - цветные блоки 2x6 */}
             <div className="md:hidden grid grid-cols-2 gap-3 w-full max-w-sm mx-auto">
               <Link href="/services/gastroenterolog-golitsino" className="bg-[#FFE8E1] p-3 rounded-[20px] flex items-center justify-between h-[80px] relative overflow-hidden">
-                <Image 
-                  src="/images/yslugi/png-klev-club-k98x-p-vetki-yeli-s-igrushkami-png-27 1.webp"
-                  alt=""
-                  width={40}
-                  height={40}
-                  className="absolute top-0 right-0 w-10 h-10 object-contain"
-                />
                 <span className="font-medium text-sm text-gray-800">Гастроэнтерология</span>
                 <svg className="w-4 h-4 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -522,13 +508,6 @@ export default function Home() {
               </Link>
               
               <Link href="/services/ginekolog-golitsino" className="bg-[#E8F5E8] p-3 rounded-[20px] flex items-center justify-between h-[80px] relative overflow-hidden">
-                <Image 
-                  src="/images/yslugi/png-klev-club-k98x-p-vetki-yeli-s-igrushkami-png-27 1.webp"
-                  alt=""
-                  width={40}
-                  height={40}
-                  className="absolute top-0 right-0 w-10 h-10 object-contain"
-                />
                 <span className="font-medium text-sm text-gray-800">Гинекология</span>
                 <svg className="w-4 h-4 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -536,13 +515,6 @@ export default function Home() {
               </Link>
               
               <Link href="/services/dentistry/implantation" className="bg-[#E8F0F8] p-3 rounded-[20px] flex items-center justify-between h-[80px] relative overflow-hidden">
-                <Image 
-                  src="/images/yslugi/png-klev-club-k98x-p-vetki-yeli-s-igrushkami-png-27 1.webp"
-                  alt=""
-                  width={40}
-                  height={40}
-                  className="absolute top-0 right-0 w-10 h-10 object-contain"
-                />
                 <span className="font-medium text-sm text-gray-800">Имплантация</span>
                 <svg className="w-4 h-4 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -550,13 +522,6 @@ export default function Home() {
               </Link>
               
               <Link href="/services/dermatolog-golitsino" className="bg-[#FFF8E1] p-3 rounded-[20px] flex items-center justify-between h-[80px] relative overflow-hidden">
-                <Image 
-                  src="/images/yslugi/png-klev-club-k98x-p-vetki-yeli-s-igrushkami-png-27 1.webp"
-                  alt=""
-                  width={40}
-                  height={40}
-                  className="absolute top-0 right-0 w-10 h-10 object-contain"
-                />
                 <span className="font-medium text-sm text-gray-800">Дерматология</span>
                 <svg className="w-4 h-4 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -564,13 +529,6 @@ export default function Home() {
               </Link>
               
               <Link href="/services/cardiology" className="bg-[#E8F4FD] p-3 rounded-[20px] flex items-center justify-between h-[80px] relative overflow-hidden">
-                <Image 
-                  src="/images/yslugi/png-klev-club-k98x-p-vetki-yeli-s-igrushkami-png-27 1.webp"
-                  alt=""
-                  width={40}
-                  height={40}
-                  className="absolute top-0 right-0 w-10 h-10 object-contain"
-                />
                 <span className="font-medium text-sm text-gray-800">Кардиология</span>
                 <svg className="w-4 h-4 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -578,13 +536,6 @@ export default function Home() {
               </Link>
               
               <Link href="/services/dentistry" className="bg-[#FFE8F0] p-3 rounded-[20px] flex items-center justify-between h-[80px] relative overflow-hidden">
-                <Image 
-                  src="/images/yslugi/png-klev-club-k98x-p-vetki-yeli-s-igrushkami-png-27 1.webp"
-                  alt=""
-                  width={40}
-                  height={40}
-                  className="absolute top-0 right-0 w-10 h-10 object-contain"
-                />
                 <span className="font-medium text-sm text-gray-800">Стоматология</span>
                 <svg className="w-4 h-4 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -592,13 +543,6 @@ export default function Home() {
               </Link>
               
               <Link href="/services/mammology" className="bg-[#FFE8E1] p-3 rounded-[20px] flex items-center justify-between h-[80px] relative overflow-hidden">
-                <Image 
-                  src="/images/yslugi/png-klev-club-k98x-p-vetki-yeli-s-igrushkami-png-27 1.webp"
-                  alt=""
-                  width={40}
-                  height={40}
-                  className="absolute top-0 right-0 w-10 h-10 object-contain"
-                />
                 <span className="font-medium text-sm text-gray-800">Маммология</span>
                 <svg className="w-4 h-4 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -606,13 +550,6 @@ export default function Home() {
               </Link>
               
               <Link href="/services/nevrolog-golitsino" className="bg-[#F0E8FF] p-3 rounded-[20px] flex items-center justify-between h-[80px] relative overflow-hidden">
-                <Image 
-                  src="/images/yslugi/png-klev-club-k98x-p-vetki-yeli-s-igrushkami-png-27 1.webp"
-                  alt=""
-                  width={40}
-                  height={40}
-                  className="absolute top-0 right-0 w-10 h-10 object-contain"
-                />
                 <span className="font-medium text-sm text-gray-800">Неврология</span>
                 <svg className="w-4 h-4 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -620,13 +557,6 @@ export default function Home() {
               </Link>
 
               <Link href="/services/otorinolaringolog-golitsino" className="bg-[#F2F6D6] p-3 rounded-[20px] flex items-center justify-between h-[80px] relative overflow-hidden">
-                <Image 
-                  src="/images/yslugi/png-klev-club-k98x-p-vetki-yeli-s-igrushkami-png-27 1.webp"
-                  alt=""
-                  width={40}
-                  height={40}
-                  className="absolute top-0 right-0 w-10 h-10 object-contain"
-                />
                 <span className="font-medium text-sm text-gray-800">Отоларингология</span>
                 <svg className="w-4 h-4 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -634,13 +564,6 @@ export default function Home() {
               </Link>
 
               <Link href="/services/oftalmolog-golitsino" className="bg-[#E2F5F0] p-3 rounded-[20px] flex items-center justify-between h-[80px] relative overflow-hidden">
-                <Image 
-                  src="/images/yslugi/png-klev-club-k98x-p-vetki-yeli-s-igrushkami-png-27 1.webp"
-                  alt=""
-                  width={40}
-                  height={40}
-                  className="absolute top-0 right-0 w-10 h-10 object-contain"
-                />
                 <span className="font-medium text-sm text-gray-800">Офтальмология</span>
                 <svg className="w-4 h-4 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -648,13 +571,6 @@ export default function Home() {
               </Link>
 
               <Link href="/services/pediatr-golitsino" className="bg-[#EEE0EE] p-3 rounded-[20px] flex items-center justify-between h-[80px] relative overflow-hidden">
-                <Image 
-                  src="/images/yslugi/png-klev-club-k98x-p-vetki-yeli-s-igrushkami-png-27 1.webp"
-                  alt=""
-                  width={40}
-                  height={40}
-                  className="absolute top-0 right-0 w-10 h-10 object-contain"
-                />
                 <span className="font-medium text-sm text-gray-800">Педиатрия</span>
                 <svg className="w-4 h-4 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -662,13 +578,6 @@ export default function Home() {
               </Link>
 
               <Link href="/services/proctology" className="bg-[#DFDBF0] p-3 rounded-[20px] flex items-center justify-between h-[80px] relative overflow-hidden">
-                <Image 
-                  src="/images/yslugi/png-klev-club-k98x-p-vetki-yeli-s-igrushkami-png-27 1.webp"
-                  alt=""
-                  width={40}
-                  height={40}
-                  className="absolute top-0 right-0 w-10 h-10 object-contain"
-                />
                 <span className="font-medium text-sm text-gray-800">Проктология</span>
                 <svg className="w-4 h-4 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -680,7 +589,7 @@ export default function Home() {
             <div className="md:hidden mt-4 flex justify-center w-full max-w-sm mx-auto">
               <Link 
                 href="/services" 
-                className="christmas-button text-white rounded-full py-3 flex items-center justify-center font-medium text-sm transition-colors w-full"
+                className="text-white rounded-full py-3 flex items-center justify-center font-medium text-sm transition-colors w-full"
                 style={{ paddingLeft: 'calc(2rem + 2px)', paddingRight: 'calc(2rem + 2px)', backgroundColor: '#5E0D0C' }}
               >
                 Все услуги
@@ -694,13 +603,6 @@ export default function Home() {
             <div className="hidden md:flex flex-col space-y-4 md:space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
                 <Link href="/services/gastroenterolog-golitsino" className="bg-[#FFDCC7] p-4 rounded-[20px] flex items-center justify-between w-full md:w-[224px] h-[89px] relative overflow-hidden">
-                  <Image 
-                    src="/images/yslugi/png-klev-club-k98x-p-vetki-yeli-s-igrushkami-png-27 1.webp"
-                    alt=""
-                    width={50}
-                    height={50}
-                    className="absolute top-0 right-0 w-12 h-12 object-contain"
-                  />
                   <span className="font-medium text-sm md:text-base">Гастроэнтерология</span>
                   <svg className="w-5 h-5 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -708,13 +610,6 @@ export default function Home() {
                 </Link>
                 
                 <Link href="/services/ginekolog-golitsino" className="bg-[#F6F8F7] p-4 rounded-[20px] flex items-center justify-between w-full md:w-[224px] h-[89px] relative overflow-hidden">
-                  <Image 
-                    src="/images/yslugi/png-klev-club-k98x-p-vetki-yeli-s-igrushkami-png-27 1.webp"
-                    alt=""
-                    width={50}
-                    height={50}
-                    className="absolute top-0 right-0 w-12 h-12 object-contain"
-                  />
                   <span className="font-medium text-sm md:text-base">Гинекология</span>
                   <svg className="w-5 h-5 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -722,13 +617,6 @@ export default function Home() {
                 </Link>
                 
                 <Link href="/services/dentistry/implantation" className="bg-[#E8F0F8] p-4 rounded-[20px] flex items-center justify-between w-full md:w-[224px] h-[89px] relative overflow-hidden">
-                  <Image 
-                    src="/images/yslugi/png-klev-club-k98x-p-vetki-yeli-s-igrushkami-png-27 1.webp"
-                    alt=""
-                    width={50}
-                    height={50}
-                    className="absolute top-0 right-0 w-12 h-12 object-contain"
-                  />
                   <span className="font-medium text-sm md:text-base">Имплантация</span>
                   <svg className="w-5 h-5 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -738,13 +626,6 @@ export default function Home() {
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
                 <Link href="/services/dermatolog-golitsino" className="bg-[#F2F6D6] p-4 rounded-[20px] flex items-center justify-between w-full md:w-[224px] h-[89px] relative overflow-hidden">
-                  <Image 
-                    src="/images/yslugi/png-klev-club-k98x-p-vetki-yeli-s-igrushkami-png-27 1.webp"
-                    alt=""
-                    width={50}
-                    height={50}
-                    className="absolute top-0 right-0 w-12 h-12 object-contain"
-                  />
                   <span className="font-medium text-sm md:text-base">Дерматология</span>
                   <svg className="w-5 h-5 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -752,13 +633,6 @@ export default function Home() {
                 </Link>
                 
                 <Link href="/services/cardiology" className="bg-[#E2F5F0] p-4 rounded-[20px] flex items-center justify-between w-full md:w-[224px] h-[89px] relative overflow-hidden">
-                  <Image 
-                    src="/images/yslugi/png-klev-club-k98x-p-vetki-yeli-s-igrushkami-png-27 1.webp"
-                    alt=""
-                    width={50}
-                    height={50}
-                    className="absolute top-0 right-0 w-12 h-12 object-contain"
-                  />
                   <span className="font-medium text-sm md:text-base">Кардиология</span>
                   <svg className="w-5 h-5 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -766,13 +640,6 @@ export default function Home() {
                 </Link>
                 
                 <Link href="/services/dentistry" className="bg-[#FDE3E2] p-4 rounded-[20px] flex items-center justify-between w-full md:w-[224px] h-[89px] relative overflow-hidden">
-                  <Image 
-                    src="/images/yslugi/png-klev-club-k98x-p-vetki-yeli-s-igrushkami-png-27 1.webp"
-                    alt=""
-                    width={50}
-                    height={50}
-                    className="absolute top-0 right-0 w-12 h-12 object-contain"
-                  />
                   <span className="font-medium text-sm md:text-base">Стоматология</span>
                   <svg className="w-5 h-5 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -782,13 +649,6 @@ export default function Home() {
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
                 <Link href="/services/mammology" className="bg-[#EBD8C9] p-4 rounded-[20px] flex items-center justify-between w-full md:w-[224px] h-[89px] relative overflow-hidden">
-                  <Image 
-                    src="/images/yslugi/png-klev-club-k98x-p-vetki-yeli-s-igrushkami-png-27 1.webp"
-                    alt=""
-                    width={50}
-                    height={50}
-                    className="absolute top-0 right-0 w-12 h-12 object-contain"
-                  />
                   <span className="font-medium text-sm md:text-base">Маммология</span>
                   <svg className="w-5 h-5 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -796,13 +656,6 @@ export default function Home() {
                 </Link>
                 
                 <Link href="/services/nevrolog-golitsino" className="bg-[#EEE0EE] p-4 rounded-[20px] flex items-center justify-between w-full md:w-[224px] h-[89px] relative overflow-hidden">
-                  <Image 
-                    src="/images/yslugi/png-klev-club-k98x-p-vetki-yeli-s-igrushkami-png-27 1.webp"
-                    alt=""
-                    width={50}
-                    height={50}
-                    className="absolute top-0 right-0 w-12 h-12 object-contain"
-                  />
                   <span className="font-medium text-sm md:text-base">Неврология</span>
                   <svg className="w-5 h-5 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -810,13 +663,6 @@ export default function Home() {
                 </Link>
                 
                 <Link href="/services/otorinolaringolog-golitsino" className="bg-[#DBF0E9] p-4 rounded-[20px] flex items-center justify-between w-full md:w-[224px] h-[89px] relative overflow-hidden">
-                  <Image 
-                    src="/images/yslugi/png-klev-club-k98x-p-vetki-yeli-s-igrushkami-png-27 1.webp"
-                    alt=""
-                    width={50}
-                    height={50}
-                    className="absolute top-0 right-0 w-12 h-12 object-contain"
-                  />
                   <span className="font-medium text-sm md:text-base">Отоларингология</span>
                   <svg className="w-5 h-5 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -826,13 +672,6 @@ export default function Home() {
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
                 <Link href="/services/oftalmolog-golitsino" className="bg-[#DBF0E1] p-4 rounded-[20px] flex items-center justify-between w-full md:w-[224px] h-[89px] relative overflow-hidden">
-                  <Image 
-                    src="/images/yslugi/png-klev-club-k98x-p-vetki-yeli-s-igrushkami-png-27 1.webp"
-                    alt=""
-                    width={50}
-                    height={50}
-                    className="absolute top-0 right-0 w-12 h-12 object-contain"
-                  />
                   <span className="font-medium text-sm md:text-base">Офтальмология</span>
                   <svg className="w-5 h-5 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -840,13 +679,6 @@ export default function Home() {
                 </Link>
                 
                 <Link href="/services/pediatr-golitsino" className="bg-[#DBE5F0] p-4 rounded-[20px] flex items-center justify-between w-full md:w-[224px] h-[89px] relative overflow-hidden">
-                  <Image 
-                    src="/images/yslugi/png-klev-club-k98x-p-vetki-yeli-s-igrushkami-png-27 1.webp"
-                    alt=""
-                    width={50}
-                    height={50}
-                    className="absolute top-0 right-0 w-12 h-12 object-contain"
-                  />
                   <span className="font-medium text-sm md:text-base">Педиатрия</span>
                   <svg className="w-5 h-5 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -854,13 +686,6 @@ export default function Home() {
                 </Link>
                 
                 <Link href="/services/proctology" className="bg-[#DFDBF0] p-4 rounded-[20px] flex items-center justify-between w-full md:w-[224px] h-[89px] relative overflow-hidden">
-                  <Image 
-                    src="/images/yslugi/png-klev-club-k98x-p-vetki-yeli-s-igrushkami-png-27 1.webp"
-                    alt=""
-                    width={50}
-                    height={50}
-                    className="absolute top-0 right-0 w-12 h-12 object-contain"
-                  />
                   <span className="font-medium text-sm md:text-base">Проктология</span>
                   <svg className="w-5 h-5 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -872,7 +697,7 @@ export default function Home() {
               <div className="flex justify-center">
                 <Link 
                   href="/services" 
-                  className="christmas-button text-white rounded-full py-3 flex items-center justify-center font-medium text-sm transition-colors"
+                  className="text-white rounded-full py-3 flex items-center justify-center font-medium text-sm transition-colors"
                   style={{ paddingLeft: 'calc(8rem + 2px)', paddingRight: 'calc(8rem + 2px)', backgroundColor: '#5E0D0C' }}
                 >
                   Все услуги
@@ -882,6 +707,29 @@ export default function Home() {
                 </Link>
               </div>
              
+            </div>
+          </div>
+
+          {/* Баннер 8 марта: слева сакура (десктоп), справа текст */}
+          <div className="w-full mt-6 px-4 md:px-0">
+            <div className="march8-sakura-banner">
+              {/* Левая колонка: 3D-сердце + жидкий свет + лепестки + параллакс */}
+              <div className="march8-banner-left" aria-hidden>
+                <March8HeartScene />
+              </div>
+              <div className="march8-sakura-content">
+                <div className="march8-sakura-badge">
+                  <span className="march8-sakura-flower">🌸</span>
+                  <span>8 марта клиника не работает</span>
+                </div>
+                <h2 className="march8-sakura-h2">С Международным<br />женским днём!</h2>
+                <p className="march8-sakura-p">
+                  Пусть весна принесёт тепло и радость,<br />
+                  здоровье будет крепким,<br />
+                  а каждый день — наполнен улыбками.
+                </p>
+                <div className="march8-sakura-thanks">Спасибо, что доверяете нам!</div>
+              </div>
             </div>
           </div>
         </div>
@@ -1392,9 +1240,6 @@ export default function Home() {
       {/* Форма записи на прием */}
       <AppointmentForm />
       
-      {/* Эффект падающего снега */}
-      <Snowfall />
-  
     </div>
   );
 }

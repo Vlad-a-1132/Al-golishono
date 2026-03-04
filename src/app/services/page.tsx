@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import AppointmentForm from '@/components/AppointmentForm';
+import DentalPromoBanner from '@/components/DentalPromoBanner';
 
 export default function ServicesPage() {
   
@@ -659,7 +660,8 @@ export default function ServicesPage() {
       {/* Первый контейнер услуг */}
       <section className="py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 justify-items-center">
+          <DentalPromoBanner />
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 justify-items-center mt-8">
             {firstContainerData.map((service) => (
               service.id === 'gastroenterology' ? (
                 <Link key={service.id} href="/services/gastroenterolog-golitsino" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">

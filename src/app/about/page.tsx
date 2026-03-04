@@ -2272,7 +2272,7 @@ function AboutPageContent() {
                           ММЦ «Альтамед +»
                         </h3>
                         <div className="space-y-2 text-gray-700">
-                          <p>г. Одинцово, ул. Союзная, д. 32 Б</p>
+                          <p>г. Голицыно, ул. Союзная, д. 32 Б</p>
                           <p>
                             Телефон: <a href="tel:+74952129003" className="text-emerald-600 hover:text-emerald-700">+7 (495) 212-90-03</a>
                           </p>
@@ -2299,7 +2299,7 @@ function AboutPageContent() {
                           Клиника «Одинмед»
                         </h3>
                         <div className="space-y-2 text-gray-700">
-                          <p>г. Одинцово, ул. Комсомольская, д. 16, корп. 3</p>
+                          <p>г. Голицыно, ул. Комсомольская, д. 16, корп. 3</p>
                           <p>Стоматологическое отделение:</p>
                           <p>
                             <a href="tel:+74952874127" className="text-emerald-600 hover:text-emerald-700">+7 (495) 287-41-27</a>
@@ -2315,7 +2315,7 @@ function AboutPageContent() {
                           Клиника «Одинмед+»
                         </h3>
                         <div className="space-y-2 text-gray-700">
-                          <p>г. Одинцово, ул. Маршала Неделина, д. 9</p>
+                          <p>г. Голицыно, ул. Маршала Неделина, д. 9</p>
                           <p>
                             Телефон: <a href="tel:+74959262655" className="text-emerald-600 hover:text-emerald-700">+7 (495) 926-26-55</a>
                           </p>
@@ -2511,7 +2511,7 @@ function AboutPageContent() {
                     <div>
                       <h3 className="text-lg font-semibold text-gray-800 mb-3">Одинцовский территориальный отдел Управления Федеральной службы по надзору в сфере защиты прав потребителей и благополучия человека по Московской области</h3>
                       <div className="space-y-2 text-gray-700 ml-4">
-                        <p>143000, Московская область, г. Одинцово, Можайское шоссе, д.12</p>
+                        <p>143000, Московская область, г. Голицыно, Можайское шоссе, д.12</p>
                         <p>Начальник отдела Мозгалина Наталья Юрьевна</p>
                         <p>т/ф. <a href="tel:+74955935143" className="text-emerald-600 hover:text-emerald-700">495-593-51-43</a></p>
                       </div>

@@ -98,7 +98,7 @@ export default function AppointmentsPage() {
                 </li>
                 <li className="flex flex-col md:flex-row md:items-start gap-1 md:gap-0">
                   <span className="font-medium md:mr-2">Адрес:</span>
-                  <span>г. Одинцово, ул. Можайское шоссе, 55</span>
+                  <span>г. Голицыно, ул. Можайское шоссе, 55</span>
                 </li>
               </ul>
             </div>
