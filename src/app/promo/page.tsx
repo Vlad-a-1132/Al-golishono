@@ -67,6 +67,15 @@ export default function PromoPage() {
       endDate: "28.02.2026",
       title: "Скидки для пенсионеров",
       description: "10% на приём врача, УЗИ, анализы"
+    },
+    {
+      id: 8,
+      category: "special",
+      image: "/images/doctors/doctor banner/Screenshot_1230.png",
+      startDate: "05.03.2026",
+      endDate: "20.03.2026",
+      title: "Праздничные скидки для женщин",
+      description: "С 5 по 20 марта — 15% на консультации и анализы, 25% на комплекс гинекологических процедур"
     }
   ];
 

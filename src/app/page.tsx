@@ -109,6 +109,13 @@ export default function Home() {
   // Slides data - используем нейтральные пути чтобы избежать блокировки рекламы
   const slides = [
     {
+      title: "Праздничные скидки для женщин! С 5 по 20 марта",
+      buttonText: "Подробнее",
+      buttonLink: "/promo/promo-8",
+      buttonColor: "#13AB7B",
+      image: "/images/doctors/doctor banner/Screenshot_1230.png"
+    },
+    {
       title: "Профессиональная гигиена полости рта — 4600 ₽",
       buttonText: "Подробнее",
       buttonLink: "/promo/promo-1",

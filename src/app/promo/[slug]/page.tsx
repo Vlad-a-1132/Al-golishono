@@ -145,6 +145,24 @@ export default function PromoDetailPage() {
         "При предъявлении пенсионного удостоверения",
         "Скидки не суммируются"
       ]
+    },
+    {
+      id: 8,
+      category: "special",
+      image: "/images/doctors/doctor banner/Screenshot_1230.png",
+      startDate: "05.03.2026",
+      endDate: "20.03.2026",
+      title: "Праздничные скидки для женщин",
+      description: "С 5 по 20 марта — 15% на консультации и анализы, 25% на комплекс гинекологических процедур",
+      fullDescription: "С 5 по 20 марта в клинике «Альтамед-с» действуют праздничные скидки для женщин. Получите 15% на все консультации врачей и лабораторные анализы. Специальное предложение — скидка 25% при единовременном прохождении комплекса гинекологических процедур: приём врача-гинеколога, УЗИ органов малого таза, забор биоматериала, мазок на флору и кольпоскопия.",
+      details: [
+        "Срок действия акции: с 5 по 20 марта",
+        "Скидка 15% на все консультации врачей",
+        "Скидка 15% на все лабораторные анализы",
+        "Скидка 25% при единовременном прохождении комплекса процедур",
+        "В комплекс входят: приём врача-гинеколога, УЗИ органов малого таза, забор биоматериала, мазок на флору, кольпоскопия",
+        "Записывайтесь заранее на удобное время"
+      ]
     }
   ];
 
@@ -257,6 +275,62 @@ export default function PromoDetailPage() {
           </div>
         </div>
       </section>
+
+      {/* Условия скидок — только для акции «Праздничные скидки для женщин» */}
+      {promo.id === 8 && (
+        <section className="py-12 bg-gradient-to-br from-rose-50 to-pink-50">
+          <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
+            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Условия скидок</h2>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              <div className="bg-white rounded-2xl shadow-lg p-6 md:p-8 border-2 border-rose-200">
+                <div className="flex items-center mb-4">
+                  <div className="w-14 h-14 bg-rose-500 rounded-full flex items-center justify-center mr-4">
+                    <span className="text-white font-bold text-xl">15%</span>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-gray-900">Общие скидки</h3>
+                  </div>
+                </div>
+                <ul className="space-y-3">
+                  <li className="flex items-center text-gray-700">
+                    <svg className="w-5 h-5 text-rose-500 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    На все консультации врачей
+                  </li>
+                  <li className="flex items-center text-gray-700">
+                    <svg className="w-5 h-5 text-rose-500 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    На все лабораторные анализы
+                  </li>
+                </ul>
+              </div>
+              <div className="bg-white rounded-2xl shadow-lg p-6 md:p-8 border-2 border-pink-300">
+                <div className="flex items-center mb-4">
+                  <div className="w-14 h-14 bg-pink-500 rounded-full flex items-center justify-center mr-4">
+                    <span className="text-white font-bold text-xl">25%</span>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-gray-900">Комплекс процедур</h3>
+                    <p className="text-sm text-gray-600 mt-1">При единовременном прохождении:</p>
+                  </div>
+                </div>
+                <ul className="space-y-3">
+                  {["Приём врача-гинеколога", "УЗИ органов малого таза", "Забор биоматериала", "Мазок на флору", "Кольпоскопия"].map((item) => (
+                    <li key={item} className="flex items-center text-gray-700">
+                      <svg className="w-5 h-5 text-pink-500 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Специальный блок для акции "День пенсионера" */}
       {promo.id === 7 && (
