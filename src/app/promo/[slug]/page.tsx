@@ -149,7 +149,7 @@ export default function PromoDetailPage() {
     {
       id: 8,
       category: "special",
-      image: "/images/doctors/doctor banner/Screenshot_1230.png",
+      image: "/images/doctors/doctor banner/Screenshot_1238.png",
       startDate: "05.03.2026",
       endDate: "20.03.2026",
       title: "Праздничные скидки для женщин",

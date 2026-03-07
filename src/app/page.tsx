@@ -113,7 +113,7 @@ export default function Home() {
       buttonText: "Подробнее",
       buttonLink: "/promo/promo-8",
       buttonColor: "#13AB7B",
-      image: "/images/doctors/doctor banner/Screenshot_1230.png"
+      image: "/images/doctors/doctor banner/Screenshot_1238.png"
     },
     {
       title: "Профессиональная гигиена полости рта — 4600 ₽",
