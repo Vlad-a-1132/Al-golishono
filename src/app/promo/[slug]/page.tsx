@@ -111,23 +111,6 @@ export default function PromoDetailPage() {
       ]
     },
     {
-      id: 6,
-      category: "special",
-      image: "/images/promo/23prom.png",
-      startDate: "23.02.2026",
-      endDate: "23.02.2026",
-      title: "День защитника Отечества",
-      description: "23 февраля — мужчинам скидка 20% на всё",
-      fullDescription: "Поздравляем с Днем защитника Отечества! 23 февраля всем мужчинам предоставляется скидка 20% на все услуги клиники.",
-      details: [
-        "Дата: 23 февраля 2026 года",
-        "Скидка 20% для мужчин",
-        "Распространяется на все услуги",
-        "При предъявлении документа",
-        "Скидки не суммируются"
-      ]
-    },
-    {
       id: 7,
       category: "consultations",
       image: "/images/slides/2-pensia.webp",

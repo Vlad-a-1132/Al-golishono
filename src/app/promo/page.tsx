@@ -51,15 +51,6 @@ export default function PromoPage() {
       description: "Пн/Ср/Пт 15%, Вт/Вс 25%"
     },
     {
-      id: 6,
-      category: "special",
-      image: "/images/promo/23prom.png",
-      startDate: "23.02.2026",
-      endDate: "23.02.2026",
-      title: "День защитника Отечества",
-      description: "23 февраля — мужчинам скидка 20% на всё"
-    },
-    {
       id: 7,
       category: "consultations",
       image: "/images/slides/2-pensia.webp",
