@@ -532,7 +532,7 @@ export default function OrthodonticsPage() {
                 </li>
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-[#4A5568] rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  Диагностику и планирование лечения с использованием КТ и моделей.
+                  Диагностику и планирование лечения с использованием моделей.
                 </li>
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-[#4A5568] rounded-full mt-2 mr-3 flex-shrink-0"></span>

@@ -116,7 +116,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/services/lab-tests/calculator',
     '/services/pregnancy-screening',
     '/services/shockwave-therapy',
-    '/services/ct',
     '/services/carboxytherapy',
   ].map((path) => ({
     url: `${baseUrl}${path}`,
@@ -146,8 +145,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { id: 1, slug: 'promo-1' },
     { id: 2, slug: 'promo-2' },
     { id: 3, slug: 'promo-3' },
-    { id: 4, slug: 'promo-4' },
-    { id: 5, slug: 'promo-5' },
   ].map((promo) => ({
     url: `${baseUrl}/promo/${promo.slug}`,
     lastModified: new Date(),

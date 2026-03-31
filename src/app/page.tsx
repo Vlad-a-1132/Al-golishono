@@ -108,13 +108,6 @@ export default function Home() {
   // Slides data - используем нейтральные пути чтобы избежать блокировки рекламы
   const slides = [
     {
-      title: "Праздничные скидки для женщин! С 5 по 20 марта",
-      buttonText: "Подробнее",
-      buttonLink: "/promo/promo-8",
-      buttonColor: "#13AB7B",
-      image: "/images/doctors/doctor banner/Screenshot_1238.png"
-    },
-    {
       title: "Профессиональная гигиена полости рта — 4600 ₽",
       buttonText: "Подробнее",
       buttonLink: "/promo/promo-1",
@@ -138,7 +131,7 @@ export default function Home() {
     {
       title: "Скидки на анализы! Пн, ср, пт — 10%, Вс — 15%",
       buttonText: "Подробнее",
-      buttonLink: "/promo/promo-4",
+      buttonLink: "/promo",
       buttonColor: "#13AB7B",
       image: "/images/slides/3-analizy.webp"
     },
@@ -999,7 +992,7 @@ export default function Home() {
           <div className="md:hidden px-4">
             <div className="flex flex-col gap-4">
               {/* Блок "Скидки на анализы!" */}
-              <Link href="/promo/promo-4" className="bg-[#DAF2FF] rounded-[20px] p-5 h-auto min-h-[160px] flex flex-col justify-between">
+              <Link href="/promo" className="bg-[#DAF2FF] rounded-[20px] p-5 h-auto min-h-[160px] flex flex-col justify-between">
                 <div className="flex-1 flex flex-col justify-between">
                   <div>
                     <h3 className="text-xl font-bold mb-2">Скидки на анализы!</h3>
@@ -1050,7 +1043,7 @@ export default function Home() {
           {/* Десктопная версия - оригинальные блоки */}
           <div className="hidden md:flex flex-col lg:flex-row gap-6 justify-center max-w-[1300px] mx-auto px-4 lg:px-0">
             {/* Левый большой блок */}
-            <Link href="/promo/promo-4" className="bg-[#DAF2FF] rounded-[20px] w-full lg:w-[593px] h-[300px] md:h-[374px] flex flex-shrink-0 relative overflow-hidden cursor-pointer">
+            <Link href="/promo" className="bg-[#DAF2FF] rounded-[20px] w-full lg:w-[593px] h-[300px] md:h-[374px] flex flex-shrink-0 relative overflow-hidden cursor-pointer">
               <div className="p-6 md:p-8 flex flex-col justify-between z-10 w-full lg:w-[60%]">
                 <div>
                   <h3 className="text-2xl md:text-3xl font-bold mb-4">Скидки на анализы!</h3>

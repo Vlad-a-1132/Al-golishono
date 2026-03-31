@@ -33,24 +33,6 @@ export default function PromoPage() {
       description: "Скидка 30% — цена: 41160 ₽ (было 58800 ₽)"
     },
     {
-      id: 4,
-      category: "diagnostics",
-      image: "/images/slides/3-analizy.webp",
-      startDate: "01.02.2026",
-      endDate: "15.02.2026",
-      title: "Скидки на анализы (1-15 февраля)",
-      description: "Понедельник-Суббота 15%, Воскресенье 25%"
-    },
-    {
-      id: 5,
-      category: "diagnostics",
-      image: "/images/slides/3-analizy.webp",
-      startDate: "15.02.2026",
-      endDate: "28.02.2026",
-      title: "Скидки на анализы (15-28 февраля)",
-      description: "Пн/Ср/Пт 15%, Вт/Вс 25%"
-    },
-    {
       id: 7,
       category: "consultations",
       image: "/images/slides/2-pensia.webp",
@@ -58,15 +40,6 @@ export default function PromoPage() {
       endDate: "28.02.2026",
       title: "Скидки для пенсионеров",
       description: "10% на приём врача, УЗИ, анализы"
-    },
-    {
-      id: 8,
-      category: "special",
-      image: "/images/doctors/doctor banner/Screenshot_1238.png",
-      startDate: "05.03.2026",
-      endDate: "20.03.2026",
-      title: "Праздничные скидки для женщин",
-      description: "С 5 по 20 марта — скидка 15% на консультации и анализы, 25% на комплекс гинекологических процедур"
     }
   ];
 

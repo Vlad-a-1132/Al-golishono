@@ -1104,7 +1104,7 @@ export default function ServicesPage() {
             </Link>
 
             {/* Скидки на анализы (1-15 февраля) */}
-            <Link href="/promo/promo-4" className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer group h-[300px] md:h-[377.22px] flex flex-col">
+            <Link href="/promo" className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer group h-[300px] md:h-[377.22px] flex flex-col">
               <div className="h-[200px] md:h-[259.22px] relative flex-shrink-0">
                 <img 
                   src="/images/slides/3-analizy.webp" 

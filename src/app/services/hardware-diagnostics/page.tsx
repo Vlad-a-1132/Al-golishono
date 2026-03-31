@@ -43,10 +43,10 @@ export default function HardwareDiagnosticsPage() {
         </div>
       </section>
 
-      {/* Cards grid: УЗИ / МРТ / КТ / Рентген */}
+      {/* Cards grid: УЗИ / Рентген */}
       <section className="py-6">
         <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
             {/* УЗИ */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-md">
               <div className="relative h-[220px]">
@@ -61,20 +61,6 @@ export default function HardwareDiagnosticsPage() {
             </div>
 
             
-
-            {/* КТ */}
-            <div className="bg-white rounded-2xl overflow-hidden shadow-md">
-              <div className="relative h-[220px]">
-                <img src="/images/services/KT%20NEW.png" alt="КТ" className="absolute inset-0 w-full h-full object-cover" />
-              </div>
-              <div className="p-5">
-                <h3 className="font-semibold text-lg mb-2">КТ</h3>
-                <p className="text-sm text-gray-600 leading-relaxed">
-                  Компьютерная томография применяется для исследования практически всех областей тела человека, помогает уточнить локализацию и распространённость патологического процесса.
-                </p>
-              </div>
-            </div>
-
             {/* Рентген */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-md">
               <div className="relative h-[220px]">

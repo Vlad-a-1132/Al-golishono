@@ -72,45 +72,6 @@ export default function PromoDetailPage() {
       ]
     },
     {
-      id: 4,
-      category: "diagnostics",
-      image: "/images/slides/3-analizy.webp",
-      startDate: "01.02.2026",
-      endDate: "15.02.2026",
-      title: "Скидки на анализы (1-15 февраля)",
-      description: "Понедельник-Суббота 15%, Воскресенье 25%",
-      fullDescription: "С 1 по 15 февраля действуют специальные скидки на все виды лабораторных анализов. Сдавайте анализы выгодно!",
-      details: [
-        "Период: с 1 по 15 февраля 2026",
-        "Понедельник-Суббота: скидка 15%",
-        "Воскресенье: скидка 25%",
-        "Применяется ко всем видам анализов",
-        "Забор крови с 8:00 до 13:00",
-        "Скидки не суммируются"
-      ]
-    },
-    {
-      id: 5,
-      category: "diagnostics",
-      image: "/images/slides/3-analizy.webp",
-      startDate: "15.02.2026",
-      endDate: "28.02.2026",
-      title: "Скидки на анализы (15-28 февраля)",
-      description: "Пн/Ср/Пт 15%, Вт/Вс 25%",
-      fullDescription: "С 15 по 28 февраля действуют специальные скидки на все виды лабораторных анализов. Выбирайте удобный день!",
-      details: [
-        "Период: с 15 по 28 февраля 2026",
-        "Понедельник: скидка 15%",
-        "Вторник: скидка 25%",
-        "Среда: скидка 15%",
-        "Пятница: скидка 15%",
-        "Воскресенье: скидка 25%",
-        "Применяется ко всем видам анализов",
-        "Забор крови с 8:00 до 13:00",
-        "Скидки не суммируются"
-      ]
-    },
-    {
       id: 7,
       category: "consultations",
       image: "/images/slides/2-pensia.webp",
@@ -127,24 +88,6 @@ export default function PromoDetailPage() {
         "Не действует на ортопедию и имплантацию",
         "При предъявлении пенсионного удостоверения",
         "Скидки не суммируются"
-      ]
-    },
-    {
-      id: 8,
-      category: "special",
-      image: "/images/doctors/doctor banner/Screenshot_1238.png",
-      startDate: "05.03.2026",
-      endDate: "20.03.2026",
-      title: "Праздничные скидки для женщин",
-      description: "С 5 по 20 марта — 15% на консультации и анализы, 25% на комплекс гинекологических процедур",
-      fullDescription: "С 5 по 20 марта в клинике «Альтамед Голицыно» действуют праздничные скидки для женщин. Получите скидку 15% на все консультации врачей и лабораторные анализы. Специальное предложение — скидка 25% при единовременном прохождении комплекса гинекологических процедур: приём врача-гинеколога, УЗИ органов малого таза, забор биоматериала, мазок на флору и кольпоскопия.",
-      details: [
-        "Срок действия акции: с 5 по 20 марта",
-        "Скидка 15% на все консультации врачей",
-        "Скидка 15% на все лабораторные анализы",
-        "Скидка 25% при единовременном прохождении комплекса процедур",
-        "В комплекс входят: приём врача-гинеколога, УЗИ органов малого таза, забор биоматериала, мазок на флору, кольпоскопия",
-        "Записывайтесь заранее на удобное время"
       ]
     }
   ];
@@ -227,25 +170,6 @@ export default function PromoDetailPage() {
       </section>
 
       {/* Main section */}
-      {/* Время работы КТ (только для акции КТ) */}
-      {promo.id === 1 && (
-        <section className="py-8">
-          <div className="mx-auto px-4" style={{ maxWidth: '83rem' }}>
-            <div className="bg-gradient-to-r from-emerald-500 to-emerald-700 rounded-[20px] p-8 text-white shadow-lg">
-              <div className="flex items-start">
-                <svg className="w-8 h-8 mr-4 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                <div>
-                  <h3 className="text-2xl font-bold mb-3">Время работы КТ</h3>
-                  <p className="text-lg mb-2">КТ работает с 9:30 до 15:00</p>
-                  <p className="text-white/90">Кроме воскресенья и понедельника</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      )}
 
       {/* Описание акции */}
       <section className="py-12">
@@ -364,7 +288,7 @@ export default function PromoDetailPage() {
                   <div>
                     <h3 className="text-xl font-bold text-gray-900">Пятница</h3>
                     <p className="text-blue-600 font-semibold text-lg">Скидка 20%</p>
-                    <p className="text-orange-600 font-semibold text-sm">КТ – 25%</p>
+                    <p className="text-orange-600 font-semibold text-sm">Отдельные услуги — скидка 25%</p>
                   </div>
                 </div>
                 <div className="space-y-2">

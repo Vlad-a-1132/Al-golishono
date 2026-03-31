@@ -75,7 +75,6 @@ function SearchContent() {
     { name: 'Имплантация зубов', url: '/services/dentistry/implantation', category: 'Стоматология' },
     { name: 'Профессиональная гигиена', url: '/services/dentistry/therapeutic', category: 'Стоматология' },
     { name: 'Отбеливание зубов', url: '/services/dentistry/therapeutic', category: 'Стоматология' },
-    { name: 'Компьютерная томография', url: '/services/dentistry/ct', category: 'Диагностика' },
     { name: 'Рентгенография', url: '/services/dentistry/xray', category: 'Диагностика' },
     { name: 'УЗИ Голицыно', url: '/services/uzi-golitsino', category: 'Диагностика' },
     { name: 'Эндоскопия', url: '/services/endoscopy', category: 'Диагностика' },
