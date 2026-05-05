@@ -145,6 +145,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { id: 1, slug: 'promo-1' },
     { id: 2, slug: 'promo-2' },
     { id: 3, slug: 'promo-3' },
+    { id: 7, slug: 'promo-7' },
+    { id: 9, slug: 'promo-9' },
+    { id: 10, slug: 'promo-10' },
+    { id: 11, slug: 'promo-11' },
   ].map((promo) => ({
     url: `${baseUrl}/promo/${promo.slug}`,
     lastModified: new Date(),

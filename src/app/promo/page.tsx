@@ -3,23 +3,41 @@
 import Link from "next/link";
 
 export default function PromoPage() {
-  // Данные акций на февраль 2026
+  // Данные акций
   const promotions = [
     {
       id: 1,
       category: "dentistry",
-      image: "/images/dentisrty/ff0799f0-79d9-49cb-b32a-bac2ce8b6d2e 1.webp",
-      startDate: "01.02.2026",
-      endDate: "28.02.2026",
-      title: "Профессиональная гигиена полости рта",
-      description: "Цена: 4600 ₽ (было 6600 ₽)"
+      image: "/images/doctors/doctor banner/5f7a2bdf-c02e-4be9-8d70-20f740761fd2.webp",
+      title: "Профессиональная гигиена полости рта — 4600 ₽",
+      description: "Фиксированная цена, без указания процента."
+    },
+    {
+      id: 9,
+      category: "pediatrics",
+      image: "/images/doctors/doctor banner/3cd15f11-ac00-4095-afc7-ee19d84b37fe.webp",
+      title: "Детям (педиатр)",
+      description: "Приём педиатра — скидка 20%"
+    },
+    {
+      id: 10,
+      category: "cosmetology",
+      image: "/images/doctors/doctor banner/8b8366ac-c1bf-4d9e-8f59-1b2305ee0f54.webp",
+      title: "Лазерная эпиляция",
+      description: "Скидки — до 40%"
+    },
+    {
+      id: 11,
+      category: "infusions",
+      image: "/images/doctors/doctor banner/873d9451-97ea-48fa-97da-9e78bfabf67e.webp",
+      title: "Курс из 10 капельниц",
+      description:
+        "Скидка 20%. Обязательно: направление от врача и препараты (оплачиваются отдельно или в курсе — уточняйте при записи)."
     },
     {
       id: 2,
       category: "dentistry",
       image: "/images/promo/st prom.png",
-      startDate: "01.02.2026",
-      endDate: "28.02.2026",
       title: "Лечение зубов (терапия)",
       description: "Скидка 20% на все виды лечения"
     },
@@ -27,8 +45,6 @@ export default function PromoPage() {
       id: 3,
       category: "dentistry",
       image: "/images/yslugi/implant.webp",
-      startDate: "01.02.2026",
-      endDate: "28.02.2026",
       title: "Имплантация зубов",
       description: "Скидка 30% — цена: 41160 ₽ (было 58800 ₽)"
     },
@@ -36,8 +52,6 @@ export default function PromoPage() {
       id: 7,
       category: "consultations",
       image: "/images/slides/2-pensia.webp",
-      startDate: "01.02.2026",
-      endDate: "28.02.2026",
       title: "Скидки для пенсионеров",
       description: "10% на приём врача, УЗИ, анализы"
     }

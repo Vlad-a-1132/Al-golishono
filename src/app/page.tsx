@@ -112,7 +112,28 @@ export default function Home() {
       buttonText: "Подробнее",
       buttonLink: "/promo/promo-1",
       buttonColor: "#13AB7B",
-      image: "/images/dentisrty/ff0799f0-79d9-49cb-b32a-bac2ce8b6d2e 1.webp"
+      image: "/images/doctors/doctor banner/5f7a2bdf-c02e-4be9-8d70-20f740761fd2.webp"
+    },
+    {
+      title: "Детям (педиатр): приём — скидка 20%",
+      buttonText: "Подробнее",
+      buttonLink: "/promo/promo-9",
+      buttonColor: "#13AB7B",
+      image: "/images/doctors/doctor banner/3cd15f11-ac00-4095-afc7-ee19d84b37fe.webp"
+    },
+    {
+      title: "Лазерная эпиляция: скидки — до 40%",
+      buttonText: "Подробнее",
+      buttonLink: "/promo/promo-10",
+      buttonColor: "#13AB7B",
+      image: "/images/doctors/doctor banner/8b8366ac-c1bf-4d9e-8f59-1b2305ee0f54.webp"
+    },
+    {
+      title: "Курс из 10 капельниц — скидка 20%",
+      buttonText: "Подробнее",
+      buttonLink: "/promo/promo-11",
+      buttonColor: "#13AB7B",
+      image: "/images/doctors/doctor banner/873d9451-97ea-48fa-97da-9e78bfabf67e.webp"
     },
     {
       title: "Лечение зубов — скидка 20%",
