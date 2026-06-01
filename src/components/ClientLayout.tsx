@@ -1,5 +1,6 @@
 'use client'
 
+import { usePathname } from 'next/navigation'
 import { AccessibilityProvider } from '../contexts/AccessibilityContext'
 import Header from './Header'
 import Footer from './Footer'
@@ -7,6 +8,13 @@ import MobileBottomNav from './MobileBottomNav'
 import CallbackModal from './CallbackModal'
 
 export default function ClientLayout({ children }: { children: React.ReactNode }) {
+  const pathname = usePathname()
+  const isPricesViewer = pathname === '/prices'
+
+  if (isPricesViewer) {
+    return <>{children}</>
+  }
+
   return (
     <AccessibilityProvider>
       <Header />
