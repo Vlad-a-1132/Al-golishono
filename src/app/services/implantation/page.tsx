@@ -1,6 +1,9 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import AppointmentForm from "@/components/AppointmentForm";
+import ImplantationPricesSection from "./ImplantationPricesSection";
+
+export const revalidate = 300;
 
 const WORDSTAT_KEYWORDS: string[] = [
   "имплантация Голицыно",
@@ -89,57 +92,6 @@ const stages = [
   {
     title: "Протезирование и контроль",
     text: "Изготавливаем индивидуальные коронки или мосты, проводим гнатологическую настройку и выдаём гарантийный паспорт."
-  }
-] as const;
-
-const priceList = [
-  {
-    name: "Внутрикостная дентальная имплантация (винтового) импланта системы Implantium Dentium (без стоимости материала)",
-    price: "36 780 ₽"
-  },
-  {
-    name: "Внутрикостная дентальная имплантация (винтового) импланта системы Osstem",
-    price: "42 000 ₽"
-  },
-  {
-    name: "Внутрикостная дентальная имплантация временного импланта",
-    price: "19 020 ₽"
-  },
-  {
-    name: "Внутрикостная дентальная имплантация (винтового) импланта системы Straumann",
-    price: "94 500 ₽"
-  },
-  {
-    name: "Установка формирователя десны Dentium",
-    price: "6 300 ₽"
-  },
-  {
-    name: "Установка формирователя десны на имплант Osstem (Корея)",
-    price: "6 300 ₽"
-  },
-  {
-    name: "Установка импланта Osstem (Корея)",
-    price: "42 000 ₽"
-  },
-  {
-    name: "Раскрытие дентального импланта",
-    price: "31 500 ₽"
-  },
-  {
-    name: "Извлечение интегрированного имплантата",
-    price: "31 500 ₽"
-  },
-  {
-    name: "Извлечение дезинтегрированного имплантата",
-    price: "31 500 ₽"
-  },
-  {
-    name: "Хирургический шаблон (1 имплантат)",
-    price: "6 300 ₽"
-  },
-  {
-    name: "Синус-лифтинг (костная пластика, остеопластика) открытый (без стоимости остеоиндуктивного материала)",
-    price: "53 260 ₽"
   }
 ] as const;
 
@@ -447,16 +399,12 @@ export default function ImplantationPage() {
             Стоимость имплантации в клинике «Альтамед Голицыно» формируется индивидуально, но мы фиксируем цены в
             договоре, чтобы пациент точно понимал итоговую сумму.
           </p>
-          <div className="bg-gray-50 rounded-[20px] p-6 shadow-md border border-gray-100">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {priceList.map((item) => (
-                <div key={item.name} className="bg-white rounded-xl p-4 shadow-sm border border-gray-100">
-                  <div className="text-sm md:text-base text-gray-900 font-semibold mb-2">{item.name}</div>
-                  <div className="text-[#4A5568] font-bold text-lg">{item.price}</div>
-                </div>
-              ))}
-            </div>
-            <p className="text-sm text-gray-600 mt-4">
+          <div className="rounded-[20px] border border-gray-100 bg-gray-50 p-6 shadow-md">
+            <h3 className="mb-4 text-lg font-semibold text-gray-900">
+              Полный прайс
+            </h3>
+            <ImplantationPricesSection />
+            <p className="mt-4 text-sm text-gray-600">
               Для уточнения актуальной цены имплантации зубов в Голицыно запишитесь на консультацию — врач
               составит план лечения и ответит на дополнительные вопросы.
             </p>
