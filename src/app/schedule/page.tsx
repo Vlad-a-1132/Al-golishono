@@ -130,7 +130,7 @@ export default function SchedulePage() {
       specialty: "Стоматолог хирург, Хирург-имплантолог",
       schedule: { 
         Wednesday: { start: "15:00", end: "20:00" }, 
-        Sunday: { start: "10:00", end: "14:00" } 
+        Sunday: { start: "15:00", end: "20:00" } 
       }
     },
     {
