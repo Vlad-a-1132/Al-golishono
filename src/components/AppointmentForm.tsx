@@ -15,6 +15,7 @@ export default function AppointmentForm({
 }: AppointmentFormProps) {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
+  const [website, setWebsite] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<{ type: 'success' | 'error' | null; message: string }>({ type: null, message: '' });
 
@@ -38,6 +39,9 @@ export default function AppointmentForm({
         body: JSON.stringify({
           name: name.trim(),
           phone: phone.trim(),
+          source: "service_form",
+          pageUrl: window.location.pathname,
+          website,
         }),
       });
 
@@ -80,6 +84,16 @@ export default function AppointmentForm({
               <p className="text-white/90 mb-6 text-sm lg:text-base">поля, отмеченные * необходимы к заполнению</p>
 
               <form onSubmit={handleSubmit} className="mb-4 max-w-2xl">
+                <input
+                  type="text"
+                  name="website"
+                  value={website}
+                  onChange={(e) => setWebsite(e.target.value)}
+                  tabIndex={-1}
+                  autoComplete="off"
+                  aria-hidden="true"
+                  className="absolute opacity-0 pointer-events-none h-0 w-0 overflow-hidden"
+                />
                 {submitStatus.type && (
                   <div className={`mb-4 p-4 rounded-lg ${
                     submitStatus.type === 'success' 

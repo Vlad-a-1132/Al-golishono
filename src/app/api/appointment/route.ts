@@ -2,6 +2,8 @@ import { NextRequest, NextResponse } from 'next/server';
 import { promises as fs } from 'fs';
 import path from 'path';
 import nodemailer from 'nodemailer';
+import { normalizePhone } from '@/lib/phone';
+import { sendToZabota } from '@/lib/zabota-leads';
 
 interface Appointment {
   id: string;
@@ -121,11 +123,26 @@ async function writeAppointments(appointments: Appointment[]): Promise<void> {
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { name, phone, message, notes, email } = body;
+    const { name, phone, message, notes, email, source, pageUrl, website } = body;
 
-    if (!phone) {
+    if (typeof website === 'string' && website.trim()) {
+      return NextResponse.json(
+        { message: 'Заявка сохранена', id: Date.now().toString() },
+        { status: 200 }
+      );
+    }
+
+    if (!phone || typeof phone !== 'string' || !phone.trim()) {
       return NextResponse.json(
         { error: 'Телефон обязателен' },
+        { status: 400 }
+      );
+    }
+
+    const normalizedPhone = normalizePhone(phone);
+    if (!normalizedPhone) {
+      return NextResponse.json(
+        { error: 'Укажите корректный номер телефона в формате +7 (XXX) XXX-XX-XX' },
         { status: 400 }
       );
     }
@@ -149,8 +166,8 @@ export async function POST(request: NextRequest) {
     // Создаем новую заявку
     const appointment: Appointment = {
       id: Date.now().toString(),
-      name: name.trim() || 'Не указано',
-      phone: phone.trim(),
+      name: (typeof name === 'string' ? name.trim() : '') || 'Не указано',
+      phone: normalizedPhone,
       date: new Date().toLocaleString('ru-RU'),
       status: 'pending',
       message: messageText || undefined,
@@ -180,6 +197,17 @@ export async function POST(request: NextRequest) {
     // Отправляем email с информацией о типе формы
     sendEmail(appointment, formType, email).catch(err => {
       console.error('Ошибка отправки email (не критично):', err);
+    });
+
+    sendToZabota({
+      phone: normalizedPhone,
+      name: appointment.name !== 'Не указано' ? appointment.name : undefined,
+      message: appointment.message,
+      source: typeof source === 'string' ? source.trim() || undefined : undefined,
+      pageUrl: typeof pageUrl === 'string' ? pageUrl.trim() || undefined : undefined,
+      externalId: appointment.id,
+    }).catch(err => {
+      console.error('Ошибка отправки в Zabota (не критично):', err);
     });
 
     return NextResponse.json(

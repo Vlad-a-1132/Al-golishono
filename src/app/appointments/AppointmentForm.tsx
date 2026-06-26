@@ -6,7 +6,8 @@ export default function AppointmentForm() {
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
-    notes: ''
+    notes: '',
+    website: '',
   })
   
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -37,6 +38,9 @@ export default function AppointmentForm() {
           name: formData.name.trim(),
           phone: formData.phone.trim(),
           notes: formData.notes.trim(),
+          source: 'appointments_page',
+          pageUrl: '/appointments',
+          website: formData.website,
         }),
       })
 
@@ -47,7 +51,8 @@ export default function AppointmentForm() {
         setFormData({
           name: '',
           phone: '',
-          notes: ''
+          notes: '',
+          website: '',
         })
       } else {
         setErrorMessage(data.error || 'Произошла ошибка при отправке формы. Пожалуйста, попробуйте еще раз.')
@@ -84,6 +89,16 @@ export default function AppointmentForm() {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-5 md:space-y-6">
+      <input
+        type="text"
+        name="website"
+        value={formData.website}
+        onChange={handleChange}
+        tabIndex={-1}
+        autoComplete="off"
+        aria-hidden="true"
+        className="absolute opacity-0 pointer-events-none h-0 w-0 overflow-hidden"
+      />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-6">
         <div className="space-y-2">
           <label htmlFor="name" className="block text-sm md:text-base font-semibold text-gray-700 mb-2">
