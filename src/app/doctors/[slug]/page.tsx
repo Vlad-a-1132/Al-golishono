@@ -2655,8 +2655,15 @@ function getDoctorSchedule(doctorName: string) {
       Friday: { start: "09:00", end: "19:00" },
       Saturday: { start: "09:00", end: "19:00" }
     },
+    'Дзарахов Хамзат Баширович': {
+      Monday: { start: "10:00", end: "18:00" },
+      Tuesday: { start: "10:00", end: "18:00" },
+      Thursday: { start: "10:00", end: "18:00" },
+      Saturday: { start: "10:00", end: "18:00" },
+      Sunday: { start: "10:00", end: "18:00" }
+    },
     'Чернова Алла Валерьевна': {
-      Thursday: { start: "10:00", end: "17:00" }
+      Wednesday: { start: "10:00", end: "17:00" }
     },
     'Абдуллаев Муртазаали Абдуллахович': {
       Monday: { start: "10:00", end: "18:00" },
@@ -2678,11 +2685,15 @@ function getDoctorSchedule(doctorName: string) {
       Friday: { start: "09:00", end: "20:00" }
     },
     'Крошкин Александр Дмитриевич': {
-      Wednesday: { start: "11:00", end: "20:00" },
-      Sunday: { start: "15:30", end: "20:00" }
+      Tuesday: { start: "10:00", end: "19:00" },
+      Wednesday: { start: "10:00", end: "14:00" },
+      Thursday: { start: "10:00", end: "14:00" },
+      Sunday: { start: "10:00", end: "14:00" }
     },
     'Абрамов Юно Эриильевич': {
+      Monday: { start: "15:00", end: "20:00" },
       Wednesday: { start: "15:00", end: "20:00" },
+      Saturday: { start: "11:00", end: "18:00" },
       Sunday: { start: "15:00", end: "20:00" }
     },
     'Иванникова Любовь Андреевна': {

@@ -103,10 +103,21 @@ export default function SchedulePage() {
       }
     },
     {
+      name: "Дзарахов Хамзат Баширович",
+      specialty: "Стоматолог-терапевт",
+      schedule: {
+        Monday: { start: "10:00", end: "18:00" },
+        Tuesday: { start: "10:00", end: "18:00" },
+        Thursday: { start: "10:00", end: "18:00" },
+        Saturday: { start: "10:00", end: "18:00" },
+        Sunday: { start: "10:00", end: "18:00" }
+      }
+    },
+    {
       name: "Чернова Алла Валерьевна",
       specialty: "Стоматолог-терапевт",
       schedule: { 
-        Thursday: { start: "10:00", end: "17:00" } 
+        Wednesday: { start: "10:00", end: "17:00" } 
       }
     },
     {
@@ -129,7 +140,9 @@ export default function SchedulePage() {
       name: "Абрамов Юно Эриильевич",
       specialty: "Стоматолог хирург, Хирург-имплантолог",
       schedule: { 
-        Wednesday: { start: "15:00", end: "20:00" }, 
+        Monday: { start: "15:00", end: "20:00" },
+        Wednesday: { start: "15:00", end: "20:00" },
+        Saturday: { start: "11:00", end: "18:00" },
         Sunday: { start: "15:00", end: "20:00" } 
       }
     },
@@ -137,7 +150,8 @@ export default function SchedulePage() {
       name: "Крошкин Александр Дмитриевич",
       specialty: "Стоматолог ортопед",
       schedule: { 
-        Tuesday: { start: "10:00", end: "15:00" }, 
+        Tuesday: { start: "10:00", end: "19:00" },
+        Wednesday: { start: "10:00", end: "14:00" },
         Thursday: { start: "10:00", end: "14:00" }, 
         Sunday: { start: "10:00", end: "14:00" } 
       }
