@@ -1167,14 +1167,16 @@ export default function Home() {
                     className="w-[280px] md:w-[290px] h-[400px] md:h-[452px] bg-white rounded-[20px] border border-gray-100 shadow-sm overflow-hidden flex-shrink-0"
                   >
                   <div className="h-[180px] md:h-[220px] bg-gray-50">
-                    <Image 
+                    {doctor.photo ? (
+                      <Image 
                         src={doctor.photo} 
                         alt={doctor.name} 
-                      width={290} 
-                      height={220}
-                      className="w-full h-full object-cover"
-                      suppressHydrationWarning
-                    />
+                        width={290} 
+                        height={220}
+                        className="w-full h-full object-cover"
+                        suppressHydrationWarning
+                      />
+                    ) : null}
                   </div>
                   <div className="p-4 md:p-6 flex flex-col justify-between h-[220px] md:h-[232px]">
                     <div>

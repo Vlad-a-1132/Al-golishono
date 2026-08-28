@@ -234,14 +234,16 @@ export default function DoctorsPage() {
                 >
                   {/* Doctor Photo - Large rectangular with rounded corners on left */}
                   <div className="flex items-start p-4 gap-4">
-                    <div className="relative w-[134px] h-[150px] rounded-2xl overflow-hidden flex-shrink-0 shadow-lg">
-                      <Image 
-                        src={doctor.photo || 'https://placehold.co/100x100/EAECFF/333?text=Dr'} 
-                        alt={doctor.name}
-                        fill
-                        className="object-cover"
-                      />
-                    </div>
+                    {doctor.photo ? (
+                      <div className="relative w-[134px] h-[150px] rounded-2xl overflow-hidden flex-shrink-0 shadow-lg">
+                        <Image 
+                          src={doctor.photo} 
+                          alt={doctor.name}
+                          fill
+                          className="object-cover"
+                        />
+                      </div>
+                    ) : null}
                     <div className="flex-1 min-w-0">
                       {/* Name */}
                       <h2 className="text-base font-bold text-gray-900 mb-2 leading-tight">{doctor.name}</h2>

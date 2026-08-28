@@ -121,6 +121,13 @@ export default function SchedulePage() {
       }
     },
     {
+      name: "Комашко Ксения Владимировна",
+      specialty: "Стоматолог-терапевт, Стоматолог-ортопед",
+      schedule: {
+        Saturday: { start: "10:00", end: "15:00" }
+      }
+    },
+    {
       name: "Емельянова Анна Игоревна",
       specialty: "Дерматолог",
       schedule: { 
@@ -229,6 +236,17 @@ export default function SchedulePage() {
         Tuesday: { start: "10:00", end: "15:00" }, 
         Wednesday: { start: "10:00", end: "15:00" }, 
         Thursday: { start: "10:00", end: "15:00" } 
+      }
+    },
+    {
+      name: "Комаров Сергей Владимирович",
+      specialty: "Педиатр",
+      schedule: {
+        Monday: { start: "09:00", end: "15:00" },
+        Tuesday: { start: "09:00", end: "15:00" },
+        Wednesday: { start: "09:00", end: "15:00" },
+        Thursday: { start: "09:00", end: "15:00" },
+        Friday: { start: "09:00", end: "15:00" }
       }
     },
     {

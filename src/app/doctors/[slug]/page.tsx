@@ -121,6 +121,27 @@ function getDoctorDetails(doctorName: string) {
       mainDirections: [],
       methods: []
     },
+    'Комаров Сергей Владимирович': {
+      specialization: 'Педиатр',
+      category: 'Врач-педиатр',
+      education: [
+        'Российский национальный исследовательский медицинский университет им. Н.И. Пирогова (РНИМУ), 2007 — Педиатрия (базовое образование)',
+        '2016 — Повышение квалификации по педиатрии, РНИМУ им. Н.И. Пирогова'
+      ],
+      qualifications: [],
+      accreditation: [],
+      experience: 'Стаж работы: более 18 лет',
+      mainDirections: [
+        'Диагностика и лечение заболеваний сердечно-сосудистой и дыхательной систем (в том числе бронхиальная астма)',
+        'Заболевания желудочно-кишечного тракта (в том числе дисбактериоз)',
+        'Инфекционные болезни (ОРВИ, грипп, ветряная оспа, скарлатина и другие)',
+        'Диспансерное наблюдение детей',
+        'Профилактика и составление индивидуальных графиков вакцинации',
+        'Рекомендации по питанию',
+        'Лечение часто болеющих детей'
+      ],
+      methods: []
+    },
     'Дзарахов Хамзат Баширович': {
       specialization: 'Стоматолог-терапевт',
       category: 'Врач стоматолог-терапевт',
@@ -2264,6 +2285,27 @@ function getDoctorDetails(doctorName: string) {
         'Проводит профессиональную гигиену полости рта'
       ],
       methods: []
+    },
+    'Комашко Ксения Владимировна': {
+      specialization: 'Стоматолог-терапевт, стоматолог-ортопед',
+      category: 'Врач стоматолог-терапевт, ортопед',
+      education: [
+        '1999 — Рязанский государственный медицинский университет им. акад. И. П. Павлова, специальность «Стоматология»',
+        '2017 — Повышение квалификации по стоматологии общей практики, РязГМУ им. акад. И. П. Павлова'
+      ],
+      qualifications: [],
+      accreditation: [],
+      experience: 'Стаж работы: 27 лет',
+      mainDirections: [
+        'Лечение кариеса',
+        'Лечение пульпита и периодонтита',
+        'Профессиональная гигиена полости рта',
+        'Отбеливание зубов',
+        'Художественная и эстетическая реставрация зубов',
+        'Восстановление зубной эмали и формы зубов',
+        'Лечение кист зубов'
+      ],
+      methods: []
     }
   };
   return details[doctorName] || null;
@@ -2326,9 +2368,11 @@ export async function generateMetadata({ params }: DoctorPageProps): Promise<Met
   const description = `${specialization} ${doctor.name} в Голицыно. ${experienceText}Прием в клинике Альтамед Голицыно. Запись на консультацию к врачу в Голицыно.`;
 
   // Полный URL для изображения
-  const imageUrl = doctor.photo.startsWith('http') 
-    ? doctor.photo 
-    : `https://altamed-s.ru${doctor.photo}`;
+  const imageUrl = doctor.photo
+    ? doctor.photo.startsWith('http')
+      ? doctor.photo
+      : `https://altamed-s.ru${doctor.photo}`
+    : null;
 
   return {
     title,
@@ -2340,20 +2384,24 @@ export async function generateMetadata({ params }: DoctorPageProps): Promise<Met
       type: 'website',
       locale: 'ru_RU',
       siteName: 'Клиника Альтамед Голицыно',
-      images: [
-        {
-          url: imageUrl,
-          width: 800,
-          height: 600,
-          alt: `${specialization} ${doctor.name} в клинике Альтамед Голицыно Голицыно`,
-        },
-      ],
+      ...(imageUrl
+        ? {
+            images: [
+              {
+                url: imageUrl,
+                width: 800,
+                height: 600,
+                alt: `${specialization} ${doctor.name} в клинике Альтамед Голицыно Голицыно`,
+              },
+            ],
+          }
+        : {}),
     },
     twitter: {
-      card: 'summary_large_image',
+      card: imageUrl ? 'summary_large_image' : 'summary',
       title,
       description,
-      images: [imageUrl],
+      ...(imageUrl ? { images: [imageUrl] } : {}),
     },
     alternates: {
       canonical: `https://altamed-s.ru/doctors/${slug}`,
@@ -2455,6 +2503,13 @@ function getDoctorSchedule(doctorName: string) {
       Tuesday: { start: "10:00", end: "15:00" },
       Wednesday: { start: "10:00", end: "15:00" },
       Thursday: { start: "10:00", end: "15:00" }
+    },
+    'Комаров Сергей Владимирович': {
+      Monday: { start: "09:00", end: "15:00" },
+      Tuesday: { start: "09:00", end: "15:00" },
+      Wednesday: { start: "09:00", end: "15:00" },
+      Thursday: { start: "09:00", end: "15:00" },
+      Friday: { start: "09:00", end: "15:00" }
     },
     // Офтальмолог
     'Яблокова Инна Валерьевна': {
@@ -2665,6 +2720,9 @@ function getDoctorSchedule(doctorName: string) {
     'Чернова Алла Валерьевна': {
       Wednesday: { start: "10:00", end: "17:00" }
     },
+    'Комашко Ксения Владимировна': {
+      Saturday: { start: "10:00", end: "15:00" }
+    },
     'Абдуллаев Муртазаали Абдуллахович': {
       Monday: { start: "10:00", end: "18:00" },
       Tuesday: { start: "10:00", end: "18:00" },
@@ -2766,7 +2824,7 @@ export default async function DoctorPage({ params }: DoctorPageProps) {
       "addressRegion": "Московская область",
       "addressCountry": "RU"
     },
-    "image": doctor.photo,
+    ...(doctor.photo ? { "image": doctor.photo } : {}),
     "url": `https://altamed-s.ru/doctors/${slug}`
   };
 

@@ -41,16 +41,18 @@ export default function DoctorPageFullContent({
         <div className="flex-1 bg-white rounded-2xl shadow-lg p-6">
           <div className="flex flex-col md:flex-row gap-6">
             {/* Doctor Photo */}
-            <div className="flex-shrink-0 flex justify-center md:justify-start">
-              <div className="w-full max-w-[280px] md:w-48 h-[360px] md:h-64 relative rounded-2xl overflow-hidden">
-                <Image
-                  src={doctor.photo}
-                  alt={`${currentSpecialization} ${doctor.name} в клинике Альтамед Голицыно`}
-                  fill
-                  className="object-cover"
-                />
+            {doctor.photo ? (
+              <div className="flex-shrink-0 flex justify-center md:justify-start">
+                <div className="w-full max-w-[280px] md:w-48 h-[360px] md:h-64 relative rounded-2xl overflow-hidden">
+                  <Image
+                    src={doctor.photo}
+                    alt={`${currentSpecialization} ${doctor.name} в клинике Альтамед Голицыно`}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
               </div>
-            </div>
+            ) : null}
 
             {/* Doctor Info */}
             <div className="flex-1">
