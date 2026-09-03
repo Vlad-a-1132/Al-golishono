@@ -160,7 +160,7 @@ export default function AdminDashboard() {
     { name: "Рубцов Роман Владимирович", specialty: "Стоматолог-ортопед", schedule: { Tuesday: { start: "09:00", end: "20:00" }, Thursday: { start: "09:00", end: "20:00" }, Friday: { start: "09:00", end: "20:00" }, Saturday: { start: "09:00", end: "20:00" } } },
     { name: "Рубцова Ольга Юрьевна", specialty: "Стоматолог-хирург", schedule: { Tuesday: { start: "09:00", end: "19:00" }, Thursday: { start: "09:00", end: "19:00" }, Friday: { start: "09:00", end: "19:00" }, Saturday: { start: "09:00", end: "19:00" } } },
     { name: "Чернова Алла Валерьевна", specialty: "Стоматолог", schedule: { Wednesday: { start: "10:00", end: "17:00" } } },
-    { name: "Комашко Ксения Владимировна", specialty: "Стоматолог-терапевт, ортопед", schedule: { Saturday: { start: "10:00", end: "15:00" } } },
+    { name: "Комашко Ксения Владимировна", specialty: "Стоматолог-терапевт, ортопед, кандидат медицинских наук", schedule: { Saturday: { start: "10:00", end: "15:00" } } },
     { name: "Ярулова Вероника Юрьевна", specialty: "Стоматолог", schedule: { Wednesday: { start: "09:00", end: "18:30" }, Sunday: { start: "09:00", end: "18:30" } } }
   ];
 
