@@ -2721,6 +2721,7 @@ function getDoctorSchedule(doctorName: string) {
       Wednesday: { start: "10:00", end: "17:00" }
     },
     'Комашко Ксения Владимировна': {
+      Wednesday: { start: "16:00", end: "20:00" },
       Saturday: { start: "10:00", end: "15:00" }
     },
     'Абдуллаев Муртазаали Абдуллахович': {
@@ -2893,4 +2894,3 @@ export default async function DoctorPage({ params }: DoctorPageProps) {
     </div>
   );
 }
-

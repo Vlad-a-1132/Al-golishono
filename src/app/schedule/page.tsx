@@ -124,6 +124,7 @@ export default function SchedulePage() {
       name: "Комашко Ксения Владимировна",
       specialty: "Стоматолог-терапевт, Стоматолог-ортопед, Кандидат медицинских наук",
       schedule: {
+        Wednesday: { start: "16:00", end: "20:00" },
         Saturday: { start: "10:00", end: "15:00" }
       }
     },
