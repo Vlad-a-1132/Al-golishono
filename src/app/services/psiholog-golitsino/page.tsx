@@ -4,8 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import AppointmentForm from "@/components/AppointmentForm";
 
-const psychiatristServicesList = [
-  { code: "B01.035.001", name: "Прием (осмотр, консультация) врача-психиатра", price: 3030 },
+const psychologistServicesList = [
   { code: "B01.070.009", name: "Прием (осмотр, консультация) врача психолога", price: 2540 },
 ];
 
@@ -19,12 +18,11 @@ const reasonsToVisit = [
 ];
 
 const faqItems = [
-  { q: "Когда обращаться к психиатру или психологу?", a: "К психиатру обращаются при выраженных расстройствах настроения, тревоге, нарушениях сна, панических атаках, когда необходимо уточнить диагноз и при необходимости подобрать медикаментозную терапию. К психологу — при стрессе, выгорании, конфликтах, кризисах, для работы с эмоциями и поведением без лекарств или в дополнение к лечению." },
-  { q: "Какие услуги оказывает психиатр и психолог в Альтамед Голицыно?", a: "В «Альтамед Голицыно» проводятся приём (осмотр, консультация) врача-психиатра и приём (осмотр, консультация) врача психолога. Стоимость уточняйте при записи." },
-  { q: "В чём разница между психиатром и психологом?", a: "Психиатр — врач с высшим медицинским образованием, ставит диагнозы, назначает медикаменты, ведёт пациентов с расстройствами. Психолог — специалист с психологическим образованием, работает методами беседы, консультирования, психотерапии, не назначает лекарства." },
+  { q: "Когда обращаться к психологу?", a: "К психологу можно обратиться при стрессе, эмоциональном выгорании, конфликтах, сложностях в отношениях и жизненных кризисах." },
+  { q: "Какие услуги оказывает психолог в Альтамед Голицыно?", a: "В «Альтамед Голицыно» проводится приём и консультация психолога. Стоимость уточняйте при записи." },
 ];
 
-export default function PsihiatrGolitsinoPage() {
+export default function PsihologGolitsinoPage() {
   const [expanded, setExpanded] = useState<number | null>(null);
 
   return (
@@ -40,7 +38,7 @@ export default function PsihiatrGolitsinoPage() {
                 </Link>
               </li>
               <li><div className="flex items-center"><svg className="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" /></svg><Link href="/services" className="ml-1 text-sm font-medium text-gray-700 hover:text-emerald-600 md:ml-2">Услуги</Link></div></li>
-              <li aria-current="page"><div className="flex items-center"><svg className="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" /></svg><span className="ml-1 text-sm font-medium text-gray-500 md:ml-2">Психиатр Голицыно</span></div></li>
+              <li aria-current="page"><div className="flex items-center"><svg className="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" /></svg><span className="ml-1 text-sm font-medium text-gray-500 md:ml-2">Психолог Голицыно</span></div></li>
             </ol>
           </nav>
         </div>
@@ -50,31 +48,31 @@ export default function PsihiatrGolitsinoPage() {
         <div className="mx-auto px-4" style={{ maxWidth: "83rem" }}>
           <header className="mb-6 ml-0 md:ml-4 lg:ml-8">
             <h1 className="text-2xl md:text-3xl font-bold text-black leading-tight px-4 md:px-0">
-              Психиатр и психолог в Голицыно — приём в «Альтамед Голицыно»
+              Психолог в Голицыно — приём в «Альтамед Голицыно»
             </h1>
             <p className="text-gray-600 mt-2 px-4 md:px-0 text-sm md:text-base">
-              Консультация психиатра и психолога в Голицыно: диагностика, поддержка, помощь при тревоге, стрессе и расстройствах настроения
+              Консультация психолога в Голицыно: поддержка при тревоге, стрессе и сложностях в отношениях
             </p>
           </header>
 
           <div className="mb-8">
             <div className="block md:hidden w-full rounded-[20px] overflow-hidden shadow-md mx-auto">
               <div className="h-[220px] bg-emerald-500 relative overflow-hidden">
-                <img src="/images/yslugi/terapiay 1.webp" alt="Психиатр Голицыно" className="w-full h-full object-cover" />
+                <img src="/images/yslugi/terapiay 1.webp" alt="Психолог Голицыно" className="w-full h-full object-cover" />
               </div>
               <div className="bg-white p-4 flex flex-col gap-3">
-                <div className="text-black font-medium text-sm">Психиатр и психолог в Голицыно</div>
+                <div className="text-black font-medium text-sm">Психолог в Голицыно</div>
                 <Link href="https://reg.altamed-golitsino.ru/" target="_blank" rel="noopener noreferrer" className="bg-blue-500 text-white rounded-full flex items-center justify-center w-full h-[46px] text-sm hover:bg-blue-600 transition-colors">
                   Консультация <svg className="w-5 h-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
                 </Link>
               </div>
             </div>
             <div className="hidden md:block h-[445px] bg-emerald-500 relative overflow-hidden rounded-[20px] shadow-lg">
-              <img src="/images/yslugi/terapiay 1.webp" alt="Психиатр Голицыно" className="w-full h-full object-cover" />
+              <img src="/images/yslugi/terapiay 1.webp" alt="Психолог Голицыно" className="w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-transparent" />
               <div className="absolute inset-0 flex flex-col justify-center items-start p-8 md:p-12 text-black">
-                <h2 className="text-2xl md:text-4xl font-bold mb-4">Психиатр и психолог в Голицыно</h2>
-                <p className="text-lg md:text-xl mb-6 max-w-md">Приём врача-психиатра и консультация психолога в Альтамед Голицыно</p>
+                <h2 className="text-2xl md:text-4xl font-bold mb-4">Психолог в Голицыно</h2>
+                <p className="text-lg md:text-xl mb-6 max-w-md">Консультация психолога в Альтамед Голицыно</p>
                 <Link href="https://reg.altamed-golitsino.ru/" target="_blank" rel="noopener noreferrer" className="bg-blue-500 text-white rounded-full px-8 py-3 font-medium hover:bg-blue-600 transition-colors">Консультация</Link>
               </div>
             </div>
@@ -86,7 +84,7 @@ export default function PsihiatrGolitsinoPage() {
         <div className="mx-auto px-4" style={{ maxWidth: "83rem" }}>
           <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Почему «Альтамед Голицыно»?</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {["Приём психиатра и психолога в Голицыно", "Конфиденциальность и доверительная атмосфера", "Удобная запись и график приёма", "Опытные специалисты — диагностика и поддержка"].map((text, i) => (
+            {["Консультация психолога в Голицыно", "Конфиденциальность и доверительная атмосфера", "Удобная запись и график приёма", "Опытные специалисты — поддержка"].map((text, i) => (
               <div key={i} className="text-center">
                 <div className="w-16 h-16 mx-auto mb-4 relative">
                   <img src="/images/yslugi/star 1.webp" alt="" className="w-full h-full object-contain" />
@@ -101,19 +99,19 @@ export default function PsihiatrGolitsinoPage() {
 
       <section className="py-12">
         <div className="mx-auto px-4" style={{ maxWidth: "83rem" }}>
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">Психиатр и психолог в Голицыно</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">Психолог в Голицыно</h2>
           <p className="text-gray-600 mb-6">
-            Психиатр занимается диагностикой и лечением психических расстройств: приём, осмотр, консультация, при необходимости — назначение медикаментозной терапии. Психолог помогает при стрессе, тревоге, выгорании, семейных и личных кризисах методами консультирования и психотерапии.
+            Психолог помогает при стрессе, тревоге, выгорании, семейных и личных кризисах методами консультирования.
           </p>
-          <p className="text-gray-600">В «Альтамед Голицыно» вы можете записаться к психиатру или психологу и пройти консультацию в Голицыно.</p>
+          <p className="text-gray-600">В «Альтамед Голицыно» вы можете записаться к психологу и пройти консультацию в Голицыно.</p>
         </div>
       </section>
 
       <section className="py-16" aria-labelledby="services-heading">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 id="services-heading" className="text-3xl font-bold text-gray-900 mb-4">Услуги психиатра и психолога в Голицыно</h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">Приём врача-психиатра и приём врача-психолога в Альтамед Голицыно</p>
+            <h2 id="services-heading" className="text-3xl font-bold text-gray-900 mb-4">Услуги психолога в Голицыно</h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">Приём психолога в Альтамед Голицыно</p>
           </div>
 
           <p className="text-amber-800 bg-amber-50 border border-amber-200 rounded-lg px-4 py-3 mb-6 max-w-3xl mx-auto text-center text-sm">
@@ -122,11 +120,11 @@ export default function PsihiatrGolitsinoPage() {
 
           <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
             <div className="bg-gradient-to-r from-emerald-600 to-emerald-700 px-6 py-4">
-              <h3 className="text-xl font-semibold text-white">Психиатр и психолог</h3>
+              <h3 className="text-xl font-semibold text-white">Психолог</h3>
             </div>
             <div className="p-6">
               <div className="space-y-4 max-h-[70vh] overflow-y-auto pr-2">
-                {psychiatristServicesList.map((service, index) => (
+                {psychologistServicesList.map((service, index) => (
                   <div key={index} className="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow duration-300 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
                     <div className="flex-1 min-w-0">
                       <div className="text-xs text-gray-500 font-mono mb-1">{service.code}</div>
@@ -146,7 +144,7 @@ export default function PsihiatrGolitsinoPage() {
 
       <section className="py-12 bg-gray-50">
         <div className="mx-auto px-4" style={{ maxWidth: "83rem" }}>
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">Когда нужна консультация психиатра или психолога</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">Когда нужна консультация психолога</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {reasonsToVisit.map((reason, index) => (
               <div key={index} className="flex items-start space-x-3">

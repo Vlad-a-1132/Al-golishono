@@ -148,7 +148,7 @@ export default function AdminDashboard() {
   ];
 
   const defaultBranch3Doctors: DoctorScheduleData[] = [
-    { name: "Дзарахов Хамзат Баширович", specialty: "Стоматолог-терапевт", schedule: { Monday: { start: "10:00", end: "18:00" }, Tuesday: { start: "10:00", end: "18:00" }, Thursday: { start: "10:00", end: "18:00" }, Saturday: { start: "10:00", end: "18:00" }, Sunday: { start: "10:00", end: "18:00" } } },
+    { name: "Дзарахов Хамзат Баширович", specialty: "Стоматолог-терапевт, стоматолог-хирург", schedule: { Monday: { start: "10:00", end: "18:00" }, Tuesday: { start: "10:00", end: "18:00" }, Thursday: { start: "10:00", end: "18:00" }, Saturday: { start: "10:00", end: "18:00" }, Sunday: { start: "10:00", end: "18:00" } } },
     { name: "Абрамов Юно Эриильевич", specialty: "Стоматолог-хирург", schedule: { Monday: { start: "15:00", end: "20:00" }, Wednesday: { start: "15:00", end: "20:00" }, Saturday: { start: "11:00", end: "18:00" }, Sunday: { start: "15:00", end: "20:00" } } },
     { name: "Богомолова Светлана Сергеевна", specialty: "Стоматолог детский", schedule: { Monday: { start: "10:00", end: "17:00" }, Wednesday: { start: "10:00", end: "17:00" } } },
     { name: "Гончаренко Елена Борисовна", specialty: "Ортодонт", schedule: { Tuesday: { start: "12:00", end: "18:00" } } },

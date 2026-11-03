@@ -17,7 +17,7 @@ export default function ContactsPage() {
     email: 'medcentr@altamed-golitsino.ru',
     workingHours: 'Ежедневно: 8:00 - 20:00',
     labHours: 'Прием анализов: ежедневно 8:00 - 12:00',
-    labDiscount: 'Каждую среду, пятницу и воскресенье скидка на анализы 10%',
+    labDiscount: 'Скидка на анализы: во вторник и пятницу — 20%, в воскресенье — 25%',
   };
 
 
@@ -85,7 +85,7 @@ export default function ContactsPage() {
               <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-600">
                 <p className="text-gray-700 font-semibold mb-2">Прием анализов ежедневно 8:00 - 12:00</p>
                 <p className="text-gray-700">
-                  Каждую среду, пятницу и воскресенье скидка на анализы <span className="font-bold text-blue-600">10%</span>
+                  Скидка на анализы: во вторник и пятницу — <span className="font-bold text-blue-600">20%</span>, в воскресенье — <span className="font-bold text-blue-600">25%</span>
                 </p>
               </div>
             </div>
@@ -191,7 +191,7 @@ export default function ContactsPage() {
                   <p className="font-semibold text-gray-900">Ежедневно: 8:00 - 20:00</p>
                   <p>Вы можете позвонить в любое время. Мы ответим Вам так скоро, как представится возможным.</p>
                   <p><strong>Прием анализов:</strong> ежедневно 8:00 - 12:00</p>
-                  <p>Каждую среду, пятницу и воскресенье скидка на анализы 10%</p>
+                  <p>Скидка на анализы: во вторник и пятницу — 20%, в воскресенье — 25%</p>
                   <a href="https://reg.altamed-golitsino.ru/" target="_blank" rel="noopener noreferrer" className="inline-block bg-blue-600 text-white px-5 py-2.5 rounded-md font-medium hover:bg-blue-700 transition mt-2">
                     Записаться на прием
                   </a>

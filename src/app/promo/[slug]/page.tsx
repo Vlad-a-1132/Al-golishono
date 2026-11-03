@@ -14,6 +14,18 @@ export default function PromoDetailPage() {
   // Данные акций
   const promotions = [
     {
+      id: 12,
+      category: "laboratory",
+      image: "/images/slides/3-analizy.webp",
+      title: "Скидки на анализы",
+      description: "Вторник, пятница — 20%; воскресенье — 25%",
+      fullDescription: "Скидка на анализы в клинике «Альтамед Голицыно»: во вторник и пятницу — 20%, в воскресенье — 25%.",
+      details: [
+        "Вторник и пятница — скидка 20%",
+        "Воскресенье — скидка 25%"
+      ]
+    },
+    {
       id: 1,
       category: "dentistry",
       image: "/images/doctors/doctor banner/5f7a2bdf-c02e-4be9-8d70-20f740761fd2.webp",

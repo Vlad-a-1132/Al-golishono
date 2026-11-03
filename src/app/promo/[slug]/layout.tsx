@@ -10,6 +10,7 @@ export function generateStaticParams() {
     { slug: 'promo-9' },
     { slug: 'promo-10' },
     { slug: 'promo-11' },
+    { slug: 'promo-12' },
   ];
 }
 
@@ -19,6 +20,11 @@ const promotionsData: Record<string, {
   description: string;
   image?: string;
 }> = {
+  'promo-12': {
+    title: 'Скидки на анализы',
+    description: 'Скидка на анализы в Альтамед Голицыно: во вторник и пятницу — 20%, в воскресенье — 25%.',
+    image: '/images/slides/3-analizy.webp',
+  },
   'promo-1': {
     title: 'Профессиональная гигиена полости рта — 4600 ₽',
     description:

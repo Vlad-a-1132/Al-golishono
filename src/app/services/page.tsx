@@ -506,9 +506,9 @@ export default function ServicesPage() {
       hasSubmenu: false
     },
     {
-      id: 'psihiatr-golitsino',
-      title: 'Психиатр',
-      description: 'Приём психиатра и психолога в Голицыно',
+      id: 'psiholog-golitsino',
+      title: 'Психолог',
+      description: 'Приём психолога в Голицыно',
       icon: (
         <svg className="w-6 h-6 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
@@ -611,7 +611,7 @@ export default function ServicesPage() {
     'cardiology', 'mammology', 'neurology',
     'otolaryngology', 'ophthalmology', 'pediatrics',
     'proctology', 'surdology', 'therapy', 'traumatology',
-    'urolog-golitsino', 'surgery', 'endocrinology', 'gonkongskiy-gripp', 'psihiatr-golitsino', 'onkolog-golitsino'
+    'urolog-golitsino', 'surgery', 'endocrinology', 'gonkongskiy-gripp', 'psiholog-golitsino', 'onkolog-golitsino'
   ];
 
   // Реабилитация - отдельная категория
@@ -951,11 +951,11 @@ export default function ServicesPage() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
                   </Link>
-                ) : service.id === 'psihiatr-golitsino' ? (
-                <Link key={service.id} href="/services/psihiatr-golitsino" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
+                ) : service.id === 'psiholog-golitsino' ? (
+                <Link key={service.id} href="/services/psiholog-golitsino" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
                     <img 
                       src="/images/yslugi/terapiay 1.webp" 
-                      alt="Психиатр" 
+                      alt="Психолог"
                       className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
                     />
                     <div className="flex-1 px-2 md:px-4">
@@ -1103,7 +1103,7 @@ export default function ServicesPage() {
               </div>
             </Link>
 
-            {/* Скидки на анализы (1-15 февраля) */}
+            {/* Скидки на анализы */}
             <Link href="/promo" className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer group h-[300px] md:h-[377.22px] flex flex-col">
               <div className="h-[200px] md:h-[259.22px] relative flex-shrink-0">
                 <img 
@@ -1114,8 +1114,8 @@ export default function ServicesPage() {
               </div>
               <div className="h-[100px] md:h-[118px] bg-orange-500 flex flex-col flex-shrink-0 px-4 md:px-6 py-3">
                 <div className="flex-1 min-h-0 flex flex-col justify-center">
-                  <h3 className="text-white font-semibold text-sm md:text-lg leading-tight">Скидки на анализы (1-15 февраля)</h3>
-                  <p className="text-white/95 text-xs md:text-sm mt-0.5 leading-tight">Пн-Сб 15%, Вс 25%</p>
+                  <h3 className="text-white font-semibold text-sm md:text-lg leading-tight">Скидки на анализы</h3>
+                  <p className="text-white/95 text-xs md:text-sm mt-0.5 leading-tight">Вт, пт — 20%, вс — 25%</p>
                 </div>
                 <div className="flex-shrink-0 h-8 flex items-center justify-end hidden md:flex">
                   <span className="hidden bg-white text-orange-500 rounded-full px-4 py-1.5 text-xs font-medium mr-2">Подробнее</span>
@@ -1848,11 +1848,11 @@ export default function ServicesPage() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
                 </Link>
-              ) : service.id === 'psihiatr-golitsino' ? (
-                <Link key={service.id} href="/services/psihiatr-golitsino" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
+              ) : service.id === 'psiholog-golitsino' ? (
+                <Link key={service.id} href="/services/psiholog-golitsino" className="bg-[#F6F8F7] rounded-[20px] hover:shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer group flex items-center justify-between h-[80px] md:h-[100px] w-full max-w-[296.5px] p-0 overflow-hidden">
                   <img 
                     src="/images/yslugi/terapiay 1.webp" 
-                    alt="Психиатр" 
+                    alt="Психолог"
                     className="w-10 md:w-20 h-full object-cover rounded-l-[20px]"
                   />
                   <div className="flex-1 px-2 md:px-4">
@@ -1911,4 +1911,4 @@ export default function ServicesPage() {
       <AppointmentForm />
     </div>
   );
-} 
+}

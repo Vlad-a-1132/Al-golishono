@@ -75,7 +75,7 @@ export function normalizeServiceRow(raw: unknown): PriceServiceDisplay | null {
   const serviceId = Number(r.serviceId ?? r.ServiceId);
   if (!Number.isFinite(serviceId)) return null;
   const serviceName = String(r.serviceName ?? r.ServiceName ?? "").trim();
-  if (!serviceName) return null;
+  if (!serviceName || /психиатр/i.test(serviceName)) return null;
 
   return {
     serviceId,
@@ -107,7 +107,7 @@ export function normalizeCategoryRow(raw: unknown): PriceCategoryDisplay | null 
   const categoryId = Number(r.categoryId ?? r.CategoryId);
   if (!Number.isFinite(categoryId)) return null;
   const categoryName = String(r.categoryName ?? r.CategoryName ?? "").trim();
-  if (!categoryName) return null;
+  if (!categoryName || /психиатр/i.test(categoryName)) return null;
 
   return {
     categoryId,
@@ -129,7 +129,7 @@ function normalizeTreeNode(raw: unknown): PriceTreeNode | null {
   const categoryId = Number(r.categoryId ?? r.CategoryId);
   if (!Number.isFinite(categoryId)) return null;
   const categoryName = String(r.categoryName ?? r.CategoryName ?? "").trim();
-  if (!categoryName) return null;
+  if (!categoryName || /психиатр/i.test(categoryName)) return null;
 
   const services: PriceTreeService[] = extractArray<unknown>(
     r.services ?? r.Services

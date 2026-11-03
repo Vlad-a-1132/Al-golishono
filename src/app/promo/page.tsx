@@ -6,6 +6,13 @@ export default function PromoPage() {
   // Данные акций
   const promotions = [
     {
+      id: 12,
+      category: "laboratory",
+      image: "/images/slides/3-analizy.webp",
+      title: "Скидки на анализы",
+      description: "Вторник, пятница — 20%; воскресенье — 25%"
+    },
+    {
       id: 1,
       category: "dentistry",
       image: "/images/doctors/doctor banner/5f7a2bdf-c02e-4be9-8d70-20f740761fd2.webp",

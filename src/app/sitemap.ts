@@ -82,7 +82,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/services/gastroenterolog-golitsino',
     '/services/ginekolog-golitsino',
     '/services/nevrolog-golitsino',
-    '/services/psihiatr-golitsino',
+    '/services/psiholog-golitsino',
     '/services/onkolog-golitsino',
     '/services/otorinolaringolog-golitsino',
     '/services/oftalmolog-golitsino',

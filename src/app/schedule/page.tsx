@@ -104,7 +104,7 @@ export default function SchedulePage() {
     },
     {
       name: "Дзарахов Хамзат Баширович",
-      specialty: "Стоматолог-терапевт",
+      specialty: "Стоматолог-терапевт, стоматолог-хирург",
       schedule: {
         Monday: { start: "10:00", end: "18:00" },
         Tuesday: { start: "10:00", end: "18:00" },
@@ -228,15 +228,6 @@ export default function SchedulePage() {
       schedule: { 
         Tuesday: { start: "16:00", end: "19:00" }, 
         Friday: { start: "16:00", end: "19:00" } 
-      }
-    },
-    {
-      name: "Мареева Полина Александровна",
-      specialty: "Педиатр",
-      schedule: { 
-        Tuesday: { start: "10:00", end: "15:00" }, 
-        Wednesday: { start: "10:00", end: "15:00" }, 
-        Thursday: { start: "10:00", end: "15:00" } 
       }
     },
     {
@@ -466,7 +457,6 @@ export default function SchedulePage() {
                 <li>эндокринолога;</li>
                 <li>гастроэнтеролога;</li>
                 <li>косметолога-массажиста, дерматокосметолога,</li>
-                <li>психиатра-психотерапевта;</li>
                 <li>офтальмолога и др.</li>
               </ul>
               

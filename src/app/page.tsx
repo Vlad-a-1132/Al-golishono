@@ -150,7 +150,7 @@ export default function Home() {
       image: "/images/yslugi/implant.webp"
     },
     {
-      title: "Скидки на анализы! Пн, ср, пт — 10%, Вс — 15%",
+      title: "Скидки на анализы! Вт, пт — 20%, вс — 25%",
       buttonText: "Подробнее",
       buttonLink: "/promo",
       buttonColor: "#13AB7B",
@@ -1017,8 +1017,8 @@ export default function Home() {
                 <div className="flex-1 flex flex-col justify-between">
                   <div>
                     <h3 className="text-xl font-bold mb-2">Скидки на анализы!</h3>
-                    <p className="text-base text-gray-700 mb-1">Понедельник, среда, пятница — 10%</p>
-                    <p className="text-base text-gray-700">Воскресенье — 15%</p>
+                    <p className="text-base text-gray-700 mb-1">Вторник, пятница — 20%</p>
+                    <p className="text-base text-gray-700">Воскресенье — 25%</p>
                   </div>
                 </div>
                 <div className="flex items-center justify-end mt-4">
@@ -1069,8 +1069,8 @@ export default function Home() {
                 <div>
                   <h3 className="text-2xl md:text-3xl font-bold mb-4">Скидки на анализы!</h3>
                   <div className="text-black text-sm md:text-base">
-                    <p>Понедельник, среда, пятница — 10%</p>
-                    <p>Воскресенье — 15%</p>
+                    <p>Вторник, пятница — 20%</p>
+                    <p>Воскресенье — 25%</p>
                   </div>
                 </div>
                 

@@ -298,10 +298,10 @@ export default function LabCalculatorPage() {
     promoList.style.marginLeft = '20px';
     
     const promo1 = document.createElement('li');
-    promo1.textContent = 'Понедельник, Среда, Пятница - 10%';
+    promo1.textContent = 'Вторник, пятница - 20%';
     
     const promo2 = document.createElement('li');
-    promo2.textContent = 'Воскресенье - 15%';
+    promo2.textContent = 'Воскресенье - 25%';
     
     promoList.appendChild(promo1);
     promoList.appendChild(promo2);
@@ -792,8 +792,8 @@ export default function LabCalculatorPage() {
                 <div className="bg-orange-50 rounded-xl p-4">
                   <p className="text-gray-800">
                     Скидки на анализы<br/>
-                    Понедельник, Среда, Пятница - 10%<br/>
-                    Воскресенье - 15%
+                    Вторник, пятница - 20%<br/>
+                    Воскресенье - 25%
                   </p>
                 </div>
               </div>
