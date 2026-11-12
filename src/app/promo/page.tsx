@@ -6,6 +6,14 @@ export default function PromoPage() {
   // Данные акций
   const promotions = [
     {
+      id: 13,
+      category: "laboratory",
+      image: "/images/slides/kdl-lab-promotions.png",
+      title: "Акции на исследования KDL",
+      description: "Комплексные исследования по специальным ценам",
+      href: "/promo/kdl"
+    },
+    {
       id: 12,
       category: "laboratory",
       image: "/images/slides/3-analizy.webp",
@@ -100,7 +108,7 @@ export default function PromoPage() {
                 return (
                   <Link
                     key={promo.id}
-                    href={`/promo/${slug}`}
+                    href={promo.href ?? `/promo/${slug}`}
                     className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer group"
                   >
                     <div className="relative h-48 overflow-hidden bg-gray-100">

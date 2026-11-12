@@ -108,6 +108,13 @@ export default function Home() {
   // Slides data - используем нейтральные пути чтобы избежать блокировки рекламы
   const slides = [
     {
+      title: "Акции на комплексные исследования KDL",
+      buttonText: "Подробнее",
+      buttonLink: "/promo/kdl",
+      buttonColor: "#13AB7B",
+      image: "/images/slides/kdl-lab-promotions.png"
+    },
+    {
       title: "Профессиональная гигиена полости рта — 4600 ₽",
       buttonText: "Подробнее",
       buttonLink: "/promo/promo-1",
